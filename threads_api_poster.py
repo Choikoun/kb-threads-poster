@@ -94,6 +94,8 @@ def post_to_threads(content, access_token, user_id):
     }
 
     resp = requests.post(publish_url, params=publish_params)
+    if not resp.ok:
+        logger.error(f"게시 API 응답: {resp.status_code} - {resp.text}")
     resp.raise_for_status()
     post_id = resp.json().get("id")
 
