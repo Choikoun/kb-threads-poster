@@ -87,7 +87,7 @@ def post_to_threads(content, access_token, user_id):
     time.sleep(3)
 
     # Step 3: 게시
-    publish_url = f"{THREADS_API_BASE}/{user_id}/threads/publish"
+    publish_url = f"{THREADS_API_BASE}/{user_id}/threads_publish"
     publish_params = {
         "creation_id": container_id,
         "access_token": access_token
