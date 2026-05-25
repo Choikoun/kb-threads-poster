@@ -1,0 +1,52 @@
+name: Threads 자동 포스팅
+
+on:
+  schedule:
+    # UTC 기준 (KST = UTC+9)
+    - cron: '0 15 * * *'   # 00:00 KST → 의사
+    - cron: '0 21 * * *'   # 06:00 KST → 자산가
+    - cron: '0 3 * * *'    # 12:00 KST → 사업주
+    - cron: '0 9 * * *'    # 18:00 KST → 개인
+  workflow_dispatch:
+    inputs:
+      target:
+        description: '수동 실행 타겟 (의사/자산가/사업주/개인)'
+        required: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 코드 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Python 설정
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 패키지 설치
+        run: pip install requests
+
+      - name: 타겟 결정
+        id: target
+        run: |
+          if [ -n "${{ github.event.inputs.target }}" ]; then
+            echo "TARGET=${{ github.event.inputs.target }}" >> $GITHUB_ENV
+          fi
+          # 시간 기반 타겟은 threads_api_poster.py 내부에서 자동 결정
+
+      - name: Threads 포스팅 실행
+        env:
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          TARGET: ${{ env.TARGET }}
+        run: python threads_api_poster.py
+
+      - name: 변경된 큐 커밋
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add posts_queue.json
+          git diff --staged --quiet || git commit -m "자동 포스팅 완료: $(date +'%Y-%m-%d %H:%M KST')"
+          git push

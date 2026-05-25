@@ -1,0 +1,6 @@
+poster_log.txt
+auto_poster.py
+실행.bat
+__pycache__/
+*.pyc
+.env
