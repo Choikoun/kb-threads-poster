@@ -53,12 +53,14 @@ def get_next_post(target):
     return None
 
 
-def mark_as_posted(target, post_id):
+def mark_as_posted(target, post_id, threads_post_id=None):
     data = load_queue()
     for post in data.get(target, []):
         if post['id'] == post_id:
             post['posted'] = True
             post['posted_at'] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            if threads_post_id:
+                post['threads_post_id'] = threads_post_id  # 댓글 조회용 ID 저장
             break
     save_queue(data)
 
@@ -100,7 +102,7 @@ def post_to_threads(content, access_token, user_id):
     post_id = resp.json().get("id")
 
     logger.info(f"게시 완료! post_id: {post_id}")
-    return True
+    return post_id
 
 
 def get_threads_user_id(access_token):
@@ -158,10 +160,10 @@ if __name__ == "__main__":
     logger.info(f"[{target}] 내용: {post['content'][:50]}...")
 
     try:
-        success = post_to_threads(post['content'], access_token, user_id)
-        if success:
-            mark_as_posted(target, post['id'])
-            logger.info(f"[{target}] ID {post['id']} 게시 완료!")
+        threads_post_id = post_to_threads(post['content'], access_token, user_id)
+        if threads_post_id:
+            mark_as_posted(target, post['id'], threads_post_id)
+            logger.info(f"[{target}] ID {post['id']} 게시 완료! (threads_post_id: {threads_post_id})")
     except Exception as e:
         logger.error(f"[{target}] 게시 실패: {e}")
         exit(1)

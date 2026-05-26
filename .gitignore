@@ -4,3 +4,5 @@ auto_poster.py
 __pycache__/
 *.pyc
 .env
+comments_pending.json
+replied_comments.json
