@@ -111,18 +111,26 @@ def get_threads_user_id(access_token):
 
 
 def get_current_target():
-    """현재 KST 시간에 맞는 타겟 반환"""
+    """현재 KST 시간에 맞는 타겟 반환 (GitHub Actions 크론 지연 허용)"""
     # GitHub Actions는 UTC 기준이므로 UTC+9 변환
     utc_hour = datetime.utcnow().hour
     kst_hour = (utc_hour + 9) % 24
 
-    # 가장 가까운 스케줄 매핑
-    for hour, target in SCHEDULE.items():
-        if kst_hour == hour:
-            return target
+    logger.info(f"현재 KST 시각: {kst_hour}시")
 
-    # 환경변수로 직접 지정 가능
-    return os.environ.get("TARGET", None)
+    # 정확히 매칭되면 바로 반환
+    if kst_hour in SCHEDULE:
+        return SCHEDULE[kst_hour]
+
+    # GitHub Actions 크론 지연 대응: 최대 5시간 이전 스케줄까지 허용
+    # 스케줄 간격이 6시간이므로 5시간 내에서 찾으면 안전하게 매칭 가능
+    for offset in range(1, 6):
+        past_hour = (kst_hour - offset) % 24
+        if past_hour in SCHEDULE:
+            logger.info(f"크론 지연 감지 — {offset}시간 전 스케줄({past_hour}시) 기준으로 실행")
+            return SCHEDULE[past_hour]
+
+    return None
 
 
 if __name__ == "__main__":
