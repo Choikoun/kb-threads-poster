@@ -4,6 +4,9 @@ import time
 import logging
 import requests
 from datetime import datetime
+from dotenv import load_dotenv
+
+load_dotenv()
 
 logging.basicConfig(
     level=logging.INFO,

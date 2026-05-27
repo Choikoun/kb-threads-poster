@@ -1,5 +1,6 @@
 import json
 import os
+import sys
 import time
 import argparse
 import requests
@@ -7,6 +8,10 @@ from datetime import datetime
 from dotenv import load_dotenv
 
 load_dotenv()
+
+# Windows 터미널 UTF-8 출력 설정
+if sys.platform == "win32":
+    sys.stdout.reconfigure(encoding="utf-8")
 
 THREADS_API_BASE = "https://graph.threads.net/v1.0"
 REPLIED_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "replied_comments.json")
@@ -103,9 +108,9 @@ def main():
     try:
         reply_post_id = post_reply(args.comment_id, args.text, access_token, user_id)
         mark_as_replied(args.comment_id, args.text, reply_post_id)
-        print(f"\n✅ 답글 완료! replied_comments.json에 기록됐어.")
+        print(f"\n[완료] 답글 게시 성공! replied_comments.json에 기록됐어.")
     except Exception as e:
-        print(f"\n❌ 답글 실패: {e}")
+        print(f"\n[실패] 답글 오류: {e}")
         raise
 
 

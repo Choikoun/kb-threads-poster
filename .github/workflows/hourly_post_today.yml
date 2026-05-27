@@ -1,0 +1,61 @@
+name: 오늘만 시간당 포스팅
+
+on:
+  schedule:
+    - cron: '0 * * * *'   # 매 시간 정각 실행
+  workflow_dispatch:
+
+concurrency:
+  group: posting
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 오늘(KST 2026-05-27)만 실행
+        run: |
+          KST_DATE=$(TZ=Asia/Seoul date +%Y-%m-%d)
+          echo "현재 KST 날짜: $KST_DATE"
+          if [ "$KST_DATE" != "2026-05-27" ]; then
+            echo "오늘이 아니므로 스킵"
+            exit 0
+          fi
+
+      - name: 코드 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Python 설정
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 패키지 설치
+        run: pip install requests python-dotenv
+
+      - name: 타겟 결정 (시간 기반 순환)
+        run: |
+          TARGETS=("의사" "자산가" "사업주" "개인")
+          KST_HOUR=$(TZ=Asia/Seoul date +%H | sed 's/^0//')
+          TARGET_INDEX=$(( KST_HOUR % 4 ))
+          echo "KST 시간: $KST_HOUR시, 타겟 인덱스: $TARGET_INDEX"
+          echo "TARGET=${TARGETS[$TARGET_INDEX]}" >> $GITHUB_ENV
+
+      - name: Threads 포스팅 실행
+        env:
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          TARGET: ${{ env.TARGET }}
+        run: python threads_api_poster.py
+
+      - name: 변경된 큐 커밋
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase
+          git add posts_queue.json
+          git diff --staged --quiet || git commit -m "시간당 포스팅: $(TZ=Asia/Seoul date +'%Y-%m-%d %H:%M KST') [$TARGET]"
+          git push

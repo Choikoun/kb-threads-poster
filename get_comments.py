@@ -1,10 +1,15 @@
 import json
 import os
+import sys
 import requests
 from datetime import datetime
 from dotenv import load_dotenv
 
 load_dotenv()
+
+# Windows 터미널 UTF-8 출력 설정
+if sys.platform == "win32":
+    sys.stdout.reconfigure(encoding="utf-8")
 
 THREADS_API_BASE = "https://graph.threads.net/v1.0"
 QUEUE_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "posts_queue.json")
@@ -54,7 +59,8 @@ def fetch_replies(threads_post_id, access_token):
         "access_token": access_token
     }
     resp = requests.get(url, params=params)
-    resp.raise_for_status()
+    if not resp.ok:
+        raise Exception(f"API 오류 {resp.status_code}: {resp.text}")
     return resp.json().get("data", [])
 
 
@@ -71,7 +77,7 @@ def main():
     all_new_comments = []
 
     print(f"\n{'='*60}")
-    print(f"댓글 조회 시작 — {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print(f"댓글 조회 시작 - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print(f"{'='*60}\n")
 
     for item in posted_items:
@@ -82,7 +88,7 @@ def main():
         try:
             replies = fetch_replies(post_id, access_token)
         except Exception as e:
-            print(f"  ⚠️  댓글 조회 실패: {e}\n")
+            print(f"  [오류] 댓글 조회 실패: {e}\n")
             continue
 
         new_replies = [r for r in replies if r["id"] not in replied_ids]
@@ -104,7 +110,7 @@ def main():
                 "parent_post_id": post_id,
                 "parent_target": item["target"],
                 "parent_preview": item["content_preview"],
-                "suggested_reply": ""  # 여기에 답글 초안을 채워서 사용
+                "suggested_reply": ""
             })
 
     # comments_pending.json 저장

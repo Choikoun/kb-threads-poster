@@ -30,7 +30,7 @@ jobs:
           python-version: '3.11'
 
       - name: 패키지 설치
-        run: pip install requests
+        run: pip install requests python-dotenv
 
       - name: 타겟 결정
         id: target
