@@ -1,14 +1,16 @@
 # 최신 트렌드 & 이슈
-*자동 수집: 2026-05-28 08:06 KST*
+*자동 수집: 2026-05-29 08:05 KST*
 
 콘텐츠 생성 시 아래 이슈를 참고해서 반영해줘.
 
-- **[한국경제]** [홍수·태풍 위험에 투자하는 보험연계증권 뜬다](https://www.hankyung.com/article/2026052724891)
-- **[한국경제]** [당국, '삼전닉스 레버리지 월배당 선물형' 키움운용에 마케팅 주의 요구](https://www.hankyung.com/article/2026052710876)
-- **[매일경제]** [“올해 배당금만 3조 넘을 수도”…본업 보다 주주로 재미 더 본다는 보험사](https://www.mk.co.kr/news/economy/12059470)
-- **[매일경제]** [아무도 모르게 4000명씩 잠드는데…韓 고독사 보험, 여전히 황무지](https://www.mk.co.kr/news/economy/12059328)
-- **[조선비즈]** [하나證 “KT, 인건비·배당 부문 재료 상실…올해 상대적 저평가 감수해야”](https://biz.chosun.com/stock/stock_general/2026/05/28/33AO6ZMUABHGHI4KOOPEFZI4XI/)
-- **[조선비즈]** [박지현, 시한부 연기 조언은 의사 父 "5년 전 위암 판정"('유퀴즈')](https://biz.chosun.com/entertainment/enter_general/2026/05/28/GUZGEYZXHEYTINJTMVRTANBTMU/)
+- **[한국경제]** [국민연금 또 팔까봐 떨었는데…개미들 한숨 돌렸다](https://www.hankyung.com/article/2026052853001)
+- **[한국경제]** [키움證, 퇴직연금 사업 출범...“10년 내 점유율 10% 달성”](https://www.hankyung.com/article/202605285251i)
+- **[한국경제]** [토스증권, 연금시장에 '도전장'…하반기 연금저축계좌 출시](https://www.hankyung.com/article/2026052850921)
+- **[한국경제]** [[속보] 국민연금, 올해 국내주식 목표 비중 '14.9%→20.8%' 확대](https://www.hankyung.com/article/2026052851937)
+- **[한국경제]** [[단독] 토스증권, 판 키운다…하반기 연금저축계좌 출시](https://www.hankyung.com/article/202605272175i)
+- **[매일경제]** [“다시 맞벌이해 볼까?” … ‘일하면 손해’ 국민연금은 이제  옛말](https://www.mk.co.kr/news/economy/12060025)
+- **[매일경제]** [“혹시 실손보험 있나요?”…앞으로 환자 유인땐 의사 면허 6개월 정지](https://www.mk.co.kr/news/economy/12060460)
+- **[매일경제]** [국민연금 국내 주식 비중 20.8%](https://www.mk.co.kr/news/economy/12060459)
 
 ---
 ## 항상 반영할 주요 정책 (2026 기준)
