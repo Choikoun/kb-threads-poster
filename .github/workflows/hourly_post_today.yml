@@ -17,11 +17,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 오늘(KST 2026-05-27)만 실행
+      - name: 오늘(KST 2026-05-28)만 실행
         run: |
           KST_DATE=$(TZ=Asia/Seoul date +%Y-%m-%d)
           echo "현재 KST 날짜: $KST_DATE"
-          if [ "$KST_DATE" != "2026-05-27" ]; then
+          if [ "$KST_DATE" != "2026-05-28" ]; then
             echo "오늘이 아니므로 스킵"
             exit 0
           fi
