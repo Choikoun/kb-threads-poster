@@ -23,9 +23,13 @@ QUEUE_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "posts_que
 # 시간대별 타겟 매핑 (KST 기준)
 SCHEDULE = {
     0: "의사",
-    6: "자산가",
-    12: "사업주",
-    18: "개인"
+    3: "자산가",
+    6: "사업주",
+    9: "개인",
+    12: "의사",
+    15: "자산가",
+    18: "사업주",
+    21: "개인"
 }
 
 THREADS_API_BASE = "https://graph.threads.net/v1.0"
@@ -127,9 +131,9 @@ def get_current_target():
     if kst_hour in SCHEDULE:
         return SCHEDULE[kst_hour]
 
-    # GitHub Actions 크론 지연 대응: 최대 5시간 이전 스케줄까지 허용
-    # 스케줄 간격이 6시간이므로 5시간 내에서 찾으면 안전하게 매칭 가능
-    for offset in range(1, 6):
+    # GitHub Actions 크론 지연 대응: 최대 2시간 이전 스케줄까지 허용
+    # 스케줄 간격이 3시간이므로 2시간 내에서 찾으면 안전하게 매칭 가능
+    for offset in range(1, 3):
         past_hour = (kst_hour - offset) % 24
         if past_hour in SCHEDULE:
             logger.info(f"크론 지연 감지 — {offset}시간 전 스케줄({past_hour}시) 기준으로 실행")

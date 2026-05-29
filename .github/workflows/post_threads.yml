@@ -2,11 +2,15 @@ name: Threads 자동 포스팅
 
 on:
   schedule:
-    # UTC 기준 (KST = UTC+9)
+    # UTC 기준 (KST = UTC+9) — 3시간 간격, 하루 8회
     - cron: '0 15 * * *'   # 00:00 KST → 의사
-    - cron: '0 21 * * *'   # 06:00 KST → 자산가
-    - cron: '0 3 * * *'    # 12:00 KST → 사업주
-    - cron: '0 9 * * *'    # 18:00 KST → 개인
+    - cron: '0 18 * * *'   # 03:00 KST → 자산가
+    - cron: '0 21 * * *'   # 06:00 KST → 사업주
+    - cron: '0 0 * * *'    # 09:00 KST → 개인
+    - cron: '0 3 * * *'    # 12:00 KST → 의사
+    - cron: '0 6 * * *'    # 15:00 KST → 자산가
+    - cron: '0 9 * * *'    # 18:00 KST → 사업주
+    - cron: '0 12 * * *'   # 21:00 KST → 개인
   workflow_dispatch:
     inputs:
       target:
