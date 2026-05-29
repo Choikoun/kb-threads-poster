@@ -34,6 +34,9 @@ SCHEDULE = {
 
 THREADS_API_BASE = "https://graph.threads.net/v1.0"
 
+# 첫 댓글에 달릴 상담 링크
+CONSULTATION_LINK = "상담 신청 → naver.me/FRLbSbiJ"
+
 
 def get_env(key):
     val = os.environ.get(key)
@@ -112,6 +115,42 @@ def post_to_threads(content, access_token, user_id):
     return post_id
 
 
+def post_reply(post_id, text, access_token, user_id):
+    """게시물에 첫 댓글 달기"""
+    # Step 1: 댓글 컨테이너 생성
+    create_url = f"{THREADS_API_BASE}/{user_id}/threads"
+    create_params = {
+        "media_type": "TEXT",
+        "text": text,
+        "reply_to_id": post_id,
+        "access_token": access_token
+    }
+
+    resp = requests.post(create_url, params=create_params)
+    if not resp.ok:
+        logger.warning(f"댓글 컨테이너 생성 실패: {resp.status_code} - {resp.text}")
+        return None
+    container_id = resp.json().get("id")
+
+    time.sleep(2)
+
+    # Step 2: 댓글 게시
+    publish_url = f"{THREADS_API_BASE}/{user_id}/threads_publish"
+    publish_params = {
+        "creation_id": container_id,
+        "access_token": access_token
+    }
+
+    resp = requests.post(publish_url, params=publish_params)
+    if not resp.ok:
+        logger.warning(f"댓글 게시 실패: {resp.status_code} - {resp.text}")
+        return None
+
+    reply_id = resp.json().get("id")
+    logger.info(f"첫 댓글 게시 완료: {reply_id}")
+    return reply_id
+
+
 def get_threads_user_id(access_token):
     url = f"{THREADS_API_BASE}/me"
     resp = requests.get(url, params={"access_token": access_token})
@@ -171,6 +210,11 @@ if __name__ == "__main__":
         if threads_post_id:
             mark_as_posted(target, post['id'], threads_post_id)
             logger.info(f"[{target}] ID {post['id']} 게시 완료! (threads_post_id: {threads_post_id})")
+
+            # 첫 댓글에 상담 링크 달기 (알고리즘 노출 보호)
+            time.sleep(3)
+            post_reply(threads_post_id, CONSULTATION_LINK, access_token, user_id)
+
     except Exception as e:
         logger.error(f"[{target}] 게시 실패: {e}")
         exit(1)

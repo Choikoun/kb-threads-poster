@@ -22,6 +22,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 THREADS_API_BASE = "https://graph.threads.net/v1.0"
+CONSULTATION_LINK = "상담 신청 → naver.me/FRLbSbiJ"
 
 
 def get_env(key):
@@ -143,7 +144,36 @@ def post_card_set(card_data, caption, output_dir="cards_output"):
     logger.info("카루셀 게시 중...")
     post_id = publish_carousel(user_id, container_id, access_token)
 
+    # 7. 첫 댓글에 상담 링크 달기 (알고리즘 노출 보호)
+    logger.info("첫 댓글 달기...")
+    time.sleep(3)
+    _post_reply(user_id, post_id, CONSULTATION_LINK, access_token)
+
     return post_id
+
+
+def _post_reply(user_id, post_id, text, access_token):
+    """게시물에 첫 댓글 달기"""
+    create_url = f"{THREADS_API_BASE}/{user_id}/threads"
+    create_params = {
+        "media_type": "TEXT",
+        "text": text,
+        "reply_to_id": post_id,
+        "access_token": access_token
+    }
+    resp = requests.post(create_url, params=create_params)
+    if not resp.ok:
+        logger.warning(f"댓글 컨테이너 생성 실패: {resp.status_code} - {resp.text}")
+        return
+    container_id = resp.json().get("id")
+    time.sleep(2)
+
+    publish_url = f"{THREADS_API_BASE}/{user_id}/threads_publish"
+    resp = requests.post(publish_url, params={"creation_id": container_id, "access_token": access_token})
+    if resp.ok:
+        logger.info(f"첫 댓글 게시 완료: {resp.json().get('id')}")
+    else:
+        logger.warning(f"댓글 게시 실패: {resp.status_code} - {resp.text}")
 
 
 # ── 샘플 카드 데이터 및 캡션 ──────────────────────────────
