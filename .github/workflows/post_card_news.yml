@@ -2,10 +2,8 @@ name: 카드뉴스 자동 포스팅
 
 on:
   schedule:
-    # UTC 기준 (KST = UTC+9)
-    - cron: '0 12 * * 2'   # 화요일 21:00 KST
-    - cron: '0 12 * * 4'   # 목요일 21:00 KST
-    - cron: '0 12 * * 6'   # 토요일 21:00 KST
+    # UTC 기준 (KST = UTC+9) — 매일 21:00 KST
+    - cron: '0 12 * * *'
   workflow_dispatch:
     inputs:
       target:
