@@ -31,9 +31,9 @@
   {
     "id": 2,
     "target": "자산가",
-    "posted": false,
-    "posted_at": null,
-    "threads_post_id": null,
+    "posted": true,
+    "posted_at": "2026-05-30 13:55:21",
+    "threads_post_id": "17956628096966003",
     "caption": "상속세, 10억부터 걱정하면 늦어. 5억부터야.\n\n배우자 공제, 부동산 유동성, 납부 재원.\n세 가지 다 설계 안 돼 있으면\n자산이 많을수록 더 위험해.\n\n↓ 카드 넘겨봐",
     "card_data": {
       "tag": "# 상속 설계",
