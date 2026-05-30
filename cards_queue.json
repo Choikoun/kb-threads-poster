@@ -2,9 +2,9 @@
   {
     "id": 1,
     "target": "의사",
-    "posted": false,
-    "posted_at": null,
-    "threads_post_id": null,
+    "posted": true,
+    "posted_at": "2026-05-30 06:15:32",
+    "threads_post_id": "18107473700317176",
     "caption": "월 2천 버는 의사가 월 500 버는 직장인보다 노후가 더 불안한 이유.\n\n수입이 많다고 자동으로 안전해지는 게 아니야.\n구조가 없으면 세금이 다 가져가.\n\n↓ 카드 넘겨봐",
     "card_data": {
       "tag": "# 의사 재무 설계",
