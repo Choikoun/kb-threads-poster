@@ -37,6 +37,14 @@ THREADS_API_BASE = "https://graph.threads.net/v1.0"
 # 첫 댓글에 달릴 상담 링크
 CONSULTATION_LINK = "상담 신청 → naver.me/FRLbSbiJ"
 
+# 타겟별 토픽 태그 (Threads 알고리즘 노출 강화)
+TARGET_TAGS = {
+    "의사": "#절세",
+    "자산가": "#상속세",
+    "사업주": "#법인",
+    "개인": "#연금"
+}
+
 
 def get_env(key):
     val = os.environ.get(key)
@@ -206,10 +214,14 @@ if __name__ == "__main__":
     logger.info(f"[{target}] 내용: {post['content'][:50]}...")
 
     try:
-        threads_post_id = post_to_threads(post['content'], access_token, user_id)
+        # 토픽 태그 추가 (타겟별 1개)
+        tag = TARGET_TAGS.get(target, "")
+        content_with_tag = f"{post['content']}\n\n{tag}" if tag else post['content']
+
+        threads_post_id = post_to_threads(content_with_tag, access_token, user_id)
         if threads_post_id:
             mark_as_posted(target, post['id'], threads_post_id)
-            logger.info(f"[{target}] ID {post['id']} 게시 완료! (threads_post_id: {threads_post_id})")
+            logger.info(f"[{target}] ID {post['id']} 게시 완료! 태그: {tag} (threads_post_id: {threads_post_id})")
 
             # 첫 댓글에 상담 링크 달기 (알고리즘 노출 보호)
             time.sleep(3)

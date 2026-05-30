@@ -20,6 +20,14 @@ logger = logging.getLogger(__name__)
 
 QUEUE_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "cards_queue.json")
 
+# 타겟별 토픽 태그
+TARGET_TAGS = {
+    "의사": "#절세",
+    "자산가": "#상속세",
+    "사업주": "#법인",
+    "개인": "#연금"
+}
+
 
 def load_queue():
     with open(QUEUE_FILE, 'r', encoding='utf-8') as f:
@@ -86,13 +94,17 @@ if __name__ == "__main__":
     output_dir = f"cards_output/card_set_{card['id']:03d}"
 
     try:
+        # 토픽 태그 캡션에 추가
+        tag = TARGET_TAGS.get(card['target'], "")
+        caption_with_tag = f"{card['caption']}\n\n{tag}" if tag else card['caption']
+
         post_id = post_card_set(
             card_data=card['card_data'],
-            caption=card['caption'],
+            caption=caption_with_tag,
             output_dir=output_dir
         )
         mark_as_posted(card['id'], post_id)
-        logger.info(f"✓ 카드뉴스 발행 완료! ID {card['id']} ({card['target']}) → threads_post_id: {post_id}")
+        logger.info(f"✓ 카드뉴스 발행 완료! ID {card['id']} ({card['target']}) 태그: {tag} → threads_post_id: {post_id}")
     except Exception as e:
         logger.error(f"✗ 카드뉴스 발행 실패: {e}")
         sys.exit(1)
