@@ -66,7 +66,7 @@ def save_queue(data):
 def get_next_post(target):
     data = load_queue()
     for post in data.get(target, []):
-        if not post['posted']:
+        if not post['posted'] and post.get('approved', False):
             return post
     return None
 

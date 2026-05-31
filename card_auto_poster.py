@@ -45,7 +45,7 @@ def get_next_card(target=None):
     # 타겟 지정된 경우 먼저 탐색
     if target:
         for card in data:
-            if card['target'] == target and not card['posted']:
+            if card['target'] == target and not card['posted'] and card.get('approved', False):
                 return card
     # 타겟 미지정이면 순서대로 첫 미발행 반환
     for card in data:
