@@ -91,9 +91,9 @@
   {
     "id": 4,
     "target": "개인",
-    "posted": false,
-    "posted_at": null,
-    "threads_post_id": null,
+    "posted": true,
+    "posted_at": "2026-05-31 14:00:39",
+    "threads_post_id": "18142839805464422",
     "caption": "연금저축 꼬박꼬박 납입하고 있는데\n정작 어떻게 굴러가는지 모르는 사람 많아.\n\n납입이 준비가 아니야. 운용이 준비야.\n\n↓ 카드 넘겨봐",
     "card_data": {
       "tag": "# 연금 설계",
