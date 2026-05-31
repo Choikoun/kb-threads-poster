@@ -61,9 +61,9 @@
   {
     "id": 3,
     "target": "사업주",
-    "posted": false,
-    "posted_at": null,
-    "threads_post_id": null,
+    "posted": true,
+    "posted_at": "2026-05-31 06:49:38",
+    "threads_post_id": "17964146667090587",
     "caption": "법인 만들면 세금 준다는 말, 반만 맞아.\n\n꺼내는 구조를 모르면\n법인 돈이 내 돈이 아니야.\n\n↓ 카드 넘겨봐",
     "card_data": {
       "tag": "# 법인 설계",
