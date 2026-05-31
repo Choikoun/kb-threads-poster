@@ -11,6 +11,10 @@ on:
         description: '수동 실행 타겟 (의사/자산가/사업주/개인, 생략 시 자동)'
         required: false
 
+concurrency:
+  group: card-news-posting
+  cancel-in-progress: false
+
 permissions:
   contents: write
 

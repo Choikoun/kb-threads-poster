@@ -17,6 +17,10 @@ on:
         description: '수동 실행 타겟 (의사/자산가/사업주/개인)'
         required: false
 
+concurrency:
+  group: threads-posting
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
