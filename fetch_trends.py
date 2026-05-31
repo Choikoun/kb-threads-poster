@@ -17,12 +17,25 @@ KEYWORDS = [
     "부동산세", "양도세", "세법개정", "세제개편"
 ]
 
+# 국무회의 관련 키워드 (별도 섹션으로 표시)
+CABINET_KEYWORDS = [
+    "국무회의", "대통령", "정부안", "입법예고", "시행령",
+    "세법", "금융위", "기재부", "복지부", "고용부",
+    "의료", "보험료", "연금개혁", "부동산정책", "규제"
+]
+
 # 무료 RSS 피드
 RSS_FEEDS = [
     ("한국경제", "https://www.hankyung.com/feed/finance"),
     ("매일경제", "https://www.mk.co.kr/rss/30000001/"),
     ("조선비즈", "https://biz.chosun.com/arc/outboundfeeds/rss/?outputType=xml"),
     ("머니투데이", "https://news.mt.co.kr/mtview.php?type=1&pv=rss"),
+]
+
+# 정책 뉴스 RSS (국무회의 전용)
+POLICY_FEEDS = [
+    ("정책브리핑", "https://www.korea.kr/rss/allPolicy.do"),
+    ("기획재정부", "https://www.moef.go.kr/nw/nes/rssList.do"),
 ]
 
 HEADERS = {
@@ -48,7 +61,26 @@ def fetch_rss(name, url):
         return []
 
 
-def save_trends(all_items):
+def fetch_policy_rss(name, url):
+    """정책 RSS 수집 — 국무회의·정부 안건 전용"""
+    try:
+        resp = requests.get(url, headers=HEADERS, timeout=10)
+        resp.raise_for_status()
+        root = ET.fromstring(resp.content)
+        items = []
+        for item in root.iter("item"):
+            title = item.findtext("title", "").strip()
+            link = item.findtext("link", "").strip()
+            pub_date = item.findtext("pubDate", "").strip()
+            if title and any(kw in title for kw in CABINET_KEYWORDS + KEYWORDS):
+                items.append((title, link, pub_date))
+        return items[:5]
+    except Exception as e:
+        print(f"[{name}] 정책 RSS 오류: {e}")
+        return []
+
+
+def save_trends(all_items, cabinet_items):
     output_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "content_trends.md")
     now = datetime.now(KST).strftime("%Y-%m-%d %H:%M KST")
 
@@ -60,6 +92,15 @@ def save_trends(all_items):
         f"",
     ]
 
+    # 국무회의·정부 정책 섹션 (최우선)
+    if cabinet_items:
+        lines.append("## 🏛️ 국무회의·정부 정책 (콘텐츠 우선 반영)")
+        for source, title, link, _ in cabinet_items:
+            lines.append(f"- **[{source}]** [{title}]({link})")
+        lines.append("")
+
+    # 일반 금융 뉴스
+    lines.append("## 📰 금융·세금 트렌드")
     if not all_items:
         lines.append("*오늘 수집된 관련 뉴스 없음*")
     else:
@@ -79,7 +120,7 @@ def save_trends(all_items):
     with open(output_path, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
 
-    print(f"저장 완료: {output_path} ({len(all_items)}개 이슈)")
+    print(f"저장 완료: {output_path} (일반 {len(all_items)}개 / 정책 {len(cabinet_items)}개)")
 
 
 def main():
@@ -90,7 +131,15 @@ def main():
             all_items.append((name, title, link, pub_date))
         print(f"[{name}] {len(items)}개 수집")
 
-    save_trends(all_items)
+    # 정책·국무회의 뉴스 별도 수집
+    cabinet_items = []
+    for name, url in POLICY_FEEDS:
+        items = fetch_policy_rss(name, url)
+        for title, link, pub_date in items:
+            cabinet_items.append((name, title, link, pub_date))
+        print(f"[{name}] 정책 {len(items)}개 수집")
+
+    save_trends(all_items, cabinet_items)
 
 
 if __name__ == "__main__":
