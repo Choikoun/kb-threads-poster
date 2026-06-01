@@ -151,9 +151,9 @@
   {
     "id": 6,
     "target": "의사",
-    "posted": false,
-    "posted_at": null,
-    "threads_post_id": null,
+    "posted": true,
+    "posted_at": "2026-06-01 17:55:41",
+    "threads_post_id": "18080828816445077",
     "caption": "개원하면 세금이 직장인의 2배인 이유.\n\n종합소득세, 건보료 전액, 비과세 없음.\n이 세 가지를 모르면 그냥 다 내는 거야.\n\n↓ 카드 넘겨봐",
     "card_data": {
       "tag": "# 개원의 세금",
