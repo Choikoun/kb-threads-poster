@@ -121,9 +121,9 @@
   {
     "id": 5,
     "target": "의사",
-    "posted": false,
-    "posted_at": null,
-    "threads_post_id": null,
+    "posted": true,
+    "posted_at": "2026-06-01 08:26:45",
+    "threads_post_id": "17869527369653444",
     "caption": "수입이 높을수록 세금도 높다?\n\n구조가 있으면 달라.\n의사에게 맞는 비과세 설계 3가지.\n\n↓ 카드 넘겨봐",
     "card_data": {
       "tag": "# 의사 절세 설계",
