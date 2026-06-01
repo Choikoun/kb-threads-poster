@@ -22,7 +22,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 THREADS_API_BASE = "https://graph.threads.net/v1.0"
-CONSULTATION_LINK = "상담 신청 → naver.me/FRLbSbiJ"
+CONSULTATION_LINK = "상담 신청 → https://bit.ly/44CqhMr"
 
 
 def get_env(key):
