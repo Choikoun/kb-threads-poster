@@ -213,6 +213,13 @@ if __name__ == "__main__":
 
     logger.info(f"[{target}] 내용: {post['content'][:50]}...")
 
+    # ── 이중 발행 방지: 포스팅 직전 큐를 다시 읽어 중복 체크 ──
+    fresh_data = load_queue()
+    fresh_post = next((p for p in fresh_data.get(target, []) if p['id'] == post['id']), None)
+    if not fresh_post or fresh_post.get('posted'):
+        logger.warning(f"[{target}] ID {post['id']} 이미 발행됨 (다른 프로세스에서 처리). 건너뜀.")
+        exit(0)
+
     try:
         # 토픽 태그 추가 (타겟별 1개)
         tag = TARGET_TAGS.get(target, "")
