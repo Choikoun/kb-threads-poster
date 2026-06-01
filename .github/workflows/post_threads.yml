@@ -48,6 +48,9 @@ jobs:
           fi
           # 시간 기반 타겟은 threads_api_poster.py 내부에서 자동 결정
 
+      - name: 최신 큐 동기화
+        run: git pull origin main --rebase
+
       - name: Threads 포스팅 실행
         env:
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}

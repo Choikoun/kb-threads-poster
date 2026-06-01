@@ -37,6 +37,9 @@ jobs:
       - name: 폰트 디렉토리 확인
         run: ls fonts/
 
+      - name: 최신 큐 동기화
+        run: git pull origin main --rebase
+
       - name: 카드뉴스 포스팅 실행
         env:
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
