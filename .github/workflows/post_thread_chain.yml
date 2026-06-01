@@ -1,0 +1,106 @@
+name: 타래 자동 포스팅
+
+on:
+  schedule:
+    - cron: '0 0 * * *'   # 매일 09:00 KST (UTC 00:00)
+  workflow_dispatch:
+
+concurrency:
+  group: thread-chain-posting
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  post_chain:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 코드 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Python 설정
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 패키지 설치
+        run: pip install requests python-dotenv
+
+      - name: 최신 큐 동기화
+        run: git pull origin main --rebase
+
+      - name: 타래 포스팅 실행
+        env:
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+        run: |
+          python -c "
+          import json, os, sys, time, requests
+          sys.stdout.reconfigure(encoding='utf-8')
+
+          token = os.environ.get('THREADS_ACCESS_TOKEN')
+          BASE = 'https://graph.threads.net/v1.0'
+          TAGS = {'의사': '#절세', '자산가': '#상속세', '사업주': '#법인', '개인': '#연금'}
+          LINK = '상담 신청 → https://bit.ly/44CqhMr'
+
+          user_id = requests.get(f'{BASE}/me', params={'access_token': token}).json().get('id')
+
+          with open('thread_chains_queue.json', encoding='utf-8') as f:
+              queue = json.load(f)
+
+          pending = [c for c in queue if not c['posted']]
+          if not pending:
+              print('발행할 타래 없음')
+              sys.exit(0)
+
+          chain = pending[0]
+
+          def post_text(text, reply_to=None):
+              params = {'media_type': 'TEXT', 'text': text, 'access_token': token}
+              if reply_to:
+                  params['reply_to_id'] = reply_to
+              r = requests.post(f'{BASE}/{user_id}/threads', params=params)
+              r.raise_for_status()
+              container_id = r.json().get('id')
+              time.sleep(3)
+              pub = requests.post(f'{BASE}/{user_id}/threads_publish',
+                                  params={'creation_id': container_id, 'access_token': token})
+              pub.raise_for_status()
+              return pub.json().get('id')
+
+          tag = TAGS.get(chain['target'], '')
+          main_text = chain['chain']['main'] + (f'\n\n{tag}' if tag else '')
+          main_id = post_text(main_text)
+          print(f'메인 발행: {main_id}')
+
+          prev_id = main_id
+          for i, reply in enumerate(chain['chain'].get('replies', []), 1):
+              time.sleep(5)
+              rid = post_text(reply, reply_to=prev_id)
+              print(f'  댓글 {i}: {rid}')
+              prev_id = rid
+
+          time.sleep(5)
+          post_text(LINK, reply_to=main_id)
+          print('상담 링크 댓글 완료')
+
+          for c in queue:
+              if c['id'] == chain['id']:
+                  c['posted'] = True
+                  from datetime import datetime
+                  c['posted_at'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+                  break
+
+          with open('thread_chains_queue.json', 'w', encoding='utf-8') as f:
+              json.dump(queue, f, ensure_ascii=False, indent=2)
+          print('완료')
+          "
+
+      - name: 큐 커밋
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add thread_chains_queue.json
+          git diff --staged --quiet || git commit -m "타래 발행 완료: $(date +'%Y-%m-%d %H:%M KST')"
+          git push
