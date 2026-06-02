@@ -1,6 +1,7 @@
 """
-카드뉴스 Threads 카루셀 포스터
-흐름: 카드 생성 → imgBB 업로드 → Threads 카루셀 포스팅
+카드뉴스 포스터
+흐름: 훅 카드 1장 생성 → imgBB 업로드 → Threads 단일 이미지 포스팅
+(카루셀보다 단일 이미지가 알고리즘 친화적)
 """
 import os
 import time
@@ -93,14 +94,14 @@ def publish_carousel(user_id, container_id, access_token):
 
 def post_card_set(card_data, caption, output_dir="cards_output"):
     """
-    카드뉴스 전체 파이프라인:
-    1. 카드 이미지 생성
+    카드뉴스 파이프라인 (단일 이미지 버전):
+    1. 훅 카드 1장만 생성 (card_01.jpg)
     2. imgBB 업로드
-    3. Threads 카루셀 포스팅
+    3. Threads 단일 IMAGE 포스팅 (카루셀보다 알고리즘 친화적)
 
     Args:
         card_data: generate_card_set에 전달할 카드 데이터 딕셔너리
-        caption: 포스팅 본문 텍스트 (카루셀 설명)
+        caption: 포스팅 본문 텍스트
         output_dir: 이미지 저장 폴더
 
     Returns:
@@ -110,41 +111,45 @@ def post_card_set(card_data, caption, output_dir="cards_output"):
     user_id = get_threads_user_id(access_token)
     logger.info(f"Threads 유저 ID: {user_id}")
 
-    # 1. 카드 이미지 생성
-    logger.info("카드 이미지 생성 중...")
+    # 1. 훅 카드 1장만 생성
+    logger.info("훅 카드 생성 중...")
     image_paths = generate_card_set(card_data, output_dir=output_dir)
-    logger.info(f"  {len(image_paths)}장 생성 완료")
+    hook_card_path = image_paths[0]  # card_01.jpg (훅 카드)
+    logger.info(f"  훅 카드: {hook_card_path}")
 
-    # 2. imgBB 업로드 → 공개 URL 수집
+    # 2. imgBB 업로드
     logger.info("imgBB 업로드 중...")
-    image_urls = []
-    for path in image_paths:
-        url = upload_to_imgbb(path)
-        image_urls.append(url)
-        logger.info(f"  업로드 완료: {os.path.basename(path)} → {url}")
-        time.sleep(0.5)  # 과부하 방지
+    image_url = upload_to_imgbb(hook_card_path)
+    logger.info(f"  업로드 완료: {image_url}")
 
-    # 3. Threads 카루셀 아이템 컨테이너 생성
-    logger.info("Threads 카루셀 아이템 컨테이너 생성 중...")
-    children_ids = []
-    for url in image_urls:
-        item_id = create_carousel_item(user_id, url, access_token)
-        children_ids.append(item_id)
-        time.sleep(1)  # API 권장 대기
+    # 3. Threads 단일 이미지 컨테이너 생성
+    logger.info("Threads 이미지 컨테이너 생성 중...")
+    create_url = f"{THREADS_API_BASE}/{user_id}/threads"
+    create_params = {
+        "media_type": "IMAGE",
+        "image_url": image_url,
+        "text": caption,
+        "access_token": access_token
+    }
+    resp = requests.post(create_url, params=create_params)
+    if not resp.ok:
+        logger.error(f"이미지 컨테이너 생성 실패: {resp.status_code} - {resp.text}")
+    resp.raise_for_status()
+    container_id = resp.json().get("id")
+    logger.info(f"  컨테이너 생성: {container_id}")
 
-    # 4. 카루셀 부모 컨테이너 생성
-    logger.info("카루셀 부모 컨테이너 생성 중...")
-    container_id = create_carousel_container(user_id, children_ids, caption, access_token)
+    # 4. 게시
+    logger.info("게시 전 대기 (3초)...")
+    time.sleep(3)
+    publish_url = f"{THREADS_API_BASE}/{user_id}/threads_publish"
+    pub_resp = requests.post(publish_url, params={"creation_id": container_id, "access_token": access_token})
+    if not pub_resp.ok:
+        logger.error(f"게시 실패: {pub_resp.status_code} - {pub_resp.text}")
+    pub_resp.raise_for_status()
+    post_id = pub_resp.json().get("id")
+    logger.info(f"이미지 게시 완료! post_id: {post_id}")
 
-    # 5. 잠깐 대기 후 게시 (Threads API 권장)
-    logger.info("게시 전 대기 (5초)...")
-    time.sleep(5)
-
-    # 6. 게시
-    logger.info("카루셀 게시 중...")
-    post_id = publish_carousel(user_id, container_id, access_token)
-
-    # 7. 첫 댓글에 상담 링크 달기 (알고리즘 노출 보호)
+    # 5. 첫 댓글에 상담 링크
     logger.info("첫 댓글 달기...")
     time.sleep(3)
     _post_reply(user_id, post_id, CONSULTATION_LINK, access_token)
