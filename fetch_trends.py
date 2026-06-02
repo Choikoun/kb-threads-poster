@@ -30,6 +30,8 @@ RSS_FEEDS = [
     ("매일경제", "https://www.mk.co.kr/rss/30000001/"),
     ("조선비즈", "https://biz.chosun.com/arc/outboundfeeds/rss/?outputType=xml"),
     ("머니투데이", "https://news.mt.co.kr/mtview.php?type=1&pv=rss"),
+    ("보험신보", "https://www.insnews.co.kr/rss/allArticle.xml"),
+    ("연합뉴스경제", "https://www.yna.co.kr/rss/economy.xml"),
 ]
 
 # 정책 뉴스 RSS (국무회의 전용)
