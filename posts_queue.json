@@ -387,6 +387,13 @@
       "posted": false,
       "posted_at": null,
       "approved": true
+    },
+    {
+      "id": 125,
+      "approved": true,
+      "posted": false,
+      "posted_at": null,
+      "content": "종합소득세 분납했다면 7월 25일이 마감이야.\n\n5월에 절반만 내고\n나머지를 7월에 내는 거야.\n\n깜빡하면 가산세 나와.\n자동이체 아니면 직접 납부해야 해.\n\n홈택스에서 확인해봐.\n분납 신청했는지 기억 안 나면\n지금 바로 확인해."
     }
   ],
   "자산가": [
@@ -1229,6 +1236,27 @@
       "posted": false,
       "posted_at": null,
       "approved": true
+    },
+    {
+      "id": 175,
+      "approved": true,
+      "posted": false,
+      "posted_at": null,
+      "content": "7월 1일부터 부가가치세 신고야.\n\n1기 확정 신고.\n1월~6월 매출·매입 정리해야 해.\n\n신고 기간: 7월 1일~25일.\n\n준비할 것들:\n세금계산서 발급·수취 내역,\n카드 매출 내역,\n의제매입세액 공제 대상 확인.\n\n경비 빠진 거 없는지\n지금부터 미리 정리해둬."
+    },
+    {
+      "id": 176,
+      "approved": true,
+      "posted": false,
+      "posted_at": null,
+      "content": "종합소득세 분납했다면 7월 25일이 마감이야.\n\n5월에 절반만 내고\n나머지를 7월에 내는 거야.\n\n깜빡하면 가산세 나와.\n자동이체 아니면 직접 납부해야 해.\n\n홈택스에서 지금 바로 확인해."
+    },
+    {
+      "id": 177,
+      "approved": true,
+      "posted": false,
+      "posted_at": null,
+      "content": "종합소득세 직권연장 받은 분들.\n납부 기한이 8월 31일이야.\n\n신고는 이미 했어.\n납부만 8월까지 유예된 거야.\n\n8월 31일 넘기면 가산세 나와.\n이건 자동이 아니야. 직접 납부해야 해.\n\n홈택스에서 미리 확인해봐."
     }
   ],
   "개인": [
@@ -1717,6 +1745,13 @@
       "posted": false,
       "posted_at": null,
       "approved": true
+    },
+    {
+      "id": 200,
+      "approved": true,
+      "posted": false,
+      "posted_at": null,
+      "content": "고유가 피해지원금 8월 31일이 마감이야.\n\n아직 신청 안 했으면 지금 해야 해.\n수도권 10만원, 비수도권 최대 25만원.\n\n사용 기한도 8월 31일이야.\n신청하고 안 쓰면 소멸해.\n\n주변에 아직 모르는 분 있으면 알려줘."
     }
   ]
 }
