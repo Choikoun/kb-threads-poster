@@ -32,6 +32,7 @@ RSS_FEEDS = [
     ("머니투데이", "https://news.mt.co.kr/mtview.php?type=1&pv=rss"),
     ("보험신보", "https://www.insnews.co.kr/rss/allArticle.xml"),
     ("연합뉴스경제", "https://www.yna.co.kr/rss/economy.xml"),
+    ("뉴시스경제", "https://www.newsis.com/RSS/economy.xml"),
 ]
 
 # 정책 뉴스 RSS (국무회의 전용)
