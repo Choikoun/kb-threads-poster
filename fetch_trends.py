@@ -14,7 +14,11 @@ KEYWORDS = [
     "상속세", "증여세", "종합소득세", "성실신고", "금융소득종합과세",
     "법인세", "보험", "연금", "절세", "세금", "의사", "개원",
     "법인전환", "가족법인", "배당", "ISA", "IRP", "변액",
-    "부동산세", "양도세", "세법개정", "세제개편"
+    "부동산세", "양도세", "세법개정", "세제개편",
+    # 글로벌 경제·정세
+    "미국", "연준", "금리", "달러", "환율", "중국", "일본",
+    "유가", "반도체", "무역", "관세", "전쟁", "인플레이션",
+    "Fed", "트럼프", "AI", "엔비디아", "이란", "중동"
 ]
 
 # 국무회의 관련 키워드 (별도 섹션으로 표시)
@@ -33,6 +37,9 @@ RSS_FEEDS = [
     ("보험신보", "https://www.insnews.co.kr/rss/allArticle.xml"),
     ("연합뉴스경제", "https://www.yna.co.kr/rss/economy.xml"),
     ("뉴시스경제", "https://www.newsis.com/RSS/economy.xml"),
+    ("한국경제국제", "https://www.hankyung.com/feed/international"),
+    ("매일경제국제", "https://www.mk.co.kr/rss/30100041/"),
+    ("조선비즈국제", "https://biz.chosun.com/arc/outboundfeeds/rss/category/international/?outputType=xml"),
 ]
 
 # 정책 뉴스 RSS (국무회의 전용)
