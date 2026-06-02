@@ -210,9 +210,9 @@
   {
     "id": 8,
     "target": "자산가",
-    "posted": false,
-    "posted_at": null,
-    "threads_post_id": null,
+    "posted": true,
+    "posted_at": "2026-06-02 07:17:52",
+    "threads_post_id": "18051008954772432",
     "caption": "금융소득 2000만원.\n\n세금보다 이게 더 문제야.\nISA 가입 막히고, 건보료 올라가고,\n피부양자 자격 날아가.\n\n↓ 카드 넘겨봐",
     "card_data": {
       "tag": "# 금융소득 주의",
