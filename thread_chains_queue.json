@@ -2,8 +2,8 @@
   {
     "id": 1,
     "target": "사업주",
-    "posted": false,
-    "posted_at": null,
+    "posted": true,
+    "posted_at": "2026-06-02 02:36:18",
     "chain": {
       "main": "법인 슈퍼카 세무조사, 핵심만 정리해줄게.\n\n3편으로 나눠서 올릴게.\n1편 → 비용처리 한도\n2편 → 걸리는 패턴\n3편 → 지금 해야 할 것",
       "replies": [
