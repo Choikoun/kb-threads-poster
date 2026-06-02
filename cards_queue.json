@@ -240,9 +240,9 @@
   {
     "id": 9,
     "target": "사업주",
-    "posted": false,
-    "posted_at": null,
-    "threads_post_id": null,
+    "posted": true,
+    "posted_at": "2026-06-02 16:46:26",
+    "threads_post_id": "17949430875000199",
     "caption": "법인 대표가 세무조사에서 걸리는 패턴 4가지.\n\n국세청 2026년 중점 검증 항목이야.\n하나라도 해당되면 지금 바로 점검해.",
     "card_data": {
       "tag": "# 세무조사 주의",
