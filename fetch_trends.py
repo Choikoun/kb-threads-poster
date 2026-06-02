@@ -18,7 +18,11 @@ KEYWORDS = [
     # 글로벌 경제·정세
     "미국", "연준", "금리", "달러", "환율", "중국", "일본",
     "유가", "반도체", "무역", "관세", "전쟁", "인플레이션",
-    "Fed", "트럼프", "AI", "엔비디아", "이란", "중동"
+    "Fed", "트럼프", "AI", "엔비디아", "이란", "중동",
+    # 주식·시장
+    "코스피", "코스닥", "주가", "증시", "ETF", "나스닥",
+    "삼성전자", "하이닉스", "실적", "배당", "상장", "IPO",
+    "매수", "매도", "급등", "급락", "사상최고", "사상최저"
 ]
 
 # 국무회의 관련 키워드 (별도 섹션으로 표시)
@@ -40,6 +44,8 @@ RSS_FEEDS = [
     ("한국경제국제", "https://www.hankyung.com/feed/international"),
     ("매일경제국제", "https://www.mk.co.kr/rss/30100041/"),
     ("조선비즈국제", "https://biz.chosun.com/arc/outboundfeeds/rss/category/international/?outputType=xml"),
+    ("매일경제증권", "https://www.mk.co.kr/rss/50200011/"),
+    ("인베스팅닷컴", "https://kr.investing.com/rss/news_285.rss"),
 ]
 
 # 정책 뉴스 RSS (국무회의 전용)
