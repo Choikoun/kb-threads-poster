@@ -16,8 +16,8 @@
   {
     "id": 2,
     "target": "사업주",
-    "posted": false,
-    "posted_at": null,
+    "posted": true,
+    "posted_at": "2026-06-03 02:43:58",
     "chain": {
       "main": "법인 대표라면 반드시 알아야 할 대법원 판결.\n3편으로 정리해줄게.\n\n1편 → 뭐가 바뀌었나\n2편 → 누가 영향 받나\n3편 → 지금 해야 할 것",
       "replies": [
