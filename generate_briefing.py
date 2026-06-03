@@ -1,11 +1,47 @@
 """
 매일 트렌드 수집 후 일일 브리핑 생성
 content_trends.md → daily_briefing.md (보기 좋은 요약본)
+300회 이상 포스팅 → 팔로업 추천 섹션 포함
 """
-import os, re
+import os, re, requests
 from datetime import datetime, timezone, timedelta
 
 KST = timezone(timedelta(hours=9))
+FOLLOWUP_THRESHOLD = 300  # 팔로업 기준 조회수
+
+
+def check_followup_candidates():
+    """Threads API에서 300회 이상 포스팅 확인"""
+    token = os.environ.get("THREADS_ACCESS_TOKEN")
+    if not token:
+        return []
+
+    BASE = "https://graph.threads.net/v1.0"
+    try:
+        user_id = requests.get(f"{BASE}/me", params={"access_token": token}, timeout=10).json().get("id")
+        resp = requests.get(f"{BASE}/{user_id}/threads",
+            params={"fields": "id,text,timestamp", "limit": 30, "access_token": token}, timeout=10)
+        posts = resp.json().get("data", [])
+
+        candidates = []
+        for post in posts:
+            ins = requests.get(f"{BASE}/{post['id']}/insights",
+                params={"metric": "views", "access_token": token}, timeout=10)
+            if ins.ok:
+                data = ins.json().get("data", [])
+                if data:
+                    views = data[0]["values"][0]["value"]
+                    if views >= FOLLOWUP_THRESHOLD:
+                        text = post.get("text", "")[:40].replace("\n", " ")
+                        ts = post.get("timestamp", "")[:10]
+                        candidates.append((views, ts, text))
+
+        candidates.sort(reverse=True)
+        return candidates[:5]
+    except Exception as e:
+        print(f"팔로업 체크 오류: {e}")
+        return []
+
 
 def generate_briefing():
     trends_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "content_trends.md")
@@ -60,6 +96,13 @@ def generate_briefing():
         lines += [f"\n## 🏛️ 정부·정책"]
         for s, t, l in policy[:5]:
             lines.append(f"- [{t}]({l})")
+
+    # 팔로업 추천 섹션
+    followups = check_followup_candidates()
+    if followups:
+        lines += [f"\n## 🔥 팔로업 추천 ({FOLLOWUP_THRESHOLD}회 이상)"]
+        for views, ts, text in followups:
+            lines.append(f"- {views:,}회 [{ts}] {text}...")
 
     lines += [
         f"\n---",
