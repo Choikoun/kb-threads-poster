@@ -274,9 +274,9 @@
   {
     "id": 10,
     "target": "개인",
-    "posted": false,
-    "posted_at": null,
-    "threads_post_id": null,
+    "posted": true,
+    "posted_at": "2026-06-03 08:06:44",
+    "threads_post_id": "18133569790601069",
     "caption": "노후 준비, 이 3가지면 충분해.\n\n절세하면서 굴리고 비과세로 꺼내는 구조.\n지금 하나도 없으면 오늘 시작해.",
     "card_data": {
       "tag": "# 노후 설계 삼총사",
