@@ -20,13 +20,8 @@ logger = logging.getLogger(__name__)
 
 QUEUE_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "cards_queue.json")
 
-# 타겟별 토픽 태그
-TARGET_TAGS = {
-    "의사": "#절세",
-    "자산가": "#상속세",
-    "사업주": "#법인",
-    "개인": "#연금"
-}
+# 타겟별 토픽 태그 — 내용과 불일치 문제로 비활성화
+TARGET_TAGS = {}
 
 
 def load_queue():

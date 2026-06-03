@@ -37,13 +37,8 @@ THREADS_API_BASE = "https://graph.threads.net/v1.0"
 # 첫 댓글에 달릴 상담 링크
 CONSULTATION_LINK = "지금 내 상황이 궁금하다면 → bit.ly/44CqhMr"
 
-# 타겟별 토픽 태그 (Threads 알고리즘 노출 강화)
-TARGET_TAGS = {
-    "의사": "#절세",
-    "자산가": "#상속세",
-    "사업주": "#법인",
-    "개인": "#연금"
-}
+# 타겟별 토픽 태그 — 내용과 불일치 문제로 비활성화
+TARGET_TAGS = {}
 
 
 def get_env(key):
