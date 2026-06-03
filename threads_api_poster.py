@@ -35,7 +35,7 @@ SCHEDULE = {
 THREADS_API_BASE = "https://graph.threads.net/v1.0"
 
 # 첫 댓글에 달릴 상담 링크
-CONSULTATION_LINK = "상담 신청 → https://bit.ly/44CqhMr"
+CONSULTATION_LINK = "지금 내 상황이 궁금하다면 → bit.ly/44CqhMr"
 
 # 타겟별 토픽 태그 (Threads 알고리즘 노출 강화)
 TARGET_TAGS = {
