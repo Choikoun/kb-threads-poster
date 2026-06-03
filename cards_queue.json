@@ -304,9 +304,9 @@
   {
     "id": 11,
     "target": "개인",
-    "posted": false,
-    "posted_at": null,
-    "threads_post_id": null,
+    "posted": true,
+    "posted_at": "2026-06-03 17:02:36",
+    "threads_post_id": "18068891738384037",
     "caption": "이 말 들으면 100% 사기야.\n\n이제 AI가 자녀 목소리까지 복제해.\n부모님이나 주변 어르신께 꼭 보내줘.",
     "card_data": {
       "tag": "# 보이스피싱 주의",
