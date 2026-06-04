@@ -334,9 +334,9 @@
   {
     "id": 12,
     "target": "사업주",
-    "posted": false,
-    "posted_at": null,
-    "threads_post_id": null,
+    "posted": true,
+    "posted_at": "2026-06-04 07:15:28",
+    "threads_post_id": "18115302556642058",
     "caption": "법인에 지인을 감사로 등록하면 안 되는 이유.\n\n차량 비용도 안 되고, 대표를 감시할 수도 있어.\n등기는 넣는 것보다 빼는 게 훨씬 어려워.",
     "card_data": {
       "tag": "# 법인 임원 주의",
