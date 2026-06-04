@@ -364,9 +364,9 @@
   {
     "id": 13,
     "target": "사업주",
-    "posted": false,
-    "posted_at": null,
-    "threads_post_id": null,
+    "posted": true,
+    "posted_at": "2026-06-04 15:31:25",
+    "threads_post_id": "17890799472511645",
     "caption": "주식 줄 때 순서가 있어.\n\n정관에 양도제한 규정 먼저, 양도는 그 다음.\n이 순서를 모르면 원치 않는 사람이 주주가 될 수 있어.",
     "card_data": {
       "tag": "# 주주 구성 설계",
