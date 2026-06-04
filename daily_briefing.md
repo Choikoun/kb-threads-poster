@@ -1,42 +1,41 @@
 # 📰 일일 브리핑
-*2026-06-04 08:25 KST*
+*2026-06-05 07:59 KST*
 
 ---
 
 ## 🔖 보험 동향
-- [실손보험 적자 1.87조원… 도수치료·비급여주사제에 손실 확대](https://www.insnews.co.kr/news/articleView.html?idxno=91120)
-- [국토부, ‘배달 종사자 유상운송용 보험 가입’ 의무화 시행](https://www.insnews.co.kr/news/articleView.html?idxno=91116)
-- [iFA, iM라이프·RAi와 AI 변액연금보험 개발 착수](https://www.insnews.co.kr/news/articleView.html?idxno=91117)
-- [KB손보, 드론 동호인 목소리 담은 ‘개인용 드론보험’ 선보여](https://www.insnews.co.kr/news/articleView.html?idxno=91109)
-- [보험개발원, ‘첨단안전장치 할인특약’ 가입 편의 제고](https://www.insnews.co.kr/news/articleView.html?idxno=91108)
+- [“국민 보험료 지킨다”… 가짜 진료·가짜 환자 집중 단속](https://www.insnews.co.kr/news/articleView.html?idxno=91143)
+- [금감원, 홍콩 ELS 판매 은행 과징금 6천억원대로 감경](https://www.insnews.co.kr/news/articleView.html?idxno=91141)
+- [“AI로 보험사기 잡는다”… 정부 ‘AI 보험사기 대응 TF’ 출범](https://www.insnews.co.kr/news/articleView.html?idxno=91139)
+- [통합연금포털 이용자 중심 개편한다… 연금상품 비교 기능 강화](https://www.insnews.co.kr/news/articleView.html?idxno=91137)
+- [금융보안원, ‘Digital Finance Insight’ 발간… AI·STO·미토스 보안 위협 조명](https://www.insnews.co.kr/news/articleView.html?idxno=91130)
 
 ## 💰 국내 경제·금융
-- [AI 위협론 눈 녹듯 녹였다…한 달새 2배 오르며 부활한 '이 기업'](https://www.hankyung.com/article/202606023950i)
-- [중동 긴장 재고조에 3대 지수 동반 하락 [뉴욕증시 브리핑]](https://www.hankyung.com/article/2026060461496)
-- ['인기 폭발' 액티브 ETF…계열사 주문 몰아주기에 비용 '줄줄' [한경우의 케이스스터디]](https://www.hankyung.com/article/2026060228906)
-- [[속보] 다우 1% 하락 마감…중동 불안 지속에 유가·금리 상승](https://www.hankyung.com/article/2026060459207)
-- [트럼프 "호르무즈 봉쇄 9월 갈수도"…마벨·인텔 또 급등 이유 [빈난새의 개장전요것만]](https://www.hankyung.com/article/202606035442i)
+- [과열되는 AI '쩐의 전쟁'…머스크 뒤통수 친 구글? [월가 백브리핑]](https://www.hankyung.com/article/202606058438i)
+- [기대 이하 AI매출…브로드컴 주가 '뚝'](https://www.hankyung.com/article/2026060481171)
+- [반도체주 고공행진…'녹아웃' 없는 삼전닉스 ELD 등장](https://www.hankyung.com/article/2026060481161)
+- [증시 활황에…전자등록 증권자산 '1경원' 돌파](https://www.hankyung.com/article/2026060481191)
+- [4.3조 수주한 삼성重, 외국인 매도에 '발목'](https://www.hankyung.com/article/2026060481201)
 
 ## 📈 주식·시장
-- [“코스닥 죽쑨다? 하반기에 봅시다”…ETF들의 ‘근거있는 자신감’](https://www.mk.co.kr/news/stock/12065419)
-- [“9천피 눈앞인데 내 계좌는 미지근” … 선거후 봐야 할 ‘증시 3대 변수’](https://www.mk.co.kr/news/stock/12064882)
-- [전력으로, 로봇으로 … AI 투자 전방위 확산](https://www.mk.co.kr/news/stock/12065084)
-- ['美반도체 3배' 팔아치운 서학개미](https://www.mk.co.kr/news/stock/12065079)
-- [대형 반도체주 쏠림에 … 코스닥 빚투도 주춤](https://www.mk.co.kr/news/stock/12065080)
+- [“우주의 기운 모여든 제2의 반도체 ” … K뷰티 신화 만든 3개 축](https://www.mk.co.kr/news/stock/12065825)
+- [“삼전닉스 너무 올랐나”…반도체 넘어 증권주가 반등할 수 있다는데](https://www.mk.co.kr/news/stock/12066184)
+- [박현주 회장 "킬러 ETF로 시장 새 기준 만들것"](https://www.mk.co.kr/news/stock/12066139)
+- ['젠슨황株' 급락한 날, 코스닥은 날았다](https://www.mk.co.kr/news/stock/12066136)
+- ["더존·리멤버, AI發 산업재편 승자될 것"](https://www.mk.co.kr/news/stock/12065998)
 
 ## 🌏 글로벌 경제·정세
-- [日, 31년 만에 금리 1% 시대 열리나…우에다 "인플레 위험 커" [도쿄나우]](https://www.hankyung.com/article/202606046175i)
-- [트럼프 "이란과 종전 협상 순항…이르면 주말 합의 가능성"](https://www.hankyung.com/article/2026060461247)
-- [美국무 "미국 기업에 대한 한국 정부의 대우, 무역합의에도 영향"](https://www.hankyung.com/article/2026060460227)
-- [美·이란 무력충돌 속 트럼프 "모즈타바 만나길 원해"](https://www.hankyung.com/article/2026060353201)
-- [트럼프 "모즈타바, 종전 협상 분명히 관여…언젠가 만날 것" [종합]](https://www.hankyung.com/article/2026060354327)
+- [트럼프 "이란전, 외교든 군사든 美가 승리…미군 사망 땐 휴전 끝"](https://www.hankyung.com/article/2026060585057)
+- [美, 쿠바 대통령 부부 제재…카스트로 일가도 대상](https://www.hankyung.com/article/2026060584677)
+- ['인플루언서 추천' 샤오미, 알고 보니…후원 표기 없어 '제재'](https://www.hankyung.com/article/2026060483737)
+- ["젊고 예쁜 여성인데…" 트럼프, 기자에 또 '공개 막말' 파문](https://www.hankyung.com/article/2026060474667)
+- ["이란전쟁 지속 땐 의회 승인 받아라"](https://www.hankyung.com/article/2026060481291)
 
 ## 🔥 팔로업 추천 (300회 이상)
-- 1,863회 [2026-06-02] 법인 슈퍼카 세무조사, 핵심만 정리해줄게.  3편으로 나눠서 올릴게. 1...
-- 518회 [2026-06-03] 골드만삭스가 코스피 목표를 1만2000으로 올렸어.  수익이 날수록 세금...
-- 479회 [2026-06-02] 법인 대표가 세무조사에서 걸리는 패턴 4가지.  국세청 2026년 중점 ...
-- 391회 [2026-06-02] 5세대 실손보험이 나왔어.  보험료가 30~50% 낮아졌어.  근데 구조...
-- 367회 [2026-06-03] 트럼프가 이란과 협상이 빠르게 진행된다고 했어.  전쟁이 끝나면 유가가 ...
+- 1,498회 [2026-06-04] 법인 대표 10명 중 7명은 정관에 퇴직금 규정이 없어.  없으면 법인 ...
+- 1,344회 [2026-06-04] 골드만삭스가 코스피 목표를 1만2000으로 올렸어.  9000에서 1만2...
+- 737회 [2026-06-04] 코스피 사상 최고. 삼성전자 시총 2000조.  주식 갖고 있어?  수익...
+- 368회 [2026-06-03] 트럼프가 이란과 협상이 빠르게 진행된다고 했어.  전쟁이 끝나면 유가가 ...
 
 ---
 *총 60개 기사 수집됨*
