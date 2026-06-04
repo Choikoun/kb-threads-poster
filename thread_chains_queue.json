@@ -30,8 +30,8 @@
   {
     "id": 3,
     "target": "자산가",
-    "posted": false,
-    "posted_at": null,
+    "posted": true,
+    "posted_at": "2026-06-04 02:38:04",
     "chain": {
       "main": "골드만삭스가 코스피 목표를 1만2000으로 올렸어.\n\n9000에서 1만2000이야.\n33% 더 오른다는 얘기야.\n\n근데 나는 이게 기쁘면서도 걱정이 돼.\n이유가 있어.",
       "replies": [
