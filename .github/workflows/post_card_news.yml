@@ -1,10 +1,10 @@
 name: 카드뉴스 자동 포스팅
 
 on:
-  schedule:
-    # UTC 기준 (KST = UTC+9) — 매일 2회
-    - cron: '30 3 * * *'   # 12:30 KST (점심) — post_threads 0 3과 충돌 방지
-    - cron: '30 12 * * *'  # 21:30 KST (저녁)
+  # 카드뉴스 중단 (2026-06-05): 텍스트 포스팅 대비 조회수 효율 낮음 (카드 평균 74 vs 텍스트 평균 142)
+  # schedule:
+  #   - cron: '30 3 * * *'   # 12:30 KST
+  #   - cron: '30 12 * * *'  # 21:30 KST
   workflow_dispatch:
     inputs:
       target:
