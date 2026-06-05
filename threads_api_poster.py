@@ -208,12 +208,28 @@ if __name__ == "__main__":
 
     logger.info(f"[{target}] 내용: {post['content'][:50]}...")
 
-    # ── 이중 발행 방지: 포스팅 직전 큐를 다시 읽어 중복 체크 ──
+    # ── 이중 발행 방지 1: 큐 재확인 ──
     fresh_data = load_queue()
     fresh_post = next((p for p in fresh_data.get(target, []) if p['id'] == post['id']), None)
     if not fresh_post or fresh_post.get('posted'):
         logger.warning(f"[{target}] ID {post['id']} 이미 발행됨 (다른 프로세스에서 처리). 건너뜀.")
         exit(0)
+
+    # ── 이중 발행 방지 2: Threads API로 최근 5개 포스팅 텍스트 비교 ──
+    try:
+        recent_resp = requests.get(
+            f"{THREADS_API_BASE}/{user_id}/threads",
+            params={"fields": "text", "limit": 5, "access_token": access_token}
+        )
+        recent_posts = recent_resp.json().get("data", [])
+        post_text = post.get('content', post.get('text', ''))
+        for rp in recent_posts:
+            if rp.get("text", "").strip()[:50] == post_text.strip()[:50]:
+                logger.warning(f"[{target}] 동일 텍스트 포스팅이 이미 존재함. 중복 방지로 건너뜀.")
+                mark_as_posted(target, post['id'])
+                exit(0)
+    except Exception as e:
+        logger.warning(f"중복 체크 실패 (무시하고 진행): {e}")
 
     try:
         # 토픽 태그 추가 (타겟별 1개)

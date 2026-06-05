@@ -3,8 +3,8 @@ name: 카드뉴스 자동 포스팅
 on:
   schedule:
     # UTC 기준 (KST = UTC+9) — 매일 2회
-    - cron: '0 3 * * *'    # 12:00 KST (점심)
-    - cron: '0 12 * * *'   # 21:00 KST (저녁)
+    - cron: '30 3 * * *'   # 12:30 KST (점심) — post_threads 0 3과 충돌 방지
+    - cron: '30 12 * * *'  # 21:30 KST (저녁)
   workflow_dispatch:
     inputs:
       target:
