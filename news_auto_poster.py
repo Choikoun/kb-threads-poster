@@ -15,9 +15,10 @@ from dotenv import load_dotenv
 load_dotenv()
 sys.stdout.reconfigure(encoding='utf-8')
 
-TOKEN     = os.getenv('THREADS_ACCESS_TOKEN')
-IMGBB_KEY = os.getenv('IMGBB_API_KEY')
-GEMINI_KEY= os.getenv('GEMINI_API_KEY')
+TOKEN       = os.getenv('THREADS_ACCESS_TOKEN')
+IMGBB_KEY   = os.getenv('IMGBB_API_KEY')
+GEMINI_KEY  = os.getenv('GEMINI_API_KEY')
+YOUTUBE_KEY = os.getenv('YOUTUBE_API_KEY')
 
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0'
@@ -109,7 +110,43 @@ def get_hot_news(category='economy'):
     print(f'뉴스 {len(unique)}개 수집 (키워드 필터: {keywords if keywords else "없음"})')
     return unique[:25]
 
-# ─── 2. 기사 이미지 추출 ─────────────────────────────────────────
+# ─── 2. YouTube 썸네일 ───────────────────────────────────────────
+
+def get_youtube_thumbnail(query):
+    """뉴스 키워드로 YouTube 영상 검색 → 고화질 썸네일 다운로드"""
+    if not YOUTUBE_KEY:
+        return None
+    try:
+        r = requests.get('https://www.googleapis.com/youtube/v3/search', params={
+            'key': YOUTUBE_KEY,
+            'q': query,
+            'part': 'snippet',
+            'type': 'video',
+            'videoCategoryId': '25',   # 뉴스/정치
+            'order': 'relevance',
+            'maxResults': 5,
+            'relevanceLanguage': 'ko',
+            'regionCode': 'KR',
+        }, timeout=10)
+        data = r.json()
+        items = data.get('items', [])
+        if not items:
+            print(f'  YouTube 검색 결과 없음')
+            return None
+
+        for item in items:
+            video_id = item['id']['videoId']
+            for quality in ['maxresdefault', 'hqdefault', 'mqdefault']:
+                thumb_url = f'https://i.ytimg.com/vi/{video_id}/{quality}.jpg'
+                ir = requests.get(thumb_url, headers=HEADERS, timeout=10)
+                if ir.status_code == 200 and len(ir.content) > 50000:
+                    print(f'  YouTube 썸네일 ({quality}): {len(ir.content)//1024}KB')
+                    return ir.content
+    except Exception as e:
+        print(f'  YouTube 오류: {e}')
+    return None
+
+# ─── 3. 기사 이미지 추출 (YouTube 실패 시 폴백) ──────────────────
 
 def get_article_image(url):
     try:
@@ -269,17 +306,27 @@ def main():
 
     image_url = None
     print('이미지 탐색 중...')
-    sel = content['selected_title'][:20]
-    for article in articles:
-        if sel in article['title'] or article['title'][:20] in sel:
-            print(f'  매칭 기사: {article["title"]}')
-            img_bytes = get_article_image(article['link'])
-            if img_bytes:
-                image_url = upload_to_imgbb(img_bytes)
-            break
+
+    # 1순위: YouTube 썸네일 (뉴스 방송 화면)
+    search_query = content['selected_title']
+    print(f'  YouTube 검색: {search_query[:30]}...')
+    img_bytes = get_youtube_thumbnail(search_query)
+    if img_bytes:
+        image_url = upload_to_imgbb(img_bytes)
+
+    # 2순위: 기사 og:image (YouTube 실패 시 폴백)
+    if not image_url:
+        print('  YouTube 실패 → 기사 이미지 시도')
+        sel = content['selected_title'][:20]
+        for article in articles:
+            if sel in article['title'] or article['title'][:20] in sel:
+                print(f'  매칭 기사: {article["title"]}')
+                img_bytes = get_article_image(article['link'])
+                if img_bytes:
+                    image_url = upload_to_imgbb(img_bytes)
+                break
 
     if not image_url:
-        # 이미지 없으면 상위 5개 기사 순서대로 시도
         for article in articles[:5]:
             img_bytes = get_article_image(article['link'])
             if img_bytes:
