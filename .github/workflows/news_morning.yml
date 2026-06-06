@@ -1,0 +1,34 @@
+name: 뉴스 자동포스팅 - 오전 (법인·사업주)
+
+on:
+  schedule:
+    - cron: '0 0 * * *'   # 매일 09:00 KST
+  workflow_dispatch:
+    inputs:
+      category:
+        description: '카테고리'
+        default: 'business'
+
+concurrency:
+  group: news-morning
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  post_news:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: 패키지 설치
+        run: pip install requests feedparser google-genai beautifulsoup4 python-dotenv
+      - name: 법인·사업주 뉴스 포스팅
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          IMGBB_API_KEY: ${{ secrets.IMGBB_API_KEY }}
+        run: python news_auto_poster.py business

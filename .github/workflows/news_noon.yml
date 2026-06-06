@@ -1,12 +1,16 @@
-name: 뉴스 자동 포스팅
+name: 뉴스 자동포스팅 - 점심 (경제·시장)
 
 on:
   schedule:
-    - cron: '0 1 * * *'   # 매일 10:00 KST
-  workflow_dispatch:        # 수동 실행 가능
+    - cron: '0 3 * * *'   # 매일 12:00 KST
+  workflow_dispatch:
+    inputs:
+      category:
+        description: '카테고리'
+        default: 'economy'
 
 concurrency:
-  group: news-posting
+  group: news-noon
   cancel-in-progress: false
 
 permissions:
@@ -15,22 +19,16 @@ permissions:
 jobs:
   post_news:
     runs-on: ubuntu-latest
-
     steps:
-      - name: 코드 체크아웃
-        uses: actions/checkout@v4
-
-      - name: Python 설정
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-
       - name: 패키지 설치
         run: pip install requests feedparser google-genai beautifulsoup4 python-dotenv
-
-      - name: 뉴스 자동 포스팅 실행
+      - name: 경제·시장 뉴스 포스팅
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
           IMGBB_API_KEY: ${{ secrets.IMGBB_API_KEY }}
-        run: python news_auto_poster.py
+        run: python news_auto_poster.py economy
