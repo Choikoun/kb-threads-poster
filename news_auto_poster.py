@@ -161,6 +161,8 @@ def get_youtube_thumbnail(query):
             print(f'  YouTube 검색 결과 없음')
             return None
 
+        # 중복 방지: 결과 셔플 후 순서대로 시도
+        random.shuffle(items)
         for item in items:
             video_id = item['id']['videoId']
             for quality in ['maxresdefault', 'hqdefault', 'mqdefault']:
@@ -265,9 +267,10 @@ def generate_content(articles, category='economy'):
 3. 묵직한 마무리 한 줄
 
 [댓글 구조]
+- 댓글 수는 1~3개. 내용 흐름에 맞게 자유롭게 결정. 억지로 3개 채우지 않는다.
 - 댓글1: 숫자 단독 줄 + 그 의미 (빈줄 포함, 3~4줄)
-- 댓글2: 핵심 반전 포인트 하나 (빈줄 포함, 3~4줄)
-- 댓글3: 독자 당사자화 질문 (2~3줄, 마지막만 존댓말)
+- 댓글2 (선택): 핵심 반전 포인트 하나 (빈줄 포함, 3~4줄)
+- 마지막 댓글: 독자 당사자화 질문으로 마무리 (2~3줄, 마지막만 존댓말)
 
 JSON만 출력:
 {{
