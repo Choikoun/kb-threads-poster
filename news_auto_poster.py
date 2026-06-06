@@ -138,7 +138,7 @@ def get_youtube_thumbnail(query):
             for quality in ['maxresdefault', 'hqdefault', 'mqdefault']:
                 thumb_url = f'https://i.ytimg.com/vi/{video_id}/{quality}.jpg'
                 ir = requests.get(thumb_url, headers=HEADERS, timeout=10)
-                if ir.status_code == 200 and len(ir.content) > 50000:
+                if ir.status_code == 200 and len(ir.content) > 5000:
                     print(f'  YouTube 썸네일 ({quality}): {len(ir.content)//1024}KB')
                     return ir.content
     except Exception as e:
@@ -201,8 +201,8 @@ def generate_content(articles, category='economy'):
     cat = CATEGORIES.get(category, CATEGORIES['economy'])
     news_list = '\n'.join([f"{i+1}. {a['title']}" for i, a in enumerate(articles[:20])])
 
-    prompt = f"""너는 한국 Threads에서 바이럴 컨텐츠를 만드는 금융 크리에이터야.
-아래 뉴스 중 가장 바이럴 가능성 높은 것 하나 골라서 포스트를 작성해줘.
+    prompt = f"""너는 한국 Threads에서 팔로워를 끌어모으는 금융 전문가야.
+아래 뉴스 중 {cat['name']} 독자에게 가장 임팩트 있는 것 하나 골라서 포스트를 작성해줘.
 
 [오늘 뉴스]
 {news_list}
@@ -210,22 +210,37 @@ def generate_content(articles, category='economy'):
 [작성 각도]
 {cat['angle']}
 
-[작성 규칙]
-- 반말 사용
-- 훅: 반전·호기심·"대부분이 모르는" 각도. 읽자마자 스크롤 멈추게.
-- 억지로 보험/상담 연결 절대 금지. 화두만 던지고 끝낸다.
-- 독자가 "나 해당되는 거 아냐?" 느끼면 됨. 내가 유도하지 않는다.
-- 각 댓글: 구체적 수치/사실 포함, 5~8줄
-- 마지막 댓글: 독자 스스로 생각해볼 포인트로 마무리 (상담 CTA 금지)
+[핵심 원칙 - 반드시 지켜]
+- 전부 반말
+- 정보 설명하는 글 절대 금지. "전문가 판단"을 보여주는 글만.
+- 상담/DM/점검 유도 절대 금지. 화두만 던지고 끝낸다.
+- 한 줄 15~25자 수준. 짧고 끊어지게.
+- 잘되는 훅: "국세청이 직접 경고했어", "대부분이 잘못 알고 있어", "이거 해당되는 사람 많을 거야"
+- 구구절절 설명 금지. 핵심만 툭툭 던진다.
+
+[메인 포스트 구조 - 반전형]
+1. 훅: 흔한 믿음이나 뉴스 사실을 "뒤집는" 각도로 시작 (2줄)
+2. 반전: "근데 실제론..." 식으로 뒤집기 (1~2줄)
+3. 묵직한 마무리 한 줄
+
+[댓글 구조]
+- 댓글1: 구체적 숫자/사실 1~2개만 툭 던지기 (3~4줄)
+- 댓글2: "이게 핵심이야" 포인트 하나만 (3~4줄)
+- 댓글3: 독자 스스로 생각하게 만드는 질문으로 마무리 (2~3줄, 마지막 질문만 존댓말)
+
+[예시 - 이런 톤]
+메인: "은행이 갑자기 사장님들한테 손 내미는 이유가 뭔지 알아?\n월급쟁이보다 법인 대표한테서 3배 더 뽑아낼 수 있거든.\n근데 이걸 거꾸로 이용하면 얘기가 달라져."
+댓글1: "법인 금융 수익률이 개인 리테일보다 2~3배 높아.\n은행이 친절한 게 아니야. 더 벌 수 있으니까 모시는 거야."
+댓글3: "지금 거래하는 은행에서 법인 절세 얘기 먼저 꺼낸 적 있나요?"
 
 JSON만 출력:
 {{
   "selected_title": "선택한 뉴스 제목",
-  "main": "메인 포스트 텍스트 (훅 강하게, 3~5줄)",
+  "main": "메인 포스트 텍스트",
   "comments": [
-    "댓글1 (5~8줄, 구체적 수치 포함)",
-    "댓글2 (5~8줄, 핵심 내용 전개)",
-    "댓글3 (5~8줄, 독자가 생각해볼 포인트로 마무리)"
+    "댓글1",
+    "댓글2",
+    "댓글3 (마지막 질문만 존댓말)"
   ]
 }}"""
 
@@ -307,10 +322,10 @@ def main():
     print('이미지 탐색 중...')
 
     # 1순위: YouTube 썸네일 (뉴스 방송 화면)
-    # 검색어: 제목에서 핵심 키워드만 추출 (특수문자 제거, 15자 이내)
+    # 검색어: 특수문자 전부 제거 후 핵심어만
     raw_title = content['selected_title']
-    search_query = re.sub(r'["""\'…·]', '', raw_title)  # 특수문자 제거
-    search_query = re.sub(r'\s+', ' ', search_query).strip()[:30]  # 30자로 제한
+    search_query = re.sub(r'[^\w\s]', ' ', raw_title)   # 특수문자 → 공백
+    search_query = re.sub(r'\s+', ' ', search_query).strip()[:25]  # 25자로 제한
     print(f'  YouTube 검색: {search_query}')
     img_bytes = get_youtube_thumbnail(search_query)
     if img_bytes:
