@@ -1,0 +1,35 @@
+name: 뉴스 자동포스팅 - 저녁 8시 (국무회의·현안)
+
+on:
+  schedule:
+    - cron: '0 11 * * *'   # 매일 20:00 KST
+  workflow_dispatch:
+    inputs:
+      category:
+        description: '카테고리'
+        default: 'government'
+
+concurrency:
+  group: news-government
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  post_news:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: 패키지 설치
+        run: pip install requests feedparser google-genai beautifulsoup4 python-dotenv
+      - name: 국무회의·현안 포스팅
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          IMGBB_API_KEY: ${{ secrets.IMGBB_API_KEY }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: python news_auto_poster.py government

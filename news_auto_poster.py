@@ -70,6 +70,18 @@ CATEGORIES = {
         'keywords': ['시행령', '개정', '정책', '법안', '국세청', '금융위', '기재부', '세법', '고시',
                      '발표', '시행', '규제', '완화', '강화', '세율', '공제', '한도'],
         'angle': '정부 정책·시행령·세법 개정이 사업주·자산가·일반인 지갑에 미치는 영향 관점. "이거 나한테 해당되는 거 아냐?" 느끼게.'
+    },
+    'government': {
+        'name': '국무회의·현안',
+        'feeds': [
+            'https://www.yna.co.kr/rss/politics.xml',        # 연합뉴스 정치
+            'https://www.newsis.com/RSS/politics.xml',        # 뉴시스 정치
+            'https://www.yna.co.kr/rss/economy.xml',         # 연합뉴스 경제
+        ],
+        'keywords': ['국무회의', '대통령', '국무총리', '현안', '정책토론', '장관', '내각', '용산',
+                     '국정', '청와대', '관계부처', '당정'],
+        'angle': '국무회의·대통령 현안·정부 정책토론이 사업주·자산가·서민 경제에 미치는 영향 관점. 정치 얘기 아님. 내 돈과 사업에 어떤 영향인지로만 풀어내기.',
+        'youtube_hint': '국무회의 대통령'  # YouTube 검색 힌트 (회의 현장 사진)
     }
 }
 
@@ -344,11 +356,17 @@ def main():
     print('이미지 탐색 중...')
 
     # 1순위: YouTube 썸네일 (뉴스 방송 화면)
-    # Gemini가 뽑은 YouTube 키워드 사용
-    search_query = content.get('youtube_keyword', '')
-    if not search_query:
-        raw_title = content['selected_title']
-        search_query = re.sub(r'[^\w\s]', ' ', raw_title).strip()[:25]
+    cat_info = CATEGORIES.get(category, {})
+    youtube_hint = cat_info.get('youtube_hint', '')  # 카테고리 고정 힌트 (government 등)
+
+    if youtube_hint:
+        # government처럼 회의 현장 사진이 필요한 카테고리는 hint 우선
+        search_query = youtube_hint
+    else:
+        search_query = content.get('youtube_keyword', '')
+        if not search_query:
+            raw_title = content['selected_title']
+            search_query = re.sub(r'[^\w\s]', ' ', raw_title).strip()[:25]
     print(f'  YouTube 검색: {search_query}')
     img_bytes = get_youtube_thumbnail(search_query)
     if img_bytes:
