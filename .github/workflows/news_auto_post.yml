@@ -1,0 +1,36 @@
+name: 뉴스 자동 포스팅
+
+on:
+  schedule:
+    - cron: '0 1 * * *'   # 매일 10:00 KST
+  workflow_dispatch:        # 수동 실행 가능
+
+concurrency:
+  group: news-posting
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  post_news:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 코드 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Python 설정
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 패키지 설치
+        run: pip install requests feedparser google-genai beautifulsoup4 python-dotenv
+
+      - name: 뉴스 자동 포스팅 실행
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          IMGBB_API_KEY: ${{ secrets.IMGBB_API_KEY }}
+        run: python news_auto_poster.py
