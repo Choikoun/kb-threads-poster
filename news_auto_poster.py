@@ -119,10 +119,9 @@ def get_youtube_thumbnail(query):
     try:
         r = requests.get('https://www.googleapis.com/youtube/v3/search', params={
             'key': YOUTUBE_KEY,
-            'q': query,
+            'q': query + ' 뉴스',
             'part': 'snippet',
             'type': 'video',
-            'videoCategoryId': '25',   # 뉴스/정치
             'order': 'relevance',
             'maxResults': 5,
             'relevanceLanguage': 'ko',
@@ -308,8 +307,11 @@ def main():
     print('이미지 탐색 중...')
 
     # 1순위: YouTube 썸네일 (뉴스 방송 화면)
-    search_query = content['selected_title']
-    print(f'  YouTube 검색: {search_query[:30]}...')
+    # 검색어: 제목에서 핵심 키워드만 추출 (특수문자 제거, 15자 이내)
+    raw_title = content['selected_title']
+    search_query = re.sub(r'["""\'…·]', '', raw_title)  # 특수문자 제거
+    search_query = re.sub(r'\s+', ' ', search_query).strip()[:30]  # 30자로 제한
+    print(f'  YouTube 검색: {search_query}')
     img_bytes = get_youtube_thumbnail(search_query)
     if img_bytes:
         image_url = upload_to_imgbb(img_bytes)
