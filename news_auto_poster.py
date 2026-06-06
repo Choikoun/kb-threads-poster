@@ -236,6 +236,7 @@ def generate_content(articles, category='economy'):
 JSON만 출력:
 {{
   "selected_title": "선택한 뉴스 제목",
+  "youtube_keyword": "YouTube에서 관련 뉴스 영상 찾을 검색어 (한국어 2~4단어, 뉴스 방송에 나올 법한 키워드)",
   "main": "메인 포스트 텍스트",
   "comments": [
     "댓글1",
@@ -322,10 +323,11 @@ def main():
     print('이미지 탐색 중...')
 
     # 1순위: YouTube 썸네일 (뉴스 방송 화면)
-    # 검색어: 특수문자 전부 제거 후 핵심어만
-    raw_title = content['selected_title']
-    search_query = re.sub(r'[^\w\s]', ' ', raw_title)   # 특수문자 → 공백
-    search_query = re.sub(r'\s+', ' ', search_query).strip()[:25]  # 25자로 제한
+    # Gemini가 뽑은 YouTube 키워드 사용
+    search_query = content.get('youtube_keyword', '')
+    if not search_query:
+        raw_title = content['selected_title']
+        search_query = re.sub(r'[^\w\s]', ' ', raw_title).strip()[:25]
     print(f'  YouTube 검색: {search_query}')
     img_bytes = get_youtube_thumbnail(search_query)
     if img_bytes:
