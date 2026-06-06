@@ -5,7 +5,7 @@
 - 오후 12시: 경제·시장
 - 오후 6시: 보험·노후·상속
 """
-import os, sys, json, time, base64, re
+import os, sys, json, time, base64, re, random
 import requests
 import feedparser
 from bs4 import BeautifulSoup
@@ -117,9 +117,11 @@ def get_youtube_thumbnail(query):
     if not YOUTUBE_KEY:
         return None
     try:
+        channel = random.choice(['KBS 뉴스', 'SBS 뉴스', 'MBC 뉴스', 'YTN'])
+        search_q = f'{channel} {query}'
         r = requests.get('https://www.googleapis.com/youtube/v3/search', params={
             'key': YOUTUBE_KEY,
-            'q': query + ' 뉴스',
+            'q': search_q,
             'part': 'snippet',
             'type': 'video',
             'order': 'relevance',
