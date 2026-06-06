@@ -1,5 +1,5 @@
 # 📰 일일 브리핑
-*2026-06-05 21:13 KST*
+*2026-06-07 07:51 KST*
 
 ---
 
@@ -11,25 +11,32 @@
 - [금융보안원, ‘Digital Finance Insight’ 발간… AI·STO·미토스 보안 위협 조명](https://www.insnews.co.kr/news/articleView.html?idxno=91130)
 
 ## 💰 국내 경제·금융
-- ['아파트값은 올라도 주가는 안오른다?'…GS건설, 반등할 수 있을까](https://www.hankyung.com/article/202605296995i)
-- [스페이스X로 몰려가는 증시 자금…'삼전닉스' 조정 시작됐나](https://www.hankyung.com/article/2026060502141)
-- [미친 듯이 파는 외국인…증시·환율 '검은 금요일'](https://www.hankyung.com/article/2026060502691)
-- [하이닉스 담은 美 AI ETF '고공행진'](https://www.hankyung.com/article/2026060501881)
-- [반도체로 급등했던 코스피, 반도체 악재에 '급락'…"대형 IPO 앞두고 현금화" 움직임도](https://www.hankyung.com/article/202606059708i)
+- [반도체 급락에 개미들 '당황'…연기금·외국인은 '이것' 샀다 [종목+]](https://www.hankyung.com/article/2026060595766)
+- [코스피 오를 때 20% 빠진 '이 종목'…"하반기 희소식 있다" [종목+]](https://www.hankyung.com/article/2026060599406)
+- ["어제 레버리지 샀더니…" 삼전닉스 급락에 개미들 '멘붕'](https://www.hankyung.com/article/2026060607267)
+- [나스닥 4% 투매…① 메모리 정점? ② 메타도 증자? ③ 머스크 거부한 S&P [김현석의 월스트리트나우]](https://www.hankyung.com/article/202606060558i)
+- [17년만에 최고 찍은 원달러 환율…하반기 전망과 수혜·피해주는](https://www.hankyung.com/article/202606059310i)
 
 ## 📈 주식·시장
+- [美반도체 지수 5일 하루에만 10% 폭락.. 삼전닉스 괜찮을까](https://www.mk.co.kr/news/business/12067462)
+- [“너만 혼자 거지될래?”…예금 깨고 나온 돈, 우주항공·AI ETF로 향한다](https://www.mk.co.kr/news/stock/12067455)
+- [“코스피 로봇 대장주, 다들 아시죠?”...‘현대차 이름표’ 단 ETF 봇물](https://www.mk.co.kr/news/stock/12067361)
+- [“외국인 연일 조 단위로 던지더니”…환율 ‘초비상’ 1550원선도 돌파](https://www.mk.co.kr/news/economy/12067295)
 - [이재명 대통령 “주식 평가 정상화…고통 없는 연금개혁의 좋은 수단될 것”](https://www.mk.co.kr/news/stock/12067151)
-- [美브로드컴이 불지핀 반도체株 단기 고점론 … 삼전닉스 숨고르기](https://www.mk.co.kr/news/stock/12067130)
-- [EU '탈중국 공급망' 에 … K배터리株 반사이익](https://www.mk.co.kr/news/stock/12067098)
-- [현대차 '이름표' 달린 ETF도 쏟아진다](https://www.mk.co.kr/news/stock/12067096)
-- [큰손도 '포모' 느낀 스페이스X 상장 … 국내 청약 1분만에 완판](https://www.mk.co.kr/news/stock/12067071)
 
 ## 🌏 글로벌 경제·정세
-- ["중국 자본 다 빠져나가게 생겼다"…초강력 통제 나선 中](https://www.hankyung.com/article/2026060502101)
-- ["트럼프 건강보고서에 탈모약 복용 기록 빠져…투명성 논란"](https://www.hankyung.com/article/2026060502607)
-- [美 "합의는 합의"…'15% 관세' 유지할 듯](https://www.hankyung.com/article/2026060502331)
-- [美 정부, 오픈AI 지분 갖나](https://www.hankyung.com/article/2026060502031)
-- [[포토] 성난 알바니아 시민들 "트럼프 사위 관광단지 개발 반대"](https://www.hankyung.com/article/2026060502041)
+- [美, 이란 군시설 폭격…이란은 미군기지에 미사일 쐈다](https://www.hankyung.com/article/2026060608257)
+- ["자존심 세고 강한 이란"…트럼프, '종전 협상 장기화' 시사](https://www.hankyung.com/article/2026060608187)
+- [[속보] 미군 "호르무즈·걸프국들 겨냥한 이란 드론·미사일 요격"](https://www.hankyung.com/article/2026060608027)
+- [[속보] 이란 "쿠웨이트·바레인 미군기지에 탄도미사일 발사"<로이터>](https://www.hankyung.com/article/2026060607997)
+- [[속보] 이란 "호르무즈 '무허가 통항 시도' 유조선에 발포" <로이터>](https://www.hankyung.com/article/2026060607987)
+
+## 🔥 팔로업 추천 (300회 이상)
+- 13,689회 [2026-06-06] 젠슨황이 삼겹살 먹으러 한국 온 게 아니야.  7개월만에 또 왔어. 최태...
+- 8,683회 [2026-06-06] 미국 반도체 10% 폭락, 삼전닉스 괜찮을지 걱정돼? 그건 시장이 보여주...
+- 901회 [2026-06-06] 작년 전통시장 매출 20조원 돌파.  대통령의 시장 방문, 단순 이벤트가...
+- 456회 [2026-06-06] 10억 자산가 상속세 계산해봤어.  배우자 있고 자녀 2명 기준.  일괄...
+- 405회 [2026-06-06] 젠슨황이 왔는데 코스피는 떨어졌어.  삼겹살 회동, SK·LG·네이버·현...
 
 ---
 *총 60개 기사 수집됨*
