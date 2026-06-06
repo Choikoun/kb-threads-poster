@@ -29,28 +29,31 @@ CATEGORIES = {
     'business': {
         'name': '법인·사업주',
         'feeds': [
-            'https://news.google.com/rss/search?q=법인+세금+사업주+절세+규제&hl=ko&gl=KR&ceid=KR:ko',
-            'https://news.google.com/rss/search?q=중소기업+법인세+대표이사+창업+경영&hl=ko&gl=KR&ceid=KR:ko',
-            'https://news.google.com/rss/search?q=사업+기업+세무+지분+주주&hl=ko&gl=KR&ceid=KR:ko',
+            'https://www.mk.co.kr/rss/30000001/',           # 매일경제 경제
+            'https://www.newsis.com/RSS/economy.xml',        # 뉴시스 경제
+            'https://biz.chosun.com/arc/outboundfeeds/rss/?outputType=xml',  # 조선비즈
         ],
+        'keywords': ['법인', '사업주', '대표이사', '세금', '절세', '기업', '창업', '사업자', '세무', '지분'],
         'angle': '법인 운영, 절세, 지분 설계, 사업주 세금 관점. 사업주·법인 대표가 "나 해당되는 거 아냐?" 느끼게.'
     },
     'economy': {
         'name': '경제·시장',
         'feeds': [
-            'https://news.google.com/rss?hl=ko&gl=KR&ceid=KR:ko',
-            'https://news.google.com/rss/search?q=금리+환율+주식+부동산+코스피&hl=ko&gl=KR&ceid=KR:ko',
-            'https://news.google.com/rss/search?q=경제+투자+자산+시장+정책&hl=ko&gl=KR&ceid=KR:ko',
+            'https://www.yna.co.kr/rss/economy.xml',         # 연합뉴스 경제
+            'https://www.mk.co.kr/rss/50200011/',            # 매일경제 증권
+            'https://www.newsis.com/RSS/economy.xml',        # 뉴시스 경제
         ],
+        'keywords': [],  # 필터 없음 - 경제 전반
         'angle': '경제·시장 이슈가 개인 자산과 투자에 미치는 영향 관점. 독자가 "내 돈에 영향 있겠다" 느끼게.'
     },
     'insurance': {
         'name': '보험·노후·상속',
         'feeds': [
-            'https://news.google.com/rss/search?q=보험+연금+상속세+증여+노후&hl=ko&gl=KR&ceid=KR:ko',
-            'https://news.google.com/rss/search?q=상속+증여세+변액연금+노후준비+은퇴&hl=ko&gl=KR&ceid=KR:ko',
-            'https://news.google.com/rss/search?q=생명보험+종신보험+연금저축+IRP&hl=ko&gl=KR&ceid=KR:ko',
+            'https://www.mk.co.kr/rss/30000001/',            # 매일경제 경제
+            'https://www.yna.co.kr/rss/economy.xml',         # 연합뉴스 경제
+            'https://biz.chosun.com/arc/outboundfeeds/rss/?outputType=xml',  # 조선비즈
         ],
+        'keywords': ['보험', '연금', '상속', '증여', '노후', '은퇴', '연금저축', 'IRP', '변액', '종신'],
         'angle': '보험, 연금, 상속·증여, 노후 준비 관점. 독자가 "내 노후·상속 괜찮나?" 느끼게.'
     }
 }
@@ -60,21 +63,41 @@ CATEGORIES = {
 def get_hot_news(category='economy'):
     cat = CATEGORIES.get(category, CATEGORIES['economy'])
     print(f'카테고리: {cat["name"]}')
+    keywords = cat.get('keywords', [])
 
     articles = []
     for url in cat['feeds']:
         try:
             feed = feedparser.parse(url)
-            for entry in feed.entries[:10]:
+            for entry in feed.entries[:15]:
                 title = entry.get('title', '')
                 title = re.sub(r'\s*-\s*[^-]+$', '', title).strip()
+                link = entry.get('link', '')
+
+                # 키워드 필터 (카테고리에 키워드가 있으면 해당 키워드 포함 기사만)
+                if keywords and not any(kw in title for kw in keywords):
+                    continue
+
                 articles.append({
                     'title': title,
-                    'link': entry.get('link', ''),
+                    'link': link,
                     'summary': entry.get('summary', '')[:200],
                 })
         except Exception as e:
             print(f'피드 오류: {e}')
+
+    # 키워드 필터 후 기사 부족하면 전체에서 추가
+    if len(articles) < 10 and keywords:
+        for url in cat['feeds']:
+            try:
+                feed = feedparser.parse(url)
+                for entry in feed.entries[:10]:
+                    title = re.sub(r'\s*-\s*[^-]+$', '', entry.get('title', '')).strip()
+                    link = entry.get('link', '')
+                    if not any(a['title'] == title for a in articles):
+                        articles.append({'title': title, 'link': link, 'summary': ''})
+            except:
+                pass
 
     # 중복 제거
     seen = set()
@@ -83,6 +106,7 @@ def get_hot_news(category='economy'):
         if a['title'] not in seen:
             seen.add(a['title'])
             unique.append(a)
+    print(f'뉴스 {len(unique)}개 수집 (키워드 필터: {keywords if keywords else "없음"})')
     return unique[:25]
 
 # ─── 2. 기사 이미지 추출 ─────────────────────────────────────────
@@ -113,7 +137,7 @@ def get_article_image(url):
             img_url = 'https:' + img_url
 
         ir = requests.get(img_url, headers=HEADERS, timeout=12)
-        if ir.status_code == 200 and len(ir.content) > 8000:
+        if ir.status_code == 200 and len(ir.content) > 50000:  # 50KB 이상만
             print(f'  이미지 다운로드: {len(ir.content)//1024}KB')
             return ir.content
     except Exception as e:
