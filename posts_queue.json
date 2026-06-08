@@ -1037,9 +1037,10 @@
     {
       "id": 183,
       "approved": true,
-      "posted": false,
-      "posted_at": null,
-      "content": "감사 등록하려고?\n\n잠깐.\n감사는 대표를 감시할 수 있어.\n이사랑 달라."
+      "posted": true,
+      "posted_at": "2026-06-08 11:47:27",
+      "content": "감사 등록하려고?\n\n잠깐.\n감사는 대표를 감시할 수 있어.\n이사랑 달라.",
+      "threads_post_id": "18103862966051029"
     },
     {
       "id": 184,
