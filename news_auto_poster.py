@@ -284,17 +284,22 @@ JSON만 출력:
   ]
 }}"""
 
-    try:
-        resp = client.models.generate_content(
-            model='gemini-2.5-flash',
-            contents=prompt
-        )
-        raw = resp.text.strip()
-        m = re.search(r'\{[\s\S]*\}', raw)
-        if m:
-            return json.loads(m.group())
-    except Exception as e:
-        print(f'Gemini 오류: {e}')
+    for attempt in range(3):
+        try:
+            resp = client.models.generate_content(
+                model='gemini-2.5-flash',
+                contents=prompt
+            )
+            raw = resp.text.strip()
+            m = re.search(r'\{[\s\S]*\}', raw)
+            if m:
+                return json.loads(m.group())
+        except Exception as e:
+            print(f'Gemini 오류 (시도 {attempt+1}/3): {e}')
+            if attempt < 2:
+                wait = 20 * (attempt + 1)
+                print(f'  {wait}초 후 재시도...')
+                time.sleep(wait)
     return None
 
 # ─── 4. Threads 포스팅 ───────────────────────────────────────────
