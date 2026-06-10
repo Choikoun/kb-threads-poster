@@ -1,8 +1,11 @@
 name: 타래 자동 포스팅
 
 on:
-  schedule:
-    - cron: '0 0 * * *'   # 매일 09:00 KST (UTC 00:00)
+  # 자동 스케줄 비활성화 (2026-06-10): 발행 시 "상담 신청 → bit.ly/44CqhMr" 댓글을
+  # 자동 첨부하는 코드가 현재 콘텐츠 가이드라인(상담 유도 절대 금지)에 위배되어 중단.
+  # news_auto_poster 5개 카테고리(하루 5회)로 통합 운영.
+  # schedule:
+  #   - cron: '0 0 * * *'   # 매일 09:00 KST (UTC 00:00)
   workflow_dispatch:
 
 concurrency:
