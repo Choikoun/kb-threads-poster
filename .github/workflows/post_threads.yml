@@ -1,16 +1,19 @@
 name: Threads 자동 포스팅
 
 on:
-  schedule:
-    # UTC 기준 (KST = UTC+9) — 2시간 간격, 08:00~22:00 KST
-    - cron: '0 23 * * *'   # 08:00 KST → 의사
-    - cron: '0 1 * * *'    # 10:00 KST → 자산가
-    - cron: '0 3 * * *'    # 12:00 KST → 사업주
-    - cron: '0 5 * * *'    # 14:00 KST → 개인
-    - cron: '0 7 * * *'    # 16:00 KST → 의사
-    - cron: '0 9 * * *'    # 18:00 KST → 자산가
-    - cron: '0 11 * * *'   # 20:00 KST → 사업주
-    - cron: '0 13 * * *'   # 22:00 KST → 개인
+  # 큐 기반 자동포스팅 중단 (2026-06-10): news_auto_poster 5개 카테고리로 통합.
+  # 옛날 큐(posts_queue.json)는 체크리스트형/원칙론형 콘텐츠 + bit.ly 상담유도 댓글 포함되어
+  # 현재 콘텐츠 가이드라인(상담 유도 절대 금지)에 위배되어 비활성화.
+  # schedule:
+  #   # UTC 기준 (KST = UTC+9) — 2시간 간격, 08:00~22:00 KST
+  #   - cron: '0 23 * * *'   # 08:00 KST → 의사
+  #   - cron: '0 1 * * *'    # 10:00 KST → 자산가
+  #   - cron: '0 3 * * *'    # 12:00 KST → 사업주
+  #   - cron: '0 5 * * *'    # 14:00 KST → 개인
+  #   - cron: '0 7 * * *'    # 16:00 KST → 의사
+  #   - cron: '0 9 * * *'    # 18:00 KST → 자산가
+  #   - cron: '0 11 * * *'   # 20:00 KST → 사업주
+  #   - cron: '0 13 * * *'   # 22:00 KST → 개인
   workflow_dispatch:
     inputs:
       target:
