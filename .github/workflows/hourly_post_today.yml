@@ -1,8 +1,12 @@
 name: 오늘만 시간당 포스팅
 
 on:
-  schedule:
-    - cron: '0 * * * *'   # 매 시간 정각 실행
+  # 자동 스케줄 비활성화 (2026-06-10): 날짜 체크(2026-05-28 only)가 step exit 0으로는
+  # 이후 step을 막지 못해 매시간(24회/일) threads_api_poster.py가 실행되며
+  # bit.ly 상담유도 댓글이 자동 첨부되는 문제 발견. 콘텐츠 가이드라인(상담 유도 절대 금지) 위배로 중단.
+  # news_auto_poster 5개 카테고리(하루 5회)로 통합 운영.
+  # schedule:
+  #   - cron: '0 * * * *'   # 매 시간 정각 실행
   workflow_dispatch:
 
 concurrency:
