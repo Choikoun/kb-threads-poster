@@ -58,8 +58,10 @@ CATEGORIES = {
             'https://biz.chosun.com/arc/outboundfeeds/rss/?outputType=xml',  # 조선비즈
         ],
         'keywords': ['보험', '연금', '상속', '증여', '노후', '은퇴', '연금저축', 'IRP', '변액', '종신',
-                     '시행령', '개정', '고시', '대법원', '금감원', '판결', '약관'],
-        'angle': '보험, 연금, 상속·증여, 노후 준비 관점. 독자가 "내 노후·상속 괜찮나?" 느끼게.',
+                     '시행령', '개정', '고시', '대법원', '금감원', '판결', '약관',
+                     '의사', '개원', '원장', '페이닥터', '종합소득세', '고소득'],
+        'angle': '보험, 연금, 상속·증여, 노후 준비 관점. 특히 의사·고소득 전문직이 "나 종합과세 더 내고 있는 거 아냐?" 느끼게.',
+        'context': '고소득 전문직(의사 등)은 금융소득이 종합소득에 합산돼 최고세율 적용받기 쉬움. 비과세로 펀드를 운용하면서 자유롭게 입출금·펀드변경(수수료 없이)할 수 있는 구조면 이 종합과세 자체가 빠짐. 관련 뉴스일 때만 이 구조를 상품명 언급 없이 자연스럽게 녹여라.',
         'hashtags': '#연금 #상속'
     },
     'policy': {
@@ -254,6 +256,7 @@ def generate_content(articles, category='economy'):
     news_list = '\n'.join([f"{i+1}. {a['title']}" for i, a in enumerate(articles[:20])])
     trend_headlines = get_trend_headlines()
     trend_block = f"\n[오늘의 핵심 이슈 - 후속/연결 가능하면 활용]\n{trend_headlines}\n" if trend_headlines else ''
+    context_block = f"\n[참고 - 관련 뉴스일 때만 활용]\n{cat['context']}\n" if cat.get('context') else ''
 
     prompt = f"""너는 한국 Threads에서 팔로워를 끌어모으는 금융 전문가야.
 아래 뉴스 중 {cat['name']} 독자에게 가장 임팩트 있는 것 하나 골라서 포스트를 작성해줘.
@@ -269,7 +272,7 @@ def generate_content(articles, category='economy'):
 
 [작성 각도]
 {cat['angle']}
-
+{context_block}
 [핵심 원칙 - 반드시 지켜]
 - 전부 반말
 - 상담/DM/점검 유도 절대 금지. 화두만 던지고 끝낸다.
