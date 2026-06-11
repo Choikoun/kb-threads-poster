@@ -35,8 +35,9 @@ CATEGORIES = {
             'https://biz.chosun.com/arc/outboundfeeds/rss/?outputType=xml',  # 조선비즈
         ],
         'keywords': ['법인', '사업주', '대표이사', '세금', '절세', '기업', '창업', '사업자', '세무', '지분',
-                     '시행령', '개정', '세법', '법안'],
-        'angle': '법인 운영, 절세, 지분 설계, 사업주 세금 관점. 사업주·법인 대표가 "나 해당되는 거 아냐?" 느끼게.'
+                     '시행령', '개정', '세법', '법안', '대법원', '공정위', '판결', '표결'],
+        'angle': '법인 운영, 절세, 지분 설계, 사업주 세금 관점. 사업주·법인 대표가 "나 해당되는 거 아냐?" 느끼게.',
+        'hashtags': '#법인 #절세'
     },
     'economy': {
         'name': '경제·시장',
@@ -46,7 +47,8 @@ CATEGORIES = {
             'https://www.newsis.com/RSS/economy.xml',        # 뉴시스 경제
         ],
         'keywords': [],  # 필터 없음 - 경제 전반
-        'angle': '경제·시장 이슈가 개인 자산과 투자에 미치는 영향 관점. 독자가 "내 돈에 영향 있겠다" 느끼게.'
+        'angle': '경제·시장 이슈가 개인 자산과 투자에 미치는 영향 관점. 독자가 "내 돈에 영향 있겠다" 느끼게.',
+        'hashtags': '#주식 #경제'
     },
     'insurance': {
         'name': '보험·노후·상속',
@@ -56,8 +58,9 @@ CATEGORIES = {
             'https://biz.chosun.com/arc/outboundfeeds/rss/?outputType=xml',  # 조선비즈
         ],
         'keywords': ['보험', '연금', '상속', '증여', '노후', '은퇴', '연금저축', 'IRP', '변액', '종신',
-                     '시행령', '개정', '고시'],
-        'angle': '보험, 연금, 상속·증여, 노후 준비 관점. 독자가 "내 노후·상속 괜찮나?" 느끼게.'
+                     '시행령', '개정', '고시', '대법원', '금감원', '판결', '약관'],
+        'angle': '보험, 연금, 상속·증여, 노후 준비 관점. 독자가 "내 노후·상속 괜찮나?" 느끼게.',
+        'hashtags': '#연금 #상속'
     },
     'policy': {
         'name': '정책·시행령',
@@ -68,8 +71,10 @@ CATEGORIES = {
             'https://biz.chosun.com/arc/outboundfeeds/rss/?outputType=xml',  # 조선비즈
         ],
         'keywords': ['시행령', '개정', '정책', '법안', '국세청', '금융위', '기재부', '세법', '고시',
-                     '발표', '시행', '규제', '완화', '강화', '세율', '공제', '한도'],
-        'angle': '정부 정책·시행령·세법 개정이 사업주·자산가·일반인 지갑에 미치는 영향 관점. "이거 나한테 해당되는 거 아냐?" 느끼게.'
+                     '발표', '시행', '규제', '완화', '강화', '세율', '공제', '한도',
+                     '대법원', '헌재', '표결', '판결', '공정위'],
+        'angle': '정부 정책·시행령·세법 개정이 사업주·자산가·일반인 지갑에 미치는 영향 관점. "이거 나한테 해당되는 거 아냐?" 느끼게.',
+        'hashtags': '#세금 #정책'
     },
     'government': {
         'name': '국무회의·현안',
@@ -79,9 +84,10 @@ CATEGORIES = {
             'https://www.yna.co.kr/rss/economy.xml',         # 연합뉴스 경제
         ],
         'keywords': ['국무회의', '대통령', '국무총리', '현안', '정책토론', '장관', '내각', '용산',
-                     '국정', '청와대', '관계부처', '당정'],
+                     '국정', '청와대', '관계부처', '당정', '대법원', '헌재', '공정위'],
         'angle': '국무회의·대통령 현안·정부 정책토론이 사업주·자산가·서민 경제에 미치는 영향 관점. 정치 얘기 아님. 내 돈과 사업에 어떤 영향인지로만 풀어내기.',
-        'youtube_hint': '국무회의 대통령'  # YouTube 검색 힌트 (회의 현장 사진)
+        'youtube_hint': '국무회의 대통령',  # YouTube 검색 힌트 (회의 현장 사진)
+        'hashtags': '#부동산 #정책'
     }
 }
 
@@ -226,16 +232,40 @@ def upload_to_imgbb(img_bytes):
 
 # ─── 3. Gemini 컨텐츠 생성 ───────────────────────────────────────
 
+def get_trend_headlines(limit=8):
+    """content_trends.md에서 핵심 이슈 헤드라인 일부를 컨텍스트로 가져옴"""
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'content_trends.md')
+    if not os.path.exists(path):
+        return ''
+    headlines = []
+    with open(path, encoding='utf-8') as f:
+        for line in f:
+            m = re.match(r'-\s+\*\*\[.+?\]\*\*\s+\[(.+?)\]', line.strip())
+            if m:
+                headlines.append(m.group(1))
+            if len(headlines) >= limit:
+                break
+    return '\n'.join(f'- {h}' for h in headlines)
+
+
 def generate_content(articles, category='economy'):
     client = genai.Client(api_key=GEMINI_KEY)
     cat = CATEGORIES.get(category, CATEGORIES['economy'])
     news_list = '\n'.join([f"{i+1}. {a['title']}" for i, a in enumerate(articles[:20])])
+    trend_headlines = get_trend_headlines()
+    trend_block = f"\n[오늘의 핵심 이슈 - 후속/연결 가능하면 활용]\n{trend_headlines}\n" if trend_headlines else ''
 
     prompt = f"""너는 한국 Threads에서 팔로워를 끌어모으는 금융 전문가야.
 아래 뉴스 중 {cat['name']} 독자에게 가장 임팩트 있는 것 하나 골라서 포스트를 작성해줘.
 
 [오늘 뉴스]
 {news_list}
+{trend_block}
+[뉴스 선택 우선순위]
+다음 유형의 뉴스가 있으면 최우선으로 선택해:
+- 정부기관(국세청·대법원·헌재·공정위·금융위 등) 공식 발표, 판결, 표결 결과
+- 구체적 숫자(금액·비율·표결수)가 포함된 사실
+해당하는 뉴스가 없으면 기존 기준대로 가장 임팩트 있는 걸 선택해.
 
 [작성 각도]
 {cat['angle']}
@@ -270,7 +300,9 @@ def generate_content(articles, category='economy'):
 - 댓글 수는 1~3개. 내용 흐름에 맞게 자유롭게 결정. 억지로 3개 채우지 않는다.
 - 댓글1: 숫자 단독 줄 + 그 의미 (빈줄 포함, 3~4줄)
 - 댓글2 (선택): 핵심 반전 포인트 하나 (빈줄 포함, 3~4줄)
-- 마지막 댓글: 독자 당사자화 질문으로 마무리 (2~3줄, 마지막만 존댓말)
+- 마지막 댓글: 양자택일형 질문으로 마무리 (예: "당신은 A인가요, B인가요?", "지금 갈아타실 건가요, 버티실 건가요?")
+  - 개방형 질문("어떻게 준비하고 계신가요?") 금지. 독자가 댓글 하나로 바로 답할 수 있는 두 가지 선택지를 제시.
+  - 2~3줄, 마지막만 존댓말
 
 JSON만 출력:
 {{
@@ -293,7 +325,11 @@ JSON만 출력:
             raw = resp.text.strip()
             m = re.search(r'\{[\s\S]*\}', raw)
             if m:
-                return json.loads(m.group())
+                result = json.loads(m.group())
+                hashtags = cat.get('hashtags', '')
+                if hashtags and 'main' in result:
+                    result['main'] = result['main'].rstrip() + f'\n\n{hashtags}'
+                return result
         except Exception as e:
             print(f'Gemini 오류 (시도 {attempt+1}/3): {e}')
             if attempt < 2:
