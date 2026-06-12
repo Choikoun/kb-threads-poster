@@ -1,42 +1,42 @@
 # 📰 일일 브리핑
-*2026-06-12 08:13 KST*
+*2026-06-13 08:05 KST*
 
 ---
 
 ## 🔖 보험 동향
+- [생명보험재단, 청년 마음건강 워크숍 성료](https://www.insnews.co.kr/news/articleView.html?idxno=91256)
 - [신한은행, 기초연금 수급자 대상 ‘신한 금융안심 무료보험’ 지원](https://www.insnews.co.kr/news/articleView.html?idxno=91246)
 - [DB손보, ‘전용 펫보험 상품’ 출시 위해 이마트와 맞손](https://www.insnews.co.kr/news/articleView.html?idxno=91243)
 - [“보험산업의 미래 논하다” 글로벌 보험 컨퍼런스 ‘제3회 KIIC’ 열려](https://www.insnews.co.kr/news/articleView.html?idxno=91235)
 - [손해보험협회, ‘소비자 상담사례집’ 전자책 선보여](https://www.insnews.co.kr/news/articleView.html?idxno=91240)
-- [금감원, 환율 급등에 보험사 긴급 소집 “달러보험 리스크 선제 대응”](https://www.insnews.co.kr/news/articleView.html?idxno=91226)
 
 ## 💰 국내 경제·금융
-- ["에이치브이엠, 스페이스X 상장에 따른 수혜 기대"-하나](https://www.hankyung.com/article/2026061220006)
-- [트럼프 '이란 합의' 시사 뉴욕증시 급등…반도체주 상승 견인 [뉴욕증시 브리핑]](https://www.hankyung.com/article/2026061220026)
-- ["AI 돈잔치 시작됐다"…'삼전닉스' 투자 확대에 폭등한 종목 [종목+]](https://www.hankyung.com/article/2026061112556)
-- [개인투자자 돈 153조 몰렸다…스페이스X, 공모가 135달러 확정](https://www.hankyung.com/article/2026061219557)
-- ["AI 너무 비싸요" 불붙은 경제성 논란...반도체는 "정점 멀었다" [빈난새의 개장전요것만]](https://www.hankyung.com/article/202606111852i)
+- [중동 리스크 완화에 3대 지수 동반 상승…스페이스X IPO도 흥행 [뉴욕증시 브리핑]](https://www.hankyung.com/article/2026061341067)
+- [성호전자 '반도체 장비社' 인티맥스 인수](https://www.hankyung.com/article/2026061237251)
+- ["반도체 슈퍼사이클, 이제 막 시작됐다"](https://www.hankyung.com/article/2026061237561)
+- [상장사의 투자 법인, epic Ai서 '한눈에'](https://www.hankyung.com/article/2026061237191)
+- [창(긴축)과 방패(반도체)의 대결 [한경 프리미엄9 TODAY]](https://www.hankyung.com/article/2026061237611)
 
 ## 📈 주식·시장
-- [“8천피라는데 내 계좌 왜 파랗죠”…상장사 68%는 아직 저평가](https://www.mk.co.kr/news/stock/12071916)
-- [분할도 병합도 안돼 … 황제·동전ETF 넘칠판](https://www.mk.co.kr/news/stock/12071894)
-- [ETF에 엇갈린 퇴직연금 수익률 DB형 한자릿수 … DC 20% 넘어](https://www.mk.co.kr/news/stock/12071871)
-- [AI가 메모리 산업 체질 바꿔 … 사이클 휘둘리지 않아](https://www.mk.co.kr/news/stock/12071846)
-- ["상장사 68% 아직도 저평가 … 배당 늘려 장기투자 유도해야"](https://www.mk.co.kr/news/stock/12071845)
+- [코스피 거래대금 4배 폭증…증권사, 한 분기 만에 작년 순익 절반 벌어](https://www.mk.co.kr/news/stock/12073126)
+- [반도체 말고도 한국이 글로벌 무대 제패한 산업…제2의 반도체로 주목받는 K-뷰티 [김유신의 딥 머니 토크]](https://www.mk.co.kr/news/stock/12073087)
+- ['젠슨 황 효과'도 안먹히네…하이트진로 목표주가 뚝](https://www.mk.co.kr/news/stock/12073053)
+- [“우주 로켓 회사인줄 알았더니 AI 제국” … 스페이스X의 진짜 정체](https://www.mk.co.kr/news/stock/12073015)
+- [외국투자자 한달여만에 컴백 … 반도체 투톱 2조 '폭풍 쇼핑'](https://www.mk.co.kr/news/stock/12072945)
 
 ## 🌏 글로벌 경제·정세
-- [이란 외무부 "종전 합의 최종 결정 안 내렸다…결론 도달 시 발표"](https://www.hankyung.com/article/2026061220037)
-- [강제노동 관세로 '설전' 벌인 美 USTR 대표와 워싱턴포스트 [이상은의 워싱턴나우]](https://www.hankyung.com/article/202606121932i)
-- [트럼프 "이란과 훌륭한 합의…주말 유럽서 서명식 열 수도"](https://www.hankyung.com/article/2026061219277)
-- [트럼프 "이란과 협정 곧 발표"…이란 매체 "당국이 승인할 가능성" [이상은의 워싱턴나우]](https://www.hankyung.com/article/202606121897i)
-- [[속보] 트럼프 "이란, 협정에 따라 핵무기 보유하지 않을 것"](https://www.hankyung.com/article/202606121907i)
+- [스페이스X, 상장 첫날 22.5% 급등…시총 2조달러 돌파](https://www.hankyung.com/article/202606134010i)
+- ['나스닥 상장' 머스크 "스페이스X가 달과 화성, 그 너머까지 데려다주길"](https://www.hankyung.com/article/2026061239877)
+- [이란 "2주 전 초안대로 논의"…트럼프, 결국 동결자산 풀어주나](https://www.hankyung.com/article/2026061239721)
+- [이란 외무부 "종전 MOU 승인 내부 조율단계"](https://www.hankyung.com/article/2026061239697)
+- [[속보] 이란 매체 "'14일 제네바서 美와 합의 서명' 보도 사실 아냐"](https://www.hankyung.com/article/2026061239577)
 
 ## 🔥 팔로업 추천 (300회 이상)
-- 2,525회 [2026-06-10] 종부세, 또 오를 판이야. 세금으로 주택 가격 잡겠다고?  다주택자만 폭...
-- 1,415회 [2026-06-11] 헌재, 유류분 바꿨다.  부모 재산 받는 거? 이젠 효도가 재산이야.  ...
-- 1,324회 [2026-06-09] 외국계 은행 환 투기 검사 시작. 대부분 이걸 그냥 '은행 얘기'로 보지...
-- 848회 [2026-06-10] 코스피 8% 폭락. 다음날 8000선 회복은 말야.  대부분은 '이제 괜...
-- 781회 [2026-06-11] 국세청이 1년에 걷어간 체납액이  3.1조원.  대부분은 남 얘기라고 생...
+- 29,263회 [2026-06-12] 자녀에게 증여한 내 피같은 재산, 이혼하면 재산분할 대상이다.  대부분은...
+- 2,528회 [2026-06-10] 종부세, 또 오를 판이야. 세금으로 주택 가격 잡겠다고?  다주택자만 폭...
+- 1,620회 [2026-06-11] 헌재, 유류분 바꿨다.  부모 재산 받는 거? 이젠 효도가 재산이야.  ...
+- 1,594회 [2026-06-12] 어떤 치과의사 후배, 작년에 코인으로 꽤 벌었대.  세금은 내년부터 내는...
+- 860회 [2026-06-12] 고액 체납 1위. 국세청이 특별세무조사 들어갔어.  대부분은 특정 기업 ...
 
 ---
 *총 60개 기사 수집됨*
