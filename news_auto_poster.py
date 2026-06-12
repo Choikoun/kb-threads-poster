@@ -6,6 +6,7 @@
 - 오후 6시: 보험·노후·상속
 """
 import os, sys, json, time, base64, re, random
+from datetime import datetime, timezone, timedelta
 import requests
 import feedparser
 from bs4 import BeautifulSoup
@@ -19,6 +20,9 @@ TOKEN       = os.getenv('THREADS_ACCESS_TOKEN')
 IMGBB_KEY   = os.getenv('IMGBB_API_KEY')
 GEMINI_KEY  = os.getenv('GEMINI_API_KEY')
 YOUTUBE_KEY = os.getenv('YOUTUBE_API_KEY')
+
+KST = timezone(timedelta(hours=9))
+CONTENT_LOG_FILE = 'content_log.json'
 
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0'
@@ -37,6 +41,7 @@ CATEGORIES = {
         'keywords': ['법인', '사업주', '대표이사', '세금', '절세', '기업', '창업', '사업자', '세무', '지분',
                      '시행령', '개정', '세법', '법안', '대법원', '공정위', '판결', '표결'],
         'angle': '법인 운영, 절세, 지분 설계, 사업주 세금 관점. 사업주·법인 대표가 "나 해당되는 거 아냐?" 느끼게.',
+        'format_variants': ['반전형', '사례형'],
         'hashtags': '#법인 #절세'
     },
     'economy': {
@@ -48,6 +53,7 @@ CATEGORIES = {
         ],
         'keywords': [],  # 필터 없음 - 경제 전반
         'angle': '경제·시장 이슈가 개인 자산과 투자에 미치는 영향 관점. 독자가 "내 돈에 영향 있겠다" 느끼게.',
+        'format_variants': ['반전형', '사례형'],
         'hashtags': '#주식 #경제'
     },
     'insurance': {
@@ -62,6 +68,7 @@ CATEGORIES = {
                      '의사', '개원', '원장', '페이닥터', '종합소득세', '고소득'],
         'angle': '보험, 연금, 상속·증여, 노후 준비 관점. 특히 의사·고소득 전문직이 "나 종합과세 더 내고 있는 거 아냐?" 느끼게.',
         'context': '고소득 전문직(의사 등)은 금융소득이 종합소득에 합산돼 최고세율 적용받기 쉬움. 비과세로 펀드를 운용하면서 자유롭게 입출금·펀드변경(수수료 없이)할 수 있는 구조면 이 종합과세 자체가 빠짐. 관련 뉴스일 때만 이 구조를 상품명 언급 없이 자연스럽게 녹여라.',
+        'format_variants': ['반전형', '사례형'],
         'hashtags': '#연금 #상속'
     },
     'policy': {
@@ -267,6 +274,20 @@ def get_trend_headlines(limit=8):
     return '\n'.join(f'- {h}' for h in headlines)
 
 
+FORMAT_STRUCTURES = {
+    '반전형': '''1. 숫자/팩트 or 반전 훅 (1~2줄)
+↵빈줄
+2. "대부분은 모르는" 반전 or 충격 사실 (1~2줄)
+↵빈줄
+3. 묵직한 마무리 한 줄''',
+    '사례형': '''1. 구체적 상황·사례로 시작 (1~2줄). "OO씨", "어떤 사업주", "한 고객" 등 실제 인물처럼 보이는 예시나 흔한 상황 묘사
+↵빈줄
+2. "대부분은 모르는" 반전 or 충격 사실 (1~2줄)
+↵빈줄
+3. 묵직한 마무리 한 줄''',
+}
+
+
 def generate_content(articles, category='economy'):
     client = genai.Client(api_key=GEMINI_KEY)
     cat = CATEGORIES.get(category, CATEGORIES['economy'])
@@ -275,6 +296,9 @@ def generate_content(articles, category='economy'):
     trend_block = f"\n[오늘의 핵심 이슈 - 후속/연결 가능하면 활용]\n{trend_headlines}\n" if trend_headlines else ''
     context_block = f"\n[참고 - 관련 뉴스일 때만 활용]\n{cat['context']}\n" if cat.get('context') else ''
     format_branch_block = f"\n[형식 분기 - 해당되면 사용]\n{cat['format_branch']}\n" if cat.get('format_branch') else ''
+
+    chosen_variant = random.choice(cat.get('format_variants', ['반전형']))
+    structure_block = FORMAT_STRUCTURES.get(chosen_variant, FORMAT_STRUCTURES['반전형'])
 
     prompt = f"""너는 한국 Threads에서 팔로워를 끌어모으는 금융 전문가야.
 아래 뉴스 중 {cat['name']} 독자에게 가장 임팩트 있는 것 하나 골라서 포스트를 작성해줘.
@@ -310,12 +334,8 @@ def generate_content(articles, category='economy'):
 - "실손 적자 1.8조. / 대부분은 내 보험료가 오르는 이유를 몰라. / 근데 이게 노후 자산을 갉아먹는 구조야."
 - "법인 대출 금리가 개인 신용대출보다 2~3배 높아. / 은행이 사장님 모신다고? / 실제론 가장 비싼 고객으로 만드는 거야."
 
-[메인 포스트 구조]
-1. 숫자/팩트 or 반전 훅 (1~2줄)
-↵빈줄
-2. "대부분은 모르는" 반전 or 충격 사실 (1~2줄)
-↵빈줄
-3. 묵직한 마무리 한 줄
+[메인 포스트 구조 - {chosen_variant}]
+{structure_block}
 {format_branch_block}
 [댓글 구조]
 - 댓글 수는 1~3개. 내용 흐름에 맞게 자유롭게 결정. 억지로 3개 채우지 않는다.
@@ -334,7 +354,8 @@ JSON만 출력:
     "댓글1",
     "댓글2",
     "댓글3 (마지막 질문만 존댓말)"
-  ]
+  ],
+  "format_variant": "{chosen_variant}"
 }}"""
 
     for attempt in range(3):
@@ -350,6 +371,7 @@ JSON만 출력:
                 hashtags = cat.get('hashtags', '')
                 if hashtags and 'main' in result:
                     result['main'] = result['main'].rstrip() + f'\n\n{hashtags}'
+                result.setdefault('format_variant', chosen_variant)
                 return result
         except Exception as e:
             print(f'Gemini 오류 (시도 {attempt+1}/3): {e}')
@@ -397,6 +419,23 @@ def post_to_threads(main_text, comments, image_url=None):
         time.sleep(2)
 
     return main_id
+
+# ─── 콘텐츠 로그 ──────────────────────────────────────────────────
+
+def log_content(post_id, category, format_variant, selected_title):
+    log = []
+    if os.path.exists(CONTENT_LOG_FILE):
+        with open(CONTENT_LOG_FILE, encoding='utf-8') as f:
+            log = json.load(f)
+    log.append({
+        'post_id': post_id,
+        'category': category,
+        'format_variant': format_variant,
+        'date': datetime.now(KST).strftime('%Y-%m-%d'),
+        'selected_title': selected_title,
+    })
+    with open(CONTENT_LOG_FILE, 'w', encoding='utf-8') as f:
+        json.dump(log, f, ensure_ascii=False, indent=2)
 
 # ─── 메인 ────────────────────────────────────────────────────────
 
@@ -466,6 +505,8 @@ def main():
     print('\nThreads 포스팅 중...')
     main_id = post_to_threads(content['main'], content['comments'], image_url)
     print(f'\n완료! 메인 포스트 ID: {main_id}')
+
+    log_content(main_id, category, content.get('format_variant', ''), content['selected_title'])
 
 if __name__ == '__main__':
     main()

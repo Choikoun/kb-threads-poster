@@ -9,7 +9,15 @@ sys.stdout.reconfigure(encoding='utf-8')
 
 BASE = "https://graph.threads.net/v1.0"
 REBLOG_FILE = "reblog_candidates.json"
+CONTENT_LOG_FILE = "content_log.json"
 KST = timezone(timedelta(hours=9))
+
+
+def load_content_log():
+    if os.path.exists(CONTENT_LOG_FILE):
+        with open(CONTENT_LOG_FILE, encoding="utf-8") as f:
+            return json.load(f)
+    return []
 
 
 def get_insights(post_id, token):
@@ -77,6 +85,24 @@ def run_analysis():
         media = "📸" if r["media_type"] == "CAROUSEL_ALBUM" else "📝"
         print(f"{i:2}. {media} [{r['date']}] 조회 {r['views']:,} | 좋아요 {r['likes']} | 댓글 {r['replies']}")
         print(f"    {r['text']}...")
+
+    # 포맷별 성과 분석 (content_log.json 매칭)
+    content_log = load_content_log()
+    results_by_id = {r["id"]: r for r in results}
+    groups = {}
+    for entry in content_log:
+        r = results_by_id.get(entry.get("post_id"))
+        if not r:
+            continue
+        key = (entry.get("category", "?"), entry.get("format_variant", "?"))
+        groups.setdefault(key, []).append(r)
+
+    if groups:
+        print(f"\n🧪 포맷별 성과 (카테고리 / 포맷 / 건수 / 평균조회 / 평균좋아요)")
+        for (category, variant), items in sorted(groups.items()):
+            avg_views = sum(i["views"] for i in items) / len(items)
+            avg_likes = sum(i["likes"] for i in items) / len(items)
+            print(f"  {category} / {variant}: {len(items)}건, 평균조회 {avg_views:,.0f}, 평균좋아요 {avg_likes:,.1f}")
 
     # 재발행 후보 (조회수 300 이상)
     reblog = load_reblog()
