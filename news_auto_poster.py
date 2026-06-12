@@ -363,7 +363,7 @@ JSON만 출력:
 
 def post_to_threads(main_text, comments, image_url=None):
     me = requests.get('https://graph.threads.net/v1.0/me',
-                      params={'fields': 'id', 'access_token': TOKEN})
+                      params={'fields': 'id', 'access_token': TOKEN}, timeout=30)
     UID = me.json()['id']
 
     params = {'text': main_text, 'access_token': TOKEN}
@@ -373,12 +373,12 @@ def post_to_threads(main_text, comments, image_url=None):
     else:
         params['media_type'] = 'TEXT'
 
-    r1 = requests.post(f'https://graph.threads.net/v1.0/{UID}/threads', params=params)
+    r1 = requests.post(f'https://graph.threads.net/v1.0/{UID}/threads', params=params, timeout=30)
     print(f'메인 컨테이너: {r1.json()}')
     time.sleep(4)
 
     r2 = requests.post(f'https://graph.threads.net/v1.0/{UID}/threads_publish',
-                       params={'creation_id': r1.json()['id'], 'access_token': TOKEN})
+                       params={'creation_id': r1.json()['id'], 'access_token': TOKEN}, timeout=30)
     main_id = r2.json()['id']
     print(f'메인 발행: {main_id}')
     time.sleep(3)
@@ -389,10 +389,10 @@ def post_to_threads(main_text, comments, image_url=None):
             'text': comment,
             'reply_to_id': main_id,
             'access_token': TOKEN
-        })
+        }, timeout=30)
         time.sleep(3)
         rp = requests.post(f'https://graph.threads.net/v1.0/{UID}/threads_publish',
-                           params={'creation_id': rc.json()['id'], 'access_token': TOKEN})
+                           params={'creation_id': rc.json()['id'], 'access_token': TOKEN}, timeout=30)
         print(f'댓글{i+1} 발행: {rp.json().get("id")}')
         time.sleep(2)
 

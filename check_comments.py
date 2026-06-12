@@ -5,17 +5,17 @@ load_dotenv()
 
 token = os.environ.get('THREADS_ACCESS_TOKEN')
 BASE = 'https://graph.threads.net/v1.0'
-user_id = requests.get(f'{BASE}/me', params={'access_token': token}).json().get('id')
+user_id = requests.get(f'{BASE}/me', params={'access_token': token}, timeout=15).json().get('id')
 
 resp = requests.get(f'{BASE}/{user_id}/threads',
-    params={'fields': 'id,text,timestamp', 'limit': 50, 'access_token': token})
+    params={'fields': 'id,text,timestamp', 'limit': 50, 'access_token': token}, timeout=15)
 posts = resp.json().get('data', [])
 
 found = False
 for post in posts:
     pid = post['id']
     rr = requests.get(f'{BASE}/{pid}/replies',
-        params={'fields': 'id,text,username,timestamp', 'access_token': token})
+        params={'fields': 'id,text,username,timestamp', 'access_token': token}, timeout=15)
     ext = [r for r in rr.json().get('data', []) if r.get('username') != 'financial_planner0']
     if ext:
         found = True
