@@ -1,0 +1,29 @@
+name: 주간 시리즈 - 이번 주 사업주들이 물어본 것
+
+on:
+  schedule:
+    - cron: '30 10 * * 5'   # 매주 금요일 19:30 KST
+  workflow_dispatch:
+
+concurrency:
+  group: weekly-qa
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  post_weekly_qa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: 패키지 설치
+        run: pip install requests google-genai python-dotenv feedparser beautifulsoup4
+      - name: 주간 Q&A 시리즈 포스팅
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+        run: python weekly_qa_poster.py
