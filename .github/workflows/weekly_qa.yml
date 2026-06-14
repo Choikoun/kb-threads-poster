@@ -2,7 +2,7 @@ name: 주간 시리즈 - 이번 주 사업주들이 물어본 것
 
 on:
   schedule:
-    - cron: '30 10 * * 5'   # 매주 금요일 19:30 KST
+    - cron: '30 10 * * 1'   # 매주 월요일 19:30 KST
   workflow_dispatch:
 
 concurrency:
