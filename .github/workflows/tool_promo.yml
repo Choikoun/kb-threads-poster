@@ -1,0 +1,29 @@
+name: 중임등기 도구 주간 홍보 포스팅
+
+on:
+  schedule:
+    - cron: '0 3 * * 4'   # 매주 목요일 12:00 KST
+  workflow_dispatch:
+
+concurrency:
+  group: tool-promo
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  post_promo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: 패키지 설치
+        run: pip install requests google-genai python-dotenv feedparser beautifulsoup4
+      - name: 중임등기 도구 홍보 포스팅
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+        run: python tool_promo_poster.py
