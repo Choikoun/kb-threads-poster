@@ -114,6 +114,18 @@ CATEGORIES = {
 [포인트 공식]·[메인 포스트 구조]의 3단 전개는 이 경우 생략. 댓글 구조는 동일하게 유지.''',
         'youtube_hint': '국무회의 대통령',  # YouTube 검색 힌트 (회의 현장 사진)
         'hashtags': '#부동산 #정책'
+    },
+    'trend': {
+        'name': '오늘의 트렌드',
+        'feeds': [
+            'https://www.yna.co.kr/rss/economy.xml',         # 연합뉴스 경제
+            'https://www.mk.co.kr/rss/50200011/',            # 매일경제 증권
+            'https://www.newsis.com/RSS/economy.xml',        # 뉴시스 경제
+        ],
+        'keywords': [],  # 필터 없음 - 그날 화제 전반
+        'angle': '오늘 가장 화제인 트렌드·이슈를 특정 타겟층에 한정하지 않고, 누구나 공감할 수 있게 가볍게 다루는 관점. 출퇴근길에 스치듯 보고 "어 이거 봤어?" 하게.',
+        'format_variants': ['담백형'],
+        'hashtags': '#오늘 #이슈'
     }
 }
 
