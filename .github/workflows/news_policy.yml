@@ -14,7 +14,7 @@ concurrency:
   cancel-in-progress: false
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   post_news:
@@ -33,3 +33,11 @@ jobs:
           IMGBB_API_KEY: ${{ secrets.IMGBB_API_KEY }}
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         run: python news_auto_poster.py policy
+      - name: 콘텐츠 로그 커밋
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add content_log.json
+          git diff --staged --quiet || git commit -m "콘텐츠 로그 업데이트"
+          git pull --rebase
+          git push

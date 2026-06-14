@@ -10,7 +10,7 @@ concurrency:
   cancel-in-progress: false
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   post_ai_card:
@@ -29,3 +29,11 @@ jobs:
           IMGBB_API_KEY: ${{ secrets.IMGBB_API_KEY }}
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         run: python ai_illustration_poster.py
+      - name: 콘텐츠 로그 커밋
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add content_log.json
+          git diff --staged --quiet || git commit -m "콘텐츠 로그 업데이트"
+          git pull --rebase
+          git push
