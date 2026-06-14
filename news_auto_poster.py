@@ -328,6 +328,16 @@ def generate_content(articles, category='economy'):
     structure_block = FORMAT_STRUCTURES.get(chosen_variant, FORMAT_STRUCTURES['반전형'])
     point_formula_block = '' if chosen_variant == '담백형' else POINT_FORMULA
 
+    follow_cta_block = ''
+    if random.random() < 0.25:
+        follow_cta_block = '''
+[추가 댓글 - 팔로우 유도]
+위 댓글들 다음에 댓글을 1개 더 추가해.
+이 글 주제와 자연스럽게 이어지는 톤으로, 팔로우를 유도하는 한 줄.
+반말. "이런 얘기 계속 보고 싶으면 팔로우해놔" 같은 직접적 표현도 괜찮고,
+주제에 맞게 변형해도 좋음. 매번 같은 문구 반복하지 않는다.
+'''
+
     prompt = f"""너는 한국 Threads에서 팔로워를 끌어모으는 금융 전문가야.
 아래 뉴스 중 {cat['name']} 독자에게 가장 임팩트 있는 것 하나 골라서 포스트를 작성해줘.
 
@@ -365,7 +375,7 @@ def generate_content(articles, category='economy'):
 - 마지막 댓글: 양자택일형 질문으로 마무리 (예: "당신은 A인가요, B인가요?", "지금 갈아타실 건가요, 버티실 건가요?")
   - 개방형 질문("어떻게 준비하고 계신가요?") 금지. 독자가 댓글 하나로 바로 답할 수 있는 두 가지 선택지를 제시.
   - 2~3줄, 마지막만 존댓말
-
+{follow_cta_block}
 JSON만 출력:
 {{
   "selected_title": "선택한 뉴스 제목",
