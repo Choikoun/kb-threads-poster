@@ -1,4 +1,4 @@
-name: AI 일러스트 카드 포스팅 - 법인·사업주
+name: 이미지 카드 포스팅 - 법인·사업주 (AI 일러스트 / 실사 격일)
 
 on:
   schedule:
@@ -22,13 +22,23 @@ jobs:
           python-version: '3.11'
       - name: 패키지 설치
         run: pip install requests feedparser google-genai beautifulsoup4 python-dotenv Pillow
-      - name: AI 일러스트 카드 포스팅
+      - name: 포맷 결정 (홀짝일 교대)
+        id: format
+        run: |
+          DAY=$(TZ=Asia/Seoul date +%j)
+          if [ $((10#$DAY % 2)) -eq 0 ]; then
+            echo "script=ai_illustration_poster.py" >> "$GITHUB_OUTPUT"
+          else
+            echo "script=stock_card_poster.py" >> "$GITHUB_OUTPUT"
+          fi
+      - name: 이미지 카드 포스팅
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
           IMGBB_API_KEY: ${{ secrets.IMGBB_API_KEY }}
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
-        run: python ai_illustration_poster.py
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+        run: python ${{ steps.format.outputs.script }}
       - name: 콘텐츠 로그 커밋
         run: |
           git config user.name "github-actions[bot]"
