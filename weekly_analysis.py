@@ -10,6 +10,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 BASE = "https://graph.threads.net/v1.0"
 REBLOG_FILE = "reblog_candidates.json"
 CONTENT_LOG_FILE = "content_log.json"
+FOLLOWER_HISTORY_FILE = "follower_history.json"
 KST = timezone(timedelta(hours=9))
 
 
@@ -18,6 +19,32 @@ def load_content_log():
         with open(CONTENT_LOG_FILE, encoding="utf-8") as f:
             return json.load(f)
     return []
+
+
+def get_followers_count(user_id, token):
+    resp = requests.get(f"{BASE}/{user_id}/threads_insights",
+                        params={"metric": "followers_count", "access_token": token}, timeout=15)
+    if not resp.ok:
+        return None
+    data = resp.json().get("data", [])
+    if not data:
+        return None
+    return data[0].get("total_value", {}).get("value")
+
+
+def log_follower_count(count):
+    history = []
+    if os.path.exists(FOLLOWER_HISTORY_FILE):
+        with open(FOLLOWER_HISTORY_FILE, encoding="utf-8") as f:
+            history = json.load(f)
+    today = datetime.now(KST).strftime("%Y-%m-%d")
+    if history and history[-1]["date"] == today:
+        history[-1]["followers"] = count
+    else:
+        history.append({"date": today, "followers": count})
+    with open(FOLLOWER_HISTORY_FILE, "w", encoding="utf-8") as f:
+        json.dump(history, f, ensure_ascii=False, indent=2)
+    return history
 
 
 def get_insights(post_id, token):
@@ -80,6 +107,18 @@ def run_analysis():
     print(f"\n{'='*60}")
     print(f"📊 주간 조회수 분석 — {datetime.now(KST).strftime('%Y-%m-%d')}")
     print(f"{'='*60}")
+
+    # 팔로워 수 추적
+    followers = get_followers_count(user_id, token)
+    if followers is not None:
+        history = log_follower_count(followers)
+        print(f"\n👥 팔로워: {followers:,}명")
+        if len(history) >= 2:
+            prev = history[-2]
+            diff = followers - prev["followers"]
+            sign = "+" if diff >= 0 else ""
+            print(f"   ({prev['date']} 대비 {sign}{diff}명)")
+
     print(f"\n🏆 TOP 10 포스팅")
     for i, r in enumerate(results[:10], 1):
         media = "📸" if r["media_type"] == "CAROUSEL_ALBUM" else "📝"
