@@ -85,7 +85,8 @@ def main():
     for i, c in enumerate(content.get('comments', [])):
         print(f'댓글{i+1}:\n{c}\n')
 
-    main_id = nap.post_to_threads(content['main'], content.get('comments', []), image_url=None)
+    main_id = nap.post_to_threads(content['main'], content.get('comments', []), image_url=None,
+                                   topic_tag=nap.CATEGORIES['business'].get('topic_tag'))
     print(f'완료! 메인 포스트 ID: {main_id}')
 
 

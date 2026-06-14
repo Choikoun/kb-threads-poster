@@ -42,7 +42,8 @@ CATEGORIES = {
                      '시행령', '개정', '세법', '법안', '대법원', '공정위', '판결', '표결'],
         'angle': '법인 운영, 절세, 지분 설계, 사업주 세금 관점. 사업주·법인 대표가 "나 해당되는 거 아냐?" 느끼게.',
         'format_variants': ['반전형', '사례형', '담백형'],
-        'hashtags': '#법인 #절세'
+        'hashtags': '#법인 #절세',
+        'topic_tag': '법인'
     },
     'economy': {
         'name': '경제·시장',
@@ -54,7 +55,8 @@ CATEGORIES = {
         'keywords': [],  # 필터 없음 - 경제 전반
         'angle': '경제·시장 이슈가 사업주·법인 대표·자산가의 사업 자금과 자산 운용에 미치는 영향 관점. 독자가 "내 사업/자산에 영향 있겠다" 느끼게.',
         'format_variants': ['반전형', '사례형', '담백형'],
-        'hashtags': '#주식 #경제'
+        'hashtags': '#주식 #경제',
+        'topic_tag': '경제'
     },
     'insurance': {
         'name': '보험·노후·상속',
@@ -69,7 +71,8 @@ CATEGORIES = {
         'angle': '보험, 연금, 상속·증여, 노후 준비 관점. 특히 의사·고소득 전문직이 "나 종합과세 더 내고 있는 거 아냐?" 느끼게.',
         'context': '고소득 전문직(의사 등)은 금융소득이 종합소득에 합산돼 최고세율 적용받기 쉬움. 비과세로 펀드를 운용하면서 자유롭게 입출금·펀드변경(수수료 없이)할 수 있는 구조면 이 종합과세 자체가 빠짐. 관련 뉴스일 때만 이 구조를 상품명 언급 없이 자연스럽게 녹여라.',
         'format_variants': ['반전형', '사례형'],
-        'hashtags': '#연금 #상속'
+        'hashtags': '#연금 #상속',
+        'topic_tag': '보험'
     },
     'policy': {
         'name': '정책·시행령',
@@ -95,7 +98,8 @@ CATEGORIES = {
 ↵빈줄
 - "모르면 그냥 손해야. 주변에 해당되는 분 있으면 알려줘." 류 공유 유도 마무리
 [포인트 공식]·[메인 포스트 구조]는 이 경우 생략. 댓글 구조는 동일하게 유지.''',
-        'hashtags': '#세금 #정책'
+        'hashtags': '#세금 #정책',
+        'topic_tag': '세금'
     },
     'government': {
         'name': '국무회의·현안',
@@ -113,7 +117,8 @@ CATEGORIES = {
 - 1줄: "대부분은 ~로 보지만, 진짜는 ~다" 식 재해석 한 줄
 [포인트 공식]·[메인 포스트 구조]의 3단 전개는 이 경우 생략. 댓글 구조는 동일하게 유지.''',
         'youtube_hint': '국무회의 대통령',  # YouTube 검색 힌트 (회의 현장 사진)
-        'hashtags': '#부동산 #정책'
+        'hashtags': '#부동산 #정책',
+        'topic_tag': '시사'
     },
     'trend': {
         'name': '오늘의 트렌드',
@@ -125,7 +130,8 @@ CATEGORIES = {
         'keywords': [],  # 필터 없음 - 그날 화제 전반
         'angle': '오늘 가장 화제인 트렌드·이슈를 특정 타겟층에 한정하지 않고, 누구나 공감할 수 있게 가볍게 다루는 관점. 출퇴근길에 스치듯 보고 "어 이거 봤어?" 하게.',
         'format_variants': ['담백형'],
-        'hashtags': '#오늘 #이슈'
+        'hashtags': '#오늘 #이슈',
+        'topic_tag': '이슈'
     }
 }
 
@@ -414,12 +420,14 @@ JSON만 출력:
 
 # ─── 4. Threads 포스팅 ───────────────────────────────────────────
 
-def post_to_threads(main_text, comments, image_url=None):
+def post_to_threads(main_text, comments, image_url=None, topic_tag=None):
     me = requests.get('https://graph.threads.net/v1.0/me',
                       params={'fields': 'id', 'access_token': TOKEN}, timeout=30)
     UID = me.json()['id']
 
     params = {'text': main_text, 'access_token': TOKEN}
+    if topic_tag:
+        params['topic_tag'] = topic_tag
     if image_url:
         params['media_type'] = 'IMAGE'
         params['image_url'] = image_url
@@ -534,7 +542,7 @@ def main():
         print('이미지 없이 진행')
 
     print('\nThreads 포스팅 중...')
-    main_id = post_to_threads(content['main'], content['comments'], image_url)
+    main_id = post_to_threads(content['main'], content['comments'], image_url, topic_tag=cat_info.get('topic_tag'))
     print(f'\n완료! 메인 포스트 ID: {main_id}')
 
     log_content(main_id, category, content.get('format_variant', ''), content['selected_title'])

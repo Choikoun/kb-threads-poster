@@ -152,7 +152,8 @@ def main():
         print('imgbb 업로드 실패 - 종료')
         sys.exit(1)
 
-    main_id = nap.post_to_threads(content['caption'], content.get('comments', []), image_url)
+    main_id = nap.post_to_threads(content['caption'], content.get('comments', []), image_url,
+                                   topic_tag=nap.CATEGORIES['business'].get('topic_tag'))
     print(f'완료! 메인 포스트 ID: {main_id}')
     nap.log_content(main_id, category, 'stock_image', content['selected_title'])
 
