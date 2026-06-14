@@ -1,42 +1,42 @@
 # 📰 일일 브리핑
-*2026-06-14 07:52 KST*
+*2026-06-15 07:57 KST*
 
 ---
 
 ## 🔖 보험 동향
-- [생명보험재단, 청년 마음건강 워크숍 성료](https://www.insnews.co.kr/news/articleView.html?idxno=91256)
-- [신한은행, 기초연금 수급자 대상 ‘신한 금융안심 무료보험’ 지원](https://www.insnews.co.kr/news/articleView.html?idxno=91246)
-- [DB손보, ‘전용 펫보험 상품’ 출시 위해 이마트와 맞손](https://www.insnews.co.kr/news/articleView.html?idxno=91243)
-- [“보험산업의 미래 논하다” 글로벌 보험 컨퍼런스 ‘제3회 KIIC’ 열려](https://www.insnews.co.kr/news/articleView.html?idxno=91235)
-- [손해보험협회, ‘소비자 상담사례집’ 전자책 선보여](https://www.insnews.co.kr/news/articleView.html?idxno=91240)
+- [[신문로] 퇴직연금 시장의 대전환, 보험사는 살아남을 수 있을까](https://www.insnews.co.kr/news/articleView.html?idxno=91258)
+- [경증 한방 첩약 건강보험 적용 확대… 관리 기준 마련 시급](https://www.insnews.co.kr/news/articleView.html?idxno=91239)
+- [보험사 M&A 시장 재가동… 자본지원·라이선스 수요 맞물려](https://www.insnews.co.kr/news/articleView.html?idxno=91234)
+- [변액보험 수익률 보고 깼다가 후회… 중도해지 ‘주의보’](https://www.insnews.co.kr/news/articleView.html?idxno=91230)
+- [[KIIC 2026] 기후 위기부터 자율주행까지… KIIC서 본 보험산업의 미래](https://www.insnews.co.kr/news/articleView.html?idxno=91228)
 
 ## 💰 국내 경제·금융
-- [[KIW2026 다시보기 영상] 프랭크 캐럴 "글로벌 투자 자금, 미국에서 이 나라로 간다"](https://www.hankyung.com/article/202606123693i)
-- [[KIW2026 다시보기 영상] 캐빈 류 "중국 경제의 방향, 세가지 변수에 달렸다"](https://www.hankyung.com/article/202606123734i)
-- ["지속 불가능한 주가"까지 오를 스페이스X [월가백브리핑]](https://www.hankyung.com/article/202606134164i)
-- ['금리 인상' 호재에 오르는 보험주…더 날아오른다는 현대해상](https://www.hankyung.com/article/202606122484i)
-- [3년 간 19배 뛴 SK하이닉스…여기 투자해 '대박' 난 곳은?](https://www.hankyung.com/article/202606122557i)
+- ["LG이노텍, 2분기 실적 서프라이즈 전망"-KB](https://www.hankyung.com/article/2026061556886)
+- ["삼전닉스 지금이라도 사라"…2분기 예상 실적 보니](https://www.hankyung.com/article/202606123842i)
+- ["머스크만 돈 번 게 아니었다"…스페이스X 상장 숨은 승자들](https://www.hankyung.com/article/2026061556267)
+- ["반도체 말고 아직 덜 오른 종목?…자산가치 높은 OOO" [노정동의 어쩌다 투자자]](https://www.hankyung.com/article/2026061448146)
+- [반도체 소부장 '뜀박질'…레버지리ETF도 뭉칫돈](https://www.hankyung.com/article/2026061452961)
 
 ## 📈 주식·시장
-- [오늘은 급등·내일은 폭락…AI주 투자자 마음 편히 해줄 ETF는](https://www.mk.co.kr/news/stock/12072998)
-- [“AI 특수에 가스까지 품귀”…후성 주가 일주일새 63% 쑥 [이주의 Bull기둥]](https://www.mk.co.kr/news/stock/12073325)
-- [코스피 거래대금 4배 폭증…증권사, 한 분기 만에 작년 순익 절반 벌어](https://www.mk.co.kr/news/stock/12073126)
-- [반도체 말고도 한국이 글로벌 무대 제패한 산업…제2의 반도체로 주목받는 K-뷰티 [김유신의 딥 머니 토크]](https://www.mk.co.kr/news/stock/12073087)
-- ['젠슨 황 효과'도 안먹히네…하이트진로 목표주가 뚝](https://www.mk.co.kr/news/stock/12073053)
+- [벡트·AID·심플랫폼, 엣지데이터센터 시장 공략…“AI 인프라 선도”](https://www.mk.co.kr/news/stock/12073978)
+- [“머스크만 돈 버는 줄 알았는데”…스페이스X 상장 수혜자들 보니](https://www.mk.co.kr/news/stock/12073953)
+- [오늘은 급등·내일은 폭락…AI주 투자자 마음 편히 해줄 ETF는 [이번주 찜할 ETF]](https://www.mk.co.kr/news/stock/12073950)
+- [일본은행 31년 만의 기준금리 1%, 이번 주 엔화를 봐야 하는 이유](https://www.mk.co.kr/news/stock/12073607)
+- [사상 최대 IPO에도 안무너진 월가 … ‘더 넓어진 장’에 주목하라](https://www.mk.co.kr/news/stock/12073688)
 
 ## 🌏 글로벌 경제·정세
-- [호르무즈 비용징수 명시적 반대 안한 트럼프…핵물질 이란 파괴 가능성 언급](https://www.hankyung.com/article/202606144566i)
-- [美-이란, 14일 중 '전자서명' 방식으로 60일 휴전할 듯 [이상은의 워싱턴나우]](https://www.hankyung.com/article/202606144561i)
-- [[속보] 파키스탄 "美-이란, 24시간 내 서명"](https://www.hankyung.com/article/202606144560i)
-- [파키스탄 총리 "美·이란, 24시간 내 최종 합의 예상"](https://www.hankyung.com/article/2026061345187)
-- [미군, 이란 종전 앞두고 "호르무즈서 자폭 드론 격추"](https://www.hankyung.com/article/2026061344637)
+- [[속보] 트럼프 "호르무즈 통행료 없이 개방…美 해상봉쇄 즉시 해제"](https://www.hankyung.com/article/2026061556657)
+- [[속보] 이란 파르스통신 "호르무즈 해협 통행체계, 이란-오만 협력으로 조정"](https://www.hankyung.com/article/202606155663i)
+- [[속보] 이란 파르스통신 "협정 성명 곧 발표…레바논 국경 유지"](https://www.hankyung.com/article/202606155649i)
+- [[속보] 이란 외무부 "오늘밤부터 전쟁 즉각적 영구 중단"](https://www.hankyung.com/article/2026061556527)
+- [트럼프 "이란과 협상 타결"…106일 만에 사실상 종전 합의](https://www.hankyung.com/article/2026061556447)
 
 ## 🔥 팔로업 추천 (300회 이상)
-- 34,211회 [2026-06-12] 자녀에게 증여한 내 피같은 재산, 이혼하면 재산분할 대상이다.  대부분은...
-- 2,528회 [2026-06-10] 종부세, 또 오를 판이야. 세금으로 주택 가격 잡겠다고?  다주택자만 폭...
-- 1,718회 [2026-06-12] 어떤 치과의사 후배, 작년에 코인으로 꽤 벌었대.  세금은 내년부터 내는...
-- 1,623회 [2026-06-11] 헌재, 유류분 바꿨다.  부모 재산 받는 거? 이젠 효도가 재산이야.  ...
-- 1,467회 [2026-06-13] 부산시 시금고. 심사위원 과반이 민간 몫이 됐어.  대부분은 그냥 공정해...
+- 34,234회 [2026-06-12] 자녀에게 증여한 내 피같은 재산, 이혼하면 재산분할 대상이다.  대부분은...
+- 16,227회 [2026-06-14] “자식 신세지긴 싫고 요양원도 싫어.” 이 생각으로 실버타운 알아보면 바...
+- 3,096회 [2026-06-14] 금감원이 미래에셋 검사에 나섰어.  스페이스X 공모주 '0주 배정' 논란...
+- 2,752회 [2026-06-14] 경동나비엔 서명 없는 단가 합의서로 공정위 제재 맞았어.  대부분은 “관...
+- 2,248회 [2026-06-14] 2차 국민참여성장펀드 6천억.  3분기 출시 확정이야.  근데 이거 진짜...
 
 ---
-*총 60개 기사 수집됨*
+*총 59개 기사 수집됨*
