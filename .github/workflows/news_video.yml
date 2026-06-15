@@ -20,6 +20,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      - name: ffmpeg 설치
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
       - name: 패키지 설치
         run: pip install requests feedparser google-genai beautifulsoup4 python-dotenv Pillow edge-tts
       - name: 비디오 포스팅
