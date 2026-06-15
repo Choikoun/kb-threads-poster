@@ -1,13 +1,13 @@
 # 🏛️ KTV 국무회의 브리핑
-*2026-06-14 18:46 KST*
+*2026-06-15 21:30 KST*
 
 ---
 
-## 한 번만 걸려도 문 닫는다! 바가지요금 근절대책의 핵심은? #바가지요금 #축제 #관광지 #먹거리 #알리오 #TF #유쾌한 #참견쟁이 #최대환 #강아랑 #뉴사이다 #KTV국민방송
-🔗 https://youtu.be/A_Xqu37yv28
+## (26.6.15.) 교황 및 국무원장 면담 관련 위성락 국가안보실장 브리핑
+🔗 https://youtu.be/ZGuVM0cV33U
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=A_Xqu37yv28! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=ZGuVM0cV33U! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
@@ -17,11 +17,11 @@ There are two ...
 
 ---
 
-## 무더위·호우에 채솟값 또 뛸라...‘여름철 농축산물 수급 안정 대책반’ 운영 #채소 #농산물 #여름 #대파 #가격 #폭염 #폭우 #비축 #최대환 #강아랑 #뉴사이다 #KTV국민방송
-🔗 https://youtu.be/zR3Qwh7lfBM
+## 역대 대통령 중 취임 후 가장 먼저 교황청을 찾은 이재명 대통령 레오14세와, 한반도 평화 논의 주목
+🔗 https://youtu.be/uKdbucpFHgQ
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=zR3Qwh7lfBM! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=uKdbucpFHgQ! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
