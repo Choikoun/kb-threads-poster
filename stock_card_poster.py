@@ -92,12 +92,12 @@ JSON만 출력:
     return None
 
 
-def search_pexels_photo(query, output_path=RAW_IMAGE_PATH):
+def search_pexels_photo(query, output_path=RAW_IMAGE_PATH, orientation='square'):
     for attempt in range(3):
         try:
             resp = requests.get('https://api.pexels.com/v1/search',
                                  headers={'Authorization': PEXELS_KEY},
-                                 params={'query': query, 'per_page': 10, 'orientation': 'square'},
+                                 params={'query': query, 'per_page': 10, 'orientation': orientation},
                                  timeout=15)
             if not resp.ok:
                 print(f'Pexels 검색 오류 (시도 {attempt+1}/3): {resp.status_code}')

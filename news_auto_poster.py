@@ -274,6 +274,58 @@ def upload_to_imgbb(img_bytes):
     print(f'  imgbb 실패: {d}')
     return None
 
+def upload_to_github_release(file_path, repo='Choikoun/kb-threads-poster', tag=None):
+    """mp4를 GitHub Releases에 업로드하고 공개 다운로드 URL 반환"""
+    gh_token = os.environ['GITHUB_TOKEN']
+    headers = {
+        'Authorization': f'Bearer {gh_token}',
+        'Accept': 'application/vnd.github+json',
+        'X-GitHub-Api-Version': '2022-11-28',
+    }
+
+    if tag is None:
+        tag = f"video-{datetime.now(KST).strftime('%Y%m%d-%H%M%S')}"
+
+    r = requests.post(
+        f'https://api.github.com/repos/{repo}/releases',
+        headers=headers,
+        json={
+            'tag_name': tag,
+            'name': f'Video {tag}',
+            'body': '자동 생성된 비디오 포스트 에셋',
+            'draft': False,
+            'prerelease': False,
+        },
+        timeout=30,
+    )
+    if not r.ok:
+        print(f'  릴리스 생성 실패: {r.status_code} {r.text}')
+        return None
+    release = r.json()
+    upload_url_base = release['upload_url'].split('{')[0]
+
+    filename = os.path.basename(file_path)
+    with open(file_path, 'rb') as f:
+        data = f.read()
+
+    upload_headers = dict(headers)
+    upload_headers['Content-Type'] = 'video/mp4'
+    ur = requests.post(
+        upload_url_base,
+        headers=upload_headers,
+        params={'name': filename},
+        data=data,
+        timeout=120,
+    )
+    if not ur.ok:
+        print(f'  에셋 업로드 실패: {ur.status_code} {ur.text}')
+        return None
+
+    asset = ur.json()
+    download_url = asset['browser_download_url']
+    print(f'  GitHub Release 업로드 완료: {download_url}')
+    return download_url
+
 # ─── 3. Gemini 컨텐츠 생성 ───────────────────────────────────────
 
 def get_trend_headlines(limit=8):
@@ -444,6 +496,12 @@ def post_to_threads(main_text, comments, image_url=None, topic_tag=None):
     print(f'메인 발행: {main_id}')
     time.sleep(3)
 
+    _publish_comments(UID, main_id, comments)
+
+    return main_id
+
+
+def _publish_comments(UID, main_id, comments):
     for i, comment in enumerate(comments):
         rc = requests.post(f'https://graph.threads.net/v1.0/{UID}/threads', params={
             'media_type': 'TEXT',
@@ -456,6 +514,54 @@ def post_to_threads(main_text, comments, image_url=None, topic_tag=None):
                            params={'creation_id': rc.json()['id'], 'access_token': TOKEN}, timeout=30)
         print(f'댓글{i+1} 발행: {rp.json().get("id")}')
         time.sleep(2)
+
+
+def post_video_to_threads(main_text, comments, video_url, topic_tag=None):
+    me = requests.get('https://graph.threads.net/v1.0/me',
+                      params={'fields': 'id', 'access_token': TOKEN}, timeout=30)
+    UID = me.json()['id']
+
+    params = {
+        'text': main_text,
+        'media_type': 'VIDEO',
+        'video_url': video_url,
+        'access_token': TOKEN,
+    }
+    if topic_tag:
+        params['topic_tag'] = topic_tag
+
+    r1 = requests.post(f'https://graph.threads.net/v1.0/{UID}/threads', params=params, timeout=30)
+    container_id = r1.json().get('id')
+    print(f'메인 컨테이너(VIDEO): {r1.json()}')
+    if not container_id:
+        print('컨테이너 생성 실패')
+        return None
+
+    # 비디오 처리 상태 폴링 (최대 5분, 10초 간격)
+    for attempt in range(30):
+        time.sleep(10)
+        sr = requests.get(f'https://graph.threads.net/v1.0/{container_id}',
+                          params={'fields': 'status,error_message', 'access_token': TOKEN},
+                          timeout=30)
+        sd = sr.json()
+        status = sd.get('status')
+        print(f'  처리 상태 ({attempt+1}/30): {status}')
+        if status == 'FINISHED':
+            break
+        if status == 'ERROR':
+            print(f'  비디오 처리 오류: {sd.get("error_message")}')
+            return None
+    else:
+        print('  비디오 처리 타임아웃')
+        return None
+
+    r2 = requests.post(f'https://graph.threads.net/v1.0/{UID}/threads_publish',
+                       params={'creation_id': container_id, 'access_token': TOKEN}, timeout=30)
+    main_id = r2.json()['id']
+    print(f'메인 발행: {main_id}')
+    time.sleep(3)
+
+    _publish_comments(UID, main_id, comments)
 
     return main_id
 

@@ -1,6 +1,10 @@
 poster_log.txt
 ai_card_raw.png
 ai_card_final.jpg
+video_raw.jpg
+video_frame.jpg
+video_narration.mp3
+video_final.mp4
 auto_poster.py
 실행.bat
 __pycache__/
