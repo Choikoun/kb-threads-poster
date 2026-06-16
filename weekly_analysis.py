@@ -1,9 +1,10 @@
 """
-주간 조회수 분석 — 매주 상위 포스팅 확인 + 재발행 후보 추적
+주간 조회수 분석 — 매주 상위 포스팅 확인 + 재발행 후보 추적 + Gemini 전략 인사이트
 """
-import sys, os, json, time, requests
+import sys, os, json, re, time, requests
 from datetime import datetime, timedelta, timezone
 from dotenv import load_dotenv
+from google import genai
 load_dotenv()
 sys.stdout.reconfigure(encoding='utf-8')
 
@@ -182,6 +183,35 @@ def run_analysis():
         save_reblog(reblog)
     else:
         print(f"\n🔄 재발행 시기 된 포스팅 없음")
+
+    # Gemini 전략 인사이트
+    gemini_key = os.environ.get('GEMINI_API_KEY')
+    if gemini_key and results:
+        try:
+            top5 = results[:5]
+            summary = '\n'.join([
+                f"{i+1}. [{r['date']}] 조회 {r['views']:,} | 좋아요 {r['likes']} | 댓글 {r['replies']}\n   \"{r['text']}...\""
+                for i, r in enumerate(top5)
+            ])
+            prompt = f"""너는 증여·상속 구조 설계 전문가 Threads 계정의 콘텐츠 전략가야.
+이번 주 TOP 5 포스팅 성과 데이터:
+
+{summary}
+
+이 데이터를 보고 다음 주 콘텐츠 전략을 3가지 제안해줘.
+각 제안은:
+- 어떤 각도/주제로 쓸지
+- 왜 이번 성과 데이터에서 그 판단이 나왔는지
+- 구체적인 첫 줄(훅) 예시 1개
+
+전부 반말. 200자 이내로 간결하게."""
+            client = genai.Client(api_key=gemini_key)
+            resp = client.models.generate_content(model='gemini-2.5-flash', contents=prompt)
+            print(f"\n🤖 다음 주 콘텐츠 전략 (Gemini 인사이트)")
+            print(f"{'-'*60}")
+            print(resp.text.strip())
+        except Exception as e:
+            print(f'\nGemini 인사이트 생성 실패: {e}')
 
     print(f"\n{'='*60}\n")
 
