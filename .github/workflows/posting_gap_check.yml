@@ -1,0 +1,26 @@
+name: 포스팅 공백 감지 (매일 23:30 KST)
+
+on:
+  schedule:
+    - cron: '30 14 * * *'   # 매일 23:30 KST
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: 패키지 설치
+        run: pip install requests
+      - name: 포스팅 공백 확인
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python check_posting_gap.py

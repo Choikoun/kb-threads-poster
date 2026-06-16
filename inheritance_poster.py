@@ -50,8 +50,44 @@ def increment_series(n, topic):
         recent.remove(topic)
     recent.append(topic)
     data['recent_topics'] = recent[-5:]
+    all_topics = data.get('all_topics', [])
+    all_topics.append(topic)
+    data['all_topics'] = all_topics
     with open(SERIES_FILE, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
+
+
+def post_series_index(series_num):
+    data = {}
+    if os.path.exists(SERIES_FILE):
+        try:
+            with open(SERIES_FILE, encoding='utf-8') as f:
+                data = json.load(f)
+        except Exception:
+            pass
+    all_topics = data.get('all_topics', [])
+    block = all_topics[-10:]
+    start = series_num - len(block) + 1
+
+    lines = []
+    for i, t in enumerate(block, start):
+        short = t.split(' — ')[0][:22]
+        lines.append(f'{i}. {short}')
+
+    body = (
+        f'증여 설계 이야기 #{start}~{series_num}.\n\n'
+        + '\n'.join(lines)
+        + '\n\n이 중에 내 얘기 있어?\n\n#증여 #상속'
+    )
+
+    r = requests.get(f'{BASE}/me', params={'fields': 'id', 'access_token': TOKEN}, timeout=30)
+    uid = r.json()['id']
+    r1 = requests.post(f'{BASE}/{uid}/threads',
+                       params={'media_type': 'TEXT', 'text': body, 'access_token': TOKEN}, timeout=30)
+    time.sleep(4)
+    r2 = requests.post(f'{BASE}/{uid}/threads_publish',
+                       params={'creation_id': r1.json()['id'], 'access_token': TOKEN}, timeout=30)
+    print(f'시리즈 목차 발행: {r2.json().get("id")}')
 
 TOPICS = [
     "자녀에게 현금 줄 때 증여냐 차용이냐 — 목적이 뭐냐에 따라 구조가 달라진다",
@@ -154,6 +190,9 @@ def main():
         print(f'댓글{i+1}:\n{c}\n')
     post(content)
     increment_series(series_num, topic)
+    if series_num % 10 == 0:
+        time.sleep(60)
+        post_series_index(series_num)
     print('완료!')
 
 if __name__ == '__main__':
