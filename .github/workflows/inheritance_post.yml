@@ -1,0 +1,23 @@
+name: 증여·상속 구조 설계 포스팅 (화·목)
+
+on:
+  schedule:
+    - cron: '0 11 * * 2'   # 매주 화요일 20:00 KST
+    - cron: '0 11 * * 4'   # 매주 목요일 20:00 KST
+  workflow_dispatch:
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: 패키지 설치
+        run: pip install requests google-genai python-dotenv
+      - name: 증여·상속 포스팅
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+        run: python inheritance_poster.py

@@ -2,7 +2,7 @@ name: 뉴스 자동포스팅 - 저녁 (보험·노후·상속)
 
 on:
   schedule:
-    - cron: '0 9 * * *'   # 매일 18:00 KST
+    - cron: '0 12 * * *'   # 매일 21:00 KST
   workflow_dispatch:
     inputs:
       category:
