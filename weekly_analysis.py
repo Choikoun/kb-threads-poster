@@ -137,12 +137,17 @@ def run_analysis():
         key = (entry.get("category", "?"), entry.get("format_variant", "?"))
         groups.setdefault(key, []).append(r)
 
+    format_weights = {}
     if groups:
         print(f"\n🧪 포맷별 성과 (카테고리 / 포맷 / 건수 / 평균조회 / 평균좋아요)")
         for (category, variant), items in sorted(groups.items()):
             avg_views = sum(i["views"] for i in items) / len(items)
             avg_likes = sum(i["likes"] for i in items) / len(items)
             print(f"  {category} / {variant}: {len(items)}건, 평균조회 {avg_views:,.0f}, 평균좋아요 {avg_likes:,.1f}")
+            format_weights.setdefault(category, {})[variant] = round(avg_views, 1)
+        with open('format_weights.json', 'w', encoding='utf-8') as f:
+            json.dump(format_weights, f, ensure_ascii=False, indent=2)
+        print(f"  → format_weights.json 업데이트 완료")
 
     # 재발행 후보 (조회수 300 이상)
     reblog = load_reblog()
@@ -183,6 +188,50 @@ def run_analysis():
         save_reblog(reblog)
     else:
         print(f"\n🔄 재발행 시기 된 포스팅 없음")
+
+    # 인기글 후속 자동 생성·발행
+    gemini_key = os.environ.get('GEMINI_API_KEY')
+    if gemini_key and results:
+        avg_views = sum(r["views"] for r in results) / len(results) if results else 0
+        hot = [r for r in results if r["views"] >= max(avg_views * 3, 500) and r.get("full_text")]
+        if hot:
+            top = hot[0]
+            print(f"\n🔥 인기글 후속 자동 생성: 조회 {top['views']:,} | {top['text']}...")
+            try:
+                client = genai.Client(api_key=gemini_key)
+                followup_prompt = f"""너는 증여·상속 구조 설계 전문가 Threads 계정이야.
+아래 글이 이번 주 조회수 {top['views']:,}회로 크게 반응이 왔어.
+
+[원본 글]
+{top['full_text'][:300]}
+
+이 글과 연결되지만 다른 각도의 후속 글을 써줘.
+- 원본 글의 주제/훅을 반복하지 않음
+- 원본이 건드린 경각심을 한 단계 더 깊이 파고들거나 반대 시나리오를 보여줌
+- 전부 반말, 메인 6~10줄
+- 댓글 2개 (마지막은 양자택일형)
+
+JSON만 출력:
+{{"main": "...", "comments": ["댓글1", "댓글2"]}}"""
+                resp = client.models.generate_content(model='gemini-2.5-flash', contents=followup_prompt)
+                m = re.search(r'\{[\s\S]*\}', resp.text.strip())
+                if m:
+                    content = json.loads(m.group())
+                    print(f"\n후속 글:\n{content['main']}\n")
+                    new_id = repost_text(content['main'], token, user_id)
+                    if new_id:
+                        for c in content.get('comments', []):
+                            rc = requests.post(f"{BASE}/{user_id}/threads",
+                                               params={"media_type": "TEXT", "text": c, "reply_to_id": new_id, "access_token": token}, timeout=30)
+                            time.sleep(3)
+                            requests.post(f"{BASE}/{user_id}/threads_publish",
+                                          params={"creation_id": rc.json().get("id"), "access_token": token}, timeout=30)
+                            time.sleep(2)
+                        print(f"  ✅ 후속 글 발행 완료: {new_id}")
+            except Exception as e:
+                print(f"후속 글 생성 실패: {e}")
+        else:
+            print(f"\n🔥 후속 자동화 기준 미달 (평균 조회 {avg_views:,.0f}회, 기준 {max(avg_views*3,500):,.0f}회)")
 
     # Gemini 전략 인사이트
     gemini_key = os.environ.get('GEMINI_API_KEY')

@@ -383,6 +383,20 @@ POINT_FORMULA = '''[포인트 공식 - 반드시 둘 다 섞어]
 '''
 
 
+def _choose_format(category, variants):
+    weights_file = 'format_weights.json'
+    if os.path.exists(weights_file):
+        try:
+            with open(weights_file, encoding='utf-8') as f:
+                weights = json.load(f)
+            cat_weights = weights.get(category, {})
+            w = [max(cat_weights.get(v, 1.0), 0.1) for v in variants]
+            return random.choices(variants, weights=w, k=1)[0]
+        except Exception:
+            pass
+    return random.choice(variants)
+
+
 def generate_content(articles, category='economy'):
     client = genai.Client(api_key=GEMINI_KEY)
     cat = CATEGORIES.get(category, CATEGORIES['economy'])
@@ -392,7 +406,7 @@ def generate_content(articles, category='economy'):
     context_block = f"\n[참고 - 관련 뉴스일 때만 활용]\n{cat['context']}\n" if cat.get('context') else ''
     format_branch_block = f"\n[형식 분기 - 해당되면 사용]\n{cat['format_branch']}\n" if cat.get('format_branch') else ''
 
-    chosen_variant = random.choice(cat.get('format_variants', ['반전형']))
+    chosen_variant = _choose_format(category, cat.get('format_variants', ['반전형']))
     structure_block = FORMAT_STRUCTURES.get(chosen_variant, FORMAT_STRUCTURES['반전형'])
     point_formula_block = '' if chosen_variant == '담백형' else POINT_FORMULA
 
