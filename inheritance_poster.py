@@ -13,6 +13,30 @@ sys.stdout.reconfigure(encoding='utf-8')
 TOKEN = os.environ['THREADS_ACCESS_TOKEN']
 GEMINI_KEY = os.environ['GEMINI_API_KEY']
 BASE = 'https://graph.threads.net/v1.0'
+SERIES_FILE = 'series_log.json'
+
+
+def get_series_number():
+    if os.path.exists(SERIES_FILE):
+        try:
+            with open(SERIES_FILE, encoding='utf-8') as f:
+                return json.load(f).get('inheritance_count', 0) + 1
+        except Exception:
+            pass
+    return 1
+
+
+def increment_series(n):
+    data = {}
+    if os.path.exists(SERIES_FILE):
+        try:
+            with open(SERIES_FILE, encoding='utf-8') as f:
+                data = json.load(f)
+        except Exception:
+            pass
+    data['inheritance_count'] = n
+    with open(SERIES_FILE, 'w', encoding='utf-8') as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
 
 TOPICS = [
     "자녀에게 현금 줄 때 증여냐 차용이냐 — 목적이 뭐냐에 따라 구조가 달라진다",
@@ -28,6 +52,7 @@ TOPICS = [
 ]
 
 PROMPT_TEMPLATE = """너는 한국 Threads에서 활동하는 증여·상속 구조 설계 전문가야.
+이 글은 "증여 설계 이야기" 시리즈의 #{series_num}번째 편이야.
 세무사가 아니야. 세금 계산보다 "가족 자산이 누구한테, 언제, 어떻게 가야 하는가"를 미리 설계하는 것이 전문 영역이야.
 
 오늘 주제: {topic}
@@ -50,6 +75,7 @@ PROMPT_TEMPLATE = """너는 한국 Threads에서 활동하는 증여·상속 구
 - 댓글 2: 양자택일형 질문으로 마무리 (예: "A야, B야?") — 2줄, 반말
 
 메인 포스트 마지막 줄 다음에 빈 줄 하나 추가 후 `#증여 #상속` 해시태그 붙여.
+메인 포스트 어딘가에 자연스럽게 "증여 설계 이야기 #{series_num}" 을 한 줄로 넣어. 강요하는 느낌 없이 자연스럽게.
 
 JSON만 출력:
 {{
@@ -57,9 +83,9 @@ JSON만 출력:
   "comments": ["댓글1", "댓글2"]
 }}"""
 
-def generate(topic):
+def generate(topic, series_num):
     client = genai.Client(api_key=GEMINI_KEY)
-    prompt = PROMPT_TEMPLATE.format(topic=topic)
+    prompt = PROMPT_TEMPLATE.format(topic=topic, series_num=series_num)
     for attempt in range(3):
         try:
             resp = client.models.generate_content(model='gemini-2.5-flash', contents=prompt)
@@ -100,8 +126,9 @@ def post(content):
 
 def main():
     topic = random.choice(TOPICS)
-    print(f'주제: {topic}')
-    content = generate(topic)
+    series_num = get_series_number()
+    print(f'주제: {topic} (시리즈 #{series_num})')
+    content = generate(topic, series_num)
     if not content:
         print('생성 실패')
         return
@@ -109,6 +136,7 @@ def main():
     for i, c in enumerate(content.get('comments', [])):
         print(f'댓글{i+1}:\n{c}\n')
     post(content)
+    increment_series(series_num)
     print('완료!')
 
 if __name__ == '__main__':

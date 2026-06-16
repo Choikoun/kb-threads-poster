@@ -1,0 +1,36 @@
+name: 댓글 기반 포스팅 초안 생성 (주간)
+
+on:
+  schedule:
+    - cron: '0 2 * * 3'   # 매주 수요일 11:00 KST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  generate_drafts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: 패키지 설치
+        run: pip install requests google-genai python-dotenv
+      - name: 댓글 분석 및 초안 생성
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python comment_to_post.py
+      - name: 초안 파일 커밋
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add post_drafts.json
+          git diff --staged --quiet || git commit -m "포스팅 초안 업데이트"
+          git pull --rebase
+          git push
