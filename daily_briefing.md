@@ -1,42 +1,42 @@
 # 📰 일일 브리핑
-*2026-06-16 08:28 KST*
+*2026-06-17 08:16 KST*
 
 ---
 
 ## 🔖 보험 동향
-- [신의료기술 시대… 보험산업 판도도 바뀐다](https://www.insnews.co.kr/news/articleView.html?idxno=91238)
-- [사칭 ‘보험점검센터’ 활개… 보험사·GA 고객DB 활용 논란](https://www.insnews.co.kr/news/articleView.html?idxno=91232)
-- [보험연수원, ‘크립토 리터러시’ 강의 고도화… 기수별 심층 주제에 집중](https://www.insnews.co.kr/news/articleView.html?idxno=91284)
-- [금융보안원, 금융AI보안연구소 신설… AI 사이버위협 대응 강화](https://www.insnews.co.kr/news/articleView.html?idxno=91282)
-- [하나은행, 사내 연금 전문가 찾는다… ‘2026 연금고수전’ 개최](https://www.insnews.co.kr/news/articleView.html?idxno=91280)
+- [신용회복위원회, ‘불법사금융 피해지원’ 관계기관 협력망 정비](https://www.insnews.co.kr/news/articleView.html?idxno=91310)
+- [무보, 생산적 무역금융 확대를 위한 포럼 개최](https://www.insnews.co.kr/news/articleView.html?idxno=91305)
+- [금융보안원, 공격자 관점 ‘AI 활용 모의해킹 교육’ 확대](https://www.insnews.co.kr/news/articleView.html?idxno=91294)
+- [DB손보, 업계 최초 ‘블랙박스 영상 활용 AI 과실판정 시스템’ 개시](https://www.insnews.co.kr/news/articleView.html?idxno=91291)
+- [삼성화재 다이렉트, 달리는 고객 위한 ‘러닝보험’ 출시](https://www.insnews.co.kr/news/articleView.html?idxno=91290)
 
 ## 💰 국내 경제·금융
-- [종전 합의에 다우지수 사상 최고…유가 3개월 만에 최저 [뉴욕증시 브리핑]](https://www.hankyung.com/article/2026061681936)
-- [이란 "60일뒤 통행료" 시사...엔비디아, 5년만 부채 발행 [빈난새의 개장전요것만]](https://www.hankyung.com/article/202606158025i)
-- [美·이란 종전 합의 소식에…뉴욕증시 상승 출발](https://www.hankyung.com/article/2026061579957)
-- [40만전자·300만닉스 가나…종전 훈풍에 실적으로 쏠리는 눈 [종목+]](https://www.hankyung.com/article/2026061574896)
-- ["삼전닉스 다음은 스페이스X"…운용사 ETF 경쟁 불붙었다](https://www.hankyung.com/article/2026061577896)
+- [호르무즈 정상화까지 수개월…"유가 단기 급락 없다" [분석+]](https://www.hankyung.com/article/2026061602776)
+- [거래소, 코스닥 세그먼트 자문단 구성…킥오프 회의 개최](https://www.hankyung.com/article/202606160207i)
+- ["메모리 수요 2만배" 하이닉스 목표가 줄상향](https://www.hankyung.com/article/2026061601371)
+- [카카오모빌리티·토스도 ADR 상장하나](https://www.hankyung.com/article/2026061601381)
+- [AI 시대 가장 주목할 반도체 부품은 [한경 프리미엄9 TODAY]](https://www.hankyung.com/article/2026061601061)
 
 ## 📈 주식·시장
-- [“GS건설, 국내 주택 실적 정상화, 중동 재건 수주 기대감”](https://www.mk.co.kr/news/stock/12075054)
-- [“비싸게 사고 싸게 팔고 있었다”...하루 50건씩 터지는 ETF ‘괴리율 공포’](https://www.mk.co.kr/news/stock/12075019)
-- [사상 최대 IPO에도 안무너진 월가…‘더 넓어진 장’에 주목하라 [불앤베어 위클리]](https://www.mk.co.kr/news/stock/12074774)
-- [[미국 주식 돋보기] 메모리 부족 반사이익…실리콘모션 주가 훨훨](https://www.mk.co.kr/news/stock/12074711)
-- [변동성 장세에 ETF 괴리율 공시 급증](https://www.mk.co.kr/news/stock/12074709)
+- [“땡큐 하이닉스”…SK스퀘어, 반도체 훈풍 수혜에 ‘목표가 185만원’](https://www.mk.co.kr/news/stock/12076007)
+- [팔로워 84만 해외 트레이더 “이 주식 사세요”…외국인 몰리자 급등한 K기업](https://www.mk.co.kr/news/stock/12075986)
+- [스페이스X 상장 3일만에 아마존 제쳤다...기술주 약세에 나스닥은 숨고르기 [월가월부]](https://www.mk.co.kr/news/stock/12075984)
+- [엑손모빌→애플→엔비디아 … 세계시총 1위 이제 우주서 나온다](https://www.mk.co.kr/news/stock/12075157)
+- [증시 업종 분류 개편한다 … 車, 모빌리티 섹터로 독립](https://www.mk.co.kr/news/stock/12075675)
 
 ## 🌏 글로벌 경제·정세
-- [일본, 31년 만에 기준금리 1%로 인상…한국은? [도쿄나우]](https://www.hankyung.com/article/202606168318i)
-- [미국·이란 종전 합의 후 케슘섬·호르무즈 해협 폭발음](https://www.hankyung.com/article/2026061681767)
-- [xAI, 오픈AI 상대 영업기밀 소송 기각…머스크 또 패소](https://www.hankyung.com/article/2026061682047)
-- [호르무즈, 결국 이란 관리 체제로…전쟁 '씁쓸한 결말' [이상은의 워싱턴나우]](https://www.hankyung.com/article/202606168075i)
-- [美 "이란과 MOU, 48시간 내 공개…호르무즈 60일간 무료 개방" [이상은의 워싱턴나우]](https://www.hankyung.com/article/202606168052i)
+- [원유 판매 허용·재건 지원까지…트럼프, '이란 퍼주기' 논란 [이상은의 워싱턴나우]](https://www.hankyung.com/article/202606170519i)
+- ['부실합의' 비판에 뿔난 트럼프…"MOU 전문 낭독하겠다" [이상은의 워싱턴나우]](https://www.hankyung.com/article/202606170453i)
+- [시진핑의 중국 AI 굴기 2막…딥시크에 국가·빅테크 자금 몰렸다](https://www.hankyung.com/article/2026061603507)
+- [만리장성서 '일본 북' 사용…中 불만 폭주에 룰루레몬 결국](https://www.hankyung.com/article/2026061602827)
+- [미국 농락 당했나…"이란, 트럼프 '갖고 놀며' 유리하게 합의"](https://www.hankyung.com/article/2026061602157)
 
 ## 🔥 팔로업 추천 (300회 이상)
-- 34,239회 [2026-06-12] 자녀에게 증여한 내 피같은 재산, 이혼하면 재산분할 대상이다.  대부분은...
-- 30,713회 [2026-06-14] “자식 신세지긴 싫고 요양원도 싫어.” 이 생각으로 실버타운 알아보면 바...
-- 11,249회 [2026-06-15] 국고채 금리 뚝 떨어졌어. 3년물 연 3.744%.  대부분은 대출 이자...
-- 3,638회 [2026-06-14] 금감원이 미래에셋 검사에 나섰어.  스페이스X 공모주 '0주 배정' 논란...
-- 3,066회 [2026-06-14] 경동나비엔 서명 없는 단가 합의서로 공정위 제재 맞았어.  대부분은 “관...
+- 30,728회 [2026-06-14] “자식 신세지긴 싫고 요양원도 싫어.” 이 생각으로 실버타운 알아보면 바...
+- 12,912회 [2026-06-15] 국고채 금리 뚝 떨어졌어. 3년물 연 3.744%.  대부분은 대출 이자...
+- 8,510회 [2026-06-16] 어떤 자산가, 스페이스X 같은 유망 기업에 수억, 수십억을 투자했어.  ...
+- 5,023회 [2026-06-16] 한 건설사 대표, 오랜 관행처럼 하도급 계약 처리했어. 문제없을 거라 생...
+- 3,668회 [2026-06-14] 금감원이 미래에셋 검사에 나섰어.  스페이스X 공모주 '0주 배정' 논란...
 
 ---
 *총 60개 기사 수집됨*
