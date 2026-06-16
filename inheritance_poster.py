@@ -26,7 +26,17 @@ def get_series_number():
     return 1
 
 
-def increment_series(n):
+def get_recent_topics():
+    if os.path.exists(SERIES_FILE):
+        try:
+            with open(SERIES_FILE, encoding='utf-8') as f:
+                return json.load(f).get('recent_topics', [])
+        except Exception:
+            pass
+    return []
+
+
+def increment_series(n, topic):
     data = {}
     if os.path.exists(SERIES_FILE):
         try:
@@ -35,6 +45,11 @@ def increment_series(n):
         except Exception:
             pass
     data['inheritance_count'] = n
+    recent = data.get('recent_topics', [])
+    if topic in recent:
+        recent.remove(topic)
+    recent.append(topic)
+    data['recent_topics'] = recent[-5:]
     with open(SERIES_FILE, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
@@ -125,7 +140,9 @@ def post(content):
     return main_id
 
 def main():
-    topic = random.choice(TOPICS)
+    recent_topics = get_recent_topics()
+    weights = [1 if t in recent_topics else 5 for t in TOPICS]
+    topic = random.choices(TOPICS, weights=weights, k=1)[0]
     series_num = get_series_number()
     print(f'주제: {topic} (시리즈 #{series_num})')
     content = generate(topic, series_num)
@@ -136,7 +153,7 @@ def main():
     for i, c in enumerate(content.get('comments', [])):
         print(f'댓글{i+1}:\n{c}\n')
     post(content)
-    increment_series(series_num)
+    increment_series(series_num, topic)
     print('완료!')
 
 if __name__ == '__main__':
