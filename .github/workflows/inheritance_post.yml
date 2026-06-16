@@ -6,6 +6,10 @@ on:
     - cron: '0 5 * * 4'   # 매주 목요일 14:00 KST
   workflow_dispatch:
 
+permissions:
+  contents: read
+  issues: write
+
 jobs:
   post:
     runs-on: ubuntu-latest
@@ -16,8 +20,20 @@ jobs:
           python-version: '3.11'
       - name: 패키지 설치
         run: pip install requests google-genai python-dotenv
-      - name: 증여·상속 포스팅
+      - name: 증여·상속 포스팅 (최대 3회 재시도)
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
-        run: python inheritance_poster.py
+        run: |
+          for i in 1 2 3; do
+            python inheritance_poster.py && break
+            if [ $i -lt 3 ]; then echo "시도 $i 실패, 30초 후 재시도..."; sleep 30; fi
+          done
+      - name: 실패 알림
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue create \
+            --title "⚠️ 포스팅 실패: ${{ github.workflow }} ($(TZ=Asia/Seoul date +'%Y-%m-%d %H:%M'))" \
+            --body "3회 재시도 후 실패. [로그](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})"

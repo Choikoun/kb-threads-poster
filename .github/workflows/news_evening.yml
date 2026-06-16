@@ -15,6 +15,7 @@ concurrency:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   post_news:
@@ -26,13 +27,25 @@ jobs:
           python-version: '3.11'
       - name: 패키지 설치
         run: pip install requests feedparser google-genai beautifulsoup4 python-dotenv
-      - name: 보험·노후·상속 뉴스 포스팅
+      - name: 보험·노후·상속 뉴스 포스팅 (최대 3회 재시도)
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
           IMGBB_API_KEY: ${{ secrets.IMGBB_API_KEY }}
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
-        run: python news_auto_poster.py insurance
+        run: |
+          for i in 1 2 3; do
+            python news_auto_poster.py insurance && break
+            if [ $i -lt 3 ]; then echo "시도 $i 실패, 30초 후 재시도..."; sleep 30; fi
+          done
+      - name: 실패 알림
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue create \
+            --title "⚠️ 포스팅 실패: ${{ github.workflow }} ($(TZ=Asia/Seoul date +'%Y-%m-%d %H:%M'))" \
+            --body "3회 재시도 후 실패. [로그](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})"
       - name: 콘텐츠 로그 커밋
         run: |
           git config user.name "github-actions[bot]"
