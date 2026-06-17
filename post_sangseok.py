@@ -5,9 +5,9 @@ sys.stdout.reconfigure(encoding='utf-8')
 TOKEN = os.environ['THREADS_ACCESS_TOKEN']
 BASE = 'https://graph.threads.net/v1.0'
 
-main_text = """이 생각이 제일 비싸.
+main_text = """"돌아가시면 그때 가서 알아보면 되지."
 
-"돌아가시면 그때 가서 알아보면 되지."
+이 말이 상속에서 제일 비싸.
 
 상속세는 돌아가신 날 기준으로 계산해.
 그날 이후로는 바꿀 수 있는 게 없어.
