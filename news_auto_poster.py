@@ -517,6 +517,15 @@ def post_to_threads(main_text, comments, image_url=None, topic_tag=None):
     print(f'메인 컨테이너: {r1.json()}')
     time.sleep(4)
 
+    # 이미지 URL 실패 시 텍스트 전용으로 재시도
+    if 'id' not in r1.json() and image_url:
+        print('이미지 URL 오류 — 텍스트 전용으로 재시도')
+        params.pop('image_url', None)
+        params['media_type'] = 'TEXT'
+        r1 = requests.post(f'https://graph.threads.net/v1.0/{UID}/threads', params=params, timeout=30)
+        print(f'텍스트 컨테이너: {r1.json()}')
+        time.sleep(4)
+
     r2 = requests.post(f'https://graph.threads.net/v1.0/{UID}/threads_publish',
                        params={'creation_id': r1.json()['id'], 'access_token': TOKEN}, timeout=30)
     main_id = r2.json()['id']
