@@ -360,7 +360,7 @@ def _choose_format(category, variants):
     return random.choice(variants)
 
 
-def generate_content(articles, category='economy'):
+def generate_content(articles, category='economy', used_titles=None):
     client = genai.Client(api_key=GEMINI_KEY)
     cat = CATEGORIES.get(category, CATEGORIES['economy'])
     news_list = '\n'.join([f"{i+1}. {a['title']}" for i, a in enumerate(articles[:20])])
@@ -368,6 +368,10 @@ def generate_content(articles, category='economy'):
     trend_block = f"\n[오늘의 핵심 이슈 - 후속/연결 가능하면 활용]\n{trend_headlines}\n" if trend_headlines else ''
     context_block = f"\n[참고 - 관련 뉴스일 때만 활용]\n{cat['context']}\n" if cat.get('context') else ''
     format_branch_block = f"\n[형식 분기 - 해당되면 사용]\n{cat['format_branch']}\n" if cat.get('format_branch') else ''
+    used_block = ''
+    if used_titles:
+        titles_str = '\n'.join(f'- {t}' for t in used_titles)
+        used_block = f"\n[오늘 이미 포스팅한 뉴스 - 절대 선택 금지]\n{titles_str}\n위 뉴스와 같은 사건·판결·기관을 다룬 뉴스도 금지. 완전히 다른 주제를 선택해.\n"
 
     chosen_variant = _choose_format(category, cat.get('format_variants', ['반전형']))
     structure_block = FORMAT_STRUCTURES.get(chosen_variant, FORMAT_STRUCTURES['반전형'])
@@ -386,7 +390,7 @@ def generate_content(articles, category='economy'):
 
     prompt = f"""너는 한국 Threads에서 팔로워를 끌어모으는 금융 전문가야.
 아래 뉴스 중 {cat['name']} 독자에게 가장 임팩트 있는 것 하나 골라서 포스트를 작성해줘.
-
+{used_block}
 [오늘 뉴스]
 {news_list}
 {trend_block}
@@ -592,8 +596,16 @@ def main():
     for a in articles[:5]:
         print(f'  - {a["title"]}')
 
+    today_str = datetime.now(KST).strftime('%Y-%m-%d')
+    used_titles = []
+    if os.path.exists(CONTENT_LOG_FILE):
+        with open(CONTENT_LOG_FILE, encoding='utf-8') as f:
+            used_titles = [e['selected_title'] for e in json.load(f) if e.get('date') == today_str]
+    if used_titles:
+        print(f'오늘 이미 사용한 뉴스 {len(used_titles)}개 제외')
+
     print('\nGemini 컨텐츠 생성 중...')
-    content = generate_content(articles, category)
+    content = generate_content(articles, category, used_titles=used_titles)
     if not content:
         print('컨텐츠 생성 실패 - 종료')
         sys.exit(1)
