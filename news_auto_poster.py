@@ -5,7 +5,7 @@
 - 오후 12시: 경제·시장
 - 오후 6시: 보험·노후·상속
 """
-import os, sys, json, time, base64, re, random
+import os, sys, json, time, re, random
 from datetime import datetime, timezone, timedelta
 import requests
 import feedparser
@@ -17,7 +17,6 @@ load_dotenv()
 sys.stdout.reconfigure(encoding='utf-8')
 
 TOKEN       = os.getenv('THREADS_ACCESS_TOKEN')
-IMGBB_KEY   = os.getenv('IMGBB_API_KEY')
 GEMINI_KEY  = os.getenv('GEMINI_API_KEY')
 YOUTUBE_KEY = os.getenv('YOUTUBE_API_KEY')
 
@@ -190,16 +189,15 @@ def get_hot_news(category='economy'):
 
 # ─── 2. YouTube 썸네일 ───────────────────────────────────────────
 
-def get_youtube_thumbnail(query):
-    """뉴스 키워드로 YouTube 영상 검색 → 고화질 썸네일 다운로드"""
+def get_youtube_thumbnail_url(query):
+    """YouTube 영상 검색 → hqdefault 썸네일 URL 반환 (imgbb 업로드 없이 직접 사용)"""
     if not YOUTUBE_KEY:
         return None
     try:
         channel = random.choice(['KBS 뉴스', 'SBS 뉴스', 'MBC 뉴스', 'YTN'])
-        search_q = f'{channel} {query}'
         r = requests.get('https://www.googleapis.com/youtube/v3/search', params={
             'key': YOUTUBE_KEY,
-            'q': search_q,
+            'q': f'{channel} {query}',
             'part': 'snippet',
             'type': 'video',
             'order': 'relevance',
@@ -207,73 +205,38 @@ def get_youtube_thumbnail(query):
             'relevanceLanguage': 'ko',
             'regionCode': 'KR',
         }, timeout=10)
-        data = r.json()
-        items = data.get('items', [])
+        items = r.json().get('items', [])
         if not items:
-            print(f'  YouTube 검색 결과 없음')
+            print('  YouTube 검색 결과 없음')
             return None
-
-        # 중복 방지: 결과 셔플 후 순서대로 시도
         random.shuffle(items)
-        for item in items:
-            video_id = item['id']['videoId']
-            for quality in ['maxresdefault', 'hqdefault', 'mqdefault']:
-                thumb_url = f'https://i.ytimg.com/vi/{video_id}/{quality}.jpg'
-                ir = requests.get(thumb_url, headers=HEADERS, timeout=10)
-                if ir.status_code == 200 and len(ir.content) > 5000:
-                    print(f'  YouTube 썸네일 ({quality}): {len(ir.content)//1024}KB')
-                    return ir.content
+        video_id = items[0]['id']['videoId']
+        url = f'https://i.ytimg.com/vi/{video_id}/hqdefault.jpg'
+        print(f'  YouTube URL: {url}')
+        return url
     except Exception as e:
         print(f'  YouTube 오류: {e}')
     return None
 
-# ─── 3. 기사 이미지 추출 (YouTube 실패 시 폴백) ──────────────────
+# ─── 3. 기사 이미지 URL 추출 (YouTube 실패 시 폴백) ─────────────
 
-def get_article_image(url):
+def get_article_image_url(url):
+    """기사 og:image URL 추출 (다운로드·업로드 없이 URL 직접 반환)"""
     try:
         r = requests.get(url, headers=HEADERS, timeout=12, allow_redirects=True)
         soup = BeautifulSoup(r.content, 'html.parser')
-
         og = soup.find('meta', property='og:image')
         img_url = og['content'] if og and og.get('content') else None
-
         if not img_url:
             tw = soup.find('meta', attrs={'name': 'twitter:image'})
             img_url = tw['content'] if tw and tw.get('content') else None
-
-        if not img_url:
-            for img in soup.find_all('img', src=True):
-                src = img['src']
-                if src.startswith('http') and any(ext in src.lower() for ext in ['.jpg', '.jpeg', '.png', '.webp']):
-                    img_url = src
-                    break
-
-        if not img_url:
-            return None
-
-        if img_url.startswith('//'):
-            img_url = 'https:' + img_url
-
-        ir = requests.get(img_url, headers=HEADERS, timeout=12)
-        if ir.status_code == 200 and len(ir.content) > 50000:  # 50KB 이상만
-            print(f'  이미지 다운로드: {len(ir.content)//1024}KB')
-            return ir.content
+        if img_url:
+            if img_url.startswith('//'):
+                img_url = 'https:' + img_url
+            print(f'  기사 이미지 URL: {img_url[:80]}')
+            return img_url
     except Exception as e:
-        print(f'  이미지 오류: {e}')
-    return None
-
-def upload_to_imgbb(img_bytes):
-    img_b64 = base64.b64encode(img_bytes).decode()
-    r = requests.post('https://api.imgbb.com/1/upload', data={
-        'key': IMGBB_KEY,
-        'image': img_b64,
-    }, timeout=30)
-    d = r.json()
-    if d.get('success'):
-        url = d['data']['url']
-        print(f'  imgbb 업로드 완료: {url}')
-        return url
-    print(f'  imgbb 실패: {d}')
+        print(f'  기사 이미지 URL 오류: {e}')
     return None
 
 def upload_to_github_release(file_path, repo='Choikoun/kb-threads-poster', tag=None):
@@ -643,45 +606,32 @@ def main():
     image_url = None
     print('이미지 탐색 중...')
 
-    # 1순위: YouTube 썸네일 (뉴스 방송 화면)
     cat_info = CATEGORIES.get(category, {})
-    youtube_hint = cat_info.get('youtube_hint', '')  # 카테고리 고정 힌트 (government 등)
+    youtube_hint = cat_info.get('youtube_hint', '')
+    search_query = youtube_hint or content.get('youtube_keyword', '') or \
+        re.sub(r'[^\w\s]', ' ', content['selected_title']).strip()[:25]
 
-    if youtube_hint:
-        # government처럼 회의 현장 사진이 필요한 카테고리는 hint 우선
-        search_query = youtube_hint
-    else:
-        search_query = content.get('youtube_keyword', '')
-        if not search_query:
-            raw_title = content['selected_title']
-            search_query = re.sub(r'[^\w\s]', ' ', raw_title).strip()[:25]
+    # 1순위: YouTube 썸네일 URL 직접 사용 (imgbb 불필요)
     print(f'  YouTube 검색: {search_query}')
-    img_bytes = get_youtube_thumbnail(search_query)
-    if img_bytes:
-        image_url = upload_to_imgbb(img_bytes)
+    image_url = get_youtube_thumbnail_url(search_query)
 
-    # 2순위: 기사 og:image (YouTube 실패 시 폴백)
+    # 2순위: 기사 og:image URL 직접 사용
     if not image_url:
-        print('  YouTube 실패 → 기사 이미지 시도')
+        print('  YouTube 없음 → 기사 이미지 URL 시도')
         sel = content['selected_title'][:20]
         for article in articles:
             if sel in article['title'] or article['title'][:20] in sel:
-                print(f'  매칭 기사: {article["title"]}')
-                img_bytes = get_article_image(article['link'])
-                if img_bytes:
-                    image_url = upload_to_imgbb(img_bytes)
+                image_url = get_article_image_url(article['link'])
+                if image_url:
+                    break
+    if not image_url:
+        for article in articles[:5]:
+            image_url = get_article_image_url(article['link'])
+            if image_url:
                 break
 
     if not image_url:
-        for article in articles[:5]:
-            img_bytes = get_article_image(article['link'])
-            if img_bytes:
-                image_url = upload_to_imgbb(img_bytes)
-                if image_url:
-                    break
-
-    if not image_url:
-        print('이미지 없이 진행')
+        print('  이미지 없이 진행')
 
     print('\nThreads 포스팅 중...')
     main_id = post_to_threads(content['main'], content['comments'], image_url, topic_tag=cat_info.get('topic_tag'))
