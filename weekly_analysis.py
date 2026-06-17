@@ -141,6 +141,23 @@ def run_analysis():
             sign = "+" if diff >= 0 else ""
             print(f"   ({prev['date']} 대비 {sign}{diff}명)")
 
+    # 팔로워 추이 (최근 14일)
+    if os.path.exists(FOLLOWER_HISTORY_FILE):
+        with open(FOLLOWER_HISTORY_FILE, encoding='utf-8') as f:
+            fh = json.load(f)
+        if len(fh) >= 2:
+            recent = fh[-14:]
+            print(f"\n📈 팔로워 추이 (최근 {len(recent)}일)")
+            for i, entry in enumerate(recent):
+                bar_diff = ""
+                if i > 0:
+                    diff = entry['followers'] - recent[i-1]['followers']
+                    bar_diff = f"  (+{diff})" if diff > 0 else f"  ({diff})" if diff < 0 else "  (=)"
+                print(f"  {entry['date']}: {entry['followers']:,}명{bar_diff}")
+            total_diff = recent[-1]['followers'] - recent[0]['followers']
+            sign = "+" if total_diff >= 0 else ""
+            print(f"  → 기간 합계: {sign}{total_diff}명")
+
     # 팔로워 데모그래픽 (100명 이상일 때만)
     if followers and followers >= 100:
         demo = get_follower_demographics(user_id, token)

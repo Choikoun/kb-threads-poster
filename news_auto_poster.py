@@ -575,11 +575,13 @@ def log_content(post_id, category, format_variant, selected_title):
     if os.path.exists(CONTENT_LOG_FILE):
         with open(CONTENT_LOG_FILE, encoding='utf-8') as f:
             log = json.load(f)
+    now = datetime.now(KST)
     log.append({
         'post_id': post_id,
         'category': category,
         'format_variant': format_variant,
-        'date': datetime.now(KST).strftime('%Y-%m-%d'),
+        'date': now.strftime('%Y-%m-%d'),
+        'hour': now.hour,
         'selected_title': selected_title,
     })
     with open(CONTENT_LOG_FILE, 'w', encoding='utf-8') as f:
