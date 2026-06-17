@@ -149,6 +149,38 @@ def run_analysis():
             json.dump(format_weights, f, ensure_ascii=False, indent=2)
         print(f"  → format_weights.json 업데이트 완료")
 
+    # content_log.json에 인게이지먼트 데이터 반영
+    insights_map = {r['id']: r for r in results}
+    updated = False
+    for entry in content_log:
+        pid = entry.get('post_id')
+        if pid and pid in insights_map:
+            r = insights_map[pid]
+            if entry.get('views') != r['views'] or 'likes' not in entry:
+                entry['views'] = r['views']
+                entry['likes'] = r.get('likes', 0)
+                entry['replies'] = r.get('replies', 0)
+                updated = True
+    if updated:
+        with open(CONTENT_LOG_FILE, 'w', encoding='utf-8') as f:
+            json.dump(content_log, f, ensure_ascii=False, indent=2)
+        print(f'  → content_log.json 인게이지먼트 데이터 갱신')
+
+    # 인게이지먼트 심층 분석
+    qualified = [r for r in results if r['views'] >= 100]
+    if qualified:
+        print(f'\n💡 인게이지먼트 심층 분석')
+        like_rated = sorted(qualified, key=lambda r: r['likes'] / r['views'], reverse=True)
+        print(f'\n  👍 좋아요율 TOP 5 (좋아요/조회수):')
+        for r in like_rated[:5]:
+            rate = r['likes'] / r['views'] * 100
+            print(f'  {rate:.1f}% | 조회 {r["views"]:,} | 좋아요 {r["likes"]} | {r["text"][:30]}...')
+        reply_rated = sorted(qualified, key=lambda r: r['replies'] / r['views'], reverse=True)
+        print(f'\n  💬 댓글율 TOP 5 (댓글/조회수):')
+        for r in reply_rated[:5]:
+            rate = r['replies'] / r['views'] * 100
+            print(f'  {rate:.2f}% | 조회 {r["views"]:,} | 댓글 {r["replies"]} | {r["text"][:30]}...')
+
     # 재발행 후보 (조회수 300 이상)
     reblog = load_reblog()
     existing_ids = {r["id"] for r in reblog}
