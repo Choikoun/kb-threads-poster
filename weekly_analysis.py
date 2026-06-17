@@ -22,6 +22,27 @@ def load_content_log():
     return []
 
 
+def get_follower_demographics(user_id, token):
+    """팔로워 100명 이상일 때 국가·나이·성별 분포 반환"""
+    result = {}
+    for breakdown in ['country', 'age', 'gender']:
+        resp = requests.get(f"{BASE}/{user_id}/threads_insights",
+                            params={"metric": "follower_demographics",
+                                    "breakdown": breakdown,
+                                    "access_token": token}, timeout=15)
+        if not resp.ok:
+            continue
+        data = resp.json().get("data", [])
+        if not data:
+            continue
+        breakdown_data = data[0].get("total_value", {}).get("breakdowns", [])
+        if not breakdown_data:
+            continue
+        results_list = breakdown_data[0].get("results", [])
+        result[breakdown] = sorted(results_list, key=lambda x: x.get("value", 0), reverse=True)
+    return result
+
+
 def get_followers_count(user_id, token):
     resp = requests.get(f"{BASE}/{user_id}/threads_insights",
                         params={"metric": "followers_count", "access_token": token}, timeout=15)
@@ -119,6 +140,20 @@ def run_analysis():
             diff = followers - prev["followers"]
             sign = "+" if diff >= 0 else ""
             print(f"   ({prev['date']} 대비 {sign}{diff}명)")
+
+    # 팔로워 데모그래픽 (100명 이상일 때만)
+    if followers and followers >= 100:
+        demo = get_follower_demographics(user_id, token)
+        if demo:
+            print(f"\n🌍 팔로워 데모그래픽")
+            if 'country' in demo:
+                top_countries = demo['country'][:5]
+                print(f"  국가: " + " | ".join(f"{d.get('dimension_values',['?'])[0]} {d.get('value',0)}명" for d in top_countries))
+            if 'age' in demo:
+                print(f"  나이: " + " | ".join(f"{d.get('dimension_values',['?'])[0]}대 {d.get('value',0)}명" for d in demo['age']))
+            if 'gender' in demo:
+                label = {'M': '남성', 'F': '여성', 'U': '미확인'}
+                print(f"  성별: " + " | ".join(f"{label.get(d.get('dimension_values',['?'])[0], d.get('dimension_values',['?'])[0])} {d.get('value',0)}명" for d in demo['gender']))
 
     print(f"\n🏆 TOP 10 포스팅")
     for i, r in enumerate(results[:10], 1):
