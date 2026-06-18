@@ -5,6 +5,7 @@
 매주 화요일·목요일 오후 8시 KST 실행
 """
 import os, sys, json, re, random, time, requests
+from datetime import datetime, timezone, timedelta
 from google import genai
 from dotenv import load_dotenv
 load_dotenv()
@@ -14,6 +15,26 @@ TOKEN = os.environ['THREADS_ACCESS_TOKEN']
 GEMINI_KEY = os.environ['GEMINI_API_KEY']
 BASE = 'https://graph.threads.net/v1.0'
 SERIES_FILE = 'series_log.json'
+CONTENT_LOG_FILE = 'content_log.json'
+KST = timezone(timedelta(hours=9))
+
+
+def log_content(post_id, category, format_variant, selected_title):
+    log = []
+    if os.path.exists(CONTENT_LOG_FILE):
+        with open(CONTENT_LOG_FILE, encoding='utf-8') as f:
+            log = json.load(f)
+    now = datetime.now(KST)
+    log.append({
+        'post_id': post_id,
+        'category': category,
+        'format_variant': format_variant,
+        'date': now.strftime('%Y-%m-%d'),
+        'hour': now.hour,
+        'selected_title': selected_title,
+    })
+    with open(CONTENT_LOG_FILE, 'w', encoding='utf-8') as f:
+        json.dump(log, f, ensure_ascii=False, indent=2)
 
 
 def get_series_number():
@@ -188,7 +209,8 @@ def main():
     print(f'\n메인:\n{content["main"]}\n')
     for i, c in enumerate(content.get('comments', [])):
         print(f'댓글{i+1}:\n{c}\n')
-    post(content)
+    main_id = post(content)
+    log_content(main_id, 'inheritance', 'series', topic)
     increment_series(series_num, topic)
     if series_num % 10 == 0:
         time.sleep(60)

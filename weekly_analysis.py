@@ -224,6 +224,35 @@ def run_analysis():
         worst_hour = min(hour_groups, key=lambda h: sum(hour_groups[h]) / len(hour_groups[h]))
         print(f'  → 최고 시간대: {best_hour:02d}:00 KST | 최저: {worst_hour:02d}:00 KST')
 
+    # 팔로워 급증일 ↔ 포스팅 상관관계
+    if os.path.exists(FOLLOWER_HISTORY_FILE):
+        with open(FOLLOWER_HISTORY_FILE, encoding='utf-8') as f:
+            fh_data = json.load(f)
+        growth_days = {}
+        for i in range(1, len(fh_data)):
+            diff = fh_data[i]['followers'] - fh_data[i - 1]['followers']
+            if diff >= 5:
+                growth_days[fh_data[i]['date']] = diff
+        if growth_days and content_log:
+            log_by_date = {}
+            for entry in content_log:
+                d = entry.get('date')
+                if d:
+                    log_by_date.setdefault(d, []).append(entry)
+            matched = [(date, gain, log_by_date[date])
+                       for date, gain in sorted(growth_days.items(), key=lambda x: -x[1])
+                       if date in log_by_date]
+            if matched:
+                print(f'\n🔗 팔로워 급증일 포스팅 상관관계 (+5명 이상)')
+                for date, gain, posts in matched[:5]:
+                    print(f'  [{date}] +{gain}명 증가')
+                    for p in posts:
+                        r = results_by_id.get(p.get('post_id'), {})
+                        views = r.get('views', p.get('views'))
+                        v_str = f'조회 {views:,}' if isinstance(views, int) else '조회 ?'
+                        title = (p.get('selected_title') or p.get('category', '?'))[:30]
+                        print(f'    └ {title} | {v_str} | {p.get("format_variant", "?")}')
+
     # content_log.json에 인게이지먼트 데이터 반영
     insights_map = {r['id']: r for r in results}
     updated = False
@@ -368,6 +397,34 @@ JSON만 출력:
             print(resp.text.strip())
         except Exception as e:
             print(f'\nGemini 인사이트 생성 실패: {e}')
+
+    # 저성과 포스트 Gemini 자동 진단
+    if gemini_key and results:
+        qualified_bottom = [r for r in results if r.get('views', 0) >= 10]
+        if len(qualified_bottom) >= 3:
+            bottom3 = sorted(qualified_bottom, key=lambda x: x['views'])[:3]
+            avg_v = sum(r['views'] for r in results) / len(results)
+            bottom_summary = '\n'.join([
+                f"{i+1}. [{r['date']}] 조회 {r['views']:,} | 좋아요 {r['likes']} | 댓글 {r['replies']}\n   \"{r['text']}...\""
+                for i, r in enumerate(bottom3)
+            ])
+            bottom_prompt = f"""너는 증여·상속 구조 설계 전문가 Threads 계정의 콘텐츠 전략가야.
+이번 주 전체 평균 조회수는 {avg_v:,.0f}회야.
+아래 3개 포스팅은 조회수가 가장 낮았어.
+
+{bottom_summary}
+
+각 포스팅이 왜 저조했는지 한 가지씩 분석해줘.
+훅이 약한지, 주제 각도가 흔한지, 가독성이 떨어지는지 등 구체적인 원인 진단.
+200자 이내, 전부 반말, 번호 붙여서."""
+            try:
+                client_b = genai.Client(api_key=gemini_key)
+                resp_b = client_b.models.generate_content(model='gemini-2.5-flash', contents=bottom_prompt)
+                print(f'\n📉 저성과 포스트 Gemini 진단 (조회수 하위 3개)')
+                print(f'{"-"*60}')
+                print(resp_b.text.strip())
+            except Exception as e:
+                print(f'저성과 분석 실패: {e}')
 
     print(f"\n{'='*60}\n")
 
