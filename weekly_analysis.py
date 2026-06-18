@@ -228,6 +228,33 @@ def run_analysis():
             json.dump(format_weights, f, ensure_ascii=False, indent=2)
         print(f"  → format_weights.json 업데이트 완료")
 
+    # 소스별 성과 분석
+    source_groups = {}
+    for entry in content_log:
+        src = entry.get('source', '')
+        if not src:
+            continue
+        r = results_by_id.get(entry.get('post_id'))
+        if not r:
+            continue
+        source_groups.setdefault(src, []).append(r['views'])
+    if source_groups:
+        print(f'\n📰 뉴스 소스별 평균 조회수')
+        source_avgs = {s: sum(v) / len(v) for s, v in source_groups.items()}
+        for src, avg in sorted(source_avgs.items(), key=lambda x: -x[1]):
+            count = len(source_groups[src])
+            bar = '█' * min(int(avg / 500), 15)
+            print(f'  {src}: 평균 {avg:,.0f} ({count}건) {bar}')
+        source_weights = {s: round(avg, 1) for s, avg in source_avgs.items()}
+        source_weights['updated'] = datetime.now(KST).strftime('%Y-%m-%d')
+        with open('source_weights.json', 'w', encoding='utf-8') as f:
+            json.dump(source_weights, f, ensure_ascii=False, indent=2)
+        max_avg = max(source_avgs.values())
+        low_sources = [s for s, v in source_avgs.items() if v < max_avg * 0.6]
+        if low_sources:
+            print(f'  → 저성과 소스: {", ".join(low_sources)} (다음 포스팅 프롬프트에 자동 반영)')
+        print(f'  → source_weights.json 저장')
+
     # 시간대별 성과 분석
     hour_groups = {}
     for entry in content_log:

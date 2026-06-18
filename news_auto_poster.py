@@ -138,6 +138,21 @@ CATEGORIES = {
 
 # ─── 1. 뉴스 수집 ────────────────────────────────────────────────
 
+SOURCE_MAP = {
+    'mk.co.kr': '매일경제', 'yna.co.kr': '연합뉴스',
+    'biz.chosun.com': '조선비즈', 'newsis.com': '뉴시스',
+    'etnews.com': '전자신문', 'hankyung.com': '한국경제',
+    'sbs.co.kr': 'SBS', 'kbs.co.kr': 'KBS',
+}
+
+def get_source_name(feed_url):
+    for key, name in SOURCE_MAP.items():
+        if key in feed_url:
+            return name
+    m = re.search(r'https?://(?:www\.)?([^/]+)', feed_url)
+    return m.group(1) if m else '기타'
+
+
 def get_hot_news(category='economy'):
     cat = CATEGORIES.get(category, CATEGORIES['economy'])
     print(f'카테고리: {cat["name"]}')
@@ -160,6 +175,7 @@ def get_hot_news(category='economy'):
                     'title': title,
                     'link': link,
                     'summary': entry.get('summary', '')[:200],
+                    'source': get_source_name(url),
                 })
         except Exception as e:
             print(f'피드 오류: {e}')
@@ -173,7 +189,7 @@ def get_hot_news(category='economy'):
                     title = re.sub(r'\s*-\s*[^-]+$', '', entry.get('title', '')).strip()
                     link = entry.get('link', '')
                     if not any(a['title'] == title for a in articles):
-                        articles.append({'title': title, 'link': link, 'summary': ''})
+                        articles.append({'title': title, 'link': link, 'summary': '', 'source': get_source_name(url)})
             except:
                 pass
 
@@ -395,6 +411,20 @@ def generate_content(articles, category='economy', used_titles=None):
     structure_block = FORMAT_STRUCTURES.get(chosen_variant, FORMAT_STRUCTURES['반전형'])
     point_formula_block = '' if chosen_variant == '담백형' else POINT_FORMULA
 
+    source_hint_block = ''
+    if os.path.exists('source_weights.json'):
+        try:
+            with open('source_weights.json', encoding='utf-8') as f:
+                sw = json.load(f)
+            src_avgs = {s: v for s, v in sw.items() if s != 'updated'}
+            if len(src_avgs) >= 2:
+                max_avg = max(src_avgs.values())
+                low = [s for s, v in src_avgs.items() if v < max_avg * 0.6]
+                if low:
+                    source_hint_block = f'\n[저성과 뉴스 소스] {", ".join(low)} → 이 소스 뉴스보다 다른 소스 뉴스를 우선 선택해.\n'
+        except Exception:
+            pass
+
     hook_hint_block = ''
     if os.path.exists('hook_weights.json'):
         try:
@@ -428,7 +458,7 @@ def generate_content(articles, category='economy', used_titles=None):
 - 정부기관(국세청·대법원·헌재·공정위·금융위 등) 공식 발표, 판결, 표결 결과
 - 구체적 숫자(금액·비율·표결수)가 포함된 사실
 해당하는 뉴스가 없으면 기존 기준대로 가장 임팩트 있는 걸 선택해.
-
+{source_hint_block}
 [작성 각도]
 {cat['angle']}
 {context_block}
@@ -486,6 +516,12 @@ JSON만 출력:
                 if hashtags and 'main' in result:
                     result['main'] = result['main'].rstrip() + f'\n\n{hashtags}'
                 result.setdefault('format_variant', chosen_variant)
+                sel = result.get('selected_title', '')
+                result['source'] = ''
+                for a in articles:
+                    if sel and (sel[:15] in a['title'] or a['title'][:15] in sel):
+                        result['source'] = a.get('source', '')
+                        break
                 return result
         except Exception as e:
             print(f'Gemini 오류 (시도 {attempt+1}/3): {e}')
@@ -603,7 +639,7 @@ def post_video_to_threads(main_text, comments, video_url, topic_tag=None):
 
 # ─── 콘텐츠 로그 ──────────────────────────────────────────────────
 
-def log_content(post_id, category, format_variant, selected_title):
+def log_content(post_id, category, format_variant, selected_title, source=''):
     log = []
     if os.path.exists(CONTENT_LOG_FILE):
         with open(CONTENT_LOG_FILE, encoding='utf-8') as f:
@@ -616,6 +652,7 @@ def log_content(post_id, category, format_variant, selected_title):
         'date': now.strftime('%Y-%m-%d'),
         'hour': now.hour,
         'selected_title': selected_title,
+        'source': source,
     })
     with open(CONTENT_LOG_FILE, 'w', encoding='utf-8') as f:
         json.dump(log, f, ensure_ascii=False, indent=2)
@@ -684,7 +721,7 @@ def main():
     main_id = post_to_threads(content['main'], content['comments'], image_url, topic_tag=cat_info.get('topic_tag'))
     print(f'\n완료! 메인 포스트 ID: {main_id}')
 
-    log_content(main_id, category, content.get('format_variant', ''), content['selected_title'])
+    log_content(main_id, category, content.get('format_variant', ''), content['selected_title'], source=content.get('source', ''))
 
 if __name__ == '__main__':
     main()
