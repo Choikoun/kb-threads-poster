@@ -103,6 +103,33 @@ def repost_text(text, token, user_id):
     return r2.json().get("id")
 
 
+def remix_text(original_text, gemini_key):
+    """원본 글을 새 훅으로 리믹스 — 같은 인사이트, 다른 각도"""
+    try:
+        client = genai.Client(api_key=gemini_key)
+        prompt = f"""너는 증여·상속 구조 설계 전문가 Threads 계정이야.
+아래 글이 2달 전에 반응이 좋았어.
+같은 핵심 인사이트를 유지하면서, 완전히 다른 첫 줄(훅)과 다른 표현으로 리믹스해줘.
+
+[원본]
+{original_text[:500]}
+
+[조건]
+- 전부 반말
+- 메인 6~10줄
+- 원본 첫 줄과 전혀 다른 방식으로 시작 (반전/사례/숫자/경각심 중 택1)
+- 원본의 핵심 메시지는 유지하되 예시나 표현은 바꿔
+- 해시태그는 원본 마지막 줄 그대로 유지
+- 상담/DM 유도 절대 금지
+
+메인 포스트 텍스트만 출력. JSON 없이."""
+        resp = client.models.generate_content(model='gemini-2.5-flash', contents=prompt)
+        return resp.text.strip()
+    except Exception as e:
+        print(f'  리믹스 생성 실패: {e}')
+        return None
+
+
 def run_analysis():
     token = os.environ.get("THREADS_ACCESS_TOKEN")
     user_id = requests.get(f"{BASE}/me", params={"access_token": token}, timeout=15).json().get("id")
@@ -306,18 +333,28 @@ def run_analysis():
     today = datetime.now(KST).strftime("%Y-%m-%d")
     due = [r for r in reblog if r.get("reblog_date", "") <= today and not r.get("reposted")]
     if due:
-        print(f"\n🔄 재발행 시기 된 포스팅 {len(due)}개:")
+        remix_key = os.environ.get('GEMINI_API_KEY')
+        print(f"\n🔄 재발행 리믹스 {len(due)}개:")
         for r in due:
             full_text = r.get("full_text")
             if not full_text:
-                print(f"  → {r['text']}... (원본 조회 {r['views']:,}) — full_text 없어서 재발행 건너뜀")
+                print(f"  → {r['text']}... — full_text 없어서 건너뜀")
                 continue
-            new_id = repost_text(full_text, token, user_id)
+            post_text = full_text
+            if remix_key:
+                remixed = remix_text(full_text, remix_key)
+                if remixed:
+                    post_text = remixed
+                    print(f"  리믹스 생성 완료")
+                else:
+                    print(f"  리믹스 실패 — 원본으로 재발행")
+            new_id = repost_text(post_text, token, user_id)
             if new_id:
                 r["reposted"] = True
                 r["reposted_id"] = new_id
                 r["reposted_date"] = today
-                print(f"  ✅ 재발행 완료 (새 ID {new_id}): {r['text']}... (원본 조회 {r['views']:,})")
+                r["remixed"] = bool(remix_key and remixed)
+                print(f"  ✅ {'리믹스' if r['remixed'] else '원본'} 재발행 완료 ({new_id}): {r['text']}... (원본 조회 {r['views']:,})")
             else:
                 print(f"  ❌ 재발행 실패: {r['text']}...")
             time.sleep(3)
