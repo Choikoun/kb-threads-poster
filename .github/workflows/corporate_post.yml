@@ -1,0 +1,46 @@
+name: 법인 절세 구조 설계 포스팅 (월)
+
+on:
+  schedule:
+    - cron: '0 10 * * 1'   # 매주 월요일 19:00 KST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: 패키지 설치
+        run: pip install requests google-genai python-dotenv
+      - name: 법인 절세 포스팅 (최대 3회 재시도)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+        run: |
+          for i in 1 2 3; do
+            python corporate_poster.py && break
+            if [ $i -lt 3 ]; then echo "시도 $i 실패, 30초 후 재시도..."; sleep 30; fi
+          done
+      - name: 시리즈 로그 커밋
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add series_log.json 2>/dev/null || true
+          git diff --staged --quiet || git commit -m "법인 절세 시리즈 로그 업데이트"
+          git pull --rebase
+          git push
+      - name: 실패 알림
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue create \
+            --title "⚠️ 포스팅 실패: ${{ github.workflow }} ($(TZ=Asia/Seoul date +'%Y-%m-%d %H:%M'))" \
+            --body "3회 재시도 후 실패. [로그](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})"

@@ -59,8 +59,21 @@ def save_milestones(data):
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 
+def create_github_issue(title, body=''):
+    gh_token = os.environ.get('GH_TOKEN') or os.environ.get('GITHUB_TOKEN')
+    repo = os.environ.get('GITHUB_REPOSITORY', 'Choikoun/kb-threads-poster')
+    if not gh_token:
+        return
+    headers = {'Authorization': f'token {gh_token}', 'Accept': 'application/vnd.github+json'}
+    requests.post(
+        f'https://api.github.com/repos/{repo}/issues',
+        headers=headers,
+        json={'title': title, 'body': body},
+        timeout=30
+    )
+
+
 def post_milestone(count):
-    # 다음 목표 마일스톤
     next_m = next((m for m in MILESTONES if m > count), None)
     next_line = f'\n다음 목표는 {next_m:,}명이야.' if next_m else ''
 
@@ -72,11 +85,22 @@ def post_milestone(count):
     )
     uid = requests.get(f'{BASE}/me', params={'fields': 'id', 'access_token': TOKEN}, timeout=30).json()['id']
     r1 = requests.post(f'{BASE}/{uid}/threads',
-                       params={'media_type': 'TEXT', 'text': text, 'access_token': TOKEN}, timeout=30)
+                       params={'media_type': 'TEXT', 'text': text,
+                               'content_warning_type': 'SENSITIVE_MEDIA', 'access_token': TOKEN}, timeout=30)
     time.sleep(4)
     r2 = requests.post(f'{BASE}/{uid}/threads_publish',
                        params={'creation_id': r1.json()['id'], 'access_token': TOKEN}, timeout=30)
-    return r2.json().get('id')
+    pid = r2.json().get('id')
+
+    # 100명 달성 시 demographics 활성화 안내 Issue
+    if count >= 100:
+        create_github_issue(
+            f'🎉 팔로워 {count:,}명 달성 — demographics 분석 활성화',
+            f'팔로워 {count}명을 돌파했습니다.\n\n'
+            f'이제 weekly_analysis.py에서 나이·성별·국가 분포 데이터가 자동으로 표시됩니다.\n'
+            f'다음 주간 분석 실행 시 확인하세요.'
+        )
+    return pid
 
 
 def main():

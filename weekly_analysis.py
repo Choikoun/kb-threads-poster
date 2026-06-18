@@ -201,6 +201,29 @@ def run_analysis():
             json.dump(format_weights, f, ensure_ascii=False, indent=2)
         print(f"  → format_weights.json 업데이트 완료")
 
+    # 시간대별 성과 분석
+    hour_groups = {}
+    for entry in content_log:
+        hour = entry.get('hour')
+        if hour is None:
+            continue
+        r = results_by_id.get(entry.get('post_id'))
+        if not r:
+            continue
+        hour_groups.setdefault(hour, []).append(r['views'])
+
+    if len(hour_groups) >= 3:
+        print(f'\n⏰ 시간대별 평균 조회수 (KST)')
+        sorted_hours = sorted(hour_groups.keys())
+        for h in sorted_hours:
+            views = hour_groups[h]
+            avg = sum(views) / len(views)
+            bar = '█' * min(int(avg / 500), 20)
+            print(f'  {h:02d}:00 | 평균 {avg:,.0f} ({len(views)}건) {bar}')
+        best_hour = max(hour_groups, key=lambda h: sum(hour_groups[h]) / len(hour_groups[h]))
+        worst_hour = min(hour_groups, key=lambda h: sum(hour_groups[h]) / len(hour_groups[h]))
+        print(f'  → 최고 시간대: {best_hour:02d}:00 KST | 최저: {worst_hour:02d}:00 KST')
+
     # content_log.json에 인게이지먼트 데이터 반영
     insights_map = {r['id']: r for r in results}
     updated = False
