@@ -466,7 +466,7 @@ JSON만 출력:
 
 # ─── 4. Threads 포스팅 ───────────────────────────────────────────
 
-def post_to_threads(main_text, comments, image_url=None, topic_tag=None):
+def post_to_threads(main_text, comments, image_url=None, topic_tag=None, content_warning=True):
     me = requests.get('https://graph.threads.net/v1.0/me',
                       params={'fields': 'id', 'access_token': TOKEN}, timeout=30)
     UID = me.json()['id']
@@ -474,6 +474,8 @@ def post_to_threads(main_text, comments, image_url=None, topic_tag=None):
     params = {'text': main_text, 'access_token': TOKEN}
     if topic_tag:
         params['topic_tag'] = topic_tag
+    if content_warning:
+        params['content_warning_type'] = 'SENSITIVE_MEDIA'
     if image_url:
         params['media_type'] = 'IMAGE'
         params['image_url'] = image_url

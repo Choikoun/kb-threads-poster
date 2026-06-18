@@ -83,7 +83,7 @@ def post_series_index(series_num):
     r = requests.get(f'{BASE}/me', params={'fields': 'id', 'access_token': TOKEN}, timeout=30)
     uid = r.json()['id']
     r1 = requests.post(f'{BASE}/{uid}/threads',
-                       params={'media_type': 'TEXT', 'text': body, 'access_token': TOKEN}, timeout=30)
+                       params={'media_type': 'TEXT', 'text': body, 'content_warning_type': 'SENSITIVE_MEDIA', 'access_token': TOKEN}, timeout=30)
     time.sleep(4)
     r2 = requests.post(f'{BASE}/{uid}/threads_publish',
                        params={'creation_id': r1.json()['id'], 'access_token': TOKEN}, timeout=30)
@@ -152,7 +152,7 @@ def post(content):
     uid = r.json()['id']
 
     r1 = requests.post(f'{BASE}/{uid}/threads',
-                       params={'media_type': 'TEXT', 'text': content['main'], 'access_token': TOKEN},
+                       params={'media_type': 'TEXT', 'text': content['main'], 'content_warning_type': 'SENSITIVE_MEDIA', 'access_token': TOKEN},
                        timeout=30)
     time.sleep(4)
     r2 = requests.post(f'{BASE}/{uid}/threads_publish',
