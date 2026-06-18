@@ -29,6 +29,18 @@ def get_follower_count(user_id):
     return data[0].get('total_value', {}).get('value')
 
 
+def get_profile_views(user_id):
+    """일일 프로필 방문 수 — 상담 링크 유입 간접 측정용"""
+    resp = requests.get(f'{BASE}/{user_id}/threads_insights',
+                        params={'metric': 'profile_views', 'access_token': TOKEN}, timeout=15)
+    if not resp.ok:
+        return None
+    data = resp.json().get('data', [])
+    if not data:
+        return None
+    return data[0].get('total_value', {}).get('value')
+
+
 def load_history():
     if os.path.exists(HISTORY_FILE):
         try:
@@ -113,12 +125,22 @@ def main():
     today = datetime.now(KST).strftime('%Y-%m-%d')
     history = load_history()
 
+    profile_views = get_profile_views(uid)
+
     if history and history[-1]['date'] == today:
         prev = history[-1]['followers']
         history[-1]['followers'] = count
+        if profile_views is not None:
+            history[-1]['profile_views'] = profile_views
     else:
         prev = history[-1]['followers'] if history else count
-        history.append({'date': today, 'followers': count})
+        entry = {'date': today, 'followers': count}
+        if profile_views is not None:
+            entry['profile_views'] = profile_views
+        history.append(entry)
+
+    if profile_views is not None:
+        print(f'프로필 방문: {profile_views}회')
 
     save_history(history)
     diff = count - prev

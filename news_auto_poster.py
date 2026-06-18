@@ -639,7 +639,7 @@ def post_video_to_threads(main_text, comments, video_url, topic_tag=None):
 
 # ─── 콘텐츠 로그 ──────────────────────────────────────────────────
 
-def log_content(post_id, category, format_variant, selected_title, source=''):
+def log_content(post_id, category, format_variant, selected_title, source='', line_count=0):
     log = []
     if os.path.exists(CONTENT_LOG_FILE):
         with open(CONTENT_LOG_FILE, encoding='utf-8') as f:
@@ -653,6 +653,7 @@ def log_content(post_id, category, format_variant, selected_title, source=''):
         'hour': now.hour,
         'selected_title': selected_title,
         'source': source,
+        'line_count': line_count,
     })
     with open(CONTENT_LOG_FILE, 'w', encoding='utf-8') as f:
         json.dump(log, f, ensure_ascii=False, indent=2)
@@ -721,7 +722,9 @@ def main():
     main_id = post_to_threads(content['main'], content['comments'], image_url, topic_tag=cat_info.get('topic_tag'))
     print(f'\n완료! 메인 포스트 ID: {main_id}')
 
-    log_content(main_id, category, content.get('format_variant', ''), content['selected_title'], source=content.get('source', ''))
+    main_line_count = len([l for l in content['main'].split('\n') if l.strip() and not l.strip().startswith('#')])
+    log_content(main_id, category, content.get('format_variant', ''), content['selected_title'],
+                source=content.get('source', ''), line_count=main_line_count)
 
 if __name__ == '__main__':
     main()

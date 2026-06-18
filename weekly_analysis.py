@@ -255,6 +255,27 @@ def run_analysis():
             print(f'  → 저성과 소스: {", ".join(low_sources)} (다음 포스팅 프롬프트에 자동 반영)')
         print(f'  → source_weights.json 저장')
 
+    # 포스팅 길이별 성과 분석
+    length_groups = {}
+    for entry in content_log:
+        lc = entry.get('line_count', 0)
+        if not lc:
+            continue
+        r = results_by_id.get(entry.get('post_id'))
+        if not r:
+            continue
+        bucket = f'{lc}줄' if lc <= 9 else '10줄+'
+        length_groups.setdefault(bucket, []).append(r['views'])
+    if len(length_groups) >= 2:
+        print(f'\n📏 포스팅 길이별 평균 조회수 (해시태그 제외 기준)')
+        length_avgs = {b: sum(v) / len(v) for b, v in length_groups.items()}
+        for bucket, avg in sorted(length_avgs.items(), key=lambda x: -x[1]):
+            count_b = len(length_groups[bucket])
+            bar = '█' * min(int(avg / 500), 15)
+            print(f'  {bucket}: 평균 {avg:,.0f} ({count_b}건) {bar}')
+        best_len = max(length_avgs, key=lambda b: length_avgs[b])
+        print(f'  → 최적 길이: {best_len}')
+
     # 시간대별 성과 분석
     hour_groups = {}
     for entry in content_log:
@@ -336,6 +357,35 @@ def run_analysis():
                         print(f'    └ {title} | {v_str} | {p.get("format_variant", "?")}')
                 else:
                     print(f'    └ 포스팅 없음 (또는 content_log 미기록)')
+
+    # 프로필 방문 추이 & 포스팅 상관관계 (상담 링크 유입 간접 측정)
+    if os.path.exists(FOLLOWER_HISTORY_FILE):
+        with open(FOLLOWER_HISTORY_FILE, encoding='utf-8') as f:
+            fh_pv = json.load(f)
+        pv_by_date = {e['date']: e['profile_views'] for e in fh_pv if e.get('profile_views') is not None}
+        if pv_by_date:
+            avg_pv = sum(pv_by_date.values()) / len(pv_by_date)
+            print(f'\n👁️ 프로필 방문 추이 (상담 링크 유입 간접 지표, 평균 {avg_pv:.0f}회/일)')
+            log_by_date_pv = {}
+            for entry in content_log:
+                d = entry.get('date')
+                if d:
+                    log_by_date_pv.setdefault(d, []).append(entry)
+            for date, pv in sorted(pv_by_date.items())[-7:]:
+                marker = '↑' if pv > avg_pv * 1.3 else ' '
+                posts_on = log_by_date_pv.get(date, [])
+                titles = ', '.join((p.get('selected_title') or p.get('category', '?'))[:18] for p in posts_on[:2])
+                post_str = f' | {titles}' if titles else ''
+                print(f'  {marker} [{date}] 방문 {pv}회{post_str}')
+            high_pv = {d: v for d, v in pv_by_date.items() if v > avg_pv * 1.3}
+            if high_pv:
+                print(f'\n  📌 방문 급증일 상위 포스팅:')
+                for date in sorted(high_pv, key=lambda d: -high_pv[d])[:3]:
+                    posts = log_by_date_pv.get(date, [])
+                    print(f'  [{date}] 방문 {high_pv[date]}회')
+                    for p in posts:
+                        title = (p.get('selected_title') or p.get('category', '?'))[:35]
+                        print(f'    └ {title}')
 
     # content_log.json에 인게이지먼트 데이터 반영
     insights_map = {r['id']: r for r in results}
