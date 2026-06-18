@@ -1,0 +1,50 @@
+name: 인스타그램 카드뉴스 (화·목 21:00 KST)
+
+on:
+  schedule:
+    - cron: '0 12 * * 2'   # 화요일 21:00 KST
+    - cron: '0 12 * * 4'   # 목요일 21:00 KST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  post_card:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: 패키지 설치
+        run: pip install requests google-genai python-dotenv Pillow
+      - name: 폰트 설치
+        run: |
+          sudo apt-get install -y fonts-nanum
+          fc-cache -fv
+      - name: 카드뉴스 발행
+        env:
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+          INSTAGRAM_BUSINESS_ACCOUNT_ID: ${{ secrets.INSTAGRAM_BUSINESS_ACCOUNT_ID }}
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          IMGBB_API_KEY: ${{ secrets.IMGBB_API_KEY }}
+        run: python instagram_card_poster.py
+      - name: 로그 커밋
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add instagram_log.json 2>/dev/null || true
+          git diff --staged --quiet || git commit -m "인스타그램 카드뉴스 로그 ($(TZ=Asia/Seoul date +'%Y-%m-%d'))"
+          git pull --rebase
+          git push
+      - name: 실패 알림
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue create \
+            --title "⚠️ 인스타 카드뉴스 실패 ($(TZ=Asia/Seoul date +'%Y-%m-%d %H:%M'))" \
+            --body "[로그](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})"
