@@ -125,6 +125,27 @@ def main():
     sign = '+' if diff >= 0 else ''
     print(f'팔로워: {count:,}명 ({sign}{diff}명)')
 
+    # 이탈 감지 알림
+    if diff <= -2:
+        cl_path = 'content_log.json'
+        today_date = datetime.now(KST).strftime('%Y-%m-%d')
+        today_posts = []
+        if os.path.exists(cl_path):
+            with open(cl_path, encoding='utf-8') as f:
+                cl = json.load(f)
+            today_posts = [e for e in cl if e.get('date') == today_date]
+        lines = [f'팔로워가 {diff}명 감소했습니다 (현재 {count}명).', '']
+        if today_posts:
+            lines.append(f'오늘 포스팅 {len(today_posts)}개:')
+            for p in today_posts:
+                lines.append(f'- [{p.get("category","?")}] {(p.get("selected_title") or "")[:50]}')
+        else:
+            lines.append('오늘 포스팅 없음')
+        create_github_issue(
+            f'📉 팔로워 이탈 {abs(diff)}명 — {datetime.now(KST).strftime("%Y-%m-%d %H:%M")} KST',
+            '\n'.join(lines)
+        )
+
     # 마일스톤 체크
     milestone_data = load_milestones()
     posted = set(milestone_data.get('posted', []))

@@ -395,6 +395,17 @@ def generate_content(articles, category='economy', used_titles=None):
     structure_block = FORMAT_STRUCTURES.get(chosen_variant, FORMAT_STRUCTURES['반전형'])
     point_formula_block = '' if chosen_variant == '담백형' else POINT_FORMULA
 
+    hook_hint_block = ''
+    if os.path.exists('hook_weights.json'):
+        try:
+            with open('hook_weights.json', encoding='utf-8') as f:
+                hw = json.load(f)
+            top_hook = max((t for t in hw if t != 'updated'), key=lambda t: hw[t], default=None)
+            if top_hook:
+                hook_hint_block = f'\n[이번 주 최고 성과 훅 타입] {top_hook} (평균 조회 {hw[top_hook]:,.0f}회) → 가능하면 이 유형으로 첫 줄을 구성해.\n'
+        except Exception:
+            pass
+
     follow_cta_block = ''
     if random.random() < 0.25:
         follow_cta_block = '''
@@ -436,6 +447,7 @@ def generate_content(articles, category='economy', used_titles=None):
 - ✅ 자극적: "대부분이 이걸 몰라", "이거 해당되는 사람 많을 거야", "은행이 더 벌려는 구조야"
 
 {point_formula_block}
+{hook_hint_block}
 [메인 포스트 구조 - {chosen_variant}]
 {structure_block}
 {format_branch_block}

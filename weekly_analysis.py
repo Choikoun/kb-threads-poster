@@ -280,6 +280,36 @@ def run_analysis():
                         title = (p.get('selected_title') or p.get('category', '?'))[:30]
                         print(f'    └ {title} | {v_str} | {p.get("format_variant", "?")}')
 
+    # 팔로워 이탈일 포스팅 상관관계
+    if os.path.exists(FOLLOWER_HISTORY_FILE):
+        with open(FOLLOWER_HISTORY_FILE, encoding='utf-8') as f:
+            fh_fall = json.load(f)
+        fall_days = {}
+        for i in range(1, len(fh_fall)):
+            diff = fh_fall[i]['followers'] - fh_fall[i - 1]['followers']
+            if diff <= -2:
+                fall_days[fh_fall[i]['date']] = diff
+        if fall_days:
+            log_by_date_f = {}
+            for entry in content_log:
+                d = entry.get('date')
+                if d:
+                    log_by_date_f.setdefault(d, []).append(entry)
+            fall_matched = [(date, diff, log_by_date_f.get(date, []))
+                            for date, diff in sorted(fall_days.items(), key=lambda x: x[1])]
+            print(f'\n⚠️ 팔로워 이탈일 ({len(fall_days)}일, -2명 이상)')
+            for date, diff, posts in fall_matched:
+                print(f'  [{date}] {diff}명 감소')
+                if posts:
+                    for p in posts:
+                        r = results_by_id.get(p.get('post_id'), {})
+                        views = r.get('views', p.get('views'))
+                        v_str = f'조회 {views:,}' if isinstance(views, int) else '조회 ?'
+                        title = (p.get('selected_title') or p.get('category', '?'))[:30]
+                        print(f'    └ {title} | {v_str} | {p.get("format_variant", "?")}')
+                else:
+                    print(f'    └ 포스팅 없음 (또는 content_log 미기록)')
+
     # content_log.json에 인게이지먼트 데이터 반영
     insights_map = {r['id']: r for r in results}
     updated = False
@@ -462,6 +492,61 @@ JSON만 출력:
                 print(resp_b.text.strip())
             except Exception as e:
                 print(f'저성과 분석 실패: {e}')
+
+    # 훅 패턴 분석 & 학습
+    if gemini_key and len(results) >= 5:
+        hook_data = []
+        for r in results[:15]:
+            first_line = r.get('full_text', '').split('\n')[0].strip()
+            if first_line:
+                hook_data.append({'first_line': first_line[:60], 'views': r['views']})
+        if hook_data:
+            posts_summary = '\n'.join([
+                f"{i+1}. 조회 {d['views']:,}: {d['first_line']}"
+                for i, d in enumerate(hook_data)
+            ])
+            hook_prompt = f"""아래 Threads 포스팅들의 첫 줄을 보고 훅 유형을 분류해줘.
+
+유형 (하나만 선택):
+- 반전형: 일반적 통념을 뒤집는 사실
+- 숫자형: 구체적 수치/통계로 시작
+- 경각심형: 위험·손해·경고로 시작
+- 사례형: 구체적 사람/상황 사례로 시작
+- 질문형: 독자에게 직접 질문
+
+[포스팅 목록]
+{posts_summary}
+
+JSON 배열만 출력 (다른 텍스트 없이):
+[{{"num": 1, "type": "반전형"}}, ...]"""
+            try:
+                client_h = genai.Client(api_key=gemini_key)
+                resp_h = client_h.models.generate_content(model='gemini-2.5-flash', contents=hook_prompt)
+                m_h = re.search(r'\[[\s\S]*\]', resp_h.text.strip())
+                if m_h:
+                    classifications = json.loads(m_h.group())
+                    hook_views = {}
+                    for item in classifications:
+                        num = item.get('num', 0) - 1
+                        hook_type = item.get('type', '')
+                        if 0 <= num < len(hook_data) and hook_type:
+                            hook_views.setdefault(hook_type, []).append(hook_data[num]['views'])
+                    if hook_views:
+                        hook_weights = {t: round(sum(v) / len(v), 1) for t, v in hook_views.items()}
+                        hook_weights['updated'] = datetime.now(KST).strftime('%Y-%m-%d')
+                        with open('hook_weights.json', 'w', encoding='utf-8') as f:
+                            json.dump(hook_weights, f, ensure_ascii=False, indent=2)
+                        print(f'\n🎣 훅 패턴 분석 (평균 조회수)')
+                        for t, avg in sorted(
+                            ((t, v) for t, v in hook_weights.items() if t != 'updated'),
+                            key=lambda x: -x[1]
+                        ):
+                            count = len(hook_views[t])
+                            print(f'  {t}: 평균 {avg:,.0f}회 ({count}건)')
+                        best_hook = max((t for t in hook_weights if t != 'updated'), key=lambda t: hook_weights[t])
+                        print(f'  → 최고 훅: {best_hook} → hook_weights.json 저장 (다음 포스팅에 자동 반영)')
+            except Exception as e:
+                print(f'훅 패턴 분석 실패: {e}')
 
     print(f"\n{'='*60}\n")
 

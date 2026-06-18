@@ -1,0 +1,42 @@
+name: 세제 속보 즉시 포스팅 (3시간마다)
+
+on:
+  schedule:
+    - cron: '0 */3 * * *'   # 매 3시간
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  breaking:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: 패키지 설치
+        run: pip install requests feedparser google-genai python-dotenv
+      - name: 세제 속보 체크 & 포스팅
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+        run: python breaking_news_poster.py
+      - name: 속보 로그 커밋
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add breaking_log.json 2>/dev/null || true
+          git diff --staged --quiet || git commit -m "세제 속보 로그 업데이트"
+          git pull --rebase
+          git push
+      - name: 실패 알림
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue create \
+            --title "⚠️ 속보 포스터 실패 ($(TZ=Asia/Seoul date +'%Y-%m-%d %H:%M'))" \
+            --body "[로그](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})"
