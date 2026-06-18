@@ -625,6 +625,84 @@ JSON 배열만 출력 (다른 텍스트 없이):
             except Exception as e:
                 print(f'훅 패턴 분석 실패: {e}')
 
+    # 카테고리별 최적 포스팅 시간 → slot_config.json 자동 업데이트
+    SLOT_DEFAULTS = {'business': 7, 'economy': 12, 'insurance': 21, 'policy': 15, 'government': 20, 'trend': 7}
+    cat_hour_perf = {}
+    for entry in content_log:
+        cat = entry.get('category', '')
+        hour = entry.get('hour')
+        pid = entry.get('post_id')
+        if not cat or hour is None or not pid:
+            continue
+        r = results_by_id.get(pid)
+        if not r:
+            continue
+        cat_hour_perf.setdefault(cat, {}).setdefault(hour, []).append(r['views'])
+
+    if cat_hour_perf:
+        slot_config = {}
+        if os.path.exists('slot_config.json'):
+            with open('slot_config.json', encoding='utf-8') as f:
+                slot_config = json.load(f)
+        updated = False
+        print(f'\n⏰ 카테고리별 최적 포스팅 시간 분석 (A/B 슬롯)')
+        for cat, hour_data in cat_hour_perf.items():
+            if len(hour_data) < 2:
+                continue
+            best_h = max(hour_data, key=lambda h: sum(hour_data[h]) / len(hour_data[h]))
+            best_avg = sum(hour_data[best_h]) / len(hour_data[best_h])
+            cur_h = slot_config.get(cat, SLOT_DEFAULTS.get(cat, best_h))
+            cur_views = hour_data.get(cur_h, [0])
+            cur_avg = sum(cur_views) / max(len(cur_views), 1)
+            marker = '↑' if best_h != cur_h else ' '
+            print(f'  {marker} {cat}: 현재 {cur_h:02d}:00 (평균 {cur_avg:,.0f}) → 최적 {best_h:02d}:00 (평균 {best_avg:,.0f})')
+            if abs(best_h - cur_h) >= 2:
+                slot_config[cat] = best_h
+                updated = True
+        if updated:
+            with open('slot_config.json', 'w', encoding='utf-8') as f:
+                json.dump(slot_config, f, ensure_ascii=False, indent=2)
+            print(f'  → slot_config.json 업데이트 (2시간 이상 차이 나는 카테고리 조정)')
+
+    # 댓글 유발 포스팅 패턴 분석
+    MIN_VIEWS = 30
+    commented = [r for r in results if r.get('replies', 0) > 0 and r.get('views', 0) >= MIN_VIEWS]
+    uncommented = [r for r in results if r.get('replies', 0) == 0 and r.get('views', 0) >= MIN_VIEWS]
+
+    if commented and uncommented:
+        cl_map = {e.get('post_id'): e.get('category', '?') for e in content_log}
+        print(f'\n💬 댓글 유발 포스팅 패턴 (조회 {MIN_VIEWS} 이상 기준)')
+        print(f'  댓글 있음: {len(commented)}건 | 댓글 없음: {len(uncommented)}건')
+
+        cat_counts = {}
+        for r in commented:
+            c = cl_map.get(r['id'], '?')
+            cat_counts[c] = cat_counts.get(c, 0) + 1
+        top_cats = sorted(cat_counts.items(), key=lambda x: -x[1])[:3]
+        print(f'  댓글 있는 포스트 카테고리 TOP3: {", ".join(f"{c}({n})" for c, n in top_cats)}')
+
+        if gemini_key:
+            c_sample = commented[:3]
+            u_sample = uncommented[:3]
+            c_texts = '\n'.join([f'- (조회 {r["views"]}, 댓글 {r["replies"]}) {r["text"][:60]}...' for r in c_sample])
+            u_texts = '\n'.join([f'- (조회 {r["views"]}, 댓글 0) {r["text"][:60]}...' for r in u_sample])
+            pattern_prompt = f"""이 Threads 계정(증여·상속·법인 구조 설계 전문가)의 포스팅을 비교해줘.
+
+[댓글이 달린 포스팅]
+{c_texts}
+
+[댓글이 없는 포스팅]
+{u_texts}
+
+댓글이 달리게 만드는 요소 3가지를 말해줘.
+전부 반말, 150자 이내."""
+            try:
+                client_p = genai.Client(api_key=gemini_key)
+                resp_p = client_p.models.generate_content(model='gemini-2.5-flash', contents=pattern_prompt)
+                print(f'  Gemini 분석: {resp_p.text.strip()}')
+            except Exception as e:
+                print(f'  댓글 패턴 분석 실패: {e}')
+
     print(f"\n{'='*60}\n")
 
 

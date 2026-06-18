@@ -30,7 +30,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add reblog_candidates.json follower_history.json format_weights.json content_log.json
+          git add reblog_candidates.json follower_history.json format_weights.json content_log.json source_weights.json hook_weights.json slot_config.json 2>/dev/null || true
           git diff --staged --quiet || git commit -m "주간 분석: 재발행 후보 갱신 ($(TZ=Asia/Seoul date +'%Y-%m-%d'))"
           git pull --rebase
           git push

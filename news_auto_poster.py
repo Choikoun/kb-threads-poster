@@ -138,6 +138,13 @@ CATEGORIES = {
 
 # ─── 1. 뉴스 수집 ────────────────────────────────────────────────
 
+def _kw_overlap(t1, t2):
+    """두 제목의 한국어 단어 중복 수"""
+    w1 = set(re.findall(r'[가-힣]{2,}', t1))
+    w2 = set(re.findall(r'[가-힣]{2,}', t2))
+    return len(w1 & w2)
+
+
 SOURCE_MAP = {
     'mk.co.kr': '매일경제', 'yna.co.kr': '연합뉴스',
     'biz.chosun.com': '조선비즈', 'newsis.com': '뉴시스',
@@ -405,7 +412,7 @@ def generate_content(articles, category='economy', used_titles=None):
     used_block = ''
     if used_titles:
         titles_str = '\n'.join(f'- {t}' for t in used_titles)
-        used_block = f"\n[오늘 이미 포스팅한 뉴스 - 절대 선택 금지]\n{titles_str}\n위 뉴스와 같은 사건·판결·기관을 다룬 뉴스도 금지. 완전히 다른 주제를 선택해.\n"
+        used_block = f"\n[최근 3일 포스팅한 주제 - 절대 금지]\n{titles_str}\n위와 같은 사건·판결·기관 또는 같은 세금 항목(상속세·법인세·종부세 등)을 다룬 뉴스 금지. 완전히 다른 주제를 골라.\n"
 
     chosen_variant = _choose_format(category, cat.get('format_variants', ['반전형']))
     structure_block = FORMAT_STRUCTURES.get(chosen_variant, FORMAT_STRUCTURES['반전형'])
@@ -670,18 +677,33 @@ def main():
         print(f'  - {a["title"]}')
 
     today_str = datetime.now(KST).strftime('%Y-%m-%d')
+    cutoff_str = (datetime.now(KST) - timedelta(days=3)).strftime('%Y-%m-%d')
     used_titles = []
     if os.path.exists(CONTENT_LOG_FILE):
         with open(CONTENT_LOG_FILE, encoding='utf-8') as f:
-            used_titles = [e['selected_title'] for e in json.load(f) if e.get('date') == today_str]
+            used_titles = [e['selected_title'] for e in json.load(f)
+                          if e.get('date', '') >= cutoff_str and e.get('selected_title')]
     if used_titles:
-        print(f'오늘 이미 사용한 뉴스 {len(used_titles)}개 제외')
+        print(f'최근 3일 포스팅 주제 {len(used_titles)}개 중복 방지 적용')
 
     print('\nGemini 컨텐츠 생성 중...')
     content = generate_content(articles, category, used_titles=used_titles)
     if not content:
         print('컨텐츠 생성 실패 - 종료')
         sys.exit(1)
+
+    # 주제 중복 감지 → 재시도
+    if used_titles and content.get('selected_title'):
+        dup_hits = [t for t in used_titles if _kw_overlap(content['selected_title'], t) >= 3]
+        if dup_hits:
+            print(f'⚠️ 중복 주제 감지: "{content["selected_title"][:35]}" ↔ "{dup_hits[0][:35]}"')
+            print('  다른 주제로 재시도...')
+            retry_titles = used_titles + [content['selected_title']]
+            content = generate_content(articles, category, used_titles=retry_titles)
+            if not content:
+                print('재시도 실패 - 종료')
+                sys.exit(1)
+            print(f'  재선택: {content["selected_title"]}')
 
     print(f'\n선택된 뉴스: {content["selected_title"]}')
     print(f'메인:\n{content["main"]}\n')
@@ -717,6 +739,21 @@ def main():
 
     if not image_url:
         print('  이미지 없이 진행')
+
+    # A/B 슬롯 실험: slot_config.json의 최적 시간까지 대기
+    if os.path.exists('slot_config.json'):
+        try:
+            with open('slot_config.json', encoding='utf-8') as f:
+                sc = json.load(f)
+            target_h = sc.get(category)
+            if target_h is not None:
+                now_h = datetime.now(KST).hour
+                wait_secs = (target_h - now_h) * 3600
+                if 0 < wait_secs <= 7200:
+                    print(f'슬롯 조정: {now_h:02d}:xx → {target_h:02d}:00 KST ({wait_secs//60}분 대기)')
+                    time.sleep(wait_secs)
+        except Exception as e:
+            print(f'슬롯 설정 오류 (무시): {e}')
 
     print('\nThreads 포스팅 중...')
     main_id = post_to_threads(content['main'], content['comments'], image_url, topic_tag=cat_info.get('topic_tag'))
