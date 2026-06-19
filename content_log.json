@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "post_id": "18343210459218996",
     "category": "trend",
@@ -181,7 +181,6 @@
     "category": "business",
     "format_variant": "반전형",
     "date": "2026-06-17",
-
     "selected_title": "대법원 \"국세청 '비주거용 부동산 감정평가' 사업은 적법\""
   },
   {
@@ -238,6 +237,16 @@
     "format_variant": "담백형",
     "date": "2026-06-18",
     "hour": 9,
-    "selected_title": "임금근로자 5명 중 1명 '퇴직급여' 못받아…여성 '62.1%'"
+    "selected_title": "임금근로자 5명 중 1명 '퇴직급여' 못받아…여성 '62.1%'"
+  },
+  {
+    "post_id": "17867661720628256",
+    "category": "policy",
+    "format_variant": "반전형",
+    "date": "2026-06-19",
+    "hour": 22,
+    "selected_title": "한국거래소, '7시 프리마켓' 개장 내년말로 연기(종합)",
+    "source": "연합뉴스",
+    "line_count": 6
   }
 ]
