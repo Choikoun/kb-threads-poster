@@ -1,0 +1,43 @@
+name: 뉴스 자동포스팅 - 자정 (오늘의 트렌드)
+
+on:
+  schedule:
+    - cron: '0 15 * * *'   # 매일 00:00 KST (전날 15:00 UTC)
+  workflow_dispatch:
+    inputs:
+      category:
+        description: '카테고리'
+        default: 'trend'
+
+concurrency:
+  group: news-trend-midnight
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  post_news:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: 패키지 설치
+        run: pip install requests feedparser google-genai beautifulsoup4 python-dotenv
+      - name: 오늘의 트렌드 포스팅
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          IMGBB_API_KEY: ${{ secrets.IMGBB_API_KEY }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: python news_auto_poster.py trend
+      - name: 콘텐츠 로그 커밋
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add content_log.json
+          git diff --staged --quiet || git commit -m "콘텐츠 로그 업데이트"
+          git pull --rebase
+          git push
