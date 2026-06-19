@@ -190,7 +190,7 @@ def main():
     print('카드 이미지 생성 중...')
     tmp_dir = tempfile.mkdtemp()
     try:
-        paths = generate_card_set(card_data, output_dir=tmp_dir)
+        paths = generate_card_set(card_data, output_dir=tmp_dir, category=best.get('category', ''))
         print(f'  {len(paths)}장 생성 완료')
 
         print('imgbb 업로드 중...')

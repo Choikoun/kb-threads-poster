@@ -13,13 +13,28 @@ load_dotenv()
 SIZE = (1080, 1080)
 
 COLORS = {
-    "bg":        "#0A1628",   # 다크 네이비 배경
-    "bg_card":   "#0F1F3D",   # 카드 내부 배경 (약간 밝게)
-    "accent":    "#F5C842",   # 골드 포인트
+    "bg":        "#0A1628",
+    "bg_card":   "#0F1F3D",
+    "accent":    "#F5C842",
     "white":     "#FFFFFF",
-    "gray":      "#8B9BB4",   # 보조 텍스트
-    "divider":   "#1E3A5F",   # 구분선
+    "gray":      "#8B9BB4",
+    "divider":   "#1E3A5F",
 }
+
+CATEGORY_ACCENTS = {
+    "inheritance": "#F5C842",   # 골드 — 상속
+    "corporate":   "#4A90E2",   # 블루 — 법인
+    "insurance":   "#E8715A",   # 코랄 — 보험
+    "policy":      "#8B6FD4",   # 퍼플 — 정책
+    "government":  "#8B6FD4",   # 퍼플 — 정부
+    "economy":     "#4AB8A0",   # 에메랄드 — 경제
+    "business":    "#F5C842",   # 골드 — 사업주
+    "trend":       "#F09D3A",   # 오렌지 — 트렌드
+}
+
+
+def get_accent(category=""):
+    return CATEGORY_ACCENTS.get(category, COLORS["accent"])
 
 FONT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fonts")
 
@@ -67,18 +82,32 @@ def draw_rounded_rect(draw, xy, radius, fill):
     draw.ellipse([x2 - 2*radius, y2 - 2*radius, x2, y2], fill=fill_rgb)
 
 
-def make_card_1_hook(title_big, title_sub, tag=""):
+def draw_progress_dots(draw, current, total, accent_hex):
+    """하단 슬라이드 진행 점 표시"""
+    dot_r = 8
+    gap = 28
+    total_w = total * dot_r * 2 + (total - 1) * (gap - dot_r * 2)
+    x = (SIZE[0] - total_w) // 2
+    y = SIZE[1] - 52
+    for i in range(total):
+        color = hex_to_rgb(accent_hex) if i == current else hex_to_rgb(COLORS["gray"])
+        draw.ellipse([x, y, x + dot_r * 2, y + dot_r * 2], fill=color)
+        x += gap
+
+
+def make_card_1_hook(title_big, title_sub, tag="", category="", total=5):
     """카드 1: 훅 — 큰 제목 중앙"""
+    accent = get_accent(category)
     img = Image.new("RGB", SIZE, hex_to_rgb(COLORS["bg"]))
     draw = ImageDraw.Draw(img)
 
     # 상단 포인트 라인
-    draw.rectangle([80, 80, 200, 86], fill=hex_to_rgb(COLORS["accent"]))
+    draw.rectangle([80, 80, 200, 86], fill=hex_to_rgb(accent))
 
     # 태그 (선택)
     if tag:
         f_tag = load_font("bold", 28)
-        draw.text((80, 100), tag, font=f_tag, fill=hex_to_rgb(COLORS["accent"]))
+        draw.text((80, 100), tag, font=f_tag, fill=hex_to_rgb(accent))
 
     # 메인 텍스트
     f_big = load_font("extrabold", 80)
@@ -89,7 +118,7 @@ def make_card_1_hook(title_big, title_sub, tag=""):
         y += 95
 
     # 구분선
-    draw.rectangle([80, y + 20, 200, y + 26], fill=hex_to_rgb(COLORS["accent"]))
+    draw.rectangle([80, y + 20, 200, y + 26], fill=hex_to_rgb(accent))
 
     # 서브 텍스트
     f_sub = load_font("regular", 40)
@@ -99,22 +128,24 @@ def make_card_1_hook(title_big, title_sub, tag=""):
         draw.text((80, y), line, font=f_sub, fill=hex_to_rgb(COLORS["gray"]))
         y += 52
 
-    # 하단 계정명
+    # 하단
     f_account = load_font("bold", 28)
-    draw.text((80, SIZE[1] - 80), "@financial_planner0", font=f_account,
+    draw.text((80, SIZE[1] - 90), "@financial_planner0", font=f_account,
               fill=hex_to_rgb(COLORS["gray"]))
+    draw_progress_dots(draw, 0, total, accent)
 
     return img
 
 
-def make_card_point(number, point_title, point_body):
+def make_card_point(number, point_title, point_body, category="", total=5):
     """카드 2~4: 포인트 카드"""
+    accent = get_accent(category)
     img = Image.new("RGB", SIZE, hex_to_rgb(COLORS["bg"]))
     draw = ImageDraw.Draw(img)
 
     # 번호 배지
     f_num = load_font("extrabold", 100)
-    draw.text((80, 80), f"0{number}", font=f_num, fill=hex_to_rgb(COLORS["accent"]))
+    draw.text((80, 80), f"0{number}", font=f_num, fill=hex_to_rgb(accent))
 
     # 포인트 제목
     f_title = load_font("extrabold", 62)
@@ -135,22 +166,22 @@ def make_card_point(number, point_title, point_body):
         draw.text((80, y), line, font=f_body, fill=hex_to_rgb(COLORS["gray"]))
         y += 54
 
-    # 하단 계정명
+    # 하단
     f_account = load_font("bold", 28)
-    draw.text((80, SIZE[1] - 80), "@financial_planner0", font=f_account,
+    draw.text((80, SIZE[1] - 90), "@financial_planner0", font=f_account,
               fill=hex_to_rgb(COLORS["gray"]))
+    draw_progress_dots(draw, number, total, accent)
 
     return img
 
 
-def make_card_last(closing_line, cta="더 알고 싶으신가요?"):
-    """마지막 카드: 마무리 + CTA"""
-    img = Image.new("RGB", SIZE, hex_to_rgb(COLORS["accent"]))
+def make_card_last(closing_line, cta="더 알고 싶으신가요?", category="", total=5):
+    """마지막 카드: 마무리"""
+    accent = get_accent(category)
+    img = Image.new("RGB", SIZE, hex_to_rgb(COLORS["bg"]))
     draw = ImageDraw.Draw(img)
 
-    # 배경 포인트 사각형
-    draw.rectangle([0, 0, SIZE[0], SIZE[1]], fill=hex_to_rgb(COLORS["bg"]))
-    draw.rectangle([0, SIZE[1]-200, SIZE[0], SIZE[1]], fill=hex_to_rgb(COLORS["accent"]))
+    draw.rectangle([0, SIZE[1] - 200, SIZE[0], SIZE[1]], fill=hex_to_rgb(accent))
 
     # 마무리 문장
     f_close = load_font("extrabold", 58)
@@ -160,40 +191,28 @@ def make_card_last(closing_line, cta="더 알고 싶으신가요?"):
         draw.text((80, y), line, font=f_close, fill=hex_to_rgb(COLORS["white"]))
         y += 72
 
-    # CTA
-    f_cta = load_font("bold", 36)
-    draw.text((80, SIZE[1] - 160), cta, font=f_cta, fill=hex_to_rgb(COLORS["bg"]))
-
     # 계정명
     f_account = load_font("extrabold", 32)
-    draw.text((80, SIZE[1] - 100), "@financial_planner0", font=f_account,
+    draw.text((80, SIZE[1] - 160), "@financial_planner0", font=f_account,
               fill=hex_to_rgb(COLORS["bg"]))
+    draw_progress_dots(draw, total - 1, total, COLORS["bg"])
 
     return img
 
 
-def generate_card_set(card_data, output_dir="cards_output"):
-    """카드셋 전체 생성
-    card_data = {
-        "hook_big": "...",
-        "hook_sub": "...",
-        "tag": "...",
-        "points": [
-            {"title": "...", "body": "..."},
-            ...
-        ],
-        "closing": "...",
-        "cta": "..."
-    }
-    """
+def generate_card_set(card_data, output_dir="cards_output", category=""):
+    """카드셋 전체 생성"""
     os.makedirs(output_dir, exist_ok=True)
     paths = []
+    total = len(card_data["points"]) + 2  # 훅 1장 + 포인트 N장 + 마지막 1장
 
     # 카드 1 (훅)
     card1 = make_card_1_hook(
         card_data["hook_big"],
         card_data["hook_sub"],
-        card_data.get("tag", "")
+        card_data.get("tag", ""),
+        category=category,
+        total=total,
     )
     p1 = os.path.join(output_dir, "card_01.jpg")
     card1.save(p1, "JPEG", quality=95)
@@ -201,7 +220,7 @@ def generate_card_set(card_data, output_dir="cards_output"):
 
     # 카드 2~ (포인트)
     for i, pt in enumerate(card_data["points"], start=1):
-        card = make_card_point(i, pt["title"], pt["body"])
+        card = make_card_point(i, pt["title"], pt["body"], category=category, total=total)
         p = os.path.join(output_dir, f"card_0{i+1}.jpg")
         card.save(p, "JPEG", quality=95)
         paths.append(p)
@@ -209,7 +228,9 @@ def generate_card_set(card_data, output_dir="cards_output"):
     # 마지막 카드
     card_last = make_card_last(
         card_data["closing"],
-        card_data.get("cta", "더 알고 싶으신가요?")
+        card_data.get("cta", "더 알고 싶으신가요?"),
+        category=category,
+        total=total,
     )
     p_last = os.path.join(output_dir, f"card_0{len(card_data['points'])+2}.jpg")
     card_last.save(p_last, "JPEG", quality=95)
