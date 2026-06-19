@@ -41,7 +41,7 @@ def get_top_post():
     """content_log에서 최근 7일 중 아직 인스타에 올리지 않은 최고 조회수 포스트"""
     if not os.path.exists(CONTENT_LOG_FILE):
         return None
-    with open(CONTENT_LOG_FILE, encoding='utf-8') as f:
+    with open(CONTENT_LOG_FILE, encoding='utf-8-sig') as f:
         log = json.load(f)
 
     ig_log = load_ig_log()
