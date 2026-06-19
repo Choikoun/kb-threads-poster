@@ -8,7 +8,7 @@ from PIL import Image, ImageDraw
 from google import genai
 from dotenv import load_dotenv
 import news_auto_poster as nap
-from card_generator import load_font, wrap_text, hex_to_rgb, COLORS
+from card_generator import load_font, wrap_text, hex_to_rgb, COLORS, upload_to_imgbb
 
 load_dotenv()
 sys.stdout.reconfigure(encoding='utf-8')
@@ -156,8 +156,7 @@ def main():
     overlay_headline(raw, content['headline'])
     print(f'카드 완성: {FINAL_IMAGE_PATH}')
 
-    with open(FINAL_IMAGE_PATH, 'rb') as f:
-        image_url = nap.upload_to_imgbb(f.read())
+    image_url = upload_to_imgbb(FINAL_IMAGE_PATH)
     if not image_url:
         print('imgbb 업로드 실패 - 종료')
         sys.exit(1)

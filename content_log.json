@@ -248,5 +248,45 @@
     "selected_title": "한국거래소, '7시 프리마켓' 개장 내년말로 연기(종합)",
     "source": "연합뉴스",
     "line_count": 6
+  },
+  {
+    "post_id": "18067813256417887",
+    "category": "government",
+    "format_variant": "반전형",
+    "date": "2026-06-19",
+    "hour": 22,
+    "selected_title": "이 대통령 \"선거관리 체제 해체 수준으로 개혁…법 개정 서두르고 개헌도 적극 검토\"(종합)",
+    "source": "뉴시스",
+    "line_count": 7
+  },
+  {
+    "post_id": "18096151217209069",
+    "category": "insurance",
+    "format_variant": "사례형",
+    "date": "2026-06-19",
+    "hour": 22,
+    "selected_title": "환율 불안에 국고채 금리 일제히 올라…3년물 연 3.784%(종합)",
+    "source": "연합뉴스",
+    "line_count": 7
+  },
+  {
+    "post_id": "18360404821240359",
+    "category": "trend",
+    "format_variant": "담백형",
+    "date": "2026-06-19",
+    "hour": 22,
+    "selected_title": "검찰, '주가조작 패가망신 1호' 증권사 3곳 압수수색",
+    "source": "연합뉴스",
+    "line_count": 4
+  },
+  {
+    "post_id": "17979288615014091",
+    "category": "business",
+    "format_variant": "ai_illustration",
+    "date": "2026-06-19",
+    "hour": 22,
+    "selected_title": "‘주가조작 패가망신 1호’ 정조준…검찰, 증권사 3곳 압수수색",
+    "source": "",
+    "line_count": 0
   }
 ]
