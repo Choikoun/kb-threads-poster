@@ -1,0 +1,32 @@
+name: Instagram 토큰 자동 갱신 (월 1회)
+
+on:
+  schedule:
+    - cron: '0 0 1 * *'   # 매월 1일 09:00 KST
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: 패키지 설치
+        run: pip install requests pynacl
+      - name: 토큰 갱신
+        env:
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+          INSTAGRAM_APP_SECRET: ${{ secrets.INSTAGRAM_APP_SECRET }}
+          GH_PAT: ${{ secrets.GH_PAT }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python instagram_token_refresh.py
+      - name: 실패 알림
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue create \
+            --title "⚠️ Instagram 토큰 자동 갱신 실패 — 수동 갱신 필요" \
+            --body "토큰 갱신에 실패했습니다. Graph API Explorer에서 새 토큰을 발급하고 INSTAGRAM_ACCESS_TOKEN을 수동으로 업데이트해주세요."
