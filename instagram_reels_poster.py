@@ -2,9 +2,9 @@
 """
 인스타그램 릴스 포스터
 뉴스 기반 세로형 영상(9:16) + TTS → Instagram Reels 발행
-주 1회 (수요일 20:00 KST)
+매일 20:00 KST, 카테고리는 business 50% + 나머지 5개 균등 10%씩 랜덤 선택
 """
-import os, sys, json, time, requests, tempfile, shutil
+import os, sys, json, time, random, requests, tempfile, shutil
 from datetime import datetime, timezone, timedelta
 from PIL import Image
 from dotenv import load_dotenv
@@ -25,7 +25,29 @@ BASE_IG = 'https://graph.facebook.com/v21.0'
 KST = timezone(timedelta(hours=9))
 IG_LOG_FILE = 'instagram_log.json'
 
-HASHTAGS = '#법인절세 #사업주 #절세 #법인세금 #자산설계 #세금 #증여 #상속 #세금공부 #금융'
+CATEGORY_WEIGHTS = {
+    'business':   0.5,
+    'economy':    0.1,
+    'insurance':  0.1,
+    'policy':     0.1,
+    'government': 0.1,
+    'trend':      0.1,
+}
+
+CATEGORY_HASHTAGS = {
+    'business':   '#법인절세 #사업주 #법인세금 #절세 #자산설계 #세금 #법인운영 #대표이사',
+    'economy':    '#경제 #주식 #시장 #투자 #경제뉴스 #재테크 #자산관리 #금융',
+    'insurance':  '#보험 #연금 #노후준비 #상속 #증여 #자산설계 #세금 #노후자금',
+    'policy':     '#세금 #정책 #세법개정 #시행령 #절세 #세무 #법인세 #소득세',
+    'government': '#정책 #경제정책 #부동산 #세금 #정부정책 #자산관리 #시사 #경제',
+    'trend':      '#오늘의이슈 #트렌드 #이슈 #경제이슈 #오늘 #뉴스 #화제 #핫이슈',
+}
+
+
+def choose_category():
+    categories = list(CATEGORY_WEIGHTS.keys())
+    weights = list(CATEGORY_WEIGHTS.values())
+    return random.choices(categories, weights=weights, k=1)[0]
 
 
 def load_ig_log():
@@ -85,7 +107,7 @@ def post_reels(video_url, caption):
 
 
 def main():
-    category = sys.argv[1] if len(sys.argv) > 1 else 'business'
+    category = sys.argv[1] if len(sys.argv) > 1 else choose_category()
     print(f'=== 인스타그램 릴스 포스터 [{category}] ===')
 
     articles = nap.get_hot_news(category)
@@ -100,7 +122,7 @@ def main():
     print(f"선택 뉴스: {content['selected_title']}")
     print(f"내레이션: {content['narration']}")
 
-    caption = f"{content['caption']}\n\n{HASHTAGS}"
+    caption = f"{content['caption']}\n\n{CATEGORY_HASHTAGS.get(category, CATEGORY_HASHTAGS['business'])}"
 
     tmp_dir = tempfile.mkdtemp()
     try:
