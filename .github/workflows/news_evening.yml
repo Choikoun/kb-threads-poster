@@ -35,9 +35,10 @@ jobs:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         run: |
           for i in 1 2 3; do
-            python news_auto_poster.py insurance && break
+            python news_auto_poster.py insurance && exit 0
             if [ $i -lt 3 ]; then echo "시도 $i 실패, 30초 후 재시도..."; sleep 30; fi
           done
+          exit 1
       - name: 실패 알림
         if: failure()
         env:
