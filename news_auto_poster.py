@@ -680,7 +680,7 @@ def main():
     cutoff_str = (datetime.now(KST) - timedelta(days=3)).strftime('%Y-%m-%d')
     used_titles = []
     if os.path.exists(CONTENT_LOG_FILE):
-        with open(CONTENT_LOG_FILE, encoding='utf-8') as f:
+        with open(CONTENT_LOG_FILE, encoding='utf-8-sig') as f:
             used_titles = [e['selected_title'] for e in json.load(f)
                           if e.get('date', '') >= cutoff_str and e.get('selected_title')]
     if used_titles:

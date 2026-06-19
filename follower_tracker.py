@@ -153,7 +153,7 @@ def main():
         today_date = datetime.now(KST).strftime('%Y-%m-%d')
         today_posts = []
         if os.path.exists(cl_path):
-            with open(cl_path, encoding='utf-8') as f:
+            with open(cl_path, encoding='utf-8-sig') as f:
                 cl = json.load(f)
             today_posts = [e for e in cl if e.get('date') == today_date]
         lines = [f'팔로워가 {diff}명 감소했습니다 (현재 {count}명).', '']

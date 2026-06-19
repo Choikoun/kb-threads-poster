@@ -38,7 +38,7 @@ def main():
         )
         return
 
-    with open(CONTENT_LOG, encoding='utf-8') as f:
+    with open(CONTENT_LOG, encoding='utf-8-sig') as f:
         logs = json.load(f)
 
     today_posts = [p for p in logs if p.get('date', '') == today]

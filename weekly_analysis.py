@@ -17,7 +17,7 @@ KST = timezone(timedelta(hours=9))
 
 def load_content_log():
     if os.path.exists(CONTENT_LOG_FILE):
-        with open(CONTENT_LOG_FILE, encoding="utf-8") as f:
+        with open(CONTENT_LOG_FILE, encoding="utf-8-sig") as f:
             return json.load(f)
     return []
 
