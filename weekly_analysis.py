@@ -703,6 +703,57 @@ JSON 배열만 출력 (다른 텍스트 없이):
             except Exception as e:
                 print(f'  댓글 패턴 분석 실패: {e}')
 
+    # 인스타그램 카드뉴스 성과 분석
+    IG_LOG_FILE = 'instagram_log.json'
+    IG_TOKEN = os.environ.get('INSTAGRAM_ACCESS_TOKEN', '')
+    BASE_IG = 'https://graph.facebook.com/v21.0'
+    IG_METRICS = 'reach,impressions,saved,likes,comments'
+
+    if os.path.exists(IG_LOG_FILE) and IG_TOKEN:
+        with open(IG_LOG_FILE, encoding='utf-8') as f:
+            ig_log = json.load(f)
+
+        ig_updated = False
+        print(f'\n📸 인스타그램 카드뉴스 성과')
+        print(f'  {"제목":<30} {"도달":>6} {"저장":>5} {"좋아요":>5} {"댓글":>5}')
+        print(f'  {"-"*55}')
+
+        for entry in ig_log:
+            pid = entry.get('ig_post_id')
+            if not pid:
+                continue
+            # 이미 측정된 경우 최신 데이터로 갱신
+            try:
+                r = requests.get(f'{BASE_IG}/{pid}/insights',
+                                 params={'metric': IG_METRICS, 'access_token': IG_TOKEN}, timeout=15)
+                if r.ok:
+                    metrics = {d['name']: d.get('values', [{}])[0].get('value', 0)
+                               for d in r.json().get('data', [])}
+                    entry['reach'] = metrics.get('reach', 0)
+                    entry['impressions'] = metrics.get('impressions', 0)
+                    entry['saved'] = metrics.get('saved', 0)
+                    entry['likes'] = metrics.get('likes', 0)
+                    entry['comments'] = metrics.get('comments', 0)
+                    ig_updated = True
+                title = (entry.get('selected_title') or '')[:30]
+                reach = entry.get('reach', '-')
+                saved = entry.get('saved', '-')
+                likes = entry.get('likes', '-')
+                comments = entry.get('comments', '-')
+                print(f'  {title:<30} {str(reach):>6} {str(saved):>5} {str(likes):>5} {str(comments):>5}')
+            except Exception as e:
+                print(f'  성과 조회 실패 ({pid}): {e}')
+
+        if ig_updated:
+            with open(IG_LOG_FILE, 'w', encoding='utf-8') as f:
+                json.dump(ig_log, f, ensure_ascii=False, indent=2)
+
+            # 저장 수 기준 상위 포스트
+            ranked = sorted([e for e in ig_log if e.get('saved', 0) > 0],
+                            key=lambda x: -x.get('saved', 0))
+            if ranked:
+                print(f'\n  💾 저장 수 TOP: {(ranked[0].get("selected_title") or "")[:30]} ({ranked[0]["saved"]}회)')
+
     print(f"\n{'='*60}\n")
 
 
