@@ -2,7 +2,7 @@ name: 포스팅 공백 감지 (매일 23:30 KST)
 
 on:
   schedule:
-    - cron: '30 14 * * *'   # 매일 23:30 KST
+    - cron: '37 14 * * *'   # 매일 23:30 KST 무렵
   workflow_dispatch:
 
 permissions:

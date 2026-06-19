@@ -2,7 +2,7 @@ name: 인스타그램 릴스 포스팅 (수요일 20:00 KST)
 
 on:
   schedule:
-    - cron: '0 11 * * 3'   # 매주 수요일 20:00 KST (UTC 11:00)
+    - cron: '17 11 * * 3'   # 매주 수요일 20:00 KST 무렵
   workflow_dispatch:
 
 concurrency:

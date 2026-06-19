@@ -2,7 +2,7 @@ name: Instagram 토큰 자동 갱신 (월 1회)
 
 on:
   schedule:
-    - cron: '0 0 1 * *'   # 매월 1일 09:00 KST
+    - cron: '5 0 1 * *'   # 매월 1일 09:00 KST 무렵
   workflow_dispatch:
 
 jobs:

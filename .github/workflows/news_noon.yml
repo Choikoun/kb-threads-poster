@@ -2,7 +2,7 @@ name: 뉴스 자동포스팅 - 점심 (경제·시장)
 
 on:
   schedule:
-    - cron: '0 3 * * *'   # 매일 12:00 KST
+    - cron: '18 3 * * *'   # 매일 12:00 KST 무렵
   workflow_dispatch:
     inputs:
       category:

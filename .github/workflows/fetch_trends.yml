@@ -2,7 +2,7 @@ name: 일일 트렌드 수집
 
 on:
   schedule:
-    - cron: '0 22 * * *'   # 매일 07:00 KST (UTC 22:00)
+    - cron: '9 22 * * *'   # 매일 07:00 KST 무렵
   workflow_dispatch:
 
 permissions:

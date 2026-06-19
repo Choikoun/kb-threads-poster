@@ -2,7 +2,7 @@ name: 댓글 체크 알림
 
 on:
   schedule:
-    - cron: '0 12 * * *'   # 매일 21:00 KST (UTC 12:00)
+    - cron: '2 12 * * *'   # 매일 21:00 KST 무렵
   workflow_dispatch:
 
 permissions:

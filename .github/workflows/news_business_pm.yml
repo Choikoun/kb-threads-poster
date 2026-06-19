@@ -2,7 +2,7 @@ name: 뉴스 자동포스팅 - 저녁 6시 (법인·사업주)
 
 on:
   schedule:
-    - cron: '0 9 * * *'   # 매일 18:00 KST
+    - cron: '41 9 * * *'   # 매일 18:00 KST 무렵
   workflow_dispatch:
     inputs:
       category:

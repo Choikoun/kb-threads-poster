@@ -2,7 +2,7 @@ name: 뉴스 자동포스팅 - 출근길 (오늘의 트렌드)
 
 on:
   schedule:
-    - cron: '0 22 * * *'   # 매일 07:00 KST (UTC 22:00 전날)
+    - cron: '21 22 * * *'   # 매일 07:00 KST 무렵
   workflow_dispatch:
     inputs:
       category:

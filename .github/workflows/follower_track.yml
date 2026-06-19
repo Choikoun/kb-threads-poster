@@ -2,7 +2,7 @@ name: 팔로워 수 일별 추적 + 마일스톤 포스팅
 
 on:
   schedule:
-    - cron: '0 12 * * *'   # 매일 21:00 KST
+    - cron: '14 12 * * *'   # 매일 21:00 KST 무렵
   workflow_dispatch:
 
 permissions:

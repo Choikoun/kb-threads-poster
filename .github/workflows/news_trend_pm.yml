@@ -2,7 +2,7 @@ name: 뉴스 자동포스팅 - 저녁 스크롤 (오늘의 트렌드)
 
 on:
   schedule:
-    - cron: '0 12 * * *'   # 매일 21:00 KST
+    - cron: '38 12 * * *'   # 매일 21:00 KST 무렵
   workflow_dispatch:
     inputs:
       category:
