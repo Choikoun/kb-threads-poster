@@ -649,7 +649,7 @@ def post_video_to_threads(main_text, comments, video_url, topic_tag=None):
 def log_content(post_id, category, format_variant, selected_title, source='', line_count=0):
     log = []
     if os.path.exists(CONTENT_LOG_FILE):
-        with open(CONTENT_LOG_FILE, encoding='utf-8') as f:
+        with open(CONTENT_LOG_FILE, encoding='utf-8-sig') as f:
             log = json.load(f)
     now = datetime.now(KST)
     log.append({
