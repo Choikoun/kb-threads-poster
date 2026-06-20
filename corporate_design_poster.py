@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-증여·상속 구조 설계 전문가 포지셔닝 자동 포스팅
+법인 설계 이야기 — 법인 구조·승계·동업·매각 설계 전문가 포지셔닝 자동 포스팅
 뉴스 없이 구조 설계 각도 글을 AI로 생성해서 올림
-매주 화요일·목요일 오후 8시 KST 실행
+매주 월요일·금요일 오후 2시 KST 실행
 """
 import os, sys, json, re, random, time, requests
 from datetime import datetime, timezone, timedelta
@@ -14,7 +14,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 TOKEN = os.environ['THREADS_ACCESS_TOKEN']
 GEMINI_KEY = os.environ['GEMINI_API_KEY']
 BASE = 'https://graph.threads.net/v1.0'
-SERIES_FILE = 'series_log.json'
+SERIES_FILE = 'corporate_series_log.json'
 CONTENT_LOG_FILE = 'content_log.json'
 KST = timezone(timedelta(hours=9))
 
@@ -41,7 +41,7 @@ def get_series_number():
     if os.path.exists(SERIES_FILE):
         try:
             with open(SERIES_FILE, encoding='utf-8') as f:
-                return json.load(f).get('inheritance_count', 0) + 1
+                return json.load(f).get('corporate_count', 0) + 1
         except Exception:
             pass
     return 1
@@ -65,7 +65,7 @@ def increment_series(n, topic):
                 data = json.load(f)
         except Exception:
             pass
-    data['inheritance_count'] = n
+    data['corporate_count'] = n
     recent = data.get('recent_topics', [])
     if topic in recent:
         recent.remove(topic)
@@ -96,9 +96,9 @@ def post_series_index(series_num):
         lines.append(f'{i}. {short}')
 
     body = (
-        f'증여 설계 이야기 #{start}~{series_num}.\n\n'
+        f'법인 설계 이야기 #{start}~{series_num}.\n\n'
         + '\n'.join(lines)
-        + '\n\n이 중에 내 얘기 있어?\n\n#증여 #상속'
+        + '\n\n이 중에 내 얘기 있어?\n\n#법인 #사업주'
     )
 
     r = requests.get(f'{BASE}/me', params={'fields': 'id', 'access_token': TOKEN}, timeout=30)
@@ -111,23 +111,22 @@ def post_series_index(series_num):
     print(f'시리즈 목차 발행: {r2.json().get("id")}')
 
 TOPICS = [
-    "자녀에게 현금 줄 때 증여냐 차용이냐 — 목적이 뭐냐에 따라 구조가 달라진다",
-    "배우자 증여 6억 공제 — 조건을 알고 쓰는 것과 모르고 쓰는 건 다르다",
-    "상속 준비는 사망 후가 아니라 생전에 — 그날 이후엔 바꿀 수 있는 게 없다",
-    "법인 지분 자녀에게 넘기기 — 방법보다 타이밍과 구조가 먼저다",
-    "부동산 증여 vs 상속 — 어느 쪽이 유리한지는 상황마다 다르다",
-    "10년 주기 증여 공제 — 알고는 있지만 제대로 쓰는 사람은 드물다",
-    "가족 간 돈 거래 — 국세청이 실제로 보는 것은 서류가 아니라 흐름이다",
-    "유언장 vs 생전 증여 — 재산을 넘기는 방식이 세금 구조를 결정한다",
-    "법인 대표의 은퇴 설계 — 퇴직금·배당·지분 매각 중 무엇을 먼저 써야 하나",
-    "부모 사망 후 형제 간 재산 분쟁 — 생전에 설계하지 않으면 법대로 나뉜다",
-    "세금만 줄이는 구조와 원하는 삶을 이루는 구조 — 같은 증여인데 출발점이 다르면 결과도 다르다",
+    "법인 설립, 세금만 보고 했다가 후회하는 이유 — 출구 전략 없이 들어가면 못 나온다",
+    "대표이사 급여 vs 배당 — 세금 차이보다 먼저 봐야 할 것",
+    "동업, 지분 50:50으로 시작하면 위험한 이유",
+    "법인차 리스 vs 구매 — 세금보다 중요한 건 회사 자산 구조",
+    "가족법인, 자녀에게 지분 넘기는 타이밍이 결과를 가른다",
+    "법인 청산할 때 세금 두 번 낸다는 거 알고 시작했어?",
+    "MSO 설립, 절세 목적으로만 보면 놓치는 것",
+    "임원 퇴직금 규정, 미리 안 만들면 나중에 못 만든다",
+    "법인 명의로 부동산 사면 무조건 유리하다는 착각",
+    "회사 매각 준비, 매수자가 보는 건 매출이 아니라 구조다",
 ]
 
-PROMPT_TEMPLATE = """너는 한국 Threads에서 활동하는 증여·상속 구조 설계 전문가야.
-이 글은 "증여 설계 이야기" 시리즈의 #{series_num}번째 편이야.
-세무사가 아니야. 세금 계산보다 "가족 자산이 누구한테, 언제, 어떻게 가야 하는가"를 미리 설계하는 것이 전문 영역이야.
-세금을 줄이는 것조차 목적이 아니라 도구야. 진짜 목적은 고객이 원하는 결과(가업승계, 자녀 독립, 노후 설계 등)를 이루는 것 — 세금·법인·보험은 그 결과를 만드는 수단일 뿐이라는 관점이 이 계정의 핵심 차별점.
+PROMPT_TEMPLATE = """너는 한국 Threads에서 활동하는 법인 구조 설계 전문가야.
+이 글은 "법인 설계 이야기" 시리즈의 #{series_num}번째 편이야.
+세무사가 아니야. 세금 계산보다 "이 법인이 사업주가 원하는 결과(승계, 매각, 동업 정리, 은퇴 후 정리 등)로 가는가"를 미리 설계하는 것이 전문 영역이야.
+세금을 줄이는 것조차 목적이 아니라 도구야. 진짜 목적은 사업주가 원하는 결과를 이루는 것 — 법인·지분·급여 구조는 그 결과를 만드는 수단일 뿐이라는 관점이 이 계정의 핵심 차별점.
 
 오늘 주제: {topic}
 
@@ -148,12 +147,12 @@ PROMPT_TEMPLATE = """너는 한국 Threads에서 활동하는 증여·상속 구
 - 댓글 1: 추가 맥락 (2~3줄)
 - 댓글 2: 양자택일형 질문으로 마무리 (예: "A야, B야?") — 2줄, 반말
 {cross_promo_block}
-메인 포스트 마지막 줄 다음에 빈 줄 하나 추가 후 `#증여 #상속` 해시태그 붙여.
-메인 포스트 어딘가에 자연스럽게 "증여 설계 이야기 #{series_num}" 을 한 줄로 넣어. 강요하는 느낌 없이 자연스럽게.
+메인 포스트 마지막 줄 다음에 빈 줄 하나 추가 후 `#법인 #사업주` 해시태그 붙여.
+메인 포스트 어딘가에 자연스럽게 "법인 설계 이야기 #{series_num}" 을 한 줄로 넣어. 강요하는 느낌 없이 자연스럽게.
 
 JSON만 출력:
 {{
-  "main": "메인 포스트 텍스트\n\n#증여 #상속",
+  "main": "메인 포스트 텍스트\n\n#법인 #사업주",
   "comments": ["댓글1", "댓글2"]
 }}"""
 
@@ -222,7 +221,7 @@ def main():
     for i, c in enumerate(content.get('comments', [])):
         print(f'댓글{i+1}:\n{c}\n')
     main_id = post(content)
-    log_content(main_id, 'inheritance', 'series', topic)
+    log_content(main_id, 'corporate', 'series', topic)
     increment_series(series_num, topic)
     if series_num % 10 == 0:
         time.sleep(60)

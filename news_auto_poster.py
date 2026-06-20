@@ -462,7 +462,16 @@ def generate_content(articles, category='economy', used_titles=None):
             pass
 
     follow_cta_block = ''
-    if random.random() < 0.25:
+    extra_roll = random.random()
+    if extra_roll < 0.12:
+        follow_cta_block = '''
+[추가 댓글 - 인스타 크로스 프로모션]
+위 댓글들 다음에 댓글을 1개 더 추가해.
+인스타그램에도 카드뉴스·릴스로 콘텐츠를 올리고 있다는 걸 자연스럽게 언급하는 한 줄.
+반말. "인스타에도 카드뉴스로 정리해서 올려. 거기서도 보고 싶으면 팔로우해놔" 같은 식으로 자연스럽게 변형. 매번 같은 문구 반복하지 않는다.
+"@계정명" 같은 핸들은 만들어내지 않는다.
+'''
+    elif extra_roll < 0.37:
         follow_cta_block = '''
 [추가 댓글 - 팔로우 유도]
 위 댓글들 다음에 댓글을 1개 더 추가해.
