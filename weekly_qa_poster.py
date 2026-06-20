@@ -2,6 +2,7 @@
 """
 주간 시리즈: "이번 주 사업주들이 물어본 것"
 매주 금요일 저녁 게시 - 구독할 이유를 만드는 고정 시리즈 포맷
+회차 번호로 누적 (김진숙 "금요일의 보상" 196회차 스타일 참고, 2026-06-20) — 질문 1개로 단순화
 """
 import os, sys, json, re
 from google import genai
@@ -12,14 +13,30 @@ load_dotenv()
 sys.stdout.reconfigure(encoding='utf-8')
 
 GEMINI_KEY = os.getenv('GEMINI_API_KEY')
+QA_LOG = 'qa_series_log.json'
 
 
-def generate_content():
+def get_episode_number():
+    if os.path.exists(QA_LOG):
+        try:
+            with open(QA_LOG, encoding='utf-8') as f:
+                return json.load(f).get('qa_count', 0) + 1
+        except Exception:
+            pass
+    return 1
+
+
+def save_episode_number(n):
+    with open(QA_LOG, 'w', encoding='utf-8') as f:
+        json.dump({'qa_count': n}, f, ensure_ascii=False, indent=2)
+
+
+def generate_content(episode_num):
     client = genai.Client(api_key=GEMINI_KEY)
     trends = nap.get_trend_headlines(limit=8)
 
     prompt = f"""너는 한국 Threads에서 활동하는 법인·세금·자산 설계 전문가야.
-매주 올리는 시리즈 포스팅을 작성해줘. 시리즈 제목은 "이번 주 사업주들이 물어본 것"이야.
+매주 올리는 시리즈 포스팅을 작성해줘. 시리즈 제목은 "이번 주 사업주들이 물어본 것"이고 이번이 {episode_num}회차야.
 
 [이번 주 핵심 이슈 - 참고만, 아래 타겟에 안 맞으면 무시하고 일반적인 사업주 FAQ로 대체]
 {trends}
@@ -39,27 +56,26 @@ def generate_content():
 - 완전한 답 주지 말 것. 경각심·인사이트·잘못된 상식을 건드리되 "상황마다 달라", "구조가 먼저야"처럼 열어두어 독자 스스로 "내 상황은 어떻게 되지?" 상담 욕구가 생기도록.
 - 세금 계산·법 조항 해설보다 "미리 구조를 설계하느냐 못 하느냐의 차이" 부각이 이 계정의 포지셔닝.
 - 팔로우 유도 시 "@계정명" 같은 계정 핸들을 절대 만들어내지 않는다. "팔로우해두면 놓치지 않아"처럼 핸들 없이 표현한다.
+- 본문에 실명·서명 절대 사용 금지. 신원 특정 가능한 정보 노출 불가.
 
-[메인 포스트 구조]
-1. 시리즈 인트로 1줄 - "이번 주 사업주들이 많이 물어본 거 정리해봤어" 같은 톤으로,
-   매주 거의 동일한 인사말로 시작해서 시리즈처럼 느껴지게
+[메인 포스트 구조 - 질문 1개로 단순하게]
+1. 시리즈 인트로 1줄 - "이번 주 사업주들이 많이 물어본 거 #{episode_num}" 같은 톤으로,
+   매주 거의 동일한 인사말 + 회차 번호로 시작해서 시리즈처럼 느껴지게
 ↵빈줄
 2. 질문 1개 - "OOO 하더라고요" / "OOO 이러더라" 식으로 실제 사업주가 한 말처럼 인용
 ↵빈줄
-3. 그 질문에 대한 반전 또는 핵심 포인트 1~2줄
+3. 그 질문에 대한 반전 또는 핵심 포인트 2~3줄
 ↵빈줄
 4. 마지막 줄: 팔로우 유도 한 줄. "이런 거 매주 정리해서 올릴 거야. 팔로우해두면 놓치지 않아" 같은
    톤으로, 반말. 매주 비슷한 문구 반복해도 됨 (시리즈 시그니처처럼).
 
-[댓글 구조 - 2개]
-- 댓글1: 질문 2 (위와 같은 인용형) + 반전/핵심 포인트
-- 댓글2 (마지막): 질문 3 (위와 같은 인용형) + 반전/핵심 포인트.
-  마지막 문장은 반말 질문으로 마무리해서 호기심 자극
+[댓글 구조 - 1개]
+- 댓글1 (마지막): 위 질문과 이어지는 양자택일형 질문으로 마무리 (예: "지금 이 구조야, 아직 안 잡았어?") — 2줄, 반말
 
 JSON만 출력:
 {{
   "main": "메인 포스트 텍스트",
-  "comments": ["댓글1", "댓글2"]
+  "comments": ["댓글1"]
 }}"""
 
     for attempt in range(3):
@@ -78,8 +94,9 @@ JSON만 출력:
 
 
 def main():
-    print('=== 주간 시리즈: 이번 주 사업주들이 물어본 것 ===')
-    content = generate_content()
+    episode_num = get_episode_number()
+    print(f'=== 주간 시리즈: 이번 주 사업주들이 물어본 것 #{episode_num} ===')
+    content = generate_content(episode_num)
     if not content:
         print('컨텐츠 생성 실패 - 종료')
         sys.exit(1)
@@ -91,6 +108,7 @@ def main():
     main_id = nap.post_to_threads(content['main'], content.get('comments', []), image_url=None,
                                    topic_tag=nap.CATEGORIES['business'].get('topic_tag'))
     print(f'완료! 메인 포스트 ID: {main_id}')
+    save_episode_number(episode_num)
 
 
 if __name__ == '__main__':

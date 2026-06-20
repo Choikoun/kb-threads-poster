@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
-국세청·기재부·법제처 보도자료 RSS 감지 → 즉각 반응 포스팅
-세법 개정·세율 변경·공제 한도 관련 뉴스가 감지되면 "법이 바뀌었어" 각도로 짧게 발행
+국세청·기재부·법제처 보도자료 + 법률신문·리걸타임즈 RSS 감지 → 즉각 반응 포스팅
+세법 개정·세율 변경·공제 한도 + 상법·회사법 판례(정관·의결권·이사회 등) 감지되면
+"법이 바뀌었어" 각도로 짧게 발행
 """
 import os, sys, json, re, time, requests
 from datetime import datetime, timezone, timedelta
@@ -25,6 +26,8 @@ FEEDS = [
     'https://www.yna.co.kr/rss/economy.xml',                                            # 연합뉴스 경제
     'https://www.mk.co.kr/rss/30000001/',                                               # 매경 경제
     'https://biz.chosun.com/arc/outboundfeeds/rss/?outputType=xml',                    # 조선비즈
+    'https://www.lawtimes.co.kr/rss/allArticle.xml',                                    # 법률신문 전체기사
+    'https://www.legaltimes.co.kr/rss/allArticle.xml',                                  # 리걸타임즈 전체기사
 ]
 
 TRIGGER_KEYWORDS = [
@@ -32,6 +35,8 @@ TRIGGER_KEYWORDS = [
     '세율 인하', '세율 인상', '공제 한도', '국세기본법', '법인세 개정',
     '최대주주 할증', '상속세율', '세제 개편', '조세특례', '부동산 세제',
     '증여 공제', '세금 완화', '중산층 세금', '상속 공제',
+    '정관 변경', '의결권', '이사회', '주주총회', '상법 개정', '회사법',
+    '이사 책임', '경영권 분쟁', '주주 권리', '대법원 판결',
 ]
 
 PROMPT = """너는 한국 Threads에서 활동하는 증여·상속 구조 설계 전문가야.
