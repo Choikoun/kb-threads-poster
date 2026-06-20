@@ -1,8 +1,8 @@
-name: 법인 설계 이야기 시리즈 (월/금 14시)
+name: 법인 절세 이야기 시리즈 (월 19시)
 
 on:
   schedule:
-    - cron: '0 5 * * 1,5'   # 월/금 14:00 KST 무렵
+    - cron: '0 10 * * 1'   # 월요일 19:00 KST 무렵
   workflow_dispatch:
 
 concurrency:
@@ -22,16 +22,16 @@ jobs:
           python-version: '3.11'
       - name: 패키지 설치
         run: pip install requests google-genai python-dotenv
-      - name: 법인 설계 이야기 포스팅
+      - name: 법인 절세 이야기 포스팅
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
-        run: python corporate_design_poster.py
+        run: python corporate_poster.py
       - name: 콘텐츠 로그 커밋
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add content_log.json corporate_series_log.json
+          git add content_log.json series_log.json
           git diff --staged --quiet || git commit -m "콘텐츠 로그 업데이트"
           git pull --rebase
           git push
