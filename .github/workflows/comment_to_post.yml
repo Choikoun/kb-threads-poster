@@ -30,6 +30,14 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: python comment_to_post.py
+      - name: 실패 알림
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue create \
+            --title "⚠️ 포스팅 실패: ${{ github.workflow }} ($(TZ=Asia/Seoul date +'%Y-%m-%d %H:%M'))" \
+            --body "[로그](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})"
       - name: 초안 로그 커밋
         run: |
           git config user.name "github-actions[bot]"
