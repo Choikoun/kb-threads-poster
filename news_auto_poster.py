@@ -42,7 +42,7 @@ CATEGORIES = {
                      '퇴직금', '퇴직급여', '인건비', '근로자', '4대보험', '최저임금', '해고', '연차', '채용', '노무',
                      'MSO', '경영지원회사'],
         'angle': '법인 운영, 절세, 지분 설계, 사업주 세금, 직원·인건비 관리 관점. 사업주·법인 대표가 "나 해당되는 거 아냐?" 느끼게.',
-        'format_variants': ['반전형', '사례형', '담백형'],
+        'format_variants': ['반전형', '사례형', '담백형', '번호형'],
         'hashtags': '#법인 #증여',
         'topic_tag': '법인'
     },
@@ -74,7 +74,7 @@ CATEGORIES = {
                      'MSO', '가족법인', '경영지원회사'],
         'angle': '보험, 연금, 상속·증여, 노후 준비, MSO·가족법인 구조 관점. 특히 의사·고소득 전문직이 "나 종합과세 더 내고 있는 거 아냐?" 느끼게.',
         'context': '고소득 전문직(의사 등)은 금융소득이 종합소득에 합산돼 최고세율 적용받기 쉬움. 비과세로 펀드를 운용하면서 자유롭게 입출금·펀드변경(수수료 없이)할 수 있는 구조면 이 종합과세 자체가 빠짐. 관련 뉴스일 때만 이 구조를 상품명 언급 없이 자연스럽게 녹여라.',
-        'format_variants': ['반전형', '사례형', '감정인용형'],
+        'format_variants': ['반전형', '사례형', '감정인용형', '번호형'],
         'hashtags': '#증여 #상속',
         'topic_tag': '보험'
     },
@@ -377,9 +377,24 @@ FORMAT_STRUCTURES = {
 3. 구체적 사실·기준 — 숫자 단독 줄
 ↵빈줄
 4. 묵직한 마무리 한 줄''',
+
+    '번호형': '''1. 훅 — "이거 모르면 그냥 손해" 류 한 줄
+↵빈줄
+2. 번호 매긴 항목 3~5개 — 각 항목 "번호. 구체적 사실/조건" 형식, 항목당 1~2줄
+↵빈줄
+3. 마무리 한 줄 — 화두 던지고 끝
+
+예시:
+법인카드로 처리 가능한 비용, 생각보다 많아.
+
+1. 거래처 식사비 — 한도 내 전액 인정
+2. 사무실 비품·소모품 — 즉시 비용 처리
+3. 명절 직원 선물 — 1인당 일정액까지 복리후생비
+
+몰랐으면 그냥 세후 지출, 알면 전부 비용 처리야.''',
 }
 
-# 담백형은 ①숫자충격 ②반전 포인트 공식이 안 맞으므로 제외
+# 담백형·번호형은 ①숫자충격 ②반전 포인트 공식이 안 맞으므로 제외
 POINT_FORMULA = '''[포인트 공식 - 반드시 둘 다 섞어]
 ① 숫자/팩트 충격: 실제 수치, 공식 발표, 통계로 독자 멈추게
 ② 반전: 대부분이 A라고 알고 있지만 실제는 B
@@ -419,7 +434,7 @@ def generate_content(articles, category='economy', used_titles=None):
 
     chosen_variant = _choose_format(category, cat.get('format_variants', ['반전형']))
     structure_block = FORMAT_STRUCTURES.get(chosen_variant, FORMAT_STRUCTURES['반전형'])
-    point_formula_block = '' if chosen_variant == '담백형' else POINT_FORMULA
+    point_formula_block = '' if chosen_variant in ('담백형', '번호형') else POINT_FORMULA
 
     source_hint_block = ''
     if os.path.exists('source_weights.json'):
