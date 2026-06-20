@@ -11,6 +11,7 @@ concurrency:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   post_video:
@@ -32,7 +33,20 @@ jobs:
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python video_poster.py
+        run: |
+          for i in 1 2; do
+            python video_poster.py && exit 0
+            if [ $i -lt 2 ]; then echo "시도 $i 실패, 30초 후 재시도..."; sleep 30; fi
+          done
+          exit 1
+      - name: 실패 알림
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue create \
+            --title "⚠️ 포스팅 실패: ${{ github.workflow }} ($(TZ=Asia/Seoul date +'%Y-%m-%d %H:%M'))" \
+            --body "[로그](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})"
       - name: 콘텐츠 로그 커밋
         run: |
           git config user.name "github-actions[bot]"
