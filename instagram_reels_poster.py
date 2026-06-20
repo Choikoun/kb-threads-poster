@@ -44,6 +44,15 @@ CATEGORY_HASHTAGS = {
 }
 
 
+GROWTH_LINES = [
+    '저장해두고 나중에 다시 봐.',
+    '주변에 비슷한 상황인 사람 있으면 공유해줘.',
+    '이런 얘기 계속 보고 싶으면 팔로우해놔.',
+    '나중에 또 보고 싶으면 저장해.',
+    '관련 있는 사람한테 보내줘.',
+]
+
+
 def choose_category():
     categories = list(CATEGORY_WEIGHTS.keys())
     weights = list(CATEGORY_WEIGHTS.values())
@@ -122,7 +131,9 @@ def main():
     print(f"선택 뉴스: {content['selected_title']}")
     print(f"내레이션: {content['narration']}")
 
-    caption = f"{content['caption']}\n\n{CATEGORY_HASHTAGS.get(category, CATEGORY_HASHTAGS['business'])}"
+    growth_line = random.choice(GROWTH_LINES)
+    hashtags = CATEGORY_HASHTAGS.get(category, CATEGORY_HASHTAGS['business'])
+    caption = f"{content['caption']}\n\n{growth_line}\n\n{hashtags}"
 
     tmp_dir = tempfile.mkdtemp()
     try:
