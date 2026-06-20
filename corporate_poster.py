@@ -139,10 +139,23 @@ CROSS_PROMO_BLOCK = '''
 "@계정명" 같은 핸들은 만들어내지 않는다.
 '''
 
+SERIES_CROSS_REF_BLOCK = '''
+[추가 댓글 - 다른 시리즈 교차 언급]
+위 댓글들 다음에 댓글을 1개 더 추가해.
+증여·상속 쪽 얘기도 "증여 설계 이야기" 시리즈로 따로 올리고 있다는 걸 자연스럽게 한 줄로 언급.
+반말. "자녀한테 넘기는 거나 상속 쪽 고민있으면 증여 설계 이야기도 한번 봐" 같은 식으로 자연스럽게 변형. 구체적 회차 번호는 언급하지 않는다(정확하지 않을 수 있으므로).
+'''
+
 
 def generate(topic, series_num):
     client = genai.Client(api_key=GEMINI_KEY)
-    cross_promo_block = CROSS_PROMO_BLOCK if random.random() < 0.12 else ''
+    extra_roll = random.random()
+    if extra_roll < 0.12:
+        cross_promo_block = CROSS_PROMO_BLOCK
+    elif extra_roll < 0.22:
+        cross_promo_block = SERIES_CROSS_REF_BLOCK
+    else:
+        cross_promo_block = ''
     prompt = PROMPT_TEMPLATE.format(topic=topic, series_num=series_num, cross_promo_block=cross_promo_block)
     for attempt in range(3):
         try:

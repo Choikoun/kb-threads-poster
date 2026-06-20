@@ -4,7 +4,7 @@
 매주 금요일 저녁 게시 - 구독할 이유를 만드는 고정 시리즈 포맷
 회차 번호로 누적 (김진숙 "금요일의 보상" 196회차 스타일 참고, 2026-06-20) — 질문 1개로 단순화
 """
-import os, sys, json, re
+import os, sys, json, re, random
 from google import genai
 from dotenv import load_dotenv
 import news_auto_poster as nap  # post_to_threads, get_trend_headlines 재사용
@@ -14,6 +14,13 @@ sys.stdout.reconfigure(encoding='utf-8')
 
 GEMINI_KEY = os.getenv('GEMINI_API_KEY')
 QA_LOG = 'qa_series_log.json'
+
+SERIES_CROSS_REF_BLOCK = '''
+[추가 댓글 - 다른 시리즈 교차 언급]
+위 댓글 다음에 댓글을 1개 더 추가해.
+"증여 설계 이야기"나 "법인 절세 이야기" 시리즈도 따로 올리고 있다는 걸 자연스럽게 한 줄로 언급
+(이번 회차 주제와 더 어울리는 쪽 하나만 골라서). 반말. 구체적 회차 번호는 언급하지 않는다.
+'''
 
 
 def get_episode_number():
@@ -34,6 +41,7 @@ def save_episode_number(n):
 def generate_content(episode_num):
     client = genai.Client(api_key=GEMINI_KEY)
     trends = nap.get_trend_headlines(limit=8)
+    series_cross_ref_block = SERIES_CROSS_REF_BLOCK if random.random() < 0.15 else ''
 
     prompt = f"""너는 한국 Threads에서 활동하는 법인·세금·자산 설계 전문가야.
 매주 올리는 시리즈 포스팅을 작성해줘. 시리즈 제목은 "이번 주 사업주들이 물어본 것"이고 이번이 {episode_num}회차야.
@@ -71,7 +79,7 @@ def generate_content(episode_num):
 
 [댓글 구조 - 1개]
 - 댓글1 (마지막): 위 질문과 이어지는 양자택일형 질문으로 마무리 (예: "지금 이 구조야, 아직 안 잡았어?") — 2줄, 반말
-
+{series_cross_ref_block}
 JSON만 출력:
 {{
   "main": "메인 포스트 텍스트",
