@@ -1,9 +1,8 @@
-name: 인스타그램 카드뉴스 (화·목 21:00 KST)
+name: 인스타그램 카드뉴스 (매일 21:00 KST)
 
 on:
   schedule:
-    - cron: '44 12 * * 2'   # 화요일 21:00 KST 무렵
-    - cron: '44 12 * * 4'   # 목요일 21:00 KST 무렵
+    - cron: '44 12 * * *'   # 매일 21:00 KST 무렵
   workflow_dispatch:
 
 permissions:

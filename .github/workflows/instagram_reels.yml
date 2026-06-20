@@ -1,7 +1,8 @@
-name: 인스타그램 릴스 포스팅 (매일 20:00 KST)
+name: 인스타그램 릴스 포스팅 (매일 11시·20시)
 
 on:
   schedule:
+    - cron: '33 2 * * *'    # 매일 11:00 KST 무렵
     - cron: '17 11 * * *'   # 매일 20:00 KST 무렵
   workflow_dispatch:
 
