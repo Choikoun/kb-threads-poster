@@ -30,7 +30,12 @@ jobs:
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           IMGBB_API_KEY: ${{ secrets.IMGBB_API_KEY }}
-        run: python instagram_card_poster.py
+        run: |
+          for i in 1 2 3; do
+            python instagram_card_poster.py && exit 0
+            if [ $i -lt 3 ]; then echo "시도 $i 실패, 30초 후 재시도..."; sleep 30; fi
+          done
+          exit 1
       - name: 로그 커밋
         run: |
           git config user.name "github-actions[bot]"
