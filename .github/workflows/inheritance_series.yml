@@ -27,7 +27,12 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
-        run: python inheritance_poster.py
+        run: |
+          for i in 1 2 3; do
+            python inheritance_poster.py && exit 0
+            if [ $i -lt 3 ]; then echo "시도 $i 실패, 30초 후 재시도..."; sleep 30; fi
+          done
+          exit 1
       - name: 실패 알림
         if: failure()
         env:
