@@ -91,6 +91,8 @@ CATEGORIES = {
             'https://www.yna.co.kr/rss/economy.xml',         # 연합뉴스 경제
             'https://www.mk.co.kr/rss/30000023/',            # 매일경제 정책
             'https://biz.chosun.com/arc/outboundfeeds/rss/?outputType=xml',  # 조선비즈
+            'https://rss.donga.com/national.xml',            # 동아일보 사회
+            'https://www.khan.co.kr/rss/rssdata/society_news.xml',  # 경향신문 사회
         ],
         'keywords': ['시행령', '개정', '정책', '법안', '국세청', '금융위', '기재부', '세법', '고시',
                      '발표', '시행', '규제', '완화', '강화', '세율', '공제', '한도',
@@ -117,6 +119,7 @@ CATEGORIES = {
             'https://www.yna.co.kr/rss/politics.xml',        # 연합뉴스 정치
             'https://www.newsis.com/RSS/politics.xml',        # 뉴시스 정치
             'https://www.yna.co.kr/rss/economy.xml',         # 연합뉴스 경제
+            'https://www.chosun.com/arc/outboundfeeds/rss/category/national/?outputType=xml',  # 조선일보 사회
         ],
         'keywords': ['국무회의', '대통령', '국무총리', '현안', '정책토론', '장관', '내각', '용산',
                      '국정', '청와대', '관계부처', '당정', '대법원', '헌재', '공정위'],
