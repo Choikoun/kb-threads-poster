@@ -1,8 +1,8 @@
-name: 증여 설계 이야기 시리즈 (화/목 14시)
+name: 증여 설계 이야기 시리즈 (화/목/일 14시)
 
 on:
   schedule:
-    - cron: '0 5 * * 2,4'   # 화/목 14:00 KST 무렵
+    - cron: '0 5 * * 0,2,4'   # 화/목/일 14:00 KST 무렵
   workflow_dispatch:
 
 concurrency:

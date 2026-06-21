@@ -126,6 +126,14 @@ TOPICS = [
     "요양원도 자식 신세도 싫다면 — 노후 준비는 가족이 아니라 구조로 해야 한다",
 ]
 
+# 전체 히스토리 분석(2026-06-21) 결과 금/토/일 평균 조회수가 평일보다 뚜렸하게 높고,
+# 역대 최고 히트(이혼 재산분할, 요양원)도 둘 다 일요일 — 감정적 생활밀착형 주제를 주말에 가중
+EMOTIONAL_TOPICS = {
+    "자녀에게 증여한 재산, 이혼하면 재산분할 대상이 될 수도 있다 — 증여만으로는 안 끝난다",
+    "요양원도 자식 신세도 싫다면 — 노후 준비는 가족이 아니라 구조로 해야 한다",
+    "부모 사망 후 형제 간 재산 분쟁 — 생전에 설계하지 않으면 법대로 나뉜다",
+}
+
 PROMPT_TEMPLATE = """너는 한국 Threads에서 활동하는 증여·상속 구조 설계 전문가야.
 이 글은 "증여 설계 이야기" 시리즈의 #{series_num}번째 편이야.
 세무사가 아니야. 세금 계산보다 "가족 자산이 누구한테, 언제, 어떻게 가야 하는가"를 미리 설계하는 것이 전문 영역이야.
@@ -227,7 +235,13 @@ def post(content):
 
 def main():
     recent_topics = get_recent_topics()
-    weights = [1 if t in recent_topics else 5 for t in TOPICS]
+    is_weekend_mood = datetime.now(KST).weekday() in (4, 5, 6)  # 금/토/일
+    weights = []
+    for t in TOPICS:
+        w = 1 if t in recent_topics else 5
+        if is_weekend_mood and t in EMOTIONAL_TOPICS:
+            w *= 3
+        weights.append(w)
     topic = random.choices(TOPICS, weights=weights, k=1)[0]
     series_num = get_series_number()
     print(f'주제: {topic} (시리즈 #{series_num})')
