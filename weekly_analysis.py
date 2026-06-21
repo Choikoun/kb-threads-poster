@@ -632,8 +632,16 @@ JSON 배열만 출력 (다른 텍스트 없이):
         cat = entry.get('category', '')
         hour = entry.get('hour')
         pid = entry.get('post_id')
+        date_str = entry.get('date', '')
         if not cat or hour is None or not pid:
             continue
+        # 주말(금/토/일)은 콘텐츠 종류(감성형) 효과가 시간대 효과와 섞여 들어가므로 제외 —
+        # 2026-06-21 확인: 요일별 평균 조회수가 시간대보다 훨씬 크게 갈려서, 안 거르면 시간대 추천이 왜곡됨
+        try:
+            if datetime.strptime(date_str, '%Y-%m-%d').weekday() in (4, 5, 6):
+                continue
+        except ValueError:
+            pass
         r = results_by_id.get(pid)
         if not r:
             continue
