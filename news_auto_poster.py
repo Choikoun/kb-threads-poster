@@ -36,6 +36,8 @@ CATEGORIES = {
             'https://www.mk.co.kr/rss/30000001/',           # 매일경제 경제
             'https://www.newsis.com/RSS/economy.xml',        # 뉴시스 경제
             'https://biz.chosun.com/arc/outboundfeeds/rss/?outputType=xml',  # 조선비즈
+            'https://rss.donga.com/national.xml',            # 동아일보 사회
+            'https://www.khan.co.kr/rss/rssdata/society_news.xml',  # 경향신문 사회
         ],
         'keywords': ['법인', '사업주', '대표이사', '세금', '절세', '기업', '창업', '사업자', '세무', '지분',
                      '시행령', '개정', '세법', '법안', '대법원', '공정위', '판결', '표결',
@@ -66,6 +68,9 @@ CATEGORIES = {
             'https://www.mk.co.kr/rss/50200030/',            # 매일경제 부동산
             'https://www.yna.co.kr/rss/economy.xml',         # 연합뉴스 경제
             'https://biz.chosun.com/arc/outboundfeeds/rss/?outputType=xml',  # 조선비즈
+            'https://rss.donga.com/national.xml',            # 동아일보 사회
+            'https://www.khan.co.kr/rss/rssdata/society_news.xml',  # 경향신문 사회
+            'https://www.chosun.com/arc/outboundfeeds/rss/category/national/?outputType=xml',  # 조선일보 사회
         ],
         'keywords': ['보험', '연금', '상속', '증여', '노후', '은퇴', '연금저축', 'IRP', '변액', '종신',
                      '시행령', '개정', '고시', '대법원', '금감원', '판결', '약관',
@@ -154,6 +159,7 @@ SOURCE_MAP = {
     'biz.chosun.com': '조선비즈', 'newsis.com': '뉴시스',
     'etnews.com': '전자신문', 'hankyung.com': '한국경제',
     'sbs.co.kr': 'SBS', 'kbs.co.kr': 'KBS',
+    'donga.com': '동아일보', 'khan.co.kr': '경향신문', 'chosun.com': '조선일보',
 }
 
 def get_source_name(feed_url):
