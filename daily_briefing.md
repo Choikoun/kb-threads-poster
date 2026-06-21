@@ -1,42 +1,42 @@
 # 📰 일일 브리핑
-*2026-06-21 08:21 KST*
+*2026-06-22 08:38 KST*
 
 ---
 
 ## 🔖 보험 동향
-- [현대해상, ‘AI 협업 플랫폼’으로 AWS AI-DLC Challenge 최우수상 수상](https://www.insnews.co.kr/news/articleView.html?idxno=91406)
-- [하나은행, 중·저신용자 대상 2조원 규모 중금리대출 실시](https://www.insnews.co.kr/news/articleView.html?idxno=91404)
-- [화재보험협회, 올라이트라이프와 AIoT 기반 솔루션 실증 협력](https://www.insnews.co.kr/news/articleView.html?idxno=91403)
-- [삼성화재, 빗길 사고부터 포트홀까지… 여름철 운전자보험 점검 필요](https://www.insnews.co.kr/news/articleView.html?idxno=91401)
-- [NH농협손해보험, 양파값 58% 급락에 보험금 154억원 지급](https://www.insnews.co.kr/news/articleView.html?idxno=91394)
+- [[시론] OECD와 한국 보험민원에서 읽는 소비자보호 과제](https://www.insnews.co.kr/news/articleView.html?idxno=91411)
+- [타이요생명, 생성형 AI로 보험금 심사 혁신… 지급업무 자동화 추진](https://www.insnews.co.kr/news/articleView.html?idxno=91393)
+- [광산 가스 폭발에 긴박해진 중국 보험업계](https://www.insnews.co.kr/news/articleView.html?idxno=91391)
+- [[기고] ‘보험부채 할인율’, 어떻게 결정할 것인가](https://www.insnews.co.kr/news/articleView.html?idxno=91358)
+- [[기획] 초고령사회 ‘간병 파산’ 확산, 보험 역할 커진다](https://www.insnews.co.kr/news/articleView.html?idxno=91357)
 
 ## 💰 국내 경제·금융
-- ["목표가 상향 종목만 담았는데"…최근 1년 급등장선 '무용지물' [투자톡]](https://www.hankyung.com/article/2026061966856)
-- ["삼성·SK하이닉스에 '이것' 더해라"…수익률 78% 낸 1위의 승부수](https://www.hankyung.com/article/202606185415i)
-- [﻿ETF 500조 시대, 우리는 어떻게 투자하고 있는가](https://www.hankyung.com/article/202606172448i)
-- ["친절한 연준씨 이제 없다"…워시 Fed의 진짜 뜻 [빈난새의 빈틈없이월가]](https://www.hankyung.com/article/202606207724i)
-- [“증시 호황은 남의 잔치”…코스닥 투자자 대응전략 물어보니](https://www.hankyung.com/article/202606196901i)
+- ["삼성생명, 삼성전자 지분가치 재평가 필요…목표가↑"](https://www.hankyung.com/article/2026062292906)
+- [반도체 랠리 쭉 갈까…이번주 '마이크론' 실적에 쏠린 눈](https://www.hankyung.com/article/202606218652i)
+- [한·미 금리 인상 시사…3년째 이자 부담 큰 기업은? [한경우의 케이스스터디]](https://www.hankyung.com/article/2026062184796)
+- [팔고, 팔고, 또 팔고…국민연금, '9천피'에 1.2조 던진 이유](https://www.hankyung.com/article/2026062189181)
+- ['반도체 포모' 온 당신, 퇴직연금 리밸런싱 하셨나요](https://www.hankyung.com/article/2026062188571)
 
 ## 📈 주식·시장
-- [“반도체 불장 2라운드 이미 시작”…돈 냄새 맡은 개미들 소부장 ETF로](https://www.mk.co.kr/news/stock/12079076)
-- [“이 회사 발표 기다리며 조마조마”…마이크론 실적 앞두고 ‘삼전닉스’ 시험대](https://www.mk.co.kr/news/stock/12079069)
-- [머스크 스페이스X 화려한 나스닥 데뷔…M7 대신 망고스·팹10 시대로](https://www.mk.co.kr/news/stock/12078883)
-- [“MSCI 지수 편입, 호재일까 악재일까”...한국증시, 24일 갈림길 선다](https://www.mk.co.kr/news/stock/12078825)
-- [삼전 ‘테슬라’ 넘고, 하이닉스 ‘마이크론’ 제쳤다…세계 뒤흔든 ‘K-반도체’](https://www.mk.co.kr/news/economy/12078807)
+- [“여기서 더 올라갈까?”…9000 밟은 코스피, 반도체 실적·미 물가가 변수](https://www.mk.co.kr/news/stock/12079558)
+- [“반도체 이번주에도 또 오르나”…하이닉스·마이크론이 전할 소식은](https://www.mk.co.kr/news/stock/12079532)
+- [하이닉스 합병 뉴스에도 급락 … 널뛰는 주가 대신 봐야 할 지표는?](https://www.mk.co.kr/news/stock/12079470)
+- [1만피 수문장 MSCI … 韓 증시 신흥시장 취급 벗어날까](https://www.mk.co.kr/news/stock/12079195)
+- ['코스닥=바이오' 공식 무너졌다](https://www.mk.co.kr/news/stock/12079409)
 
 ## 🌏 글로벌 경제·정세
-- [中반도체 굴기 속도 이정도였어?…장비 국산화율 급상승 [도쿄나우]](https://www.hankyung.com/article/202606218345i)
-- [트럼프 "이란과 합의 불발시…미국이 호르무즈 통행료 부과"](https://www.hankyung.com/article/2026062183217)
-- [이란군 "호르무즈 다시 봉쇄"…美-파키스탄 "21일 협상 재개" [이상은의 워싱턴나우]](https://www.hankyung.com/article/202606208199i)
-- [밴스 美 부통령 "이란과 스위스서 협상, 이르면 21일 시작"](https://www.hankyung.com/article/2026062081987)
-- [이란, 호르무즈 재봉쇄 선언…미국과 담판 위해 스위스행](https://www.hankyung.com/article/2026062081957)
+- ["일본 입국 좀 빨라지려나"…세관 절차 완전 전자화 시동](https://www.hankyung.com/article/202606229220i)
+- [트럼프 "이란 더 세게 때릴 것"…첫날부터 꼬인 종전 협상](https://www.hankyung.com/article/2026062292027)
+- [이란 국영 방송 "이란, 美·카타르와 3자 회담 개시"](https://www.hankyung.com/article/2026062190907)
+- [이란 외무부 '작심 발언'…"레바논 종전 없이 최종 협상 못해"](https://www.hankyung.com/article/2026062190637)
+- [호텔 통째로 빌린 중국인들…뭐하나 봤더니 '경악'](https://www.hankyung.com/article/2026062190307)
 
 ## 🔥 팔로업 추천 (300회 이상)
-- 8,467회 [2026-06-17] 임금근로자 5명 중 1명이 퇴직급여를 받지 못하고 있다는 통계가 나왔어....
-- 7,018회 [2026-06-19] 검찰이 '주가조작 패가망신 1호' 사건으로 증권사 3곳을 압수수색했어. ...
-- 1,765회 [2026-06-19] 한국거래소 프리마켓 개장, 내년말로 연기됐어.  대부분 그냥 7시 매매 ...
-- 1,525회 [2026-06-20] 💡 부동산 규제, 이제 예측하고 미리 움직여야 하는 시대야.  1. 규제...
-- 1,187회 [2026-06-19] 오늘 K-반도체가 전 세계를 뒤흔들었어. SK하이닉스 시총 2000조 돌...
+- 4,866회 [2026-06-20] 💡 부동산 규제, 이제 예측하고 미리 움직여야 하는 시대야.  1. 규제...
+- 2,553회 [2026-06-21] 어떤 사업주, 코스닥 1부 승격 노리고 열심히 실적 만들었을 거야.  근...
+- 2,013회 [2026-06-21] 이번 주 제일 많이 본 글이야.  어떤 자산가, 스페이스X 같은 유망 기...
+- 1,914회 [2026-06-20] 소상공인 10명 중 8명이 지금 최저임금 부담이 너무 크대. 충격적인 건...
+- 1,415회 [2026-06-20] 코스피 9천포인트? 증시 대기자금이 심상치 않아. 빚내서 투자하는 '빚투...
 
 ---
 *총 60개 기사 수집됨*
