@@ -29,7 +29,10 @@ def create_issue(title, body=''):
 
 
 def main():
-    today = datetime.now(KST).strftime('%Y-%m-%d')
+    now = datetime.now(KST)
+    # 23:30 스케줄이 지연돼 자정을 넘기고 실행되면 전날 기준으로 확인 (자정 직후엔 당일 포스팅이 거의 없어 오탐 발생)
+    target = now if now.hour >= 4 else now - timedelta(days=1)
+    today = target.strftime('%Y-%m-%d')
 
     if not os.path.exists(CONTENT_LOG):
         create_issue(
