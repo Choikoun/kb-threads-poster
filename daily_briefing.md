@@ -1,42 +1,42 @@
 # 📰 일일 브리핑
-*2026-06-22 08:38 KST*
+*2026-06-23 08:41 KST*
 
 ---
 
 ## 🔖 보험 동향
-- [[시론] OECD와 한국 보험민원에서 읽는 소비자보호 과제](https://www.insnews.co.kr/news/articleView.html?idxno=91411)
-- [타이요생명, 생성형 AI로 보험금 심사 혁신… 지급업무 자동화 추진](https://www.insnews.co.kr/news/articleView.html?idxno=91393)
-- [광산 가스 폭발에 긴박해진 중국 보험업계](https://www.insnews.co.kr/news/articleView.html?idxno=91391)
-- [[기고] ‘보험부채 할인율’, 어떻게 결정할 것인가](https://www.insnews.co.kr/news/articleView.html?idxno=91358)
-- [[기획] 초고령사회 ‘간병 파산’ 확산, 보험 역할 커진다](https://www.insnews.co.kr/news/articleView.html?idxno=91357)
+- [DB손해보험, 부산 서면 신사옥 준공… “글로벌 도약 출발점”](https://www.insnews.co.kr/news/articleView.html?idxno=91437)
+- [토스인슈어런스, 일본 홋카이도서 ‘우수 보험설계사’ 성과 축하](https://www.insnews.co.kr/news/articleView.html?idxno=91434)
+- [이찬진 금감원장 “광범위한 보험사기, 범정부 대응체계 구축 협의”](https://www.insnews.co.kr/news/articleView.html?idxno=91431)
+- [화재보험협회, 제19대 김기환 이사장 취임… “국가 방재 컨트롤 타워로”](https://www.insnews.co.kr/news/articleView.html?idxno=91427)
+- [기상산업기술원, 보험산업과 기후리스크 대응 논의](https://www.insnews.co.kr/news/articleView.html?idxno=91419)
 
 ## 💰 국내 경제·금융
-- ["삼성생명, 삼성전자 지분가치 재평가 필요…목표가↑"](https://www.hankyung.com/article/2026062292906)
-- [반도체 랠리 쭉 갈까…이번주 '마이크론' 실적에 쏠린 눈](https://www.hankyung.com/article/202606218652i)
-- [한·미 금리 인상 시사…3년째 이자 부담 큰 기업은? [한경우의 케이스스터디]](https://www.hankyung.com/article/2026062184796)
-- [팔고, 팔고, 또 팔고…국민연금, '9천피'에 1.2조 던진 이유](https://www.hankyung.com/article/2026062189181)
-- ['반도체 포모' 온 당신, 퇴직연금 리밸런싱 하셨나요](https://www.hankyung.com/article/2026062188571)
+- ["한국콜마, 2분기 실적 기대치 웃돌 듯"-한화](https://www.hankyung.com/article/2026062317076)
+- ['경기 방어' 통신주 옛말?…AI로 돈 벌려는 KT 전략 통할까](https://www.hankyung.com/article/202606220471i)
+- [스페이스X 대탈출? 16%↓…유가 하락해도 금리 상승 [김현석의 월스트리트나우]](https://www.hankyung.com/article/202606231592i)
+- ["AI 거품 걱정? 여기에 투자하면 된다"…하반기 수익률 끌어올릴 ETF는 [프리미엄9 투자스쿨]](https://www.hankyung.com/article/202606220950i)
+- [나란히 급등한 글로벌 반도체 4사…선행 PER로 비교해보니](https://www.hankyung.com/article/202606220540i)
 
 ## 📈 주식·시장
-- [“여기서 더 올라갈까?”…9000 밟은 코스피, 반도체 실적·미 물가가 변수](https://www.mk.co.kr/news/stock/12079558)
-- [“반도체 이번주에도 또 오르나”…하이닉스·마이크론이 전할 소식은](https://www.mk.co.kr/news/stock/12079532)
-- [하이닉스 합병 뉴스에도 급락 … 널뛰는 주가 대신 봐야 할 지표는?](https://www.mk.co.kr/news/stock/12079470)
-- [1만피 수문장 MSCI … 韓 증시 신흥시장 취급 벗어날까](https://www.mk.co.kr/news/stock/12079195)
-- ['코스닥=바이오' 공식 무너졌다](https://www.mk.co.kr/news/stock/12079409)
+- [“NH증권, 견조한 실적에 고배당…증권주 부진 속 투자매력 상승”](https://www.mk.co.kr/news/stock/12080536)
+- [“피지컬AI로 부상할것”…SK텔레콤, 데이터센터 수혜주로 꼽혀](https://www.mk.co.kr/news/stock/12080535)
+- [[속보] SK하이닉스, 프리마켓서 300만원 돌파](https://www.mk.co.kr/news/stock/12080533)
+- [스페이스X 16% 급락, 알파벳 5% 하락에 뉴욕증시 혼조...“시장 극도로 고평가” [월가월부]](https://www.mk.co.kr/news/stock/12080492)
+- [삼전보다 더 올랐다 … 앞으로 더 간다는 ‘제2의 반도체’](https://www.mk.co.kr/news/economy/12080134)
 
 ## 🌏 글로벌 경제·정세
-- ["일본 입국 좀 빨라지려나"…세관 절차 완전 전자화 시동](https://www.hankyung.com/article/202606229220i)
-- [트럼프 "이란 더 세게 때릴 것"…첫날부터 꼬인 종전 협상](https://www.hankyung.com/article/2026062292027)
-- [이란 국영 방송 "이란, 美·카타르와 3자 회담 개시"](https://www.hankyung.com/article/2026062190907)
-- [이란 외무부 '작심 발언'…"레바논 종전 없이 최종 협상 못해"](https://www.hankyung.com/article/2026062190637)
-- [호텔 통째로 빌린 중국인들…뭐하나 봤더니 '경악'](https://www.hankyung.com/article/2026062190307)
+- ['전쟁보험료 내라' 청구서 들고 기다리는 이란[이상은의 워싱턴나우]](https://www.hankyung.com/article/202606231639i)
+- [이란 봉쇄 위협에도 호르무즈 통행량 회복세…LNG선 등 해협 통과](https://www.hankyung.com/article/2026062316787)
+- [핵합의 급한 美·돈 절실한 이란…IAEA 사찰 재개 속 동상이몽](https://www.hankyung.com/article/2026062316467)
+- [이란 핵 사찰 수용…트럼프식 '햇볕정책' 성공할까 [이상은의 워싱턴나우]](https://www.hankyung.com/article/202606231589i)
+- [19년간 美 Fed 이끈 그린스펀 前의장 별세](https://www.hankyung.com/article/2026062214611)
 
 ## 🔥 팔로업 추천 (300회 이상)
-- 4,866회 [2026-06-20] 💡 부동산 규제, 이제 예측하고 미리 움직여야 하는 시대야.  1. 규제...
-- 2,553회 [2026-06-21] 어떤 사업주, 코스닥 1부 승격 노리고 열심히 실적 만들었을 거야.  근...
+- 2,734회 [2026-06-21] 어떤 사업주, 코스닥 1부 승격 노리고 열심히 실적 만들었을 거야.  근...
 - 2,013회 [2026-06-21] 이번 주 제일 많이 본 글이야.  어떤 자산가, 스페이스X 같은 유망 기...
-- 1,914회 [2026-06-20] 소상공인 10명 중 8명이 지금 최저임금 부담이 너무 크대. 충격적인 건...
-- 1,415회 [2026-06-20] 코스피 9천포인트? 증시 대기자금이 심상치 않아. 빚내서 투자하는 '빚투...
+- 1,841회 [2026-06-22] 연간 10조 원.  단일 종목 레버리지 투자가 증권사 배만 불린대. 이찬...
+- 1,516회 [2026-06-22] 노란봉투법, 본교섭 고작 10곳이야.  대부분은 법이 통과되면 끝인 줄 ...
+- 1,499회 [2026-06-21] 국민연금, 남자는 82만원인데 여자는 41만원? 이 엄청난 격차, 왜 생...
 
 ---
 *총 60개 기사 수집됨*
