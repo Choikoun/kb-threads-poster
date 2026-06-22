@@ -1,13 +1,69 @@
 # 🏛️ KTV 국무회의 브리핑
-*2026-06-21 19:07 KST*
+*2026-06-22 21:28 KST*
 
 ---
 
-## (26.6.21.) 인사 관련 강훈식 비서실장 브리핑
-🔗 https://youtu.be/MhMeZAgWXOw
+## 목포와의 인연을 떠올리며 아련해진?! 김정관 산업부 장관. 추억 회상하다 K-조선 치트키 꺼냄｜조선 산단 3대장 MINI 얼라이언스 결성 #명벤져스
+🔗 https://youtu.be/hA9qsSAo0fM
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=MhMeZAgWXOw! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=hA9qsSAo0fM! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There are two ...
+
+---
+
+## 이재명 대통령 줄 당겼더니?! 유럽 순방으로 대한민국이 얻은 것! #트럼프 #유럽 #G7 (faat.동포회장)
+🔗 https://youtu.be/dTI1K523xnk
+
+[자막 없음: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=dTI1K523xnk! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There are two ...
+
+---
+
+## (2026년 6월 2일 자막 수정) 제24회 국무회의 겸 제11차 비상경제점검회의
+🔗 https://youtu.be/HokLaJPum3U
+
+[자막 없음: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=HokLaJPum3U! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There are two ...
+
+---
+
+## 필요하다면 대통령이 발의하겠다. 투표 용지 부족으로 인한 국민 참정권 침해 사태와 관련해 선관위의 개혁 언급
+🔗 https://youtu.be/t6dg9gfKloQ
+
+[자막 없음: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=t6dg9gfKloQ! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There are two ...
+
+---
+
+## (26.6.22.) '모두의 창업' 진행 현황 및 향후 운영방향 관련 중소벤처기업부 브리핑
+🔗 https://youtu.be/J4PgNF942ww
+
+[자막 없음: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=J4PgNF942ww! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
