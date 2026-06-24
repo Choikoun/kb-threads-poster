@@ -1,42 +1,42 @@
 # 📰 일일 브리핑
-*2026-06-24 08:17 KST*
+*2026-06-25 08:18 KST*
 
 ---
 
 ## 🔖 보험 동향
+- [금융보안원·인터넷은행, 보이스피싱 AI 공동모델 적용](https://www.insnews.co.kr/news/articleView.html?idxno=91485)
+- [교보생명, 스테이블코인으로 ‘보험료 납부·보험금 수령’ 기술 가능성 검증](https://www.insnews.co.kr/news/articleView.html?idxno=91476)
 - [“사후 감독 아닌 상시검증”… 금융 AI 규제 전환 필요성 제기](https://www.insnews.co.kr/news/articleView.html?idxno=91464)
 - [우리은행, AI 기반 ESG보고서 발간… KSSB 기준 첫 준용](https://www.insnews.co.kr/news/articleView.html?idxno=91459)
 - [금감원, 1200%룰 확대 앞두고 보험사 내부통제 강화 당부](https://www.insnews.co.kr/news/articleView.html?idxno=91451)
-- [“고의 교통사고는 반드시 적발” 금감원, 보험사기 근절 대국민 홍보 추진](https://www.insnews.co.kr/news/articleView.html?idxno=91445)
-- [흥국생명, 보험금 지급 서비스 ‘Hi-prime’ 고도화](https://www.insnews.co.kr/news/articleView.html?idxno=91447)
 
 ## 💰 국내 경제·금융
-- ['중국판 인스타그램' 샤오홍슈, IPO 추진설 솔솔](https://www.hankyung.com/article/202606233886i)
-- ["주가의 60%는 삼성전자 몫"...반도체 따라가는 삼성생명·삼성물산](https://www.hankyung.com/article/202606233754i)
-- ["M자형 탈모도 건보?"…7일 만에 주가 두배로 치솟은 회사 [종목+]](https://www.hankyung.com/article/2026062328816)
-- [한국증시, '선진국 클럽' 입성 좌절…美 MSCI 관찰대상국 불발 [종합]](https://www.hankyung.com/article/2026062439966)
-- [[속보] 한국증시, 美 MSCI 선진국지수 관찰대상국 편입 불발](https://www.hankyung.com/article/2026062439676)
+- [마이크론의 미친 실적→반도체 조정 끝?…'구글 다우 입성' 의미는 [김현석의 월스트리트나우]](https://www.hankyung.com/article/202606256523i)
+- ['삼성전자' 상승에 보유 지분가치 68조 늘었다…삼성물산 5%대 반등](https://www.hankyung.com/article/202606245545i)
+- [유가·금리 하락에도 혼조…'깜짝 실적' 마이크론 시간외 '급등' [뉴욕증시 브리핑]](https://www.hankyung.com/article/2026062565276)
+- [실적 이렇게 좋은데…'고점보다 40% 빠졌다' 개미들 '멘붕' [분석+]](https://www.hankyung.com/article/2026062564296)
+- ["1년새 주가 3528% 폭등"…도요타 밀고 대장주 등극한 日반도체 정체는](https://www.hankyung.com/article/202606245904i)
 
 ## 📈 주식·시장
-- [한국 증시, MSCI 선진지수 관찰대상국 등재 또 불발…이유가?](https://www.mk.co.kr/news/economy/12081532)
-- [삼전보다 더 올랐다…앞으로 더 간다는 ‘제2의 반도체’ [플러스 관심종목]](https://www.mk.co.kr/news/stock/12081270)
-- [“2022년 9월 이후 최대 낙폭”…파랗게 질린 러시아 증시](https://www.mk.co.kr/news/stock/12081261)
-- [올해 자사주 소각 5개월새 43조…금융위, 모든 보유 상장사 공시 강화](https://www.mk.co.kr/news/stock/12081200)
-- [910P 빠진 코스피… 하루 낙폭 사상최대](https://www.mk.co.kr/news/stock/12081190)
+- [“인류최초 ‘조만장자’ 타이틀 반납”…스페이스X 급락에 머스크 자산 가치도↓](https://www.mk.co.kr/news/stock/12082575)
+- [반도체 극한 쏠림의 결말?…닷컴버블 돌아보면 미래가 보인다[머니닥터 긴급 진단]](https://www.mk.co.kr/news/stock/12082284)
+- [‘AI 마케팅’ 매드업, 일반청약서 증거금 6.6조원 모아](https://www.mk.co.kr/news/stock/12082272)
+- ['상장 도우미' IR큐더스 "저희도 상장합니다"](https://www.mk.co.kr/news/stock/12082192)
+- [하이닉스 나스닥 ADR 45조규모로 내달 상장](https://www.mk.co.kr/news/stock/12082182)
 
 ## 🌏 글로벌 경제·정세
-- [이란, 전 최고지도자 장례에…수도 테헤란에 3일간 공휴일 선포](https://www.hankyung.com/article/2026062339077)
-- [푸틴 "나토, 러시아와 전쟁 준비"…서방 군비 확대 비판](https://www.hankyung.com/article/2026062338827)
-- [이란·오만, 호르무즈 통항 요금 검토…공동 실무그룹 구성](https://www.hankyung.com/article/2026062338707)
-- [트럼프 "이란, 최고 수준 핵사찰 합의"…이란 부인에 반박](https://www.hankyung.com/article/2026062338467)
-- [미·이란 합의 하루 만에 레바논서 총격…헤즈볼라 휴전 '흔들'](https://www.hankyung.com/article/2026062337807)
+- [1조4500억달러 찍더니…머스크, '조만장자' 타이틀 반납](https://www.hankyung.com/article/2026062564927)
+- [트럼프 "이란, '호르무즈 통행료 없다' 통보…거짓이면 협상 중단"](https://www.hankyung.com/article/2026062463137)
+- ['원유 60일 한정 판매'…이란, 韓·日에 러브콜](https://www.hankyung.com/article/2026062460741)
+- [MS 나델라 "소수 AI기업, 세계 좌지우지해선 안된다"](https://www.hankyung.com/article/2026062460731)
+- [손정의 "버블론은 AI에 대한 모독…지금이 역사적 전환점" [도쿄나우]](https://www.hankyung.com/article/202606245404i)
 
 ## 🔥 팔로업 추천 (300회 이상)
-- 2,023회 [2026-06-22] 연간 10조 원.  단일 종목 레버리지 투자가 증권사 배만 불린대. 이찬...
-- 1,524회 [2026-06-22] 노란봉투법, 본교섭 고작 10곳이야.  대부분은 법이 통과되면 끝인 줄 ...
-- 1,429회 [2026-06-22] 스페이스X 청약, 한국 몫은 0주였잖아.  미래에셋이 증거금은 전액 돌려...
-- 1,067회 [2026-06-23] 어떤 사업가, 회사 투자금 주식에 묶어놨다던데.  갑자기 찾아온 ‘검은 ...
-- 901회 [2026-06-23] 기업가 '전과 보도' 1000만원 배상 판결. 재판소원 심리까지 갔어. ...
+- 1,078회 [2026-06-23] 어떤 사업가, 회사 투자금 주식에 묶어놨다던데.  갑자기 찾아온 ‘검은 ...
+- 935회 [2026-06-24] 지난달 반응 좋았던 글 다시 공유해.  국고채 금리 뚝 떨어졌어. 3년물...
+- 907회 [2026-06-23] 기업가 '전과 보도' 1000만원 배상 판결. 재판소원 심리까지 갔어. ...
+- 865회 [2026-06-23] 주식 팔고 돈 들어오려면 이틀 걸렸던 거 기억해?  그거 이제 하루로 줄...
+- 659회 [2026-06-24] 법이 또 바뀌었어. 정부가 보유세 강화를 만지작거리고 있어. 이제 부동산...
 
 ---
 *총 60개 기사 수집됨*
