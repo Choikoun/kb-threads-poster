@@ -193,7 +193,6 @@ def main():
             'date': datetime.now(KST).strftime('%Y-%m-%d %H:%M'),
         })
         save_ig_log(ig_log)
-        nap.log_content(ig_id, category, 'reels', content['selected_title'])
 
     finally:
         shutil.rmtree(tmp_dir, ignore_errors=True)
