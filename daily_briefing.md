@@ -1,42 +1,42 @@
 # 📰 일일 브리핑
-*2026-06-25 08:18 KST*
+*2026-06-26 08:40 KST*
 
 ---
 
 ## 🔖 보험 동향
-- [금융보안원·인터넷은행, 보이스피싱 AI 공동모델 적용](https://www.insnews.co.kr/news/articleView.html?idxno=91485)
-- [교보생명, 스테이블코인으로 ‘보험료 납부·보험금 수령’ 기술 가능성 검증](https://www.insnews.co.kr/news/articleView.html?idxno=91476)
-- [“사후 감독 아닌 상시검증”… 금융 AI 규제 전환 필요성 제기](https://www.insnews.co.kr/news/articleView.html?idxno=91464)
-- [우리은행, AI 기반 ESG보고서 발간… KSSB 기준 첫 준용](https://www.insnews.co.kr/news/articleView.html?idxno=91459)
-- [금감원, 1200%룰 확대 앞두고 보험사 내부통제 강화 당부](https://www.insnews.co.kr/news/articleView.html?idxno=91451)
+- [보험개발원, 여름철 침수위험 차량에 ‘긴급대피’ 알린다](https://www.insnews.co.kr/news/articleView.html?idxno=91517)
+- [보험연수원 개발 ‘AI 교육솔루션’, 대학에서 쓰인다](https://www.insnews.co.kr/news/articleView.html?idxno=91516)
+- [[인사] 손해보험협회](https://www.insnews.co.kr/news/articleView.html?idxno=91515)
+- [DB생명, 글로벌금융판매와 ‘완전판매 문화 실천 캠페인’ 실시](https://www.insnews.co.kr/news/articleView.html?idxno=91514)
+- [[인사] 화재보험협회](https://www.insnews.co.kr/news/articleView.html?idxno=91508)
 
 ## 💰 국내 경제·금융
-- [마이크론의 미친 실적→반도체 조정 끝?…'구글 다우 입성' 의미는 [김현석의 월스트리트나우]](https://www.hankyung.com/article/202606256523i)
-- ['삼성전자' 상승에 보유 지분가치 68조 늘었다…삼성물산 5%대 반등](https://www.hankyung.com/article/202606245545i)
-- [유가·금리 하락에도 혼조…'깜짝 실적' 마이크론 시간외 '급등' [뉴욕증시 브리핑]](https://www.hankyung.com/article/2026062565276)
-- [실적 이렇게 좋은데…'고점보다 40% 빠졌다' 개미들 '멘붕' [분석+]](https://www.hankyung.com/article/2026062564296)
-- ["1년새 주가 3528% 폭등"…도요타 밀고 대장주 등극한 日반도체 정체는](https://www.hankyung.com/article/202606245904i)
+- [코스피 조정장에 엇갈린 대응…공통 베팅한 종목은 "○○"](https://www.hankyung.com/article/202606257991i)
+- [올해 급등한 한국·일본·대만 ETF…하반기 변수와 투자전략은?](https://www.hankyung.com/article/202606257922i)
+- [동학개미 8조 베팅했는데…"언제까지 반도체만 가나요"](https://www.hankyung.com/article/202606258272i)
+- ["SK하이닉스, 올해 내년 영업익 294조원 435조원…목표가↑"-하나](https://www.hankyung.com/article/2026062690166)
+- [주요 지수 혼조 마감…'호실적' 마이크론↑ '가격 인상' 애플↓ [뉴욕증시 브리핑]](https://www.hankyung.com/article/2026062689366)
 
 ## 📈 주식·시장
-- [“인류최초 ‘조만장자’ 타이틀 반납”…스페이스X 급락에 머스크 자산 가치도↓](https://www.mk.co.kr/news/stock/12082575)
-- [반도체 극한 쏠림의 결말?…닷컴버블 돌아보면 미래가 보인다[머니닥터 긴급 진단]](https://www.mk.co.kr/news/stock/12082284)
-- [‘AI 마케팅’ 매드업, 일반청약서 증거금 6.6조원 모아](https://www.mk.co.kr/news/stock/12082272)
-- ['상장 도우미' IR큐더스 "저희도 상장합니다"](https://www.mk.co.kr/news/stock/12082192)
-- [하이닉스 나스닥 ADR 45조규모로 내달 상장](https://www.mk.co.kr/news/stock/12082182)
+- [구천피 코앞 코스피, 1만5천 파격 전망 나오는데…코스닥은 900선 아래로](https://www.mk.co.kr/news/stock/12083678)
+- [“SK하이닉스, 하반기 메모리 실적과 멀티플 둘 다 열려”…목표가↑](https://www.mk.co.kr/news/stock/12083663)
+- [“테슬라도 돈 안된다며 퇴출” … 승자만 담아 올해 64% 오른 ETF](https://www.mk.co.kr/news/stock/12082961)
+- [“‘연 30%’ 역대급 수익률” … 연금 ‘노후 격차’ 막는 5가지 방법](https://www.mk.co.kr/news/economy/12082609)
+- [마이크론 호실적에 PCE 안도감까지...뉴욕증시, 일제히 상승 출발](https://www.mk.co.kr/news/stock/12083529)
 
 ## 🌏 글로벌 경제·정세
-- [1조4500억달러 찍더니…머스크, '조만장자' 타이틀 반납](https://www.hankyung.com/article/2026062564927)
-- [트럼프 "이란, '호르무즈 통행료 없다' 통보…거짓이면 협상 중단"](https://www.hankyung.com/article/2026062463137)
-- ['원유 60일 한정 판매'…이란, 韓·日에 러브콜](https://www.hankyung.com/article/2026062460741)
-- [MS 나델라 "소수 AI기업, 세계 좌지우지해선 안된다"](https://www.hankyung.com/article/2026062460731)
-- [손정의 "버블론은 AI에 대한 모독…지금이 역사적 전환점" [도쿄나우]](https://www.hankyung.com/article/202606245404i)
+- [마이크론 급등에도 뉴욕증시 혼조…AI 비용 우려 부각](https://www.hankyung.com/article/202606268931i)
+- [[속보] 美 5월 PCE 물가 전년대비 4.1%↑…최근 유가하락 미반영](https://www.hankyung.com/article/2026062587997)
+- [전쟁 끝나나 싶더니 더 센 놈 온다…"쌀값 100% 뛸 수도" 경고](https://www.hankyung.com/article/2026062585311)
+- [기준금리 두고 푸틴과 갈등…러 중앙은행 총재 물러나나](https://www.hankyung.com/article/2026062585271)
+- [日 시총 1위 키옥시아, 내년 봄 美ADR 상장](https://www.hankyung.com/article/2026062585981)
 
 ## 🔥 팔로업 추천 (300회 이상)
-- 1,078회 [2026-06-23] 어떤 사업가, 회사 투자금 주식에 묶어놨다던데.  갑자기 찾아온 ‘검은 ...
-- 935회 [2026-06-24] 지난달 반응 좋았던 글 다시 공유해.  국고채 금리 뚝 떨어졌어. 3년물...
-- 907회 [2026-06-23] 기업가 '전과 보도' 1000만원 배상 판결. 재판소원 심리까지 갔어. ...
-- 865회 [2026-06-23] 주식 팔고 돈 들어오려면 이틀 걸렸던 거 기억해?  그거 이제 하루로 줄...
-- 659회 [2026-06-24] 법이 또 바뀌었어. 정부가 보유세 강화를 만지작거리고 있어. 이제 부동산...
+- 15,814회 [2026-06-25] 수익률이 너무 좋으면 자산이 위험해진다고?  내달 액티브 ETF 무더기 ...
+- 6,700회 [2026-06-25] SK하이닉스 주식 들고 있는 사람 많을 거야.  다들 ADR 상장 소식 ...
+- 1,075회 [2026-06-25] 유류분, 이제 더 이상 절대 아니야.  헌재가 '위헌' 결정 내린 지 얼...
+- 984회 [2026-06-25] 집 살 때 대출받으려고? 혹시 '이것' 때문에 막힐 수도 있어. ⚠️  ...
+- 973회 [2026-06-24] 지난달 반응 좋았던 글 다시 공유해.  국고채 금리 뚝 떨어졌어. 3년물...
 
 ---
 *총 60개 기사 수집됨*
