@@ -1,13 +1,13 @@
 # 🏛️ KTV 국무회의 브리핑
-*2026-06-25 18:46 KST*
+*2026-06-26 18:53 KST*
 
 ---
 
-## (26.6.25.) 대수보 결과 관련 강유정 수석대변인 브리핑
-🔗 https://youtu.be/05oIP-FxUzM
+## [퀵-클립] 혁신기업이 요구한 3가지 건의…정부 "국군 시험장 개방부터 혁신조달 확대까지"
+🔗 https://youtu.be/L4eX-jMUEZo
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=05oIP-FxUzM! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=L4eX-jMUEZo! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
@@ -17,11 +17,11 @@ There are two ...
 
 ---
 
-## (2026년 6월 25일 자막 생중계) 제39차 대통령 주재 수석보좌관회의 모두발언
-🔗 https://youtu.be/DfLYdUJDue4
+## 온몸이 부서져라 일하는 공무원들이 있다?! 주민 삶을 바꾼 스마트 포용도시 ‘성동구’의 숨은 공신! 복지 사각지대를 없애기 위한 노력 #이재명대통령 #명받았습니다 #ktv국민방송
+🔗 https://youtu.be/3pthq5-8BAQ
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=DfLYdUJDue4! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=3pthq5-8BAQ! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
@@ -31,11 +31,11 @@ There are two ...
 
 ---
 
-## (26.6.25.) 이재명 대통령, 문재인 전 대통령과 7월 1일 청와대 오찬 ㅣ 강유정 수석대변인 브리핑
-🔗 https://youtu.be/Z46YMWO6Ktw
+## 농어촌 기본소득이 현금 살포라고?! 송미령 농식품부 장관 직접 현장을 돌며 진실을 밝힌다! 곡성을 찾아 기본소득 활용 사례를 확인하고 주민들과 만남~
+🔗 https://youtu.be/7YU4xsTBnR8
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=Z46YMWO6Ktw! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=7YU4xsTBnR8! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
@@ -45,11 +45,11 @@ There are two ...
 
 ---
 
-## (26.6.25.) 정부 현안 관련 국무총리 브리핑
-🔗 https://youtu.be/48c1A_tsqN8
+## (2026년 6월 26일 자막 생중계) 혁신기업X신안보 강국도약｜미래 신안보 혁신기업 육성 전략회의
+🔗 https://youtu.be/Y_3-lY0y48s
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=48c1A_tsqN8! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=Y_3-lY0y48s! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
@@ -59,11 +59,11 @@ There are two ...
 
 ---
 
-## (26.6.25.) 건강보험 수가 구조 혁신방안 관련 보건복지부 브리핑
-🔗 https://youtu.be/9rHrBnuKxUQ
+## (26.6.26.) 드론작전사령부 개편 및 국방 드론·대드론 발전 정책관련 국방부 브리핑
+🔗 https://youtu.be/5nQrdDPfBLI
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=9rHrBnuKxUQ! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=5nQrdDPfBLI! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
