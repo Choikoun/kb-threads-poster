@@ -1,42 +1,42 @@
 # 📰 일일 브리핑
-*2026-06-26 08:40 KST*
+*2026-06-27 08:19 KST*
 
 ---
 
 ## 🔖 보험 동향
-- [보험개발원, 여름철 침수위험 차량에 ‘긴급대피’ 알린다](https://www.insnews.co.kr/news/articleView.html?idxno=91517)
-- [보험연수원 개발 ‘AI 교육솔루션’, 대학에서 쓰인다](https://www.insnews.co.kr/news/articleView.html?idxno=91516)
-- [[인사] 손해보험협회](https://www.insnews.co.kr/news/articleView.html?idxno=91515)
-- [DB생명, 글로벌금융판매와 ‘완전판매 문화 실천 캠페인’ 실시](https://www.insnews.co.kr/news/articleView.html?idxno=91514)
-- [[인사] 화재보험협회](https://www.insnews.co.kr/news/articleView.html?idxno=91508)
+- [푸본현대생명 ‘MAX 연금다운 연금보험 적립형’… “종합 노후 솔루션 제공”](https://www.insnews.co.kr/news/articleView.html?idxno=91544)
+- [KB손해보험, 의료기관 ‘맞춤형 보험서비스’ 확대 나서](https://www.insnews.co.kr/news/articleView.html?idxno=91534)
+- [하나은행, KISA와 스미싱 확인 서비스 도입](https://www.insnews.co.kr/news/articleView.html?idxno=91532)
+- [보험연수원, 보험심사역 시험 9월 실시](https://www.insnews.co.kr/news/articleView.html?idxno=91530)
+- [AXA손보, 종합보험 부문 7년 연속 대상](https://www.insnews.co.kr/news/articleView.html?idxno=91524)
 
 ## 💰 국내 경제·금융
-- [코스피 조정장에 엇갈린 대응…공통 베팅한 종목은 "○○"](https://www.hankyung.com/article/202606257991i)
-- [올해 급등한 한국·일본·대만 ETF…하반기 변수와 투자전략은?](https://www.hankyung.com/article/202606257922i)
-- [동학개미 8조 베팅했는데…"언제까지 반도체만 가나요"](https://www.hankyung.com/article/202606258272i)
-- ["SK하이닉스, 올해 내년 영업익 294조원 435조원…목표가↑"-하나](https://www.hankyung.com/article/2026062690166)
-- [주요 지수 혼조 마감…'호실적' 마이크론↑ '가격 인상' 애플↓ [뉴욕증시 브리핑]](https://www.hankyung.com/article/2026062689366)
+- [스페이스X 공모가 아래로 간다(83%) Fed 금리 안 올려(54%) [김현석의 월스트리트나우]](https://www.hankyung.com/article/202606271163i)
+- ['메이드 인 USA' 인텔의 화려한 부활…애플·구글 업고 주가 237% 급등](https://www.hankyung.com/article/202606269994i)
+- [나스닥 5거래일째 하락…마이크론 6.69%↓ [뉴욕증시 브리핑]](https://www.hankyung.com/article/2026062711497)
+- [SK하닉 '45조' 美 상장 노리는데…삼성전자 전망에 '깜짝' [강경주의 테크X]](https://www.hankyung.com/article/2026062604096)
+- ['5000억 호재' 떴는데…주가 급락에 개미들 난리 난 회사 [종목+]](https://www.hankyung.com/article/2026062607176)
 
 ## 📈 주식·시장
-- [구천피 코앞 코스피, 1만5천 파격 전망 나오는데…코스닥은 900선 아래로](https://www.mk.co.kr/news/stock/12083678)
-- [“SK하이닉스, 하반기 메모리 실적과 멀티플 둘 다 열려”…목표가↑](https://www.mk.co.kr/news/stock/12083663)
-- [“테슬라도 돈 안된다며 퇴출” … 승자만 담아 올해 64% 오른 ETF](https://www.mk.co.kr/news/stock/12082961)
-- [“‘연 30%’ 역대급 수익률” … 연금 ‘노후 격차’ 막는 5가지 방법](https://www.mk.co.kr/news/economy/12082609)
-- [마이크론 호실적에 PCE 안도감까지...뉴욕증시, 일제히 상승 출발](https://www.mk.co.kr/news/stock/12083529)
+- [“삼성전자 덕에 몸값 35조 뛰었다”…삼성물산 목표가 70만원 나온 이유 [이주의 Bull기둥]](https://www.mk.co.kr/news/stock/12084585)
+- [주식·원자재·비상장주까지 무기한 선물의 무한 확장...한국은?[엠블록레터]](https://www.mk.co.kr/news/stock/12084455)
+- [주요 외신 “삼성전자·SK하이닉스, 글로벌 반도체주 핵심 변수됐다”](https://www.mk.co.kr/news/stock/12084445)
+- [‘-9.99%→3.26%→5.42%→-5.81%’…현기증 나는 韓 증시 널뛰기 왜?](https://www.mk.co.kr/news/economy/12084444)
+- ["기관이 쓸어담는다" … 코스닥 소부장株 '나홀로 랠리'](https://www.mk.co.kr/news/stock/12084315)
 
 ## 🌏 글로벌 경제·정세
-- [마이크론 급등에도 뉴욕증시 혼조…AI 비용 우려 부각](https://www.hankyung.com/article/202606268931i)
-- [[속보] 美 5월 PCE 물가 전년대비 4.1%↑…최근 유가하락 미반영](https://www.hankyung.com/article/2026062587997)
-- [전쟁 끝나나 싶더니 더 센 놈 온다…"쌀값 100% 뛸 수도" 경고](https://www.hankyung.com/article/2026062585311)
-- [기준금리 두고 푸틴과 갈등…러 중앙은행 총재 물러나나](https://www.hankyung.com/article/2026062585271)
-- [日 시총 1위 키옥시아, 내년 봄 美ADR 상장](https://www.hankyung.com/article/2026062585981)
+- [트럼프 "디지털서비스세 도입국에 100% 관세 부과할 것"](https://www.hankyung.com/article/2026062711547)
+- [미군, 호르무즈 해협서 이란에 보복 공습 단행…상선 피습 대응](https://www.hankyung.com/article/2026062711387)
+- [트럼프, 북한 관련 '국가비상사태' 조치 1년 더 연장](https://www.hankyung.com/article/2026062610487)
+- [英 찰스 3세, 1년에 세금만 264억원…사상 첫 내역 공개](https://www.hankyung.com/article/2026062610067)
+- [프랑스 40도 폭염에 48명 사망…결국 음주 금지령 내려](https://www.hankyung.com/article/2026062609737)
 
 ## 🔥 팔로업 추천 (300회 이상)
-- 15,814회 [2026-06-25] 수익률이 너무 좋으면 자산이 위험해진다고?  내달 액티브 ETF 무더기 ...
-- 6,700회 [2026-06-25] SK하이닉스 주식 들고 있는 사람 많을 거야.  다들 ADR 상장 소식 ...
-- 1,075회 [2026-06-25] 유류분, 이제 더 이상 절대 아니야.  헌재가 '위헌' 결정 내린 지 얼...
-- 984회 [2026-06-25] 집 살 때 대출받으려고? 혹시 '이것' 때문에 막힐 수도 있어. ⚠️  ...
-- 973회 [2026-06-24] 지난달 반응 좋았던 글 다시 공유해.  국고채 금리 뚝 떨어졌어. 3년물...
+- 19,360회 [2026-06-25] 수익률이 너무 좋으면 자산이 위험해진다고?  내달 액티브 ETF 무더기 ...
+- 7,938회 [2026-06-25] SK하이닉스 주식 들고 있는 사람 많을 거야.  다들 ADR 상장 소식 ...
+- 2,605회 [2026-06-26] 25년 살았어도 서류 한 장 없으면 남이야. 😱  1. 법적으로 부부가 ...
+- 1,457회 [2026-06-25] 유류분, 이제 더 이상 절대 아니야.  헌재가 '위헌' 결정 내린 지 얼...
+- 1,290회 [2026-06-25] 집 살 때 대출받으려고? 혹시 '이것' 때문에 막힐 수도 있어. ⚠️  ...
 
 ---
 *총 60개 기사 수집됨*
