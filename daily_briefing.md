@@ -1,42 +1,42 @@
 # 📰 일일 브리핑
-*2026-06-28 08:13 KST*
+*2026-06-29 08:15 KST*
 
 ---
 
 ## 🔖 보험 동향
-- [푸본현대생명 ‘MAX 연금다운 연금보험 적립형’… “종합 노후 솔루션 제공”](https://www.insnews.co.kr/news/articleView.html?idxno=91544)
-- [KB손해보험, 의료기관 ‘맞춤형 보험서비스’ 확대 나서](https://www.insnews.co.kr/news/articleView.html?idxno=91534)
-- [하나은행, KISA와 스미싱 확인 서비스 도입](https://www.insnews.co.kr/news/articleView.html?idxno=91532)
-- [보험연수원, 보험심사역 시험 9월 실시](https://www.insnews.co.kr/news/articleView.html?idxno=91530)
-- [AXA손보, 종합보험 부문 7년 연속 대상](https://www.insnews.co.kr/news/articleView.html?idxno=91524)
+- [[창간 24주년 축사 — 박지선 금융감독원 부원장] ‘보험정론지’로 자리매김한 24년](https://www.insnews.co.kr/news/articleView.html?idxno=91546)
+- [[창간 24주년 축사 — 김철주 생명보험협회 회장] ‘창언정론(昌言正論)’의 보험·금융 전문언론](https://www.insnews.co.kr/news/articleView.html?idxno=91545)
+- [[창간 24주년 축사 — 이병래 손해보험협회 회장] 통찰과 전문성의 동반자로 함께해 주길](https://www.insnews.co.kr/news/articleView.html?idxno=91543)
+- [[창간 24주년 축사 — 김기환 한국화재보험협회 이사장] 국민 안전과 손해보험의 미래를 함께 열어가겠습니다!](https://www.insnews.co.kr/news/articleView.html?idxno=91542)
+- [[창간 24주년 축사 — 허창언 보험개발원 원장] 한결같은 국내외 보험산업의 가교](https://www.insnews.co.kr/news/articleView.html?idxno=91541)
 
 ## 💰 국내 경제·금융
-- [롤러코스터 타는 삼전닉스 주가…2분기 실적 미리 따져보니](https://www.hankyung.com/article/202606260268i)
-- ["막상 은퇴하면 상황 달라진다"…요즘 뜨는 '연금 투자 전략'](https://www.hankyung.com/article/202606269340i)
-- ["반도체 계속 간다"…'압축 투자' ETF에 몰리는 개미들 [투자톡]](https://www.hankyung.com/article/2026062601096)
-- [스페이스X, 내달 7일 나스닥100 편입…"6.6조원 수급 유입될 것"](https://www.hankyung.com/article/2026062713397)
-- [한국증시는 노름판?…300만닉스 코앞서 개미들 '패닉' [분석+]](https://www.hankyung.com/article/2026062602716)
+- ["삼성전자, CXMT 상장으로 D램 공급 확대 우려 부각될 수도"-LS](https://www.hankyung.com/article/2026062927786)
+- [310% 하이닉스 vs 183% 삼성전자…투자자 희비 가른 이유는?](https://www.hankyung.com/article/202606271075i)
+- [1년 전에 삼전 대신 '이 종목' 살걸…수익률 652% 기록한 반도체 기업](https://www.hankyung.com/article/202606260545i)
+- [호남 반도체·美고용·수출지표 시험대…이번주 투자전략은?](https://www.hankyung.com/article/202606281959i)
+- ["삼성바이오로직스, 노조 문제에도 실적 개선 전망"-DB](https://www.hankyung.com/article/2026062927016)
 
 ## 📈 주식·시장
-- [“삼전닉스 주가 따라가는 마이크론”…코스피 핵심 시장 부상?](https://www.mk.co.kr/news/stock/12084660)
-- [“코스피 롤러코스터 장세”…다음주 9500선까지 오른다는데](https://www.mk.co.kr/news/stock/12084627)
-- [“삼성전자 덕에 몸값 35조 뛰었다”…삼성물산 목표가 70만원 나온 이유 [이주의 Bull기둥]](https://www.mk.co.kr/news/stock/12084585)
-- [주식·원자재·비상장주까지 무기한 선물의 무한 확장...한국은?[엠블록레터]](https://www.mk.co.kr/news/stock/12084455)
-- [주요 외신 “삼성전자·SK하이닉스, 글로벌 반도체주 핵심 변수됐다”](https://www.mk.co.kr/news/stock/12084445)
+- [실적 VS 조정…‘급락 후 반등’ 롤러코스피, 이번주도 널뛰기 장세 이어질까](https://www.mk.co.kr/news/stock/12085206)
+- [“현대로템, 방산 5사 중 가장 낮은 밸류에이션…2분기 실적 기대치 부합”](https://www.mk.co.kr/news/stock/12085193)
+- [물가·고용지표가 금주 증시 복병 ... 외국인 매도속에 숨겨진 단서들](https://www.mk.co.kr/news/economy/12085129)
+- [골프존 창업주, 골프존홀딩스 공개매수](https://www.mk.co.kr/news/stock/12085132)
+- [“무조건 더 오른다, 3배로 베팅”…스페이스X 차익실현 서학개미, 다시 반도체로](https://www.mk.co.kr/news/stock/12085145)
 
 ## 🌏 글로벌 경제·정세
-- [[속보] 미군 "이란 지속해서 상선 공격, 추가 공습 단행"](https://www.hankyung.com/article/2026062816777)
-- [[속보] 이란매체 "통신탑에 여러발 발사체, 남부 리시크서 폭발"](https://www.hankyung.com/article/2026062816767)
-- [북한 텅스텐까지 싹쓸이…중국, AI·반도체 핵심소재 장악 나서 [도쿄나우]](https://www.hankyung.com/article/202606271209i)
-- [트럼프, 자신의 초상 담긴 건국 250주년 한정판 여권 공개](https://www.hankyung.com/article/2026062713007)
-- ["마늘밭 다 망친다"…1000조 AI인프라 투자 변수 된 '민심' [김인엽의 AI프런티어]](https://www.hankyung.com/article/202606269538i)
+- ["한국은 1인당 7억씩 받는다는데"…日 반도체 업계 '술렁' [도쿄나우]](https://www.hankyung.com/article/202606292700i)
+- [바이든, 트럼프 향해 "한심한 놈" 직격…정치 복귀 신호탄?](https://www.hankyung.com/article/2026062926627)
+- ["미·이란, 호르무즈 충돌 멈춘다…30일 도하서 담판"](https://www.hankyung.com/article/2026062926337)
+- [무기수출 빗장 푼 일본 …韓과의 주요 무기 경쟁력은? [방산 인사이트]](https://www.hankyung.com/article/202606260024i)
+- [AI 반도체주 급락에…S&P500 약세](https://www.hankyung.com/article/202606282464i)
 
 ## 🔥 팔로업 추천 (300회 이상)
-- 8,003회 [2026-06-27] 죽은 줄 알았던 인텔이 부활했다. 💡 애플이랑 구글 등에 업고 주가가 2...
-- 7,864회 [2026-06-26] 25년 살았어도 서류 한 장 없으면 남이야. 😱  1. 법적으로 부부가 ...
-- 3,745회 [2026-06-27] 노후에 자식 눈치 볼 생각 없어? 그럼 이거부터 봐. 💡  1. 세계 1...
-- 1,128회 [2026-06-26] 중대재해 벌금 1억에서 20억으로. 20배 뛰었어.  대부분은 중대재해처...
-- 1,110회 [2026-06-26] 기름값 2천원대에서 1천800원대로 내려왔다고?  왠지 모르게 한숨 돌리...
+- 13,745회 [2026-06-27] 죽은 줄 알았던 인텔이 부활했다. 💡 애플이랑 구글 등에 업고 주가가 2...
+- 2,668회 [2026-06-28] 대통령이 직접 삼전닉스 투자 공개. 이재용, 최태원 총수까지 동원됐지. ...
+- 1,177회 [2026-06-27] 우리 회사 인건비, 사람 몇 명 줄이면 해결될 거라 생각해?  건설 현장...
+- 1,112회 [2026-06-26] 기름값 2천원대에서 1천800원대로 내려왔다고?  왠지 모르게 한숨 돌리...
+- 974회 [2026-06-28] 사업 자금 굴리는 사장님들, 요즘 주식 시장 열기에 편승해서 레버리지 당...
 
 ---
 *총 60개 기사 수집됨*
