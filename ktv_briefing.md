@@ -1,4 +1,19 @@
 # 🏛️ KTV 국무회의 브리핑
-*2026-06-27 18:07 KST*
+*2026-06-28 18:34 KST*
 
-오늘 관련 영상 없음
+---
+
+## 스케일이 남다른 훈련을 황종우 해수부 장관이 직접 목격했습니다! 해양경찰청과 통영 어민들 크로스~ 적조를 막기위한 환상의 팀워크! 올 여름 이상기후 대비 #현장영상
+🔗 https://youtu.be/hI2Ym6Sntcc
+
+[자막 없음: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=hI2Ym6Sntcc! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There are two ...
+
+---
+
