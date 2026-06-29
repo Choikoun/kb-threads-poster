@@ -1,42 +1,42 @@
 # 📰 일일 브리핑
-*2026-06-29 08:15 KST*
+*2026-06-30 08:12 KST*
 
 ---
 
 ## 🔖 보험 동향
-- [[창간 24주년 축사 — 박지선 금융감독원 부원장] ‘보험정론지’로 자리매김한 24년](https://www.insnews.co.kr/news/articleView.html?idxno=91546)
-- [[창간 24주년 축사 — 김철주 생명보험협회 회장] ‘창언정론(昌言正論)’의 보험·금융 전문언론](https://www.insnews.co.kr/news/articleView.html?idxno=91545)
-- [[창간 24주년 축사 — 이병래 손해보험협회 회장] 통찰과 전문성의 동반자로 함께해 주길](https://www.insnews.co.kr/news/articleView.html?idxno=91543)
-- [[창간 24주년 축사 — 김기환 한국화재보험협회 이사장] 국민 안전과 손해보험의 미래를 함께 열어가겠습니다!](https://www.insnews.co.kr/news/articleView.html?idxno=91542)
-- [[창간 24주년 축사 — 허창언 보험개발원 원장] 한결같은 국내외 보험산업의 가교](https://www.insnews.co.kr/news/articleView.html?idxno=91541)
+- [DB생명, 생성형 AI 상담지원 시스템 ‘DBAI’ 운영 개시](https://www.insnews.co.kr/news/articleView.html?idxno=91578)
+- [보험연구원, ‘2026 국제 리스크·보험 워크숍’ 개최… 글로벌 석학 한자리에](https://www.insnews.co.kr/news/articleView.html?idxno=91555)
+- [보험부채 산출 기준 정교해진다… 보험사 위험관리 체계 손질](https://www.insnews.co.kr/news/articleView.html?idxno=91566)
+- [7월부터 은행 신규대출 금리부담 완화… 대출금리에 법적 비용 반영금지](https://www.insnews.co.kr/news/articleView.html?idxno=91565)
+- [치매·중증질환 보험금 청구 공백 줄인다… 무기명 대리청구인 신설](https://www.insnews.co.kr/news/articleView.html?idxno=91564)
 
 ## 💰 국내 경제·금융
-- ["삼성전자, CXMT 상장으로 D램 공급 확대 우려 부각될 수도"-LS](https://www.hankyung.com/article/2026062927786)
-- [310% 하이닉스 vs 183% 삼성전자…투자자 희비 가른 이유는?](https://www.hankyung.com/article/202606271075i)
-- [1년 전에 삼전 대신 '이 종목' 살걸…수익률 652% 기록한 반도체 기업](https://www.hankyung.com/article/202606260545i)
-- [호남 반도체·美고용·수출지표 시험대…이번주 투자전략은?](https://www.hankyung.com/article/202606281959i)
-- ["삼성바이오로직스, 노조 문제에도 실적 개선 전망"-DB](https://www.hankyung.com/article/2026062927016)
+- [중동 긴장 완화에 기술주 반등…다우, 사상 첫 5만2000선 마감 [뉴욕증시 브리핑]](https://www.hankyung.com/article/2026063053956)
+- [삼전닉스 아직도 싸다…"ADR 상장이 가장 직접적 재평가 계기"](https://www.hankyung.com/article/202606293633i)
+- [“3년 내 피지컬AI 글로벌 1등”…지금 로봇주 투자 고려한다면](https://www.hankyung.com/article/202606294395i)
+- [간만에 웃은 CJ그룹주… 소비심리·지배구조에 향후 주가 달렸다](https://www.hankyung.com/article/202606294956i)
+- ['극한 변동장' K증시…공포지수 또 최고치·환율 1540원대 마감 [분석+]](https://www.hankyung.com/article/2026062946846)
 
 ## 📈 주식·시장
-- [실적 VS 조정…‘급락 후 반등’ 롤러코스피, 이번주도 널뛰기 장세 이어질까](https://www.mk.co.kr/news/stock/12085206)
-- [“현대로템, 방산 5사 중 가장 낮은 밸류에이션…2분기 실적 기대치 부합”](https://www.mk.co.kr/news/stock/12085193)
-- [물가·고용지표가 금주 증시 복병 ... 외국인 매도속에 숨겨진 단서들](https://www.mk.co.kr/news/economy/12085129)
-- [골프존 창업주, 골프존홀딩스 공개매수](https://www.mk.co.kr/news/stock/12085132)
-- [“무조건 더 오른다, 3배로 베팅”…스페이스X 차익실현 서학개미, 다시 반도체로](https://www.mk.co.kr/news/stock/12085145)
+- [국민연금 국내 주식 수익률, 60% 넘었다…그래서 얼마 벌었나요?](https://www.mk.co.kr/news/stock/12086148)
+- [“삼전닉스 레버리지 ETF 때문에 주가 널뛰었다?”…실제 데이터 보니](https://www.mk.co.kr/news/business/12085923)
+- [국민연금, 내달부터  매달 1조~2조 매물 나올듯](https://www.mk.co.kr/news/stock/12085899)
+- [서러운 '서른살 코스닥'… 한달 된 삼전닉스 레버리지에 휘청](https://www.mk.co.kr/news/stock/12085897)
+- [랠리 소외됐던 바이오·2차전지 일제히 급등](https://www.mk.co.kr/news/stock/12085898)
 
 ## 🌏 글로벌 경제·정세
-- ["한국은 1인당 7억씩 받는다는데"…日 반도체 업계 '술렁' [도쿄나우]](https://www.hankyung.com/article/202606292700i)
-- [바이든, 트럼프 향해 "한심한 놈" 직격…정치 복귀 신호탄?](https://www.hankyung.com/article/2026062926627)
-- ["미·이란, 호르무즈 충돌 멈춘다…30일 도하서 담판"](https://www.hankyung.com/article/2026062926337)
-- [무기수출 빗장 푼 일본 …韓과의 주요 무기 경쟁력은? [방산 인사이트]](https://www.hankyung.com/article/202606260024i)
-- [AI 반도체주 급락에…S&P500 약세](https://www.hankyung.com/article/202606282464i)
+- [美대법원 "대통령, 독립기관 인사 해임 가능…Fed 예외"](https://www.hankyung.com/article/2026063053637)
+- [美대법원 "선거일 후 도착한 우편투표 합법"…트럼프엔 타격](https://www.hankyung.com/article/2026063053477)
+- [이란 외무부 "미국과 향후 며칠간 협상 없을 것"](https://www.hankyung.com/article/2026063053457)
+- [이란 "호르무즈 지정 항로 벗어난 선박 차단할 것"](https://www.hankyung.com/article/2026063053307)
+- [트럼프 "30일 이란과 카타르서 회담"](https://www.hankyung.com/article/2026062952201)
 
 ## 🔥 팔로업 추천 (300회 이상)
-- 13,745회 [2026-06-27] 죽은 줄 알았던 인텔이 부활했다. 💡 애플이랑 구글 등에 업고 주가가 2...
-- 2,668회 [2026-06-28] 대통령이 직접 삼전닉스 투자 공개. 이재용, 최태원 총수까지 동원됐지. ...
-- 1,177회 [2026-06-27] 우리 회사 인건비, 사람 몇 명 줄이면 해결될 거라 생각해?  건설 현장...
-- 1,112회 [2026-06-26] 기름값 2천원대에서 1천800원대로 내려왔다고?  왠지 모르게 한숨 돌리...
-- 974회 [2026-06-28] 사업 자금 굴리는 사장님들, 요즘 주식 시장 열기에 편승해서 레버리지 당...
+- 2,876회 [2026-06-28] 대통령이 직접 삼전닉스 투자 공개. 이재용, 최태원 총수까지 동원됐지. ...
+- 978회 [2026-06-28] 사업 자금 굴리는 사장님들, 요즘 주식 시장 열기에 편승해서 레버리지 당...
+- 916회 [2026-06-27] K증시 '노름판'이란 오명, 이제 진짜 끝내는 거야?  코스닥에서 ‘동전...
+- 913회 [2026-06-28] 이번 주 제일 많이 본 글이야.  수익률이 너무 좋으면 자산이 위험해진다...
+- 758회 [2026-06-28] 우리 회사 장부, 깨끗하다고 믿어?  ⚠️ 금감원이 적발한 회계오류 10...
 
 ---
 *총 60개 기사 수집됨*
