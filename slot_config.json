@@ -1,8 +1,8 @@
 {
-  "business": 0,
-  "economy": 15,
+  "business": 8,
+  "economy": 17,
   "insurance": 21,
   "policy": 15,
   "government": 20,
-  "trend": 0
+  "trend": 8
 }
