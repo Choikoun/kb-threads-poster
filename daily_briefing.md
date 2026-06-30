@@ -1,42 +1,42 @@
 # 📰 일일 브리핑
-*2026-06-30 08:12 KST*
+*2026-07-01 08:23 KST*
 
 ---
 
 ## 🔖 보험 동향
-- [DB생명, 생성형 AI 상담지원 시스템 ‘DBAI’ 운영 개시](https://www.insnews.co.kr/news/articleView.html?idxno=91578)
-- [보험연구원, ‘2026 국제 리스크·보험 워크숍’ 개최… 글로벌 석학 한자리에](https://www.insnews.co.kr/news/articleView.html?idxno=91555)
-- [보험부채 산출 기준 정교해진다… 보험사 위험관리 체계 손질](https://www.insnews.co.kr/news/articleView.html?idxno=91566)
-- [7월부터 은행 신규대출 금리부담 완화… 대출금리에 법적 비용 반영금지](https://www.insnews.co.kr/news/articleView.html?idxno=91565)
-- [치매·중증질환 보험금 청구 공백 줄인다… 무기명 대리청구인 신설](https://www.insnews.co.kr/news/articleView.html?idxno=91564)
+- [화재보험협회, 종합위험관리 플랫폼 ‘BRIDGE’ 프리미엄 서비스 시행](https://www.insnews.co.kr/news/articleView.html?idxno=91601)
+- [예금보험공사, 예별손보 재공고입찰 마감… 흥국화재 등 4곳 참여](https://www.insnews.co.kr/news/articleView.html?idxno=91600)
+- [보험계약대출도 ‘건별 청약철회’ 가능… 7월 1일부터 제도 개선](https://www.insnews.co.kr/news/articleView.html?idxno=91587)
+- [건보공단·금감원, 비급여 관리 협력… 실손·건강보험 정보 공유](https://www.insnews.co.kr/news/articleView.html?idxno=91590)
+- [금융보안원, AI 확산에 금융보안도 변화… 자율보안체계 안착 필요](https://www.insnews.co.kr/news/articleView.html?idxno=91580)
 
 ## 💰 국내 경제·금융
-- [중동 긴장 완화에 기술주 반등…다우, 사상 첫 5만2000선 마감 [뉴욕증시 브리핑]](https://www.hankyung.com/article/2026063053956)
-- [삼전닉스 아직도 싸다…"ADR 상장이 가장 직접적 재평가 계기"](https://www.hankyung.com/article/202606293633i)
-- [“3년 내 피지컬AI 글로벌 1등”…지금 로봇주 투자 고려한다면](https://www.hankyung.com/article/202606294395i)
-- [간만에 웃은 CJ그룹주… 소비심리·지배구조에 향후 주가 달렸다](https://www.hankyung.com/article/202606294956i)
-- ['극한 변동장' K증시…공포지수 또 최고치·환율 1540원대 마감 [분석+]](https://www.hankyung.com/article/2026062946846)
+- [다시 살아난 AI 붐…야데니 "워시, 베센트 긴축 합의" [김현석의 월스트리트나우]](https://www.hankyung.com/article/202607018045i)
+- ["삼성전자, 2년 간 영업익 922조원…주가 조정은 매수 기회"-KB](https://www.hankyung.com/article/2026070180666)
+- ['상장 국책은행'의 딜레마…은행주 랠리서 소외된 이 종목](https://www.hankyung.com/article/202606307295i)
+- [미국도 궁금한 "반도체 언제까지 가나요?"…Q&A 모아봤습니다](https://www.hankyung.com/article/202606306817i)
+- ["삼성전자, 메모리 슈퍼사이클 연장…목표가 58만원"-상상인](https://www.hankyung.com/article/2026070180066)
 
 ## 📈 주식·시장
-- [국민연금 국내 주식 수익률, 60% 넘었다…그래서 얼마 벌었나요?](https://www.mk.co.kr/news/stock/12086148)
-- [“삼전닉스 레버리지 ETF 때문에 주가 널뛰었다?”…실제 데이터 보니](https://www.mk.co.kr/news/business/12085923)
-- [국민연금, 내달부터  매달 1조~2조 매물 나올듯](https://www.mk.co.kr/news/stock/12085899)
-- [서러운 '서른살 코스닥'… 한달 된 삼전닉스 레버리지에 휘청](https://www.mk.co.kr/news/stock/12085897)
-- [랠리 소외됐던 바이오·2차전지 일제히 급등](https://www.mk.co.kr/news/stock/12085898)
+- [나스닥 향하는 SK하이닉스…등록서 수정했는데, 공모가는?](https://www.mk.co.kr/news/business/12087300)
+- [올 상반기 뉴욕증시 ‘초강세장’으로 마감…반도체 지수는 101% 폭등 [월가월부]](https://www.mk.co.kr/news/stock/12087278)
+- [“7월엔 빠지면 사라” … 난도 높아진 증시, 일단 공격보다 수비](https://www.mk.co.kr/news/stock/12086805)
+- [삼성전자, 한화 참여...글로벌 스테이블코인 연합체 출격](https://www.mk.co.kr/news/stock/12087170)
+- [“한국 증시를 보라” 월가 경고나섰다…미국서 빚투 2100조 ‘사상 최대’](https://www.mk.co.kr/news/stock/12087124)
 
 ## 🌏 글로벌 경제·정세
-- [美대법원 "대통령, 독립기관 인사 해임 가능…Fed 예외"](https://www.hankyung.com/article/2026063053637)
-- [美대법원 "선거일 후 도착한 우편투표 합법"…트럼프엔 타격](https://www.hankyung.com/article/2026063053477)
-- [이란 외무부 "미국과 향후 며칠간 협상 없을 것"](https://www.hankyung.com/article/2026063053457)
-- [이란 "호르무즈 지정 항로 벗어난 선박 차단할 것"](https://www.hankyung.com/article/2026063053307)
-- [트럼프 "30일 이란과 카타르서 회담"](https://www.hankyung.com/article/2026062952201)
+- [대법원 판결은 끝 아니다…트럼프, 출생시민권 두고 2차전 예고](https://www.hankyung.com/article/2026070179867)
+- ["출생시민권 금지 안돼"…美대법원, 트럼프 제동](https://www.hankyung.com/article/2026070178411)
+- [[속보] 美 대법원, '출생시민권 금지' 트럼프 이민정책에 제동](https://www.hankyung.com/article/2026063078257)
+- [파리 부시장 "프랑스 폭염, 미국도 일부 책임 있어"](https://www.hankyung.com/article/2026063077397)
+- [中 무역 통계가 조작됐다?…美 경제학계서 갑론을박](https://www.hankyung.com/article/2026063075151)
 
 ## 🔥 팔로업 추천 (300회 이상)
-- 2,876회 [2026-06-28] 대통령이 직접 삼전닉스 투자 공개. 이재용, 최태원 총수까지 동원됐지. ...
-- 978회 [2026-06-28] 사업 자금 굴리는 사장님들, 요즘 주식 시장 열기에 편승해서 레버리지 당...
-- 916회 [2026-06-27] K증시 '노름판'이란 오명, 이제 진짜 끝내는 거야?  코스닥에서 ‘동전...
-- 913회 [2026-06-28] 이번 주 제일 많이 본 글이야.  수익률이 너무 좋으면 자산이 위험해진다...
-- 758회 [2026-06-28] 우리 회사 장부, 깨끗하다고 믿어?  ⚠️ 금감원이 적발한 회계오류 10...
+- 1,408회 [2026-06-30] 60대 사업주, 폐업하면 평균 부채 1억.  사업 정리하면 끝인 줄 알지...
+- 669회 [2026-06-29] 삼성·SK가 4천700조 투자한다고?  정부 산업부의 실제 신규투자 목표...
+- 620회 [2026-06-29] 동탄·기흥·구리, 규제지역으로 묶였어. '2년간 실거주 의무'까지 생겼다...
+- 614회 [2026-06-28] 올해 계란 수입에 들어간 돈이 무려 1,212억 원. 💡  업계에선 ‘규...
+- 601회 [2026-06-28] 회사 돈으로 꼼수 부리던 곳 많았지? 이제 진짜 조심해야 할 거야.  노...
 
 ---
 *총 60개 기사 수집됨*
