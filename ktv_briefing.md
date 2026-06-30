@@ -1,13 +1,13 @@
 # 🏛️ KTV 국무회의 브리핑
-*2026-06-29 20:25 KST*
+*2026-06-30 19:03 KST*
 
 ---
 
-## '국가영웅이라 부르고 싶다' #이재명 대통령이 이재용·최태원 회장에게 전한 진심! 3대 메가프로젝트 국민보고회에서 생긴 일
-🔗 https://youtu.be/-eq4U4CWcjQ
+## (26.6.30.) 제4차 국가건강검진 종합계획 관련 보건복지부 브리핑
+🔗 https://youtu.be/O6dCmmSz1Xw
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=-eq4U4CWcjQ! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=O6dCmmSz1Xw! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
@@ -17,11 +17,11 @@ There are two ...
 
 ---
 
-## #이재명대통령 + #삼성 + #SK = 최강 드림팀?! 국가와 기업! 우리는 원팀! AI 강국을 위해 똘똘 뭉쳤다! #이재용 #최태원 #젠슨황
-🔗 https://youtu.be/bzXrCqev7kU
+## [퀵-클립] 공공차량 2부제→5부제 완화…이 대통령 "그냥 다 풀어줍시다"
+🔗 https://youtu.be/4_5KI8DsGxQ
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=bzXrCqev7kU! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=4_5KI8DsGxQ! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
@@ -31,11 +31,11 @@ There are two ...
 
 ---
 
-## 이재용, 최태원 회장은 왜! 다음 승부처로 지역을 선택했을까! #반도체 #피지컬AI #ai데이터센터 #이재명대통령 #팩트체크
-🔗 https://youtu.be/QB-DaZoEvzU
+## (2026년 6월 30일 자막 생중계) 제28회 국무회의 겸 제13차 비상경제점검회의
+🔗 https://youtu.be/juZaxqxye2g
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=QB-DaZoEvzU! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=juZaxqxye2g! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
