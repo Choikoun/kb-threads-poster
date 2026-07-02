@@ -715,7 +715,8 @@ JSON 배열만 출력 (다른 텍스트 없이):
     IG_LOG_FILE = 'instagram_log.json'
     IG_TOKEN = os.environ.get('INSTAGRAM_ACCESS_TOKEN', '')
     BASE_IG = 'https://graph.facebook.com/v21.0'
-    IG_METRICS = 'reach,impressions,saved,likes,comments'
+    # 'impressions'는 최신 API에서 무효 지표라 콤마로 묶어 한 번에 요청하면 전체가 실패함(Threads insights와 동일 이슈) — 지표별 개별 호출로 전환
+    IG_METRICS = ['reach', 'saved', 'likes', 'comments']
 
     if os.path.exists(IG_LOG_FILE) and IG_TOKEN:
         with open(IG_LOG_FILE, encoding='utf-8') as f:
@@ -732,16 +733,21 @@ JSON 배열만 출력 (다른 텍스트 없이):
                 continue
             # 이미 측정된 경우 최신 데이터로 갱신
             try:
-                r = requests.get(f'{BASE_IG}/{pid}/insights',
-                                 params={'metric': IG_METRICS, 'access_token': IG_TOKEN}, timeout=15)
-                if r.ok:
-                    metrics = {d['name']: d.get('values', [{}])[0].get('value', 0)
-                               for d in r.json().get('data', [])}
-                    entry['reach'] = metrics.get('reach', 0)
-                    entry['impressions'] = metrics.get('impressions', 0)
-                    entry['saved'] = metrics.get('saved', 0)
-                    entry['likes'] = metrics.get('likes', 0)
-                    entry['comments'] = metrics.get('comments', 0)
+                metrics = {}
+                for metric in IG_METRICS:
+                    r = requests.get(f'{BASE_IG}/{pid}/insights',
+                                     params={'metric': metric, 'access_token': IG_TOKEN}, timeout=15)
+                    if r.ok:
+                        data = r.json().get('data', [])
+                        if data:
+                            metrics[metric] = data[0].get('values', [{}])[0].get('value', 0)
+                    else:
+                        print(f'  지표 조회 실패 ({pid}/{metric}): {r.status_code} {r.text[:150]}')
+                if metrics:
+                    entry['reach'] = metrics.get('reach', entry.get('reach', 0))
+                    entry['saved'] = metrics.get('saved', entry.get('saved', 0))
+                    entry['likes'] = metrics.get('likes', entry.get('likes', 0))
+                    entry['comments'] = metrics.get('comments', entry.get('comments', 0))
                     ig_updated = True
                 title = (entry.get('selected_title') or '')[:30]
                 reach = entry.get('reach', '-')
