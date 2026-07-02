@@ -460,6 +460,17 @@ def generate_content(articles, category='economy', used_titles=None):
         except Exception:
             pass
 
+    length_hint_block = ''
+    if os.path.exists('length_weights.json'):
+        try:
+            with open('length_weights.json', encoding='utf-8') as f:
+                lw = json.load(f)
+            best_bucket = lw.get('best_bucket', '')
+            if best_bucket:
+                length_hint_block = f'\n[이번 주 최고 성과 길이] {best_bucket} (평균 조회 {lw.get("avg_views", 0):,.0f}회) → 특별한 이유가 없다면 해시태그 제외 본문을 이 줄 수에 가깝게 짧게 써.\n'
+        except Exception:
+            pass
+
     hook_hint_block = ''
     if os.path.exists('hook_weights.json'):
         try:
@@ -531,6 +542,7 @@ def generate_content(articles, category='economy', used_titles=None):
 
 {point_formula_block}
 {hook_hint_block}
+{length_hint_block}
 [메인 포스트 구조 - {chosen_variant}]
 {structure_block}
 {format_branch_block}

@@ -275,6 +275,14 @@ def run_analysis():
             print(f'  {bucket}: 평균 {avg:,.0f} ({count_b}건) {bar}')
         best_len = max(length_avgs, key=lambda b: length_avgs[b])
         print(f'  → 최적 길이: {best_len}')
+        with open('length_weights.json', 'w', encoding='utf-8') as f:
+            json.dump({
+                'best_bucket': best_len,
+                'avg_views': round(length_avgs[best_len], 1),
+                'all': {b: round(v, 1) for b, v in length_avgs.items()},
+                'updated': datetime.now(KST).strftime('%Y-%m-%d'),
+            }, f, ensure_ascii=False, indent=2)
+        print(f'  → length_weights.json 저장')
 
     # 시간대별 성과 분석
     hour_groups = {}
