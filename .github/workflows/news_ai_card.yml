@@ -1,8 +1,10 @@
 name: 이미지 카드 포스팅 - 법인·사업주 (AI 일러스트 / 실사 격일)
 
 on:
-  schedule:
-    - cron: '8 13 * * *'   # 매일 22:00 KST 무렵
+  # 자동 스케줄 중단(2026-07-04): 이미지 카드는 이 계정 실측상 텍스트 대비 1/15~1/30 성과라 자동 포스팅 비활성화.
+  # 되돌리려면 아래 schedule 주석 해제. 수동 실행(workflow_dispatch)은 유지.
+  # schedule:
+  #   - cron: '8 13 * * *'   # 매일 22:00 KST 무렵
   workflow_dispatch:
 
 concurrency:

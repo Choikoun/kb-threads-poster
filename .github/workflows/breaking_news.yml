@@ -2,7 +2,7 @@ name: 세제 속보 즉시 포스팅 (3시간마다)
 
 on:
   schedule:
-    - cron: '50 */3 * * *'   # 매 3시간 무렵
+    - cron: '50 */6 * * *'   # 매 6시간 무렵 (2026-07-04 테스트: 3h→6h로 완화, 속보 도달 희석 여부 관찰)
   workflow_dispatch:
 
 permissions:
