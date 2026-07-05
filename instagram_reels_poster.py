@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 import news_auto_poster as nap
 from video_poster import (
     generate_content, create_scene_frames,
-    generate_narration, get_audio_duration, build_video_multi, BGM_PATH,
+    generate_narration, get_audio_duration, build_video_multi, pick_bgm,
 )
 
 load_dotenv()
@@ -151,7 +151,9 @@ def main():
         print(f'  {duration:.1f}초')
 
         print('영상 빌드 중...')
-        build_video_multi(frames, audio_path, output_path=video_path, duration=duration, bgm_path=BGM_PATH)
+        bgm = pick_bgm()
+        print(f'  BGM: {os.path.basename(bgm) if bgm else "없음"}')
+        build_video_multi(frames, audio_path, output_path=video_path, duration=duration, bgm_path=bgm)
 
         print('GitHub Release 업로드 중...')
         video_url = nap.upload_to_github_release(video_path)

@@ -4,7 +4,7 @@
 매주 1회, 뉴스 기반 훅을 짧은 세로형(9:16) 영상으로 제작해 Threads에 VIDEO로 포스팅
 이미지(AI 일러스트/Pexels 실사)에 Ken Burns 효과 + 한글 TTS 내레이션
 """
-import os, sys, json, re, subprocess, asyncio
+import os, sys, json, re, glob, random, subprocess, asyncio
 from datetime import datetime, timezone, timedelta
 from PIL import Image, ImageDraw
 from google import genai
@@ -27,9 +27,14 @@ AUDIO_PATH = 'video_narration.mp3'
 OUTPUT_VIDEO = 'video_final.mp4'
 
 VOICE = 'ko-KR-SunHiNeural'
-# 배경음악(선택): 이 경로에 저작권 무료 mp3를 넣어두면 자동으로 낮은 볼륨으로 깔림. 없으면 스킵.
-# (API 발행 릴스는 인스타 '트렌딩 오디오'를 붙일 수 없어 자체 BGM으로 네이티브 느낌만 보강)
-BGM_PATH = os.path.join('assets', 'reels_bgm.mp3')
+# 배경음악(선택): assets/ 폴더의 mp3 중 매번 랜덤으로 하나 골라 낮은 볼륨으로 깔림. 폴더가 비었으면 스킵.
+# (API 발행 릴스는 인스타 '트렌딩 오디오'를 붙일 수 없어 자체 BGM 로테이션으로 네이티브 느낌·다양성 보강)
+BGM_DIR = 'assets'
+
+
+def pick_bgm():
+    candidates = glob.glob(os.path.join(BGM_DIR, '*.mp3'))
+    return random.choice(candidates) if candidates else None
 
 
 def generate_content(articles, category='business'):
@@ -369,7 +374,7 @@ def main():
     duration = get_audio_duration(AUDIO_PATH)
     print(f'내레이션 길이: {duration:.2f}초')
 
-    build_video_multi(frames, AUDIO_PATH, OUTPUT_VIDEO, duration, bgm_path=BGM_PATH)
+    build_video_multi(frames, AUDIO_PATH, OUTPUT_VIDEO, duration, bgm_path=pick_bgm())
     print(f'영상 생성 완료: {OUTPUT_VIDEO}')
 
     video_url = nap.upload_to_github_release(OUTPUT_VIDEO)
