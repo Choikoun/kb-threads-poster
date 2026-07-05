@@ -27,6 +27,9 @@ AUDIO_PATH = 'video_narration.mp3'
 OUTPUT_VIDEO = 'video_final.mp4'
 
 VOICE = 'ko-KR-SunHiNeural'
+# 배경음악(선택): 이 경로에 저작권 무료 mp3를 넣어두면 자동으로 낮은 볼륨으로 깔림. 없으면 스킵.
+# (API 발행 릴스는 인스타 '트렌딩 오디오'를 붙일 수 없어 자체 BGM으로 네이티브 느낌만 보강)
+BGM_PATH = os.path.join('assets', 'reels_bgm.mp3')
 
 
 def generate_content(articles, category='business'):
@@ -38,8 +41,13 @@ def generate_content(articles, category='business'):
 
     prompt = f"""너는 한국 Threads에서 활동하는 법인·세금·자산 설계 전문가야.
 아래 뉴스 중 {cat['name']} 독자에게 가장 임팩트 있는 것 하나 골라서,
-짧은 세로형 영상(15~25초) + 캡션 형태의 포스트를 작성해줘.
-영상은 정지 이미지 1장에 Ken Burns 효과(천천히 줌인)를 주고, 그 위에 음성 내레이션이 깔리는 형식이야.
+짧은 세로형 릴스 영상(10~13초) + 캡션 형태의 포스트를 작성해줘.
+
+[영상 형식]
+- 총 10~13초. 장면(컷) 3~4개가 내레이션 박자에 맞춰 전환되는 세로형 영상.
+- 1번 장면은 "훅 화면": 이미지 위에 큰 텍스트 한 줄이 박혀 스크롤을 멈추게 한다.
+- 2번 장면부터는 이미지 하단에 짧은 자막이 붙는다.
+- 장면마다 다른 구도·배경·감정으로 시각적 변화를 준다.
 
 [오늘 뉴스]
 {news_list}
@@ -65,30 +73,30 @@ def generate_content(articles, category='business'):
 - 팔로우 유도 시 "@계정명" 같은 계정 핸들을 절대 만들어내지 않는다. "팔로우해", "팔로우 해두면 놓치지 않아"처럼 핸들 없이 표현한다.
 - 자극적이되 공격적이지 않게. 독자를 비하하거나 몰아붙이는 표현 금지.
 - 모호한 표현 금지: "뭔가 있어", "조심해", "알아봐야 해" → 구체적으로 써
+- [정확성 필수] 국회 통과·시행이 확정되지 않은 '개정안/발의/추진/검토/입법예고' 내용을 확정된 사실("~로 바뀌었다")처럼 단정하지 마라. 미확정이면 "추진 중", "통과되면"으로 명시.
 
-[이미지 생성 프롬프트 작성 - image_prompt]
-영문으로 작성. 9:16 세로형 구도. 선택한 뉴스 상황을 한국인 사업주/직장인이 겪는 장면으로 구체적으로 묘사
-(표정: 놀람/불안/충격 등, 상황: 사무실/차/책상 등).
-다크 네이비 + 골드 톤, 시네마틱 디지털 아트 스타일.
-문서·화면·서류·태블릿처럼 텍스트가 들어갈 수 있는 사물은 등장시키지 않는다
-(AI가 깨진 텍스트를 그려넣는 문제 방지). 인물의 표정과 분위기, 배경으로만 장면을 구성.
-반드시 "vertical 9:16 portrait composition, no text, no documents, no screens, no readable signage in image" 포함.
+[훅 작성 - hook]
+1번 장면 이미지 위에 크게 박히는 한 줄. 8~16자. 숫자·반전이 있으면 최고.
+(예: "보험료 12배가 수수료?", "상속세 0원인 집 많다")
+스크롤 멈추게 하는 게 유일한 목적. 물음표로 끝나면 더 좋다.
 
-[이미지 검색어 작성 - image_query]
-영문 2~4단어. Pexels 스톡 사진(인물 portrait 위주) 검색에 쓸 키워드.
-선택한 뉴스 상황의 감정/분위기를 일반적인 비즈니스 장면으로 표현
-(예: "stressed businessman office", "tax documents desk", "worried business owner").
-특정 한국 기업·인물은 묘사할 수 없으니 일반적인 인물/사무실/감정 위주로 작성.
-
-[이미지 헤드라인 작성 - headline]
-영상 하단에 들어갈 한글 헤드라인. 2줄 이내, 굵고 강렬한 핵심 사실/숫자 위주.
-줄바꿈은 \\n 사용.
+[장면 작성 - scenes (3~4개)]
+각 장면마다 아래 3개 필드:
+- image_prompt: 영문. 9:16 세로형 구도. 그 장면의 상황을 한국인 사업주/직장인이 겪는 모습으로 구체적으로 묘사
+  (표정: 놀람/불안/충격 등, 상황: 사무실/차/책상 등). 다크 네이비 + 골드 톤, 시네마틱 디지털 아트 스타일.
+  문서·화면·서류·태블릿처럼 텍스트가 들어갈 수 있는 사물은 등장시키지 않는다.
+  반드시 "vertical 9:16 portrait composition, no text, no documents, no screens, no readable signage in image" 포함.
+- image_query: 영문 2~4단어. Pexels 스톡 사진(인물 portrait 위주) 검색 키워드
+  (예: "stressed businessman office", "worried business owner"). 일반적인 인물/사무실/감정 위주.
+- text: 그 장면 하단에 깔릴 자막. 14자 이내 한 줄. 내레이션의 해당 구간 핵심을 요약.
+  1번 장면은 훅이 대신하므로 text를 빈 문자열로.
+장면 순서 = 내레이션 전개 순서. 장면끼리 배경·구도가 겹치지 않게.
 
 [내레이션 작성 - narration]
 영상에서 음성(TTS)으로 읽힐 한국어 대본.
 - 자연스러운 구어체 반말. 글머리 기호(📌 등)나 이모지 절대 사용 금지 - 음성으로만 들린다.
-- 분량: 80~150자 (TTS 기준 초당 5~6자, 15~25초 분량).
-- 짧은 훅으로 시작 → 헤드라인의 핵심 사실을 풀어서 설명 → 여운 있는 한 줄로 마무리.
+- 분량: 50~80자 (TTS 기준 초당 5~6자, 10~13초 분량). 반드시 이 안에서 끝낸다.
+- 첫 문장이 곧 훅 — 3초 안에 궁금하게 만든다 → 핵심 사실 → 여운 있는 반 문장 마무리.
 - 숫자나 핵심 사실은 명확하게 말로 풀어 쓴다 (예: "1.8조" → "1조 8천억원").
 
 [캡션 구조 - caption]
@@ -106,10 +114,13 @@ def generate_content(articles, category='business'):
 JSON만 출력:
 {{
   "selected_title": "선택한 뉴스 제목",
-  "image_prompt": "...",
-  "image_query": "...",
-  "headline": "한글 헤드라인 (줄바꿈 \\\\n)",
-  "narration": "TTS로 읽힐 한국어 대본 (80~150자)",
+  "hook": "첫 화면 큰 텍스트 (8~16자)",
+  "scenes": [
+    {{"image_prompt": "...", "image_query": "...", "text": ""}},
+    {{"image_prompt": "...", "image_query": "...", "text": "하단 자막 (14자 이내)"}},
+    {{"image_prompt": "...", "image_query": "...", "text": "하단 자막 (14자 이내)"}}
+  ],
+  "narration": "TTS로 읽힐 한국어 대본 (50~80자)",
   "caption": "캡션 텍스트",
   "comments": ["댓글1", "댓글2 (선택)"]
 }}"""
@@ -132,11 +143,9 @@ def get_visual_source():
     return 'illustration' if week % 2 == 0 else 'stock'
 
 
-def compose_frame(image_path, headline, output_path=FRAME_PATH, band_color=COLORS['bg']):
-    """원본 이미지를 1080x1920으로 cover-crop 후 하단에 헤드라인 밴드 합성"""
-    W, H = 1080, 1920
+def _cover_crop(image_path, W=1080, H=1920):
+    """원본 이미지를 W x H로 cover-crop"""
     img = Image.open(image_path).convert('RGB')
-
     src_w, src_h = img.size
     src_ratio = src_w / src_h
     target_ratio = W / H
@@ -149,18 +158,50 @@ def compose_frame(image_path, headline, output_path=FRAME_PATH, band_color=COLOR
     img = img.resize((new_w, new_h))
     left = (new_w - W) // 2
     top = (new_h - H) // 2
-    img = img.crop((left, top, left + W, top + H))
+    return img.crop((left, top, left + W, top + H))
+
+
+def compose_frame(image_path, headline, output_path=FRAME_PATH, band_color=COLORS['bg']):
+    """원본 이미지를 1080x1920으로 cover-crop 후 하단에 헤드라인 밴드 합성 (텍스트 없으면 크롭만)"""
+    W, H = 1080, 1920
+    img = _cover_crop(image_path, W, H)
+
+    if headline and headline.strip():
+        draw = ImageDraw.Draw(img)
+        font = load_font('extrabold', 72)
+        lines = wrap_text(headline, font, W - 120, draw)
+        line_height = 88
+        band_height = 100 + len(lines) * line_height
+
+        draw.rectangle([0, H - band_height, W, H], fill=hex_to_rgb(band_color))
+        y = H - band_height + 50
+        for line in lines:
+            draw.text((60, y), line, font=font, fill=hex_to_rgb(COLORS['white']))
+            y += line_height
+
+    img.save(output_path, 'JPEG', quality=95)
+    return output_path
+
+
+def compose_hook_frame(image_path, hook_text, output_path):
+    """훅 화면: 이미지에 어두운 오버레이 + 화면 중앙 큰 텍스트 (릴스 첫 컷용)"""
+    W, H = 1080, 1920
+    img = _cover_crop(image_path, W, H).convert('RGBA')
+    overlay = Image.new('RGBA', (W, H), (0, 0, 0, 115))
+    img = Image.alpha_composite(img, overlay).convert('RGB')
 
     draw = ImageDraw.Draw(img)
-    font = load_font('extrabold', 72)
-    lines = wrap_text(headline, font, W - 120, draw)
-    line_height = 88
-    band_height = 100 + len(lines) * line_height
-
-    draw.rectangle([0, H - band_height, W, H], fill=hex_to_rgb(band_color))
-    y = H - band_height + 50
+    font = load_font('extrabold', 104)
+    lines = wrap_text(hook_text, font, W - 160, draw)
+    line_height = 130
+    total_h = len(lines) * line_height
+    y = (H - total_h) // 2
     for line in lines:
-        draw.text((60, y), line, font=font, fill=hex_to_rgb(COLORS['white']))
+        line_w = draw.textlength(line, font=font)
+        x = int((W - line_w) // 2)
+        # 가독성용 그림자
+        draw.text((x + 4, y + 4), line, font=font, fill=(0, 0, 0))
+        draw.text((x, y), line, font=font, fill=(255, 255, 255))
         y += line_height
 
     img.save(output_path, 'JPEG', quality=95)
@@ -185,6 +226,92 @@ def get_audio_duration(audio_path):
         audio_path
     ], capture_output=True, text=True, check=True)
     return float(result.stdout.strip())
+
+
+def create_scene_frames(content, out_dir='.', raw_prefix='scene'):
+    """scenes 각 장면의 이미지 생성 + 프레임 합성 → 프레임 경로 리스트 (1번 장면은 훅 화면)"""
+    scenes = content.get('scenes') or []
+    if not scenes:
+        return None
+    source = get_visual_source()
+    print(f'  비주얼 소스: {source}')
+    frames = []
+    prev_raw = None
+    for idx, scene in enumerate(scenes):
+        raw_path = os.path.join(out_dir, f'{raw_prefix}_{idx}_raw.jpg')
+        raw = None
+        if source == 'illustration':
+            png = os.path.join(out_dir, f'{raw_prefix}_{idx}_ai.png')
+            result = generate_illustration(scene['image_prompt'], output_path=png)
+            if result:
+                Image.open(result).convert('RGB').save(raw_path, 'JPEG', quality=95)
+                raw = raw_path
+        if not raw:
+            raw = search_pexels_photo(scene.get('image_query', ''), output_path=raw_path, orientation='portrait')
+        if not raw and prev_raw:
+            raw = prev_raw  # 장면 이미지 실패 시 직전 장면 이미지 재사용
+        if not raw:
+            return None
+        prev_raw = raw
+
+        frame_path = os.path.join(out_dir, f'{raw_prefix}_{idx}_frame.jpg')
+        if idx == 0:
+            compose_hook_frame(raw, content.get('hook', ''), output_path=frame_path)
+        else:
+            compose_frame(raw, scene.get('text', ''), output_path=frame_path)
+        frames.append(frame_path)
+        print(f'  장면 {idx+1}/{len(scenes)} 완료')
+    return frames
+
+
+def build_video_multi(frame_paths, audio_path, output_path=OUTPUT_VIDEO, duration=12.0, bgm_path=None):
+    """장면 여러 장을 내레이션 길이에 균등 분배해 컷 전환 + 줌(홀짝 교차) + 선택적 BGM 믹스"""
+    fps = 30
+    n = len(frame_paths)
+    seg_frames = int(round(duration * fps / n))
+
+    cmd = ['ffmpeg', '-y']
+    for p in frame_paths:
+        cmd += ['-i', p]
+    cmd += ['-i', audio_path]
+    use_bgm = bool(bgm_path) and os.path.exists(bgm_path)
+    if use_bgm:
+        cmd += ['-stream_loop', '-1', '-i', bgm_path]
+
+    parts = []
+    for k in range(n):
+        if k % 2 == 0:
+            zexpr = "min(zoom+0.0012,1.12)"          # 줌인
+        else:
+            zexpr = "if(lte(on,1),1.12,max(1.0,zoom-0.0012))"  # 줌아웃
+        parts.append(
+            f"[{k}:v]scale=2160:3840,"
+            f"zoompan=z='{zexpr}':d={seg_frames}:s=1080x1920:fps={fps},"
+            f"format=yuv420p,setsar=1[v{k}]"
+        )
+    concat_in = ''.join(f'[v{k}]' for k in range(n))
+    parts.append(f"{concat_in}concat=n={n}:v=1:a=0[vout]")
+
+    if use_bgm:
+        parts.append(f"[{n}:a]volume=1.0[nar]")
+        parts.append(f"[{n+1}:a]volume=0.12[bgm]")
+        parts.append("[nar][bgm]amix=inputs=2:duration=first:dropout_transition=0[aout]")
+        audio_map = '[aout]'
+    else:
+        audio_map = f'{n}:a'
+
+    cmd += [
+        '-filter_complex', ';'.join(parts),
+        '-map', '[vout]', '-map', audio_map,
+        '-c:v', 'libx264', '-preset', 'medium', '-crf', '23',
+        '-c:a', 'aac', '-b:a', '128k',
+        '-r', str(fps),
+        '-t', f'{duration:.2f}',
+        '-movflags', '+faststart',
+        output_path,
+    ]
+    subprocess.run(cmd, check=True)
+    return output_path
 
 
 def build_video(frame_path, audio_path, output_path=OUTPUT_VIDEO, duration=20.0):
@@ -224,24 +351,17 @@ def main():
         sys.exit(1)
 
     print(f"선택 뉴스: {content['selected_title']}")
-    print(f"헤드라인:\n{content['headline']}\n")
+    print(f"훅: {content.get('hook', '')}")
     print(f"내레이션:\n{content['narration']}\n")
     print(f"캡션:\n{content['caption']}\n")
     for i, c in enumerate(content.get('comments', [])):
         print(f'댓글{i+1}:\n{c}\n')
 
-    source = get_visual_source()
-    print(f'비주얼 소스: {source}')
-    if source == 'illustration':
-        raw = generate_illustration(content['image_prompt'], RAW_IMAGE_PATH)
-    else:
-        raw = search_pexels_photo(content['image_query'], RAW_IMAGE_PATH, orientation='portrait')
-    if not raw:
+    print('장면 프레임 생성 중...')
+    frames = create_scene_frames(content, out_dir='.')
+    if not frames:
         print('비주얼 생성 실패 - 종료')
         sys.exit(1)
-
-    compose_frame(raw, content['headline'])
-    print(f'프레임 합성 완료: {FRAME_PATH}')
 
     generate_narration(content['narration'])
     print(f'내레이션 생성 완료: {AUDIO_PATH}')
@@ -249,7 +369,7 @@ def main():
     duration = get_audio_duration(AUDIO_PATH)
     print(f'내레이션 길이: {duration:.2f}초')
 
-    build_video(FRAME_PATH, AUDIO_PATH, OUTPUT_VIDEO, duration)
+    build_video_multi(frames, AUDIO_PATH, OUTPUT_VIDEO, duration, bgm_path=BGM_PATH)
     print(f'영상 생성 완료: {OUTPUT_VIDEO}')
 
     video_url = nap.upload_to_github_release(OUTPUT_VIDEO)

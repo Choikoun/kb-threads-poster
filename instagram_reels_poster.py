@@ -6,14 +6,11 @@
 """
 import os, sys, json, time, random, requests, tempfile, shutil
 from datetime import datetime, timezone, timedelta
-from PIL import Image
 from dotenv import load_dotenv
 import news_auto_poster as nap
-from ai_illustration_poster import generate_illustration
-from stock_card_poster import search_pexels_photo
 from video_poster import (
-    generate_content, get_visual_source,
-    compose_frame, generate_narration, get_audio_duration, build_video,
+    generate_content, create_scene_frames,
+    generate_narration, get_audio_duration, build_video_multi, BGM_PATH,
 )
 
 load_dotenv()
@@ -138,31 +135,15 @@ def main():
 
     tmp_dir = tempfile.mkdtemp()
     try:
-        raw_path = os.path.join(tmp_dir, 'raw.jpg')
-        frame_path = os.path.join(tmp_dir, 'frame.jpg')
         audio_path = os.path.join(tmp_dir, 'narration.mp3')
         video_path = os.path.join(tmp_dir, 'reels.mp4')
 
-        # 비주얼 생성 (AI 일러스트 / Pexels 교대)
-        print('비주얼 생성 중...')
-        source = get_visual_source()
-        raw = None
-        if source == 'illustration':
-            print('  AI 일러스트')
-            png = os.path.join(tmp_dir, 'ai_raw.png')
-            result = generate_illustration(content['image_prompt'], output_path=png)
-            if result:
-                Image.open(result).convert('RGB').save(raw_path, 'JPEG', quality=95)
-                raw = raw_path
-        if not raw:
-            print(f'  Pexels ({content["image_query"]})')
-            raw = search_pexels_photo(content['image_query'], output_path=raw_path, orientation='portrait')
-        if not raw:
+        # 장면(3~4컷) 프레임 생성 — 첫 컷은 훅 화면
+        print('장면 프레임 생성 중...')
+        frames = create_scene_frames(content, out_dir=tmp_dir)
+        if not frames:
             print('비주얼 생성 실패 - 종료')
             sys.exit(1)
-
-        print('프레임 합성 중...')
-        compose_frame(raw, content['headline'], output_path=frame_path)
 
         print('TTS 생성 중...')
         generate_narration(content['narration'], output_path=audio_path)
@@ -170,7 +151,7 @@ def main():
         print(f'  {duration:.1f}초')
 
         print('영상 빌드 중...')
-        build_video(frame_path, audio_path, output_path=video_path, duration=duration)
+        build_video_multi(frames, audio_path, output_path=video_path, duration=duration, bgm_path=BGM_PATH)
 
         print('GitHub Release 업로드 중...')
         video_url = nap.upload_to_github_release(video_path)
