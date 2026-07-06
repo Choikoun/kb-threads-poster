@@ -43,6 +43,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config merge.jsonlog.driver "python merge_json_log.py %O %A %B"
           git add content_log.json
           git diff --staged --quiet || git commit -m "콘텐츠 로그 업데이트"
           git pull --rebase

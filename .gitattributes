@@ -1,0 +1,3 @@
+# append-only JSON 로그는 전용 병합 드라이버로 자동 union (동시 커밋 rebase 충돌 방지)
+content_log.json merge=jsonlog
+instagram_log.json merge=jsonlog
