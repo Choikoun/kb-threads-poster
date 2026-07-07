@@ -1,8 +1,8 @@
-name: 중임등기 도구 주간 홍보 (일 19시)
+name: 중임등기 도구 홍보 (일·수 19시)
 
 on:
   schedule:
-    - cron: '0 10 * * 0'   # 일요일 19:00 KST 무렵
+    - cron: '0 10 * * 0,3'   # 일·수요일 19:00 KST 무렵 (2026-07-07 주2회로 증편)
   workflow_dispatch:
 
 concurrency:
