@@ -311,13 +311,15 @@ def create_scene_frames(content, out_dir='.', raw_prefix='scene', use_scene_text
     if not scenes:
         return None
     source = get_visual_source()
-    print(f'  비주얼 소스: {source}')
+    print(f'  비주얼 소스: {source} (단, 1번 장면=썸네일은 항상 실사)')
     frames = []
     prev_raw = None
     for idx, scene in enumerate(scenes):
         raw_path = os.path.join(out_dir, f'{raw_prefix}_{idx}_raw.jpg')
         raw = None
-        if source == 'illustration':
+        # 썸네일로 쓰이는 1번 장면(훅 화면)은 AI 티가 나면 클릭률이 떨어지므로 항상 실사 우선
+        use_ai = (source == 'illustration') and (idx != 0)
+        if use_ai:
             png = os.path.join(out_dir, f'{raw_prefix}_{idx}_ai.png')
             result = generate_illustration(scene['image_prompt'], output_path=png)
             if result:
