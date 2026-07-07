@@ -22,6 +22,9 @@ IG_USER_ID = os.environ['INSTAGRAM_BUSINESS_ACCOUNT_ID']
 BASE_IG = 'https://graph.facebook.com/v21.0'
 KST = timezone(timedelta(hours=9))
 IG_LOG_FILE = 'instagram_log.json'
+# 썸네일: 기본값(0ms=영상 첫 프레임)은 zoompan 필터 특성상 프레임이 불안정할 수 있어
+# 훅 화면(1번 장면) 중간 지점으로 명시 지정 — 텍스트가 확실히 보이는 안전한 프레임
+THUMB_OFFSET_MS = 800
 
 CATEGORY_WEIGHTS = {
     'business':   0.5,
@@ -77,6 +80,7 @@ def post_reels(video_url, caption):
                           'media_type': 'REELS',
                           'video_url': video_url,
                           'caption': caption,
+                          'thumb_offset': THUMB_OFFSET_MS,
                           'access_token': TOKEN,
                       }, timeout=30)
     data = r.json()
