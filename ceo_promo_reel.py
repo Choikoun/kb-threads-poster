@@ -6,9 +6,12 @@ video_poster의 멀티컷+훅화면+싱크자막 파이프라인 재사용.
 """
 import os, sys, json, re, random, tempfile
 from datetime import datetime, timezone, timedelta
+from PIL import Image, ImageDraw
+import qrcode
 from google import genai
 from dotenv import load_dotenv
 import news_auto_poster as nap
+from card_generator import load_font
 from video_poster import (
     create_scene_frames, generate_narration_timed, make_subtitle_phrases,
     get_audio_duration, build_video_multi, pick_bgm,
@@ -31,6 +34,39 @@ ANGLES = [
 ]
 
 HASHTAGS = '#1인법인 #법인대표 #중임등기 #법인등기 #셀프등기 #법인운영 #사업자 #대표이사'
+
+
+def make_qr_endcard(url, out_path):
+    """릴스 마지막 화면: QR + 안내 텍스트 (인스타 캡션 링크 클릭 불가 우회)"""
+    W, H = 1080, 1920
+    img = Image.new('RGB', (W, H), (26, 26, 46))  # 다크 네이비 (#1a1a2e)
+    draw = ImageDraw.Draw(img)
+
+    title_font = load_font('extrabold', 76)
+    sub_font = load_font('bold', 48)
+    small_font = load_font('regular', 38)
+
+    def center_text(y, text, font, fill=(255, 255, 255)):
+        w = draw.textlength(text, font=font)
+        draw.text(((W - w) // 2, y), text, font=font, fill=fill)
+
+    center_text(400, '중임등기 서류', title_font)
+    center_text(505, '무료로 3분 만에', title_font, fill=(240, 200, 100))  # 골드
+
+    qr = qrcode.QRCode(box_size=14, border=2)
+    qr.add_data(url)
+    qr.make(fit=True)
+    qimg = qr.make_image(fill_color='black', back_color='white').convert('RGB').resize((540, 540))
+    # QR 뒤 흰 카드 (여백 포함)
+    pad = 30
+    draw.rectangle([(W - 540) // 2 - pad, 700 - pad, (W + 540) // 2 + pad, 1240 + pad], fill=(255, 255, 255))
+    img.paste(qimg, ((W - 540) // 2, 700))
+
+    center_text(1340, 'QR 스캔하면 바로 열려', sub_font)
+    center_text(1420, '프로필 링크로도 갈 수 있어', small_font, fill=(180, 180, 200))
+
+    img.save(out_path, 'JPEG', quality=95)
+    return out_path
 
 
 def generate_content():
@@ -68,7 +104,8 @@ image_query(영문 2~4단어 Pexels 검색어), text(빈 문자열 — 자막은
 1. 훅 1~2줄 (영상과 이어지는 반전/경각심)
 2. 도구 핵심 한 줄 (무료, 입력→zip)
 3. "링크는 프로필에 🔗" 한 줄
-4. 해시태그는 내가 따로 붙이니 쓰지 마.
+4. "링크 필요하면 댓글에 '등기'라고 남겨줘. DM으로 바로 보내줄게." 한 줄 (댓글 유도 — 인스타는 댓글이 도달을 키움)
+5. 해시태그는 내가 따로 붙이니 쓰지 마.
 
 JSON만 출력:
 {{
@@ -120,10 +157,14 @@ def main():
     duration = get_audio_duration(audio_path)
     print(f'  {duration:.1f}초, 자막 구절 {len(phrases)}개')
 
+    print('QR 엔드카드 생성 중...')
+    endcard = make_qr_endcard(TOOL_URL, os.path.join(tmp_dir, 'endcard.jpg'))
+
     print('영상 빌드 중...')
     bgm = pick_bgm()
     build_video_multi(frames, audio_path, output_path=video_path, duration=duration,
-                      bgm_path=bgm, phrases=phrases, work_dir=tmp_dir)
+                      bgm_path=bgm, phrases=phrases, work_dir=tmp_dir,
+                      end_card=endcard, end_card_seconds=2.8)
 
     print('GitHub Release 업로드 중...')
     video_url = nap.upload_to_github_release(video_path)

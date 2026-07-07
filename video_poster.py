@@ -332,15 +332,25 @@ SUB_FONT = os.path.join('fonts', 'NanumGothicExtraBold.ttf')
 
 
 def build_video_multi(frame_paths, audio_path, output_path=OUTPUT_VIDEO, duration=12.0,
-                      bgm_path=None, phrases=None, work_dir=None):
+                      bgm_path=None, phrases=None, work_dir=None,
+                      end_card=None, end_card_seconds=2.8):
     """장면 컷 전환 + 줌(홀짝 교차) + 선택적 BGM + 선택적 싱크 자막(phrases) 번인.
-    phrases: [{'start','end','text'}] — generate_narration_timed + make_subtitle_phrases 결과."""
+    phrases: [{'start','end','text'}] — generate_narration_timed + make_subtitle_phrases 결과.
+    end_card: 내레이션 끝난 뒤 end_card_seconds 동안 붙는 마지막 화면(QR 등). BGM은 끊기지 않고 이어짐."""
     fps = 30
     n = len(frame_paths)
     seg_frames = int(round(duration * fps / n))
 
+    all_frames = list(frame_paths)
+    use_endcard = bool(end_card) and os.path.exists(end_card)
+    if use_endcard:
+        all_frames.append(end_card)
+    m = len(all_frames)                      # 오디오 입력 인덱스
+    end_frames = int(round(end_card_seconds * fps))
+    total_duration = duration + (end_card_seconds if use_endcard else 0)
+
     cmd = ['ffmpeg', '-y']
-    for p in frame_paths:
+    for p in all_frames:
         cmd += ['-i', p]
     cmd += ['-i', audio_path]
     use_bgm = bool(bgm_path) and os.path.exists(bgm_path)
@@ -348,18 +358,19 @@ def build_video_multi(frame_paths, audio_path, output_path=OUTPUT_VIDEO, duratio
         cmd += ['-stream_loop', '-1', '-i', bgm_path]
 
     parts = []
-    for k in range(n):
+    for k in range(m):
         if k % 2 == 0:
             zexpr = "min(zoom+0.0012,1.12)"          # 줌인
         else:
             zexpr = "if(lte(on,1),1.12,max(1.0,zoom-0.0012))"  # 줌아웃
+        d = end_frames if (use_endcard and k == m - 1) else seg_frames
         parts.append(
             f"[{k}:v]scale=2160:3840,"
-            f"zoompan=z='{zexpr}':d={seg_frames}:s=1080x1920:fps={fps},"
+            f"zoompan=z='{zexpr}':d={d}:s=1080x1920:fps={fps},"
             f"format=yuv420p,setsar=1[v{k}]"
         )
-    concat_in = ''.join(f'[v{k}]' for k in range(n))
-    parts.append(f"{concat_in}concat=n={n}:v=1:a=0[vc]")
+    concat_in = ''.join(f'[v{k}]' for k in range(m))
+    parts.append(f"{concat_in}concat=n={m}:v=1:a=0[vc]")
 
     # 싱크 자막: 구절마다 drawtext + enable 구간. 텍스트는 textfile로 전달(특수문자 이스케이프 회피)
     cur = 'vc'
@@ -381,13 +392,15 @@ def build_video_multi(frame_paths, audio_path, output_path=OUTPUT_VIDEO, duratio
             cur = nxt
     parts.append(f"[{cur}]null[vout]")
 
+    # 내레이션 오디오: 엔드카드가 있으면 그 길이만큼 무음 패딩(BGM이 duration=first로 이어지게)
+    pad = f"apad=pad_dur={end_card_seconds:.2f}," if use_endcard else ""
+    parts.append(f"[{m}:a]{pad}volume=1.0[nar]")
     if use_bgm:
-        parts.append(f"[{n}:a]volume=1.0[nar]")
-        parts.append(f"[{n+1}:a]volume=0.12[bgm]")
+        parts.append(f"[{m+1}:a]volume=0.12[bgm]")
         parts.append("[nar][bgm]amix=inputs=2:duration=first:dropout_transition=0[aout]")
         audio_map = '[aout]'
     else:
-        audio_map = f'{n}:a'
+        audio_map = '[nar]'
 
     cmd += [
         '-filter_complex', ';'.join(parts),
@@ -395,7 +408,7 @@ def build_video_multi(frame_paths, audio_path, output_path=OUTPUT_VIDEO, duratio
         '-c:v', 'libx264', '-preset', 'medium', '-crf', '23',
         '-c:a', 'aac', '-b:a', '128k',
         '-r', str(fps),
-        '-t', f'{duration:.2f}',
+        '-t', f'{total_duration:.2f}',
         '-movflags', '+faststart',
         output_path,
     ]
