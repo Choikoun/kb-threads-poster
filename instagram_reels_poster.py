@@ -10,7 +10,8 @@ from dotenv import load_dotenv
 import news_auto_poster as nap
 from video_poster import (
     generate_content, create_scene_frames,
-    generate_narration, get_audio_duration, build_video_multi, pick_bgm,
+    generate_narration_timed, make_subtitle_phrases,
+    get_audio_duration, build_video_multi, pick_bgm,
 )
 
 load_dotenv()
@@ -138,22 +139,24 @@ def main():
         audio_path = os.path.join(tmp_dir, 'narration.mp3')
         video_path = os.path.join(tmp_dir, 'reels.mp4')
 
-        # 장면(3~4컷) 프레임 생성 — 첫 컷은 훅 화면
+        # 장면(3~4컷) 프레임 생성 — 첫 컷은 훅 화면, 하단 밴드는 싱크 자막으로 대체
         print('장면 프레임 생성 중...')
-        frames = create_scene_frames(content, out_dir=tmp_dir)
+        frames = create_scene_frames(content, out_dir=tmp_dir, use_scene_text=False)
         if not frames:
             print('비주얼 생성 실패 - 종료')
             sys.exit(1)
 
-        print('TTS 생성 중...')
-        generate_narration(content['narration'], output_path=audio_path)
+        print('TTS 생성 중 (타임스탬프 수집)...')
+        _, boundaries = generate_narration_timed(content['narration'], output_path=audio_path)
+        phrases = make_subtitle_phrases(boundaries)
         duration = get_audio_duration(audio_path)
-        print(f'  {duration:.1f}초')
+        print(f'  {duration:.1f}초, 자막 구절 {len(phrases)}개')
 
         print('영상 빌드 중...')
         bgm = pick_bgm()
         print(f'  BGM: {os.path.basename(bgm) if bgm else "없음"}')
-        build_video_multi(frames, audio_path, output_path=video_path, duration=duration, bgm_path=bgm)
+        build_video_multi(frames, audio_path, output_path=video_path, duration=duration,
+                          bgm_path=bgm, phrases=phrases, work_dir=tmp_dir)
 
         print('GitHub Release 업로드 중...')
         video_url = nap.upload_to_github_release(video_path)

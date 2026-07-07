@@ -57,11 +57,10 @@ def generate_content(articles, category='business'):
 [오늘 뉴스]
 {news_list}
 {trend_block}
-[뉴스 선택 우선순위]
-다음 유형의 뉴스가 있으면 최우선으로 선택해:
-- 정부기관(국세청·대법원·헌재·공정위·금융위 등) 공식 발표, 판결, 표결 결과
-- 구체적 숫자(금액·비율·표결수)가 포함된 사실
-해당하는 뉴스가 없으면 기존 기준대로 가장 임팩트 있는 걸 선택해.
+[뉴스 선택 우선순위 — 릴스는 "내 얘기"가 아니면 죽는다]
+1순위: 보는 사람이 "어? 이거 내 얘기인데"라고 느낄 뉴스 — 내 월급/세금/보험료/전세금/상속·증여, 가족 사이 돈 문제, 누구나 겪는 억울함·놀람
+2순위: 충격적인 구체 숫자가 있는 뉴스 (금액·배수·비율)
+피해야 할 것: 특정 기업 제재·기관 행정 발표·업계 단신처럼 일반인 삶과 연결고리가 없는 뉴스 — 이런 소재는 릴스에서 반복 검증된 저성과다. 후보에 1순위감이 없으면 그나마 가장 생활에 가까운 걸 골라 "내 삶에 미치는 영향" 각도로 재해석해라.
 
 [작성 각도]
 {cat['angle']}
@@ -101,7 +100,8 @@ def generate_content(articles, category='business'):
 영상에서 음성(TTS)으로 읽힐 한국어 대본.
 - 자연스러운 구어체 반말. 글머리 기호(📌 등)나 이모지 절대 사용 금지 - 음성으로만 들린다.
 - 분량: 50~80자 (TTS 기준 초당 5~6자, 10~13초 분량). 반드시 이 안에서 끝낸다.
-- 첫 문장이 곧 훅 — 3초 안에 궁금하게 만든다 → 핵심 사실 → 여운 있는 반 문장 마무리.
+- 첫 문장은 반드시 짧은 질문이나 충격 문장 (2초 안에 발화 끝나는 길이) — 여기서 못 잡으면 스와이프당한다.
+- 뉴스 앵커체 금지. 친구한테 말하듯 구어체로. ("~했습니다" 금지, "~했대", "~라는 거야" 식)
 - 숫자나 핵심 사실은 명확하게 말로 풀어 쓴다 (예: "1.8조" → "1조 8천억원").
 
 [캡션 구조 - caption]
@@ -213,14 +213,72 @@ def compose_hook_frame(image_path, hook_text, output_path):
     return output_path
 
 
+VOICE_RATE = '+6%'   # 살짝 빠른 발화 = 릴스 네이티브 톤
+
+
 async def _tts(text, output_path, voice):
-    communicate = edge_tts.Communicate(text, voice)
+    communicate = edge_tts.Communicate(text, voice, rate=VOICE_RATE)
     await communicate.save(output_path)
 
 
 def generate_narration(text, output_path=AUDIO_PATH, voice=VOICE):
     asyncio.run(_tts(text, output_path, voice))
     return output_path
+
+
+async def _tts_timed(text, output_path, voice):
+    """TTS 저장 + 단어별 타임스탬프(WordBoundary) 수집 — 싱크 자막용
+    (edge-tts 7.x는 boundary 기본값이 SentenceBoundary라 명시 필요)"""
+    communicate = edge_tts.Communicate(text, voice, rate=VOICE_RATE, boundary='WordBoundary')
+    boundaries = []
+    with open(output_path, 'wb') as f:
+        async for chunk in communicate.stream():
+            if chunk['type'] == 'audio':
+                f.write(chunk['data'])
+            elif chunk['type'] == 'WordBoundary':
+                boundaries.append({
+                    'start': chunk['offset'] / 1e7,                       # 100ns → sec
+                    'end': (chunk['offset'] + chunk['duration']) / 1e7,
+                    'text': chunk['text'],
+                })
+    return boundaries
+
+
+def generate_narration_timed(text, output_path=AUDIO_PATH, voice=VOICE):
+    """내레이션 생성 + 단어 타임스탬프 반환. 타임스탬프 수집 실패 시 (경로, []) 반환."""
+    try:
+        boundaries = asyncio.run(_tts_timed(text, output_path, voice))
+    except Exception as e:
+        print(f'  타임스탬프 수집 실패, 일반 TTS로 폴백: {e}')
+        asyncio.run(_tts(text, output_path, voice))
+        boundaries = []
+    return output_path, boundaries
+
+
+def make_subtitle_phrases(boundaries, max_words=4, max_chars=14, gap_break=0.3):
+    """단어 타임스탬프를 자막 구절(2~4단어)로 묶기 — 릴스식 짧은 싱크 자막.
+    단어 사이 침묵(gap_break초 이상 = 문장 쉼)에서도 끊어 문장 경계를 존중."""
+    phrases = []
+    cur_words, cur_start = [], None
+    for i, b in enumerate(boundaries):
+        if cur_start is None:
+            cur_start = b['start']
+        cur_words.append(b)
+        joined = ' '.join(w['text'] for w in cur_words)
+        nxt = boundaries[i + 1] if i + 1 < len(boundaries) else None
+        pause_next = nxt is not None and (nxt['start'] - b['end']) >= gap_break
+        if len(cur_words) >= max_words or len(joined) >= max_chars or pause_next:
+            phrases.append({'start': cur_start, 'end': b['end'], 'text': joined})
+            cur_words, cur_start = [], None
+    if cur_words:
+        phrases.append({'start': cur_start, 'end': cur_words[-1]['end'],
+                        'text': ' '.join(w['text'] for w in cur_words)})
+    # 구절 사이 공백 없이 이어지도록 end를 다음 start까지 살짝 연장 (자막 깜빡임 방지)
+    for i in range(len(phrases) - 1):
+        phrases[i]['end'] = max(phrases[i]['end'], phrases[i + 1]['start'])
+    if phrases:
+        phrases[-1]['end'] += 0.3
+    return phrases
 
 
 def get_audio_duration(audio_path):
@@ -233,8 +291,9 @@ def get_audio_duration(audio_path):
     return float(result.stdout.strip())
 
 
-def create_scene_frames(content, out_dir='.', raw_prefix='scene'):
-    """scenes 각 장면의 이미지 생성 + 프레임 합성 → 프레임 경로 리스트 (1번 장면은 훅 화면)"""
+def create_scene_frames(content, out_dir='.', raw_prefix='scene', use_scene_text=True):
+    """scenes 각 장면의 이미지 생성 + 프레임 합성 → 프레임 경로 리스트 (1번 장면은 훅 화면).
+    use_scene_text=False면 하단 자막 밴드 생략 — 싱크 자막(drawtext)과 겹치지 않게."""
     scenes = content.get('scenes') or []
     if not scenes:
         return None
@@ -263,14 +322,19 @@ def create_scene_frames(content, out_dir='.', raw_prefix='scene'):
         if idx == 0:
             compose_hook_frame(raw, content.get('hook', ''), output_path=frame_path)
         else:
-            compose_frame(raw, scene.get('text', ''), output_path=frame_path)
+            compose_frame(raw, scene.get('text', '') if use_scene_text else '', output_path=frame_path)
         frames.append(frame_path)
         print(f'  장면 {idx+1}/{len(scenes)} 완료')
     return frames
 
 
-def build_video_multi(frame_paths, audio_path, output_path=OUTPUT_VIDEO, duration=12.0, bgm_path=None):
-    """장면 여러 장을 내레이션 길이에 균등 분배해 컷 전환 + 줌(홀짝 교차) + 선택적 BGM 믹스"""
+SUB_FONT = os.path.join('fonts', 'NanumGothicExtraBold.ttf')
+
+
+def build_video_multi(frame_paths, audio_path, output_path=OUTPUT_VIDEO, duration=12.0,
+                      bgm_path=None, phrases=None, work_dir=None):
+    """장면 컷 전환 + 줌(홀짝 교차) + 선택적 BGM + 선택적 싱크 자막(phrases) 번인.
+    phrases: [{'start','end','text'}] — generate_narration_timed + make_subtitle_phrases 결과."""
     fps = 30
     n = len(frame_paths)
     seg_frames = int(round(duration * fps / n))
@@ -295,7 +359,27 @@ def build_video_multi(frame_paths, audio_path, output_path=OUTPUT_VIDEO, duratio
             f"format=yuv420p,setsar=1[v{k}]"
         )
     concat_in = ''.join(f'[v{k}]' for k in range(n))
-    parts.append(f"{concat_in}concat=n={n}:v=1:a=0[vout]")
+    parts.append(f"{concat_in}concat=n={n}:v=1:a=0[vc]")
+
+    # 싱크 자막: 구절마다 drawtext + enable 구간. 텍스트는 textfile로 전달(특수문자 이스케이프 회피)
+    cur = 'vc'
+    if phrases:
+        sub_dir = work_dir or os.path.dirname(os.path.abspath(output_path))
+        fontfile = SUB_FONT.replace('\\', '/')
+        for i, ph in enumerate(phrases):
+            tf = os.path.join(sub_dir, f'sub_{i}.txt')
+            with open(tf, 'w', encoding='utf-8') as f:
+                f.write(ph['text'].strip())
+            tf_ff = tf.replace('\\', '/')
+            nxt = f'vs{i}'
+            parts.append(
+                f"[{cur}]drawtext=fontfile='{fontfile}':textfile='{tf_ff}'"
+                f":fontsize=62:fontcolor=white:borderw=6:bordercolor=black@0.85"
+                f":x=(w-text_w)/2:y=h*0.68"
+                f":enable='between(t,{ph['start']:.2f},{ph['end']:.2f})'[{nxt}]"
+            )
+            cur = nxt
+    parts.append(f"[{cur}]null[vout]")
 
     if use_bgm:
         parts.append(f"[{n}:a]volume=1.0[nar]")
@@ -363,18 +447,20 @@ def main():
         print(f'댓글{i+1}:\n{c}\n')
 
     print('장면 프레임 생성 중...')
-    frames = create_scene_frames(content, out_dir='.')
+    frames = create_scene_frames(content, out_dir='.', use_scene_text=False)
     if not frames:
         print('비주얼 생성 실패 - 종료')
         sys.exit(1)
 
-    generate_narration(content['narration'])
-    print(f'내레이션 생성 완료: {AUDIO_PATH}')
+    _, boundaries = generate_narration_timed(content['narration'])
+    phrases = make_subtitle_phrases(boundaries)
+    print(f'내레이션 생성 완료: {AUDIO_PATH} (자막 구절 {len(phrases)}개)')
 
     duration = get_audio_duration(AUDIO_PATH)
     print(f'내레이션 길이: {duration:.2f}초')
 
-    build_video_multi(frames, AUDIO_PATH, OUTPUT_VIDEO, duration, bgm_path=pick_bgm())
+    build_video_multi(frames, AUDIO_PATH, OUTPUT_VIDEO, duration,
+                      bgm_path=pick_bgm(), phrases=phrases, work_dir='.')
     print(f'영상 생성 완료: {OUTPUT_VIDEO}')
 
     video_url = nap.upload_to_github_release(OUTPUT_VIDEO)
