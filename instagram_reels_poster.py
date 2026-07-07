@@ -122,7 +122,7 @@ def main():
     print(f'뉴스 {len(articles)}개 수집')
 
     print('Gemini 콘텐츠 생성 중...')
-    content = generate_content(articles, category)
+    content = generate_content(articles, category, platform='instagram')
     if not content:
         print('콘텐츠 생성 실패 - 종료')
         sys.exit(1)

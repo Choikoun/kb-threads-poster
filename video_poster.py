@@ -37,14 +37,27 @@ def pick_bgm():
     return random.choice(candidates) if candidates else None
 
 
-def generate_content(articles, category='business'):
+def generate_content(articles, category='business', platform='threads'):
+    """platform='threads'|'instagram' — 두 플랫폼의 어조가 달라 톤을 분기한다:
+    Threads는 반말(친근한 전문가), Instagram은 존댓말(정중한 정보 전달)이 계정 규칙."""
     client = genai.Client(api_key=GEMINI_KEY)
     cat = nap.CATEGORIES.get(category, nap.CATEGORIES['business'])
     news_list = '\n'.join([f"{i+1}. {a['title']}" for i, a in enumerate(articles[:20])])
     trend_headlines = nap.get_trend_headlines()
     trend_block = f"\n[오늘의 핵심 이슈 - 후속/연결 가능하면 활용]\n{trend_headlines}\n" if trend_headlines else ''
 
-    prompt = f"""너는 한국 Threads에서 활동하는 법인·세금·자산 설계 전문가야.
+    is_ig = (platform == 'instagram')
+    tone_name = '존댓말(합니다체)' if is_ig else '반말'
+    tone_rule = '전부 존댓말(합니다체)로 정중하게' if is_ig else '전부 반말'
+    narration_tone = (
+        '자연스럽고 정중한 존댓말 구어체. "~습니다/~해요" 톤 유지.'
+        if is_ig else
+        '자연스러운 구어체 반말. "~했습니다" 금지 - "~했대", "~라는 거야" 식.'
+    )
+    followup_tone = '자연스러우면) 팔로우 유도 한 줄. 존댓말.' if is_ig else '자연스러우면) 팔로우 유도 한 줄. 반말.'
+    comment_tone = '마지막 댓글은 존댓말 질문으로 마무리 가능.' if is_ig else '마지막 댓글은 반말 질문으로 마무리 가능.'
+
+    prompt = f"""너는 한국 {'Instagram' if is_ig else 'Threads'}에서 활동하는 법인·세금·자산 설계 전문가야.
 아래 뉴스 중 {cat['name']} 독자에게 가장 임팩트 있는 것 하나 골라서,
 짧은 세로형 릴스 영상(10~13초) + 캡션 형태의 포스트를 작성해줘.
 
@@ -66,7 +79,7 @@ def generate_content(articles, category='business'):
 {cat['angle']}
 
 [핵심 원칙 - 반드시 지켜]
-- 전부 반말
+- {tone_rule}
 - 상담/DM/점검 유도 절대 금지. 화두만 던지고 끝낸다.
 - 특정 종목·자산의 매수/매도/매매 타이밍을 지시하거나 추천하지 않는다 (미등록 투자자문 리스크). 구조적 인식까지만 다루고 투자행동 지시는 하지 않는다.
 - 완전한 답 주지 말 것. 경각심·인사이트·잘못된 상식을 건드리되 "상황마다 달라", "구조가 먼저야"처럼 열어두어 독자 스스로 "내 상황은 어떻게 되지?" 상담 욕구가 생기도록.
@@ -98,11 +111,10 @@ def generate_content(articles, category='business'):
 
 [내레이션 작성 - narration]
 영상에서 음성(TTS)으로 읽힐 한국어 대본.
-- 자연스러운 구어체 반말. 글머리 기호(📌 등)나 이모지 절대 사용 금지 - 음성으로만 들린다.
+- {narration_tone} 글머리 기호(📌 등)나 이모지 절대 사용 금지 - 음성으로만 들린다.
 - 분량: 50~80자 (TTS 기준 초당 5~6자, 10~13초 분량). 반드시 이 안에서 끝낸다.
 - 첫 문장은 반드시 짧은 질문이나 충격 문장 (2초 안에 발화 끝나는 길이) — 여기서 못 잡으면 스와이프당한다.
-- 뉴스 앵커체 금지. 친구한테 말하듯 구어체로. ("~했습니다" 금지, "~했대", "~라는 거야" 식)
-- 숫자나 핵심 사실은 명확하게 말로 풀어 쓴다 (예: "1.8조" → "1조 8천억원").
+- 뉴스 앵커체는 피하되 {tone_name} 유지. 숫자나 핵심 사실은 명확하게 말로 풀어 쓴다 (예: "1.8조" → "1조 8천억원").
 
 [캡션 구조 - caption]
 1. 훅 1~2줄 (영상/헤드라인과 이어지는 맥락, 반전이나 의문 제기)
@@ -111,10 +123,10 @@ def generate_content(articles, category='business'):
 ↵빈줄
 3. 핵심 숫자나 결론을 강조하는 한 줄
 ↵빈줄
-4. (자연스러우면) 팔로우 유도 한 줄. 반말.
+4. ({followup_tone}
 
 [댓글 구조]
-1~2개. 추가 맥락이나 반전 포인트. 마지막 댓글은 반말 질문으로 마무리 가능.
+1~2개. 추가 맥락이나 반전 포인트. {comment_tone}
 
 JSON만 출력:
 {{

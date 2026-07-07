@@ -37,33 +37,37 @@ HASHTAGS = '#1인법인 #법인대표 #중임등기 #법인등기 #셀프등기 
 
 
 def make_qr_endcard(url, out_path):
-    """릴스 마지막 화면: QR + 안내 텍스트 (인스타 캡션 링크 클릭 불가 우회)"""
+    """릴스 마지막 화면: QR + 안내 텍스트 (인스타 캡션 링크 클릭 불가 우회).
+    스토리/릴스 UI(상단 진행바·프로필, 하단 답장창)가 화면 상하단을 가리므로
+    핵심 콘텐츠를 세로 중앙 50%(대략 y 460~1570) 안에 넣는 세이프존 레이아웃."""
     W, H = 1080, 1920
     img = Image.new('RGB', (W, H), (26, 26, 46))  # 다크 네이비 (#1a1a2e)
     draw = ImageDraw.Draw(img)
 
-    title_font = load_font('extrabold', 76)
-    sub_font = load_font('bold', 48)
-    small_font = load_font('regular', 38)
+    title_font = load_font('extrabold', 72)
+    sub_font = load_font('bold', 46)
+    small_font = load_font('regular', 36)
 
     def center_text(y, text, font, fill=(255, 255, 255)):
         w = draw.textlength(text, font=font)
         draw.text(((W - w) // 2, y), text, font=font, fill=fill)
 
-    center_text(400, '중임등기 서류', title_font)
-    center_text(505, '무료로 3분 만에', title_font, fill=(240, 200, 100))  # 골드
+    center_text(480, '중임등기 서류', title_font)
+    center_text(585, '무료로 받아보세요', title_font, fill=(240, 200, 100))  # 골드
 
-    qr = qrcode.QRCode(box_size=14, border=2)
+    qr = qrcode.QRCode(box_size=13, border=2)
     qr.add_data(url)
     qr.make(fit=True)
-    qimg = qr.make_image(fill_color='black', back_color='white').convert('RGB').resize((540, 540))
-    # QR 뒤 흰 카드 (여백 포함)
-    pad = 30
-    draw.rectangle([(W - 540) // 2 - pad, 700 - pad, (W + 540) // 2 + pad, 1240 + pad], fill=(255, 255, 255))
-    img.paste(qimg, ((W - 540) // 2, 700))
+    qsize = 500
+    qimg = qr.make_image(fill_color='black', back_color='white').convert('RGB').resize((qsize, qsize))
+    qr_top = 800
+    pad = 28
+    draw.rectangle([(W - qsize) // 2 - pad, qr_top - pad, (W + qsize) // 2 + pad, qr_top + qsize + pad],
+                  fill=(255, 255, 255))
+    img.paste(qimg, ((W - qsize) // 2, qr_top))
 
-    center_text(1340, 'QR 스캔하면 바로 열려', sub_font)
-    center_text(1420, '프로필 링크로도 갈 수 있어', small_font, fill=(180, 180, 200))
+    center_text(qr_top + qsize + pad + 60, 'QR을 스캔하면 바로 열립니다', sub_font)
+    center_text(qr_top + qsize + pad + 130, '프로필 링크로도 이동하실 수 있어요', small_font, fill=(180, 180, 200))
 
     img.save(out_path, 'JPEG', quality=95)
     return out_path
@@ -88,12 +92,12 @@ def generate_content():
 [영상 형식]
 - 장면(컷) 3개. 1번 장면은 훅 화면(이미지 위 큰 텍스트), 2~3번은 상황 이미지.
 - 내레이션 50~80자(10~13초). 첫 문장은 2초 안에 끝나는 질문/충격.
-- 반말 구어체. 앵커체 금지("~했습니다" 금지, "~야", "~거든" 식).
+- 정중한 존댓말 구어체("~습니다/~해요"). 딱딱한 뉴스 앵커체는 피하되 존댓말은 유지.
 
 [핵심 원칙]
-- 전부 반말. 과장·허위 금지 — 위 [도구 정보]의 사실 범위 안에서만.
+- 전부 존댓말(합니다체)로 정중하게. 과장·허위 금지 — 위 [도구 정보]의 사실 범위 안에서만.
 - 겁주되 비하하지 않기. "몰라서 내는 돈"의 구조를 짚는 톤.
-- 마지막은 "프로필 링크에서 무료로 만들어봐" 류로 자연스럽게 유도.
+- 마지막은 "프로필 링크에서 무료로 만들어보세요" 류로 자연스럽게 유도.
 
 [장면 작성 - scenes 3개]
 각 장면: image_prompt(영문, 9:16 세로, 한국인 1인법인 대표의 상황 묘사, 다크 네이비+골드 시네마틱,
@@ -101,10 +105,11 @@ def generate_content():
 image_query(영문 2~4단어 Pexels 검색어), text(빈 문자열 — 자막은 싱크 자막이 대체).
 
 [캡션 - caption]
+전부 존댓말로 작성.
 1. 훅 1~2줄 (영상과 이어지는 반전/경각심)
 2. 도구 핵심 한 줄 (무료, 입력→zip)
-3. "링크는 프로필에 🔗" 한 줄
-4. "링크 필요하면 댓글에 '등기'라고 남겨줘. DM으로 바로 보내줄게." 한 줄 (댓글 유도 — 인스타는 댓글이 도달을 키움)
+3. "링크는 프로필에 있어요 🔗" 한 줄
+4. "링크가 필요하시면 댓글에 '등기'라고 남겨주세요. DM으로 보내드릴게요." 한 줄 (댓글 유도 — 인스타는 댓글이 도달을 키움)
 5. 해시태그는 내가 따로 붙이니 쓰지 마.
 
 JSON만 출력:
