@@ -94,8 +94,12 @@ def main():
     for i, c in enumerate(content.get('comments', [])):
         print(f'댓글{i+1}:\n{c}\n')
 
-    main_id = nap.post_to_threads(content['main'], content.get('comments', []), image_url=None)
+    # 발판(topic_tag) + 민감미디어 경고 제거(맨텍스트 홍보글에 경고 붙으면 도달 저하) + 성과 추적
+    main_id = nap.post_to_threads(content['main'], content.get('comments', []), image_url=None,
+                                  topic_tag='법인', content_warning=False)
     print(f'완료! 메인 포스트 ID: {main_id}')
+
+    nap.log_content(main_id, 'business', '도구홍보', '1인법인 중임등기 셀프 도구 주간 홍보', source='자체기획')
 
 
 if __name__ == '__main__':
