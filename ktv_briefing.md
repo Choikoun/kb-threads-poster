@@ -1,13 +1,13 @@
 # 🏛️ KTV 국무회의 브리핑
-*2026-07-07 19:02 KST*
+*2026-07-08 17:46 KST*
 
 ---
 
-## 한때 국무위원이었던 내가, 지금은 총리..? #한성숙 총리 첫 #국무회의 풀버전! "부처별로 점검하세요."  장마부터 AI까지 직접 챙긴 한 총리! #명벤져스
-🔗 https://youtu.be/s2ypOhzflWI
+## 나토 무대에서 세일즈 맨으로 변신?! 방산 세일즈 외교 나선 이재명 대통령 ‘신뢰가 경쟁력’ K-방산 협력 새 비전 제시
+🔗 https://youtu.be/ZUEVm3oKuG0
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=s2ypOhzflWI! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=ZUEVm3oKuG0! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
@@ -17,11 +17,11 @@ There are two ...
 
 ---
 
-## 🌏 이재명 대통령 첫 나토 정상회의 참석과 몽골 국빈방문! K-방산 세일즈 본격 시동, 핵심 일정 총정리
-🔗 https://youtu.be/u4TpYKUGFkM
+## (26.7.8.) 정보통신망법 개정 시행 관련 방송미디어통신위원회 브리핑
+🔗 https://youtu.be/Nnic2Koj3_4
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=u4TpYKUGFkM! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=Nnic2Koj3_4! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
