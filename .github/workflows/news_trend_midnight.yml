@@ -46,8 +46,10 @@ jobs:
           git config merge.jsonlog.driver "python merge_json_log.py %O %A %B"
           git add content_log.json
           git diff --staged --quiet || git commit -m "콘텐츠 로그 업데이트"
-          git pull --rebase
-          git push
+          for attempt in 1 2 3 4 5; do
+            git pull --rebase origin main && git push && break
+            echo "push 충돌 — 재시도 $attempt/5"; sleep $((attempt * 5))
+          done
       - name: 실패 알림
         if: failure()
         env:
