@@ -32,6 +32,7 @@ jobs:
           git diff --staged --quiet || git commit -m "세제 속보 로그 업데이트"
           for attempt in 1 2 3 4 5; do
             git pull --rebase origin main && git push && break
+            git rebase --abort 2>/dev/null || true
             echo "push 충돌 — 재시도 $attempt/5"; sleep $((attempt * 5))
           done
       - name: 실패 알림
