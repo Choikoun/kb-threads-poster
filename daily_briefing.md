@@ -1,42 +1,42 @@
 # 📰 일일 브리핑
-*2026-07-13 08:02 KST*
+*2026-07-14 08:06 KST*
 
 ---
 
 ## 🔖 보험 동향
-- [정보보호의 달, 보험권 보안 인프라·인증 고도화](https://www.insnews.co.kr/news/articleView.html?idxno=91760)
-- [치매머니 관리, ‘공공신탁·보험금 대리청구’로 개선](https://www.insnews.co.kr/news/articleView.html?idxno=91756)
-- [지역 포용금융 ‘생활밀착형’으로 확대, 보험·은행 함께 바꾼다](https://www.insnews.co.kr/news/articleView.html?idxno=91755)
-- [재택 부업 미끼 보이스피싱 확산… 보험금 보상도 주의](https://www.insnews.co.kr/news/articleView.html?idxno=91753)
-- [농어업인 안전보험, 직업병 관리까지 넓힌다](https://www.insnews.co.kr/news/articleView.html?idxno=91752)
+- [미래에셋생명, 변액보험에 한·미·중 반도체 ETF 펀드 추가](https://www.insnews.co.kr/news/articleView.html?idxno=91830)
+- [제14대 보험개발원장에 유재훈 전 금융위 국장 내정](https://www.insnews.co.kr/news/articleView.html?idxno=91831)
+- [금융보안원, 금융 AI 실전 인재 발굴… 서비스 구현형 공모전 개최](https://www.insnews.co.kr/news/articleView.html?idxno=91829)
+- [우체국보험 앱에서 ‘실손보험금’ 청구… ‘실손24’ 앱 없이도 가능](https://www.insnews.co.kr/news/articleView.html?idxno=91827)
+- [성대규 동양생명 대표, “전 직원이 AI 활용하는 문화 정착” 당부](https://www.insnews.co.kr/news/articleView.html?idxno=91823)
 
 ## 💰 국내 경제·금융
-- [신한투자증권, 선취 판매수수료 없는 '라이트 펀드' 출시](https://www.hankyung.com/article/202607120295i)
-- [연금 알아서 굴려주는 TDF…'세 가지' 모르면 낭패](https://www.hankyung.com/article/2026071201681)
-- [홍콩 H지수 ETF '날개'…원유투자 상품도 강세](https://www.hankyung.com/article/2026071202111)
-- [환율·채권, 하이닉스 미국 상장發 달러유입 기대](https://www.hankyung.com/article/2026071201791)
-- [뉴욕·상하이 증시, 워시 취임 첫 '통화정책 보고' 주목](https://www.hankyung.com/article/2026071201781)
+- [중동 전쟁 재점화 우려에도…에너지·해운株 살아남았다 [종목+]](https://www.hankyung.com/article/2026071320136)
+- [中 패션기업 쉬인, 뉴욕·런던서 퇴짜 맞고 8월 홍콩 IPO](https://www.hankyung.com/article/202607142866i)
+- [골드만삭스 “中 AI 이끌 기업 즈푸AI, 딥시크, 바이트댄스”](https://www.hankyung.com/article/202607142857i)
+- [현대건설 SMR 파트너 홀텍, 나스닥 IPO 계획](https://www.hankyung.com/article/202607132829i)
+- [하이닉스 '역김치 프리미엄' 현실 됐다](https://www.hankyung.com/article/2026071325711)
 
 ## 📈 주식·시장
-- [“머스크가 제일 싫습니다”…머스크 묻은 기업 다 뺀다는 이 ETF](https://www.mk.co.kr/news/stock/12096668)
-- [AI에 주가 반토막, AI덕에 다시 2배로…위기=기회란 이 회사](https://www.mk.co.kr/news/stock/12096667)
-- [“AI 투자 끝났다” 개미 판 날, 기관 놈들은 이걸 샀다 … 도대체 무슨 기사를 봤길래](https://www.mk.co.kr/news/stock/12096445)
-- [“삼전닉스 결말은 오징어게임?” … 시장 공포 부른 반도체 피크아웃론 점검](https://www.mk.co.kr/news/stock/12096467)
-- [코스피·개미계좌 망쳤다는 삼전닉스 2배ETF…해법 있다는데](https://www.mk.co.kr/news/stock/12096637)
+- [‘몸값 554조’ 中 반도체공룡 증시뜬다…커촹반 손님맞이 분주](https://www.mk.co.kr/news/stock/12097832)
+- [[속보] 뉴욕증시, 미국-이란 무력 충돌 속 혼조 출발](https://www.mk.co.kr/news/stock/12097733)
+- [‘시총 1위 왕좌’ 은행에 물려준 반도체…日키옥시아 13% 빠졌다](https://www.mk.co.kr/news/world/12097682)
+- [“삼전닉스 결말은 오징어게임?”…시장 공포 부른 반도체 피크아웃론 점검 [목대균의 글로벌 인사이트]](https://www.mk.co.kr/news/business/12097614)
+- [“AI 투자 끝났다” 개미 판 날, 기관들은 이걸 샀다…도대체 무슨 기사를 봤길래 [너드의 투자법]](https://www.mk.co.kr/news/stock/12097549)
 
 ## 🌏 글로벌 경제·정세
-- ["韓 경제 훌륭한데 환율은 위기수준" 美 경제학자의 진단 [이상은의 워싱턴나우]](https://www.hankyung.com/article/202607106783i)
-- [[속보] 미군 "군통수권자 지시로 이란 상대 추가 공습 개시"](https://www.hankyung.com/article/2026071304837)
-- [미군, 이란 미사일·방공망 또 타격…이틀 연속 공습](https://www.hankyung.com/article/2026071304767)
-- [대북·대이란 공화당 강경파…'트럼프 측근' 그레이엄 의원 별세](https://www.hankyung.com/article/2026071203941)
-- [이란 최고지도자 군사고문 "호르무즈, 원폭 수십 개보다 중요"](https://www.hankyung.com/article/2026071203687)
+- ["중국·러시아 스파이 활개"…日정보기관 설립 속도 [도쿄나우]](https://www.hankyung.com/article/202607143023i)
+- [초등생 텀블러에 '지문인식' 필수?…일본 발칵 뒤집힌 사건](https://www.hankyung.com/article/2026071430107)
+- [[속보] 美 "이란 공습 개시…이란군에 막대한 타격 입힐 것"](https://www.hankyung.com/article/2026071429647)
+- [트럼프 "오늘 밤과 내일 이란 강하게 때린다"…뉴욕증시 급락](https://www.hankyung.com/article/2026071429247)
+- [美, 대이란 봉쇄조치 14일 오후 시작…유가 10% 폭등 [이상은의 워싱턴나우]](https://www.hankyung.com/article/202607142913i)
 
 ## 🔥 팔로업 추천 (300회 이상)
-- 9,405회 [2026-07-11] 유언장에 남긴 땅, 주인이 살아있을 때 팔아버리면 유언은 무효일까? 대법...
-- 6,424회 [2026-07-11] 요즘 차 타고 다니는 사람들은 느꼈을 거야 ⛽️  주유소 기름값, 8주 ...
-- 2,978회 [2026-07-12] 물가 올랐다고 슬그머니 가격 올린 사장님들, 지금 발등에 불 떨어졌다? ...
-- 2,643회 [2026-07-11] 한국은행 금리 인상, 남의 일 같아?  대부분은 대출 이자만 생각하지만,...
-- 2,112회 [2026-07-12] 고액 자산가들, 지금부터 이 세금 계산 다시 해봐.  1. 전국 종합부동...
+- 9,431회 [2026-07-11] 유언장에 남긴 땅, 주인이 살아있을 때 팔아버리면 유언은 무효일까? 대법...
+- 6,430회 [2026-07-11] 요즘 차 타고 다니는 사람들은 느꼈을 거야 ⛽️  주유소 기름값, 8주 ...
+- 3,798회 [2026-07-12] 💡 지금 AI 투자 위험하다고 발 빼는 개미 많지?  근데 기관은 오히려...
+- 3,061회 [2026-07-12] 물가 올랐다고 슬그머니 가격 올린 사장님들, 지금 발등에 불 떨어졌다? ...
+- 2,288회 [2026-07-12] 고액 자산가들, 지금부터 이 세금 계산 다시 해봐.  1. 전국 종합부동...
 
 ---
 *총 60개 기사 수집됨*
