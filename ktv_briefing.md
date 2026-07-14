@@ -1,13 +1,13 @@
 # 🏛️ KTV 국무회의 브리핑
-*2026-07-13 18:49 KST*
+*2026-07-14 17:29 KST*
 
 ---
 
-## (26.7.13.) 과감한 혁신과 투자로 여는 대체불가 대한민국 | 국가재정전략회의
-🔗 https://youtu.be/hTRM5S53U_o
+## (26.7.14.) 하반기 경제성장전략 관계부처 합동 브리핑
+🔗 https://youtu.be/S2TuT77YqgU
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=hTRM5S53U_o! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=S2TuT77YqgU! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
@@ -17,25 +17,11 @@ There are two ...
 
 ---
 
-## 몽골 국영방송에 직접 연락한 순방 동행기자의 패기! 이 대통령 빡빡한 일정에 평균 수면 시간 3시간?! 직접 두눈으로 목격한 몽골 국빈방문과 나토 참석의 모든 것~
-🔗 https://youtu.be/5Gugyg3Gcis
+## (26.7.14.) 이재명 대통령 제30회 국무회의
+🔗 https://youtu.be/gXWij0P7xPk
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=5Gugyg3Gcis! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-There are two ...
-
----
-
-## (26.7.13.) 여름방학 초등 틈새돌봄 긴급대책 관련 보건복지부 브리핑
-🔗 https://youtu.be/LWBeIn0mxlg
-
-[자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=LWBeIn0mxlg! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=gXWij0P7xPk! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
