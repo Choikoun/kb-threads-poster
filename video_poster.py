@@ -104,8 +104,9 @@ def generate_content(articles, category='business', platform='threads'):
   (표정: 놀람/불안/충격 등, 상황: 사무실/차/책상 등). 다크 네이비 + 골드 톤, 시네마틱 디지털 아트 스타일.
   문서·화면·서류·태블릿처럼 텍스트가 들어갈 수 있는 사물은 등장시키지 않는다.
   반드시 "vertical 9:16 portrait composition, no text, no documents, no screens, no readable signage in image" 포함.
-- image_query: 영문 2~4단어. Pexels 스톡 사진(인물 portrait 위주) 검색 키워드
-  (예: "stressed businessman office", "worried business owner"). 일반적인 인물/사무실/감정 위주.
+- image_query: 영문 2~4단어. Pexels 스톡 사진 검색 키워드.
+  [금지] "stressed businessman office", "worried business owner"처럼 뻔하고 일반적인 인물/사무실/감정 스톡사진 — 릴스 도달은 초반 시청자의 완주율로 확산 여부가 갈리는데, 이런 흔한 이미지는 스크롤을 못 멈추게 해서 도달이 0~200회대에서 정체되는 원인으로 확인됨(2026-07 실측).
+  대신 그 장면의 구체적 소재를 직접 드러내는 키워드를 써라 — 예: 상속/증여 얘기면 "elderly hands holding money", 부동산이면 "korean apartment buildings", 계약·서류 얘기면 "signing contract closeup", 소송·법이면 "courtroom gavel", 세금이면 "cash envelope korean won". 1번 장면(훅=썸네일)은 특히 신중하게 골라라 — 이 한 장이 전체 도달을 좌우한다.
 - text: 그 장면 하단에 깔릴 자막. 14자 이내 한 줄. 내레이션의 해당 구간 핵심을 요약.
   1번 장면은 훅이 대신하므로 text를 빈 문자열로.
 장면 순서 = 내레이션 전개 순서. 장면끼리 배경·구도가 겹치지 않게.
@@ -202,13 +203,25 @@ def compose_frame(image_path, headline, output_path=FRAME_PATH, band_color=COLOR
 
 
 def compose_hook_frame(image_path, hook_text, output_path):
-    """훅 화면: 이미지에 어두운 오버레이 + 화면 중앙 큰 텍스트 (릴스 첫 컷용)"""
+    """훅 화면: 이미지에 그라데이션 오버레이(중앙은 사진이 살도록 옅게, 텍스트 뒤만 짙게)
+    + 골드 액센트 바 + 화면 중앙 큰 텍스트 (릴스 첫 컷용, 썸네일로 쓰임)"""
     W, H = 1080, 1920
     img = _cover_crop(image_path, W, H).convert('RGBA')
-    overlay = Image.new('RGBA', (W, H), (0, 0, 0, 115))
+
+    # 상/하단은 짙게, 중앙은 옅게 — 사진 전체를 암전시키지 않고 피사체가 드러나 보이게
+    gradient = []
+    for y in range(H):
+        dist_from_mid = abs(y / H - 0.5) * 2  # 0(중앙)~1(위/아래 끝)
+        gradient.append(int(50 + dist_from_mid * 110))  # 50~160
+    alpha_col = Image.new('L', (1, H))
+    alpha_col.putdata(gradient)
+    overlay = Image.new('RGBA', (W, H), (0, 0, 0, 255))
+    overlay.putalpha(alpha_col.resize((W, H)))
     img = Image.alpha_composite(img, overlay).convert('RGB')
 
     draw = ImageDraw.Draw(img)
+    draw.rectangle([0, 0, W, 14], fill=hex_to_rgb(COLORS['accent']))  # 골드 액센트 바 (브랜드 시그니처)
+
     font = load_font('extrabold', 104)
     lines = wrap_text(hook_text, font, W - 160, draw)
     line_height = 130
