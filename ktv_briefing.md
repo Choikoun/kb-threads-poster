@@ -1,13 +1,27 @@
 # 🏛️ KTV 국무회의 브리핑
-*2026-07-16 17:36 KST*
+*2026-07-17 17:30 KST*
 
 ---
 
-## (26.7.16.) 청년미래비서관실 신설 관련 강유정 수석대변인 브리핑
-🔗 https://youtu.be/2MlHeEiBo6g
+## (26.7.17.) 호우 대비 관계기관 대책회의
+🔗 https://youtu.be/SVobDqv1v2c
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=2MlHeEiBo6g! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=SVobDqv1v2c! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There are two ...
+
+---
+
+## 지루한 업무보고는 가라~ 멀리가!💦꿈잼보장 업무보고 등장✨ 부처별 비장의 무기는?!🎬 #이재명 #대통령 #보건복지부 #식약처 #홍보영상
+🔗 https://youtu.be/liy_A14_Kco
+
+[자막 없음: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=liy_A14_Kco! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
