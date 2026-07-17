@@ -419,7 +419,7 @@
     "selected_title": "주가 희석 vs 재평가 효과…하이닉스 ADR 상장 주가 영향은(종합)",
     "date": "2026-07-03 00:00",
     "views_at_selection": 7948,
-    "reach": 1,
+    "reach": 2,
     "saved": 0,
     "likes": 0,
     "comments": 0
@@ -543,7 +543,7 @@
     "selected_title": "거래소, 에스씨엠생명과학 '관리종목 해제 실수' 배상액 확정",
     "date": "2026-07-07 01:06",
     "views_at_selection": 2469,
-    "reach": 0,
+    "reach": 1,
     "saved": 0,
     "likes": 0,
     "comments": 0
@@ -623,7 +623,7 @@
     "type": "reels",
     "selected_title": "충청권 392조 첨단산업 투자…‘행정도시’ 세종도 자족도시 도약",
     "date": "2026-07-10 15:27",
-    "reach": 131,
+    "reach": 132,
     "saved": 0,
     "likes": 0,
     "comments": 0
@@ -643,7 +643,7 @@
     "type": "reels",
     "selected_title": "'판교' 무공실 신화 옛말…짐싸는 IT 기업들[오피스 지각변동①]",
     "date": "2026-07-11 14:28",
-    "reach": 166,
+    "reach": 167,
     "saved": 0,
     "likes": 0,
     "comments": 0
@@ -673,7 +673,7 @@
     "type": "reels",
     "selected_title": "오세훈, 李대통령 부동산토론회에 \"세금 부담 논의 집중 우려\"",
     "date": "2026-07-12 14:43",
-    "reach": 146,
+    "reach": 155,
     "saved": 0,
     "likes": 0,
     "comments": 0
@@ -683,7 +683,7 @@
     "type": "reels",
     "selected_title": "국세청 '물가불안 조장 탈세' 114곳 적발…3천195억 추징",
     "date": "2026-07-12 21:10",
-    "reach": 61,
+    "reach": 160,
     "saved": 0,
     "likes": 0,
     "comments": 0
@@ -692,60 +692,100 @@
     "ig_post_id": "18093362462040640",
     "type": "reels",
     "selected_title": "내년도 최저임금 결정 초읽기···‘690원 격차’ 14일 막판 협상",
-    "date": "2026-07-13 14:54"
+    "date": "2026-07-13 14:54",
+    "reach": 143,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "17934805299305190",
     "type": "reels",
     "selected_title": "오세훈 내일 국무회의 참석…대통령에게 부동산 정책 의견 낸다",
-    "date": "2026-07-13 22:34"
+    "date": "2026-07-13 22:34",
+    "reach": 68,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "17924768343380032",
     "type": "reels",
     "selected_title": "[속보]法 \"쿠팡 김범석 동일인 지정한 공정위 처분 효력정지\"",
-    "date": "2026-07-14 14:15"
+    "date": "2026-07-14 14:15",
+    "reach": 202,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18175711525417501",
     "type": "reels",
     "selected_title": "‘따블’ 노렸는데 계좌가 반토막...뒤늦게 단일 레버리지 손본다는데",
-    "date": "2026-07-14 21:43"
+    "date": "2026-07-14 21:43",
+    "reach": 125,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18341241040247928",
     "type": "reels",
     "selected_title": "최저임금 인상률 4년 만에 3%대…1만700원 근거는?",
-    "date": "2026-07-15 14:17"
+    "date": "2026-07-15 14:17",
+    "reach": 150,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18120812017696220",
     "type": "reels",
     "selected_title": "금융위, 가맹점 수수료 고지의무 강화…다단계 PG 결제구조 개선",
-    "date": "2026-07-15 21:46"
+    "date": "2026-07-15 21:46",
+    "reach": 128,
+    "saved": 0,
+    "likes": 1,
+    "comments": 0
   },
   {
     "ig_post_id": "18081624287435723",
     "type": "reels",
     "selected_title": "트럼프, 한국 조선업계 콕 집었다…“韓 기업 살펴볼 것”",
-    "date": "2026-07-16 14:26"
+    "date": "2026-07-16 14:26",
+    "reach": 105,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18106385963127530",
     "type": "reels",
     "selected_title": "“의사 진료 3분에 900만원이라뇨” 분통…납득 어려운 미국 출산 비용",
-    "date": "2026-07-16 21:55"
+    "date": "2026-07-16 21:55",
+    "reach": 132,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18049293005794773",
     "type": "reels",
     "selected_title": "대학원생 인건비 1억여원 공동관리한 교수…법원 “학교에 반환해야”",
-    "date": "2026-07-17 14:29"
+    "date": "2026-07-17 14:29",
+    "reach": 137,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18067541750706283",
     "type": "reels",
     "selected_title": "李 대통령 “김용 재판만 ‘구글 타임라인’ 배척, 해괴한 결론”...정말일까",
-    "date": "2026-07-17 21:39"
+    "date": "2026-07-17 21:39",
+    "reach": 121,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   }
 ]
