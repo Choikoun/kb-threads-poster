@@ -106,7 +106,7 @@ def generate(title, summary):
     prompt = PROMPT.format(title=title, summary=summary)
     for attempt in range(3):
         try:
-            resp = client.models.generate_content(model='gemini-2.5-flash', contents=prompt)
+            resp = client.models.generate_content(model='gemini-flash-latest', contents=prompt)
             m = re.search(r'\{[\s\S]*\}', resp.text.strip())
             if m:
                 return json.loads(m.group())
