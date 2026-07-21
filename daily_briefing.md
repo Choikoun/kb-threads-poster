@@ -1,42 +1,42 @@
 # 📰 일일 브리핑
-*2026-07-21 08:10 KST*
+*2026-07-22 08:06 KST*
 
 ---
 
 ## 🔖 보험 동향
+- [금융보안원, AI 시대 사이버 위협 대응 전략 특강](https://www.insnews.co.kr/news/articleView.html?idxno=91968)
+- [보험 가입·청구도 ‘공공 마이데이터’… 가족관계증명서 제출 없어진다](https://www.insnews.co.kr/news/articleView.html?idxno=91961)
+- [교보생명, ‘건강검진 예약 서비스’ 출시… “보험 넘어 건강 파트너로”](https://www.insnews.co.kr/news/articleView.html?idxno=91957)
 - [금융보안원, 대학(원)생 대상 ‘2026 금융보안 AI 아카데미 캠프’ 개최](https://www.insnews.co.kr/news/articleView.html?idxno=91947)
 - [해수부, 어업인 보험금 청구 디지털화… 보험금 지급기간 절반 단축](https://www.insnews.co.kr/news/articleView.html?idxno=91946)
-- [휴가철 보험, 가입보다 ‘보장 확인’이 먼저](https://www.insnews.co.kr/news/articleView.html?idxno=91938)
-- [고금리, 보험 자본적정성·은행 수익성엔 우호적… 건전성 격차는 확대](https://www.insnews.co.kr/news/articleView.html?idxno=91931)
-- [[THE 23rd CMF] 국제보험정예원탁대회(CMF) 성료… 보험 신업태 구축 논의](https://www.insnews.co.kr/news/articleView.html?idxno=91925)
 
 ## 💰 국내 경제·금융
-- ["KAI, 무장헬기 부품 결함으로 공급 차질…이익 감소 불가피"-키움](https://www.hankyung.com/article/2026072156456)
-- ["KT&G, 담배 중심 호실적·배당 강화 기대…목표가↑"-유안타](https://www.hankyung.com/article/2026072156356)
-- [홍해도 막힌다? 유가·금리 급등…반도체 '저가매수' vs '아직' [김현석의 월스트리트나우]](https://www.hankyung.com/article/202607215604i)
-- ["스튜디오드래곤, 2분기 실적 기대치 웃돌 듯…목표가는 하향"-한국](https://www.hankyung.com/article/2026072156116)
-- [한국 담배 피는 외국인 늘어난다…KT&G도 '호실적'](https://www.hankyung.com/article/202607205104i)
+- [유가 상승에도 반발 매수세 유입…마이크론 12% 반등 [뉴욕증시 브리핑]](https://www.hankyung.com/article/2026072281296)
+- [코스닥 ETF 전부 마이너스…액티브도 전멸](https://www.hankyung.com/article/2026072176291)
+- ["5000억 풀린다더니"…'42% 폭락' 코스닥 개미들 멘붕](https://www.hankyung.com/article/2026072176381)
+- [덕산넵코어스·디티에스, 상장 예비심사 통과](https://www.hankyung.com/article/2026072175561)
+- [고점 대비 40% 급락…'삼천닥' 외치다 거래 실종된 코스닥](https://www.hankyung.com/article/202607217490i)
 
 ## 📈 주식·시장
-- [“IPARK현대산업개발, 2분기 실적 기대치 부합 전망”](https://www.mk.co.kr/news/stock/12102939)
-- [“피 한방울로 암 진단, 이번엔 진짜”…주가 심상찮은 이 기업](https://www.mk.co.kr/news/stock/12102910)
-- [‘160엔 마지노선’ 무너진 일본 … ‘일본판 국민연금’ 카드 꺼냈다](https://www.mk.co.kr/news/stock/12102774)
-- [[속보] 뉴욕증시, 반도체 반등에 3대 주가지수 상승 출발](https://www.mk.co.kr/news/stock/12102833)
-- [“원금 녹아 내린다”…‘ETF 아버지’ 배재규 “비난 하겠지만 지금이라도 멈춰야”](https://www.mk.co.kr/news/economy/12102829)
+- [“한 쪽은 고개 못 든다” … 하이닉스 목표가 185만원 vs 380만원](https://www.mk.co.kr/news/stock/12103493)
+- [디티에스·덕산넵코어스…'중복상장 예외 1호' 나왔다](https://www.mk.co.kr/news/stock/12103671)
+- [오늘의 증시 일정 (7월22일)](https://www.mk.co.kr/news/stock/12103673)
+- [다시 일어선 삼전닉스 … "반도체株 펀더멘털, 살아있다"](https://www.mk.co.kr/news/stock/12103644)
+- [올 상장 2건, 유명무실 코넥스](https://www.mk.co.kr/news/stock/12103642)
 
 ## 🌏 글로벌 경제·정세
-- [[외신 에스프레소]'국민 결제앱' 때린 트럼프…브라질과 통상전쟁 격화](https://www.hankyung.com/article/202607215640i)
-- [샐러드 먹다 7000명 감염…미국 27개 주 양상추 리콜](https://www.hankyung.com/article/2026072053787)
-- [호르무즈 해협서 '쾅'…이란군 "규정 위반한 유조선 2척 폭발"](https://www.hankyung.com/article/2026072053187)
-- [유가 90달러 재돌파…트럼프, 英 버넘에 "북해 유전 뚫자"](https://www.hankyung.com/article/2026072051421)
-- ['다음 타깃은 한국'…공매도 대박 난 '35세 女 암살자' 정체](https://www.hankyung.com/article/2026072051411)
+- [트럼프의 경고…"후티 반군이 홍해 봉쇄하면 미국이 처리"](https://www.hankyung.com/article/2026072280837)
+- [캐나다산 '50%' 관세에…미국 당국자들 "맞춤형 상호주의 조치"](https://www.hankyung.com/article/2026072179147)
+- [美 압류주택 경매 낙찰 받았는데…집 안에서 주인 가족 유해 발견](https://www.hankyung.com/article/2026072178777)
+- ["트럼프, 60개국에 새 관세 부과…한국은 12.5% 유력"](https://www.hankyung.com/article/2026072178097)
+- ["싸다고 중국산 쓰지마라"…美, 무기 제조공정서 中소재 퇴출](https://www.hankyung.com/article/2026072175991)
 
 ## 🔥 팔로업 추천 (300회 이상)
-- 11,681회 [2026-07-20] 어느 제조업 법인 대표, 올해 매출 좀 올랐다고 안심했대.  ⚠️ 근데 ...
-- 6,307회 [2026-07-18] 신입 직원 한 명 더 뽑을까, 고민하던 사장님들.  내년 최저임금, 3....
-- 4,984회 [2026-07-18] 쿠팡 물류창고 화재. 대통령까지 나서 총력 진압을 지시했지.  대부분은 ...
-- 4,070회 [2026-07-19] 내년 반도체 수요가 50% 폭증한다면, 그걸 믿고 지금 증설에 뛰어든 기...
-- 2,260회 [2026-07-20] 어느 중소기업 대표, 회사 매각하려다 거래가 깨졌어.  💡 직원이 무료 ...
+- 15,410회 [2026-07-20] 어느 제조업 법인 대표, 올해 매출 좀 올랐다고 안심했대.  ⚠️ 근데 ...
+- 5,631회 [2026-07-20] 대출 한 번 받으려고 차 타고 왕복 2시간 가던 김 씨가 이제 동네 우체...
+- 4,506회 [2026-07-20] 어느 중소기업 대표, 회사 매각하려다 거래가 깨졌어.  💡 직원이 무료 ...
+- 1,707회 [2026-07-19] 이혼 앞두고 아내 명의로 돌려놨던 재산, 내 거 아니라고 우겨봤자 소용없...
+- 1,339회 [2026-07-20] 오늘 코스닥 시장 폭락으로 결국 매도 사이드카까지 터졌어.  주식창 보다...
 
 ---
 *총 60개 기사 수집됨*
