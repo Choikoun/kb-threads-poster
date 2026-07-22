@@ -1,42 +1,42 @@
 # 📰 일일 브리핑
-*2026-07-22 08:06 KST*
+*2026-07-23 08:13 KST*
 
 ---
 
 ## 🔖 보험 동향
-- [금융보안원, AI 시대 사이버 위협 대응 전략 특강](https://www.insnews.co.kr/news/articleView.html?idxno=91968)
-- [보험 가입·청구도 ‘공공 마이데이터’… 가족관계증명서 제출 없어진다](https://www.insnews.co.kr/news/articleView.html?idxno=91961)
-- [교보생명, ‘건강검진 예약 서비스’ 출시… “보험 넘어 건강 파트너로”](https://www.insnews.co.kr/news/articleView.html?idxno=91957)
-- [금융보안원, 대학(원)생 대상 ‘2026 금융보안 AI 아카데미 캠프’ 개최](https://www.insnews.co.kr/news/articleView.html?idxno=91947)
-- [해수부, 어업인 보험금 청구 디지털화… 보험금 지급기간 절반 단축](https://www.insnews.co.kr/news/articleView.html?idxno=91946)
+- [교차모집 보험설계사도 고용보험 가입 가능해져](https://www.insnews.co.kr/news/articleView.html?idxno=92003)
+- [글로벌금융판매, 금천구 ‘G밸리 대환장 김장 페스타’ 후원](https://www.insnews.co.kr/news/articleView.html?idxno=91998)
+- [금융보안원, 청소년 불법도박 근절 캠페인 동참](https://www.insnews.co.kr/news/articleView.html?idxno=91984)
+- [KB국민은행, 주요 예적금 금리 최대 연 0.30%p 인상](https://www.insnews.co.kr/news/articleView.html?idxno=91983)
+- [삼성생명, 7월 다이렉트 보험 ‘이벤트’ 실시](https://www.insnews.co.kr/news/articleView.html?idxno=91981)
 
 ## 💰 국내 경제·금융
-- [유가 상승에도 반발 매수세 유입…마이크론 12% 반등 [뉴욕증시 브리핑]](https://www.hankyung.com/article/2026072281296)
-- [코스닥 ETF 전부 마이너스…액티브도 전멸](https://www.hankyung.com/article/2026072176291)
-- ["5000억 풀린다더니"…'42% 폭락' 코스닥 개미들 멘붕](https://www.hankyung.com/article/2026072176381)
-- [덕산넵코어스·디티에스, 상장 예비심사 통과](https://www.hankyung.com/article/2026072175561)
-- [고점 대비 40% 급락…'삼천닥' 외치다 거래 실종된 코스닥](https://www.hankyung.com/article/202607217490i)
+- [역대급 실적에도 주가 하락…구글 모회사 알파벳의 '속사정'](https://www.hankyung.com/article/202607230496i)
+- [트럼프 무역법 301조 부과 임박…국내 증시 영향은 [분석+]](https://www.hankyung.com/article/2026072203856)
+- [테슬라, 2분기 매출 26%↑…사상 최대 실적에도 영업이익은 반토막](https://www.hankyung.com/article/202607230480i)
+- [고유가·고금리 속 알파벳 실적 시험대…AI 투자 경쟁은 이어진다 [빈난새의 개장전요것만]](https://www.hankyung.com/article/202607220422i)
+- [김민국 VIP운용 대표 "대주주 건강 이상설에 주가 상승, 제도로 끝내야"](https://www.hankyung.com/article/2026072294586)
 
 ## 📈 주식·시장
-- [“한 쪽은 고개 못 든다” … 하이닉스 목표가 185만원 vs 380만원](https://www.mk.co.kr/news/stock/12103493)
-- [디티에스·덕산넵코어스…'중복상장 예외 1호' 나왔다](https://www.mk.co.kr/news/stock/12103671)
-- [오늘의 증시 일정 (7월22일)](https://www.mk.co.kr/news/stock/12103673)
-- [다시 일어선 삼전닉스 … "반도체株 펀더멘털, 살아있다"](https://www.mk.co.kr/news/stock/12103644)
-- [올 상장 2건, 유명무실 코넥스](https://www.mk.co.kr/news/stock/12103642)
+- [“삼성전자, 구글 AI 최대 수혜주…3개 분기 연속 어닝 서프라이즈 기대”](https://www.mk.co.kr/news/stock/12105059)
+- [뉴욕증시 반등 하루만에 약세...미국, 11일 연속 공습에 유가 $95 터치도 [월가월부]](https://www.mk.co.kr/news/stock/12104991)
+- [ETF의 아버지가 삼닉 레버리지·곱버스 투자 말린 까닭은](https://www.mk.co.kr/news/stock/12104471)
+- [“깜박이 켠 외국인 따라 들어가야 하나?”…사흘간 3.5조 순매수, 알파벳 실적이 분수령](https://www.mk.co.kr/news/stock/12104739)
+- [아이티엠반도체, 200억 원 규모 전환사채 발행](https://www.mk.co.kr/news/stock/12104737)
 
 ## 🌏 글로벌 경제·정세
-- [트럼프의 경고…"후티 반군이 홍해 봉쇄하면 미국이 처리"](https://www.hankyung.com/article/2026072280837)
-- [캐나다산 '50%' 관세에…미국 당국자들 "맞춤형 상호주의 조치"](https://www.hankyung.com/article/2026072179147)
-- [美 압류주택 경매 낙찰 받았는데…집 안에서 주인 가족 유해 발견](https://www.hankyung.com/article/2026072178777)
-- ["트럼프, 60개국에 새 관세 부과…한국은 12.5% 유력"](https://www.hankyung.com/article/2026072178097)
-- ["싸다고 중국산 쓰지마라"…美, 무기 제조공정서 中소재 퇴출](https://www.hankyung.com/article/2026072175991)
+- ["美, 며칠 내 이란 '곡괭이산 공습' 통보"…이스라엘 최고 대비태세](https://www.hankyung.com/article/2026072305347)
+- ['굳히기' 들어간 트럼프 관세체제…15% 상한선 지킬지가 관건 [이상은의 워싱턴나우]](https://www.hankyung.com/article/202607230520i)
+- [美 "미국-사우디, 평화적 원자력 협력 협정 체결"](https://www.hankyung.com/article/2026072305117)
+- [젠데이아 '금귀걸이', 이란 고대 유물이었다…고고학계 '발칵'](https://www.hankyung.com/article/2026072204207)
+- [이란 혁명수비대 "요르단 美기지 타격…미군 사상자 발생"](https://www.hankyung.com/article/2026072204097)
 
 ## 🔥 팔로업 추천 (300회 이상)
-- 15,410회 [2026-07-20] 어느 제조업 법인 대표, 올해 매출 좀 올랐다고 안심했대.  ⚠️ 근데 ...
-- 5,631회 [2026-07-20] 대출 한 번 받으려고 차 타고 왕복 2시간 가던 김 씨가 이제 동네 우체...
-- 4,506회 [2026-07-20] 어느 중소기업 대표, 회사 매각하려다 거래가 깨졌어.  💡 직원이 무료 ...
-- 1,707회 [2026-07-19] 이혼 앞두고 아내 명의로 돌려놨던 재산, 내 거 아니라고 우겨봤자 소용없...
-- 1,339회 [2026-07-20] 오늘 코스닥 시장 폭락으로 결국 매도 사이드카까지 터졌어.  주식창 보다...
+- 5,765회 [2026-07-20] 대출 한 번 받으려고 차 타고 왕복 2시간 가던 김 씨가 이제 동네 우체...
+- 4,509회 [2026-07-20] 어느 중소기업 대표, 회사 매각하려다 거래가 깨졌어.  💡 직원이 무료 ...
+- 1,666회 [2026-07-21] 사이버 렉카한테 협박당하면 예전엔 벌금 몇백으로 끝났지?  법원이 이번에...
+- 1,363회 [2026-07-22] 아파트 1만 2천 가구 들어선다던 청약 자리가 한순간에 사라졌어. 💡  ...
+- 1,105회 [2026-07-21] 한국 주식 계속 들고 가야 하나 고민하는 사람들이 엄청 늘었어.  근데 ...
 
 ---
 *총 60개 기사 수집됨*
