@@ -1,42 +1,42 @@
 # 📰 일일 브리핑
-*2026-07-26 08:05 KST*
+*2026-07-27 08:07 KST*
 
 ---
 
 ## 🔖 보험 동향
-- [금융연수원, 전 국민 대상 ‘AI 기본교육’ 콘텐츠 무료 제공](https://www.insnews.co.kr/news/articleView.html?idxno=92046)
-- [하나금융지주 “자회사 하나손해보험 주식 2천억원에 추가취득”](https://www.insnews.co.kr/news/articleView.html?idxno=92041)
-- [삼성화재, 모니모 고객 위한 ‘운전자보험’ 선보여](https://www.insnews.co.kr/news/articleView.html?idxno=92038)
-- [생명보험재단, 자살예방 상담 콘텐츠 ‘SOS고민말자’ 선보여](https://www.insnews.co.kr/news/articleView.html?idxno=92031)
-- [KB손보, ‘KB해외여행보험’ 개정… “고객 니즈 반영”](https://www.insnews.co.kr/news/articleView.html?idxno=92027)
+- [[THE 23rd CMF — 참관기] 보험의 가치를 다시 만나다](https://www.insnews.co.kr/news/articleView.html?idxno=92037)
+- [[이하진의 보험을 워딩하다] 열정(熱情)과 냉정(冷靜)사이](https://www.insnews.co.kr/news/articleView.html?idxno=92024)
+- [제23회 국제보험정예원탁대회(CMF)](https://www.insnews.co.kr/news/articleView.html?idxno=92016)
+- [수출 역대 최대에 커지는 ‘미수금 위험’, 단기수출보험 필요성 커져](https://www.insnews.co.kr/news/articleView.html?idxno=92013)
+- [반복된 쿠팡 화재사고, 시설 안전기준·보험체계 손질해야](https://www.insnews.co.kr/news/articleView.html?idxno=92010)
 
 ## 💰 국내 경제·금융
-- [메모리 부족은 시작일 뿐…AI 시대 돈이 향하는 곳은 [빈난새의 빈틈없이월가]](https://www.hankyung.com/article/202607255242i)
-- ['전쟁통에 남몰래 웃었다'…주식 계좌 수익률 40%에 '화들짝' [분석+]](https://www.hankyung.com/article/2026072446326)
-- [바닥까지 내려간 5개 주요 종목…저점 매수 해볼까](https://www.hankyung.com/article/202607255708i)
-- [삼전닉스 30% 빠질 때 웃었다…조용히 오른 '효자 종목' 정체 [이수의 ETF줌인]](https://www.hankyung.com/article/2026072442996)
-- [AI랠리 최대 수혜주라더니…'반토막' 이수페타시스, 반등은 언제쯤?](https://www.hankyung.com/article/202607243994i)
+- ['몸값 125조' 메모리 공룡 CXMT, 中 증시 상장…삼전닉스에 도전장](https://www.hankyung.com/article/2026072667517)
+- [국제유가 고공행진에…원유·신재생에너지 '들썩'](https://www.hankyung.com/article/2026072665381)
+- [연금 투자도 주식형 ETF…2060은 美지수·70대는 AI 베팅](https://www.hankyung.com/article/2026072665251)
+- [환율·채권, 원·달러 1400원대 중후반 유지할듯](https://www.hankyung.com/article/2026072664951)
+- [뉴욕·상하이 증시, 빅테크 실적·FOMC 회의에 촉각](https://www.hankyung.com/article/2026072664941)
 
 ## 📈 주식·시장
-- [한국선 191만원, 미국에서는 290만원…똑같은 하이닉스인데 가격 차이 왜?](https://www.mk.co.kr/news/stock/12107470)
-- [“60만전자·420만닉스 시대 온다”… 전문가들이 꼽은 역대급 매수 기회 ‘이것’](https://www.mk.co.kr/news/economy/12107415)
-- [李 대통령 “요즘 주가 조정” 말하자…젠슨 황 “곧 다시 오를 겁니다”](https://www.mk.co.kr/news/economy/12107275)
-- [젠슨 황 “AI데이터센터 인허가 빨리 해달라”…이 대통령 “신속한 처리 중요”](https://www.mk.co.kr/news/business/12107271)
-- [“국장 못 믿겠다” 해외로 쏠린 개미…이달 순매수 4배 폭증](https://www.mk.co.kr/news/economy/12107229)
+- [떨어진 게 얼만데 “AI 아직 고점 아니다”…증권사 전망, 믿어도 되나요](https://www.mk.co.kr/news/stock/12107924)
+- [“이건 비정상”…WSJ, SK하이닉스 ADR 괴리에 ‘AI 과열’ 경고](https://www.mk.co.kr/news/stock/12107916)
+- [재주는 AI가 부리고 돈은 OO으로 번다 … 中의 숨겨진 야심 ‘AI 일대일로’](https://www.mk.co.kr/news/stock/12107631)
+- [“하이닉스도 스퀘어도 아니다”…요즘 ‘SK’ 대세 종목은 친환경에너지](https://www.mk.co.kr/news/stock/12107858)
+- [아마존·구글도 멈추게 할 ‘이 회사’…韓 ETF로 쉽게 담으세요 [이번주 찜할 ETF]](https://www.mk.co.kr/news/stock/12107816)
 
 ## 🌏 글로벌 경제·정세
-- [미군 "대이란 해상 봉쇄 유지…상선 12척 항로 변경·2척 무력화"](https://www.hankyung.com/article/2026072659537)
-- [25연패에도 포기 안했다…전쟁터에 희망 쏜 농구팀의 기적](https://www.hankyung.com/article/202607255238i)
-- ["전쟁 끝나면 늦어"…큰손들 군침 흘리는 861조 사업 뭐길래](https://www.hankyung.com/article/2026072449231)
-- [관세 정책으로 19.2조弗 해외투자 유치…트럼프 "유례 없는 일"](https://www.hankyung.com/article/2026072553007)
-- [미국·중국은 쓰는데…프랑스, 테슬라 FSD '시기상조'](https://www.hankyung.com/article/2026072451467)
+- [이란 외무부 "美와 메시지 교환 지속"](https://www.hankyung.com/article/2026072768316)
+- [머스크 “AI, 5년 내 인류 전체 지능 넘어선다"](https://www.hankyung.com/article/202607266722i)
+- [미국 공습 멈추자 이란도 보복 중단…협상 재개되나](https://www.hankyung.com/article/2026072667337)
+- [남중국해서 베트남 화물선·어선 잇단 침몰…20명 실종](https://www.hankyung.com/article/2026072666857)
+- ['극한 더위' 기업 실적도 가른다](https://www.hankyung.com/article/2026072666491)
 
 ## 🔥 팔로업 추천 (300회 이상)
-- 38,633회 [2026-07-23] 내년 공무원 임금 3.4~3.9% 인상 합의.  대부분은 공무원들만의 얘...
-- 6,288회 [2026-07-25] 600억 원 벌고도 빚더미에 앉은 테니스 전설, 원인은 믿었던 가족에게 ...
-- 5,662회 [2026-07-24] 사업하다 통장 압류당하면, 내 돈 전부 묶인다고 생각하지?  ⚠️ 한 달...
-- 4,309회 [2026-07-25] 네이버가 글로벌 빅테크로부터 14조 6,000억 원 투자를 받아냈어.  ...
-- 3,661회 [2026-07-24] 어떤 투자자, 미래 비전만 믿고 대규모 자금을 넣었어.  ⚠️ 하루 만에...
+- 13,240회 [2026-07-25] 600억 원 벌고도 빚더미에 앉은 테니스 전설, 원인은 믿었던 가족에게 ...
+- 5,010회 [2026-07-25] 네이버가 글로벌 빅테크로부터 14조 6,000억 원 투자를 받아냈어.  ...
+- 2,967회 [2026-07-26] 이번 주 제일 많이 본 글이야.  내년 공무원 임금 3.4~3.9% 인상...
+- 2,484회 [2026-07-24] 10년 차 부부 이혼 소송에서 재산 수천억 원이 갈리는 진짜 이유가 있어...
+- 1,977회 [2026-07-25] 마라톤 대회 하나에 100만 명이 몰리는 시대가 왔어.  요즘은 명품 가...
 
 ---
 *총 55개 기사 수집됨*
