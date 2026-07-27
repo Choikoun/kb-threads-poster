@@ -96,7 +96,7 @@ JSON만 출력:
     for attempt in range(3):
         try:
             resp = client.models.generate_content(
-                model='gemini-flash-latest',
+                model='gemini-flash-lite-latest',
                 contents=prompt
             )
             raw = resp.text.strip()
