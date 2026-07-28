@@ -54,12 +54,19 @@ def generate_content(articles, category='business', platform='threads'):
         if is_ig else
         '자연스러운 구어체 반말. "~했습니다" 금지 - "~했대", "~라는 거야" 식.'
     )
-    followup_tone = '자연스러우면) 팔로우 유도 한 줄. 존댓말.' if is_ig else '자연스러우면) 팔로우 유도 한 줄. 반말.'
+    followup_tone = ('자연스러우면) 팔로우 유도 한 줄. 존댓말. 단 "놓치다/놓칠/놓치지/기회/혜택" 계열 단어는 이 줄에 절대 금지 — "다음 이슈도 정리해드릴게요, 팔로우해두세요" 같은 담백한 표현만.'
+                     if is_ig else
+                     '자연스러우면) 팔로우 유도 한 줄. 반말. 단 "놓치다/놓칠/놓치지/기회/혜택" 계열 단어는 이 줄에 절대 금지 — "이런 얘기 계속 보려면 팔로우해놔" 같은 담백한 표현만.')
     comment_tone = '마지막 댓글은 존댓말 질문으로 마무리 가능.' if is_ig else '마지막 댓글은 반말 질문으로 마무리 가능.'
 
     prompt = f"""너는 한국 {'Instagram' if is_ig else 'Threads'}에서 활동하는 법인·세금·자산 설계 전문가야.
 아래 뉴스 중 {cat['name']} 독자에게 가장 임팩트 있는 것 하나 골라서,
 짧은 세로형 릴스 영상(10~13초) + 캡션 형태의 포스트를 작성해줘.
+
+[역할 분담 - 가장 중요한 원칙]
+영상(내레이션)은 호기심 유발까지만, 실제 알맹이는 캡션에 담는다.
+영상만 보면 "그래서 뭔데?"가 남고, 캡션을 열어야 답이 나오는 구조.
+캡션까지 읽은 사람이 "저장해둘 가치가 있다"고 느낄 정보 밀도가 목표다.
 
 [영상 형식]
 - 총 10~13초. 장면(컷) 3~4개가 내레이션 박자에 맞춰 전환되는 세로형 영상.
@@ -111,21 +118,24 @@ def generate_content(articles, category='business', platform='threads'):
   1번 장면은 훅이 대신하므로 text를 빈 문자열로.
 장면 순서 = 내레이션 전개 순서. 장면끼리 배경·구도가 겹치지 않게.
 
-[내레이션 작성 - narration]
+[내레이션 작성 - narration] — 호기심 유발 전담. 답을 주지 않는다.
 영상에서 음성(TTS)으로 읽힐 한국어 대본.
 - {narration_tone} 글머리 기호(📌 등)나 이모지 절대 사용 금지 - 음성으로만 들린다.
 - 분량: 50~80자 (TTS 기준 초당 5~6자, 10~13초 분량). 반드시 이 안에서 끝낸다.
 - 첫 문장은 반드시 짧은 질문이나 충격 문장 (2초 안에 발화 끝나는 길이) — 여기서 못 잡으면 스와이프당한다.
-- 뉴스 앵커체는 피하되 {tone_name} 유지. 숫자나 핵심 사실은 명확하게 말로 풀어 쓴다 (예: "1.8조" → "1조 8천억원").
+- 반전·문제 상황·충격 숫자 하나까지만 던지고 끝낸다. 이유·계산·결론·대응법은 절대 말하지 않는다 — 그건 캡션 몫.
+- 마지막 문장은 결론 대신 궁금증을 남기거나 캡션으로 안내한다 (예: "이유는 캡션에 정리해뒀습니다", "누가 이득인지는 캡션에서 확인하세요" — 매번 같은 문구 반복 금지, 내용에 맞게 변형).
+- 뉴스 앵커체는 피하되 {tone_name} 유지. 숫자는 명확하게 말로 풀어 쓴다 (예: "1.8조" → "1조 8천억원").
 
-[캡션 구조 - caption]
-1. 훅 1~2줄 (영상/헤드라인과 이어지는 맥락, 반전이나 의문 제기)
+[캡션 구조 - caption] — 실제 알맹이 전담. 디테일하게 풀어준다.
+1. 훅 1~2줄 (영상이 던진 질문을 받아서 "지금부터 답을 준다"는 신호)
 ↵빈줄
-2. 📌 으로 시작하는 불릿 3개 - 핵심 사실/원인을 짧게 한 줄씩
+2. 영상이 안 알려준 답을 실제로 푼다: 구체적 숫자·조건·계산·배경 메커니즘을 포함해 불릿(📌) 4~6개 또는 짧은 단락들로. 뉴스 요약 수준이 아니라 "이 캡션만 읽어도 남한테 설명할 수 있다" 수준까지.
 ↵빈줄
-3. 핵심 숫자나 결론을 강조하는 한 줄
+3. 핵심 결론 한 줄 — 독자 입장에서 "그래서 나한테 어떤 의미인지"
 ↵빈줄
 4. ({followup_tone}
+- 분량은 기존보다 길어도 된다 (10~15줄 수준까지 OK). 단 한 줄 한 줄이 정보여야 하고, 뻔한 채움 문장은 금지.
 
 [댓글 구조]
 1~2개. 추가 맥락이나 반전 포인트. {comment_tone}
@@ -150,10 +160,31 @@ JSON만 출력:
             raw = resp.text.strip()
             m = re.search(r'\{[\s\S]*\}', raw)
             if m:
-                return json.loads(m.group())
+                result = json.loads(m.group())
+                result['caption'] = _sanitize_follow_cta(result.get('caption', ''), is_ig)
+                result['comments'] = [_sanitize_follow_cta(c, is_ig) for c in result.get('comments', [])]
+                return result
         except Exception as e:
             print(f'Gemini 텍스트 생성 오류 (시도 {attempt+1}/3): {e}')
     return None
+
+
+# Meta 스캠 분류기가 "금융 콘텐츠 + 긴급성/손실회피 팔로우 유도" 조합을 삭제함(2026-07-06 실제 삭제).
+# 프롬프트 금지만으로는 lite 모델이 반복 위반해 코드 레벨에서 강제 치환.
+_CTA_BANNED = re.compile(r'놓치|놓칠|기회|혜택|지금 아니면')
+
+
+def _sanitize_follow_cta(text, is_ig):
+    if not text:
+        return text
+    safe = '다음 이슈도 정리해드릴게요. 팔로우해두세요.' if is_ig else '이런 얘기 계속 보려면 팔로우해놔.'
+    lines = []
+    for ln in text.split('\n'):
+        if '팔로우' in ln and _CTA_BANNED.search(ln):
+            print(f'  [CTA 치환] 금지 표현 감지: {ln.strip()[:50]}')
+            ln = safe
+        lines.append(ln)
+    return '\n'.join(lines)
 
 
 def get_visual_source():
