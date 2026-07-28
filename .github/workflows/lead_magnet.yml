@@ -1,8 +1,9 @@
 name: 리드 마그넷 체크리스트 안내 (일 11시)
 
 on:
-  schedule:
-    - cron: '0 2 * * 0'   # 매주 일요일 11:00 KST 무렵
+  # 보류(2026-07-28): DM 발송 대응은 나중에 하기로 — 사용자가 준비되면 아래 schedule 주석 해제
+  # schedule:
+  #   - cron: '0 2 * * 0'   # 매주 일요일 11:00 KST 무렵
   workflow_dispatch:
 
 concurrency:
