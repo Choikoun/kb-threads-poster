@@ -424,14 +424,40 @@ POINT_FORMULA = '''[포인트 재료 - 최소 하나는 반드시, 조합·순�
 '''
 
 
+FORMAT_POOL_FILE = 'format_pool.json'
+
+
+def _load_format_pool():
+    """weekly_analysis가 매주 발명하는 동적 포맷 풀. {이름: {structure, categories, ...}} (active만)"""
+    if os.path.exists(FORMAT_POOL_FILE):
+        try:
+            with open(FORMAT_POOL_FILE, encoding='utf-8') as f:
+                pool = json.load(f)
+            return {name: fmt for name, fmt in pool.get('formats', {}).items()
+                    if fmt.get('status') == 'active'}
+        except Exception:
+            pass
+    return {}
+
+
 def _choose_format(category, variants):
+    # 동적 포맷 풀에서 이 카테고리에 적용 가능한 포맷을 후보에 합류
+    pool = _load_format_pool()
+    dyn = [name for name, fmt in pool.items()
+           if category in fmt.get('categories', []) and name not in variants]
+    variants = list(variants) + dyn
+
     weights_file = 'format_weights.json'
     if os.path.exists(weights_file):
         try:
             with open(weights_file, encoding='utf-8') as f:
                 weights = json.load(f)
             cat_weights = weights.get(category, {})
-            w = [max(cat_weights.get(v, 1.0), 0.1) for v in variants]
+            # 데이터 없는 신규 포맷은 기존 포맷 평균을 기본 가중치로 — 탐색 기회를 공정하게 부여
+            # (기존엔 기본 1.0이라 수천 단위 가중치에 밀려 신규 포맷이 사실상 선택되지 않는 버그)
+            known = [cat_weights[v] for v in variants if v in cat_weights]
+            default_w = (sum(known) / len(known)) if known else 1.0
+            w = [max(cat_weights.get(v, default_w), 0.1) for v in variants]
             return random.choices(variants, weights=w, k=1)[0]
         except Exception:
             pass
@@ -452,8 +478,13 @@ def generate_content(articles, category='economy', used_titles=None):
         used_block = f"\n[최근 3일 포스팅한 주제 - 절대 금지]\n{titles_str}\n위와 같은 사건·판결·기관 또는 같은 세금 항목(상속세·법인세·종부세 등)을 다룬 뉴스 금지. 완전히 다른 주제를 골라.\n"
 
     chosen_variant = _choose_format(category, cat.get('format_variants', ['반전형']))
-    structure_block = FORMAT_STRUCTURES.get(chosen_variant, FORMAT_STRUCTURES['반전형'])
-    point_formula_block = '' if chosen_variant in ('담백형', '번호형', '한줄형', '스토리형') else POINT_FORMULA
+    _pool = _load_format_pool()
+    structure_block = (FORMAT_STRUCTURES.get(chosen_variant)
+                       or _pool.get(chosen_variant, {}).get('structure')
+                       or FORMAT_STRUCTURES['반전형'])
+    # 동적 포맷은 지시문이 자체 완결이므로 포인트 공식 미적용
+    point_formula_block = '' if (chosen_variant in ('담백형', '번호형', '한줄형', '스토리형')
+                                 or chosen_variant in _pool) else POINT_FORMULA
 
     source_hint_block = ''
     if os.path.exists('source_weights.json'):

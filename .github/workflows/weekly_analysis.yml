@@ -32,7 +32,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config merge.jsonlog.driver "python merge_json_log.py %O %A %B"
-          git add reblog_candidates.json follower_history.json format_weights.json content_log.json instagram_log.json length_weights.json source_weights.json hook_weights.json slot_config.json 2>/dev/null || true
+          git add format_pool.json reblog_candidates.json follower_history.json format_weights.json content_log.json instagram_log.json length_weights.json source_weights.json hook_weights.json slot_config.json 2>/dev/null || true
           git diff --staged --quiet || git commit -m "주간 분석: 재발행 후보 갱신 ($(TZ=Asia/Seoul date +'%Y-%m-%d'))"
           for attempt in 1 2 3 4 5; do
             git pull --rebase origin main && git push && break

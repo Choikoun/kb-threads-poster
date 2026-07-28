@@ -12,7 +12,128 @@ BASE = "https://graph.threads.net/v1.0"
 REBLOG_FILE = "reblog_candidates.json"
 CONTENT_LOG_FILE = "content_log.json"
 FOLLOWER_HISTORY_FILE = "follower_history.json"
+FORMAT_POOL_FILE = "format_pool.json"
 KST = timezone(timedelta(hours=9))
+
+# news_auto_poster.py에 하드코딩된 정적 포맷 (이름 충돌 방지용 — import하면 feedparser 등 의존성이 끌려와 목록만 유지)
+STATIC_FORMATS = ['반전형', '사례형', '담백형', '감정인용형', '번호형', '스토리형', '한줄형']
+MAX_ACTIVE_DYNAMIC = 3  # 동시 활성 동적 포맷 상한
+
+
+def refresh_format_pool(groups):
+    """매주 새 포맷 1개 발명 + 저성과 포맷 은퇴 → format_pool.json.
+    고정 포맷 풀은 돌려쓰다 보면 결국 또 획일화된다는 사용자 지적(2026-07-27)에 따른 자동 순환 장치.
+    news_auto_poster._choose_format가 이 풀의 active 포맷을 로테이션에 합류시킨다."""
+    gemini_key = os.environ.get('GEMINI_API_KEY')
+    if not gemini_key:
+        return
+
+    pool = {'formats': {}}
+    if os.path.exists(FORMAT_POOL_FILE):
+        try:
+            with open(FORMAT_POOL_FILE, encoding='utf-8') as f:
+                pool = json.load(f)
+        except Exception:
+            pass
+    pool.setdefault('formats', {})
+
+    print(f"\n🧬 포맷 풀 갱신 (동적 포맷 발명·은퇴)")
+
+    # 1) 이번 주 데이터로 동적 포맷 성과 집계
+    dyn_stats = {}
+    for (cat, variant), items in groups.items():
+        if variant in pool['formats']:
+            s = dyn_stats.setdefault(variant, {'views': 0, 'n': 0})
+            s['views'] += sum(i['views'] for i in items)
+            s['n'] += len(items)
+    all_views = [i['views'] for items in groups.values() for i in items]
+    overall_avg = (sum(all_views) / len(all_views)) if all_views else 0
+
+    # 2) 성과 기반 은퇴: 5건 이상 게시됐는데 전체 평균의 35% 미만
+    for name, s in dyn_stats.items():
+        fmt = pool['formats'].get(name)
+        if fmt and fmt.get('status') == 'active' and s['n'] >= 5 and overall_avg > 0:
+            avg = s['views'] / s['n']
+            if avg < overall_avg * 0.35:
+                fmt['status'] = 'retired'
+                fmt['retired'] = datetime.now(KST).strftime('%Y-%m-%d')
+                fmt['retired_reason'] = f"{s['n']}건 평균 {avg:,.0f}회 — 전체 평균({overall_avg:,.0f})의 {avg/overall_avg*100:.0f}%"
+                print(f"  📉 은퇴: {name} ({fmt['retired_reason']})")
+
+    # 3) 새 포맷 발명 (Gemini)
+    active = {n: f for n, f in pool['formats'].items() if f.get('status') == 'active'}
+    existing_names = STATIC_FORMATS + list(pool['formats'].keys())
+    active_desc = '\n'.join(f"- {n}: {f.get('why', '')}" for n, f in active.items()) or '(없음)'
+    top_lines = []
+    for (cat, variant), items in sorted(groups.items(), key=lambda kv: -max(i['views'] for i in kv[1]))[:5]:
+        best = max(items, key=lambda i: i['views'])
+        top_lines.append(f"- [{variant}] {best['views']:,}회: {best['text'][:60]}")
+
+    prompt = f"""너는 한국 Threads에서 법인·세금·자산 설계 전문가 계정의 콘텐츠 포맷 디자이너야.
+이 계정은 뉴스 기반 텍스트 포스팅을 하루 수차례 발행하는데, 포맷이 반복되면 독자가 지루해하므로 매주 새 포맷을 하나씩 로테이션에 투입한다.
+
+[이미 존재하는 포맷 이름 - 이름과 구조 모두 겹치면 안 됨]
+{', '.join(existing_names)}
+(반전형=통념 뒤집기, 사례형=인물 사례, 담백형=이슈 전달+소감, 감정인용형=1인칭 속마음 인용, 번호형=번호 리스트, 스토리형=시간순 미니 서사, 한줄형=1~3줄 초단문)
+
+[현재 활성 동적 포맷]
+{active_desc}
+
+[이번 주 성과 참고 - 어떤 글이 터졌는지]
+{chr(10).join(top_lines) if top_lines else '(데이터 없음)'}
+
+위와 구조적으로 확실히 다른, 스크롤을 멈추게 할 새 포맷 1개를 발명해라.
+- Threads는 텍스트 네이티브 플랫폼 — 시각 장치 없이 문장 배치·리듬·화법만으로 주목을 끌어야 함
+- 참고할 만한 방향(이 중에서 골라도 되고 완전히 새로 만들어도 됨): 대화 재연(두 사람 대화 인용), 타임라인형(연도·날짜 나열로 변화 보여주기), 체크리스트 아닌 오답노트형(틀린 통념을 X표로), 숫자 대비형(두 숫자만 극명하게 대비), 역발상 제목형(모두가 A라 할 때 B라고 첫 줄에 선언), 편지형, 실황 중계형
+- structure는 다른 작가가 그대로 따라 쓸 수 있는 지시문 3~6줄로 (기존 포맷 지시문처럼 "1. ~ / 2. ~" 또는 서술형)
+- 반말·상담유도 금지·이모지 절약 같은 계정 규칙은 시스템이 따로 강제하니 구조 설계에만 집중
+
+JSON만 출력:
+{{"name": "한글 2~4자+형 (기존 이름 금지)", "structure": "작성 지시문", "categories": ["business","economy","insurance","policy","government" 중 어울리는 것들], "why": "왜 주목을 끄는지 한 줄"}}"""
+
+    try:
+        client = genai.Client(api_key=gemini_key)
+        resp = client.models.generate_content(model='gemini-flash-lite-latest', contents=prompt)
+        m = re.search(r'\{[\s\S]*\}', resp.text.strip())
+        new_fmt = json.loads(m.group(), strict=False) if m else None
+    except Exception as e:
+        print(f'  포맷 발명 실패: {e}')
+        new_fmt = None
+
+    valid_cats = {'business', 'economy', 'insurance', 'policy', 'government', 'trend'}
+    if new_fmt:
+        name = (new_fmt.get('name') or '').strip()
+        structure = (new_fmt.get('structure') or '').strip()
+        cats = [c for c in (new_fmt.get('categories') or []) if c in valid_cats]
+        if name and structure and cats and name not in existing_names:
+            pool['formats'][name] = {
+                'structure': structure,
+                'categories': cats,
+                'why': (new_fmt.get('why') or '').strip(),
+                'created': datetime.now(KST).strftime('%Y-%m-%d'),
+                'status': 'active',
+            }
+            print(f"  🆕 신규 포맷: {name} → {', '.join(cats)}")
+            print(f"     {pool['formats'][name]['why']}")
+        else:
+            print(f"  신규 포맷 검증 실패 (이름 중복/필드 누락) — 이번 주는 추가 없음")
+
+    # 4) 활성 상한 초과 시 가장 오래된 것부터 은퇴 (성과 데이터 있는 저성과 우선)
+    active = {n: f for n, f in pool['formats'].items() if f.get('status') == 'active'}
+    while len(active) > MAX_ACTIVE_DYNAMIC:
+        def _avg(nm):
+            s = dyn_stats.get(nm)
+            return (s['views'] / s['n']) if s and s['n'] else float('inf')
+        victim = min(active, key=lambda nm: (_avg(nm), active[nm].get('created', '')))
+        pool['formats'][victim]['status'] = 'retired'
+        pool['formats'][victim]['retired'] = datetime.now(KST).strftime('%Y-%m-%d')
+        pool['formats'][victim].setdefault('retired_reason', '활성 상한 초과 — 로테이션 자리 확보')
+        print(f"  📉 은퇴(상한 초과): {victim}")
+        active.pop(victim)
+
+    with open(FORMAT_POOL_FILE, 'w', encoding='utf-8') as f:
+        json.dump(pool, f, ensure_ascii=False, indent=2)
+    print(f"  → {FORMAT_POOL_FILE} 저장 (활성 동적 포맷 {len(active)}개)")
 
 
 def load_content_log():
@@ -227,6 +348,7 @@ def run_analysis():
         with open('format_weights.json', 'w', encoding='utf-8') as f:
             json.dump(format_weights, f, ensure_ascii=False, indent=2)
         print(f"  → format_weights.json 업데이트 완료")
+        refresh_format_pool(groups)
 
     # 소스별 성과 분석
     source_groups = {}
