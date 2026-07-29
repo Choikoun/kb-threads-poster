@@ -549,12 +549,19 @@ def run_analysis():
             rate = r['replies'] / r['views'] * 100
             print(f'  {rate:.2f}% | 조회 {r["views"]:,} | 댓글 {r["replies"]} | {r["text"][:30]}...')
 
-    # 재발행 후보 (조회수 300 이상)
+    # 재발행 후보 (조회수 300 이상) — 논란으로 조회수 오른 글은 excluded_posts.json으로 영구 차단
+    excluded_ids = set()
+    if os.path.exists('excluded_posts.json'):
+        try:
+            with open('excluded_posts.json', encoding='utf-8') as f:
+                excluded_ids = {e['id'] for e in json.load(f).get('excluded', [])}
+        except Exception:
+            pass
     reblog = load_reblog()
     existing_ids = {r["id"] for r in reblog}
     new_candidates = []
     for r in results:
-        if r["views"] >= 300 and r["id"] not in existing_ids:
+        if r["views"] >= 300 and r["id"] not in existing_ids and r["id"] not in excluded_ids:
             reblog_date = (datetime.now(KST) + timedelta(weeks=8)).strftime("%Y-%m-%d")
             r["reblog_date"] = reblog_date
             reblog.append(r)

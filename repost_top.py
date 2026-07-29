@@ -12,7 +12,22 @@ BASE = 'https://graph.threads.net/v1.0'
 KST = timezone(timedelta(hours=9))
 CONTENT_LOG = 'content_log.json'
 REPOST_LOG = 'repost_log.json'
+EXCLUDED_POSTS_FILE = 'excluded_posts.json'
 REPOST_WINDOW_WEEKS = 8
+
+
+def load_excluded_post_ids():
+    """조회수가 높아도 절대 재발행 금지 목록 — repost_top.py·weekly_analysis.py 공용.
+    반감/논란으로 조회수가 오른 글은 "조회수 1위 = 좋은 글"이 아님이 실증됨
+    (2026-07-23 게시, 외부 댓글 대거 비판, 2026-07-29 재발행되자 사용자가 즉시 삭제 + 지적).
+    조회수만 보는 이 스크립트들은 논란 여부를 모르므로, 확인되면 excluded_posts.json에 수동 등록."""
+    if os.path.exists(EXCLUDED_POSTS_FILE):
+        try:
+            with open(EXCLUDED_POSTS_FILE, encoding='utf-8') as f:
+                return {e['id'] for e in json.load(f).get('excluded', [])}
+        except Exception:
+            pass
+    return set()
 
 
 def load_repost_log():
@@ -65,7 +80,10 @@ def main():
         e['post_id'] for e in repost_log.get('reposted', [])
         if e.get('reposted_at', '') >= cutoff_repost
     }
-    recent = [p for p in recent_all if p.get('post_id') not in already_reposted]
+    excluded = load_excluded_post_ids()
+    recent = [p for p in recent_all
+              if p.get('post_id') not in already_reposted
+              and p.get('post_id') not in excluded]
 
     if not recent:
         if recent_all:
