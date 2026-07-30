@@ -102,7 +102,8 @@ def generate_content(articles, category='business', platform='threads'):
 
 [훅 작성 - hook]
 1번 장면 이미지 위에 크게 박히는 한 줄. 8~16자. 숫자·반전이 있으면 최고.
-(예: "보험료 12배가 수수료?", "상속세 0원인 집 많다")
+{'예: "보험료 12배가 수수료인가요?", "상속세 0원인 집 많아요"' if is_ig else '예: "보험료 12배가 수수료?", "상속세 0원인 집 많다"'}
+반드시 {tone_name} 유지 — 다른 필드보다 짧아서 놓치기 쉬우니 특히 주의. {'반말체("~있어?", "~다") 절대 금지.' if is_ig else ''}
 스크롤 멈추게 하는 게 유일한 목적. 물음표로 끝나면 더 좋다.
 
 [장면 작성 - scenes (3~4개)]
@@ -114,7 +115,7 @@ def generate_content(articles, category='business', platform='threads'):
 - image_query: 영문 2~4단어. Pexels 스톡 사진 검색 키워드.
   [금지] "stressed businessman office", "worried business owner"처럼 뻔하고 일반적인 인물/사무실/감정 스톡사진 — 릴스 도달은 초반 시청자의 완주율로 확산 여부가 갈리는데, 이런 흔한 이미지는 스크롤을 못 멈추게 해서 도달이 0~200회대에서 정체되는 원인으로 확인됨(2026-07 실측).
   대신 그 장면의 구체적 소재를 직접 드러내는 키워드를 써라 — 예: 상속/증여 얘기면 "elderly hands holding money", 부동산이면 "korean apartment buildings", 계약·서류 얘기면 "signing contract closeup", 소송·법이면 "courtroom gavel", 세금이면 "cash envelope korean won". 1번 장면(훅=썸네일)은 특히 신중하게 골라라 — 이 한 장이 전체 도달을 좌우한다.
-- text: 그 장면 하단에 깔릴 자막. 14자 이내 한 줄. 내레이션의 해당 구간 핵심을 요약.
+- text: 그 장면 하단에 깔릴 자막. 14자 이내 한 줄. 내레이션의 해당 구간 핵심을 요약. {tone_name} 유지.
   1번 장면은 훅이 대신하므로 text를 빈 문자열로.
 장면 순서 = 내레이션 전개 순서. 장면끼리 배경·구도가 겹치지 않게.
 
