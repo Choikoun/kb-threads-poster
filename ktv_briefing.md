@@ -1,4 +1,19 @@
 # 🏛️ KTV 국무회의 브리핑
-*2026-08-02 17:38 KST*
+*2026-08-03 19:07 KST*
 
-오늘 관련 영상 없음
+---
+
+## 명장면 속출! 이재명 대통령 "잠은 좀 잤어요?" 한마디로 요약되는 이번 순방 밀착기! 세계 AI 거물부터 남미 3국까지 대한민국에 스며들었다~ #ai동맹 #남미순방 #동포간담회
+🔗 https://youtu.be/zuvzFg8GGro
+
+[자막 없음: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=zuvzFg8GGro! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There are two ...
+
+---
+
