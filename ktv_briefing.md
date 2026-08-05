@@ -1,13 +1,13 @@
 # 🏛️ KTV 국무회의 브리핑
-*2026-08-04 18:12 KST*
+*2026-08-05 18:09 KST*
 
 ---
 
-## (26.8.4.) 중대범죄수사청 개청 진행 상황 관련 행정안전부 브리핑
-🔗 https://youtu.be/jde23ThAs0o
+## 마을이 잔칫집이 된 이유는?! 폭염에 현장으로 직접 간 #정은경 #보건복지부 장관 AI 드론 활용 현장 시찰 부터 여름철 취약계층 보호대책 추진 상황 점검까지! #명벤져스
+🔗 https://youtu.be/U9P70kV7q1I
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=jde23ThAs0o! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=U9P70kV7q1I! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
@@ -17,11 +17,11 @@ There are two ...
 
 ---
 
-## [퀵-클립] 국무회의에서 나온 폭염 대책…장관들이 짚어준 무더위 안전수칙
-🔗 https://youtu.be/750C2WBO7vo
+## 박수 한번 치자는 이재명 대통령의 숨은 뜻?! #업무보고 #체감하는삶의변화
+🔗 https://youtu.be/YdrGaeE0rfY
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=750C2WBO7vo! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=YdrGaeE0rfY! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
@@ -31,67 +31,11 @@ There are two ...
 
 ---
 
-## 오늘 너무 덥다..국무회의 생중계 중 #윤호중 장관 #폭염시기 #국민행동요령 #이재명 대통령 #무더위쉼터
-🔗 https://youtu.be/NEH3S-4hoT4
+## 이것만은 숙지하세요! 경제 산업 분야 두 번째 업무보고 주요 내용 #산업통상부 #지식재산처 #기후에너지환경부 #업무보고 #메가프로젝트 #AI #이재명 #대통령 #첨단산업 #K브랜드
+🔗 https://youtu.be/mPOI4K1g07Q
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=NEH3S-4hoT4! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-There are two ...
-
----
-
-## 순방 다녀온 대통령이 첫번째로 확인한 중대사항? #국무회의 #국정 #정부 #순방 #해외순방 #무더위 #폭염 #열사병예방 #쉼터 #산업재해예방 #이재명 #대통령 #이재명대통령
-🔗 https://youtu.be/KsL6tx9fk_o
-
-[자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=KsL6tx9fk_o! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-There are two ...
-
----
-
-## 우리가 무더위 속에서 놓쳐선 안될 OOO! #국무회의 #국정 #정부 #무더위 #더위 #폭염 #지하수 #수자원 #이재명 #대통령 #이재명대통령
-🔗 https://youtu.be/7vLLmUi0_0s
-
-[자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=7vLLmUi0_0s! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-There are two ...
-
----
-
-## (26.8.4.) 이재명 대통령 제34회 국무회의
-🔗 https://youtu.be/5lL3V18j5JA
-
-[자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=5lL3V18j5JA! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-There are two ...
-
----
-
-## 예고 없이 최말단 사업장까지 찾아간 #김영훈 고용노동부 장관… 폭염 사각지대 직접 확인했다?! 장관의 레이더망에 걸린 #폭염... 그리고 예고 없는 불시점검 #명벤져스
-🔗 https://youtu.be/cx49lpu1kVg
-
-[자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=cx49lpu1kVg! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=mPOI4K1g07Q! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
