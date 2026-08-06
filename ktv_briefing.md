@@ -1,13 +1,13 @@
 # 🏛️ KTV 국무회의 브리핑
-*2026-08-05 18:09 KST*
+*2026-08-06 18:09 KST*
 
 ---
 
-## 마을이 잔칫집이 된 이유는?! 폭염에 현장으로 직접 간 #정은경 #보건복지부 장관 AI 드론 활용 현장 시찰 부터 여름철 취약계층 보호대책 추진 상황 점검까지! #명벤져스
-🔗 https://youtu.be/U9P70kV7q1I
+## 판 완전히 바꿨다! 이 대통령 닮아(?) 질문 폭발 뉴페이스 등장! 업무보고가 이렇게 재미있을 일?😂 (feat. 기능이 향상되었습니다🤖) #국민참여단 #장관 #이재명대통령
+🔗 https://youtu.be/dcM9HHDA-j0
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=U9P70kV7q1I! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=dcM9HHDA-j0! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
@@ -17,11 +17,11 @@ There are two ...
 
 ---
 
-## 박수 한번 치자는 이재명 대통령의 숨은 뜻?! #업무보고 #체감하는삶의변화
-🔗 https://youtu.be/YdrGaeE0rfY
+## (26.8.6.) 대수보 결과 관련 강유정 수석대변인 브리핑
+🔗 https://youtu.be/utXgbWO696I
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=YdrGaeE0rfY! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=utXgbWO696I! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
@@ -31,11 +31,11 @@ There are two ...
 
 ---
 
-## 이것만은 숙지하세요! 경제 산업 분야 두 번째 업무보고 주요 내용 #산업통상부 #지식재산처 #기후에너지환경부 #업무보고 #메가프로젝트 #AI #이재명 #대통령 #첨단산업 #K브랜드
-🔗 https://youtu.be/mPOI4K1g07Q
+## (26.8.6.) 제42차 대통령 주재 수석보좌관회의 모두발언
+🔗 https://youtu.be/rQOBf6Oc8BI
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=mPOI4K1g07Q! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=rQOBf6Oc8BI! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
