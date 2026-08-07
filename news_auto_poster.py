@@ -823,17 +823,35 @@ def main():
     image_url = None
     print('이미지 탐색 중...')
 
+    # [금지 - 실측 사고] 환율·지수·금리처럼 실시간으로 바뀌는 숫자가 걸린 주제는
+    # 방송사 뉴스 화면(YouTube 썸네일)이나 기사 og:image를 아예 안 쓴다.
+    # "환율 1,530원 돌파" 같은 헤드라인이 박힌 KBS 뉴스 캡처를 썸네일로 썼다가,
+    # 독자가 실제 환율(1,430원대)과 100원 차이나는 걸 보고 "뇌 없는 새끼",
+    # "파이낸싱플래너가 왜그래"로 신뢰도 자체를 공격받은 사례 있음(2026-08-04).
+    # 방송사 캡처는 타 언론사 로고가 그대로 노출되는 것도 별개 문제.
+    # 키워드만으로는 안 걸러짐 — 실제 사고 사례의 selected_title("美재무 원화 과도한
+    # 변동성...")에는 아래 키워드가 하나도 없었는데도 YouTube 의미검색이 환율 영상을
+    # 찾아왔음. economy·trend 카테고리는 매일 시황을 다루는 특성상 키워드 매칭과
+    # 무관하게 항상 위험군으로 취급한다.
+    _volatile_kw = ('환율', '코스피', '코스닥', '나스닥', '다우', 'KRW', '기준금리', '금리 인상',
+                     '금리 인하', '시세', '지수', '변동성', '원화', '달러', '엔화')
+    is_volatile_topic = (category in ('economy', 'trend')
+                         or any(k in content['selected_title'] for k in _volatile_kw))
+    if is_volatile_topic:
+        print(f'  실시간 숫자 주제 감지("{content["selected_title"][:30]}") — 방송화면/기사 이미지 스킵, 텍스트만')
+
     cat_info = CATEGORIES.get(category, {})
     youtube_hint = cat_info.get('youtube_hint', '')
     search_query = youtube_hint or content.get('youtube_keyword', '') or \
         re.sub(r'[^\w\s]', ' ', content['selected_title']).strip()[:25]
 
     # 1순위: YouTube 썸네일 URL 직접 사용 (imgbb 불필요)
-    print(f'  YouTube 검색: {search_query}')
-    image_url = get_youtube_thumbnail_url(search_query)
+    if not is_volatile_topic:
+        print(f'  YouTube 검색: {search_query}')
+        image_url = get_youtube_thumbnail_url(search_query)
 
     # 2순위: 기사 og:image URL 직접 사용
-    if not image_url:
+    if not image_url and not is_volatile_topic:
         print('  YouTube 없음 → 기사 이미지 URL 시도')
         sel = content['selected_title'][:20]
         for article in articles:
@@ -841,7 +859,7 @@ def main():
                 image_url = get_article_image_url(article['link'])
                 if image_url:
                     break
-    if not image_url:
+    if not image_url and not is_volatile_topic:
         for article in articles[:5]:
             image_url = get_article_image_url(article['link'])
             if image_url:
