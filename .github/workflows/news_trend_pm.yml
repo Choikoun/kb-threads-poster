@@ -1,4 +1,4 @@
-name: 뉴스 자동포스팅 - 저녁 스크롤 (오늘의 트렌드)
+name: 뉴스 자동포스팅 - 저녁 스크롤 (보험·노후·상속)
 
 on:
   schedule:
@@ -7,7 +7,7 @@ on:
     inputs:
       category:
         description: '카테고리'
-        default: 'trend'
+        default: 'insurance'
 
 concurrency:
   group: news-trend-pm
@@ -27,7 +27,10 @@ jobs:
           python-version: '3.11'
       - name: 패키지 설치
         run: pip install requests feedparser google-genai beautifulsoup4 python-dotenv
-      - name: 오늘의 트렌드 포스팅
+      - name: 저녁 스크롤 가족·자산 포스팅
+        # 믹스 리밸런싱 실험(2026-08-07): 범용 트렌드 68% 편중 → 정체성 콘텐츠(상속·가족) 확대.
+        # 21시대는 자기 전 스크롤 시간 — 역대 메가히트(이혼 34,254·요양원 30,734)가 전부 이 앵글.
+        # 2주 후 주간분석 팔로워 델타로 판정, 효과 없으면 trend로 원복.
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
@@ -35,7 +38,7 @@ jobs:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         run: |
           for i in 1 2 3; do
-            python news_auto_poster.py trend && exit 0
+            python news_auto_poster.py insurance && exit 0
             if [ $i -lt 3 ]; then echo "시도 $i 실패, 30초 후 재시도..."; sleep 30; fi
           done
           exit 1
