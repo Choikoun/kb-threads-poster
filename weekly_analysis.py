@@ -306,6 +306,16 @@ def run_analysis():
             sign = "+" if total_diff >= 0 else ""
             print(f"  → 기간 합계: {sign}{total_diff}명")
 
+            # 퍼널 지표 — 허영 지표(조회수)가 아니라 "결국 상담"으로 가는 중간 계단 추적 (2026-08-08 신설)
+            total_views = sum(r.get('views', 0) for r in results)
+            total_likes = sum(r.get('likes', 0) for r in results)
+            total_replies = sum(r.get('replies', 0) for r in results)
+            print(f"\n🔻 퍼널 지표 (도달 → 관심 → 관계)")
+            if total_views:
+                print(f"  조회 1,000회당 팔로워 순증: {total_diff / (total_views / 1000):.2f}명  (분석 게시물 조회 합계 {total_views:,} 기준)")
+                print(f"  전체 좋아요율: {total_likes / total_views * 100:.3f}% | 전체 댓글율: {total_replies / total_views * 100:.3f}%")
+            print(f"  ※ 체크리스트 자동 DM 발송 수·클릭률은 ManyChat 대시보드에서 수동 확인 (무료 티어 월 25명 한도 주의)")
+
     # 팔로워 데모그래픽 (100명 이상일 때만)
     if followers and followers >= 100:
         demo = get_follower_demographics(user_id, token)

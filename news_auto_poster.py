@@ -883,6 +883,17 @@ def main():
         except Exception as e:
             print(f'슬롯 설정 오류 (무시): {e}')
 
+    # Threads→인스타 리드마그넷 다리 (2026-08-08): Threads엔 도달이 있고 인스타엔
+    # 자동 DM 퍼널이 있는데 서로 안 이어져 있던 것을 연결. 상속·증여(insurance) 글의
+    # 마지막 댓글로 체크리스트 안내를 확률적으로 첨부(매번 달면 스팸처럼 보임).
+    # 검수된 고정 문구만 사용(Gemini 미사용 — 금지 문구 사고 차단). IG_HANDLE 비면 스킵.
+    IG_HANDLE = ''  # TODO: 실제 인스타 계정명 입력 필요 — 빈 값이면 브리지 댓글 스킵 (임의 추측 금지)
+    if category == 'insurance' and IG_HANDLE and random.random() < 0.4:
+        bridge = (f'상속·증여 사전점검 체크리스트 12항목짜리 만들어놨어.\n\n'
+                  f'인스타(@{IG_HANDLE})에서 이 체크리스트 글에 "점검"이라고 댓글 달면 DM으로 자동으로 보내줘. 무료야.')
+        content['comments'] = list(content['comments']) + [bridge]
+        print('  [브리지] 인스타 체크리스트 안내 댓글 첨부')
+
     print('\nThreads 포스팅 중...')
     main_id = post_to_threads(content['main'], content['comments'], image_url, topic_tag=cat_info.get('topic_tag'))
     print(f'\n완료! 메인 포스트 ID: {main_id}')
