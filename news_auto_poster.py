@@ -885,12 +885,20 @@ def main():
 
     # Threads→인스타 리드마그넷 다리 (2026-08-08): Threads엔 도달이 있고 인스타엔
     # 자동 DM 퍼널이 있는데 서로 안 이어져 있던 것을 연결. 상속·증여(insurance) 글의
-    # 마지막 댓글로 체크리스트 안내를 확률적으로 첨부(매번 달면 스팸처럼 보임).
-    # 검수된 고정 문구만 사용(Gemini 미사용 — 금지 문구 사고 차단). IG_HANDLE 비면 스킵.
-    IG_HANDLE = ''  # TODO: 실제 인스타 계정명 입력 필요 — 빈 값이면 브리지 댓글 스킵 (임의 추측 금지)
+    # Threads→IG 리드마그넷 브리지: Threads는 도달이 있고 IG엔 자동 DM 퍼널이 있어서
+    # 상속·증여 글의 마지막 댓글로 확률적으로 안내 첨부(매번 달면 스팸처럼 보임).
+    # 검수된 고정 문구 3종 로테이션(Gemini 미사용 — 금지 문구 사고 차단, 동일 문구 반복 회피).
+    IG_HANDLE = 'financial_planner0'
+    BRIDGE_VARIANTS = [
+        (f'상속·증여 사전점검 체크리스트 12항목짜리 만들어놨어.\n\n'
+         f'인스타(@{IG_HANDLE}) 체크리스트 글에 "점검"이라고 댓글 달면 DM으로 자동으로 보내줘. 무료야.'),
+        (f'우리 집은 몇 개나 해당되는지 궁금하면,\n\n'
+         f'인스타(@{IG_HANDLE})에서 체크리스트 글에 "점검" 댓글 남겨봐. 12항목 정리본이 DM으로 바로 가.'),
+        (f'이런 것들 미리 점검할 수 있게 체크리스트로 정리해뒀어.\n\n'
+         f'인스타(@{IG_HANDLE}) 고정 글에 "점검"이라고 댓글 달면 무료로 DM 발송돼.'),
+    ]
     if category == 'insurance' and IG_HANDLE and random.random() < 0.4:
-        bridge = (f'상속·증여 사전점검 체크리스트 12항목짜리 만들어놨어.\n\n'
-                  f'인스타(@{IG_HANDLE})에서 이 체크리스트 글에 "점검"이라고 댓글 달면 DM으로 자동으로 보내줘. 무료야.')
+        bridge = BRIDGE_VARIANTS[datetime.now(KST).timetuple().tm_yday % len(BRIDGE_VARIANTS)]
         content['comments'] = list(content['comments']) + [bridge]
         print('  [브리지] 인스타 체크리스트 안내 댓글 첨부')
 
