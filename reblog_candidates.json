@@ -323,7 +323,11 @@
     "likes": 76,
     "replies": 9,
     "media_type": "IMAGE",
-    "reblog_date": "2026-08-09"
+    "reblog_date": "2026-08-09",
+    "reposted": true,
+    "reposted_id": "18210408487348692",
+    "reposted_date": "2026-08-10",
+    "remixed": true
   },
   {
     "id": "17881341132599354",
@@ -334,7 +338,11 @@
     "likes": 4,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-08-09"
+    "reblog_date": "2026-08-09",
+    "reposted": true,
+    "reposted_id": "18081040334306170",
+    "reposted_date": "2026-08-10",
+    "remixed": true
   },
   {
     "id": "18095132012214513",
@@ -345,7 +353,11 @@
     "likes": 1,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-08-09"
+    "reblog_date": "2026-08-09",
+    "reposted": true,
+    "reposted_id": "17946127173083067",
+    "reposted_date": "2026-08-10",
+    "remixed": true
   },
   {
     "id": "18094320353348098",
@@ -356,7 +368,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-08-09"
+    "reblog_date": "2026-08-09",
+    "reposted": true,
+    "reposted_id": "17869736052633220",
+    "reposted_date": "2026-08-10",
+    "remixed": true
   },
   {
     "id": "18128693332616213",
@@ -367,7 +383,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-08-09"
+    "reblog_date": "2026-08-09",
+    "reposted": true,
+    "reposted_id": "18110798809954833",
+    "reposted_date": "2026-08-10",
+    "remixed": true
   },
   {
     "id": "17877005733571253",
@@ -378,7 +398,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-08-09"
+    "reblog_date": "2026-08-09",
+    "reposted": true,
+    "reposted_id": "18118353331905459",
+    "reposted_date": "2026-08-10",
+    "remixed": true
   },
   {
     "id": "17885135568591128",
@@ -389,7 +413,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-08-09"
+    "reblog_date": "2026-08-09",
+    "reposted": true,
+    "reposted_id": "17963914163960714",
+    "reposted_date": "2026-08-10",
+    "remixed": true
   },
   {
     "id": "17945308785218957",
@@ -400,7 +428,11 @@
     "likes": 1,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-08-09"
+    "reblog_date": "2026-08-09",
+    "reposted": true,
+    "reposted_id": "17967886170130044",
+    "reposted_date": "2026-08-10",
+    "remixed": true
   },
   {
     "id": "18093909839260260",
@@ -411,7 +443,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-08-09"
+    "reblog_date": "2026-08-09",
+    "reposted": true,
+    "reposted_id": "18075028628348318",
+    "reposted_date": "2026-08-10",
+    "remixed": true
   },
   {
     "id": "17980433580033445",
@@ -422,7 +458,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-08-09"
+    "reblog_date": "2026-08-09",
+    "reposted": true,
+    "reposted_id": "17925384117166439",
+    "reposted_date": "2026-08-10",
+    "remixed": true
   },
   {
     "id": "18204735988350480",
@@ -433,7 +473,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-08-09"
+    "reblog_date": "2026-08-09",
+    "reposted": true,
+    "reposted_id": "18243025618309712",
+    "reposted_date": "2026-08-10",
+    "remixed": true
   },
   {
     "id": "18100311655905231",
@@ -444,7 +488,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-08-09"
+    "reblog_date": "2026-08-09",
+    "reposted": true,
+    "reposted_id": "18116791261903245",
+    "reposted_date": "2026-08-10",
+    "remixed": true
   },
   {
     "id": "17941320285228044",
@@ -455,7 +503,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-08-09"
+    "reblog_date": "2026-08-09",
+    "reposted": true,
+    "reposted_id": "18083995823677652",
+    "reposted_date": "2026-08-10",
+    "remixed": true
   },
   {
     "id": "18104010203050435",
@@ -466,7 +518,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-08-09"
+    "reblog_date": "2026-08-09",
+    "reposted": true,
+    "reposted_id": "17885839896673847",
+    "reposted_date": "2026-08-10",
+    "remixed": true
   },
   {
     "id": "18099721466166259",
@@ -477,7 +533,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-08-09"
+    "reblog_date": "2026-08-09",
+    "reposted": true,
+    "reposted_id": "18110540693064140",
+    "reposted_date": "2026-08-10",
+    "remixed": true
   },
   {
     "id": "18535601953079215",
@@ -488,7 +548,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-08-09"
+    "reblog_date": "2026-08-09",
+    "reposted": true,
+    "reposted_id": "17959555520982705",
+    "reposted_date": "2026-08-10",
+    "remixed": true
   },
   {
     "id": "18066230843444588",
@@ -499,7 +563,11 @@
     "likes": 1,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-08-09"
+    "reblog_date": "2026-08-09",
+    "reposted": true,
+    "reposted_id": "18624223192005110",
+    "reposted_date": "2026-08-10",
+    "remixed": true
   },
   {
     "id": "18086358578307452",
@@ -3690,5 +3758,137 @@
     "replies": 2,
     "media_type": "IMAGE",
     "reblog_date": "2026-10-03"
+  },
+  {
+    "id": "18146934103528347",
+    "date": "2026-08-08",
+    "text": "중앙은행들이 최근 떨어진 금값을 틈타 골드바를 공격적으로 사들이고 있어 ",
+    "full_text": "중앙은행들이 최근 떨어진 금값을 틈타 골드바를 공격적으로 사들이고 있어\n\n#오늘 #이슈",
+    "views": 1203,
+    "likes": 1,
+    "replies": 3,
+    "media_type": "TEXT_POST",
+    "reblog_date": "2026-10-05"
+  },
+  {
+    "id": "17992489574822967",
+    "date": "2026-08-09",
+    "text": "💡 부동산 PF 보증잔액이 1년 반 만에 20조 원을 두 배나 넘어섰어.",
+    "full_text": "💡 부동산 PF 보증잔액이 1년 반 만에 20조 원을 두 배나 넘어섰어.\n\n#오늘 #이슈",
+    "views": 858,
+    "likes": 0,
+    "replies": 3,
+    "media_type": "TEXT_POST",
+    "reblog_date": "2026-10-05"
+  },
+  {
+    "id": "17899316619350968",
+    "date": "2026-08-08",
+    "text": "지방의 한 중소 제조업 대표, 야근 수당 맞추려다 결국 패가망신했어.  ",
+    "full_text": "지방의 한 중소 제조업 대표,\n야근 수당 맞추려다 결국 패가망신했어.\n\n근로시간 유연화 한마디 믿고 달렸다가,\n나중에 미지급 수당 폭탄 맞았거든.\n\n법은 아직 그대로인데\n말만 믿은 사장만 터진 거지.\n\n#법인 #증여",
+    "views": 785,
+    "likes": 2,
+    "replies": 3,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-10-05"
+  },
+  {
+    "id": "17887651872440029",
+    "date": "2026-08-08",
+    "text": "지방세 체납 압류 공고가 지난 한 해 동안 40만 건을 넘었어.  1. ",
+    "full_text": "지방세 체납 압류 공고가 지난 한 해 동안 40만 건을 넘었어.\n\n1. 세금 낼 현금이 없어서 자산이 넘어가는 법인이 늘고 있어.\n2. 알짜 부동산이나 기계장치까지 공매로 나오는 속도가 빨라졌어.\n3. 버티다 못한 사업주들이 급하게 자금 정리에 나서는 중이야.\n\n세금 미루다가 회사가 통째로 넘어가기 전에 현금 흐름부터 점검해 봐야 해.\n\n#법인 #증여",
+    "views": 560,
+    "likes": 0,
+    "replies": 1,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-10-05"
+  },
+  {
+    "id": "18107708944864606",
+    "date": "2026-08-09",
+    "text": "건설 한계기업이 5년 사이에 3배나 늘었어.  ⚠️ 순이익률이 5%에서 ",
+    "full_text": "건설 한계기업이 5년 사이에 3배나 늘었어.\n\n⚠️ 순이익률이 5%에서 1%까지 곤두박질쳤지.\n\n겉으로는 공사가 한창이어도 남는 게 없다는 얘기야.\n\n주변 거래처가 흔들리면 내 계약까지 같이 묶여버리는 게 현실이야.\n\n#법인 #증여",
+    "views": 498,
+    "likes": 0,
+    "replies": 3,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-10-05"
+  },
+  {
+    "id": "18583204558067403",
+    "date": "2026-08-09",
+    "text": "🍞 대표 간식 50여 종 평균 9% 인상 발표, 물가 상승 체감 속도가 ",
+    "full_text": "🍞 대표 간식 50여 종 평균 9% 인상 발표, 물가 상승 체감 속도가 예사롭지 않아.\n\n#오늘 #이슈",
+    "views": 462,
+    "likes": 1,
+    "replies": 3,
+    "media_type": "TEXT_POST",
+    "reblog_date": "2026-10-05"
+  },
+  {
+    "id": "18073283714403054",
+    "date": "2026-08-08",
+    "text": "대형마트 2분기 판매량 9.4% 폭락, 역대 최대 감소폭 찍었어.  #오",
+    "full_text": "대형마트 2분기 판매량 9.4% 폭락, 역대 최대 감소폭 찍었어.\n\n#오늘 #이슈",
+    "views": 430,
+    "likes": 0,
+    "replies": 3,
+    "media_type": "TEXT_POST",
+    "reblog_date": "2026-10-05"
+  },
+  {
+    "id": "18061515689748245",
+    "date": "2026-08-08",
+    "text": "\"결혼했더니 세금이랑 대출이 더 늘었어\"  ⚠️ 대한민국에 숨어 있는 결",
+    "full_text": "\"결혼했더니 세금이랑 대출이 더 늘었어\"\n\n⚠️ 대한민국에 숨어 있는 결혼 패널티가 22개나 공식 공개됐어.\n\n#세금 #정책",
+    "views": 414,
+    "likes": 0,
+    "replies": 3,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-10-05"
+  },
+  {
+    "id": "18179274352414551",
+    "date": "2026-08-08",
+    "text": "조용한 조직에서 터진 사건 하나가 결국 국경을 넘었어.  국내에서 덮어두",
+    "full_text": "조용한 조직에서 터진 사건 하나가 결국 국경을 넘었어.\n\n국내에서 덮어두려던 스캔들이 외신 메인 화면을 장식하는 데는 사흘도 안 걸렸지.\n\n문제가 생겼을 때 빨리 털어내지 않으면 그 비용은 예상보다 훨씬 크게 돌아와.\n\n내부에서 쉬쉬하며 버틴 시간만큼 외부에서 매기는 불신 이자는 더 독하게 붙거든.\n\n덮으려고 쓴 에너지보다 드러내고 수습하는 게 언제나 훨씬 저렴한 법이야.\n\n#증여 #상속",
+    "views": 343,
+    "likes": 0,
+    "replies": 2,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-10-05"
+  },
+  {
+    "id": "18057548984523294",
+    "date": "2026-08-07",
+    "text": "💡 다들 환호하던 ISA 개편안, 결국 원점에서 다시 뜯어고친대.  #오",
+    "full_text": "💡 다들 환호하던 ISA 개편안, 결국 원점에서 다시 뜯어고친대.\n\n#오늘 #이슈",
+    "views": 340,
+    "likes": 0,
+    "replies": 3,
+    "media_type": "TEXT_POST",
+    "reblog_date": "2026-10-05"
+  },
+  {
+    "id": "18087278408428510",
+    "date": "2026-08-09",
+    "text": "어떤 간병인, 치매 노인 예금 2000만 원 빼갔어.  🔑 믿고 맡긴 가",
+    "full_text": "어떤 간병인,\n치매 노인 예금 2000만 원 빼갔어.\n\n🔑 믿고 맡긴 가족들만 뒤늦게 발 동동 구르는 중.\n\n#증여 #상속",
+    "views": 330,
+    "likes": 0,
+    "replies": 2,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-10-05"
+  },
+  {
+    "id": "18110409593044992",
+    "date": "2026-08-08",
+    "text": "X: 정부가 방향을 잡았으니 이대로 제도가 굳어질 거다  O: 최고위층 ",
+    "full_text": "X: 정부가 방향을 잡았으니 이대로 제도가 굳어질 거다\n\nO: 최고위층 한마디에 뼈대부터 다시 짜이는 일이 허다하다\n\n정책 발표와 실제 집행 사이의 간극을 읽지 못하면 자산 전략은 매번 엇나간다\n\n#부동산 #정책",
+    "views": 309,
+    "likes": 0,
+    "replies": 2,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-10-05"
   }
 ]

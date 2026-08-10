@@ -1133,7 +1133,7 @@
     "type": "reels",
     "selected_title": "美, 왜 30년 만에 엔화 방어 나섰나…속내는 '국채시장 안정'",
     "date": "2026-08-03 14:58",
-    "reach": 1907,
+    "reach": 1908,
     "saved": 1,
     "likes": 3,
     "comments": 1
@@ -1193,7 +1193,7 @@
     "type": "reels",
     "selected_title": "與 '5%룰' 완화 법안 검토… 자본시장법 정비 법안 추진",
     "date": "2026-08-06 22:05",
-    "reach": 139,
+    "reach": 140,
     "saved": 0,
     "likes": 0,
     "comments": 0
@@ -1203,7 +1203,7 @@
     "type": "reels",
     "selected_title": "고발 문턱 낮춘 공정위…‘임원 아니라 몰랐다’ 항변도 고발대상",
     "date": "2026-08-07 13:37",
-    "reach": 147,
+    "reach": 148,
     "saved": 0,
     "likes": 0,
     "comments": 0
@@ -1213,7 +1213,7 @@
     "type": "reels",
     "selected_title": "트럼프 회사에 200만불 준 한국 기업…美 민주당 '뇌물 의혹' 조사",
     "date": "2026-08-07 21:01",
-    "reach": 134,
+    "reach": 139,
     "saved": 0,
     "likes": 0,
     "comments": 0
@@ -1222,30 +1222,50 @@
     "ig_post_id": "18094543394543420",
     "type": "reels",
     "selected_title": "美증시, 고용 악화에 금리인상 기대 후퇴…S&P500 사상최고치 마감",
-    "date": "2026-08-08 12:52"
+    "date": "2026-08-08 12:52",
+    "reach": 620,
+    "saved": 0,
+    "likes": 2,
+    "comments": 0
   },
   {
     "ig_post_id": "17956960218189860",
     "type": "reels",
     "selected_title": "[홍보] 중임등기 셀프 도구 릴스",
-    "date": "2026-08-08 20:38"
+    "date": "2026-08-08 20:38",
+    "reach": 124,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18051040019789735",
     "type": "reels",
     "selected_title": "李대통령 \"ISA 개편안·주가 누르기 방지법 원점 재검토\"",
-    "date": "2026-08-08 20:48"
+    "date": "2026-08-08 20:48",
+    "reach": 117,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18039063590819334",
     "type": "reels",
     "selected_title": "치매환자 요양원 입소하자 돌변…수천만원 쓴 간병인 징역형 ‘집유’",
-    "date": "2026-08-09 12:59"
+    "date": "2026-08-09 12:59",
+    "reach": 1040,
+    "saved": 1,
+    "likes": 6,
+    "comments": 0
   },
   {
     "ig_post_id": "18358741459245033",
     "type": "reels",
     "selected_title": "고향사랑기부 세액공제 확대···비수도권 인구감소지역 등 차등 적용",
-    "date": "2026-08-09 20:49"
+    "date": "2026-08-09 20:49",
+    "reach": 122,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   }
 ]
