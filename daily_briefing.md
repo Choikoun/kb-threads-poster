@@ -1,42 +1,42 @@
 # 📰 일일 브리핑
-*2026-08-12 07:56 KST*
+*2026-08-13 07:55 KST*
 
 ---
 
 ## 🔖 보험 동향
+- [NH농협은행, AI 상담체계 전면 개편… ‘차세대 컨택센터’ 구축](https://www.insnews.co.kr/news/articleView.html?idxno=92271)
+- [금융보안원, 금융권 AI 확산 속 ‘환각·편향·보안위협’ 검증체계 구축](https://www.insnews.co.kr/news/articleView.html?idxno=92253)
+- [삼성생명, ‘삼성 New플러스원 건강보험’ 개정 출시](https://www.insnews.co.kr/news/articleView.html?idxno=92251)
 - [중진공, 공제 가입 근로자 3만명에 단체상해보험 무료 지원](https://www.insnews.co.kr/news/articleView.html?idxno=92244)
 - [보험연수원, 국내 최초 자격시험 100% AI로 출제… 특허 등록 완료](https://www.insnews.co.kr/news/articleView.html?idxno=92239)
-- [금감원, 보험사기 적발·예방 ‘우수사례’ 찾는다](https://www.insnews.co.kr/news/articleView.html?idxno=92228)
-- [폭염 대비 ‘기후보험’ 활성화… 기후위기 취약계층 지원사업도](https://www.insnews.co.kr/news/articleView.html?idxno=92234)
-- [토스인슈어런스, 토스 앱 밖에서도 고객 만난다… 보험 상담 접점 확대](https://www.insnews.co.kr/news/articleView.html?idxno=92231)
 
 ## 💰 국내 경제·금융
-- [호르무즈 불확실성에 꺾인 뉴욕증시, 나스닥 0.6% 하락](https://www.hankyung.com/article/2026081254157)
-- ["35만원" vs "60만원"…삼성전자 두고 증권가 '극과 극' 전망](https://www.hankyung.com/article/2026081146746)
-- [초고수 순매수 1위는 '00전자' [한경 프리미엄9 TODAY]](https://www.hankyung.com/article/2026081150091)
-- [8월 1~10일 수출 '역대 최대'…반도체가 절반 육박](https://www.hankyung.com/article/2026081150271)
-- [비트코인 떨어지자 2억달러 순손실…트럼프미디어, 핵융합으로 돌파구](https://www.hankyung.com/article/2026081149711)
+- ["깜짝 실적 쏟아진 美증시"…랠리 이어갈 마지막 퍼즐은](https://www.hankyung.com/article/202608127489i)
+- [출렁이는 삼성전자 주가…컨센서스 변화로 투자전략 짜보니](https://www.hankyung.com/article/202608127120i)
+- [CPI 상승세 둔화 속 혼조…나스닥 0.54%↑ [뉴욕증시 브리핑]](https://www.hankyung.com/article/2026081380166)
+- [다들 최신만 쫓았더니…뜻밖의 품귀에 주가 '껑충'](https://www.hankyung.com/article/202608127705i)
+- [SK하이닉스, 인디애나팹 27일 착공식…최태원·젠슨 황 만나나](https://www.hankyung.com/article/2026081277966)
 
 ## 📈 주식·시장
-- [“이거 좀 쎄한데”…개미들 반도체 베팅할때, 블랙록은 K바이오 줍줍](https://www.mk.co.kr/news/stock/12124760)
-- [8월 코스피 열에 아홉은 올랐다는데…문제는 “삼전닉스는 빼고”](https://www.mk.co.kr/news/stock/12124453)
-- [쏠림 벗어난 코스피…순환매 본격화](https://www.mk.co.kr/news/stock/12124277)
-- [뜨거워진 코스닥…K뷰티 목표가 '쑥'](https://www.mk.co.kr/news/stock/12124274)
-- [팰런티어 깜짝실적에 이달 주가 40% '껑충'](https://www.mk.co.kr/news/stock/12124272)
+- [시진핑 “중국엔 당신이 필요” 격려한 이 회사…상장심사 석달만에 끝냈다](https://www.mk.co.kr/news/stock/12126019)
+- [“주가 1000원도 안되면 회사가 잘못”…동전주 23개 관리종목行](https://www.mk.co.kr/news/stock/12126017)
+- [중동戰 장기화 여파에 한전 영업이익 17% '뚝'](https://www.mk.co.kr/news/stock/12125592)
+- [작년 18% 수익률 거둔 국민연금 … 마이크론 더 담고 버크셔는 덜고](https://www.mk.co.kr/news/stock/12125597)
+- [美 바이오기업 이노크라스, 코스닥 상장 시동](https://www.mk.co.kr/news/stock/12125591)
 
 ## 🌏 글로벌 경제·정세
-- [트럼프 "이란 자금, 우리가 통제…탄약 미친듯 생산"](https://www.hankyung.com/article/2026081255327)
-- ["클린턴 땐 안 그랬는데"…트럼프 행보 지적한 WP, 왜?](https://www.hankyung.com/article/202608125494H)
-- [젤렌스키 "러시아 푸틴, 북한군 투입해 전쟁 장기화"](https://www.hankyung.com/article/2026081254347)
-- [반도체와 컴퓨팅도 대출 담보로…월가의 실험 VS 도박 [박신영의 개장전 요것만]](https://www.hankyung.com/article/202608125379i)
-- ["골프광 트럼프 지켜라"…골프장에 '미사일 방공시스템' 떴다](https://www.hankyung.com/article/2026081153537)
+- ["스페이스X 주가 두배 간다"…시스코 호실적에도 주가 하락[박신영의 개장전 요것만]](https://www.hankyung.com/article/202608137949i)
+- [美 7월 소비자물가 예상치 부합…"기준금리 인상 명분 약해졌다"](https://www.hankyung.com/article/2026081278481)
+- [美 7월 CPI, 시장 예상치 부합…금리 동결 가능성 높아졌다](https://www.hankyung.com/article/202608127843i)
+- [삼성전자 아니라고?…주가 262만원 간다는 '이 회사' 정체](https://www.hankyung.com/article/2026081278057)
+- [[속보] 주룽지 중국 전 총리 사망…향년 98세](https://www.hankyung.com/article/2026081277297)
 
 ## 🔥 팔로업 추천 (300회 이상)
-- 2,667회 [2026-08-10] 어떤 종로 금은방 업주, 금 맡기면 고배당 준다고 유혹했어.  🔑 그렇게...
-- 2,393회 [2026-08-10] 사망보험금 3억을 받고 좋아하던 고객이 있었습니다.  알고 보니 국세청이...
 - 841회 [2026-08-10] 어떤 할아버지,  병원 가려고 콜택시 부르다 1시간을 길가에 서 있었어....
-- 441회 [2026-08-11] 1주택 실거주 규제가 온다고 다 똑같이 적용받는 건 아니야.  💡 단계적...
-- 392회 [2026-08-10] 영부인의 클러치백이 필수품이라는 해명이 나왔다.  단 며칠 만에 여론의 ...
+- 569회 [2026-08-11] 1주택 실거주 규제가 온다고 다 똑같이 적용받는 건 아니야.  💡 단계적...
+- 406회 [2026-08-12] “올해는 그냥 버티는 게 이기겠지.”  지갑은 얇아지는데 주변에 나갈 자...
+- 394회 [2026-08-11] 분양받고 들어간 아파트인데 알고 보니 80억 빚이 내 이름으로 넘어와 있...
+- 349회 [2026-08-10] 지방에 풀리는 수백조 자금, 혜택은 대기업만 가져간다고 착각해.  올해 ...
 
 ---
 *총 60개 기사 수집됨*
