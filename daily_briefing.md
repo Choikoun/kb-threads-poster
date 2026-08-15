@@ -1,5 +1,5 @@
 # 📰 일일 브리핑
-*2026-08-15 07:34 KST*
+*2026-08-16 07:32 KST*
 
 ---
 
@@ -11,28 +11,30 @@
 - [폭염·호우로 인한 농업재해 피해, 보험료 할증서 제외… 15일부터 시행](https://www.insnews.co.kr/news/articleView.html?idxno=92297)
 
 ## 💰 국내 경제·금융
+- [“메모리 가격 상승, 경쟁사 따돌릴 기회”…레노버 주가 46% 급등](https://www.hankyung.com/article/202608141753i)
+- [국민연금이 콕 찍은 NHN, 이달 들어서만 주가 두 배로 뛴 사연](https://www.hankyung.com/article/202608141703i)
+- [소매판매 급감에도, 금리 또 뛴 이유…"메모리 병목" 한탄한 머스크 [김현석의 월스트리트나우]](https://www.hankyung.com/article/202608152921i)
+- [소비둔화 우려에 주요지수 약세…샌디스크는 또 폭등 [뉴욕증시 브리핑]](https://www.hankyung.com/article/2026081529647)
 - [日도 단일종목 레버리지 ETF 열풍 부나](https://www.hankyung.com/article/2026081426131)
-- [네이버 주가 재평가 열쇠는 [한경 프리미엄9 TODAY]](https://www.hankyung.com/article/2026081425441)
-- [美 40조달러 국가부채 여파…장기국채 금리, 25년 만에 최고](https://www.hankyung.com/article/2026081425291)
-- [다시 강세장 돌입한 코스피, 다음 상승 동력은 글로벌 헤지펀드 FOMO?](https://www.hankyung.com/article/202608141856i)
-- [돈 빠지던 ESG에 다시 뭉칫돈…AI 전력망 ETF가 끌었다](https://www.hankyung.com/article/202608141946i)
 
 ## 📈 주식·시장
+- [삼전닉스 역대급 실적인데…주주환원 정책에 쏠리는 눈, 얼마나 풀까](https://www.mk.co.kr/news/stock/12128735)
 - [“국민주 이름값 제대로 해냈다”…성인 5명 중 1명은 삼성전자 소액주주](https://www.mk.co.kr/news/business/12128638)
 - [퇴직연금 어디 맡기지 … 3년 수익률 105% 최강자는](https://www.mk.co.kr/news/stock/12128139)
 - [“스페이스X 들어갔습니다”…국민연금이 픽한 2분기 미국 성장주는?](https://www.mk.co.kr/news/stock/12128401)
 - [올 상반기 SK하이닉스 직원 평균급여 1억4400만원](https://www.mk.co.kr/news/business/12128359)
-- [“노후자금 불려준다더니” 제 역할 못하는 퇴직연금 디폴트옵션[이슈 플러스]](https://www.mk.co.kr/news/stock/12128285)
 
 ## 🌏 글로벌 경제·정세
-- ["미국 조선업 재건에 韓 등 동맹국 역할 필수"](https://www.hankyung.com/article/2026081425821)
-- [전쟁 끝날 기미 안 보이자…이스라엘 인재 '엑소더스'](https://www.hankyung.com/article/2026081425321)
-- [애플, 알리바바와 中 전용 AI 개발](https://www.hankyung.com/article/2026081425331)
-- [美, 中 드론·부품 겨냥 '최대 100% 관세'](https://www.hankyung.com/article/2026081424911)
-- [12시간 만에 한달 치 비…일본 수도권 덮쳐 8명 사망](https://www.hankyung.com/article/2026081423607)
+- [트럼프 "김정은과 사이 좋다"…판문점 회동 사진 게시](https://www.hankyung.com/article/2026081636417)
+- [자꾸 김정은 소환하는 트럼프 "우리 사이 매우 좋다"…노림수는 [이상은의 워싱턴나우]](https://www.hankyung.com/article/202608163571i)
+- [챗GPT에 '전여친 살해계획' 입력한 남성, 오픈AI 신고로 체포](https://www.hankyung.com/article/2026081531217)
+- [[속보] "고이즈미 방위상 등 일본 장관 2명 야스쿠니 참배" <교도통신>](https://www.hankyung.com/article/2026081530157)
+- [트럼프 "호르무즈, 조만간 미국 영토로 선언할 것"](https://www.hankyung.com/article/2026081529767)
 
 ## 🔥 팔로업 추천 (300회 이상)
-- 425회 [2026-08-14] 연예인 출신이라고 사업이 무조건 탄탄대로는 아니더라.  1. 월 매출이 ...
+- 626회 [2026-08-15] 차 사고 안 나면 보험료 내려간다고 믿지.  ⚠️ 가만히 서 있어도 보험...
+- 533회 [2026-08-14] 연예인 출신이라고 사업이 무조건 탄탄대로는 아니더라.  1. 월 매출이 ...
+- 448회 [2026-08-15] 통상 사령탑이 바뀌면 수출 기업들 대응 전략이 한순간에 뒤틀린다는 걸 나...
 
 ---
 *총 60개 기사 수집됨*
