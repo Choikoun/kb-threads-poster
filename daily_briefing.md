@@ -1,40 +1,42 @@
 # 📰 일일 브리핑
-*2026-08-16 07:32 KST*
+*2026-08-17 07:32 KST*
 
 ---
 
 ## 🔖 보험 동향
-- [AIA생명, ‘2026 해비타트 815런’ 후원… 러닝 스토리 크루, 815런까지 달린다](https://www.insnews.co.kr/news/articleView.html?idxno=92301)
-- [삼성생명, ‘삼성 한번에내는연금보험’ 출시… 목돈 납입 한 번으로 노후 연금 준비](https://www.insnews.co.kr/news/articleView.html?idxno=92309)
-- [현대해상, 상반기 순익 6151억원… 장기보험이 실적 견인](https://www.insnews.co.kr/news/articleView.html?idxno=92305)
-- [KB손해보험, ‘공정거래 자율준수 프로그램’ 도입 선포… 내부통제 체계 고도화](https://www.insnews.co.kr/news/articleView.html?idxno=92299)
-- [폭염·호우로 인한 농업재해 피해, 보험료 할증서 제외… 15일부터 시행](https://www.insnews.co.kr/news/articleView.html?idxno=92297)
+- [[이은옥의 보험 읽어주는 사람] 자동차보험 고객이 사망하면 계약은 어떻게 될까](https://www.insnews.co.kr/news/articleView.html?idxno=92306)
+- [돌아온 보험사 M&A의 계절… 종합금융그룹 ‘마지막 퍼즐’ 맞춘다](https://www.insnews.co.kr/news/articleView.html?idxno=92286)
+- [대형 GA ‘보험판매전문회사’ 입법 재점화… 권한 확대·책임 강화 병행](https://www.insnews.co.kr/news/articleView.html?idxno=92282)
+- [[금융이슈 Summary] 환율 급등락에 따른 보험권 변동성 관리 과제](https://www.insnews.co.kr/news/articleView.html?idxno=92281)
+- [가상자산 전용보험, 법정 의무 넘어 ‘기관 신뢰’ 좌우](https://www.insnews.co.kr/news/articleView.html?idxno=92279)
 
 ## 💰 국내 경제·금융
-- [“메모리 가격 상승, 경쟁사 따돌릴 기회”…레노버 주가 46% 급등](https://www.hankyung.com/article/202608141753i)
-- [국민연금이 콕 찍은 NHN, 이달 들어서만 주가 두 배로 뛴 사연](https://www.hankyung.com/article/202608141703i)
-- [소매판매 급감에도, 금리 또 뛴 이유…"메모리 병목" 한탄한 머스크 [김현석의 월스트리트나우]](https://www.hankyung.com/article/202608152921i)
-- [소비둔화 우려에 주요지수 약세…샌디스크는 또 폭등 [뉴욕증시 브리핑]](https://www.hankyung.com/article/2026081529647)
-- [日도 단일종목 레버리지 ETF 열풍 부나](https://www.hankyung.com/article/2026081426131)
+- [삼전닉스 다음은 현대차?…中 '12조 대어' 상장에 '초긴장' [노정동의 어쩌다 투자자]](https://www.hankyung.com/article/2026081638176)
+- ["앞으로 반도체 쏠림 덜할 것" [한경 프리미엄9 TODAY]](https://www.hankyung.com/article/2026081641891)
+- [주식 시장의 계절을 읽으려면 실질금리를 보라 ﻿[김정남의 주식투자 프레임]](https://www.hankyung.com/article/202608103896i)
+- ["두 달 만에 1200억 됐다"…개미들 퇴직연금 들고 몰려든 곳 [김연지의 연금빌드업]](https://www.hankyung.com/article/2026081417826)
+- [미국 네트워크 투자 본격화에 '통신장비주' 뜬다](https://www.hankyung.com/article/202608142342i)
 
 ## 📈 주식·시장
-- [삼전닉스 역대급 실적인데…주주환원 정책에 쏠리는 눈, 얼마나 풀까](https://www.mk.co.kr/news/stock/12128735)
-- [“국민주 이름값 제대로 해냈다”…성인 5명 중 1명은 삼성전자 소액주주](https://www.mk.co.kr/news/business/12128638)
-- [퇴직연금 어디 맡기지 … 3년 수익률 105% 최강자는](https://www.mk.co.kr/news/stock/12128139)
-- [“스페이스X 들어갔습니다”…국민연금이 픽한 2분기 미국 성장주는?](https://www.mk.co.kr/news/stock/12128401)
-- [올 상반기 SK하이닉스 직원 평균급여 1억4400만원](https://www.mk.co.kr/news/business/12128359)
+- [ISA 더이상 ‘만능통장’ 아니다 … 혜택축소 개편에 부글부글](https://www.mk.co.kr/news/stock/12128937)
+- [“코스피, 앞으로 더 크게 흔들릴 수도” … AI시대 견뎌야 할 ‘뉴노멀’](https://www.mk.co.kr/news/stock/12128932)
+- [이번주 美FOMC 의사록 주목](https://www.mk.co.kr/news/stock/12129022)
+- [일학개미 "반도체 사자" 순매수 상위권 '싹쓸이'](https://www.mk.co.kr/news/stock/12129020)
+- [[미국 주식 돋보기] AI 보안수요 급증 … 포티넷 올 주가 2배 쑥](https://www.mk.co.kr/news/stock/12129021)
 
 ## 🌏 글로벌 경제·정세
-- [트럼프 "김정은과 사이 좋다"…판문점 회동 사진 게시](https://www.hankyung.com/article/2026081636417)
-- [자꾸 김정은 소환하는 트럼프 "우리 사이 매우 좋다"…노림수는 [이상은의 워싱턴나우]](https://www.hankyung.com/article/202608163571i)
-- [챗GPT에 '전여친 살해계획' 입력한 남성, 오픈AI 신고로 체포](https://www.hankyung.com/article/2026081531217)
-- [[속보] "고이즈미 방위상 등 일본 장관 2명 야스쿠니 참배" <교도통신>](https://www.hankyung.com/article/2026081530157)
-- [트럼프 "호르무즈, 조만간 미국 영토로 선언할 것"](https://www.hankyung.com/article/2026081529767)
+- ["AI로 누구나 소설 쓴다"...문학상 응모작 2배 폭증 [도쿄나우]](https://www.hankyung.com/article/202608174548i)
+- ["중국 시장지배력 문제 심각.. 공동으로 무역장벽 세워야"[이상은의 워싱턴나우]](https://www.hankyung.com/article/202608164228i)
+- [이란군 "미군 사살·생포하면 포상금 4200만원…여성은 두 배"](https://www.hankyung.com/article/2026081643887)
+- ["며칠 전 패잔병 1만명 살해"…중국, 일본 전쟁범죄 추가 공개](https://www.hankyung.com/article/2026081643227)
+- [서비스업도 'AI 습격'…印 청년 실업률 40%](https://www.hankyung.com/article/2026081641511)
 
 ## 🔥 팔로업 추천 (300회 이상)
-- 626회 [2026-08-15] 차 사고 안 나면 보험료 내려간다고 믿지.  ⚠️ 가만히 서 있어도 보험...
+- 1,853회 [2026-08-15] 차 사고 안 나면 보험료 내려간다고 믿지.  ⚠️ 가만히 서 있어도 보험...
+- 745회 [2026-08-16] 💡 용산공원 부지에 주택을 짓는 방안이 다시 수면 위로 올라왔어.  20...
+- 626회 [2026-08-16] 💡 집값은 고작 5천만 원 차이인데 종부세는 200만 원 넘게 차이 나는...
+- 598회 [2026-08-15] 통상 사령탑이 바뀌면 수출 기업들 대응 전략이 한순간에 뒤틀린다는 걸 나...
 - 533회 [2026-08-14] 연예인 출신이라고 사업이 무조건 탄탄대로는 아니더라.  1. 월 매출이 ...
-- 448회 [2026-08-15] 통상 사령탑이 바뀌면 수출 기업들 대응 전략이 한순간에 뒤틀린다는 걸 나...
 
 ---
 *총 60개 기사 수집됨*
