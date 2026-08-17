@@ -7679,7 +7679,7 @@
     "selected_title": "부산시 6374억 규모 추경안 발표···‘민생’에 2747억 집중 투입",
     "source": "경향신문",
     "line_count": 6,
-    "views": 123,
+    "views": 128,
     "likes": 0,
     "replies": 3
   },
@@ -7692,7 +7692,7 @@
     "selected_title": "“80만달러 있어도 탈락할 수 있어”…美 투자이민, 이제 ‘돈의 이력’ 따진다 [김지영의 투자이민 시그널]",
     "source": "매일경제",
     "line_count": 14,
-    "views": 30,
+    "views": 32,
     "likes": 0,
     "replies": 2
   },
@@ -7705,7 +7705,7 @@
     "selected_title": "李대통령 \"4년 중임 또는 연임 개헌 입장 일관…임기단축 수용\"",
     "source": "연합뉴스",
     "line_count": 5,
-    "views": 251,
+    "views": 259,
     "likes": 0,
     "replies": 1
   },
@@ -7718,8 +7718,8 @@
     "selected_title": "‘월매출 1.4억’ 타코집 사장, 알고 보니 EXID 혜린…“그룹 그만둔 거 아냐”",
     "source": "매일경제",
     "line_count": 5,
-    "views": 425,
-    "likes": 0,
+    "views": 533,
+    "likes": 1,
     "replies": 4
   },
   {
@@ -7731,7 +7731,7 @@
     "selected_title": "물가 잡히는데 국채금리 25년만에 최고…상식 벗어난 미국경제",
     "source": "매일경제",
     "line_count": 6,
-    "views": 220,
+    "views": 237,
     "likes": 0,
     "replies": 3
   },
@@ -7744,7 +7744,7 @@
     "selected_title": "바이낸스, 네이버 등 무기한 선물 출시…한국인 거래는 차단(종합)",
     "source": "연합뉴스",
     "line_count": 3,
-    "views": 116,
+    "views": 117,
     "likes": 0,
     "replies": 2
   },
@@ -7756,7 +7756,10 @@
     "hour": 7,
     "selected_title": "주유소 기름값 13주째 내려…휘발유 1천864원·경유 1천847원",
     "source": "연합뉴스",
-    "line_count": 7
+    "line_count": 7,
+    "views": 44,
+    "likes": 0,
+    "replies": 2
   },
   {
     "post_id": "18064905893758505",
@@ -7766,7 +7769,10 @@
     "hour": 7,
     "selected_title": "이혼 재산분할, 세금까지 계산해야 공평하다 [전안나의 가사상속법가이드]",
     "source": "매일경제",
-    "line_count": 8
+    "line_count": 8,
+    "views": 182,
+    "likes": 0,
+    "replies": 3
   },
   {
     "post_id": "17951788497245993",
@@ -7776,7 +7782,10 @@
     "hour": 13,
     "selected_title": "가짜 계약서로 법원도 속였다…45억 뜯은 깡통빌라 사기극",
     "source": "연합뉴스",
-    "line_count": 7
+    "line_count": 7,
+    "views": 77,
+    "likes": 0,
+    "replies": 2
   },
   {
     "post_id": "18094695107547684",
@@ -7786,7 +7795,10 @@
     "hour": 13,
     "selected_title": "가짜 계약서로 법원도 속였다…45억 뜯은 깡통빌라 사기극",
     "source": "연합뉴스",
-    "line_count": 4
+    "line_count": 4,
+    "views": 118,
+    "likes": 2,
+    "replies": 2
   },
   {
     "post_id": "18085198817668238",
@@ -7796,7 +7808,10 @@
     "hour": 16,
     "selected_title": "통상 사령탑 여한구 산업부 통상교섭본부장 경질(종합)",
     "source": "연합뉴스",
-    "line_count": 5
+    "line_count": 5,
+    "views": 598,
+    "likes": 0,
+    "replies": 3
   },
   {
     "post_id": "18386074744202544",
@@ -7806,7 +7821,10 @@
     "hour": 20,
     "selected_title": "공정위선 1순위, 검찰선 후순위?…리니언시 일원화 주목",
     "source": "",
-    "line_count": 0
+    "line_count": 0,
+    "views": 64,
+    "likes": 0,
+    "replies": 2
   },
   {
     "post_id": "18077334809356820",
@@ -7816,7 +7834,10 @@
     "hour": 20,
     "selected_title": "공정위선 1순위, 검찰선 후순위?…리니언시 일원화 주목",
     "source": "뉴시스",
-    "line_count": 4
+    "line_count": 4,
+    "views": 68,
+    "likes": 0,
+    "replies": 3
   },
   {
     "post_id": "17863339260656971",
@@ -7826,7 +7847,10 @@
     "hour": 22,
     "selected_title": "“자동차 보험료가 30% 올랐네요”…할증 높이는 주요 원인 보니",
     "source": "매일경제",
-    "line_count": 3
+    "line_count": 3,
+    "views": 1855,
+    "likes": 0,
+    "replies": 3
   },
   {
     "post_id": "18133525279627337",
@@ -7836,7 +7860,10 @@
     "hour": 22,
     "selected_title": "은퇴 앞두고 파랗게 질린 5060 개미들",
     "source": "조선일보",
-    "line_count": 5
+    "line_count": 5,
+    "views": 220,
+    "likes": 0,
+    "replies": 4
   },
   {
     "post_id": "18020453870883035",
@@ -7846,7 +7873,10 @@
     "hour": 22,
     "selected_title": "박근혜 前 대통령도 털렸다... 서강대 개인정보 18만건 유출",
     "source": "조선일보",
-    "line_count": 3
+    "line_count": 3,
+    "views": 209,
+    "likes": 0,
+    "replies": 2
   },
   {
     "post_id": "17908506468466464",
@@ -7856,7 +7886,10 @@
     "hour": 0,
     "selected_title": "퇴직연금 어디 맡기지 … 3년 수익률 105% 최강자는",
     "source": "매일경제",
-    "line_count": 9
+    "line_count": 9,
+    "views": 46,
+    "likes": 0,
+    "replies": 3
   },
   {
     "post_id": "18081252629680724",
@@ -7866,7 +7899,10 @@
     "hour": 7,
     "selected_title": "[만나보니] 블라인드 대표 \"AI발 효율화, 신입채용 축소로 먼저 나타나\"",
     "source": "연합뉴스",
-    "line_count": 4
+    "line_count": 4,
+    "views": 4,
+    "likes": 0,
+    "replies": 1
   },
   {
     "post_id": "17898388353575135",
@@ -7876,7 +7912,10 @@
     "hour": 7,
     "selected_title": "“병원비 5137만원 써야 본전?”…30년 실손보험료 계산해보니 ‘뜻밖의 결과’",
     "source": "매일경제",
-    "line_count": 6
+    "line_count": 6,
+    "views": 150,
+    "likes": 0,
+    "replies": 2
   },
   {
     "post_id": "18124285022500120",
@@ -7886,7 +7925,10 @@
     "hour": 13,
     "selected_title": "시어머니 간병하다 육아휴직 수당 신청 놓쳐…결국 못받은 사연",
     "source": "연합뉴스",
-    "line_count": 6
+    "line_count": 6,
+    "views": 13,
+    "likes": 0,
+    "replies": 3
   },
   {
     "post_id": "18124841353702133",
@@ -7896,7 +7938,10 @@
     "hour": 13,
     "selected_title": "공론화된 용산공원내 주택 건설…'20년 금지' 빗장 풀리나",
     "source": "연합뉴스",
-    "line_count": 6
+    "line_count": 6,
+    "views": 162,
+    "likes": 0,
+    "replies": 3
   },
   {
     "post_id": "18110738210044237",
@@ -7904,7 +7949,10 @@
     "format_variant": "series",
     "date": "2026-08-16",
     "hour": 14,
-    "selected_title": "요양원도 자식 신세도 싫다면 — 노후 준비는 가족이 아니라 구조로 해야 한다"
+    "selected_title": "요양원도 자식 신세도 싫다면 — 노후 준비는 가족이 아니라 구조로 해야 한다",
+    "views": 100,
+    "likes": 0,
+    "replies": 3
   },
   {
     "post_id": "18095934614307027",
@@ -7914,7 +7962,10 @@
     "hour": 16,
     "selected_title": "군대에서 축구하다 다친 예비역…법원 '보훈 보상대상자 맞다'",
     "source": "연합뉴스",
-    "line_count": 5
+    "line_count": 5,
+    "views": 212,
+    "likes": 0,
+    "replies": 3
   },
   {
     "post_id": "18004274330994126",
@@ -7924,7 +7975,10 @@
     "hour": 20,
     "selected_title": "집값 5000만원 차이에 비거주 종부세 200만원↑…보완할까?",
     "source": "뉴시스",
-    "line_count": 7
+    "line_count": 7,
+    "views": 669,
+    "likes": 0,
+    "replies": 3
   },
   {
     "post_id": "18156205957501433",
@@ -7934,7 +7988,10 @@
     "hour": 22,
     "selected_title": "“병원비 5137만원 써야 본전?”…30년 실손보험료 계산해보니 ‘뜻밖의 결과’",
     "source": "매일경제",
-    "line_count": 5
+    "line_count": 5,
+    "views": 187,
+    "likes": 0,
+    "replies": 3
   },
   {
     "post_id": "18116774245907206",
@@ -7944,7 +8001,10 @@
     "hour": 22,
     "selected_title": "“병원비 5137만원 써야 본전?”…30년 실손보험료 계산해보니 ‘뜻בח의 결과’",
     "source": "매일경제",
-    "line_count": 3
+    "line_count": 3,
+    "views": 303,
+    "likes": 0,
+    "replies": 3
   },
   {
     "post_id": "18559121569078788",
@@ -7954,7 +8014,10 @@
     "hour": 22,
     "selected_title": "공론화된 용산공원내 주택 건설…'20년 금지' 빗장 풀리나",
     "source": "연합뉴스",
-    "line_count": 5
+    "line_count": 5,
+    "views": 1073,
+    "likes": 0,
+    "replies": 4
   },
   {
     "post_id": "17983484901062645",
@@ -7964,7 +8027,10 @@
     "hour": 0,
     "selected_title": "앤트로픽 깜짝 흑자에 반도체 업계 반색 ... ‘AI 수익화’ 결정적 증거인가",
     "source": "매일경제",
-    "line_count": 4
+    "line_count": 4,
+    "views": 152,
+    "likes": 0,
+    "replies": 3
   },
   {
     "post_id": "18096390668132125",
@@ -7974,7 +8040,10 @@
     "hour": 7,
     "selected_title": "ISA 더이상 ‘만능통장’ 아니다 … 혜택축소 개편에 부글부글",
     "source": "매일경제",
-    "line_count": 6
+    "line_count": 6,
+    "views": 37,
+    "likes": 0,
+    "replies": 2
   },
   {
     "post_id": "18366627940211407",
@@ -7984,7 +8053,10 @@
     "hour": 7,
     "selected_title": "수출 7000억 달러 시대, 해외송금 전 ‘외환 신고’부터 점검해야 [바른 컴플라이언스리포트]",
     "source": "매일경제",
-    "line_count": 7
+    "line_count": 7,
+    "views": 366,
+    "likes": 0,
+    "replies": 3
   },
   {
     "post_id": "17978059985901718",
@@ -7994,7 +8066,10 @@
     "hour": 13,
     "selected_title": "정부 세제개편안 ISA '핀셋 손질'…부동산 골격은 국회논의 전망(종합)",
     "source": "연합뉴스",
-    "line_count": 5
+    "line_count": 5,
+    "views": 229,
+    "likes": 0,
+    "replies": 2
   },
   {
     "post_id": "17930953938385711",
@@ -8004,7 +8079,10 @@
     "hour": 13,
     "selected_title": "“동전주 걷어내면 천스닥 회복할까”…코스닥 36곳 무더기 관리종목, 퇴출 본격화",
     "source": "매일경제",
-    "line_count": 5
+    "line_count": 5,
+    "views": 260,
+    "likes": 0,
+    "replies": 3
   },
   {
     "post_id": "18264121789306850",
@@ -8014,6 +8092,9 @@
     "hour": 16,
     "selected_title": "PB 상품 판매 목표 미달하면 가맹 해지 압박…다비치안경 과징금",
     "source": "연합뉴스",
-    "line_count": 4
+    "line_count": 4,
+    "views": 242,
+    "likes": 0,
+    "replies": 3
   }
 ]
