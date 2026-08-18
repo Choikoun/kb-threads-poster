@@ -1,42 +1,42 @@
 # 📰 일일 브리핑
-*2026-08-18 07:35 KST*
+*2026-08-19 07:35 KST*
 
 ---
 
 ## 🔖 보험 동향
+- [AIA생명, 촹 네이슨 마이클 대표 사임 … 차기 대표이사 선임 절차 진행](https://www.insnews.co.kr/news/articleView.html?idxno=92357)
+- [카카오페이손해보험, 보험금 지급시간 알려주는 ‘바로지급’ 서비스 시작](https://www.insnews.co.kr/news/articleView.html?idxno=92327)
+- [금융보안원, AI로 AI 해킹 막는다… 금융권 해킹방어 대회 개최](https://www.insnews.co.kr/news/articleView.html?idxno=92326)
 - [사이버보험 분쟁 가른 약관 문구… ‘보장·면책 범위 명확해야’](https://www.insnews.co.kr/news/articleView.html?idxno=92320)
 - [[이은옥의 보험 읽어주는 사람] 자동차보험 고객이 사망하면 계약은 어떻게 될까](https://www.insnews.co.kr/news/articleView.html?idxno=92306)
-- [돌아온 보험사 M&A의 계절… 종합금융그룹 ‘마지막 퍼즐’ 맞춘다](https://www.insnews.co.kr/news/articleView.html?idxno=92286)
-- [대형 GA ‘보험판매전문회사’ 입법 재점화… 권한 확대·책임 강화 병행](https://www.insnews.co.kr/news/articleView.html?idxno=92282)
-- [[금융이슈 Summary] 환율 급등락에 따른 보험권 변동성 관리 과제](https://www.insnews.co.kr/news/articleView.html?idxno=92281)
 
 ## 💰 국내 경제·금융
-- ['트럼프 수혜 기대' HMM, 증권가 전망 엇갈리는 이유 [종목+]](https://www.hankyung.com/article/2026081416396)
-- [코스피 7000 눈앞…추가 상승 가를 핵심 변수는](https://www.hankyung.com/article/2026081753877)
-- [시험대 오른 반도체…이번주 변수는 [한경 프리미엄9 TODAY]](https://www.hankyung.com/article/2026081753651)
-- [빅테크 9곳 AI 투자…美 공시금액 웃돌아](https://www.hankyung.com/article/2026081753791)
-- [뉴욕·상하이 증시, '美 소비 가늠자' 월마트·홈디포 실적 발표](https://www.hankyung.com/article/2026081753821)
+- ["미국 접수한 신라면·불닭볶음면"…K라면 수출 끓어올랐다 [분석+]](https://www.hankyung.com/article/2026081875356)
+- [월마트도 반한 '한국의 맛' 뭐길래…"주가 60만원 갑니다" [종목+]](https://www.hankyung.com/article/2026081874916)
+- [삼전닉스 다시 뛰는데…코스피 상승에 숨겨진 '이상 신호'](https://www.hankyung.com/article/2026081880646)
+- [코스피에 또 '뭉칫돈' 몰렸다…외국인 '7조' 쓸어담은 종목](https://www.hankyung.com/article/2026081881317)
+- [[포토] 코스피 6,800선 후퇴…108포인트 하락](https://www.hankyung.com/article/202608188067i)
 
 ## 📈 주식·시장
-- [“월요일에 장이 열렸어야 했는데”…日·대만서 메모리株 급등](https://www.mk.co.kr/news/stock/12129762)
-- [뉴욕증시 3대지수 하락···30년물 국채금리 19년래 최고[월가월부]](https://www.mk.co.kr/news/stock/12129759)
-- [일본 연말 시총 1위를 AI에게 물었더니 … 일본 경제 시나리오 3가지로 갈렸다](https://www.mk.co.kr/news/stock/12129319)
-- [“코스피 신호등 그린라이트” … 투자베테랑의 베팅은](https://www.mk.co.kr/news/stock/12129284)
-- [퇴직연금 어디 맡기지…3년 수익률 105% 최강자는 [이슈 플러스]](https://www.mk.co.kr/news/economy/12129525)
+- [BB크림으로 뜨더니 이번엔 스킨케어 대박 … 코스메카코리아 이번엔 ‘코스피 이전’ 성공할까](https://www.mk.co.kr/news/business/12130528)
+- [“코스피 신호등 그린라이트”…투자베테랑의 베팅은 [김태홍의 투자 포트폴리오]](https://www.mk.co.kr/news/stock/12130534)
+- [반등 이어가던 코스피, 美금리 불안에 털썩 … 장중 5% 널뛰기](https://www.mk.co.kr/news/stock/12130433)
+- [대형상장사 대주주 견제 촘촘해진다](https://www.mk.co.kr/news/stock/12130414)
+- [中매출 뚝뚝…나이키 주가 12년來 최저](https://www.mk.co.kr/news/stock/12130413)
 
 ## 🌏 글로벌 경제·정세
-- [美국방부, 트럼프 말에 입장 번복…"한미 훈련 축소 이행"](https://www.hankyung.com/article/2026081857197)
-- [트럼프 "김정은, 대화 제안에 응답…李에 이란 지원 요청했지만 사양"](https://www.hankyung.com/article/2026081857007)
-- [트럼프, 오만까지 때렸다…"이란 협상 방해되면 폭격" 경고](https://www.hankyung.com/article/2026081755827)
-- [日 정부, 트럼프 한미 연합훈련 축소 지시에 '촉각'](https://www.hankyung.com/article/2026081754467)
-- [국채금리, 30년만에 최고…금리인상 딜레마 빠진 日銀](https://www.hankyung.com/article/2026081753741)
+- [중동 간 美항모…태평양 안보 공백에 中만 웃는다](https://www.hankyung.com/article/2026081983317)
+- [이란전 안 풀리자 동맹에 화풀이?…美언론 "한국, 뜻밖의 희생양"](https://www.hankyung.com/article/2026081983167)
+- [AI 학습 위해 항공사 데이터 사들인 구글](https://www.hankyung.com/article/2026081881071)
+- [중국의 '치명적 무기' 된 희토류…美·日, 공급망 재편으로 반격](https://www.hankyung.com/article/2026081877681)
+- [이란 "美 약속 이행할 때까지 호르무즈 열리지 않을 것"](https://www.hankyung.com/article/2026081880777)
 
 ## 🔥 팔로업 추천 (300회 이상)
-- 1,315회 [2026-08-16] 💡 용산공원 부지에 주택을 짓는 방안이 다시 수면 위로 올라왔어.  20...
-- 1,057회 [2026-08-17] 프랜차이즈 본사 말만 믿고 PB 상품 들여놨다가 결국 빚만 떠안았어.  ...
-- 681회 [2026-08-16] 💡 집값은 고작 5천만 원 차이인데 종부세는 200만 원 넘게 차이 나는...
-- 545회 [2026-08-17] 거래처 대금이 밀려도 버틸 수 있을 거라 생각했어.  3년 전 무리하게 ...
-- 382회 [2026-08-16] 해외로 돈 보낼 때, 그냥 송금 버튼 누르면 끝인 줄 알지.  ⚠️ 법인...
+- 1,319회 [2026-08-16] 💡 용산공원 부지에 주택을 짓는 방안이 다시 수면 위로 올라왔어.  20...
+- 1,078회 [2026-08-17] 프랜차이즈 본사 말만 믿고 PB 상품 들여놨다가 결국 빚만 떠안았어.  ...
+- 666회 [2026-08-17] 거래처 대금이 밀려도 버틸 수 있을 거라 생각했어.  3년 전 무리하게 ...
+- 526회 [2026-08-17] 청약통장 소득공제 일몰을 아예 없애는 방안이 추진된다고 해.  이탈하는 ...
+- 383회 [2026-08-16] 해외로 돈 보낼 때, 그냥 송금 버튼 누르면 끝인 줄 알지.  ⚠️ 법인...
 
 ---
 *총 60개 기사 수집됨*
