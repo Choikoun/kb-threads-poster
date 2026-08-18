@@ -1,4 +1,19 @@
 # 🏛️ KTV 국무회의 브리핑
-*2026-08-17 16:18 KST*
+*2026-08-18 16:07 KST*
 
-오늘 관련 영상 없음
+---
+
+## (26.8.18.) 을지1 및 제36회 국무회의
+🔗 https://youtu.be/tBDepV3LJi0
+
+[자막 없음: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=tBDepV3LJi0! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There are two ...
+
+---
+
