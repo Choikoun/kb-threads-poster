@@ -1,0 +1,45 @@
+name: 연금보험 주간 포스팅 (Threads·Instagram, 목 20:30 KST)
+
+on:
+  schedule:
+    - cron: '30 11 * * 4'   # 매주 목요일 20:30 KST
+  workflow_dispatch:
+
+jobs:
+  post_annuity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: 패키지 설치
+        run: pip install requests python-dotenv Pillow google-genai feedparser beautifulsoup4
+      - name: 포스팅
+        env:
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+          INSTAGRAM_BUSINESS_ACCOUNT_ID: ${{ secrets.INSTAGRAM_BUSINESS_ACCOUNT_ID }}
+          IMGBB_API_KEY: ${{ secrets.IMGBB_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python annuity_poster.py
+      - name: 콘텐츠 로그 커밋
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config merge.jsonlog.driver "python merge_json_log.py %O %A %B"
+          git add content_log.json
+          git diff --staged --quiet || git commit -m "콘텐츠 로그 업데이트"
+          for attempt in 1 2 3 4 5; do
+            git pull --rebase origin main && git push && break
+            git rebase --abort 2>/dev/null || true
+            echo "push 충돌 — 재시도 $attempt/5"; sleep $((attempt * 5))
+          done
+      - name: 실패 알림
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue create \
+            --title "⚠️ 포스팅 실패: ${{ github.workflow }} ($(TZ=Asia/Seoul date +'%Y-%m-%d %H:%M'))" \
+            --body "[로그](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})"
