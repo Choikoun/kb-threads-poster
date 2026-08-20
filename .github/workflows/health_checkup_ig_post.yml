@@ -1,9 +1,6 @@
 name: 인스타 건강검진 카드뉴스 게시 (1회성 수동)
 
 on:
-  push:
-    paths:
-      - '.github/workflows/health_checkup_ig_post.yml'
   workflow_dispatch:
 
 permissions:
