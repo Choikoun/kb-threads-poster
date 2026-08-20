@@ -1,41 +1,40 @@
 # 📰 일일 브리핑
-*2026-08-20 07:35 KST*
+*2026-08-21 07:38 KST*
 
 ---
 
 ## 🔖 보험 동향
+- [iFA, 프로당구팀 PBA 브레이커스 후원… ‘iFA AI’ 고객 접점 확대](https://www.insnews.co.kr/news/articleView.html?idxno=92386)
+- [2026 보험연합학술대회 개막, 복합 위험 시대 ‘삶의 질’ 높일 보험의 역할과 과제 모색](https://www.insnews.co.kr/news/articleView.html?idxno=92383)
+- [현대해상, ‘페달 오조작 안전 보조장치’ 장착 시 자동차보험료 할인](https://www.insnews.co.kr/news/articleView.html?idxno=92382)
 - [신한라이프, 경남 호우 피해 고객 지원… 보험료 6개월 납입유예](https://www.insnews.co.kr/news/articleView.html?idxno=92376)
 - [DB손해보험, 우수고객 자녀초청 ‘농구캠프’ 열어](https://www.insnews.co.kr/news/articleView.html?idxno=92359)
-- [NH농협손해보험, 축사 화재 인수 점검 실시](https://www.insnews.co.kr/news/articleView.html?idxno=92362)
-- [AIA생명, 촹 네이슨 마이클 대표 사임 … 차기 대표이사 선임 절차 진행](https://www.insnews.co.kr/news/articleView.html?idxno=92357)
-- [카카오페이손해보험, 보험금 지급시간 알려주는 ‘바로지급’ 서비스 시작](https://www.insnews.co.kr/news/articleView.html?idxno=92327)
 
 ## 💰 국내 경제·금융
-- [일본, 유럽 국채금리도 수십년 만에 최고…'버티던 증시' 흔들](https://www.hankyung.com/article/202608190034i)
-- [중국 반도체 몸집 키우기 나섰다…삼전닉스 어쩌나 '비상' [분석+]](https://www.hankyung.com/article/2026081901916)
-- [금리의 습격…칠천피 문턱서 다시 후퇴](https://www.hankyung.com/article/2026081904711)
-- [국채금리發 '트리플 약세' 재연되나…"7월 같은 폭락장 없다"](https://www.hankyung.com/article/202608199666i)
-- [장기채 금리의 습격…칠천피 문턱에서 무너졌다](https://www.hankyung.com/article/202608199698i)
+- [뉴욕증시, 美국채금리 반등에 일제히 하락…반도체주는 선방 [뉴욕증시 브리핑]](https://www.hankyung.com/article/2026082135636)
+- ["진영이형, 무조건 사라더니"…주가 24% 빠지자 '부글부글' [종목+]](https://www.hankyung.com/article/2026082027146)
+- ['반도체 투톱' 주주환원 통했다…코스피 6% 급등](https://www.hankyung.com/article/2026082029901)
+- [40조원은 시작일 뿐… "하이닉스 주주환원 실탄 200조원 더 남았다"](https://www.hankyung.com/article/202608201594i)
+- [“AI 간판 없어도 된다”…삼전·하이닉스 담은 ETF에 뭉칫돈](https://www.hankyung.com/article/202608202672i)
 
 ## 📈 주식·시장
-- [“증시, 실적 반이라도 따라갑시다”…3분기에 역대급 찍는 업종 어디](https://www.mk.co.kr/news/stock/12131781)
-- [“삼전닉스만 있냐고요? 섭섭하네”…투톱 빼고도 순익 3배 뛴 상장사들](https://www.mk.co.kr/news/stock/12131780)
-- [채권발작 진정?…재무부 긴급처방에 금리 급락, 美증시 반등 [월가월부]](https://www.mk.co.kr/news/stock/12131755)
-- [BB크림으로 뜨더니 이번엔 스킨케어 대박…코스메카코리아 이번엔 ‘코스피 이전’ 성공할까 [플러스 관심종목]](https://www.mk.co.kr/news/stock/12131555)
-- [SK하닉, 40조 자사주 취득·소각…“주주가치 제고”](https://www.mk.co.kr/news/business/12131529)
+- [반도체만 보면 더 오를 것 같지만…“코스피 6000에 사고 7000에 팔아라” [머니닥터 시장진단]](https://www.mk.co.kr/news/stock/12132613)
+- [달러 약세에 귀해진 귀금속 … 금값·은값 줄줄이 오른다](https://www.mk.co.kr/news/stock/12132548)
+- ["환율 변동보다 美금리·고유가 더 경계를"](https://www.mk.co.kr/news/stock/12132545)
+- [트럼프 '가상자산 법안' 압박 … 비트코인 7만弗 돌파](https://www.mk.co.kr/news/stock/12132546)
+- [[단독] 국민연금 “누가 AI거품론을 말했는가”…오픈AI·앤트로픽 IPO 참여](https://www.mk.co.kr/news/stock/12132515)
 
 ## 🌏 글로벌 경제·정세
-- [美 중앙은행 "AI 투자경쟁, 물가와 금융에 새로운 부담" [Fed 워치]](https://www.hankyung.com/article/202608200885i)
-- [트럼프 "한국, 호르무즈 지원 거절 기분 안좋아"…재차 불만 표출](https://www.hankyung.com/article/2026082008927)
-- [트럼프 "북한, 57개 핵무기 갖고 있어"…핵 보유 숫자 첫 언급](https://www.hankyung.com/article/2026082008717)
-- [[속보] 미국 국가부채, 사상 첫 40조달러 돌파](https://www.hankyung.com/article/2026082008707)
-- [FOMC 매파 확대…위원 약 50% "물가 안 잡히면 금리 인상" [Fed 워치]](https://www.hankyung.com/article/202608200822i)
+- [美 "우리 편인지 아닌지 둘 중 하나"…이란 고립에 동맹국 참여 압박](https://www.hankyung.com/article/2026082135117)
+- [FOMC 위원 절반 "인플레 지속땐 금리인상 필요"](https://www.hankyung.com/article/2026082030571)
+- [중동戰에 전기료 뛰자…필리핀, 옥상 태양광 열풍](https://www.hankyung.com/article/2026082030601)
+- [이젠 유통주 아닌 AI주…알리바바, 中 빅테크 상승률 1위](https://www.hankyung.com/article/202608201910i)
+- [AI 생산성 붐, 美 세수 늘려도 40조달러 부채 해결엔 한계](https://www.hankyung.com/article/202608201108i)
 
 ## 🔥 팔로업 추천 (300회 이상)
-- 4,252회 [2026-08-18] 지분 키우려다 현금으로 다 털릴 판이라는 걸 경영권 잡고 있을 땐 몰랐지...
-- 570회 [2026-08-19] 💡 전기차 사면 보조금 다 내 통장으로 들어올 줄 알았지.  막상 따져보...
-- 528회 [2026-08-17] 청약통장 소득공제 일몰을 아예 없애는 방안이 추진된다고 해.  이탈하는 ...
-- 358회 [2026-08-17] 결혼 생활 7년 채웠으니 노후 연금도 반반 나눌 수 있다고?  💡 법원이...
+- 4,704회 [2026-08-18] 지분 키우려다 현금으로 다 털릴 판이라는 걸 경영권 잡고 있을 땐 몰랐지...
+- 666회 [2026-08-19] 💡 전기차 사면 보조금 다 내 통장으로 들어올 줄 알았지.  막상 따져보...
+- 506회 [2026-08-20] 비트코인이 다시 7만 달러를 넘었어.  💡 이번엔 정치권 입김이 너무 세...
 - 331회 [2026-08-18] 집값 잡겠다며 꺼내 든 공급 카드,  오히려 시장을 더 흔드는 불씨가 되...
 
 ---
