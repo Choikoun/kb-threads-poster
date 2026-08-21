@@ -1,13 +1,27 @@
 # 🏛️ KTV 국무회의 브리핑
-*2026-08-20 16:09 KST*
+*2026-08-21 16:10 KST*
 
 ---
 
-## (26.8.20.) 제44차 대통령 주재 수석보좌관회의 모두발언
-🔗 https://youtu.be/YBnyYkI__as
+## 거제의 기록적 폭우에🌧 이재명 대통령 긴급 당부와 지시🚨 한성숙 총리와 윤호중 장관 등 한달음에 현장 출동🏃 발 빠르게 대응한 관계 부처! #이재명정부 #거제 #폭우
+🔗 https://youtu.be/_SY0M-f7068
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=YBnyYkI__as! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=_SY0M-f7068! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There are two ...
+
+---
+
+## (26.8.21.) 제1차 재정운용전략협의회 관련 관계부처 합동브리핑
+🔗 https://youtu.be/4MTw8ASdIns
+
+[자막 없음: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=4MTw8ASdIns! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
