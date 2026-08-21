@@ -883,7 +883,7 @@
     "type": "reels",
     "selected_title": "“사실거면 5억 빌려드리고요”...‘매도인 대출’ 강남·분당선 벌써 유행",
     "date": "2026-07-22 21:49",
-    "reach": 1100,
+    "reach": 1102,
     "saved": 0,
     "likes": 0,
     "comments": 0
@@ -1083,7 +1083,7 @@
     "type": "reels",
     "selected_title": "7월 수출 988.9억弗 역대 2위…반도체 2개월 연속 400억弗 돌파",
     "date": "2026-08-01 14:42",
-    "reach": 171,
+    "reach": 172,
     "saved": 0,
     "likes": 0,
     "comments": 0
@@ -1323,7 +1323,7 @@
     "type": "reels",
     "selected_title": "하이닉스 ‘일본 반도체 1황’ 최대주주 됐다…당국 견제가 변수",
     "date": "2026-08-12 21:03",
-    "reach": 2231,
+    "reach": 2232,
     "saved": 1,
     "likes": 1,
     "comments": 0
@@ -1353,7 +1353,7 @@
     "type": "reels",
     "selected_title": "6월 통화량 29.4조원↑…수출 호조에 반도체 등 기업 자금 증가",
     "date": "2026-08-14 13:23",
-    "reach": 930,
+    "reach": 931,
     "saved": 0,
     "likes": 1,
     "comments": 0
@@ -1403,7 +1403,7 @@
     "type": "reels",
     "selected_title": "집값 5000만원 차이에 비거주 종부세 200만원↑…보완할까?",
     "date": "2026-08-16 12:28",
-    "reach": 203,
+    "reach": 240,
     "saved": 0,
     "likes": 0,
     "comments": 0
@@ -1413,8 +1413,8 @@
     "type": "reels",
     "selected_title": "집값 5000만원 차이에 비거주 종부세 200만원↑…보완할까?",
     "date": "2026-08-16 20:40",
-    "reach": 190,
-    "saved": 0,
+    "reach": 253,
+    "saved": 1,
     "likes": 0,
     "comments": 0
   },
@@ -1423,7 +1423,7 @@
     "type": "reels",
     "selected_title": "삼전닉스 레버리지에 피눈물났는데…거래소·증권사는 수수료 1170억 벌었다",
     "date": "2026-08-17 12:29",
-    "reach": 130,
+    "reach": 155,
     "saved": 0,
     "likes": 0,
     "comments": 0
@@ -1432,36 +1432,60 @@
     "ig_post_id": "18113060536955310",
     "type": "reels",
     "selected_title": "성인 4명 중 한 명은 ‘삼전닉스 개미’…소액주주 1100만명 넘어서",
-    "date": "2026-08-17 20:45"
+    "date": "2026-08-17 20:45",
+    "reach": 144,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18451882783189774",
     "type": "reels",
     "selected_title": "“버티다 바닥서 팔고, 반등 때 못 샀다”…20년간 딱 30일 놓치자 생긴 일 [데이터로 읽는 자산시장]",
-    "date": "2026-08-19 21:42"
+    "date": "2026-08-19 21:42",
+    "reach": 107,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18094271558333701",
     "type": "reels",
     "selected_title": "'업계 최고' '환급률 1위' 세무사 광고, 근거 없으면 못쓴다",
-    "date": "2026-08-20 12:26"
+    "date": "2026-08-20 12:26",
+    "reach": 110,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18064062722774840",
     "type": "reels",
     "selected_title": "상조회사 지배주주 신용공여, 자본금 50% 이내…할부거래법 통과",
-    "date": "2026-08-20 20:47"
+    "date": "2026-08-20 20:47",
+    "reach": 105,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18129671356679918",
     "type": "reels",
     "selected_title": "소득 상위 10%가 세금 77.6% 부담…세제혜택 비중의 2배 넘어",
-    "date": "2026-08-21 12:31"
+    "date": "2026-08-21 12:31",
+    "reach": 112,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18102768287459665",
     "type": "reels",
     "selected_title": "文때도 尹때도 국민이 소송 이겨도 특활비 못봐…‘제도적 허점’",
-    "date": "2026-08-21 20:47"
+    "date": "2026-08-21 20:47",
+    "reach": 105,
+    "saved": 0,
+    "likes": 1,
+    "comments": 0
   }
 ]
