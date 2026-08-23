@@ -1,41 +1,42 @@
 # 📰 일일 브리핑
-*2026-08-23 07:33 KST*
+*2026-08-24 07:33 KST*
 
 ---
 
 ## 🔖 보험 동향
-- [전보련, 곤지암서 제30회 보험 전공 연합학술대회 개최](https://www.insnews.co.kr/news/articleView.html?idxno=92399)
-- [동양생명, 유니버설 보험서비스 ‘라이프플랜 체크’ 상담 이벤트 진행](https://www.insnews.co.kr/news/articleView.html?idxno=92397)
-- [SGI서울보증, 지붕 태양광 사업자 보증보험료 부담 낮춘다](https://www.insnews.co.kr/news/articleView.html?idxno=92395)
-- [iFA, 프로당구팀 PBA 브레이커스 후원… ‘iFA AI’ 고객 접점 확대](https://www.insnews.co.kr/news/articleView.html?idxno=92386)
-- [2026 보험연합학술대회 개막, 복합 위험 시대 ‘삶의 질’ 높일 보험의 역할과 과제 모색](https://www.insnews.co.kr/news/articleView.html?idxno=92383)
+- [1200%룰이 바꾼 보험상품 전략, ‘고수수료’에서 ‘고유지율’로](https://www.insnews.co.kr/news/articleView.html?idxno=92388)
+- [[시론] 기업위험이 커질수록 보험은 늘어날까](https://www.insnews.co.kr/news/articleView.html?idxno=92379)
+- [[이하진의 보험을 워딩하다] 복리(複利)의 마법, 그리고 음의 복리](https://www.insnews.co.kr/news/articleView.html?idxno=92377)
+- [‘계리가정’ 바꿨더니, 보험사 실적 영향 엇갈려](https://www.insnews.co.kr/news/articleView.html?idxno=92372)
+- [외국인 근로자 휴면보험금 300억대, 자동환급에도 미수령 여전](https://www.insnews.co.kr/news/articleView.html?idxno=92370)
 
 ## 💰 국내 경제·금융
-- ['2조달러' 앤트로픽 IPO 추진…스페이스X 넘는 자금 블랙홀 될까](https://www.hankyung.com/article/2026082261777)
-- ["금 대신 샀더니"…한 달 만에 30% 넘게 오르자 개미들 '들썩' [이수의 ETF줌인]](https://www.hankyung.com/article/2026082151526)
-- ["쪼개기 그만"…인적분할에도 주가 내렸다 [노정동의 어쩌다 투자자]](https://www.hankyung.com/article/2026082151176)
-- ['170만원 하이닉스 주식' 비싸서 못 샀는데…개미들 설렌다 [투자톡]](https://www.hankyung.com/article/2026082146506)
-- ['숏 치다간 다친다'…美 으름장에도 금리는 더 뛰었다 [빈난새의 빈틈없이마켓]](https://www.hankyung.com/article/202608213815i)
+- [“종목과 사랑에 빠지지 마세요”... 88년생 '1세대 ETF 애널리스트'의 투자 원칙](https://www.hankyung.com/article/202608202933i)
+- ['매파' Fed 인사, 국채금리 급등에도 "시장 정상 작동"](https://www.hankyung.com/article/2026082474237)
+- [합법적으로 양도세 안 내는 방법 [한경 프리미엄9 TODAY]](https://www.hankyung.com/article/2026082371111)
+- [환율·채권, 잇단 달러매도…환율 1300원대 안착하나](https://www.hankyung.com/article/2026082371541)
+- [뉴욕 증시, 이번주 잭슨홀 미팅…워시 입에 촉각](https://www.hankyung.com/article/2026082371571)
 
 ## 📈 주식·시장
-- [금·비트코인만 오르고 달러는 약세…베센트의 역설](https://www.mk.co.kr/news/economy/12133837)
-- [“AI 빚 내가 보증설께”…엔비디아 통큰 약속에 서학개미 DRAM에 1천억 베팅](https://www.mk.co.kr/news/business/12133760)
-- [“모더나의 ‘mRNA 암 백신’은 역사적 사건”…국내 증시 진짜 수혜주 2곳은 [여의도란도란]](https://www.mk.co.kr/news/stock/12133745)
-- [510% 수익낸 고수 … “반도체 다음은 코스닥에서 나온다”](https://www.mk.co.kr/news/stock/12133309)
-- [카카오 인적분할에 160만 주주 당황…새로 상장하는 AI 회사의 정체는 [플러스 관심 종목]](https://www.mk.co.kr/news/stock/12133589)
+- [AI가 보내온 ‘채권발작’ 청구서 … 누가, 무엇으로 갚나](https://www.mk.co.kr/news/stock/12134031)
+- [네오클라우드에 이어 스페이스X 까지 … 미국 주식 하반기에도 상승 기대하는 이유](https://www.mk.co.kr/news/stock/12134038)
+- [학습효과 없는 개미들 “삼전닉스 2배ETF 가즈아”…이틀만에 2조](https://www.mk.co.kr/news/stock/12134264)
+- [도수치료 청구 줄고, 고금리 수혜 … 손보사 주가 잘나가네](https://www.mk.co.kr/news/stock/12134187)
+- [삼전 '자사주 소각'보다 배당 … 3년간 역대급 주주환원 예고](https://www.mk.co.kr/news/stock/12134177)
 
 ## 🌏 글로벌 경제·정세
-- ["메시가 이럴 수가" 충격…상대 선수 때렸다가 벌금 징계](https://www.hankyung.com/article/2026082260677)
-- [[속보] 美·캐나다 협상 결렬…캐나다산 제품 50% 관세 현실화](https://www.hankyung.com/article/2026082260547)
-- [트럼프 "호르무즈 해협은 미국 영토"…또 영유권 주장](https://www.hankyung.com/article/2026082260017)
-- [트럼프 "이란, 올바른 합의 준비 안 돼"…군사 행동엔 말 아껴](https://www.hankyung.com/article/2026082258717)
-- [미국 제재 압박하자…이란 "우리가 우위, 지금이 전쟁 끝낼 때"](https://www.hankyung.com/article/2026082157287)
+- ["건강 위험 경고" 트럼프 체중 108㎏…33개월 새 10.5㎏](https://www.hankyung.com/article/2026082474307)
+- [2012년 남유럽 재정위기 땐 국채금리 급등, 은행 부실로 전이](https://www.hankyung.com/article/2026082371231)
+- [트럼프, 캐나다에 "미국의 州 아니면서" 직격…관세전쟁 격돌](https://www.hankyung.com/article/2026082370517)
+- [일본이 어쩌다가…나랏빚 '세계 최고'인데 금리까지 뛴다](https://www.hankyung.com/article/2026082370087)
+- [日 금리 상승에 재정 부담 눈덩이…국채비 36조엔 '사상 최대'](https://www.hankyung.com/article/202608236929i)
 
 ## 🔥 팔로업 추천 (300회 이상)
+- 1,050회 [2026-08-22] 대기업 주주환원 소식에 환율이 움직이자  해외에 아이 보낸 부모들 사이에...
+- 953회 [2026-08-23] 내 명의로 사기엔 세금이 너무 무거워서.  차라리 법인 이름으로 고가 주...
+- 624회 [2026-08-23] 실거주 요건, 당연히 채워야 한다고 생각했지.  ⚠️ 피할 수 없는 사유...
+- 604회 [2026-08-23] 법인 명의로 200억 넘는 집 사놓고 사택이라며 회장님이 무상으로 살고 ...
 - 546회 [2026-08-21] 💡 110조라는 역대급 숫자가 터졌는데 시장은 왜 덤덤할까.  #오늘 #...
-- 440회 [2026-08-21] 석 달 만에 7조 원이 증발한 것도 아니고, 한 곳으로 빨려 들어갔어. ...
-- 403회 [2026-08-22] 대기업 주주환원 소식에 환율이 움직이자  해외에 아이 보낸 부모들 사이에...
-- 305회 [2026-08-21] 상속세 터졌을 때 가장 뼈 아픈 건 현금이 없어서 회사를 헐값에 넘길 때...
 
 ---
 *총 60개 기사 수집됨*
