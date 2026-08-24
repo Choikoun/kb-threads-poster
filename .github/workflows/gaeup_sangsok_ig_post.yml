@@ -1,9 +1,6 @@
 name: 인스타 가업상속공제 카드뉴스 게시 (1회성 수동)
 
 on:
-  push:
-    paths:
-      - '.github/workflows/gaeup_sangsok_ig_post.yml'
   workflow_dispatch:
 
 permissions:
