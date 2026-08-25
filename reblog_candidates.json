@@ -1463,7 +1463,11 @@
     "likes": 1,
     "replies": 7,
     "media_type": "IMAGE",
-    "reblog_date": "2026-08-25"
+    "reblog_date": "2026-08-25",
+    "reposted": true,
+    "reposted_id": "18107051815896831",
+    "reposted_date": "2026-08-25",
+    "remixed": true
   },
   {
     "id": "18131958061528841",
@@ -1474,7 +1478,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-08-25"
+    "reblog_date": "2026-08-25",
+    "reposted": true,
+    "reposted_id": "18125644927701942",
+    "reposted_date": "2026-08-25",
+    "remixed": true
   },
   {
     "id": "18078974981292107",
@@ -1485,7 +1493,11 @@
     "likes": 0,
     "replies": 4,
     "media_type": "IMAGE",
-    "reblog_date": "2026-08-25"
+    "reblog_date": "2026-08-25",
+    "reposted": true,
+    "reposted_id": "17924526888406333",
+    "reposted_date": "2026-08-25",
+    "remixed": true
   },
   {
     "id": "18601936414060202",
@@ -1496,7 +1508,11 @@
     "likes": 0,
     "replies": 4,
     "media_type": "IMAGE",
-    "reblog_date": "2026-08-25"
+    "reblog_date": "2026-08-25",
+    "reposted": true,
+    "reposted_id": "18120858058901206",
+    "reposted_date": "2026-08-25",
+    "remixed": true
   },
   {
     "id": "18106260035063371",
@@ -1507,7 +1523,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-08-25"
+    "reblog_date": "2026-08-25",
+    "reposted": true,
+    "reposted_id": "18111695105087857",
+    "reposted_date": "2026-08-25",
+    "remixed": true
   },
   {
     "id": "17900943717307219",
@@ -1518,7 +1538,11 @@
     "likes": 0,
     "replies": 4,
     "media_type": "IMAGE",
-    "reblog_date": "2026-08-25"
+    "reblog_date": "2026-08-25",
+    "reposted": true,
+    "reposted_id": "18437710513132024",
+    "reposted_date": "2026-08-25",
+    "remixed": true
   },
   {
     "id": "17975773512108398",
@@ -1529,7 +1553,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-08-25"
+    "reblog_date": "2026-08-25",
+    "reposted": true,
+    "reposted_id": "18092307143547675",
+    "reposted_date": "2026-08-25",
+    "remixed": true
   },
   {
     "id": "18125208619729851",
@@ -1540,7 +1568,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-08-25"
+    "reblog_date": "2026-08-25",
+    "reposted": true,
+    "reposted_id": "18140728459602469",
+    "reposted_date": "2026-08-25",
+    "remixed": true
   },
   {
     "id": "18110714030473528",
@@ -1551,7 +1583,11 @@
     "likes": 0,
     "replies": 0,
     "media_type": "TEXT_POST",
-    "reblog_date": "2026-08-25"
+    "reblog_date": "2026-08-25",
+    "reposted": true,
+    "reposted_id": "18121321508509055",
+    "reposted_date": "2026-08-25",
+    "remixed": true
   },
   {
     "id": "17983435761001154",
@@ -1562,7 +1598,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-08-25"
+    "reblog_date": "2026-08-25",
+    "reposted": true,
+    "reposted_id": "18108555089331682",
+    "reposted_date": "2026-08-25",
+    "remixed": true
   },
   {
     "id": "18000035081776373",
@@ -1573,7 +1613,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-08-25"
+    "reblog_date": "2026-08-25",
+    "reposted": true,
+    "reposted_id": "18349295272223943",
+    "reposted_date": "2026-08-25",
+    "remixed": true
   },
   {
     "id": "18083927324208250",
@@ -1584,7 +1628,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-08-25"
+    "reblog_date": "2026-08-25",
+    "reposted": true,
+    "reposted_id": "18102187915970171",
+    "reposted_date": "2026-08-25",
+    "remixed": true
   },
   {
     "id": "17992126419004702",
@@ -1595,7 +1643,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-08-25"
+    "reblog_date": "2026-08-25",
+    "reposted": true,
+    "reposted_id": "17929881783399650",
+    "reposted_date": "2026-08-25",
+    "remixed": true
   },
   {
     "id": "17896076580500688",
@@ -1606,7 +1658,11 @@
     "likes": 0,
     "replies": 4,
     "media_type": "IMAGE",
-    "reblog_date": "2026-08-25"
+    "reblog_date": "2026-08-25",
+    "reposted": true,
+    "reposted_id": "18373802824236390",
+    "reposted_date": "2026-08-25",
+    "remixed": true
   },
   {
     "id": "18067915436407296",
@@ -1617,7 +1673,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-08-25"
+    "reblog_date": "2026-08-25",
+    "reposted": true,
+    "reposted_id": "18618842704042749",
+    "reposted_date": "2026-08-25",
+    "remixed": true
   },
   {
     "id": "17921668713162550",
@@ -1628,7 +1688,11 @@
     "likes": 0,
     "replies": 4,
     "media_type": "IMAGE",
-    "reblog_date": "2026-08-25"
+    "reblog_date": "2026-08-25",
+    "reposted": true,
+    "reposted_id": "17873234373565435",
+    "reposted_date": "2026-08-25",
+    "remixed": true
   },
   {
     "id": "17955830378980808",
@@ -1639,7 +1703,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-08-25"
+    "reblog_date": "2026-08-25",
+    "reposted": true,
+    "reposted_id": "17933263992365538",
+    "reposted_date": "2026-08-25",
+    "remixed": true
   },
   {
     "id": "18430099252122570",
@@ -1650,7 +1718,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-08-25"
+    "reblog_date": "2026-08-25",
+    "reposted": true,
+    "reposted_id": "17859381687696760",
+    "reposted_date": "2026-08-25",
+    "remixed": true
   },
   {
     "id": "18107157469805099",
@@ -1661,7 +1733,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-08-25"
+    "reblog_date": "2026-08-25",
+    "reposted": true,
+    "reposted_id": "18137310997612041",
+    "reposted_date": "2026-08-25",
+    "remixed": true
   },
   {
     "id": "17952708834188556",
@@ -1672,7 +1748,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-08-25"
+    "reblog_date": "2026-08-25",
+    "reposted": true,
+    "reposted_id": "18128887411775465",
+    "reposted_date": "2026-08-25",
+    "remixed": true
   },
   {
     "id": "18119954108499964",
@@ -1683,7 +1763,11 @@
     "likes": 0,
     "replies": 4,
     "media_type": "IMAGE",
-    "reblog_date": "2026-08-25"
+    "reblog_date": "2026-08-25",
+    "reposted": true,
+    "reposted_id": "18105260858592691",
+    "reposted_date": "2026-08-25",
+    "remixed": true
   },
   {
     "id": "18058805975765732",
@@ -1694,7 +1778,11 @@
     "likes": 0,
     "replies": 0,
     "media_type": "TEXT_POST",
-    "reblog_date": "2026-08-25"
+    "reblog_date": "2026-08-25",
+    "reposted": true,
+    "reposted_id": "18091329092534480",
+    "reposted_date": "2026-08-25",
+    "remixed": true
   },
   {
     "id": "17888341107575723",
@@ -1705,7 +1793,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-08-25"
+    "reblog_date": "2026-08-25",
+    "reposted": true,
+    "reposted_id": "18312305884303318",
+    "reposted_date": "2026-08-25",
+    "remixed": true
   },
   {
     "id": "18109264534970431",
@@ -1716,7 +1808,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-08-25"
+    "reblog_date": "2026-08-25",
+    "reposted": true,
+    "reposted_id": "18346837042219340",
+    "reposted_date": "2026-08-25",
+    "remixed": true
   },
   {
     "id": "17885023494602759",
@@ -4368,5 +4464,104 @@
     "replies": 3,
     "media_type": "IMAGE",
     "reblog_date": "2026-10-17"
+  },
+  {
+    "id": "18131255083730387",
+    "date": "2026-08-23",
+    "text": "내 명의로 사기엔 세금이 너무 무거워서.  차라리 법인 이름으로 고가 주",
+    "full_text": "내 명의로 사기엔 세금이 너무 무거워서.\n\n차라리 법인 이름으로 고가 주택을 사두면 절세가 되겠지 싶었어.\n\n💡 알고 보니 사주 일가 호화 주택의 42%가 이런 법인 명의 사택이었더라고.\n\n국세청이 이 지점을 본격적으로 조준하기 시작했어.\n\n#법인 #증여",
+    "views": 1073,
+    "likes": 1,
+    "replies": 3,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-10-20"
+  },
+  {
+    "id": "18365963593208691",
+    "date": "2026-08-22",
+    "text": "대기업 주주환원 소식에 환율이 움직이자  해외에 아이 보낸 부모들 사이에",
+    "full_text": "대기업 주주환원 소식에 환율이 움직이자\n\n해외에 아이 보낸 부모들 사이에서\n\n완전히 다른 계산기가 돌아가기 시작했어.\n\n#오늘 #이슈",
+    "views": 1051,
+    "likes": 0,
+    "replies": 4,
+    "media_type": "TEXT_POST",
+    "reblog_date": "2026-10-20"
+  },
+  {
+    "id": "18036088484824185",
+    "date": "2026-08-23",
+    "text": "실거주 요건, 당연히 채워야 한다고 생각했지.  ⚠️ 피할 수 없는 사유",
+    "full_text": "실거주 요건, 당연히 채워야 한다고 생각했지.\n\n⚠️ 피할 수 없는 사유가 있다면 예외를 두기로 논의가 시작됐어.\n\n서울 500세대 이하 정비사업 권한도 기초단체장으로 넘어가.\n\n#부동산 #정책",
+    "views": 702,
+    "likes": 2,
+    "replies": 2,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-10-20"
+  },
+  {
+    "id": "18097978229346743",
+    "date": "2026-08-23",
+    "text": "법인 명의로 200억 넘는 집 사놓고 사택이라며 회장님이 무상으로 살고 ",
+    "full_text": "법인 명의로 200억 넘는 집 사놓고 사택이라며 회장님이 무상으로 살고 있대.\n\n💡\n이런 곳의 42%가 실상은 오너 일가의 '황제사택'으로 쓰이고 있어.\n\n세금은 회사가 다 내고 누리는 건 개인인 셈이지.\n\n#주식 #경제",
+    "views": 651,
+    "likes": 1,
+    "replies": 1,
+    "media_type": "TEXT_POST",
+    "reblog_date": "2026-10-20"
+  },
+  {
+    "id": "18090269117216198",
+    "date": "2026-08-23",
+    "text": "열심히 국민연금 부으면, 노후가 편해질 줄 알았지.  ⚠️ 오히려 기초연",
+    "full_text": "열심히 국민연금 부으면,\n노후가 편해질 줄 알았지.\n\n⚠️ 오히려 기초연금이 깎이는 사람들이 4년 만에 3배로 불어났어.\n\n내 돈 더 보태서 준비했는데 정부 지원은 줄어드는 아이러니.\n\n#증여 #상속",
+    "views": 437,
+    "likes": 1,
+    "replies": 4,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-10-20"
+  },
+  {
+    "id": "18007772528953156",
+    "date": "2026-08-24",
+    "text": "장난 삼아 인터넷에 글 올렸던 20대,  국가에 1,500만 원 물어내게",
+    "full_text": "장난 삼아 인터넷에 글 올렸던 20대,\n\n국가에 1,500만 원 물어내게 됐어.\n\n⚠️ 공중협박 사건에 첫 국가 배상 판결이야.\n\n가볍게 던진 한마디였겠지만,\n\n결국 자기 통장에서 돈 빠져나가는 결말이지.\n\n#증여 #상속",
+    "views": 404,
+    "likes": 0,
+    "replies": 3,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-10-20"
+  },
+  {
+    "id": "18033686447839447",
+    "date": "2026-08-23",
+    "text": "“회사가 사준 집이니까 세금 걱정 없겠지”  정작 뚜껑을 열어보니 최고가",
+    "full_text": "“회사가 사준 집이니까 세금 걱정 없겠지”\n\n정작 뚜껑을 열어보니 최고가 200억 원이 넘는 한강뷰 아파트가 사택이라는 이름으로 숨겨져 있었어.\n\n고가 법인주택의 42%가 이런 식으로 악용되고 있다는 조사 결과가 나왔다.\n\n회삿돈으로 자산 불리면서 세금만 피해 가는 구조는 결국 철저한 검증을 피할 수 없어.\n\n#증여 #상속",
+    "views": 350,
+    "likes": 0,
+    "replies": 3,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-10-20"
+  },
+  {
+    "id": "17883521634683004",
+    "date": "2026-08-23",
+    "text": "지방에 집 사두고 실거주 못 채워서 양도세 공제 날릴 뻔했다.  근무나 ",
+    "full_text": "지방에 집 사두고 실거주 못 채워서 양도세 공제 날릴 뻔했다.\n\n근무나 취학 같은 피할 수 없는 사유가 있어도 무조건 살아야 인정해 주던 기준이 바뀌는 흐름이다.\n\n결국 집을 언제 어떻게 처분하느냐보다 보유 기간 동안 어떤 요건을 맞추느냐가 세금을 가른다.\n\n#세금 #정책",
+    "views": 349,
+    "likes": 0,
+    "replies": 3,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-10-20"
+  },
+  {
+    "id": "18070087409489902",
+    "date": "2026-08-24",
+    "text": "어영부영 자격증만 따면 될 줄 알았지  💡 2029년부터는 1급 응급구조",
+    "full_text": "어영부영 자격증만 따면 될 줄 알았지\n\n💡 2029년부터는 1급 응급구조사 양성대학이 지정제로 바뀐다\n\n부실한 학과들은 전부 걸러내겠다는 정부 방침이 나왔어\n\n자격증 하나 바라보고 들어갔는데 학교가 폐지되면 되돌릴 수 없어\n\n#세금 #정책",
+    "views": 304,
+    "likes": 0,
+    "replies": 9,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-10-20"
   }
 ]

@@ -1393,7 +1393,7 @@
     "type": "reels",
     "selected_title": "美 40조달러 국가부채 여파…장기국채 금리, 25년 만에 최고",
     "date": "2026-08-15 20:38",
-    "reach": 223,
+    "reach": 224,
     "saved": 0,
     "likes": 0,
     "comments": 0
@@ -1473,7 +1473,7 @@
     "type": "reels",
     "selected_title": "소득 상위 10%가 세금 77.6% 부담…세제혜택 비중의 2배 넘어",
     "date": "2026-08-21 12:31",
-    "reach": 112,
+    "reach": 113,
     "saved": 0,
     "likes": 0,
     "comments": 0
@@ -1483,7 +1483,7 @@
     "type": "reels",
     "selected_title": "文때도 尹때도 국민이 소송 이겨도 특활비 못봐…‘제도적 허점’",
     "date": "2026-08-21 20:47",
-    "reach": 105,
+    "reach": 107,
     "saved": 0,
     "likes": 1,
     "comments": 0
@@ -1492,54 +1492,90 @@
     "ig_post_id": "17984409075027170",
     "type": "reels",
     "selected_title": "삼성전자 최대 110조 주주환원 발표…우선주만 8% 급등 왜?",
-    "date": "2026-08-22 12:23"
+    "date": "2026-08-22 12:23",
+    "reach": 121,
+    "saved": 1,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18460568743136475",
     "type": "reels",
     "selected_title": "[홍보] 중임등기 셀프 도구 릴스",
-    "date": "2026-08-22 20:32"
+    "date": "2026-08-22 20:32",
+    "reach": 106,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18098785988630550",
     "type": "reels",
     "selected_title": "삼성전자, 110조원 역대급 주주환원…SK하이닉스와 다른 점은?",
-    "date": "2026-08-22 20:40"
+    "date": "2026-08-22 20:40",
+    "reach": 138,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18020748674882665",
     "type": "reels",
     "selected_title": "임광현 “고가 법인 주택 42% 사주 일가 사용…‘황제 사택’ 생각보다 심각”",
-    "date": "2026-08-23 12:30"
+    "date": "2026-08-23 12:30",
+    "reach": 1643,
+    "saved": 2,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "17884070559475970",
     "type": "reels",
     "selected_title": "임광현 '고가 법인주택 42%가 사주일가 '황제사택'…최고가 200억'",
-    "date": "2026-08-23 20:41"
+    "date": "2026-08-23 20:41",
+    "reach": 576,
+    "saved": 3,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "17895636408389677",
     "type": "reels",
     "selected_title": "성남시, 1세대 1주택자 재산세 한시 감면 추진…169억원 경감",
-    "date": "2026-08-24 12:33"
+    "date": "2026-08-24 12:33",
+    "reach": 401,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18088798958445245",
     "type": "reels",
     "selected_title": "‘초·중·고’ 가던 교육세 1.8조, 내년부터 ‘대학·평생교육’ 투입",
-    "date": "2026-08-24 20:48"
+    "date": "2026-08-24 20:48",
+    "reach": 130,
+    "saved": 0,
+    "likes": 1,
+    "comments": 0
   },
   {
     "ig_post_id": "18085462994667919",
     "type": "reels",
     "selected_title": "회삿돈으로 200억대 한남동 주택 산 사주일가... ‘1.6兆 탈루 혐의’ 기업들 무더기 세무조사",
-    "date": "2026-08-25 12:27"
+    "date": "2026-08-25 12:27",
+    "reach": 129,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18102831284615228",
     "type": "reels",
     "selected_title": "퇴직연금 갈아타기 급증…상반기 6.9조 '역대 최대'",
-    "date": "2026-08-25 20:49"
+    "date": "2026-08-25 20:49",
+    "reach": 53,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   }
 ]
