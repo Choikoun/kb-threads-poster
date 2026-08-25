@@ -5,7 +5,7 @@
 - Gemini 미사용: 실제 상품 소재라 고정 검수 템플릿 유지 (리드마그넷과 동일 원칙)
 - 상담 유도: 상품 소재 콘텐츠는 항상 댓글에 naver.me 링크 첨부 (2026-08-19 사용자 확정)
 """
-import os, sys, time, requests
+import os, sys, time, json, requests
 sys.stdout.reconfigure(encoding='utf-8')
 
 from datetime import datetime, timezone, timedelta
@@ -182,6 +182,21 @@ VARIANTS = [
 ]
 
 
+def log_instagram(ig_post_id, selected_title):
+    log = []
+    if os.path.exists('instagram_log.json'):
+        with open('instagram_log.json', encoding='utf-8-sig') as f:
+            log = json.load(f)
+    log.append({
+        'ig_post_id': ig_post_id,
+        'type': 'card',
+        'selected_title': selected_title,
+        'date': datetime.now(KST).strftime('%Y-%m-%d %H:%M'),
+    })
+    with open('instagram_log.json', 'w', encoding='utf-8') as f:
+        json.dump(log, f, ensure_ascii=False, indent=2)
+
+
 def post_threads(variant):
     print('Threads 발행 중...')
     main_id = nap.post_to_threads(variant['threads'], [CONSULT_COMMENT_THREADS], image_url=None, topic_tag='보험')
@@ -250,7 +265,9 @@ def main():
         nap.log_content(threads_id, 'insurance', 'annuity_sales', '연금보험 노후설계 소재',
                         line_count=variant['threads'].count('\n') + 1)
 
-    post_instagram(variant)
+    ig_id = post_instagram(variant)
+    if ig_id:
+        log_instagram(ig_id, '연금보험 노후설계 소재')
 
 
 if __name__ == '__main__':
