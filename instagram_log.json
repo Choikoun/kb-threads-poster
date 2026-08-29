@@ -1523,7 +1523,7 @@
     "type": "reels",
     "selected_title": "임광현 “고가 법인 주택 42% 사주 일가 사용…‘황제 사택’ 생각보다 심각”",
     "date": "2026-08-23 12:30",
-    "reach": 1643,
+    "reach": 1668,
     "saved": 2,
     "likes": 0,
     "comments": 0
@@ -1543,7 +1543,7 @@
     "type": "reels",
     "selected_title": "성남시, 1세대 1주택자 재산세 한시 감면 추진…169억원 경감",
     "date": "2026-08-24 12:33",
-    "reach": 401,
+    "reach": 404,
     "saved": 0,
     "likes": 0,
     "comments": 0
@@ -1553,7 +1553,7 @@
     "type": "reels",
     "selected_title": "‘초·중·고’ 가던 교육세 1.8조, 내년부터 ‘대학·평생교육’ 투입",
     "date": "2026-08-24 20:48",
-    "reach": 130,
+    "reach": 131,
     "saved": 0,
     "likes": 1,
     "comments": 0
@@ -1563,7 +1563,7 @@
     "type": "reels",
     "selected_title": "회삿돈으로 200억대 한남동 주택 산 사주일가... ‘1.6兆 탈루 혐의’ 기업들 무더기 세무조사",
     "date": "2026-08-25 12:27",
-    "reach": 129,
+    "reach": 160,
     "saved": 0,
     "likes": 0,
     "comments": 0
@@ -1573,7 +1573,7 @@
     "type": "reels",
     "selected_title": "퇴직연금 갈아타기 급증…상반기 6.9조 '역대 최대'",
     "date": "2026-08-25 20:49",
-    "reach": 53,
+    "reach": 110,
     "saved": 0,
     "likes": 0,
     "comments": 0
@@ -1582,60 +1582,100 @@
     "ig_post_id": "18083985983675347",
     "type": "card",
     "selected_title": "연금보험 노후설계 소재 (화)",
-    "date": "2026-08-18 21:00"
+    "date": "2026-08-18 21:00",
+    "reach": 4,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "17963669582964469",
     "type": "card",
     "selected_title": "건강검진 이상판정·1인실 입원비 부담",
-    "date": "2026-08-20 21:00"
+    "date": "2026-08-20 21:00",
+    "reach": 3,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "17986112349046708",
     "type": "card",
     "selected_title": "연금보험 노후설계 소재 (수령시점 선택)",
-    "date": "2026-08-20 20:30"
+    "date": "2026-08-20 20:30",
+    "reach": 3,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "18214185322341152",
     "type": "card",
     "selected_title": "가업상속공제 요건 강화(2026 세제개편안)",
-    "date": "2026-08-24 22:00"
+    "date": "2026-08-24 22:00",
+    "reach": 3,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "18552764878072396",
     "type": "reels",
     "selected_title": "공실상가 주거시설로 바뀔까…대수선 취득세 전액 감면",
-    "date": "2026-08-26 12:34"
+    "date": "2026-08-26 12:34",
+    "reach": 128,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18618503638003827",
     "type": "reels",
     "selected_title": "450조원 '몰빵' 후폭풍…'롤러코스피' 더 심해진 이유 있었다",
-    "date": "2026-08-26 20:49"
+    "date": "2026-08-26 20:49",
+    "reach": 100,
+    "saved": 1,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18133551052728733",
     "type": "reels",
     "selected_title": "‘빚’길을 조심합시다 … 불경기에 불법사금융 폭증",
-    "date": "2026-08-27 22:02"
+    "date": "2026-08-27 22:02",
+    "reach": 107,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "17954768316235471",
     "type": "reels",
     "selected_title": "“재개발 빌라 다 똑각지 뭐” … 까딱하면 취득세 2번 낸다",
-    "date": "2026-08-28 06:04"
+    "date": "2026-08-28 06:04",
+    "reach": 164,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "17971990466936027",
     "type": "reels",
     "selected_title": "“주주가치 희석 어쩌나”…삼성바이오, 3조 유증에 7% 급락",
-    "date": "2026-08-28 23:33"
+    "date": "2026-08-28 23:33",
+    "reach": 104,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18341511433283321",
     "type": "reels",
     "selected_title": "“주주가치 희석 어쩌나”…삼성바이오, 3조 유증에 7% 급락",
-    "date": "2026-08-29 06:28"
+    "date": "2026-08-29 06:28",
+    "reach": 152,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   }
 ]
