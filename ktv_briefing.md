@@ -1,19 +1,19 @@
 # 🏛️ KTV 국무회의 브리핑
-*2026-08-30 20:59 KST*
+*2026-08-31 23:00 KST*
 
 ---
 
-## (26.8.30.) 인사 관련 강훈식 비서실장 브리핑
-🔗 https://youtu.be/btXS4h6Kv_A
+## 1인당 15만 원 매월 지급! 소비 활성화를 위해 직접 진안군으로 간 #송미령 농식품부 장관. 일일 계산원으로 등판해 열혈 홍보 #명벤져스
+🔗 https://youtu.be/NtJo00IZNYU
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=btXS4h6Kv_A! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=NtJo00IZNYU! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
 - You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
 
-There are two ...
+Ways to work a...
 
 ---
 
