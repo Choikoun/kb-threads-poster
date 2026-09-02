@@ -31,11 +31,19 @@ jobs:
           git config merge.jsonlog.driver "python merge_json_log.py %O %A %B"
           git add content_log.json instagram_log.json
           git diff --staged --quiet || git commit -m "콘텐츠 로그 업데이트"
+          pushed=false
           for attempt in 1 2 3 4 5; do
-            git pull --rebase origin main && git push && break
+            if git pull --rebase origin main && git push; then
+              pushed=true
+              break
+            fi
             git rebase --abort 2>/dev/null || true
             echo "push 충돌 — 재시도 $attempt/5"; sleep $((attempt * 5))
           done
+          if [ "$pushed" = false ]; then
+            echo "::error::로그 커밋 push 5회 재시도 모두 실패 — 로그 유실됨"
+            exit 1
+          fi
       - name: 실패 알림
         if: failure()
         env:
