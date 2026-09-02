@@ -1,9 +1,6 @@
 name: 주간 조회수 분석
 
 on:
-  push:
-    paths:
-      - '.github/workflows/weekly_analysis.yml'
   schedule:
     - cron: '15 22 * * 5'   # 매주 토요일 07:00 KST 무렵 (UTC 금요일 22:15 = KST 토요일 07:15)
   workflow_dispatch:
