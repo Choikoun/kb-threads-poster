@@ -1,61 +1,47 @@
 # 🏛️ KTV 국무회의 브리핑
-*2026-09-02 20:25 KST*
+*2026-09-03 20:22 KST*
 
 ---
 
-## 학대 신고했지만 보호 못 받아. 정부, 아동학대 대응 강화
-🔗 https://youtu.be/xgxunw1mUDs
+## 재신임엔 이유가 있었다! 세계 각지서 동반 성장📈 숫자로 증명한 #송미령 장관의 성적표는?! 역대 최고 #K-푸드+ #수출 실적 공개 #명벤져스
+🔗 https://youtu.be/y2EclT1itl0
 
-[자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=xgxunw1mUDs! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-There are two ...
+[음악] У >> [음악] >> 예 안녕하세요. 저 시간 몰랐습니다. 먼저 전신 다를 이어보자 합니다.요 밑에 보시면 이제 배가 있습니다. 여기에 [음악] 맞게 배서 모소 들어가 그죠. >> 예. 일본이 이런 거 많이 한 말씀씩은 다 아셔야 합니다. 그래서 [음악] 편안하게 말씀 주시고요. >> 예. 네. 안녕하세요. 노시품 부장관입니다. 잘 아시는 것처럼푸드 플러스 수출이 최근 한 10년 동안 계속 증가세입니다. 어, 작년 같은 경우에푸드만 띄어서 100억불을 돌파를 했고요. 그 플러스까지 합치면 136억불 달성을 했습니다. 그리고 올해도 지금 계속 증가하는 추세입니다. 작년 동기랑 비교하면 작년 동기를 추월했고 지금 저희들이 집게하는 걸로는 동기하고 비교하면 4.8% 신장을 하고 있는 것으로 그렇게 집계를 하고 있습니다. 그런데 저희가 너무 의욕적으로 목표 설정을 했어요. 올해 K드플러스 수출 목표가 160억 불입니다. 당초 사실은 이렇게까지 높게 안 잡았었는데 저희가 업무 보고...
 
 ---
 
-## 결혼하면 100만 원, 첫째 낳으면 1천만 원? '혼인·출산·양육 3종 패키지' #혼인지원금 #아이맞이지원금 #아동수당 #저출생대책 #결혼지원
-🔗 https://youtu.be/2coLzN1GnZw
+## 주택 신속공급 현장에 직접 나가보니... 한계가?! 한성숙 국무총리가 전하는 주택 공급 현장 점검 후기! 제2차 범부처 주택 신속 공급 점검회의 주재 #명벤져스
+🔗 https://youtu.be/maBYixZTd8E
 
-[자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=2coLzN1GnZw! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-There are two ...
+[음악] [음악] 단순히 보고를 받는 것에서 그치지 않고 저도 추진 상황에 대해서는 수시로 점검하고 막혀 있는 부분들은 직접 챙겨서 실질적인 공급 성과가 나올 때까지 끝까지 관리하도록 하겠습니다. 계획대로 차질없이 이행되고 있는지 하나하나 꼼꼼히 살펴보겠습니다. 제2차 범부처 주택 신속 공급 점검매를 시작하겠습니다. 지난 1차 회의에서 논의했던 주택 공급 및 금융 대책 추진 방안이 현장에서 얼마나 속도감 있게 추진되고 있는지 직접 점검하기 위해 마련한 회의입니다. 이미 지난 회의를 통해서 각 과재별 추진 방안과 일정 등이 관계 부처와 공공 기관에 공유된만큼 계획대로 차질없이 이행되고 있는지 하나하나 꼼꼼히 살펴보겠습니다. 그동안 각 부처에서 소관과제를 성실하게 관리해 왔으나 부처별 별도의 개별 관리 방식으로는 전체 공급 상황이나 여러 주택 관련 상황들이 한 눈에 파악되기 어려웠습니다. 부청한 협주가 필요한 지역 과제들도 있고 하기 때문에 이런 부분들을 좀 종합적으로 상황들을 파악하고...
 
 ---
 
-## 한 달 가입하고 119개월 추납? 외국인 국민연금 논란 ‘꼼수 수급’ 막을 대책은?
-🔗 https://youtu.be/KfFdsCz9XjU
+## (26.9.3.) 군 복무 청년 관련 개선방안 브리핑
+🔗 https://youtu.be/aZ_NV8F-mOQ
 
-[자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=KfFdsCz9XjU! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-There are two ...
+어 군복무 청년에 대한 보상과 지원을 대폭 강화하는 정책 개선 방안에 대해서 말씀드리겠습니다. 어 보도 자료와 또 배포해 드린 안건을 함께 참고해 주시면 좋겠습니다. 정부는 국가를 위해 헌신하는 군복무청년에게 정당하고 충분한 보상이 제공되어야 한다는 생각으로 군봉우 청년 정책개선 방안을 마련하였습니다. 이번 방안은 지난 6월 9일 제3차 청년 정책 관계 장관회에서 토론 과제로 논의한 바 있으며이를 마무리한 것으로서 오늘 오전 제13차 국가정책 조정 회의에서 확정 발표되었습니다. 주요 내용은 다음과 같습니다. 안건을 참고해 주시면 되겠습니다. 첫 번째 군의봉 청년에 대한 상해 질병 보장 강화입니다. 지금 현재도 국방부는 군복무 중 발생한 상해 질병에 대해서 군병원에서 무상 진료한다든가 민간 병원에 대한 진료비 지원 또 사망 장애 보상금 등을 지원하고 있습니다. 그 참 그 안건 보시면은 어 재해보상 제도라고 해서 군대에서 사망하였을 경우 1.4억원에서 3.5억원의 5억원의 사망보상금 그...
 
 ---
 
-## (26.9.2.) 아동학대 예방 및 대응 보완 대책 관련 보건복지부 브리핑
-🔗 https://youtu.be/3g5R3Xwvt2E
+## 2026 세제개편안 정부안 확정종부세·ISA 무엇이 어떻게 달라졌을까?
+🔗 https://youtu.be/G9ZolyT0s9E
 
-[자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=3g5R3Xwvt2E! This is most likely caused by:
+세제표는 흔히 고차 방정식에 비유되고 나죠. 세수학보와 [음악] 조세 형평성, 경제에 미츠의 영향, 납세자들의 서로 다른 이해 관계 등 여러 요인을 함께 고려해야 하기 때문인데요. 그만큼 배다수가 납득할 수 있는 최선의 해법을 도출하는 것이 중요한 과제입니다. 이재명 대통령은 9월 1일 국무회의에서 정부 세제 개편안과 예산안을 의결하며 이렇게 당부했는데요. >> 정부안이 언제나 옳은 것도 아니고 또 완벽할 수 없다는 것을 인정해야 합니다. 각 부처는 합당한 지적과 제안이 있다면 망설림 없이 입법과 예산에 충실하게 반영해 주기 바랍니다. 지난달 입법 예고와 부처 협의 과정에서 제기된 의견을 [음악] 반영한 2026년 세제 개편한 정부 최종안. 무엇이 어떻게 달라졌을까요? 우선 [음악] 비거주 1주택자의 종합부동산세 기본 공제를 9억 원으로 낮추려던 계획을 접고 [음악] 현행 12억 원으로 되돌리기로 했는데요. 비거주 부부 공동명의 1주택자의 공제액도 기존 각 4억 원에서 6억 원으로 ...
 
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+---
 
-There are two ...
+## (26.9.3.) 제45차 대통령 주재 수석보좌관회의 모두발언
+🔗 https://youtu.be/LdiPWGiqI-4
+
+먼저 국민 의뢰를 하겠습니다. 국회에 대하여 경례 >> [음악] [음악] [음악] [음악] [음악] [음악] [음악] [음악] >> 바로 모두 자리에 앉아 주시기 바랍니다. 지금부터 제45차 수석 보좌관 회의를 시작하겠습니다. 대통령님의 모든 말씀이 있겠습니다.에 어제 부산 해역에서 발생한 예인선 전복 사고 때문에 한 분이 돌아가시고 또 여섯 분이 현재까지 실종 상태라고 합니다. 공인의 명복을 빕니다. 그리고 유가족과 또 실종자 가족 여러분께도 위로 말씀을 드립니다. 실종자 수색에 총력을 다해 주시되 또 한편으로 구조 인력들도 안전을 잘 살펴 주시기 바랍니다. 정확한 사고 경의도 파악해야 되겠고 동시에 재발 방지 대책도 신속하게 수입해 주기 바랍니다. 지난 주말부터 이번 주 초까지 많은 비가 내리면서 일부 지역에 크고 작은 피해가 발생했습니다. 이처럼 이상기구 때문에 늦여름부터 초괄까지 포구가 쏟아지는 현상이 해마다 반복되고 있습니다.음이 기간에도 긴장의 끈을 놓지 말고 수회 예방의...
+
+---
+
+## (26.9.3.) 스포츠산업 융자사업 운영실태 조사결과 관련 브리핑
+🔗 https://youtu.be/9yQffVN5ZZA
+
+안녕하십니까. 국무조정실 정부 합동 부패예방 추진단 부단장 김정국입니다. 오늘은 문화체육 관광부와 합동으로 실시한 스포츠 산업 융자 사업 운영 실태 조사 조사 결과를 말씀드리겠습니다. 스포츠 산업 융자 사업은 국민체육 진흥공단이 스포츠 산업 활성화를 위해 스포츠 시설 설치나 운영에 필요한 자금을 이내지 3%대의 저금리로 융자해 주는 정책 사업입니다. 융자 규모는 2025년 기준 약 2,600억 원이며 업체당 최대 85억 원까지 융자가 가능합니다. 농단은 시중 은행을 통해 대리 융자 방식으로 자금을 공급하고 있습니다. 이번 조사는 스포츠 융자 사업의 지원 한도와 규모가 지속 증가한 가운데 융자금이 목적에 맞게 사용되고 있는지 융자 관리가 적정하게 이루어지고 있는지를 확인하고 스포츠 산업 발전에 실질적 도움이 될 수 있도록 제도 개선 방안을 마련하기 위한 것입니다. 지난해 12월부터 올해 6월까지 문화체육 관광부와 합동으로 실시하였으며 공단이 2019년부터 2024년까지 집행한 2,86...
 
 ---
 
