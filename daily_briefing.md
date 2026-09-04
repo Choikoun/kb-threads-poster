@@ -1,35 +1,35 @@
 # 📰 일일 브리핑
-*2026-09-04 08:59 KST*
+*2026-09-05 08:58 KST*
 
 ---
 
 ## 🔖 보험 동향
+- [서민금융진흥원, 취약계층의 ‘불법사금융예방대출’ 신청 요건 완화… 사각지대 촘촘히 메운다](https://www.insnews.co.kr/news/articleView.html?idxno=92634)
+- [삼성화재, AI·자율주행 시대 자동차보험 해법 모색](https://www.insnews.co.kr/news/articleView.html?idxno=92635)
 - [[부고] 이정용(한국보험신문 사장)씨 빙모상](https://www.insnews.co.kr/news/articleView.html?idxno=92624)
 - [생명보험협회, 제10회 Golden Fellow 인증식 개최… ‘신뢰의 10년’ 기념](https://www.insnews.co.kr/news/articleView.html?idxno=92623)
 - [해빗팩토리, SKT ‘모두의 AI’ 컨소시엄서 금융·결제 서비스 개발… “AI가 금융생활 돕는 시대 열려”](https://www.insnews.co.kr/news/articleView.html?idxno=92621)
-- [금융위, 제2차 망분리 규제 긴급완화… AI 보안 대응 강화](https://www.insnews.co.kr/news/articleView.html?idxno=92614)
-- [라이나손해보험 신임 대표에 김일평 전 삼성화재 부사장 선임](https://www.insnews.co.kr/news/articleView.html?idxno=92605)
 
 ## 💰 국내 경제·금융
-- [퇴직연금에 '연 8%대' 안전자산 나온다…이달부터 달라지는 것](https://www.hankyung.com/article/202609033126i)
-- ["삼성전자, 연내 40조 자사주 매입·소각 가능…목표가 60만원"-KB](https://www.hankyung.com/article/2026090433696)
-- ["로보티즈, 중국 매출 증가 긍정적"-KB](https://www.hankyung.com/article/2026090433656)
-- [월러 '금리 동결' 시사에 동반 상승…나스닥 1.4%↑ [뉴욕증시 브리핑]](https://www.hankyung.com/article/2026090433366)
-- ["증시 반등하면 바로 튄다"…21조 잭팟에도 속 타는 개미들 [분석+]](https://www.hankyung.com/article/2026090325676)
+- ['굿 뉴스는 나쁜 뉴스' 뜨거운 고용, 냉각된 증시…CPI가 9월 운명 결정? [김현석의 월스트리트나우]](https://www.hankyung.com/article/202609055581i)
+- [9월 투자 답안지 나왔나…고금리 우려에 기관·외인 투자자 '실적주' 싹쓸이](https://www.hankyung.com/article/202609045378i)
+- [고용 호조에 9월 美금리 인상 가능성 58%…3대지수 하락 [뉴욕증시 브리핑]](https://www.hankyung.com/article/2026090555447)
+- [비상장주식 내년 2월부터 '토큰증권'으로 사고판다](https://www.hankyung.com/article/2026090451531)
+- ["로봇주 더 사둘 걸"…정부 '큰손' 등판에 주가 20% 넘게 뛰었다](https://www.hankyung.com/article/2026090451281)
 
 ## 📈 주식·시장
-- [“삼성전자, 연내 자사주 매입 소각·현금 배당 등 추가 주주환원 기대”](https://www.mk.co.kr/news/stock/12144075)
-- [연준 월러, 9월 금리 동결 시사에…뉴욕증시, 일제히 1% 반등 [월가월부]](https://www.mk.co.kr/news/stock/12144044)
-- [“금리·환율까지 우주의 기운이 모이는중”…금융지주 주가 ‘불기둥’](https://www.mk.co.kr/news/stock/12144043)
-- [“3억 굴리면 노후 월 398만원” … 9월부터 DC·IRP서 뜨는 ‘국채 풍차’](https://www.mk.co.kr/news/economy/12143394)
-- [“오늘 사고 오늘 팔죠”…단타 몰리는 ‘삼전닉스’, 반도체주 변동성 언제까지?](https://www.mk.co.kr/news/stock/12143982)
+- [실적 좋아도 주가 떨어지면 상폐 …“좀비기업 정의 바꿔야”](https://www.mk.co.kr/news/stock/12144894)
+- [글로벌 금융기관 21곳, 2027년 달러 스테이블코인 공동 발행 추진[엠블록레터]](https://www.mk.co.kr/news/stock/12144832)
+- ["코스닥 활기 찾으려면 … 진입문턱 낮추고 퇴출기준 정밀화를"](https://www.mk.co.kr/news/stock/12144770)
+- [시총기준 미달땐 여전히 퇴출대상 …코스닥社 "실적도 고려해야"](https://www.mk.co.kr/news/stock/12144769)
+- [국민연금에 맡기면 수익률 쑥? … "퇴직연금은 달라"](https://www.mk.co.kr/news/stock/12144756)
 
 ## 🌏 글로벌 경제·정세
-- [美 영끌족들 어쩌나…30년 주담대 금리 13개월 만 '최고'](https://www.hankyung.com/article/2026090432947)
-- [월러 美 Fed 이사, 금리 동결 지지 시사](https://www.hankyung.com/article/2026090332141)
-- ["전쟁도 안 하는데 저출산"…푸틴, 출산율 강조하며 한국 소환](https://www.hankyung.com/article/2026090332257)
-- [이란 혁명수비대 "美 결혼식장 공습, 반드시 책임 물을 것"](https://www.hankyung.com/article/2026090331957)
-- ["한국은 전쟁도 안 하는데…" 푸틴, 콕 집어 언급한 이유가](https://www.hankyung.com/article/2026090331527)
+- [트럼프 특사, 러·우 연쇄 방문…평화협상 재시동](https://www.hankyung.com/article/2026090555797)
+- [트럼프 "시진핑 부부 24일 미국 방문…훌륭한 일 해낼 것"](https://www.hankyung.com/article/2026090555607)
+- [트럼프 "곡괭이산 곧 타격할 수도…이란과 충돌, 별것 아닌 일"](https://www.hankyung.com/article/2026090555557)
+- [트럼프 "무역 중단" 거론하며 Fed에 기준금리 인하 압박](https://www.hankyung.com/article/2026090555487)
+- [트럼프 "금리 안 낮추면 무역 중단"…막무가내 발언 왜 나왔나 [Fed 워치]](https://www.hankyung.com/article/202609055488i)
 
 ---
 *총 60개 기사 수집됨*
