@@ -2108,7 +2108,11 @@
     "likes": 1,
     "replies": 2,
     "media_type": "TEXT_POST",
-    "reblog_date": "2026-09-01"
+    "reblog_date": "2026-09-01",
+    "reposted": true,
+    "reposted_id": "18232858624321291",
+    "reposted_date": "2026-09-05",
+    "remixed": true
   },
   {
     "id": "18097557044606228",
