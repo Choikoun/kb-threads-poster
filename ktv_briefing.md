@@ -1,13 +1,13 @@
 # 🏛️ KTV 국무회의 브리핑
-*2026-09-07 21:42 KST*
+*2026-09-08 20:25 KST*
 
 ---
 
-## KTX・SRT 통합되면 뭐가 달라질까? #KTX #SRT #이재명대통령 #ktv #통합 #기차
-🔗 https://youtu.be/8XeaL6A8YIU
+## (26.9.8.) 이재명 대통령 엘리제궁 도착
+🔗 https://youtu.be/ppRCDjeoYjI
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=8XeaL6A8YIU! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=ppRCDjeoYjI! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
@@ -17,11 +17,11 @@ There are two ...
 
 ---
 
-## 한·프 ‘다음 140년’ 연다! 이재명 대통령 프랑스 국빈방문,  K-콘텐츠부터 AI·우주·원자력 협력의 의미는?
-🔗 https://youtu.be/0N9Ms6U9Bpw
+## AI부터 글로벌 투자까지 뤼미에르 서밋 이재명 대통령, 마크롱 대통령의 공동 진행 의미는? K-콘텐츠 다음 무대는 전 세계다!
+🔗 https://youtu.be/YJH2AunBcEQ
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=0N9Ms6U9Bpw! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=YJH2AunBcEQ! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
@@ -31,11 +31,11 @@ There are two ...
 
 ---
 
-## (26.9.7.) 이재명 대통령 프랑스 마그재단 도착
-🔗 https://youtu.be/4bkUWoLlPcU
+## 신속! 혁신! #대통령 빈자리 채우며 총리가 강하게 당부한 내용은?! 제39회 #국무회의 풀버전 #명벤져스
+🔗 https://youtu.be/ukNaz5JiNi0
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=4bkUWoLlPcU! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=ukNaz5JiNi0! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
@@ -45,39 +45,11 @@ There are two ...
 
 ---
 
-## 590억 원 #농축산물 할인?! #추석 장바구니 부담 이렇게 던다! #송미령 농림부 장관 추석 앞두고 안동을 찾은 이유는? #명벤져스
-🔗 https://youtu.be/FCDk3B4n1tY
+## (26.9.8.) 제15차 건강보험정책심의위원회 결과 관련 보건복지부 브리핑
+🔗 https://youtu.be/YO77Lyy75kU
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=FCDk3B4n1tY! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-There are two ...
-
----
-
-## (26.9.7.) 중수청 현안 관련 행정안전부 브리핑
-🔗 https://youtu.be/Z8Cg9AUnqeM
-
-[자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=Z8Cg9AUnqeM! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-There are two ...
-
----
-
-## (26.9.7.) 글로벌 화장품 규제 기관장 회의
-🔗 https://youtu.be/y1M9CV_polc
-
-[자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=y1M9CV_polc! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=YO77Lyy75kU! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
