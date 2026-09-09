@@ -2,8 +2,6 @@ name: 연금보험 5번째 각도 인스타 게시 (1회성 수동)
 
 on:
   workflow_dispatch:
-  push:
-    paths: ['.github/workflows/annuity_hook5_ig_post.yml']
 
 permissions:
   contents: write
