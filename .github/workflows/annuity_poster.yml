@@ -5,6 +5,10 @@ on:
     - cron: '30 11 * * 4'   # 매주 목요일 20:30 KST
   workflow_dispatch:
 
+permissions:
+  contents: write
+  issues: write
+
 jobs:
   post_annuity:
     runs-on: ubuntu-latest
