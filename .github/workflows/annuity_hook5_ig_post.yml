@@ -1,0 +1,44 @@
+name: 연금보험 5번째 각도 인스타 게시 (1회성 수동)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  post_annuity_hook5:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: 패키지 설치
+        run: pip install requests python-dotenv Pillow google-genai feedparser beautifulsoup4
+      - name: 인스타 게시
+        env:
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+          INSTAGRAM_BUSINESS_ACCOUNT_ID: ${{ secrets.INSTAGRAM_BUSINESS_ACCOUNT_ID }}
+          IMGBB_API_KEY: ${{ secrets.IMGBB_API_KEY }}
+        run: python annuity_hook5_ig_post.py
+      - name: 로그 커밋
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config merge.jsonlog.driver "python merge_json_log.py %O %A %B"
+          git add instagram_log.json
+          git diff --staged --quiet || git commit -m "연금보험 5번째 각도 IG 로그 추가"
+          pushed=false
+          for attempt in 1 2 3 4 5; do
+            if git pull --rebase origin main && git push; then
+              pushed=true
+              break
+            fi
+            git rebase --abort 2>/dev/null || true
+            echo "push 충돌 — 재시도 $attempt/5"; sleep $((attempt * 5))
+          done
+          if [ "$pushed" = false ]; then
+            echo "::error::로그 커밋 push 5회 재시도 모두 실패"
+            exit 1
+          fi
