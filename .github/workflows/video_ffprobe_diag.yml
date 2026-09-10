@@ -2,6 +2,8 @@ name: 영상 ffprobe 진단 (1회성)
 
 on:
   workflow_dispatch:
+  push:
+    paths: ['.github/workflows/video_ffprobe_diag.yml']
 
 permissions:
   contents: read
