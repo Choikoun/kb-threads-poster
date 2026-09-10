@@ -1,0 +1,24 @@
+name: 영상 ffprobe 진단 (1회성)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ffmpeg 설치
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+      - name: 다운로드 및 ffprobe
+        run: |
+          curl -sL -o video_threads.mp4 "https://github.com/Choikoun/kb-threads-poster/releases/download/video-20260910-111616/video_threads.mp4"
+          curl -sL -o video_ig.mp4 "https://github.com/Choikoun/kb-threads-poster/releases/download/video-20260910-111644/video_ig.mp4"
+          echo "=== THREADS ==="
+          ffprobe -v error -show_format -show_streams -print_format json video_threads.mp4
+          echo "=== IG ==="
+          ffprobe -v error -show_format -show_streams -print_format json video_ig.mp4
