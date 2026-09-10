@@ -2,6 +2,8 @@ name: 연금보험 릴스형 영상 게시 (Threads+IG, 1회성 수동)
 
 on:
   workflow_dispatch:
+  push:
+    paths: ['.github/workflows/annuity_video_poster.yml']
 
 permissions:
   contents: write
