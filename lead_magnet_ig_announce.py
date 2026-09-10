@@ -18,8 +18,8 @@ IG_USER_ID = os.environ['INSTAGRAM_BUSINESS_ACCOUNT_ID']
 BASE_IG = 'https://graph.facebook.com/v21.0'
 
 IMAGES = [
-    os.path.join('lead_magnet', 'inheritance_checklist_p1.png'),
-    os.path.join('lead_magnet', 'inheritance_checklist_p2.png'),
+    os.path.join('lead_magnet', 'inheritance_checklist_p1.jpg'),
+    os.path.join('lead_magnet', 'inheritance_checklist_p2.jpg'),
 ]
 
 CAPTION = '''상속·증여, 미리 점검해보셨나요?
