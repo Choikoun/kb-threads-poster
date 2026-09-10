@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 연금보험 소재 릴스형 영상 (Threads 반말 + Instagram Reels 존댓말) — 1회성
-- annuity_poster.py의 5번째 각도(가입시기 3년 비교)를 영상으로 재구성
+- annuity_poster.py의 2번째 각도(사망보장)를 영상으로 재구성
 - Gemini 미사용(고정 스크립트), video_poster.py/instagram_reels_poster.py의
   파이프라인(장면합성·TTS·ffmpeg)만 재사용
 - 상품명·회사명 비노출, 상담링크는 항상 댓글에만 (기존 정책 동일)
@@ -23,50 +23,51 @@ IG_LOG_FILE = 'instagram_log.json'
 CONSULT_COMMENT_THREADS = '이 얘기 더 궁금하면 여기서 확인할 수 있어 → https://naver.me/FRLbSbiJ'
 CONSULT_COMMENT_IG = '더 자세한 내용이 궁금하시면 아래에서 확인해보세요 → https://naver.me/FRLbSbiJ'
 
-HOOK = '3년 차이가\n매달 10만원을 가른다'
+HOOK = '연금 받다가 일찍 죽으면\n가족은 손해만 볼까'
 
 SCENES = [
-    {'image_query': 'calendar clock desk planning'},
-    {'image_query': 'elderly couple retirement savings'},
-    {'image_query': 'growing coins savings jar'},
+    {'image_query': 'family holding hands support'},
+    {'image_query': 'elderly parent adult child care'},
+    {'image_query': 'piggy bank protection security'},
     {'image_query': 'peaceful senior lifestyle sunset'},
 ]
 
 NARRATION_THREADS = (
-    '연금보험, 가입 시기가 3년만 달라져도 받는 돈이 이렇게 벌어져. '
-    '34세에 가입하면 65세부터 매달 73만원, 37세에 가입하면 같은 조건인데 매달 63만원. '
-    '100세까지 다 받으면 4천만원 넘게 차이가 나. 자세한 계산은 캡션에서 확인해봐.'
+    '연금 받다가 일찍 죽으면 가족이 손해만 본다고 생각하지. '
+    '근데 최소한은 막아주는 구조가 있어. 이미 낸 보험료의 백이십 퍼센트에서 그동안 받은 연금을 뺀 만큼은 최소한 가족한테 남아. '
+    '오래 받을수록 이 금액은 줄어들지만, 가족이 받는 돈이 0원 밑으로는 안 내려가. 자세한 계산은 캡션에서 확인해봐.'
 )
 NARRATION_IG = (
-    '연금보험은 가입 시기가 3년만 달라져도 받는 금액이 크게 벌어집니다. '
-    '34세에 가입하면 65세부터 매달 73만원, 37세에 가입하면 같은 조건에서 매달 63만원을 받습니다. '
-    '100세까지 누적하면 4천만원 넘게 차이가 납니다. 자세한 계산은 캡션에서 확인해보세요.'
+    '연금을 받다가 일찍 사망하시면 가족이 손해만 본다고 생각하실 수 있습니다. '
+    '하지만 최소한은 보장해주는 구조가 있습니다. 이미 낸 보험료의 120%에서 그동안 받은 연금을 뺀 금액만큼은 최소한 가족에게 남습니다. '
+    '오래 받으실수록 이 금액은 줄어들지만, 0원 밑으로는 내려가지 않습니다. 자세한 계산은 캡션에서 확인해보세요.'
 )
 
-CAPTION_THREADS = '''연금보험 가입 시점 3년 차이가 실제로 얼마나 벌어질까?
+CAPTION_THREADS = '''연금 받다가 일찍 죽으면 손해만 본다고 생각하지.
 
-같은 조건(월 80만원, 7년납, 65세 개시)으로 비교하면—
+근데 최소한은 막아주는 구조가 있어.
 
-34세에 가입하면 65세부터 매달 73만원.
-37세에 가입하면 매달 63만원.
-100세까지 누적으로 보면 3억 1,609만원 vs 2억 7,469만원 — 약 4,100만원 차이.
+이미 낸 보험료의 120%에서, 그동안 받은 연금을 뺀 나머지는 가족한테 남아.
 
-거치 기간이 길수록 최저연금기준금액에 붙는 이자가 더 오래 쌓이는 구조라서 그래.
+오래 받을수록 이 금액은 줄어들지만, 가족이 받는 돈이 0원 아래로는 안 내려가.
 
-물론 실제 수령액은 공시이율 변동에 따라 달라질 수 있고, 중도 해지 시엔 원금보다 적을 수 있어. (2026년 8월 공시이율 2.55% 기준 예시)
+반대로 오래 살아도 걱정 없어. 살아있는 동안은 계속 나오는 구조니까.
 
-고민하는 동안 흘러가는 시간이, 그대로 손해로 쌓인다는 거.'''
+물론 중간에 해지하면 얘기가 달라져. 원금보다 적게 나올 수 있어.
 
-CAPTION_IG = '''연금보험, 가입 시점 3년 차이가 실제로 얼마나 벌어질까요?
+연금은 얼마나 받나보다, 언제 죽어도 손해 안 보는지가 먼저야.'''
 
-같은 조건(월 80만원, 7년납, 65세 개시)으로 비교해보면:
-1. 34세에 가입하면 65세부터 매달 73만원
-2. 37세에 가입하면 65세부터 매달 63만원
-3. 100세까지 누적으로 보면 3억 1,609만원 vs 2억 7,469만원 — 약 4,100만원 차이
+CAPTION_IG = '''연금을 받다가 일찍 사망하시면 손해만 본다고 생각하시나요?
 
-거치 기간이 길수록 최저연금기준금액에 붙는 이자가 더 오래 쌓이는 구조이기 때문입니다. (2026년 8월 공시이율 2.55% 기준 예시금액)
+최소한은 보장해주는 구조가 있습니다.
 
-노후 준비를 고민 중이시라면, '언제 시작하느냐'도 중요한 변수라는 점 참고하시길 바랍니다.
+1. 이미 낸 보험료의 120%에서 그동안 받은 연금을 뺀 금액만큼은 가족에게 남습니다.
+2. 오래 받으실수록 이 금액은 줄어들지만, 가족이 받는 돈이 0원 아래로 내려가지는 않습니다.
+3. 반대로 오래 사셔도 걱정 없습니다. 생존하시는 동안은 계속 지급되는 구조입니다.
+
+다만 중도 해지 시에는 해약환급금이 납입한 금액보다 적을 수 있습니다.
+
+연금은 '얼마나 받나'보다 '언제 사망해도 손해 보지 않는가'를 먼저 따져보시길 권합니다.
 
 #노후준비 #연금보험 #은퇴설계 #자산관리'''
 
@@ -155,7 +156,7 @@ def main():
 
         main_id = nap.post_video_to_threads(CAPTION_THREADS, [CONSULT_COMMENT_THREADS], video_url_th)
         if main_id:
-            nap.log_content(main_id, 'insurance', 'annuity_sales_video', '연금보험 가입시기 비교 릴스',
+            nap.log_content(main_id, 'insurance', 'annuity_sales_video', '연금보험 사망보장 릴스',
                             line_count=CAPTION_THREADS.count('\n') + 1)
             print(f'Threads 완료: {main_id}')
         else:
@@ -180,7 +181,7 @@ def main():
         if ig_id:
             ig_log = load_ig_log()
             ig_log.append({'ig_post_id': ig_id, 'type': 'reels',
-                           'selected_title': '연금보험 가입시기 비교 릴스',
+                           'selected_title': '연금보험 사망보장 릴스',
                            'date': datetime.now(KST).strftime('%Y-%m-%d %H:%M')})
             save_ig_log(ig_log)
             print(f'Instagram 완료: {ig_id}')
