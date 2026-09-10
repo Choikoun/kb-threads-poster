@@ -2,6 +2,8 @@ name: 인스타 리드마그넷 안내 게시 (1회성 수동)
 
 on:
   workflow_dispatch:
+  push:
+    paths: ['.github/workflows/lead_magnet_ig_announce.yml']
 
 permissions:
   contents: read
