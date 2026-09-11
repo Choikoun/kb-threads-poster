@@ -1,13 +1,13 @@
 # 🏛️ KTV 국무회의 브리핑
-*2026-09-10 20:27 KST*
+*2026-09-11 20:29 KST*
 
 ---
 
-## ※벌 서는 중 아님※ 로봇 조끼 입어본 장관이 폭소한 이유? 농업·농촌의 모든 것이 담긴 2026 대한민국 농업박람회#명벤져스
-🔗 https://youtu.be/DqEyB5hmjUQ
+## (26.9.11.) 대수보 결과 관련 강유정 수석대변인 브리핑
+🔗 https://youtu.be/vP0M38tYVyg
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=DqEyB5hmjUQ! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=vP0M38tYVyg! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
@@ -17,11 +17,11 @@ There are two ...
 
 ---
 
-## "제가 심사위원이었습니다" #송미령 장관의 갑분 과거 고백 13년 전 심사위원, 이제는 축사하는 장관이 되다 제13회 행복농촌만들기 콘테스트 현장 #명벤져스
-🔗 https://youtu.be/O9AM30WckA8
+## 대한민국 외교에 이런 씬은 없었다! 이 대통령과 마크롱 대통령, 파리의 절친! 대한민국 위상이 만들어낸 무대 위에서 펼쳐진 문화, 경제, 안보 외교! 이재명 대통령 프랑스 국빈방문
+🔗 https://youtu.be/MGfEgENWFsg
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=O9AM30WckA8! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=MGfEgENWFsg! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
@@ -31,11 +31,11 @@ There are two ...
 
 ---
 
-## 뉴스에는 안 나오는 이야기! 마크롱 대통령의 러브콜에 프랑스 국빈방문을 마치고 돌아온 이재명 대통령~ 할 수 있는 만남 영혼까지 모아서 다 하고 왔다! 3박 5일 순방 전격 분석
-🔗 https://youtu.be/5FbvtcnVCyg
+## 평범한 소방관이 아니다! 험준한 산악 현장을 누비는 소방 최정예 특수구조단의 생생한 구조 현장 #명받았습니다 #이재명대통령 #ktv국민방송
+🔗 https://youtu.be/T5NQ9Zvx-To
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=5FbvtcnVCyg! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=T5NQ9Zvx-To! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
@@ -45,11 +45,25 @@ There are two ...
 
 ---
 
-## (26.9.10.) 발달장애인 돌봄 국가책임제 추진방안 관련 보건복지부 브리핑
-🔗 https://youtu.be/osxfO5D4Iw8
+## (26.9.11.) 제46차 대통령 주재 수석보좌관회의 모두발언
+🔗 https://youtu.be/g1iCfUxTdfY
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=osxfO5D4Iw8! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=g1iCfUxTdfY! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There are two ...
+
+---
+
+## (26.9.11.) 구글 디지털 성범죄 피해 정보 유출 관련 성평등가족부 브리핑
+🔗 https://youtu.be/hS_M0Oy_GXY
+
+[자막 없음: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=hS_M0Oy_GXY! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
