@@ -1,13 +1,13 @@
 # 🏛️ KTV 국무회의 브리핑
-*2026-09-12 19:53 KST*
+*2026-09-13 20:58 KST*
 
 ---
 
-## 추석 물가 관리 나선 정부, 할인은 대폭 지원! 바가지요금은 엄정 단속! #추석 #물가 #할인 #반값 #지원 #성수품 #바가지요금 #단속 #물가안정 #한가위 #여행
-🔗 https://youtu.be/xRuHSHaVxf0
+## (26.9.13.) ISDS 사건 선고 관련 법무부 브리핑
+🔗 https://youtu.be/w_Nkx8pOWKw
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=xRuHSHaVxf0! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=w_Nkx8pOWKw! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
