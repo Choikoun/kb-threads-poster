@@ -1,13 +1,55 @@
 # 🏛️ KTV 국무회의 브리핑
-*2026-09-13 20:58 KST*
+*2026-09-14 21:57 KST*
 
 ---
 
-## (26.9.13.) ISDS 사건 선고 관련 법무부 브리핑
-🔗 https://youtu.be/w_Nkx8pOWKw
+## 한국·중앙아 5개국 첫 정상회의 핵심광물·AI 협력 본격화, 한국 외교 중앙아시아로 넓힌다!
+🔗 https://youtu.be/EQnJxCepmmM
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=w_Nkx8pOWKw! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=EQnJxCepmmM! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There are two ...
+
+---
+
+## 이재명 대통령과 끝말잇기 한 판! 탄탄탄으로 끝나는 말은~ 중앙아시아 5개과  대한민국의 특별한 만남! 🇰🇷🤝🌏
+🔗 https://youtu.be/U9GeqQRO93Y
+
+[자막 없음: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=U9GeqQRO93Y! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There are two ...
+
+---
+
+## 송미령 농림축산식품부 장관이 결국 일냈다. 올 추석엔  역대 최대 규모로 할인! 송 장관의 활약상은 물론 할인정보까지 명벤져스에서 확인 가능 #명벤져스
+🔗 https://youtu.be/xfnk6UEYtNs
+
+[자막 없음: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=xfnk6UEYtNs! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There are two ...
+
+---
+
+## (26.9.14.) 우즈베키스탄 대통령 국빈방한 공식환영식
+🔗 https://youtu.be/88xKLyXcgvc
+
+[자막 없음: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=88xKLyXcgvc! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
