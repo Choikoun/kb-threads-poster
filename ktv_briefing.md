@@ -1,13 +1,13 @@
 # 🏛️ KTV 국무회의 브리핑
-*2026-09-14 21:57 KST*
+*2026-09-15 20:51 KST*
 
 ---
 
-## 한국·중앙아 5개국 첫 정상회의 핵심광물·AI 협력 본격화, 한국 외교 중앙아시아로 넓힌다!
-🔗 https://youtu.be/EQnJxCepmmM
+## 투르크멘 대통령 국빈방한 이재명 대통령 ‘새로운 물류·교역 길목으로’
+🔗 https://youtu.be/Tmr0JyZx-L8
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=EQnJxCepmmM! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=Tmr0JyZx-L8! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
@@ -17,11 +17,11 @@ There are two ...
 
 ---
 
-## 이재명 대통령과 끝말잇기 한 판! 탄탄탄으로 끝나는 말은~ 중앙아시아 5개과  대한민국의 특별한 만남! 🇰🇷🤝🌏
-🔗 https://youtu.be/U9GeqQRO93Y
+## #대통령 순방 중에도 맘 편한 이유?! #한성숙 총리와 명벤져스들이 작정하고 일한 제40회 #국무회의 풀영상! #명벤져스
+🔗 https://youtu.be/3eb1wt5o3X4
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=U9GeqQRO93Y! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=3eb1wt5o3X4! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
@@ -31,11 +31,11 @@ There are two ...
 
 ---
 
-## 송미령 농림축산식품부 장관이 결국 일냈다. 올 추석엔  역대 최대 규모로 할인! 송 장관의 활약상은 물론 할인정보까지 명벤져스에서 확인 가능 #명벤져스
-🔗 https://youtu.be/xfnk6UEYtNs
+## (26.9.15.) 카자흐스탄 대통령 국빈방한 공식환영식
+🔗 https://youtu.be/YYKxRAcGI8g
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=xfnk6UEYtNs! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=YYKxRAcGI8g! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
@@ -45,11 +45,53 @@ There are two ...
 
 ---
 
-## (26.9.14.) 우즈베키스탄 대통령 국빈방한 공식환영식
-🔗 https://youtu.be/88xKLyXcgvc
+## (26.9.15.) 기자회견 일정 예고 관련 성기홍 홍보소통수석 브리핑
+🔗 https://youtu.be/GP_tqhtE2A4
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=88xKLyXcgvc! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=GP_tqhtE2A4! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There are two ...
+
+---
+
+## (26.9.15.) 송전망건설 주민수용성 제고 방안 관련 기후환경에너지부 브리핑
+🔗 https://youtu.be/_HGPJ9P64Z8
+
+[자막 없음: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=_HGPJ9P64Z8! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There are two ...
+
+---
+
+## (26.9.15.) 메가특구 특별법 관련 사회적 대화 제안 고용노동부 브리핑
+🔗 https://youtu.be/I3Sn55q-M-M
+
+[자막 없음: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=I3Sn55q-M-M! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There are two ...
+
+---
+
+## (26.9.15.) 투르크메니스탄 대통령 국빈방한 공식환영식
+🔗 https://youtu.be/EoNcu3q1U3s
+
+[자막 없음: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=EoNcu3q1U3s! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
