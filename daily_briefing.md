@@ -1,40 +1,42 @@
 # 📰 일일 브리핑
-*2026-09-16 09:12 KST*
+*2026-09-17 09:22 KST*
 
 ---
 
 ## 🔖 보험 동향
-- [생명보험협회, 한국형사·법무정책연구원과 ‘생명보험 공동연구’ MOU 체결](https://www.insnews.co.kr/news/articleView.html?idxno=92828)
-- [자배원-DB자동차보험손해사정, 사고 유자녀 ‘기초자산’ 형성 맞손](https://www.insnews.co.kr/news/articleView.html?idxno=92821)
-- [삼성생명 ‘삼성 팩 건강보험 Care+’… 건강관리 리워드 더하다](https://www.insnews.co.kr/news/articleView.html?idxno=92817)
-- [대산신용호기념사업회, ‘제21회 대산보험대상’ 후보자 공모… 산업 발전 이끌 주역 찾는다](https://www.insnews.co.kr/news/articleView.html?idxno=92815)
-- [사고 줄고 보험료 올랐지만… 자동차보험 손익 6년 만에 적자](https://www.insnews.co.kr/news/articleView.html?idxno=92811)
+- [국내 보험사 2분기 K-ICS 비율 215.2%… 전분기 比 0.8%p 하락](https://www.insnews.co.kr/news/articleView.html?idxno=92866)
+- [민병덕 의원, ‘보험판매전문회사’ 도입 보험업법·금소법 개정안 대표발의](https://www.insnews.co.kr/news/articleView.html?idxno=92864)
+- [국회 보험범죄 방지 연구 포럼 출범… “법·제도 개선 나선다”](https://www.insnews.co.kr/news/articleView.html?idxno=92863)
+- [보험개발원, 9월 30일 ‘2026 KIDI 보험미래포럼’ 연다… 국내외 전문가 한자리에](https://www.insnews.co.kr/news/articleView.html?idxno=92859)
+- [NH농협손해보험, 5개 지역총국 ‘치매극복선도기업’ 인증](https://www.insnews.co.kr/news/articleView.html?idxno=92858)
 
 ## 💰 국내 경제·금융
-- [금리 인상 한번 끝 or 연속 인상?…커지는 10% 조정론 [김현석의 월스트리트나우]](https://www.hankyung.com/article/202609167008i)
-- ["드디어 재충전 했나"…지지부진 증시서 홀로 '껑충'](https://www.hankyung.com/article/202609156498i)
-- [美 국채 금리·국제 유가 급등에 일제 하락…나스닥 0.78%↓ [뉴욕증시 브리핑]](https://www.hankyung.com/article/2026091671016)
-- ["30% 상승 여력"…실적·주주환원 기대되는 'BGF리테일'](https://www.hankyung.com/article/202609156240i)
-- ["반도체만 보다가 놓쳤네"…코스피 횡보장서 뭉칫돈 몰린 종목](https://www.hankyung.com/article/2026091566361)
+- ["제일기획, 올해 실적 추정치 하향…목표가↓"-신한](https://www.hankyung.com/article/2026091799846)
+- [3년 만에 금리인상·워시 매파 발언에 하락 마감…다우 1.2%↓[뉴욕증시 브리핑]](https://www.hankyung.com/article/2026091798786)
+- ["같은 삼성전자 협력사인데" … 수익률 47% VS -19% 갈린 이유는 [대기업 협력사 전수분석]](https://www.hankyung.com/article/202609179699i)
+- [골드만삭스 "12월 한 차례 더 금리 인상"](https://www.hankyung.com/article/2026091798307)
+- [美 기준금리 인상하자 트럼프 뿔났다…"빨리 1% 이하로 낮춰라" [Fed 워치]](https://www.hankyung.com/article/202609179777i)
 
 ## 📈 주식·시장
-- [오락가락 증시서 로봇이 먼저 뛰어올랐다…로보티즈 한달새 50% 급등, 코스닥 10위](https://www.mk.co.kr/news/stock/12153902)
-- [“GS리테일, 실적 개선에도 여전히 저평가”…목표가는 3만5000원으로 낮춰](https://www.mk.co.kr/news/stock/12153900)
-- [美 ‘클래리티법’ 상원서 부결…비트코인 7만5천달러까지 급락](https://www.mk.co.kr/news/stock/12153897)
-- [AI 우려에도 인프라 투자는 늘어…“삼전닉스 반등 준비”](https://www.mk.co.kr/news/stock/12153864)
-- [“9월중엔 주식창 안볼랍니다”…美긴축공포에 코스피 대형주 피눈물](https://www.mk.co.kr/news/stock/12153825)
+- [미국 금리 인상·뉴욕증시 하락에도…코스피, 6700선 상승 출발](https://www.mk.co.kr/news/stock/12155032)
+- [美연준, 3년만에 금리인상.. 워시 “인플레 너무 높다”](https://www.mk.co.kr/news/stock/12155024)
+- [“제일기획, 마케팅 효율화로 실적 눈높이 낮아”…목표가↓](https://www.mk.co.kr/news/stock/12155022)
+- [KT 3분기에 ‘좋을 일’만 있다는데…AI인프라 수혜·주주환원 기대감 [오늘 나온 보고서]](https://www.mk.co.kr/news/stock/12154995)
+- [“NAVER, 디지털자산 규제화 지연에 주가 휘청…지금이 매수 기회”](https://www.mk.co.kr/news/stock/12154985)
 
 ## 🌏 글로벌 경제·정세
-- ["일본의 수치" 비난 폭주하는데…'계산대' 못 바꾸는 이유 [도쿄나우]](https://www.hankyung.com/article/202609167232i)
-- [버니 샌더스와 스티븐 배넌이 한편?…AI 놓고 정계 '이합집산' [이상은의 워싱턴나우]](https://www.hankyung.com/article/202609167007i)
-- [AI 데이터센터에 수요 폭발…올해 주가만 50% 넘게 올랐다 [핫픽!미국주식]](https://www.hankyung.com/article/202609156675i)
-- [금리 5% 넘었는데…베선트 "美 국채 성과는 세계 최고"](https://www.hankyung.com/article/2026091670807)
-- [美 10년물 국채금리 '마의 5%' 뚫렸다](https://www.hankyung.com/article/2026091566471)
+- [트럼프, '애착 담요' 女 보좌관과 입맞춤?…일파만파 퍼지더니](https://www.hankyung.com/article/202609179863H)
+- [日 금리 31년 만에 최고치인데…엔화는 다시 약세, 왜? [도쿄나우]](https://www.hankyung.com/article/202609179838i)
+- ["채권금리 상승은 경제전망 반영"…낙관적으로 해석한 워시 [Fed워치]](https://www.hankyung.com/article/202609179748i)
+- [워시, 베선트에 일침 "무역·재정정책, 각자 영역 지켜야" [Fed워치]](https://www.hankyung.com/article/202609179744i)
+- [워시 "7월 후 '지정학적 상황' 변화, 만장일치에 기여" [Fed워치]](https://www.hankyung.com/article/202609179738i)
 
 ## 🔥 팔로업 추천 (300회 이상)
-- 2,810회 [2026-09-13] 어떤 아버지,  홀로 키운 자식을 사고로 떠나보냈어.  슬픔도 잠시,  ...
+- 2,666회 [2026-09-16] 어떤 자산가,  상속받은 땅 때문에  하루아침에 처분 통지 받았어.  ⚠...
 - 1,980회 [2026-09-14] “그냥 술 취해서 호텔까지 바래다준 것뿐이야.”  법정에선 이 변명이 통...
-- 319회 [2026-09-14] 주가 띄우려고 언론 플레이하는 브로커들, 생각보다 수법이 훨씬 치밀해. ...
+- 712회 [2026-09-16] 💡 3년 만에 다시 금리 손대는 거, 생각보다 파장이 깊어.  이 판에서...
+- 518회 [2026-09-16] 법인 이름 걸고 장사하면 다 내 맘대로 굴려도 되는 줄 알았어.  📌 미...
+- 370회 [2026-09-16] "내 집인데, 계약 기간 중에 내가 들어가서 좀 보겠다는데 뭐가 문제야?...
 
 ---
-*총 59개 기사 수집됨*
+*총 60개 기사 수집됨*
