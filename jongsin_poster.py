@@ -12,6 +12,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 from datetime import datetime, timezone, timedelta
 import news_auto_poster as nap
 import card_generator as cg
+import blog_links
 
 KST = timezone(timedelta(hours=9))
 CONSULT_COMMENT_THREADS = '이 얘기 더 궁금하면 여기서 확인할 수 있어 → https://naver.me/FRLbSbiJ'
@@ -198,7 +199,12 @@ def log_instagram(ig_post_id, selected_title):
 
 def post_threads(variant):
     print('Threads 발행 중...')
-    main_id = nap.post_to_threads(variant['threads'], [CONSULT_COMMENT_THREADS], image_url=None, topic_tag='보험')
+    comments = [CONSULT_COMMENT_THREADS]
+    blog_c = blog_links.blog_comment(variant.get('blog', ''))
+    if blog_c:
+        comments.append(blog_c)
+        print('블로그 링크 댓글 추가')
+    main_id = nap.post_to_threads(variant['threads'], comments, image_url=None, topic_tag='보험')
     print(f'Threads 완료: {main_id}')
     return main_id
 
@@ -269,6 +275,7 @@ def main():
     threads_id = post_threads(variant)
     if threads_id:
         nap.log_content(threads_id, 'insurance', 'jongsin_sales', '종신보험 활용법 소재',
+                        source=blog_links.log_source(variant.get('blog', '')),
                         line_count=variant['threads'].count('\n') + 1)
 
     ig_id = post_instagram(variant)

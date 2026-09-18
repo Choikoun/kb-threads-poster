@@ -11,6 +11,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 from datetime import datetime, timezone, timedelta
 import news_auto_poster as nap
 import card_generator as cg
+import blog_links
 
 KST = timezone(timedelta(hours=9))
 CONSULT_COMMENT_THREADS = '이 얘기 더 궁금하면 여기서 확인할 수 있어 → https://naver.me/FRLbSbiJ'
@@ -62,6 +63,7 @@ VARIANTS = [
 #노후준비 #연금 #은퇴설계 #자산관리''',
     },
     {
+        'blog': 'annuity_death_benefit',
         'threads': '''연금 받다가 일찍 죽으면 손해라고 생각하지.
 
 ⚠️ 근데 그것도 최소한은 막아주는 구조가 있어.
@@ -180,6 +182,7 @@ VARIANTS = [
 #노후준비 #연금 #은퇴설계 #자산관리''',
     },
     {
+        'blog': 'annuity_timing',
         'threads': '''연금보험 가입 시기가 3년만 달라져도 받는 돈이 이렇게 벌어져.
 
 같은 조건(월 80만원, 7년만 납입, 65세부터 수령)으로 비교하면—
@@ -243,7 +246,12 @@ def log_instagram(ig_post_id, selected_title):
 
 def post_threads(variant):
     print('Threads 발행 중...')
-    main_id = nap.post_to_threads(variant['threads'], [CONSULT_COMMENT_THREADS], image_url=None, topic_tag='보험')
+    comments = [CONSULT_COMMENT_THREADS]
+    blog_c = blog_links.blog_comment(variant.get('blog', ''))
+    if blog_c:
+        comments.append(blog_c)
+        print('블로그 링크 댓글 추가')
+    main_id = nap.post_to_threads(variant['threads'], comments, image_url=None, topic_tag='보험')
     print(f'Threads 완료: {main_id}')
     return main_id
 
@@ -307,6 +315,7 @@ def main():
     threads_id = post_threads(variant)
     if threads_id:
         nap.log_content(threads_id, 'insurance', 'annuity_sales', '연금보험 노후설계 소재',
+                        source=blog_links.log_source(variant.get('blog', '')),
                         line_count=variant['threads'].count('\n') + 1)
 
     ig_id = post_instagram(variant)
