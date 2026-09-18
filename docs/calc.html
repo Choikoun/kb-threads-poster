@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>우리 집 상속세, 대략 얼마일까 — 간이 계산기</title>
+<style>
+  :root{--navy:#0F1F3D;--coral:#E8715A;--emerald:#3FA687;--gray:#8B9BB4;--light:#F4F6F9;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;color:#222;background:#fff;line-height:1.6}
+  .wrap{max-width:640px;margin:0 auto;padding:28px 18px 60px}
+  header{background:var(--navy);color:#fff;border-radius:14px;padding:22px 20px;margin-bottom:22px}
+  header h1{font-size:20px;margin-bottom:6px} header p{font-size:13px;color:#C9D3E3}
+  label{display:block;font-size:13px;font-weight:700;color:var(--navy);margin:14px 0 6px}
+  input[type=number]{width:100%;padding:12px;border:1px solid #DCE2EA;border-radius:9px;font-size:16px}
+  .row{display:flex;gap:10px} .row>div{flex:1}
+  .radio label{display:inline-block;font-weight:400;margin:0 14px 0 0;color:#333}
+  .hint{font-size:12px;color:var(--gray);margin-top:4px}
+  button{width:100%;margin-top:18px;padding:14px;border:0;border-radius:10px;background:var(--emerald);color:#fff;font-size:15px;font-weight:700}
+  .result{display:none;margin-top:22px;background:var(--light);border-radius:12px;padding:16px}
+  .result .big{font-size:26px;font-weight:800;color:var(--coral);margin:4px 0 10px}
+  .result table{width:100%;border-collapse:collapse;font-size:13px;margin-top:8px}
+  .result td{padding:7px 4px;border-bottom:1px solid #E6EAF0} .result td:last-child{text-align:right;font-weight:700}
+  .cta{margin-top:20px;background:#fff;border:1px solid #E6EAF0;border-radius:12px;padding:16px}
+  .cta p{font-size:13px;color:#555;margin-bottom:10px}
+  .btn{display:inline-block;padding:10px 14px;border-radius:9px;font-size:13px;font-weight:700;text-decoration:none;background:var(--coral);color:#fff}
+  footer{font-size:11px;color:#888;margin-top:22px;line-height:1.7}
+  a.back{font-size:12px;color:var(--gray);text-decoration:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="index.html">← 자료실</a>
+  <header style="margin-top:10px">
+    <h1>우리 집 상속세, 대략 얼마일까</h1>
+    <p>현행 상속세법의 기본 구조(일괄공제·배우자공제·누진세율)만으로 계산하는 간이 계산기입니다. 입력값은 저장되지 않습니다.</p>
+  </header>
+
+  <label>총 재산 (억원)</label>
+  <input type="number" id="assets" placeholder="예: 15" step="0.1" min="0">
+  <div class="hint">부동산·예금·주식 등 대략의 시가 합계. 보험금·퇴직금 등도 포함될 수 있습니다.</div>
+
+  <label>채무 (억원)</label>
+  <input type="number" id="debts" placeholder="예: 2" step="0.1" min="0" value="0">
+
+  <div class="row">
+    <div>
+      <label>배우자</label>
+      <div class="radio"><label><input type="radio" name="spouse" value="1" checked> 있음</label><label><input type="radio" name="spouse" value="0"> 없음</label></div>
+    </div>
+    <div>
+      <label>자녀 수</label>
+      <input type="number" id="children" value="2" min="0" step="1">
+    </div>
+  </div>
+
+  <button onclick="calc()">대략 계산하기</button>
+
+  <div class="result" id="result">
+    <div style="font-size:13px;color:var(--gray)">예상 상속세 (대략)</div>
+    <div class="big" id="tax"></div>
+    <table>
+      <tr><td>순재산 (재산 - 채무)</td><td id="net"></td></tr>
+      <tr><td>일괄공제</td><td>5억원</td></tr>
+      <tr><td>배우자상속공제 (최소 5억 · 최대 30억, 법정상속분 한도)</td><td id="sp"></td></tr>
+      <tr><td>과세표준</td><td id="taxable"></td></tr>
+      <tr><td>적용 세율 구간</td><td id="rate"></td></tr>
+      <tr><td>산출세액 → 신고세액공제 3% 반영</td><td id="after"></td></tr>
+    </table>
+    <div class="cta">
+      <p><b>이 숫자를 줄이는 방향</b>은 사전 증여 시기, 납부 재원(현금) 준비, 배우자·자녀 배분 설계, 추가 공제 해당 여부 확인입니다. 우리 집 상황에 맞춘 1장 정리를 원하시면 아래에서 신청하세요.</p>
+      <a class="btn" href="https://naver.me/FRLbSbiJ" target="_blank">내 상황 1장 신청하기</a>
+    </div>
+  </div>
+
+  <footer>
+    ※ 금융재산공제·동거주택공제·가업상속공제, 10년 내 사전증여 합산, 재산 평가 방법 등에 따라 실제 세액은 크게 달라질 수 있습니다.<br>
+    ※ 국회 통과 전 개정안은 반영하지 않았습니다. 정확한 계산은 세무사와 확인하시기 바랍니다. 특정 상품의 가입을 권유하는 자료가 아닙니다.
+  </footer>
+</div>
+<script>
+function won(m){ // m: 만원
+  m=Math.round(m); if(m===0) return '0원';
+  const eok=Math.floor(m/10000), rest=m%10000;
+  if(m>=10000) return rest===0? eok+'억원' : eok+'억 '+rest.toLocaleString()+'만원';
+  return m.toLocaleString()+'만원';
+}
+function calc(){
+  const assets=(parseFloat(document.getElementById('assets').value)||0)*10000;
+  const debts=(parseFloat(document.getElementById('debts').value)||0)*10000;
+  const spouse=document.querySelector('input[name=spouse]:checked').value==='1';
+  const children=parseInt(document.getElementById('children').value)||0;
+  const net=Math.max(assets-debts,0);
+  const lump=50000;
+  let sp=0;
+  if(spouse){
+    const heirs=1+children;
+    const legal= heirs>1 ? net*1.5/(1.5+children) : net;
+    sp=Math.min(Math.max(legal,50000),300000);
+  }
+  const taxable=Math.max(net-lump-sp,0);
+  const br=[[10000,0.10,0],[50000,0.20,1000],[100000,0.30,6000],[300000,0.40,16000],[Infinity,0.50,46000]];
+  let rate=0,cum=0; for(const [lim,r,c] of br){ if(taxable<=lim){rate=r;cum=c;break;} }
+  const tax=Math.max(taxable*rate-cum,0), after=tax*0.97;
+  document.getElementById('tax').textContent='약 '+won(after);
+  document.getElementById('net').textContent=won(net);
+  document.getElementById('sp').textContent=spouse?won(sp):'해당 없음';
+  document.getElementById('taxable').textContent=won(taxable);
+  document.getElementById('rate').textContent=taxable>0?(rate*100)+'%':'-';
+  document.getElementById('after').textContent=won(tax)+' → '+won(after);
+  document.getElementById('result').style.display='block';
+}
+</script>
+</body>
+</html>
