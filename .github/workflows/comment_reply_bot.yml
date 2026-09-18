@@ -1,0 +1,40 @@
+name: 댓글 자동 1장 답글 봇 (30분마다)
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: comment-reply-bot
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  reply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: 패키지 설치
+        run: pip install requests python-dotenv matplotlib Pillow
+      - name: 댓글 확인·답글
+        env:
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          IMGBB_API_KEY: ${{ secrets.IMGBB_API_KEY }}
+        run: python comment_reply_bot.py
+      - name: 상태 커밋
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add reply_bot_state.json
+          git diff --staged --quiet || git commit -m "댓글봇 상태 업데이트"
+          for attempt in 1 2 3 4 5; do
+            git pull --rebase origin main && git push && break
+            git rebase --abort 2>/dev/null || true
+            echo "push 충돌 — 재시도 $attempt/5"; sleep $((attempt * 5))
+          done
