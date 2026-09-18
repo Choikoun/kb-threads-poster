@@ -210,7 +210,8 @@ def main():
             time.sleep(1)
 
         hashtags = ' '.join(f'#{t.lstrip("#").strip()}' for t in card_data.get('hashtags', []))
-        caption = f'{card_data["caption"]}\n\n{hashtags}'
+        dm_line = "점검표·체크리스트가 필요하시면 DM으로 '자료'라고 보내주세요. 바로 보내드립니다."
+        caption = f'{card_data["caption"]}\n\n{dm_line}\n\n{hashtags}'
 
         print('인스타그램 캐러셀 발행 중...')
         ig_post_id = post_carousel(image_urls, caption)
