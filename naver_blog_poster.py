@@ -201,10 +201,29 @@ def input_tags(driver, wait, tags):
     print(f'태그 입력: {tags}')
 
 
+def check_keyword(meta, lines):
+    """롱테일 키워드 원칙 검사: '키워드:'가 제목·첫 두 문장·태그에 들어있는지. 빠지면 경고(발행은 계속)."""
+    kw = meta.get('키워드', '').strip()
+    if not kw:
+        print('⚠️ 글파일에 "키워드:" 가 없어요 — 롱테일 키워드 1개를 정해서 넣어주세요.')
+        return
+    norm = lambda s: s.replace(' ', '')
+    title_ok = norm(kw) in norm(meta.get('제목', ''))
+    head = norm(' '.join([l for l in lines if l.strip() and not l.startswith('[IMG')][:2]))
+    head_ok = norm(kw) in head
+    tags_ok = any(norm(kw) in norm(t) for t in meta.get('태그', '').split(','))
+    for name, ok in [('제목', title_ok), ('첫 두 문장', head_ok), ('태그', tags_ok)]:
+        print(f"키워드 '{kw}' → {name}: {'OK' if ok else '⚠️ 없음'}")
+    generic = [t.strip() for t in meta.get('태그', '').split(',') if t.strip() and len(t.strip()) <= 4]
+    if generic:
+        print(f'⚠️ 짧은(대형) 태그 감지: {generic} — 구문형 롱테일 태그로 바꾸는 게 원칙이에요.')
+
+
 def post_to_naver(meta, lines, base_dir, dry=False):
     title = meta.get('제목', '').strip()
     if not title:
         raise ValueError('글파일에 "제목:" 이 없어요.')
+    check_keyword(meta, lines)
 
     driver = get_driver()
     driver.switch_to.new_window('tab')
