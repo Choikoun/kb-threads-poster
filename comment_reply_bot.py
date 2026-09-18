@@ -97,7 +97,96 @@ def handle_inheritance(text):
     return png, reply
 
 
-HANDLERS = {'inheritance': handle_inheritance}
+def parse_gift(text):
+    """'성인 자녀에게 5억' '배우자 10억' '손자 1억, 10년 내 3천 줬음' → dict 또는 None"""
+    t = text
+    amounts = re.findall(r'\d+(?:\.\d+)?억(?:\s*\d+천)?(?:\s*\d+만)?|\d+천만?|\d{3,}만', t)
+    if not amounts:
+        return None
+    amount = parse_money(amounts[0])
+    if not amount:
+        return None
+    prior = 0
+    m = re.search(r'(?:10년|기증여|이미|전에|줬|받았)\D{0,12}?([\d.]+억(?:\s*\d+천)?|\d+천만?|\d{3,}만)', t)
+    if m:
+        prior = parse_money(m.group(1)) or 0
+    elif len(amounts) >= 2:
+        prior = parse_money(amounts[1]) or 0
+    skip = bool(re.search(r'손자|손녀|손주|조부|할아버지|할머니', t))
+    if re.search(r'배우자|아내|남편|와이프|부인', t):
+        rel = 'spouse'
+    elif re.search(r'미성년|초등|중학|고등|아기|어린', t):
+        rel = 'minor_child'
+    elif re.search(r'부모|엄마|아빠|어머니|아버지', t) and re.search(r'부모(님)?(에게|한테|께)', t):
+        rel = 'parent'
+    elif re.search(r'자녀|자식|아들|딸|아이|손자|손녀|손주', t):
+        rel = 'adult_child'
+    elif re.search(r'형제|동생|누나|언니|형|오빠|조카|삼촌|이모|고모|사위|며느리', t):
+        rel = 'relative'
+    else:
+        rel = 'adult_child'
+    marriage = bool(re.search(r'혼인|결혼|출산', t))
+    return {'amount': amount, 'prior': prior, 'relation': rel, 'skip': skip, 'marriage': marriage}
+
+
+def handle_gift(text):
+    p = parse_gift(text)
+    if not p:
+        return None
+    from gift_estimate import render, estimate, fmt, RELATIONS
+    e = estimate(p)
+    png, _ = render(p, out_dir='reply_bot_tmp', label='댓글 기준')
+    reply = (f"{e['rel']}에게 {fmt(p['amount'])}" + (f"(10년 내 기증여 {fmt(p['prior'])} 합산)" if p['prior'] else '')
+             + f" 기준으로 대략 계산하면\n예상 증여세 약 {fmt(e['final'])}이야."
+             + (f" 공제 잔여 {fmt(e['remain'])}까지는 세금 0." if e['remain'] else '')
+             + " (관계별 공제·누진세율만 반영, 평가방법 미반영)\n\n"
+             f"나눠서 줄지, 언제 줄지까지 내 상황 1장으로 정리 원하면 → {CONSULT_LINK}")
+    return png, reply
+
+
+def parse_retire(text):
+    """'연봉 1억2천 근속 15년 배수 3' → dict 또는 None"""
+    t = text
+    m = re.search(r'(?:연봉|급여|월급|보수)\s*[:은는]?\s*([\d.,억천만원\s]+)', t)
+    salary = parse_money(m.group(1)) if m else None
+    if m and not salary:
+        digits = re.sub(r'\D', '', m.group(1))
+        salary = int(digits) if digits else None   # '월급 800' → 800만원
+    if not salary:
+        nums = re.findall(r'\d+(?:\.\d+)?억(?:\s*\d+천)?(?:\s*\d+만)?|\d+천만?', t)
+        salary = parse_money(nums[0]) if nums else None
+    if not salary:
+        return None
+    if re.search(r'월급|월\s*\d', t) and salary < 3000:
+        salary *= 12
+    m = re.search(r'(?:근속|재직|근무)\s*[:은는]?\s*(\d+(?:\.\d+)?)\s*년', t) or re.search(r'(\d+(?:\.\d+)?)\s*년', t)
+    if not m:
+        return None
+    years = float(m.group(1))
+    m = re.search(r'(?:배수|배율)\s*[:은는]?\s*(\d+(?:\.\d+)?)', t) or re.search(r'(\d+(?:\.\d+)?)\s*배', t)
+    multiple = float(m.group(1)) if m else (0 if re.search(r'정관\s*(없|x|X|무)', t) else 2)
+    m = re.search(r'2020\D{0,6}(\d+(?:\.\d+)?)\s*년', t)
+    after = float(m.group(1)) if m else min(years, 6.7)
+    return {'salary': salary, 'years': years, 'years_after_2020': after, 'multiple': multiple}
+
+
+def handle_retire(text):
+    p = parse_retire(text)
+    if not p:
+        return None
+    from retire_estimate import render, estimate, fmt
+    e = estimate(p)
+    png, _ = render(p, out_dir='reply_bot_tmp', label='댓글 기준')
+    mult_txt = f"정관 {p['multiple']:g}배" if p['multiple'] else '정관 규정 없음(1배)'
+    reply = (f"연봉 {fmt(p['salary'])}·근속 {p['years']:g}년·{mult_txt} 기준이면\n"
+             f"퇴직금 {fmt(e['pay'])}, 퇴직소득 인정 한도 {fmt(e['limit'])}"
+             + (f" → 초과 {fmt(e['excess'])}은 근로소득으로 과세돼." if e['excess'] else " → 전액 퇴직소득 인정.")
+             + f" (2020년 이후분 2배·이전분 3배 기준, 2020년 이후 근속은 {e['after']:.1f}년으로 가정)\n\n"
+             f"정관 정비·재원 마련까지 내 상황 1장으로 정리 원하면 → {CONSULT_LINK}")
+    return png, reply
+
+
+HANDLERS = {'inheritance': handle_inheritance, 'gift': handle_gift, 'retire': handle_retire}
 
 
 # ─── Threads API ─────────────────────────────────────────────────

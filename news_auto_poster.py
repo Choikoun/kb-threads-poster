@@ -687,6 +687,14 @@ def post_to_threads(main_text, comments, image_url=None, topic_tag=None, content
     print(f'메인 발행: {main_id}')
     time.sleep(3)
 
+    try:
+        import tool_links
+        tc = tool_links.tool_comment(main_text, comments)
+        if tc:
+            comments = list(comments) + [tc]
+            print('계산기 링크 댓글 추가')
+    except Exception as e:
+        print(f'계산기 링크 댓글 생략: {e}')
     _publish_comments(UID, main_id, comments)
 
     return main_id
@@ -752,6 +760,14 @@ def post_video_to_threads(main_text, comments, video_url, topic_tag=None):
     print(f'메인 발행: {main_id}')
     time.sleep(3)
 
+    try:
+        import tool_links
+        tc = tool_links.tool_comment(main_text, comments)
+        if tc:
+            comments = list(comments) + [tc]
+            print('계산기 링크 댓글 추가')
+    except Exception as e:
+        print(f'계산기 링크 댓글 생략: {e}')
     _publish_comments(UID, main_id, comments)
 
     return main_id

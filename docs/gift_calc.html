@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>자녀·배우자에게 증여하면 세금 얼마일까 — 증여세 간이 계산기</title>
+<style>
+  :root{--navy:#0F1F3D;--coral:#E8715A;--emerald:#3FA687;--gray:#8B9BB4;--light:#F4F6F9;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;color:#222;background:#fff;line-height:1.6}
+  .wrap{max-width:640px;margin:0 auto;padding:28px 18px 60px}
+  header{background:var(--navy);color:#fff;border-radius:14px;padding:22px 20px;margin-bottom:22px}
+  header h1{font-size:20px;margin-bottom:6px} header p{font-size:13px;color:#C9D3E3}
+  label{display:block;font-size:13px;font-weight:700;color:var(--navy);margin:14px 0 6px}
+  input[type=number],select{width:100%;padding:12px;border:1px solid #DCE2EA;border-radius:9px;font-size:16px;background:#fff}
+  .check{margin-top:12px;font-size:13px;color:#333;display:flex;align-items:flex-start;gap:8px}
+  .check input{margin-top:4px}
+  .hint{font-size:12px;color:var(--gray);margin-top:4px}
+  button{width:100%;margin-top:18px;padding:14px;border:0;border-radius:10px;background:var(--emerald);color:#fff;font-size:15px;font-weight:700}
+  .result{display:none;margin-top:22px;background:var(--light);border-radius:12px;padding:16px}
+  .result .big{font-size:26px;font-weight:800;color:var(--coral);margin:4px 0 10px}
+  .result table{width:100%;border-collapse:collapse;font-size:13px;margin-top:8px}
+  .result td{padding:7px 4px;border-bottom:1px solid #E6EAF0} .result td:last-child{text-align:right;font-weight:700}
+  .insight{margin-top:12px;font-size:13px;color:var(--navy);background:#fff;border-left:4px solid var(--emerald);border-radius:8px;padding:10px 12px}
+  .cta{margin-top:20px;background:#fff;border:1px solid #E6EAF0;border-radius:12px;padding:16px}
+  .cta p{font-size:13px;color:#555;margin-bottom:10px}
+  .btn{display:inline-block;padding:10px 14px;border-radius:9px;font-size:13px;font-weight:700;text-decoration:none;background:var(--coral);color:#fff}
+  footer{font-size:11px;color:#888;margin-top:22px;line-height:1.7}
+  a.back{font-size:12px;color:var(--gray);text-decoration:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="index.html">← 자료실</a>
+  <header style="margin-top:10px">
+    <h1>자녀·배우자에게 증여하면 세금 얼마일까</h1>
+    <p>현행 증여세법의 기본 구조(관계별 증여재산공제·10년 합산·누진세율)만으로 계산하는 간이 계산기입니다. 입력값은 저장되지 않습니다.</p>
+  </header>
+
+  <label>이번에 증여할 재산가액 (만원)</label>
+  <input type="number" id="gift" placeholder="예: 50000 (5억)" step="100" min="0">
+  <div class="hint">현금·부동산·주식 등 대략의 시가. 1억 = 10,000만원으로 입력하세요.</div>
+
+  <label>주는 사람과 받는 사람의 관계</label>
+  <select id="rel">
+    <option value="spouse">배우자 (공제 6억)</option>
+    <option value="adult" selected>성인 자녀·직계비속 (공제 5천만)</option>
+    <option value="minor">미성년 자녀·직계비속 (공제 2천만)</option>
+    <option value="ascendant">직계존속 — 부모 등에게 증여 (공제 5천만)</option>
+    <option value="relative">기타 친족 — 며느리·사위·형제 등 (공제 1천만)</option>
+    <option value="other">타인 (공제 없음)</option>
+  </select>
+
+  <label>최근 10년 내 같은 사람에게서 받은 증여액 (만원)</label>
+  <input type="number" id="prior" value="0" step="100" min="0">
+  <div class="hint">10년 안에 같은 사람에게서 받은 금액은 합산됩니다. 없으면 0.</div>
+
+  <label class="check"><input type="checkbox" id="marriage"> 혼인·출산 증여재산공제 적용 (직계존속→자녀, 최대 1억, 2024.1.1 이후 증여분)</label>
+  <label class="check"><input type="checkbox" id="skip"> 세대생략 증여 (조부모→손자녀, 30% 할증 · 미성년 수증자이고 증여재산 20억 초과 시 40%)</label>
+
+  <button onclick="calc()">대략 계산하기</button>
+
+  <div class="result" id="result">
+    <div style="font-size:13px;color:var(--gray)">예상 증여세 (대략)</div>
+    <div class="big" id="tax"></div>
+    <table>
+      <tr><td>과세가액 (이번 증여 + 10년 내 기증여)</td><td id="base"></td></tr>
+      <tr><td>증여재산공제 (관계별 + 혼인·출산)</td><td id="ded"></td></tr>
+      <tr><td>과세표준</td><td id="taxable"></td></tr>
+      <tr><td>적용 세율 구간</td><td id="rate"></td></tr>
+      <tr><td>산출세액</td><td id="calc"></td></tr>
+      <tr><td>세대생략 할증</td><td id="surcharge"></td></tr>
+      <tr><td>할증 후 → 신고세액공제 3% 반영</td><td id="after"></td></tr>
+    </table>
+    <div class="insight" id="insight"></div>
+    <div class="cta">
+      <p><b>이 숫자를 줄이는 방향</b>은 공제 한도에 맞춘 분할 증여, 10년 주기 설계, 받는 사람 분산(배우자·자녀·손자녀), 증여 재산의 평가 방법 선택입니다. 우리 집 상황에 맞춘 1장 정리를 원하시면 아래에서 신청하세요.</p>
+      <a class="btn" href="https://naver.me/FRLbSbiJ" target="_blank">내 상황 1장 신청하기</a>
+    </div>
+  </div>
+
+  <footer>
+    ※ 대략치입니다. 재산 평가 방법(부동산 기준시가·시가, 비상장주식 평가 등), 10년 내 기증여에서 이미 사용한 공제와 기납부 증여세, 창업·가업승계 특례 등에 따라 실제 세액은 크게 달라질 수 있습니다.<br>
+    ※ 국회 통과 전 개정안은 반영하지 않았습니다. 정확한 계산은 세무사와 확인하시기 바랍니다. 특정 상품의 가입을 권유하는 자료가 아닙니다.
+  </footer>
+</div>
+<script>
+function won(m){ // m: 만원
+  m=Math.round(m); if(m===0) return '0원';
+  const eok=Math.floor(m/10000), rest=m%10000;
+  if(m>=10000) return rest===0? eok+'억원' : eok+'억 '+rest.toLocaleString()+'만원';
+  return m.toLocaleString()+'만원';
+}
+const DED={spouse:60000,adult:5000,minor:2000,ascendant:5000,relative:1000,other:0}; // 관계별 증여재산공제(만원), 10년 합산 한도
+function calc(){
+  const gift=parseFloat(document.getElementById('gift').value)||0;
+  const prior=parseFloat(document.getElementById('prior').value)||0;
+  const rel=document.getElementById('rel').value;
+  const marriage=document.getElementById('marriage').checked;
+  const skip=document.getElementById('skip').checked;
+
+  // 단순화 가정: 10년 내 기증여 시 공제를 전혀 쓰지 않았다고 보고, 공제 한도 전액을 이번에 적용
+  const base=gift+prior;
+  const ded=DED[rel]+(marriage?10000:0);
+  const taxable=Math.max(base-ded,0);
+  const br=[[10000,0.10,0],[50000,0.20,1000],[100000,0.30,6000],[300000,0.40,16000],[Infinity,0.50,46000]];
+  let rate=0,cum=0; for(const [lim,r,c] of br){ if(taxable<=lim){rate=r;cum=c;break;} }
+  const tax=Math.max(taxable*rate-cum,0);
+  // 세대생략 할증: 기본 30%, 수증자 미성년 + 증여재산가액 20억 초과 시 40%
+  const surRate=skip?((rel==='minor'&&gift>200000)?0.4:0.3):0;
+  const sur=tax*surRate;
+  // 단순화: 10년 내 기증여에 대한 기납부 증여세 공제는 반영하지 않음
+  const after=(tax+sur)*0.97;
+
+  document.getElementById('tax').textContent='약 '+won(after);
+  document.getElementById('base').textContent=won(base);
+  document.getElementById('ded').textContent=won(ded);
+  document.getElementById('taxable').textContent=won(taxable);
+  document.getElementById('rate').textContent=taxable>0?(rate*100)+'%':'-';
+  document.getElementById('calc').textContent=won(tax);
+  document.getElementById('surcharge').textContent=skip?(surRate*100)+'% · +'+won(sur):'해당 없음';
+  document.getElementById('after').textContent=won(tax+sur)+' → '+won(after);
+
+  const remain=Math.max(ded-prior,0); // 이번에 세금 없이 줄 수 있는 금액(기증여 차감 후 공제 잔여)
+  let msg;
+  if(taxable===0){
+    msg='공제 한도 안이라 예상 증여세는 0원입니다. 같은 사람에게 앞으로 <b>'+won(Math.max(ded-base,0))+'</b>까지는 추가로 증여해도 세금이 없습니다(10년 합산 기준).';
+  }else if(remain>0){
+    msg='이번 증여를 <b>'+won(remain)+'</b>까지만 하면 세금 0원입니다. 그 이상은 '+(rate*100)+'% 구간부터 과세됩니다. 나머지는 10년 뒤 또는 다른 가족에게 나누는 방법을 검토하세요.';
+  }else{
+    msg='10년 내 기증여로 공제를 이미 다 썼다고 보면, 이번 증여는 전액 과세 대상입니다. 받는 사람을 나누거나 10년 주기를 활용하는 설계가 필요합니다.';
+  }
+  document.getElementById('insight').innerHTML=msg;
+  document.getElementById('result').style.display='block';
+}
+</script>
+</body>
+</html>

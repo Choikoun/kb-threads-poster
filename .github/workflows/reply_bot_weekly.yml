@@ -1,0 +1,41 @@
+name: 주간 댓글 계산 사례 모음 (일 20:00)
+
+on:
+  schedule:
+    - cron: '0 11 * * 0'   # 일요일 20:00 KST
+  workflow_dispatch:
+
+concurrency:
+  group: reply-bot-weekly
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  weekly:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: 패키지 설치
+        run: pip install requests python-dotenv matplotlib Pillow google-genai feedparser beautifulsoup4
+      - name: 사례 모음 발행
+        env:
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python reply_bot_weekly.py
+      - name: 로그 커밋
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config merge.jsonlog.driver "python merge_json_log.py %O %A %B"
+          git add content_log.json
+          git diff --staged --quiet || git commit -m "주간 댓글 사례 모음 로그"
+          for attempt in 1 2 3 4 5; do
+            git pull --rebase origin main && git push && break
+            git rebase --abort 2>/dev/null || true
+            echo "push 충돌 — 재시도 $attempt/5"; sleep $((attempt * 5))
+          done

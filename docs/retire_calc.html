@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>대표님 퇴직금, 어디까지 퇴직소득일까 — 임원 퇴직금 한도 간이 계산기</title>
+<style>
+  :root{--navy:#0F1F3D;--coral:#E8715A;--emerald:#3FA687;--gray:#8B9BB4;--light:#F4F6F9;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;color:#222;background:#fff;line-height:1.6}
+  .wrap{max-width:640px;margin:0 auto;padding:28px 18px 60px}
+  header{background:var(--navy);color:#fff;border-radius:14px;padding:22px 20px;margin-bottom:22px}
+  header h1{font-size:20px;margin-bottom:6px} header p{font-size:13px;color:#C9D3E3}
+  label{display:block;font-size:13px;font-weight:700;color:var(--navy);margin:14px 0 6px}
+  input[type=number]{width:100%;padding:12px;border:1px solid #DCE2EA;border-radius:9px;font-size:16px}
+  .row{display:flex;gap:10px} .row>div{flex:1}
+  .hint{font-size:12px;color:var(--gray);margin-top:4px}
+  button{width:100%;margin-top:18px;padding:14px;border:0;border-radius:10px;background:var(--emerald);color:#fff;font-size:15px;font-weight:700}
+  .result{display:none;margin-top:22px;background:var(--light);border-radius:12px;padding:16px}
+  .result .big{font-size:26px;font-weight:800;color:var(--coral);margin:4px 0 10px}
+  .result table{width:100%;border-collapse:collapse;font-size:13px;margin-top:8px}
+  .result td{padding:7px 4px;border-bottom:1px solid #E6EAF0} .result td:last-child{text-align:right;font-weight:700}
+  .insight{margin-top:12px;font-size:13px;color:var(--navy);background:#fff;border-left:4px solid var(--emerald);border-radius:8px;padding:10px 12px}
+  .cta{margin-top:20px;background:#fff;border:1px solid #E6EAF0;border-radius:12px;padding:16px}
+  .cta p{font-size:13px;color:#555;margin-bottom:10px}
+  .btn{display:inline-block;padding:10px 14px;border-radius:9px;font-size:13px;font-weight:700;text-decoration:none;background:var(--coral);color:#fff}
+  footer{font-size:11px;color:#888;margin-top:22px;line-height:1.7}
+  a.back{font-size:12px;color:var(--gray);text-decoration:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="index.html">← 자료실</a>
+  <header style="margin-top:10px">
+    <h1>대표님 퇴직금, 어디까지 퇴직소득일까</h1>
+    <p>정관 지급배수에 따른 퇴직금과, 소득세법상 퇴직소득으로 인정되는 한도(2020년 이후 2배·2012~2019년 3배)를 비교하는 간이 계산기입니다. 입력값은 저장되지 않습니다.</p>
+  </header>
+
+  <label>퇴직 전 3년 평균 연봉 (만원)</label>
+  <input type="number" id="salary" placeholder="예: 12000 (1억 2천)" step="100" min="0">
+  <div class="hint">퇴직 직전 3년간 총급여(상여 포함, 비과세 제외)의 연평균. 1억 = 10,000만원.</div>
+
+  <div class="row">
+    <div>
+      <label>총 근속연수 (년)</label>
+      <input type="number" id="total" placeholder="예: 15" step="0.1" min="0">
+    </div>
+    <div>
+      <label>그중 2020.1.1 이후 근속 (년)</label>
+      <input type="number" id="post" placeholder="예: 6.7" step="0.1" min="0">
+    </div>
+  </div>
+  <div class="hint">임원 취임일부터 퇴직일까지. 2020년 이후분은 2배, 그 이전(2012~2019년)분은 3배가 적용됩니다.</div>
+
+  <label>정관(또는 주총 결의) 퇴직금 지급배수</label>
+  <input type="number" id="mult" value="2" step="0.5" min="0">
+  <div class="hint">정관에 "연봉 × 10% × 근속연수 × N배" 식으로 정한 배수. 규정이 없으면 0을 입력하세요.</div>
+
+  <button onclick="calc()">대략 계산하기</button>
+
+  <div class="result" id="result">
+    <div style="font-size:13px;color:var(--gray)" id="bigLabel">한도 초과분 (근로소득으로 과세)</div>
+    <div class="big" id="excess"></div>
+    <table>
+      <tr><td id="paidLabel">정관 기준 퇴직금</td><td id="paid"></td></tr>
+      <tr><td>퇴직소득 인정 한도 (소득세법)</td><td id="limit"></td></tr>
+      <tr><td>&nbsp;&nbsp;└ 2020년 이후 근속분 (× 2배)</td><td id="limitPost"></td></tr>
+      <tr><td>&nbsp;&nbsp;└ 2012~2019년 근속분 (× 3배)</td><td id="limitPre"></td></tr>
+      <tr><td>퇴직소득으로 인정되는 금액</td><td id="recognized"></td></tr>
+      <tr><td>한도 초과분 → 근로소득 과세 (퇴직소득 아님)</td><td id="excess2"></td></tr>
+    </table>
+    <div class="insight" id="insight"></div>
+    <div class="cta">
+      <p><b>이 숫자를 바로잡는 방향</b>은 정관 퇴직금 규정 정비, 지급배수와 퇴직 시점 조정, 퇴직금 재원(현금) 준비입니다. 대표님 회사 기준으로 1장 정리를 원하시면 아래에서 신청하세요.</p>
+      <a class="btn" href="https://naver.me/FRLbSbiJ" target="_blank">내 상황 1장 신청하기</a>
+    </div>
+  </div>
+
+  <footer>
+    ※ 대략치입니다. 2011년 이전 근속분, 임원 취임 전 직원 근속분, 총급여 산정 범위, 정관 규정의 유효성(주총 결의·개정 시점)에 따라 실제 금액은 달라질 수 있습니다.<br>
+    ※ 정관에 퇴직금 규정이 있는지, 언제 정했는지가 가장 큰 변수입니다. 정확한 판단은 세무사와 확인하시기 바랍니다. 특정 상품의 가입을 권유하는 자료가 아닙니다.
+  </footer>
+</div>
+<script>
+function won(m){ // m: 만원
+  m=Math.round(m); if(m===0) return '0원';
+  const eok=Math.floor(m/10000), rest=m%10000;
+  if(m>=10000) return rest===0? eok+'억원' : eok+'억 '+rest.toLocaleString()+'만원';
+  return m.toLocaleString()+'만원';
+}
+function calc(){
+  const salary=parseFloat(document.getElementById('salary').value)||0;
+  const total=parseFloat(document.getElementById('total').value)||0;
+  let post=parseFloat(document.getElementById('post').value)||0;
+  const mult=parseFloat(document.getElementById('mult').value)||0;
+  if(post>total) post=total;
+  const pre=Math.max(total-post,0); // 2012~2019년 근속분 (2011년 이전 근속은 없다고 가정)
+
+  // 소득세법 임원 퇴직소득 한도 = 3년 평균연봉 × 10% × (2020년 이후 근속 × 2 + 2012~2019 근속 × 3)
+  const limitPost=salary*0.1*post*2;
+  const limitPre=salary*0.1*pre*3;
+  const limit=limitPost+limitPre;
+
+  // 정관 규정 있음: 평균연봉 × 10% × 총근속 × 배수
+  // 정관 규정 없음(0): 법인세법 시행령 기준 = 퇴직 전 1년 총급여 × 10% × 근속연수 (평균연봉을 1년 급여로 대용)
+  const hasRule=mult>0;
+  const paid=hasRule? salary*0.1*total*mult : salary*0.1*total;
+  const excess=Math.max(paid-limit,0);
+  const recognized=paid-excess;
+
+  document.getElementById('excess').textContent=excess>0?'약 '+won(excess):'0원 (전액 퇴직소득)';
+  document.getElementById('paidLabel').textContent=hasRule?'정관 기준 퇴직금 ('+mult+'배)':'퇴직금 (정관 규정 없음 · 법인세법 기준 1배)';
+  document.getElementById('paid').textContent=won(paid);
+  document.getElementById('limit').textContent=won(limit);
+  document.getElementById('limitPost').textContent=won(limitPost)+' ('+post+'년)';
+  document.getElementById('limitPre').textContent=won(limitPre)+' ('+Math.round(pre*10)/10+'년)';
+  document.getElementById('recognized').textContent=won(recognized);
+  document.getElementById('excess2').textContent=won(excess);
+
+  // 초과분이 0이 되는 최대 배수 = (post×2 + pre×3) / total
+  const maxMult= total>0 ? Math.floor((post*2+pre*3)/total*10)/10 : 0;
+  let msg;
+  if(!hasRule){
+    msg='정관에 퇴직금 규정이 없으면 법인세법상 손금 한도가 <b>1배</b>로 묶입니다. 정관에 배수를 <b>'+maxMult+'배</b>까지 두면 지급액이 '+won(salary*0.1*total*maxMult)+'으로 늘어나면서도 전액 퇴직소득으로 인정됩니다.';
+  }else if(excess>0){
+    msg='정관 배수를 <b>'+maxMult+'배</b> 이하로 두면 초과분이 0이 됩니다. 현재 '+mult+'배 기준 초과분 '+won(excess)+'은 근로소득으로 합산 과세되어 세 부담이 커집니다.';
+  }else{
+    msg='현재 배수('+mult+'배)로는 전액 퇴직소득으로 인정됩니다. 정관 배수를 <b>'+maxMult+'배</b>까지 올려도 초과분 없이 '+won(salary*0.1*total*maxMult)+'까지 지급할 수 있습니다.';
+  }
+  document.getElementById('insight').innerHTML=msg;
+  document.getElementById('result').style.display='block';
+}
+</script>
+</body>
+</html>
