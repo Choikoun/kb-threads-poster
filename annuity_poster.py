@@ -14,8 +14,8 @@ import card_generator as cg
 import blog_links
 
 KST = timezone(timedelta(hours=9))
-CONSULT_COMMENT_THREADS = '이 얘기 더 궁금하면 여기서 확인할 수 있어 → https://naver.me/FRLbSbiJ'
-CONSULT_COMMENT_IG = '더 자세한 내용이 궁금하시면 아래에서 확인해보세요 → https://naver.me/FRLbSbiJ'
+CONSULT_COMMENT_THREADS = '내 나이·납입액 기준으로 매달 얼마 받는지, 일찍 죽으면 얼마 남는지 1장으로 정리해줄게 → https://naver.me/FRLbSbiJ'
+CONSULT_COMMENT_IG = '내 나이·납입액 기준 수령액과 사망 시 남는 금액을 1장으로 정리해드립니다 → https://naver.me/FRLbSbiJ'
 
 VARIANTS = [
     {

@@ -15,8 +15,8 @@ import card_generator as cg
 import blog_links
 
 KST = timezone(timedelta(hours=9))
-CONSULT_COMMENT_THREADS = '이 얘기 더 궁금하면 여기서 확인할 수 있어 → https://naver.me/FRLbSbiJ'
-CONSULT_COMMENT_IG = '더 자세한 내용이 궁금하시면 아래에서 확인해보세요 → https://naver.me/FRLbSbiJ'
+CONSULT_COMMENT_THREADS = '내 조건이면 교육자금·은퇴자금으로 얼마나 쓸 수 있는지 시나리오 1장으로 정리해줄게 → https://naver.me/FRLbSbiJ'
+CONSULT_COMMENT_IG = '내 조건으로 교육자금·은퇴자금 활용 시나리오를 1장으로 정리해드립니다 → https://naver.me/FRLbSbiJ'
 
 VARIANTS = [
     {
