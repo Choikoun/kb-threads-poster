@@ -4,5 +4,11 @@
     "handler": "inheritance",
     "since": "2026-09-18",
     "note": "상속세 30초 계산기 홍보"
+  },
+  {
+    "post_id": "17914566267259973",
+    "handler": "gift",
+    "since": "2026-09-19",
+    "note": "증여세 계산기 홍보"
   }
 ]
