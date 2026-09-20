@@ -99,6 +99,18 @@ JSON만 출력:
     return None
 
 
+def strip_image_metadata(path):
+    """EXIF/XMP/IPTC 등 메타데이터를 전부 제거하고 순수 픽셀만 다시 저장한다.
+    Pexels 등 스톡사진에는 작가명(dc:creator) 등이 박혀있어, 네이버 D.I.A가
+    '원본이 아닌 이미지'로 판별하는 신호가 될 수 있다(2026-09-20 사용자 확인·과거 포토스케이프로 하던 작업).
+    Image.open→새 캔버스에 픽셀만 복사→저장 하면 원본 info(exif/xmp/photoshop)가 승계되지 않는다."""
+    from PIL import Image as _Image
+    im = _Image.open(path)
+    clean = _Image.new(im.mode if im.mode in ('RGB', 'L') else 'RGB', im.size)
+    clean.paste(im.convert('RGB') if im.mode != clean.mode else im)
+    clean.save(path, quality=92)
+
+
 def search_pexels_photo(query, output_path=RAW_IMAGE_PATH, orientation='square'):
     for attempt in range(3):
         try:
@@ -122,6 +134,7 @@ def search_pexels_photo(query, output_path=RAW_IMAGE_PATH, orientation='square')
                 continue
             with open(output_path, 'wb') as f:
                 f.write(img_resp.content)
+            strip_image_metadata(output_path)
             return output_path
         except Exception as e:
             print(f'Pexels 이미지 다운로드 오류 (시도 {attempt+1}/3): {e}')
