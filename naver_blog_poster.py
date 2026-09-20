@@ -276,7 +276,15 @@ def check_keyword(meta, lines, base_dir=None):
     occurrences = full_body.count(norm(kw))
     for name, ok in [('제목', title_ok), ('첫 두 문장', head_ok), ('태그', tags_ok)]:
         print(f"키워드 '{kw}' → {name}: {'OK' if ok else '⚠️ 없음'}")
-    print(f"키워드 '{kw}' → 본문 전체 등장 횟수: {occurrences}회" + ('' if occurrences >= 3 else ' ⚠️ 3회 미만 (자연스럽게 2~3번 더 넣는 걸 권장)'))
+    # 09-20: 반복 키워드 삽입이 오히려 "키워드 남용"으로 감점될 수 있어(pandarank 자료 확인),
+    # 과도한 반복은 이제 경고 대상 — 2~4회가 적정 범위.
+    if occurrences < 2:
+        warn = ' ⚠️ 2회 미만 (제목·태그 외 본문에도 1~2번은 자연스럽게 넣는 걸 권장)'
+    elif occurrences > 4:
+        warn = ' ⚠️ 4회 초과 — 키워드 남용으로 보일 수 있어 줄이는 걸 권장'
+    else:
+        warn = ''
+    print(f"키워드 '{kw}' → 본문 전체 등장 횟수: {occurrences}회{warn}")
     generic = [t.strip() for t in meta.get('태그', '').split(',') if t.strip() and len(t.strip()) <= 4]
     if generic:
         print(f'⚠️ 짧은(대형) 태그 감지: {generic} — 구문형 롱테일 태그로 바꾸는 게 원칙이에요.')
