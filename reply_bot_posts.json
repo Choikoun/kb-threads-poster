@@ -10,5 +10,11 @@
     "handler": "gift",
     "since": "2026-09-19",
     "note": "증여세 계산기 홍보"
+  },
+  {
+    "post_id": "18133866337575345",
+    "handler": "inheritance",
+    "since": "2026-09-20",
+    "note": "상속세 기준 블로그 유도"
   }
 ]
