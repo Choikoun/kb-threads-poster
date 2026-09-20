@@ -220,7 +220,12 @@ def type_body(driver, wait, lines, base_dir):
             else:
                 send(driver, part)
         send(driver, '\n')
-        time.sleep(0.05)
+        if 'http://' in line or 'https://' in line:
+            # URL은 SmartEditor가 잠시 뒤 링크 카드로 자동 변환함 — 그 전에 다음 줄이
+            # 같은 줄로 붙어버리는 경우가 있어 변환이 끝날 시간을 준다.
+            time.sleep(1.2)
+        else:
+            time.sleep(0.05)
 
 
 def safe_click(driver, el):
@@ -254,22 +259,35 @@ def input_tags(driver, wait, tags):
     print(f'태그 입력: {tags}')
 
 
-def check_keyword(meta, lines):
-    """롱테일 키워드 원칙 검사: '키워드:'가 제목·첫 두 문장·태그에 들어있는지. 빠지면 경고(발행은 계속)."""
+def check_keyword(meta, lines, base_dir=None):
+    """SEO 검사: 키워드가 제목·첫 두 문장·태그·본문 전체에 들어있는지 + 이미지 파일명에 키워드가 있는지.
+    빠지면 경고만 하고 발행은 계속 진행한다."""
     kw = meta.get('키워드', '').strip()
     if not kw:
         print('⚠️ 글파일에 "키워드:" 가 없어요 — 롱테일 키워드 1개를 정해서 넣어주세요.')
         return
     norm = lambda s: s.replace(' ', '')
+    body_lines = [l for l in lines if l.strip() and not l.strip().startswith('[IMG')]
     title_ok = norm(kw) in norm(meta.get('제목', ''))
-    head = norm(' '.join([l for l in lines if l.strip() and not l.startswith('[IMG')][:2]))
+    head = norm(' '.join(body_lines[:2]))
     head_ok = norm(kw) in head
     tags_ok = any(norm(kw) in norm(t) for t in meta.get('태그', '').split(','))
+    full_body = norm(' '.join(body_lines))
+    occurrences = full_body.count(norm(kw))
     for name, ok in [('제목', title_ok), ('첫 두 문장', head_ok), ('태그', tags_ok)]:
         print(f"키워드 '{kw}' → {name}: {'OK' if ok else '⚠️ 없음'}")
+    print(f"키워드 '{kw}' → 본문 전체 등장 횟수: {occurrences}회" + ('' if occurrences >= 3 else ' ⚠️ 3회 미만 (자연스럽게 2~3번 더 넣는 걸 권장)'))
     generic = [t.strip() for t in meta.get('태그', '').split(',') if t.strip() and len(t.strip()) <= 4]
     if generic:
         print(f'⚠️ 짧은(대형) 태그 감지: {generic} — 구문형 롱테일 태그로 바꾸는 게 원칙이에요.')
+
+    # 이미지 파일명 SEO 체크 (네이버는 alt 텍스트를 파일명 그대로 가져다 씀 — 09-19 확인)
+    img_names = [l.strip()[5:-1].strip() for l in lines if l.strip().startswith('[IMG:') and l.strip().endswith(']')]
+    if img_names:
+        kw_no_space = norm(kw)
+        no_kw = [n for n in img_names if kw_no_space not in norm(n)]
+        if no_kw:
+            print(f"⚠️ 파일명에 키워드가 없는 이미지: {no_kw} — 네이버는 alt 텍스트를 파일명 그대로 쓰니, 파일명에 키워드를 넣는 걸 권장해요.")
 
 
 def post_to_naver(meta, lines, base_dir, dry=False):
