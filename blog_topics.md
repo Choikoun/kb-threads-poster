@@ -36,4 +36,7 @@
 
 ## 발행 기록
 - 09-18 annuity_timing (키워드 미검증, 그대로 둠)
-- 09-19 예정 annuity_death_benefit — "연금보험 사망시" 50
+- 09-19 annuity_death_benefit — "연금보험 사망시" 50
+- 09-19 gift_tax_calc (A-0) — "증여세계산" 2,380
+- 09-20 inheritance_tax_baseline (A-1) — "상속세 기준" 1,060, 실제 광고 0. 템플릿 획일화 방지 원칙 첫 적용(질문형 아닌 팩트 오프닝, CTA 분산 배치)
+- 다음: A-2 임원퇴직금한도
