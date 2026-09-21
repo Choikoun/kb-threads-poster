@@ -16,5 +16,11 @@
     "handler": "inheritance",
     "since": "2026-09-20",
     "note": "상속세 기준 블로그 유도"
+  },
+  {
+    "post_id": "18090695075682458",
+    "handler": "gift",
+    "since": "2026-09-21",
+    "note": "손자증여 블로그 유도 (gift 핸들러가 조부모·손자 키워드로 세대생략 skip=True 자동 인식)"
   }
 ]
