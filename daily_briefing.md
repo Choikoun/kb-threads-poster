@@ -1,42 +1,42 @@
 # 📰 일일 브리핑
-*2026-09-21 09:10 KST*
+*2026-09-22 09:44 KST*
 
 ---
 
 ## 🔖 보험 동향
-- [[비즈 칼럼-이노에이엑스] 보험요율 산출 자동화, 계산 아닌 ‘흐름의 설계’](https://www.insnews.co.kr/news/articleView.html?idxno=92921)
-- [[김진호의 판례로 배우는 보험상식] 하지정맥류 수술 후 입원, 실손은 왜 통원으로 지급될까](https://www.insnews.co.kr/news/articleView.html?idxno=92906)
-- [[이하진의 보험을 워딩하다] 영업의 딜레마(Dilemma)와 패러독스(Paradox)](https://www.insnews.co.kr/news/articleView.html?idxno=92905)
-- [[특별기고] 삶이 흔들릴 때, 먼저 손을 내미는 생명보험](https://www.insnews.co.kr/news/articleView.html?idxno=92904)
-- [[RMI보험경영연구소 보험이슈 톡톡] 초위험사회, 한국의 포용보험이 나아가야 할 방향](https://www.insnews.co.kr/news/articleView.html?idxno=92903)
+- [KB손해보험, 경북 ‘소상공인 상생보험’ 운영한다](https://www.insnews.co.kr/news/articleView.html?idxno=92959)
+- [15세 미만 사망보험 사각지대 손질… 상법 개정 추진](https://www.insnews.co.kr/news/articleView.html?idxno=92957)
+- [국토부, 배달 종사자 안전운전 보험료 할인 최대 11%로 확대](https://www.insnews.co.kr/news/articleView.html?idxno=92953)
+- [교통 범칙금·과태료, 교통안전 재원으로… ‘특별회계’ 도입 논의](https://www.insnews.co.kr/news/articleView.html?idxno=92947)
+- [DB손보, 개인택시 면허 거래 시 양도자 귀책 ‘면허취소 위험’ 보장 마련](https://www.insnews.co.kr/news/articleView.html?idxno=92942)
 
 ## 💰 국내 경제·금융
-- ["SK가스, 올해 실적 '상저하고' 전망"-하나](https://www.hankyung.com/article/2026092170636)
-- ["LG이노텍, 피할 수 없는 환율 역풍…목표가↓"-메리츠](https://www.hankyung.com/article/2026092169646)
-- ['뭐 사둘까'… 내 은퇴 시점에 딱 맞는 퇴직연금 바구니는?](https://www.hankyung.com/article/202609169394i)
-- [반도체 소부장의 시간…코스닥 시총 톱10 중 절반 차지](https://www.hankyung.com/article/2026092062901)
-- [환율·채권…3년물 국고채, 연 4%선 등락할 듯](https://www.hankyung.com/article/2026092063741)
+- [한 달 새 74% 뛰었다…SFA반도체, 삼전 업고 '불기둥' [종목+]](https://www.hankyung.com/article/2026092296626)
+- ['뮤즈'가 뭐길래, 메타 발 'AI 멜트업'…이란과 정상회담? 유가 폭락 [김현석의 월스트리트나우]](https://www.hankyung.com/article/202609229459i)
+- [올해만 140% 상승…AI 데이터센터의 숨은 수혜주](https://www.hankyung.com/article/202609229361i)
+- ['5조원 투입'…AI 데이터센터에 승부 건 '현금부자'](https://www.hankyung.com/article/202609218332i)
+- [SK하닉 1% 찔끔 오를 때 '삼전 5% 급등'한 이유라는데 [종목+]](https://www.hankyung.com/article/2026092295436)
 
 ## 📈 주식·시장
-- [“삼성SDI, 전력 인프라 성장성 반영…목표주가 80만원으로 상향”](https://www.mk.co.kr/news/stock/12157758)
-- [사흘만 장 열리는 코스피…미중 정상회담·미 금리 ‘촉각’](https://www.mk.co.kr/news/stock/12157738)
-- [“코스맥스, 쇼핑 시즌 앞두고 주가 상승 준비 완료”…목표가↑](https://www.mk.co.kr/news/stock/12157734)
-- [“중국인은 더 마시는데 재배지는 줄어든다”…커피값, 이러니 안 오를 수 있겠나](https://www.mk.co.kr/news/stock/12157692)
-- [50대 서민이 투자전략 물어봐도 ... AI가 그를 ‘20대 고소득자’로 보는 까닭은?](https://www.mk.co.kr/news/economy/12157434)
+- [미 증시 급등과 외국인·기관 순매수에…코스피, 7100선 상승 출발](https://www.mk.co.kr/news/stock/12158954)
+- [[MK시그널] 네패스아크, 대규모 설비 투자에 따른 생산능력 확대 기대감 등에 주가 상승세... MK시그널 추천 후 상승률 24.58% 기록](https://www.mk.co.kr/news/stock/12158947)
+- [NH투자증권 “KCC, 실리콘 사업 실적 개선…주주환원 확대도 긍정적”](https://www.mk.co.kr/news/stock/12158870)
+- [메타 ‘뮤즈’ 여신 마법에 홀린 월가...CPU 주가 날아오른 까닭은](https://www.mk.co.kr/news/stock/12158848)
+- [“삼성전자, 업황 확장·HBM 경쟁력 강화…긍정적 접근 필요”](https://www.mk.co.kr/news/stock/12158829)
 
 ## 🌏 글로벌 경제·정세
-- [트럼프 "나라 전체 날려버릴 수도"…이란에 최후통첩하나](https://www.hankyung.com/article/2026092167907)
-- ["AI 속도 늦출 이유 없다"던 트럼프…가족은 '뭉칫돈' 투자](https://www.hankyung.com/article/2026092166637)
-- [유엔 총회로 가는 'AI 안전성'…올트먼, 안보리서 브리핑한다](https://www.hankyung.com/article/2026092063891)
-- [[포토] 트럼프 “CNN·폴리티코 기자 백악관 출입금지”](https://www.hankyung.com/article/2026092063901)
-- [다카이치·우에다, 금리인상 앞두고 '사전면담' 없었다](https://www.hankyung.com/article/2026092063931)
+- [[밤 사이 해외뉴스 영상] 러시아 '제재 회피' 핀테크 A7, 위조서류로 글로벌 금융망 침투](https://www.hankyung.com/article/202609229685i)
+- [[밤 사이 해외뉴스] 호르무즈에 유조선 묶였다…유가 내려도 휘발유값 못 내리는 이유](https://www.hankyung.com/article/202609229670i)
+- ["중국 의존도 줄여라"…日, 대체소재 국가 프로젝트 착수](https://www.hankyung.com/article/202609229666i)
+- [소프트뱅크 110억달러 정크본드 발행…오픈AI 베팅 확대](https://www.hankyung.com/article/202609229634i)
+- [트럼프 또 '사보타주' 외칠라…유엔 "점검하고 또 점검"](https://www.hankyung.com/article/2026092295287)
 
 ## 🔥 팔로업 추천 (300회 이상)
-- 1,661회 [2026-09-19] 60억짜리 자가용산 집을 팔고, 보증금 11억 실버타운으로 들어간 원로 ...
-- 1,146회 [2026-09-20] 아파트 중도금 대출받으러 간 날, 은행원 표정이 갑자기 굳었어.  ⚠️ ...
-- 812회 [2026-09-19] 60억 짜리 용산 집을 내놓고 보증금 11억 실버타운으로 간대.  이런 ...
-- 581회 [2026-09-19] 대통령 지지율이 흔들릴 때마다, 시장에선 어김없이 부동산이 소환돼.  ⚠...
-- 503회 [2026-09-20] 💡 19년을 모시고 살았는데 상속공제 대상에서 빠졌대.  며느리는 직계비...
+- 1,175회 [2026-09-20] 아파트 중도금 대출받으러 간 날, 은행원 표정이 갑자기 굳었어.  ⚠️ ...
+- 867회 [2026-09-21] 훈련 도중 터진 폭발 사고, 장병 3명이 중경상을 입었어.  ⚠️ 북한 ...
+- 799회 [2026-09-21] 41년 동안 아기 수만 명을 받아낸 강남의 한 산부인과가 문을 닫을 위기...
+- 518회 [2026-09-21] ‘해지환급금 700%’ 이 문구만 믿고 가입하면 나중에 진짜 낭패 본다....
+- 517회 [2026-09-20] 💡 19년을 모시고 살았는데 상속공제 대상에서 빠졌대.  며느리는 직계비...
 
 ---
-*총 59개 기사 수집됨*
+*총 60개 기사 수집됨*
