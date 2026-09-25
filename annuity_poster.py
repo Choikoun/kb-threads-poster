@@ -273,6 +273,7 @@ def post_instagram(variant):
         print(f'카드 {i+1}/{len(paths)} 업로드 완료')
         time.sleep(1)
 
+    time.sleep(5)  # imgbb CDN 전파 대기 (즉시 컨테이너 생성 시 카드 1이 간헐적으로 실패하는 문제 완화)
     child_ids = []
     for i, url in enumerate(image_urls):
         r = requests.post(f'{BASE_IG}/{IG_USER_ID}/media',
