@@ -3803,7 +3803,11 @@
     "likes": 5,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-21"
+    "reblog_date": "2026-09-21",
+    "reposted": true,
+    "reposted_id": "18110615776869517",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "18019042406856924",
@@ -3814,7 +3818,11 @@
     "likes": 176,
     "replies": 6,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-21"
+    "reblog_date": "2026-09-21",
+    "reposted": true,
+    "reposted_id": "18216481075358098",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "18137331223603108",
@@ -3825,7 +3833,11 @@
     "likes": 5,
     "replies": 0,
     "media_type": "TEXT_POST",
-    "reblog_date": "2026-09-21"
+    "reblog_date": "2026-09-21",
+    "reposted": true,
+    "reposted_id": "18086180207497160",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "18033700184834747",
@@ -3836,7 +3848,11 @@
     "likes": 0,
     "replies": 4,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-21"
+    "reblog_date": "2026-09-21",
+    "reposted": true,
+    "reposted_id": "18021898058924389",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "18110141764797390",
@@ -3847,7 +3863,11 @@
     "likes": 1,
     "replies": 4,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-21"
+    "reblog_date": "2026-09-21",
+    "reposted": true,
+    "reposted_id": "18130813315741849",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "18115785484901500",
@@ -3858,7 +3878,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-21"
+    "reblog_date": "2026-09-21",
+    "reposted": true,
+    "reposted_id": "17887031391478788",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "18089275058335167",
@@ -3869,7 +3893,11 @@
     "likes": 3,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-21"
+    "reblog_date": "2026-09-21",
+    "reposted": true,
+    "reposted_id": "17958234354249721",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "18485938588101904",
@@ -3880,7 +3908,11 @@
     "likes": 1,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-21"
+    "reblog_date": "2026-09-21",
+    "reposted": true,
+    "reposted_id": "18111965612519260",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "17924628654421760",
@@ -3891,7 +3923,11 @@
     "likes": 4,
     "replies": 2,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-21"
+    "reblog_date": "2026-09-21",
+    "reposted": true,
+    "reposted_id": "18222131560339386",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "18108889177817308",
@@ -3902,7 +3938,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-21"
+    "reblog_date": "2026-09-21",
+    "reposted": true,
+    "reposted_id": "17939922087100895",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "17875294242624657",
@@ -3913,7 +3953,11 @@
     "likes": 2,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-21"
+    "reblog_date": "2026-09-21",
+    "reposted": true,
+    "reposted_id": "17869109349647640",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "17987844923842281",
@@ -3924,7 +3968,11 @@
     "likes": 1,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-21"
+    "reblog_date": "2026-09-21",
+    "reposted": true,
+    "reposted_id": "18093710234431591",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "18123456028790870",
@@ -3935,7 +3983,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-21"
+    "reblog_date": "2026-09-21",
+    "reposted": true,
+    "reposted_id": "18111298193115111",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "18139645048569909",
@@ -3946,7 +3998,11 @@
     "likes": 0,
     "replies": 4,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-21"
+    "reblog_date": "2026-09-21",
+    "reposted": true,
+    "reposted_id": "17972447184132671",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "18109958665991777",
@@ -3957,7 +4013,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-21"
+    "reblog_date": "2026-09-21",
+    "reposted": true,
+    "reposted_id": "18129832180770994",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "18095663441607615",
@@ -3968,7 +4028,11 @@
     "likes": 0,
     "replies": 4,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-21"
+    "reblog_date": "2026-09-21",
+    "reposted": true,
+    "reposted_id": "18098126201271112",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "18169867264432869",
@@ -3979,7 +4043,11 @@
     "likes": 1,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-21"
+    "reblog_date": "2026-09-21",
+    "reposted": true,
+    "reposted_id": "18369060949210458",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "18129003016631431",
@@ -3990,7 +4058,11 @@
     "likes": 4,
     "replies": 2,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-23"
+    "reblog_date": "2026-09-23",
+    "reposted": true,
+    "reposted_id": "18583920766069741",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "18110890745319889",
@@ -4001,7 +4073,11 @@
     "likes": 0,
     "replies": 1,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-23"
+    "reblog_date": "2026-09-23",
+    "reposted": true,
+    "reposted_id": "18087926417274542",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "18400111615095375",
@@ -4012,7 +4088,11 @@
     "likes": 2,
     "replies": 2,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-23"
+    "reblog_date": "2026-09-23",
+    "reposted": true,
+    "reposted_id": "18107962910580394",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "18144789640528709",
@@ -4023,7 +4103,11 @@
     "likes": 0,
     "replies": 1,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-23"
+    "reblog_date": "2026-09-23",
+    "reposted": true,
+    "reposted_id": "18381123742229399",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "18108112097095334",
@@ -4034,7 +4118,11 @@
     "likes": 1,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-23"
+    "reblog_date": "2026-09-23",
+    "reposted": true,
+    "reposted_id": "18110959763144199",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "18109585621809278",
@@ -4045,7 +4133,11 @@
     "likes": 0,
     "replies": 1,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-23"
+    "reblog_date": "2026-09-23",
+    "reposted": true,
+    "reposted_id": "18335383900259204",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "17985637293040227",
@@ -4056,7 +4148,11 @@
     "likes": 2,
     "replies": 2,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-23"
+    "reblog_date": "2026-09-23",
+    "reposted": true,
+    "reposted_id": "18094315655542964",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "17962717623176869",
@@ -4067,7 +4163,11 @@
     "likes": 2,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-23"
+    "reblog_date": "2026-09-23",
+    "reposted": true,
+    "reposted_id": "17958796107236010",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "18276770569293642",
@@ -4078,7 +4178,11 @@
     "likes": 0,
     "replies": 4,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-23"
+    "reblog_date": "2026-09-23",
+    "reposted": true,
+    "reposted_id": "17891439276655014",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "18344895736222492",
@@ -4089,7 +4193,11 @@
     "likes": 0,
     "replies": 2,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-23"
+    "reblog_date": "2026-09-23",
+    "reposted": true,
+    "reposted_id": "18114588635012894",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "18066424976711949",
@@ -4100,7 +4208,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-23"
+    "reblog_date": "2026-09-23",
+    "reposted": true,
+    "reposted_id": "17969691420165389",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "18091914416631800",
@@ -4111,7 +4223,11 @@
     "likes": 1,
     "replies": 0,
     "media_type": "TEXT_POST",
-    "reblog_date": "2026-09-23"
+    "reblog_date": "2026-09-23",
+    "reposted": true,
+    "reposted_id": "18147331384563694",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "17892281958595712",
@@ -4122,7 +4238,11 @@
     "likes": 1,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-23"
+    "reblog_date": "2026-09-23",
+    "reposted": true,
+    "reposted_id": "18049606547807079",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "17876099913685267",
@@ -4133,7 +4253,11 @@
     "likes": 0,
     "replies": 0,
     "media_type": "TEXT_POST",
-    "reblog_date": "2026-09-23"
+    "reblog_date": "2026-09-23",
+    "reposted": true,
+    "reposted_id": "18184636984414613",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "18137265139541802",
@@ -4144,7 +4268,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-23"
+    "reblog_date": "2026-09-23",
+    "reposted": true,
+    "reposted_id": "17878605594630186",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "18381388693200265",
@@ -4155,7 +4283,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-23"
+    "reblog_date": "2026-09-23",
+    "reposted": true,
+    "reposted_id": "17967926031175337",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "17900994873333566",
@@ -4166,7 +4298,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-23"
+    "reblog_date": "2026-09-23",
+    "reposted": true,
+    "reposted_id": "17981977028905799",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "17891524956396355",
@@ -4177,7 +4313,11 @@
     "likes": 1,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-23"
+    "reblog_date": "2026-09-23",
+    "reposted": true,
+    "reposted_id": "18105167240348997",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "18371464651233452",
@@ -4188,7 +4328,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-23"
+    "reblog_date": "2026-09-23",
+    "reposted": true,
+    "reposted_id": "18186377932410938",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "18137018146585192",
@@ -4199,7 +4343,11 @@
     "likes": 0,
     "replies": 1,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-23"
+    "reblog_date": "2026-09-23",
+    "reposted": true,
+    "reposted_id": "17984120742109381",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "18180608248375116",
@@ -4210,7 +4358,11 @@
     "likes": 17,
     "replies": 5,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-26"
+    "reblog_date": "2026-09-26",
+    "reposted": true,
+    "reposted_id": "18166236367475775",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "18131809765722501",
@@ -4221,7 +4373,11 @@
     "likes": 2,
     "replies": 4,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-26"
+    "reblog_date": "2026-09-26",
+    "reposted": true,
+    "reposted_id": "17921104572224131",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "18149296984518877",
@@ -4232,7 +4388,11 @@
     "likes": 0,
     "replies": 2,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-26"
+    "reblog_date": "2026-09-26",
+    "reposted": true,
+    "reposted_id": "18117451106320677",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "17976240134898878",
@@ -4243,7 +4403,11 @@
     "likes": 0,
     "replies": 2,
     "media_type": "TEXT_POST",
-    "reblog_date": "2026-09-26"
+    "reblog_date": "2026-09-26",
+    "reposted": true,
+    "reposted_id": "17933326593392004",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "18608247418004376",
@@ -4254,7 +4418,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-26"
+    "reblog_date": "2026-09-26",
+    "reposted": true,
+    "reposted_id": "18236335414318262",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "17892088716597498",
@@ -4265,7 +4433,11 @@
     "likes": 1,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-26"
+    "reblog_date": "2026-09-26",
+    "reposted": true,
+    "reposted_id": "17985469152077054",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "18117128861293972",
@@ -4276,7 +4448,11 @@
     "likes": 1,
     "replies": 2,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-26"
+    "reblog_date": "2026-09-26",
+    "reposted": true,
+    "reposted_id": "18104739341593630",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "17921964015182270",
@@ -4287,7 +4463,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-26"
+    "reblog_date": "2026-09-26",
+    "reposted": true,
+    "reposted_id": "18559763290076451",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "18185921326358797",
@@ -4298,7 +4478,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-26"
+    "reblog_date": "2026-09-26",
+    "reposted": true,
+    "reposted_id": "18026405837884644",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "17898383565550870",
@@ -4309,7 +4493,11 @@
     "likes": 2,
     "replies": 4,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-26"
+    "reblog_date": "2026-09-26",
+    "reposted": true,
+    "reposted_id": "18111467747108033",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "18101404220601893",
@@ -4320,7 +4508,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-26"
+    "reblog_date": "2026-09-26",
+    "reposted": true,
+    "reposted_id": "18103296338369831",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "17864418924641658",
@@ -4331,7 +4523,11 @@
     "likes": 0,
     "replies": 2,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-26"
+    "reblog_date": "2026-09-26",
+    "reposted": true,
+    "reposted_id": "18041960021829897",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "17940060171308128",
@@ -4342,7 +4538,11 @@
     "likes": 0,
     "replies": 1,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-26"
+    "reblog_date": "2026-09-26",
+    "reposted": true,
+    "reposted_id": "17924065629205789",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "18159712918486228",
@@ -4353,7 +4553,11 @@
     "likes": 0,
     "replies": 2,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-26"
+    "reblog_date": "2026-09-26",
+    "reposted": true,
+    "reposted_id": "18164609395474624",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "18640631404051960",
@@ -4364,7 +4568,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-09-26"
+    "reblog_date": "2026-09-26",
+    "reposted": true,
+    "reposted_id": "18117845861280004",
+    "reposted_date": "2026-09-26",
+    "remixed": true
   },
   {
     "id": "17939645385321923",
@@ -5421,5 +5629,137 @@
     "replies": 4,
     "media_type": "IMAGE",
     "reblog_date": "2026-11-14"
+  },
+  {
+    "id": "17986912410061339",
+    "date": "2026-09-23",
+    "text": "어렵게 자격증을 따내고 나면 끝일 줄 알았나 봐.  세무사 시험에 응시하",
+    "full_text": "어렵게 자격증을 따내고 나면 끝일 줄 알았나 봐.\n\n세무사 시험에 응시하려던 수험생이 영어 점수를 채우지 못하자 시험지를 통째로 빼돌렸어.\n\n미리 답을 적어두고 시험장에 들어갔지만 결국 꼬리가 밟혔지.\n\n노력 대신 편법을 택한 대가는 자격 박탈로 끝나지 않아.\n\n그동안 쏟아부었던 시간과 신뢰까지 전부 날려버린 셈이야.\n\n#법인 #증여",
+    "views": 1731,
+    "likes": 2,
+    "replies": 4,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-11-21"
+  },
+  {
+    "id": "18338768578254645",
+    "date": "2026-09-22",
+    "text": "어떤 병원 원장,   단골 환자 늘리려다가 결국 구속됐어.  📌 마취도 ",
+    "full_text": "어떤 병원 원장, \n\n단골 환자 늘리려다가 결국 구속됐어.\n\n📌 마취도 필요 없는 시술에 프로포폴을 썼더라고.\n\n병원 키우려던 욕심이 전부를 무너뜨린 셈이지.\n\n#증여 #상속",
+    "views": 979,
+    "likes": 0,
+    "replies": 2,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-11-21"
+  },
+  {
+    "id": "18174687958456447",
+    "date": "2026-09-24",
+    "text": "지인 법인 대표가 미국서 큰 저택을 사며 직원을 개인 비서로 등록했어. ",
+    "full_text": "지인 법인 대표가 미국서 큰 저택을 사며 직원을 개인 비서로 등록했어.\n\n세무조사 때 회사 비용으로 처리한 인건비가 전부 부인당했지.\n\n사적 경비로 판단되면서 추징금만 수천만 원이 날아갔어.\n\n개인적인 자산 관리에 쓴 비용을 법인 지출로 털어 넣으면 결과는 뻔해.\n\n국세청은 생각보다 이런 사적 사용처를 기가 막히게 찾아내더라고.\n\n#법인 #증여",
+    "views": 832,
+    "likes": 0,
+    "replies": 4,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-11-21"
+  },
+  {
+    "id": "18105722492219283",
+    "date": "2026-09-24",
+    "text": "💡 서울 아파트값이 85주째 단 한 번도 쉬지 않고 올랐어.  #오늘 #",
+    "full_text": "💡 서울 아파트값이 85주째 단 한 번도 쉬지 않고 올랐어.\n\n#오늘 #이슈",
+    "views": 756,
+    "likes": 0,
+    "replies": 1,
+    "media_type": "TEXT_POST",
+    "reblog_date": "2026-11-21"
+  },
+  {
+    "id": "17971774851164344",
+    "date": "2026-09-24",
+    "text": "올해 여름 더위에 고생하고 나서야 내년 입주할 아파트 승강기에 에어컨이 ",
+    "full_text": "올해 여름 더위에 고생하고 나서야 내년 입주할 아파트 승강기에 에어컨이 있나 찾아봤다.\n\n대부분의 신축 단지도 공용 전기요금과 유지비 부담 때문에 승강기 냉방은 빠져 있는 경우가 허다하다.\n\n지자체에서 조례로 의무화 카드를 꺼내 들었지만 기존에 이미 허가받은 현장들은 적용 대상에서 비껴간다.\n\n입주할 때 관리비 항목에 냉방비가 어떻게 찍힐지 계약서 찍히기 전에 미리 따져봐야 한다.\n\n#세금 #정책",
+    "views": 474,
+    "likes": 0,
+    "replies": 2,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-11-21"
+  },
+  {
+    "id": "17936519970124126",
+    "date": "2026-09-24",
+    "text": "세무 플랫폼에서 간편하게 환급받고 끝냈다고 생각했지.  ⚠️ 국세청이 조",
+    "full_text": "세무 플랫폼에서 간편하게 환급받고 끝냈다고 생각했지.\n\n⚠️ 국세청이 조회 비용을 건당 77원씩 매기는 방안을 검토 중이야.\n\n플랫폼 이용료 구조가 통째로 흔들릴 수 있어.\n\n#부동산 #정책",
+    "views": 441,
+    "likes": 0,
+    "replies": 2,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-11-21"
+  },
+  {
+    "id": "18226724455329414",
+    "date": "2026-09-24",
+    "text": "‘이번엔 운전 안 하고 기차 타길 잘했지.’  막상 밀리는 길에 갇히면 ",
+    "full_text": "‘이번엔 운전 안 하고 기차 타길 잘했지.’\n\n막상 밀리는 길에 갇히면 차를 두고 올 걸 그랬나 후회가 밀려온다.\n\n사고 건수는 줄어드는데 오히려 다치는 사람은 늘고 있다.\n\n가족 전부 태우고 움직이는 명절 길이라 충격이 더 크다.\n\n한순간의 방심이 수습하기 힘든 지출로 이어진다.\n\n#증여 #상속",
+    "views": 394,
+    "likes": 0,
+    "replies": 4,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-11-21"
+  },
+  {
+    "id": "17963067219206737",
+    "date": "2026-09-24",
+    "text": "지인 A씨, 어깨가 아파서 병원에 갔어.  의사가 도수치료 대신 다른 비",
+    "full_text": "지인 A씨, 어깨가 아파서 병원에 갔어.\n\n의사가 도수치료 대신 다른 비급여 치료를 권하더래.\n\n📌 알고 보니 실손보험 보장 기준이 바뀌면서 풍선효과가 터진 거야.\n\n보험사는 적자 줄인다고 문을 걸어 잠갔는데, 환자들은 결국 다른 구멍을 찾아가고 있어.\n\n결국 비용 부담은 고스란히 가입자 주머니에서 빠져나가는 셈이지.\n\n#증여 #상속",
+    "views": 371,
+    "likes": 0,
+    "replies": 5,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-11-21"
+  },
+  {
+    "id": "18078770954381119",
+    "date": "2026-09-25",
+    "text": "• 미술품부터 부동산까지 쪼개서 사던 시절은 시작에 불과해.  이제 주식",
+    "full_text": "• 미술품부터 부동산까지 쪼개서 사던 시절은 시작에 불과해.\n\n이제 주식과 채권까지 토큰 증권으로 거래되는 판이 열리고 있어.\n\n수백만 원짜리 자산이 몇천 원 단위로 쪼개지는 순간 유동성의 흐름 자체가 완전히 바뀐다.\n\n#오늘 #이슈",
+    "views": 354,
+    "likes": 0,
+    "replies": 2,
+    "media_type": "TEXT_POST",
+    "reblog_date": "2026-11-21"
+  },
+  {
+    "id": "17988131880051439",
+    "date": "2026-09-23",
+    "text": "지표 금리가 꺾였다는 뉴스 보고 안심하는 사람들이 많아.  하지만 대출 ",
+    "full_text": "지표 금리가 꺾였다는 뉴스 보고 안심하는 사람들이 많아.\n\n하지만 대출 받아둔 사람들은 체감이 다를 거야.\n\n지표가 내려간다고 내 이자가 바로 줄어들진 않거든.\n\n#오늘 #이슈",
+    "views": 341,
+    "likes": 0,
+    "replies": 3,
+    "media_type": "TEXT_POST",
+    "reblog_date": "2026-11-21"
+  },
+  {
+    "id": "18377709733233999",
+    "date": "2026-09-22",
+    "text": "어머니가 눈을 뜨셨다는 연락을 받았다.  기쁨도 잠시, 이틀 만에 진짜 ",
+    "full_text": "어머니가 눈을 뜨셨다는 연락을 받았다.\n\n기쁨도 잠시, 이틀 만에 진짜 영원한 이별을 마주했다.\n\n누군가의 단순한 실수로 넘기기엔 너무 큰 간극이다.\n\n의료 현장에서 벌어지는 판정의 오류는 결국 가족에게 감당 못 할 무게로 돌아온다.\n\n결정적인 순간에 진실을 밝히는 건 결국 서류와 기록뿐이야.\n\n#증여 #상속",
+    "views": 335,
+    "likes": 0,
+    "replies": 4,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-11-21"
+  },
+  {
+    "id": "17905882284567776",
+    "date": "2026-09-25",
+    "text": "어떤 아내,   남편이 몰래 만든  마이너스 통장 3천만 원을  뒤늦게 ",
+    "full_text": "어떤 아내, \n\n남편이 몰래 만든 \n마이너스 통장 3천만 원을 \n뒤늦게 알았어.\n\n시댁에 매달 부친 돈이 \n그 빚이 된 거였지.\n\n결국 갈라서는 과정에서 \n이 빚을 누가 떠안을지가 \n가장 큰 벽이 됐어.\n\n#증여 #상속",
+    "views": 305,
+    "likes": 0,
+    "replies": 5,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-11-21"
   }
 ]
