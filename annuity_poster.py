@@ -276,10 +276,17 @@ def post_instagram(variant):
     time.sleep(5)  # imgbb CDN 전파 대기 (즉시 컨테이너 생성 시 카드 1이 간헐적으로 실패하는 문제 완화)
     child_ids = []
     for i, url in enumerate(image_urls):
-        r = requests.post(f'{BASE_IG}/{IG_USER_ID}/media',
-                          params={'image_url': url, 'is_carousel_item': 'true', 'access_token': TOKEN}, timeout=30)
+        r = None
+        for attempt in range(4):
+            r = requests.post(f'{BASE_IG}/{IG_USER_ID}/media',
+                              params={'image_url': url, 'is_carousel_item': 'true', 'access_token': TOKEN}, timeout=30)
+            if r.ok:
+                break
+            wait = 5 * (attempt + 1)
+            print(f'카드 {i+1} 컨테이너 실패(시도 {attempt+1}/4): {r.text} — {wait}초 후 재시도')
+            time.sleep(wait)
         if not r.ok:
-            print(f'카드 {i+1} 컨테이너 실패: {r.text}')
+            print(f'카드 {i+1} 컨테이너 최종 실패: {r.text}')
             return None
         child_ids.append(r.json()['id'])
         time.sleep(2)
