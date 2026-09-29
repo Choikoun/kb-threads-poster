@@ -23,10 +23,14 @@ KST = timezone(timedelta(hours=9))
 HOOK = '가족끼리 싸게 팔면\n걸리는 기준선'
 
 SCENES = [
-    {'image_query': 'family real estate contract signing'},
-    {'image_query': 'parent adult child discussing paperwork'},
-    {'image_query': 'calculator documents house price'},
-    {'image_query': 'tax office consultation'},
+    {'image_query': 'family real estate contract signing',
+     'image_prompt': 'A warm illustration of a parent handing house keys to an adult child in front of a home, korean family, flat design, soft colors'},
+    {'image_query': 'parent adult child discussing paperwork',
+     'image_prompt': 'A warm illustration of a korean parent and adult child discussing a contract document at a table, flat design, soft colors'},
+    {'image_query': 'calculator documents house price',
+     'image_prompt': 'A flat design illustration of a calculator, house model, and documents on a desk representing real estate price calculation, soft colors'},
+    {'image_query': 'tax office consultation',
+     'image_prompt': 'A flat design illustration of a financial consultant explaining tax documents to a client, soft colors'},
 ]
 
 NARRATION_IG = (
