@@ -2193,7 +2193,7 @@
     "type": "reels",
     "selected_title": "삼전 30조 배당 코앞 … 건보료 부담도 덜었다",
     "date": "2026-09-20 23:44",
-    "reach": 121,
+    "reach": 122,
     "saved": 0,
     "likes": 0,
     "comments": 0
@@ -2243,7 +2243,7 @@
     "type": "reels",
     "selected_title": "기업 보유 토지 공시지가, 올해 결산부터 주석에 공개",
     "date": "2026-09-23 16:55",
-    "reach": 111,
+    "reach": 113,
     "saved": 0,
     "likes": 1,
     "comments": 0
@@ -2253,7 +2253,7 @@
     "type": "reels",
     "selected_title": "자동매매로 코인 시세조종…거래량 90% 이상 부풀린 운영사도 덜미",
     "date": "2026-09-24 00:30",
-    "reach": 76,
+    "reach": 77,
     "saved": 0,
     "likes": 0,
     "comments": 0
@@ -2263,7 +2263,7 @@
     "type": "reels",
     "selected_title": "“이번 추석 부모님 용돈 얼마 드리지?” 고민하면서 매달 받는 연금 액 수는 모른다는데",
     "date": "2026-09-24 16:46",
-    "reach": 82,
+    "reach": 84,
     "saved": 0,
     "likes": 0,
     "comments": 0
@@ -2273,7 +2273,7 @@
     "type": "reels",
     "selected_title": "국세청 발주보고서, 삼쩜삼에 API호출 건당 최대 77원 부과 제안(종합)",
     "date": "2026-09-25 00:53",
-    "reach": 13,
+    "reach": 15,
     "saved": 0,
     "likes": 0,
     "comments": 0
@@ -2283,7 +2283,7 @@
     "type": "reels",
     "selected_title": "국세청, ‘탈세 유튜버’에 철퇴…17명에 239억 부과",
     "date": "2026-09-25 17:07",
-    "reach": 20,
+    "reach": 23,
     "saved": 0,
     "likes": 0,
     "comments": 0
@@ -2293,7 +2293,7 @@
     "type": "card",
     "selected_title": "상속세개편 병원 가업상속공제 블로그 유도",
     "date": "2026-09-25 23:51",
-    "reach": 1,
+    "reach": 3,
     "saved": 0,
     "likes": 0,
     "comments": 1
@@ -2303,7 +2303,7 @@
     "type": "reels",
     "selected_title": "국세청, ‘탈세 유튜버’에 철퇴…17명에 239억 부과",
     "date": "2026-09-26 00:52",
-    "reach": 45,
+    "reach": 52,
     "saved": 0,
     "likes": 0,
     "comments": 0
@@ -2313,7 +2313,7 @@
     "type": "card",
     "selected_title": "유족연금 블로그 유도",
     "date": "2026-09-26 02:09",
-    "reach": 1,
+    "reach": 2,
     "saved": 0,
     "likes": 0,
     "comments": 1
@@ -2322,102 +2322,170 @@
     "ig_post_id": "17869949211647745",
     "type": "reels",
     "selected_title": "집 사는 30대 '부모 찬스' 늘었다…증여·상속자금 7개월만에 작년치 추월",
-    "date": "2026-09-26 16:58"
+    "date": "2026-09-26 16:58",
+    "reach": 44,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "17863555143684259",
     "type": "reels",
     "selected_title": "[홍보] 중임등기 셀프 도구 릴스",
-    "date": "2026-09-26 23:59"
+    "date": "2026-09-26 23:59",
+    "reach": 8,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18200120089382530",
     "type": "reels",
     "selected_title": "“아버지 빚 상속포기했는데”…2년 전 응급실비는 왜 내가 내야 하나 [상속리포트]",
-    "date": "2026-09-27 00:00"
+    "date": "2026-09-27 00:00",
+    "reach": 171,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18090149393482734",
     "type": "reels",
     "selected_title": "음식점 매출 25%를 배달앱에?… 공정위, 수수료·거래조건 손본다",
-    "date": "2026-09-27 17:29"
+    "date": "2026-09-27 17:29",
+    "reach": 152,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18109044203241746",
     "type": "reels",
     "selected_title": "음식점 매출 25%를 배달앱에?… 공정위, 수수료·거래조건 손본다",
-    "date": "2026-09-28 00:41"
+    "date": "2026-09-28 00:41",
+    "reach": 277,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18164357710477477",
     "type": "card",
     "selected_title": "다주택자양도세 블로그 유도",
-    "date": "2026-09-28 08:43"
+    "date": "2026-09-28 08:43",
+    "reach": 2,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "18106521050622411",
     "type": "card",
     "selected_title": "임대소득세 블로그 유도",
-    "date": "2026-09-28 09:16"
+    "date": "2026-09-28 09:16",
+    "reach": 2,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "18137891263723514",
     "type": "reels",
     "selected_title": "주금공, 보금자리론 '결혼 페널티' 없앤다…소득기준 완화",
-    "date": "2026-09-28 17:54"
+    "date": "2026-09-28 17:54",
+    "reach": 14,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18106087184348712",
     "type": "card",
     "selected_title": "부동산증여세 블로그 유도",
-    "date": "2026-09-28 22:09"
+    "date": "2026-09-28 22:09",
+    "reach": 1,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "17912993910531497",
     "type": "reels",
     "selected_title": "“치료해도 회복 어렵다면 중단 검토”…日, 생명유지치료 새 지침",
-    "date": "2026-09-29 03:38"
+    "date": "2026-09-29 03:38",
+    "reach": 26,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18011110377004217",
     "type": "reels",
     "selected_title": "특수관계인저가양도 블로그 유도 릴스",
-    "date": "2026-09-29 15:57"
+    "date": "2026-09-29 15:57",
+    "reach": 16,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "18150166054564531",
     "type": "reels",
     "selected_title": "실업급여 3차례 이상 반복수급 11.3만명…지급액 연 6천억원(종합)",
-    "date": "2026-09-29 17:55"
+    "date": "2026-09-29 17:55",
+    "reach": 27,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18123888877896591",
     "type": "reels",
     "selected_title": "빅웨이브로보틱스, 코스닥 상장 첫날 200%대 급등",
-    "date": "2026-09-30 01:56"
+    "date": "2026-09-30 01:56",
+    "reach": 22,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "17933620968393580",
     "type": "card",
     "selected_title": "종신보험 활용법 소재",
-    "date": "2026-09-30 01:59"
+    "date": "2026-09-30 01:59",
+    "reach": 1,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18111571202272714",
     "type": "reels",
     "selected_title": "해외금융계좌신고 블로그 유도 릴스",
-    "date": "2026-09-30 11:24"
+    "date": "2026-09-30 11:24",
+    "reach": 10,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "18340522423261204",
     "type": "reels",
     "selected_title": "퇴직연금세액공제 블로그 유도 릴스",
-    "date": "2026-09-30 16:20"
+    "date": "2026-09-30 16:20",
+    "reach": 63,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "18140473294611886",
     "type": "reels",
     "selected_title": "반도체 호황에 더 걷힌 세금 63조…국채 상환·미래기금 '저울질'",
-    "date": "2026-09-30 17:54"
+    "date": "2026-09-30 17:54",
+    "reach": 0,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   }
 ]
