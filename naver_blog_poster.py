@@ -170,18 +170,26 @@ def focus_body(driver):
 
 
 def insert_image(driver, wait, image_path):
-    img_btn = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, 'button.se-image-toolbar-button')))
-    js_click(driver, img_btn)
-    time.sleep(0.3)
-    try:
-        img_btn.click()
-    except Exception:
-        pass
-    try:
-        file_input = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'input[type=file]')))
-    except Exception:
+    for attempt in range(3):
+        img_btn = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, 'button.se-image-toolbar-button')))
+        js_click(driver, img_btn)
+        time.sleep(0.3)
+        try:
+            img_btn.click()
+        except Exception:
+            pass
+        try:
+            file_input = WebDriverWait(driver, 4).until(
+                EC.presence_of_element_located((By.CSS_SELECTOR, 'input[type=file]')))
+            break
+        except Exception:
+            # 최근 사용한 사진 "라이브러리" 패널이 뜬 경우 — Esc로 닫고 재시도
+            print(f'  파일 input 못 찾음 (시도 {attempt+1}/3), 라이브러리 패널 의심 — Esc 후 재시도')
+            send(driver, Keys.ESCAPE)
+            time.sleep(0.5)
+    else:
         driver.save_screenshot('debug_image_click_failed.png')
-        raise
+        raise RuntimeError('사진 첨부 파일 입력창을 못 찾았어요 (debug_image_click_failed.png 확인)')
     file_input.send_keys(image_path)
     time.sleep(2.5)
     # 이미지 삽입 후 커서를 다음 줄로
