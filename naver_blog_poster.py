@@ -64,7 +64,7 @@ def start_chrome():
         chrome,
         f'--remote-debugging-port={DEBUG_PORT}',
         f'--user-data-dir={PROFILE_DIR}',
-        '--start-maximized',
+        '--start-minimized',
         'https://nid.naver.com/nidlogin.login',
     ])
     print('크롬 창이 떴어요. 네이버에 직접 로그인하고 창은 닫지 마세요.')
@@ -75,9 +75,14 @@ def get_driver():
     options = Options()
     options.add_experimental_option('debuggerAddress', f'127.0.0.1:{DEBUG_PORT}')
     try:
-        return webdriver.Chrome(options=options)
+        driver = webdriver.Chrome(options=options)
     except Exception as e:
         raise RuntimeError('켜져 있는 크롬에 붙지 못했어요. 먼저 python naver_blog_poster.py start 를 실행하세요.') from e
+    try:
+        driver.minimize_window()
+    except Exception:
+        pass
+    return driver
 
 
 def parse_post_file(path):
@@ -174,10 +179,6 @@ def insert_image(driver, wait, image_path):
         img_btn = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, 'button.se-image-toolbar-button')))
         js_click(driver, img_btn)
         time.sleep(0.3)
-        try:
-            img_btn.click()
-        except Exception:
-            pass
         try:
             file_input = WebDriverWait(driver, 4).until(
                 EC.presence_of_element_located((By.CSS_SELECTOR, 'input[type=file]')))
