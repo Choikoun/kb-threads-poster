@@ -20,8 +20,7 @@ import news_auto_poster as nap
 
 KST = timezone(timedelta(hours=9))
 
-HOOK = '며느리 통장으로
-5천만원 보내면?'
+HOOK = '며느리 통장으로\n5천만원 보내면?'
 
 SCENES = [
     {'image_query': 'mother and daughter in law kitchen warm',
