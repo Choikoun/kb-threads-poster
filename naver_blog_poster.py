@@ -128,10 +128,16 @@ def click_and_type(driver, locate_fn, text, check_fn, label='영역', tries=4):
     """locate_fn()으로 매 시도마다 요소를 새로 찾아 클릭 후 text 입력, check_fn()으로 실제 반영 확인 — 조용한 실패 시 재시도.
     (편집 영역이 중첩 iframe이라 activeElement 비교로는 포커스를 검증할 수 없어, 입력 결과로 검증한다.)"""
     for attempt in range(tries):
-        if not driver.execute_script('return document.hasFocus()'):
-            print(f'  [{label}] 창이 포커스를 못 받은 상태 — Page.bringToFront 재시도')
+        if attempt > 0 and not driver.execute_script('return document.hasFocus()'):
+            # 백그라운드(최소화) 운영이 기본이라 hasFocus=False는 정상 상태 — 진짜로 입력이
+            # 안 먹힐 때(재시도 단계)만 잠깐 포커스를 줬다가 바로 다시 최소화한다.
+            print(f'  [{label}] 입력 실패 재시도 — 잠깐 포커스 후 재최소화')
             driver.execute_cdp_cmd('Page.bringToFront', {})
             time.sleep(0.5)
+            try:
+                driver.minimize_window()
+            except Exception:
+                pass
         el = locate_fn()
         try:
             el.click()
@@ -320,6 +326,11 @@ def post_to_naver(meta, lines, base_dir, dry=False):
     driver.execute_cdp_cmd('Emulation.setFocusEmulationEnabled', {'enabled': True})
     driver.get(f'https://blog.naver.com/{BLOG_ID}?Redirect=Write&')
     driver.execute_cdp_cmd('Page.bringToFront', {})
+    time.sleep(0.3)
+    try:
+        driver.minimize_window()
+    except Exception:
+        pass
     wait = WebDriverWait(driver, 20)
 
     wait.until(EC.frame_to_be_available_and_switch_to_it((By.ID, 'mainFrame')))
