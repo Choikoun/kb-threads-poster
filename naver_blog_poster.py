@@ -65,6 +65,7 @@ def start_chrome():
         f'--remote-debugging-port={DEBUG_PORT}',
         f'--user-data-dir={PROFILE_DIR}',
         '--start-minimized',
+        '--disable-extensions',  # 자동화 크롬에도 Claude 확장이 깔려 있어 '브라우저 2개'로 잡히며 연결이 뒤바뀌던 문제 방지
         '--disable-backgrounding-occluded-windows',
         '--disable-renderer-backgrounding',
         '--disable-background-timer-throttling',
