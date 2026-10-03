@@ -319,7 +319,34 @@ def clear_body(driver):
     print('기존 본문 삭제 완료')
 
 
+BLOCK_FILE_DIALOG_JS = """
+if (!window.__fcBlocked) {
+  window.__fcBlocked = true;
+  var origClick = HTMLInputElement.prototype.click;
+  HTMLInputElement.prototype.click = function() {
+    if (this.type === 'file') { return; }
+    return origClick.apply(this, arguments);
+  };
+  document.addEventListener('click', function(e) {
+    var t = e.target;
+    if (t && t.tagName === 'INPUT' && t.type === 'file') { e.preventDefault(); }
+  }, true);
+}
+"""
+
+
+def block_file_dialog(driver):
+    """윈도우 '열기' 탐색기 창이 뜨지 않게 파일 input의 click()/기본동작을 막는다.
+    (페이지에 사용자 활성화가 있으면 스크립트 click()도 OS 다이얼로그를 띄워 자동화가 멈추고 창이 쌓였음 — 10-04)
+    파일은 input[type=file]에 send_keys로 직접 넣으므로 다이얼로그는 필요 없다."""
+    try:
+        driver.execute_script(BLOCK_FILE_DIALOG_JS)
+    except Exception:
+        pass
+
+
 def insert_image(driver, wait, image_path):
+    block_file_dialog(driver)
     for attempt in range(3):
         img_btn = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, 'button.se-image-toolbar-button')))
         js_click(driver, img_btn)
