@@ -4583,7 +4583,11 @@
     "likes": 8,
     "replies": 7,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-02"
+    "reblog_date": "2026-10-02",
+    "reposted": true,
+    "reposted_id": "18195220345381933",
+    "reposted_date": "2026-10-03",
+    "remixed": true
   },
   {
     "id": "18109048625004732",
@@ -4594,7 +4598,11 @@
     "likes": 7,
     "replies": 4,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-02"
+    "reblog_date": "2026-10-02",
+    "reposted": true,
+    "reposted_id": "18152026927528369",
+    "reposted_date": "2026-10-03",
+    "remixed": true
   },
   {
     "id": "18162578020462218",
@@ -4605,7 +4613,11 @@
     "likes": 1,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-02"
+    "reblog_date": "2026-10-02",
+    "reposted": true,
+    "reposted_id": "18135845278633514",
+    "reposted_date": "2026-10-03",
+    "remixed": true
   },
   {
     "id": "18113962018863580",
@@ -4616,7 +4628,11 @@
     "likes": 1,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-02"
+    "reblog_date": "2026-10-02",
+    "reposted": true,
+    "reposted_id": "17949791169335543",
+    "reposted_date": "2026-10-03",
+    "remixed": true
   },
   {
     "id": "18123870652695127",
@@ -4627,7 +4643,11 @@
     "likes": 0,
     "replies": 2,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-02"
+    "reblog_date": "2026-10-02",
+    "reposted": true,
+    "reposted_id": "18426867058196179",
+    "reposted_date": "2026-10-03",
+    "remixed": true
   },
   {
     "id": "18376651678231674",
@@ -4638,7 +4658,11 @@
     "likes": 1,
     "replies": 2,
     "media_type": "TEXT_POST",
-    "reblog_date": "2026-10-02"
+    "reblog_date": "2026-10-02",
+    "reposted": true,
+    "reposted_id": "17991431561851151",
+    "reposted_date": "2026-10-03",
+    "remixed": true
   },
   {
     "id": "18020544647700520",
@@ -4649,7 +4673,11 @@
     "likes": 1,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-02"
+    "reblog_date": "2026-10-02",
+    "reposted": true,
+    "reposted_id": "18093885278161986",
+    "reposted_date": "2026-10-03",
+    "remixed": true
   },
   {
     "id": "18102262090929681",
@@ -4660,7 +4688,11 @@
     "likes": 0,
     "replies": 1,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-02"
+    "reblog_date": "2026-10-02",
+    "reposted": true,
+    "reposted_id": "18106254542244756",
+    "reposted_date": "2026-10-03",
+    "remixed": true
   },
   {
     "id": "18160163854487729",
@@ -4671,7 +4703,11 @@
     "likes": 1,
     "replies": 0,
     "media_type": "TEXT_POST",
-    "reblog_date": "2026-10-02"
+    "reblog_date": "2026-10-02",
+    "reposted": true,
+    "reposted_id": "18096038615633562",
+    "reposted_date": "2026-10-03",
+    "remixed": true
   },
   {
     "id": "17938386480340920",
@@ -4682,7 +4718,11 @@
     "likes": 0,
     "replies": 1,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-02"
+    "reblog_date": "2026-10-02",
+    "reposted": true,
+    "reposted_id": "18042778127827272",
+    "reposted_date": "2026-10-03",
+    "remixed": true
   },
   {
     "id": "18020757782699537",
@@ -4693,7 +4733,11 @@
     "likes": 1,
     "replies": 1,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-02"
+    "reblog_date": "2026-10-02",
+    "reposted": true,
+    "reposted_id": "18474324718114646",
+    "reposted_date": "2026-10-03",
+    "remixed": true
   },
   {
     "id": "18088234727444858",
@@ -4704,7 +4748,11 @@
     "likes": 0,
     "replies": 2,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-02"
+    "reblog_date": "2026-10-02",
+    "reposted": true,
+    "reposted_id": "17865374697675065",
+    "reposted_date": "2026-10-03",
+    "remixed": true
   },
   {
     "id": "18186589369392486",
@@ -4715,7 +4763,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-02"
+    "reblog_date": "2026-10-02",
+    "reposted": true,
+    "reposted_id": "18136197490632271",
+    "reposted_date": "2026-10-03",
+    "remixed": true
   },
   {
     "id": "18025004024899637",
@@ -4726,7 +4778,11 @@
     "likes": 2,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-02"
+    "reblog_date": "2026-10-02",
+    "reposted": true,
+    "reposted_id": "18051775511598160",
+    "reposted_date": "2026-10-03",
+    "remixed": true
   },
   {
     "id": "18128740261648773",
@@ -4737,7 +4793,11 @@
     "likes": 0,
     "replies": 2,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-02"
+    "reblog_date": "2026-10-02",
+    "reposted": true,
+    "reposted_id": "17947919634084764",
+    "reposted_date": "2026-10-03",
+    "remixed": true
   },
   {
     "id": "18074251307345279",
@@ -4748,7 +4808,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-02"
+    "reblog_date": "2026-10-02",
+    "reposted": true,
+    "reposted_id": "17961493914230466",
+    "reposted_date": "2026-10-03",
+    "remixed": true
   },
   {
     "id": "18373838812232157",
@@ -4759,7 +4823,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "TEXT_POST",
-    "reblog_date": "2026-10-03"
+    "reblog_date": "2026-10-03",
+    "reposted": true,
+    "reposted_id": "17933015154403721",
+    "reposted_date": "2026-10-03",
+    "remixed": true
   },
   {
     "id": "18070141133717341",
@@ -4770,7 +4838,11 @@
     "likes": 0,
     "replies": 2,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-03"
+    "reblog_date": "2026-10-03",
+    "reposted": true,
+    "reposted_id": "18101512406630805",
+    "reposted_date": "2026-10-03",
+    "remixed": true
   },
   {
     "id": "18098639525219470",
@@ -4781,7 +4853,11 @@
     "likes": 1,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-03"
+    "reblog_date": "2026-10-03",
+    "reposted": true,
+    "reposted_id": "17992056381103516",
+    "reposted_date": "2026-10-03",
+    "remixed": true
   },
   {
     "id": "18111142915979989",
@@ -4792,7 +4868,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-03"
+    "reblog_date": "2026-10-03",
+    "reposted": true,
+    "reposted_id": "17904102240571571",
+    "reposted_date": "2026-10-03",
+    "remixed": true
   },
   {
     "id": "18364233148244280",
@@ -4803,7 +4883,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-03"
+    "reblog_date": "2026-10-03",
+    "reposted": true,
+    "reposted_id": "18628540522029586",
+    "reposted_date": "2026-10-03",
+    "remixed": true
   },
   {
     "id": "18125468479782889",
@@ -4814,7 +4898,11 @@
     "likes": 0,
     "replies": 2,
     "media_type": "TEXT_POST",
-    "reblog_date": "2026-10-03"
+    "reblog_date": "2026-10-03",
+    "reposted": true,
+    "reposted_id": "17873403942650249",
+    "reposted_date": "2026-10-03",
+    "remixed": true
   },
   {
     "id": "18402128350092203",
@@ -4825,7 +4913,11 @@
     "likes": 0,
     "replies": 2,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-03"
+    "reblog_date": "2026-10-03",
+    "reposted": true,
+    "reposted_id": "18379098616225882",
+    "reposted_date": "2026-10-03",
+    "remixed": true
   },
   {
     "id": "18146934103528347",
@@ -5871,5 +5963,93 @@
     "replies": 3,
     "media_type": "IMAGE",
     "reblog_date": "2026-11-25"
+  },
+  {
+    "id": "18230290366324202",
+    "date": "2026-10-01",
+    "text": "의사 자식 키우는 부모들이 절대 안 보려고 하는 뉴스.  1. 15년 동",
+    "full_text": "의사 자식 키우는 부모들이 절대 안 보려고 하는 뉴스.\n\n1. 15년 동안 특정 지역에서만 일해야 하는 의무 복무 제도가 본격화될 모양이야.\n2. 졸업하자마자 서울 대형 병원으로 빠져나가던 기존 코스가 완전히 막히는 구조야.\n3. 자녀 진로 설계할 때 이런 강제성까지 계산에 넣어야 하는 시대가 왔어.\n\n남들 다 가는 길 그대로 따라갔다가는 묶이는 시간이 너무 길어져.\n\n#증여 #상속",
+    "views": 1475,
+    "likes": 1,
+    "replies": 5,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-11-28"
+  },
+  {
+    "id": "18058738892547851",
+    "date": "2026-10-01",
+    "text": "호텔 수영장 다녀와서 가스 마셨다며, 목이 타들어 간다는 신고가 쏟아졌어",
+    "full_text": "호텔 수영장 다녀와서 가스 마셨다며,\n목이 타들어 간다는 신고가 쏟아졌어.\n\n⚠️ 5성급 호텔이라며 믿고 간 곳에서 벌어진 일이야.\n\n휴가 즐기러 갔다가 병원으로 실려 가는 게 현실이야.\n\n#세금 #정책",
+    "views": 1128,
+    "likes": 1,
+    "replies": 2,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-11-28"
+  },
+  {
+    "id": "17909299488490970",
+    "date": "2026-09-30",
+    "text": "지인 명의로 약을 타오던 강남의 한 피부과 원장이 결국 구속됐어.  💡 ",
+    "full_text": "지인 명의로 약을 타오던 강남의 한 피부과 원장이 결국 구속됐어.\n\n💡 병원 문이 닫히는 순간, 환자들이 쥐고 있던 처방 기록과 남겨진 보증금은 어디로 갈까.\n\n원장 한 명의 일탈로 끝나지 않고 병원 문이 닫히면 피해는 고스란히 환자들 몫이야.\n\n#증여 #상속",
+    "views": 1070,
+    "likes": 1,
+    "replies": 5,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-11-28"
+  },
+  {
+    "id": "18627564574042801",
+    "date": "2026-09-30",
+    "text": "분당 물량 쏟아질 때 세금 폭탄까지 같이 터진다는 거 알고 있어?  재건",
+    "full_text": "분당 물량 쏟아질 때 세금 폭탄까지 같이 터진다는 거 알고 있어?\n\n재건축 추진되면 자산 가치는 오르겠지만, 그 타이밍에 자녀한테 지분 넘기려다가는 양도세랑 증여세로 남는 게 없을 수도 있어.\n\n가만히 앉아서 오르는 거 구경만 하다가, 나라에 세금으로 다 털리고 나서야 후회하는 사람들 진짜 너무 많이 봤거든.\n\n몸집 커지기 전에 미리 구조 안 짜두면 나중엔 손도 못 써.\n\n증여 #상속 #재건축",
+    "views": 637,
+    "likes": 0,
+    "replies": 2,
+    "media_type": "TEXT_POST",
+    "reblog_date": "2026-11-28"
+  },
+  {
+    "id": "18144989497500020",
+    "date": "2026-09-30",
+    "text": "💡 벌금 총액 2조 9,687억 원.  역대급 주가조작 사건에 떨어진 최",
+    "full_text": "💡 벌금 총액 2조 9,687억 원.\n\n역대급 주가조작 사건에 떨어진 최종 판결 고지서야.\n\n부당이득 환수에 막대한 과징금까지 더해지니 천문학적인 숫자가 찍혔어.\n\n불법으로 키운 판돈은 결국 이런 결말을 맞이하는 법이지.\n\n#세금 #정책",
+    "views": 414,
+    "likes": 3,
+    "replies": 3,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-11-28"
+  },
+  {
+    "id": "18090288713199914",
+    "date": "2026-10-02",
+    "text": "⚠️ 내 계좌 정보가 언제 털릴지 모르는 상황이야.  1. 은행 보안 시",
+    "full_text": "⚠️ 내 계좌 정보가 언제 털릴지 모르는 상황이야.\n\n1. 은행 보안 시스템이 뚫리면서 고객 정보가 그대로 노출됐어.\n2. AI 기술을 악용한 해킹이라 피해 규모를 가늠하기도 어려워.\n3. 금융 소비자는 믿고 맡겼는데 불안감만 커지는 구조야.\n\n보안이 무너지면 자산 관리도 의미가 없어지는 셈이지.\n\n#증여 #상속",
+    "views": 397,
+    "likes": 0,
+    "replies": 5,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-11-28"
+  },
+  {
+    "id": "18079738601711745",
+    "date": "2026-09-30",
+    "text": "대표님, 설마 아는 형 동생 사이라며 계약서 없이 구두로 일 처리하고 계",
+    "full_text": "대표님, 설마 아는 형 동생 사이라며 계약서 없이 구두로 일 처리하고 계신가요?\n\n나중에 분쟁 터지면 그 친분이 법정에서는 가장 불리한 증거로 뒤바뀌더라고요.\n\n지분과 자금 흐름을 문서화하지 않은 대가는 경영권 상실이라는 최악의 결과로 돌아옵니다.\n\n결국 동업 관계일수록 모든 약속은 철저히 공적으로 남겨야 안전해.\n\n#법인 #증여",
+    "views": 331,
+    "likes": 0,
+    "replies": 4,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-11-28"
+  },
+  {
+    "id": "18112901180023863",
+    "date": "2026-10-01",
+    "text": "부모가 남긴 게 20억짜리 빌딩인데 상속세 5억이 나와서 연부연납 신청해",
+    "full_text": "부모가 남긴 게 20억짜리 빌딩인데 상속세 5억이 나와서\n연부연납 신청해 놓고 당연히 은행에서 대출이 될 줄 알았다.\n\n막상 은행에 갔더니 대출 승인이 안 난다는 통보를 받았다.\n건물 가치는 20억인데 왜 현금 5억을 빌리지 못할까.\n\n세무사가 세금 신고서만 덜렁 써주면 끝인 줄 알지만\n실제로는 국세청과 은행의 평가 기준이 완전히 다르다.\n\n담보물은 있는데 소득이 없거나 임대차가 꼬여 있으면\n은행은 1원 한 푼 빌려주지 않는 게 냉정한 현실이다.\n\n결국 세금을 못 내어 재산을 압류당하는 사태가 벌어진다.\n세금 액수만 계산하고 현금 흐름을 안 본 대가다.\n\n가업승계나 자산 이전을 할 때 세금 줄이는 것보다\n당장 현금이 어떻게 돌게 만들 것인가가 먼저다.\n\n증여 설계 이야기 #43\n\n증여 #상속",
+    "views": 307,
+    "likes": 0,
+    "replies": 3,
+    "media_type": "TEXT_POST",
+    "reblog_date": "2026-11-28"
   }
 ]

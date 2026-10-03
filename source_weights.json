@@ -1,11 +1,14 @@
 {
-  "매일경제": 268.6,
-  "뉴시스": 448.4,
-  "blog:joint_ownership_tax": 8.0,
-  "조선비즈": 116.0,
-  "blog:multi_home_capital_gains_tax": 116.0,
-  "연합뉴스": 353.1,
-  "blog:overseas_account_report": 102.0,
-  "blog:retirement_pension_tax_credit": 27.0,
-  "updated": "2026-09-30"
+  "매일경제": 211.5,
+  "연합뉴스": 186.8,
+  "blog:overseas_account_report": 118.0,
+  "blog:retirement_pension_tax_credit": 31.0,
+  "동아일보": 742.0,
+  "경향신문": 903.0,
+  "뉴시스": 194.5,
+  "조선비즈": 259.0,
+  "blog:specific_corp_deemed_gift:nolink": 31.0,
+  "blog:family_loan_agreement:linked": 50.0,
+  "blog:daughter_in_law_gift:nolink": 118.0,
+  "updated": "2026-10-03"
 }

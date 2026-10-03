@@ -2443,7 +2443,7 @@
     "type": "reels",
     "selected_title": "빅웨이브로보틱스, 코스닥 상장 첫날 200%대 급등",
     "date": "2026-09-30 01:56",
-    "reach": 22,
+    "reach": 25,
     "saved": 0,
     "likes": 0,
     "comments": 0
@@ -2463,7 +2463,7 @@
     "type": "reels",
     "selected_title": "해외금융계좌신고 블로그 유도 릴스",
     "date": "2026-09-30 11:24",
-    "reach": 10,
+    "reach": 34,
     "saved": 0,
     "likes": 0,
     "comments": 1
@@ -2473,7 +2473,7 @@
     "type": "reels",
     "selected_title": "퇴직연금세액공제 블로그 유도 릴스",
     "date": "2026-09-30 16:20",
-    "reach": 63,
+    "reach": 118,
     "saved": 0,
     "likes": 0,
     "comments": 1
@@ -2483,7 +2483,7 @@
     "type": "reels",
     "selected_title": "반도체 호황에 더 걷힌 세금 63조…국채 상환·미래기금 '저울질'",
     "date": "2026-09-30 17:54",
-    "reach": 0,
+    "reach": 7,
     "saved": 0,
     "likes": 0,
     "comments": 0
@@ -2492,48 +2492,80 @@
     "ig_post_id": "18019198286728480",
     "type": "reels",
     "selected_title": "반도체 호황에 더 걷힌 세금 63조…국채 상환·미래기금 '저울질'",
-    "date": "2026-10-01 02:02"
+    "date": "2026-10-01 02:02",
+    "reach": 29,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18371413621246103",
     "type": "reels",
     "selected_title": "특정법인증여의제 블로그 유도 릴스",
-    "date": "2026-10-01 11:58"
+    "date": "2026-10-01 11:58",
+    "reach": 14,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "18074587544477764",
     "type": "reels",
     "selected_title": "정부, 10월 국고채 발행 5조 축소…추가 감축도 검토",
-    "date": "2026-10-01 18:18"
+    "date": "2026-10-01 18:18",
+    "reach": 26,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "17875306776651434",
     "type": "reels",
     "selected_title": "[매일경제TV] 가상자산 과세, 예정대로 시행될까",
-    "date": "2026-10-02 02:50"
+    "date": "2026-10-02 02:50",
+    "reach": 1,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18067974548599046",
     "type": "reels",
     "selected_title": "공개매수 50일 전부터 뛰었다…리파인의 수상한 50% 급등",
-    "date": "2026-10-02 17:51"
+    "date": "2026-10-02 17:51",
+    "reach": 10,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "17910309210511434",
     "type": "reels",
     "selected_title": "가족간차용증 블로그 유도 릴스",
-    "date": "2026-10-02 21:05"
+    "date": "2026-10-02 21:05",
+    "reach": 35,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "18131810680664172",
     "type": "reels",
     "selected_title": "며느리증여 블로그 유도 릴스",
-    "date": "2026-10-03 00:21"
+    "date": "2026-10-03 00:21",
+    "reach": 123,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "18103472266992489",
     "type": "reels",
     "selected_title": "신한은행에 '중국어 AI 침투' 흔적…해킹 공포 금융권 확산(종합2보)",
-    "date": "2026-10-03 01:42"
+    "date": "2026-10-03 01:42",
+    "reach": 4,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   }
 ]
