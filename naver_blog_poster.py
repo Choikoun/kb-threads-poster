@@ -29,7 +29,7 @@
 
 로그인 정보(아이디/비밀번호)는 이 스크립트가 절대 저장하거나 다루지 않습니다.
 """
-import sys, time, os, subprocess
+import sys, time, os, subprocess, re
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -65,6 +65,10 @@ def start_chrome():
         f'--remote-debugging-port={DEBUG_PORT}',
         f'--user-data-dir={PROFILE_DIR}',
         '--start-minimized',
+        '--disable-backgrounding-occluded-windows',
+        '--disable-renderer-backgrounding',
+        '--disable-background-timer-throttling',
+        '--disable-features=CalculateNativeWinOcclusion',
         'https://nid.naver.com/nidlogin.login',
     ])
     print('크롬 창이 떴어요. 네이버에 직접 로그인하고 창은 닫지 마세요.')
@@ -78,11 +82,73 @@ def get_driver():
         driver = webdriver.Chrome(options=options)
     except Exception as e:
         raise RuntimeError('켜져 있는 크롬에 붙지 못했어요. 먼저 python naver_blog_poster.py start 를 실행하세요.') from e
-    try:
-        driver.minimize_window()
-    except Exception:
-        pass
+    for h in driver.window_handles:  # glic(Gemini) 등 내부 탭이 첫 핸들이면 새 탭 생성이 깨져서 일반 http 탭으로 이동
+        try:
+            driver.switch_to.window(h)
+            if driver.current_url.startswith('http'):
+                break
+        except Exception:
+            continue
+    if not os.environ.get('NAVER_FOREGROUND'):
+        try:
+            driver.minimize_window()
+        except Exception:
+            pass
     return driver
+
+
+CIRCLED = '①②③④⑤⑥⑦⑧⑨⑩⑪⑫'
+NUM_RE = re.compile(r'^(\d{1,2})[.)]\s+')
+SENT_RE = re.compile(r'(?<=[.?!])\s+(?=\S)')
+
+
+def _circle(m):
+    n = int(m.group(1))
+    return (CIRCLED[n - 1] if 1 <= n <= len(CIRCLED) else m.group(1) + ')') + ' '
+
+
+def expand_lines(lines):
+    """가독성 규칙(사용자 지시 10-04): 문장이 끝나면 줄바꿈, 소제목은 별도 줄(앞뒤 구분),
+    '1. ' 같은 번호 접두는 SmartEditor가 자동 번호목록으로 바꿔 입력 순서를 망가뜨리므로 ①②로 치환."""
+    out = []
+    for raw in lines:
+        s = raw.strip()
+        if not s:
+            out.append('')
+            continue
+        if s.startswith('[IMG:') or s.startswith('## ') or 'http://' in s or 'https://' in s:
+            out.append(s)
+            continue
+        s = NUM_RE.sub(_circle, s)
+        m = re.match(r'^\*\*(.+?)\*\*\s*(.*)$', s)
+        if m:
+            head = NUM_RE.sub(_circle, m.group(1).strip()).rstrip('.')
+            rest = m.group(2).strip()
+            if out and out[-1] != '':
+                out.append('')
+            out.append(f'**{head}**')
+            if rest:
+                out.extend(SENT_RE.split(rest))
+            continue
+        out.extend(SENT_RE.split(s))
+    return out
+
+
+def verify_body_order(driver, lines):
+    """본문이 의도한 순서·개수대로 들어갔는지 확인 (자동목록/커서 점프로 뒤섞인 글이 발행되는 사고 방지)."""
+    expected = [l.replace('**', '').strip() for l in lines
+                if l.strip() and not l.strip().startswith('[IMG')]
+    paras = [p.text.replace('​', '').strip()
+             for p in driver.find_elements(By.CSS_SELECTOR, '.se-section-text .se-text-paragraph')]
+    paras = [p for p in paras if p]
+    if len(paras) != len(expected):
+        with open('_verify_dump.txt', 'w', encoding='utf-8') as f:
+            f.write('EXPECTED\n' + '\n'.join(expected) + '\n\nACTUAL\n' + '\n'.join(paras))
+        raise RuntimeError(f'본문 문단 수 불일치: 입력 {len(expected)} vs 에디터 {len(paras)} — 발행 중단')
+    for i, (e, a) in enumerate(zip(expected, paras)):
+        if e[:8] != a[:8]:
+            raise RuntimeError(f'본문 순서 불일치 #{i}: 기대 {e[:20]!r} / 실제 {a[:20]!r} — 발행 중단')
+    print(f'본문 순서 검증 OK ({len(paras)}문단)')
 
 
 def parse_post_file(path):
@@ -180,6 +246,23 @@ def focus_body(driver):
     time.sleep(0.3)
 
 
+def clear_body(driver):
+    """수정 모드: 기존 본문 전체를 지운다(제목은 유지). 지운 뒤 본문 문단이 비었는지 확인."""
+    paras = driver.find_elements(By.CSS_SELECTOR, '.se-section-text .se-text-paragraph')
+    safe_click(driver, paras[-1])
+    time.sleep(0.3)
+    send_chord(driver, Keys.CONTROL, 'a')
+    send(driver, Keys.DELETE)
+    time.sleep(1)
+    left = [p.text.strip() for p in driver.find_elements(By.CSS_SELECTOR, '.se-section-text .se-text-paragraph')
+            if p.text.replace('​', '').strip() and '글감과 함께' not in p.text]
+    imgs = driver.find_elements(By.CSS_SELECTOR, '.se-component.se-image, .se-component.se-oglink')
+    if left or imgs:
+        driver.save_screenshot('debug_clear_body_fail.png')
+        raise RuntimeError(f'본문 비우기 실패: 문단 {len(left)}개 {left[:2]}, 이미지/카드 {len(imgs)}개 남음')
+    print('기존 본문 삭제 완료')
+
+
 def insert_image(driver, wait, image_path):
     for attempt in range(3):
         img_btn = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, 'button.se-image-toolbar-button')))
@@ -239,6 +322,7 @@ def type_body(driver, wait, lines, base_dir):
             # URL은 SmartEditor가 잠시 뒤 링크 카드로 자동 변환함 — 그 전에 다음 줄이
             # 같은 줄로 붙어버리는 경우가 있어 변환이 끝날 시간을 준다.
             time.sleep(1.2)
+            send_chord(driver, Keys.CONTROL, Keys.END)  # 카드 변환 후 커서가 튀는 것 방지
         else:
             time.sleep(0.05)
 
@@ -313,7 +397,7 @@ def check_keyword(meta, lines, base_dir=None):
             print(f"⚠️ 파일명에 키워드가 없는 이미지: {no_kw} — 네이버는 alt 텍스트를 파일명 그대로 쓰니, 파일명에 키워드를 넣는 걸 권장해요.")
 
 
-def post_to_naver(meta, lines, base_dir, dry=False):
+def post_to_naver(meta, lines, base_dir, dry=False, update_logno=None):
     title = meta.get('제목', '').strip()
     if not title:
         raise ValueError('글파일에 "제목:" 이 없어요.')
@@ -324,13 +408,17 @@ def post_to_naver(meta, lines, base_dir, dry=False):
     # 새로 만든 탭은 OS/브라우저 레벨 포커스를 못 받아 클릭해도 실제 입력 포커스로 이어지지 않는
     # 경우가 있었음(document.hasFocus()==true인데도 재현됨) — CDP로 강제 포커스 에뮬레이션.
     driver.execute_cdp_cmd('Emulation.setFocusEmulationEnabled', {'enabled': True})
-    driver.get(f'https://blog.naver.com/{BLOG_ID}?Redirect=Write&')
+    if update_logno:
+        driver.get(f'https://blog.naver.com/{BLOG_ID}?Redirect=Update&logNo={update_logno}')
+    else:
+        driver.get(f'https://blog.naver.com/{BLOG_ID}?Redirect=Write&')
     driver.execute_cdp_cmd('Page.bringToFront', {})
     time.sleep(0.3)
-    try:
-        driver.minimize_window()
-    except Exception:
-        pass
+    if not os.environ.get('NAVER_FOREGROUND'):
+        try:
+            driver.minimize_window()
+        except Exception:
+            pass
     wait = WebDriverWait(driver, 20)
 
     wait.until(EC.frame_to_be_available_and_switch_to_it((By.ID, 'mainFrame')))
@@ -345,9 +433,14 @@ def post_to_naver(meta, lines, base_dir, dry=False):
     dismiss_draft_popup(driver)
     time.sleep(1)
 
-    type_title(driver, wait, title)
+    lines = expand_lines(lines)
+    if update_logno:
+        clear_body(driver)
+    else:
+        type_title(driver, wait, title)
     focus_body(driver)
     type_body(driver, wait, lines, base_dir)
+    verify_body_order(driver, lines)
     body_text = driver.find_element(By.CSS_SELECTOR, '.se-section-text').text.strip()
     first_line = next((l.strip() for l in lines if l.strip() and not l.strip().startswith('[IMG')), '')
     if first_line[:10] not in body_text:
@@ -366,10 +459,11 @@ def post_to_naver(meta, lines, base_dir, dry=False):
     safe_click(driver, publish_btn)
     time.sleep(1.5)
 
-    if meta.get('카테고리'):
-        select_category(driver, wait, meta['카테고리'])
-    if meta.get('태그'):
-        input_tags(driver, wait, [t for t in meta['태그'].split(',') if t.strip()])
+    if not update_logno:
+        if meta.get('카테고리'):
+            select_category(driver, wait, meta['카테고리'])
+        if meta.get('태그'):
+            input_tags(driver, wait, [t for t in meta['태그'].split(',') if t.strip()])
 
     driver.save_screenshot('debug_publish_layer.png')
 
@@ -408,5 +502,8 @@ if __name__ == '__main__':
     elif mode == 'post' and len(sys.argv) > 2:
         meta, lines, base_dir = parse_post_file(sys.argv[2])
         post_to_naver(meta, lines, base_dir, dry='--dry' in sys.argv)
+    elif mode == 'update' and len(sys.argv) > 3:
+        meta, lines, base_dir = parse_post_file(sys.argv[3])
+        post_to_naver(meta, lines, base_dir, dry='--dry' in sys.argv, update_logno=sys.argv[2])
     else:
-        print('사용법: python naver_blog_poster.py start | post <글파일.txt> [--dry]')
+        print('사용법: python naver_blog_poster.py start | post <글파일.txt> [--dry] | update <logNo> <글파일.txt> [--dry]')
