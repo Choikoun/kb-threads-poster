@@ -107,6 +107,24 @@ def _circle(m):
     return (CIRCLED[n - 1] if 1 <= n <= len(CIRCLED) else m.group(1) + ')') + ' '
 
 
+def _group_sentences(text, max_len=130, flush_len=70, max_sent=3):
+    """한 줄(=작성자가 의도한 문단)이 짧으면 그대로 두고, 길면 문장 1~3개(70자 이상) 단위 문단으로 나눈다.
+    (마침표마다 줄을 나누면 오히려 읽기 힘들다는 사용자 지적 10-04)"""
+    sents = SENT_RE.split(text)
+    if len(text) <= max_len and len(sents) <= max_sent:
+        return [text]
+    out, buf, n = [], '', 0
+    for sent in sents:
+        buf = (buf + ' ' + sent).strip()
+        n += 1
+        if len(buf) >= flush_len or n >= max_sent:
+            out.append(buf)
+            buf, n = '', 0
+    if buf:
+        out.append(buf)
+    return out
+
+
 def expand_lines(lines):
     """가독성 규칙(사용자 지시 10-04): 문장이 끝나면 줄바꿈, 소제목은 별도 줄(앞뒤 구분),
     '1. ' 같은 번호 접두는 SmartEditor가 자동 번호목록으로 바꿔 입력 순서를 망가뜨리므로 ①②로 치환."""
@@ -128,9 +146,9 @@ def expand_lines(lines):
                 out.append('')
             out.append(f'**{head}**')
             if rest:
-                out.extend(SENT_RE.split(rest))
+                out.extend(_group_sentences(rest))
             continue
-        out.extend(SENT_RE.split(s))
+        out.extend(_group_sentences(s))
     return out
 
 
@@ -149,6 +167,31 @@ def verify_body_order(driver, lines):
         if e[:8] != a[:8]:
             raise RuntimeError(f'본문 순서 불일치 #{i}: 기대 {e[:20]!r} / 실제 {a[:20]!r} — 발행 중단')
     print(f'본문 순서 검증 OK ({len(paras)}문단)')
+
+
+def acquire_work_tab(driver):
+    """http 탭 하나만 남기고 나머지는 닫아 그 탭을 작업 탭으로 재사용한다(탭이 계속 늘어나는 문제 방지)."""
+    keep = None
+    for h in list(driver.window_handles):
+        try:
+            driver.switch_to.window(h)
+            url = driver.current_url
+        except Exception:
+            continue
+        if not url.startswith('http'):
+            continue
+        if keep is None:
+            keep = h
+            continue
+        try:
+            driver.execute_script('window.onbeforeunload=null')
+            driver.close()
+        except Exception:
+            pass
+    if keep is None:
+        driver.switch_to.new_window('tab')
+    else:
+        driver.switch_to.window(keep)
 
 
 def parse_post_file(path):
@@ -179,6 +222,19 @@ def send_chord(driver, modifier, key):
     """Ctrl+B 같은 조합키. ActionChains.send_keys(모디파이어, 키)는 모디파이어를 바로
     떼버려서 조합이 안 먹고 글자가 그대로 입력되는 문제가 있어, key_down/up으로 명시적으로 잡는다."""
     ActionChains(driver).key_down(modifier).send_keys(key).key_up(modifier).perform()
+
+
+def set_bold(driver, want):
+    """굵게 상태를 확인해 원하는 상태가 아닐 때만 토글 (수정 모드에서 본문 전체가 굵게 시작되는 문제 방지)."""
+    for _ in range(2):
+        try:
+            cur = bool(driver.execute_script("return document.queryCommandState('bold')"))
+        except Exception:
+            return
+        if cur == want:
+            return
+        send_chord(driver, Keys.CONTROL, 'b')
+        time.sleep(0.1)
 
 
 def dismiss_draft_popup(driver):
@@ -280,13 +336,24 @@ def insert_image(driver, wait, image_path):
     else:
         driver.save_screenshot('debug_image_click_failed.png')
         raise RuntimeError('사진 첨부 파일 입력창을 못 찾았어요 (debug_image_click_failed.png 확인)')
+    before = len(driver.find_elements(By.CSS_SELECTOR, '.se-component.se-image'))
     file_input.send_keys(image_path)
-    time.sleep(2.5)
+    # 업로드가 느리면 이미지가 나중에 끼어들어 이후 줄이 문서 끝으로 밀리는 사고가 났음 — 이미지가 실제로
+    # 에디터에 들어오고 로드가 끝날 때까지 기다린다.
+    t0 = time.time()
+    while time.time() - t0 < 40:
+        imgs = driver.find_elements(By.CSS_SELECTOR, '.se-component.se-image img')
+        if len(imgs) > before and driver.execute_script(
+                'var i=arguments[0]; return i.complete && i.naturalWidth>0', imgs[-1]):
+            break
+        time.sleep(0.5)
+    time.sleep(2.0)
     # 이미지 삽입 후 커서를 다음 줄로
     send(driver, Keys.END)
 
 
 def type_body(driver, wait, lines, base_dir):
+    set_bold(driver, False)  # 시작 시점 한 번만 확인(수정 모드에서 굵게 상태로 시작하는 문제). 줄마다 JS를 부르면 커서가 튄다.
     for line in lines:
         s = line.strip()
         if s.startswith('[IMG:') and s.endswith(']'):
@@ -306,7 +373,7 @@ def type_body(driver, wait, lines, base_dir):
             send_chord(driver, Keys.CONTROL, 'b')
             send(driver, '\n')
             continue
-        # 인라인 강조: **텍스트** → 굵게
+        # 인라인 강조: **텍스트** → 굵게 (굵게는 소제목·핵심 강조에만; 나머지는 반드시 보통체)
         parts = line.split('**')
         for i, part in enumerate(parts):
             if not part:
@@ -404,21 +471,13 @@ def post_to_naver(meta, lines, base_dir, dry=False, update_logno=None):
     check_keyword(meta, lines)
 
     driver = get_driver()
-    driver.switch_to.new_window('tab')
-    # 새로 만든 탭은 OS/브라우저 레벨 포커스를 못 받아 클릭해도 실제 입력 포커스로 이어지지 않는
-    # 경우가 있었음(document.hasFocus()==true인데도 재현됨) — CDP로 강제 포커스 에뮬레이션.
+    acquire_work_tab(driver)
+    # 포커스 에뮬레이션으로 창을 앞으로 가져오지 않고도(= 최소화 유지) 입력 포커스를 유지한다.
     driver.execute_cdp_cmd('Emulation.setFocusEmulationEnabled', {'enabled': True})
     if update_logno:
         driver.get(f'https://blog.naver.com/{BLOG_ID}?Redirect=Update&logNo={update_logno}')
     else:
         driver.get(f'https://blog.naver.com/{BLOG_ID}?Redirect=Write&')
-    driver.execute_cdp_cmd('Page.bringToFront', {})
-    time.sleep(0.3)
-    if not os.environ.get('NAVER_FOREGROUND'):
-        try:
-            driver.minimize_window()
-        except Exception:
-            pass
     wait = WebDriverWait(driver, 20)
 
     wait.until(EC.frame_to_be_available_and_switch_to_it((By.ID, 'mainFrame')))
