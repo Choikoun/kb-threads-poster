@@ -20,8 +20,7 @@ import news_auto_poster as nap
 
 KST = timezone(timedelta(hours=9))
 
-HOOK = '직원 퇴사하면
-퇴직금 언제까지?'
+HOOK = '직원 퇴사하면\n퇴직금 언제까지?'
 
 SCENES = [
     {'image_query': 'business owner employee handshake office',
