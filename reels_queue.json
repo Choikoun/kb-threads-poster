@@ -12,7 +12,8 @@
   },
   {
     "module": "dividend_tax_reels_post",
-    "status": "pending",
-    "queued": "2026-10-07"
+    "status": "done",
+    "queued": "2026-10-07",
+    "posted": "2026-10-05 08:57 (당일 추가 발행)"
   }
 ]
