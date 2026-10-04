@@ -1,7 +1,8 @@
 [
   {
     "module": "severance_reels_post",
-    "status": "pending",
-    "queued": "2026-10-05"
+    "status": "done",
+    "queued": "2026-10-05",
+    "posted": "2026-10-04 22:04"
   }
 ]
