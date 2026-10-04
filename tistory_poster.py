@@ -275,10 +275,6 @@ def publish(driver):
 
 def post_to_tistory(meta, lines, base_dir, cat, dry=False):
     driver = nb.get_driver()
-    try:
-        driver.maximize_window()
-    except Exception:
-        pass
     ensure_login(driver)
     time.sleep(1)
     _url(driver)

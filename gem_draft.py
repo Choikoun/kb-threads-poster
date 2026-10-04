@@ -22,7 +22,6 @@ BASE_COND = ("[작성 조건] 분량 공백 제외 4,000자 이상. 서론에서
 
 def draft(keyword, extra=''):
     d = nb.get_driver()
-    d.maximize_window()  # 창이 좁으면 모바일 레이아웃이라 모델 선택 UI가 달라짐
     d.get(GEM)
     time.sleep(4)
     # 모델 3.1 Pro 선택
@@ -53,10 +52,6 @@ def draft(keyword, extra=''):
         if len(t) > 1500 and len(t) == prev:
             break
         prev = len(t)
-    try:
-        d.minimize_window()
-    except Exception:
-        pass
     return t
 
 

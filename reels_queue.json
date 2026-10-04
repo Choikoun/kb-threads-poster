@@ -9,5 +9,10 @@
     "module": "death_benefit_reels_post",
     "status": "pending",
     "queued": "2026-10-06"
+  },
+  {
+    "module": "dividend_tax_reels_post",
+    "status": "pending",
+    "queued": "2026-10-07"
   }
 ]

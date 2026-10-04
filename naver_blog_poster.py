@@ -64,7 +64,8 @@ def start_chrome():
         chrome,
         f'--remote-debugging-port={DEBUG_PORT}',
         f'--user-data-dir={PROFILE_DIR}',
-        '--start-minimized',
+        '--window-position=-32000,-32000',  # 최소화는 복원될 때 화면 앞으로 튀어나옴 → 화면 밖에 두고 절대 포커스를 안 뺏는다
+        '--window-size=1400,1000',
         '--disable-extensions',  # 자동화 크롬에도 Claude 확장이 깔려 있어 '브라우저 2개'로 잡히며 연결이 뒤바뀌던 문제 방지
         '--disable-backgrounding-occluded-windows',
         '--disable-renderer-backgrounding',
@@ -74,6 +75,15 @@ def start_chrome():
     ])
     print('크롬 창이 떴어요. 네이버에 직접 로그인하고 창은 닫지 마세요.')
     print('그 다음:  python naver_blog_poster.py post <글파일.txt> [--dry]')
+
+
+def park_window(driver):
+    """창을 화면 밖(-32000)에 두고 데스크톱 레이아웃 폭(1400x1000)을 유지. minimize/maximize/bringToFront는 쓰지 않는다
+    (사용자가 PC를 쓰는 중에 브라우저가 앞으로 나오는 문제, 10-05 지적)."""
+    try:
+        driver.set_window_rect(x=-32000, y=-32000, width=1400, height=1000)
+    except Exception:
+        pass
 
 
 def get_driver():
@@ -91,10 +101,7 @@ def get_driver():
         except Exception:
             continue
     if not os.environ.get('NAVER_FOREGROUND'):
-        try:
-            driver.minimize_window()
-        except Exception:
-            pass
+        park_window(driver)
     return driver
 
 
@@ -254,13 +261,8 @@ def click_and_type(driver, locate_fn, text, check_fn, label='영역', tries=4):
         if attempt > 0 and not driver.execute_script('return document.hasFocus()'):
             # 백그라운드(최소화) 운영이 기본이라 hasFocus=False는 정상 상태 — 진짜로 입력이
             # 안 먹힐 때(재시도 단계)만 잠깐 포커스를 줬다가 바로 다시 최소화한다.
-            print(f'  [{label}] 입력 실패 재시도 — 잠깐 포커스 후 재최소화')
-            driver.execute_cdp_cmd('Page.bringToFront', {})
+            print(f'  [{label}] 입력 실패 재시도 — 재시도')
             time.sleep(0.5)
-            try:
-                driver.minimize_window()
-            except Exception:
-                pass
         el = locate_fn()
         try:
             el.click()
