@@ -36,8 +36,19 @@ def _dismiss_alert(driver):
         return False
 
 
+def _url(driver):
+    for _ in range(3):
+        try:
+            return driver.current_url
+        except UnexpectedAlertPresentException:  # '저장된 글이 있습니다. 이어서 작성?' → 취소(새 글)
+            _dismiss_alert(driver)
+            time.sleep(0.5)
+    return driver.current_url
+
+
 def _logged_in(driver):
-    return '/auth/login' not in driver.current_url and 'accounts.kakao' not in driver.current_url
+    u = _url(driver)
+    return '/auth/login' not in u and 'accounts.kakao' not in u
 
 
 def ensure_login(driver):
@@ -59,7 +70,7 @@ def ensure_login(driver):
             b.click()
             break
     time.sleep(4)
-    if 'accounts.kakao' in driver.current_url:
+    if 'accounts.kakao' in _url(driver):
         acc = driver.find_elements(By.CSS_SELECTOR, 'li a')
         for a in acc:
             if '@' in a.text:
@@ -257,7 +268,7 @@ def publish(driver):
     for _ in range(30):
         time.sleep(1)
         u = driver.current_url
-        if '/manage/' not in u:
+        if '/manage/newpost' not in u and 'newpost' not in u:
             return u
     raise RuntimeError('발행 후 이동을 확인하지 못했어요.')
 
@@ -269,6 +280,8 @@ def post_to_tistory(meta, lines, base_dir, cat, dry=False):
     except Exception:
         pass
     ensure_login(driver)
+    time.sleep(1)
+    _url(driver)
     body, imgs = build_html(lines)
     for im in imgs:
         if not os.path.exists(os.path.join(base_dir, im)):

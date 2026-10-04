@@ -4,5 +4,10 @@
     "status": "done",
     "queued": "2026-10-05",
     "posted": "2026-10-04 22:04"
+  },
+  {
+    "module": "death_benefit_reels_post",
+    "status": "pending",
+    "queued": "2026-10-06"
   }
 ]

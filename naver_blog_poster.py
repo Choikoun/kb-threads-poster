@@ -86,7 +86,7 @@ def get_driver():
     for h in driver.window_handles:  # glic(Gemini) 등 내부 탭이 첫 핸들이면 새 탭 생성이 깨져서 일반 http 탭으로 이동
         try:
             driver.switch_to.window(h)
-            if driver.current_url.startswith('http'):
+            if driver.current_url.startswith('http') and '/glic' not in driver.current_url:
                 break
         except Exception:
             continue
