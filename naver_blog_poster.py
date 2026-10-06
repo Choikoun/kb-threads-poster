@@ -64,8 +64,8 @@ def start_chrome():
         chrome,
         f'--remote-debugging-port={DEBUG_PORT}',
         f'--user-data-dir={PROFILE_DIR}',
-        '--window-position=-32000,-32000',  # 최소화는 복원될 때 화면 앞으로 튀어나옴 → 화면 밖에 두고 절대 포커스를 안 뺏는다
-        '--window-size=1400,1000',
+        '--window-position=120,60',  # 화면 밖/최소화는 사용자가 못 꺼내서(10-06 지적) 일반 위치. 작업 중 앞으로 가져오는 호출은 안 씀
+        '--window-size=1300,900',
         '--disable-extensions',  # 자동화 크롬에도 Claude 확장이 깔려 있어 '브라우저 2개'로 잡히며 연결이 뒤바뀌던 문제 방지
         '--disable-backgrounding-occluded-windows',
         '--disable-renderer-backgrounding',
@@ -100,7 +100,7 @@ def get_driver():
                 break
         except Exception:
             continue
-    if not os.environ.get('NAVER_FOREGROUND'):
+    if os.environ.get('NAVER_PARK'):  # 기본은 창 위치/상태를 건드리지 않음(사용자가 직접 꺼내 쓸 수 있게)
         park_window(driver)
     return driver
 
