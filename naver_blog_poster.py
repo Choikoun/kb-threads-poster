@@ -588,6 +588,15 @@ if __name__ == '__main__':
     mode = sys.argv[1] if len(sys.argv) > 1 else 'help'
     if mode == 'start':
         start_chrome()
+    elif mode == 'show':  # 자동화 크롬 창을 화면에 보이게 (평소엔 화면 밖에 주차됨)
+        os.environ['NAVER_FOREGROUND'] = '1'
+        _d = get_driver()
+        _w = _d.execute_cdp_cmd('Browser.getWindowForTarget', {})
+        _d.execute_cdp_cmd('Browser.setWindowBounds', {'windowId': _w['windowId'], 'bounds': {'windowState': 'normal'}})
+        _d.execute_cdp_cmd('Browser.setWindowBounds', {'windowId': _w['windowId'], 'bounds': {'left': 120, 'top': 60, 'width': 1300, 'height': 900}})
+        _d.execute_cdp_cmd('Page.bringToFront', {})
+    elif mode == 'park':  # 다시 화면 밖으로
+        park_window(get_driver())
     elif mode == 'post' and len(sys.argv) > 2:
         meta, lines, base_dir = parse_post_file(sys.argv[2])
         post_to_naver(meta, lines, base_dir, dry='--dry' in sys.argv)
