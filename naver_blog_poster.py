@@ -57,24 +57,31 @@ def find_chrome():
     raise FileNotFoundError('chrome.exe를 못 찾았어요. CHROME_CANDIDATES에 경로를 추가해주세요.')
 
 
-def start_chrome():
+def start_chrome(headed=False):
+    """기본은 헤드리스(창 자체가 없음) — 작업 중 브라우저가 앞으로 튀어나오는 문제의 근본 해결(10-06 사용자 지적).
+    같은 프로필(naver_chrome_profile)을 쓰므로 로그인은 그대로 유지된다. 직접 로그인/확인이 필요하면 `start --headed`."""
     chrome = find_chrome()
     os.makedirs(PROFILE_DIR, exist_ok=True)
-    subprocess.Popen([
+    args = [
         chrome,
         f'--remote-debugging-port={DEBUG_PORT}',
         f'--user-data-dir={PROFILE_DIR}',
-        '--window-position=120,60',  # 화면 밖/최소화는 사용자가 못 꺼내서(10-06 지적) 일반 위치. 작업 중 앞으로 가져오는 호출은 안 씀
-        '--window-size=1300,900',
         '--disable-extensions',  # 자동화 크롬에도 Claude 확장이 깔려 있어 '브라우저 2개'로 잡히며 연결이 뒤바뀌던 문제 방지
         '--disable-backgrounding-occluded-windows',
         '--disable-renderer-backgrounding',
         '--disable-background-timer-throttling',
         '--disable-features=CalculateNativeWinOcclusion',
-        'https://nid.naver.com/nidlogin.login',
-    ])
-    print('크롬 창이 떴어요. 네이버에 직접 로그인하고 창은 닫지 마세요.')
-    print('그 다음:  python naver_blog_poster.py post <글파일.txt> [--dry]')
+        '--window-size=1400,1000',
+    ]
+    if headed:
+        args += ['--window-position=120,60']
+    else:
+        args += ['--headless=new',
+                 '--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36',
+                 '--lang=ko-KR']
+    args.append('https://nid.naver.com/nidlogin.login')
+    subprocess.Popen(args)
+    print('크롬(%s)이 떴어요.' % ('창 있음' if headed else '헤드리스, 창 없음'))
 
 
 def park_window(driver):
@@ -587,7 +594,7 @@ def post_to_naver(meta, lines, base_dir, dry=False, update_logno=None):
 if __name__ == '__main__':
     mode = sys.argv[1] if len(sys.argv) > 1 else 'help'
     if mode == 'start':
-        start_chrome()
+        start_chrome(headed='--headed' in sys.argv)
     elif mode == 'show':  # 자동화 크롬 창을 화면에 보이게 (평소엔 화면 밖에 주차됨)
         os.environ['NAVER_FOREGROUND'] = '1'
         _d = get_driver()
