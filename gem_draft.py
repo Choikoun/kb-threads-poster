@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Gemini Gem("SEO블로그 제작 gem")으로 블로그 초안 생성 (자동화 크롬 9222, 구글 로그인 유지됨)
-사용: python gem_draft.py "키워드" [out.txt] [--extra "추가 조건"]
+사용: python gem_draft.py "키워드" [out.txt] [--extra "추가 조건"] [--facts-file 사실자료.txt]
 - 모델을 3.1 Pro로 바꿔서 실행 (Flash-Lite는 분량·품질 부족)
 - 결과는 초안일 뿐: 세법·보험 숫자는 반드시 검산 후 naver.txt로 정리할 것 (메모리 feedback_blog_gem_workflow)
 """
@@ -59,6 +59,10 @@ if __name__ == '__main__':
     kw = sys.argv[1]
     out = sys.argv[2] if len(sys.argv) > 2 and not sys.argv[2].startswith('--') else '_gem_draft.txt'
     extra = sys.argv[sys.argv.index('--extra') + 1] if '--extra' in sys.argv else ''
+    if '--facts-file' in sys.argv:  # 사실자료(기사 요약·수치) 파일을 Gem에 넘겨 그 내용만으로 글을 쓰게 함
+        facts = open(sys.argv[sys.argv.index('--facts-file') + 1], encoding='utf-8').read().strip().replace('
+', ' ')
+        extra = (extra + ' ' if extra else '') + ('[사실자료 — 이 자료에 있는 사실·수치만 사용하고, 없는 내용은 지어내지 말 것. 확정되지 않은 사항은 "확정되지 않았다"고 쓸 것] ' + facts)
     text = draft(kw, extra)
     open(out, 'w', encoding='utf-8').write(text)
     print(len(text), '자 →', out)
