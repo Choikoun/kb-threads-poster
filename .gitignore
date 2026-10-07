@@ -24,3 +24,5 @@ debug_*.txt
 상품홍보자료/
 상품홍보자료.zip
 reply_bot_tmp/
+shop_chrome_profile/
+.env.shop

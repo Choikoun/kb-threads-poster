@@ -39,9 +39,11 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-PROFILE_DIR = os.path.abspath('naver_chrome_profile')
-DEBUG_PORT = 9222
-BLOG_ID = 'sobok__biz'
+# 계정 전환: 환경변수로 다른 네이버 계정(별도 크롬 프로필·포트)을 쓴다. 기본값은 기존 보험·세금 블로그.
+#   예) 쇼핑 리뷰 블로그: NAVER_PROFILE_DIR=shop_chrome_profile NAVER_DEBUG_PORT=9223 NAVER_BLOG_ID=<새블로그ID>
+PROFILE_DIR = os.path.abspath(os.environ.get('NAVER_PROFILE_DIR', 'naver_chrome_profile'))
+DEBUG_PORT = int(os.environ.get('NAVER_DEBUG_PORT', '9222'))
+BLOG_ID = os.environ.get('NAVER_BLOG_ID', 'sobok__biz')
 
 CHROME_CANDIDATES = [
     r'C:\Program Files\Google\Chrome\Application\chrome.exe',
