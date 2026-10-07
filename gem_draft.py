@@ -60,8 +60,7 @@ if __name__ == '__main__':
     out = sys.argv[2] if len(sys.argv) > 2 and not sys.argv[2].startswith('--') else '_gem_draft.txt'
     extra = sys.argv[sys.argv.index('--extra') + 1] if '--extra' in sys.argv else ''
     if '--facts-file' in sys.argv:  # 사실자료(기사 요약·수치) 파일을 Gem에 넘겨 그 내용만으로 글을 쓰게 함
-        facts = open(sys.argv[sys.argv.index('--facts-file') + 1], encoding='utf-8').read().strip().replace('
-', ' ')
+        facts = ' '.join(open(sys.argv[sys.argv.index('--facts-file') + 1], encoding='utf-8').read().split())
         extra = (extra + ' ' if extra else '') + ('[사실자료 — 이 자료에 있는 사실·수치만 사용하고, 없는 내용은 지어내지 말 것. 확정되지 않은 사항은 "확정되지 않았다"고 쓸 것] ' + facts)
     text = draft(kw, extra)
     open(out, 'w', encoding='utf-8').write(text)
