@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Gemini Gem("SEO블로그 제작 gem")으로 블로그 초안 생성 (자동화 크롬 9222, 구글 로그인 유지됨)
-사용: python gem_draft.py "키워드" [out.txt] [--extra "추가 조건"] [--facts-file 사실자료.txt]
+사용: python gem_draft.py "키워드" [out.txt] [--extra "추가 조건"] [--facts-file 사실자료.txt] [--custom]
 - 모델을 3.1 Pro로 바꿔서 실행 (Flash-Lite는 분량·품질 부족)
 - 결과는 초안일 뿐: 세법·보험 숫자는 반드시 검산 후 naver.txt로 정리할 것 (메모리 feedback_blog_gem_workflow)
 """
@@ -12,6 +12,7 @@ import naver_blog_poster as nb
 
 sys.stdout.reconfigure(encoding='utf-8')
 GEM = 'https://gemini.google.com/gem/20d720618964'
+CUSTOM = '--custom' in sys.argv  # 재무 글용 기본조건 대신 --extra/--facts-file 내용만 사용(다른 주제 글)
 
 BASE_COND = ("[작성 조건] 분량 공백 제외 4,000자 이상. 서론에서 핵심 결론(기준 숫자)을 먼저 제시. 대상은 사업주·자산가. "
              "숫자가 들어간 구체적 계산 사례를 최소 2개 포함(가상 인물 A씨). 소제목 6~7개를 단정적인 문장으로. "
@@ -31,7 +32,7 @@ def draft(keyword, extra=''):
     time.sleep(1)
     d.get(GEM)
     time.sleep(4)
-    prompt = keyword + '\n' + BASE_COND + ((' ' + extra) if extra else '')
+    prompt = keyword + '\n' + (extra if CUSTOM else BASE_COND + ((' ' + extra) if extra else ''))
     box = d.find_element(By.CSS_SELECTOR, 'div.ql-editor')
     box.click()
     lines = prompt.split('\n')
