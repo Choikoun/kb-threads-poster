@@ -1,42 +1,39 @@
 # 📰 일일 브리핑
-*2026-10-08 10:50 KST*
+*2026-10-09 11:02 KST*
 
 ---
 
 ## 🔖 보험 동향
-- [보험GA협회-손해사정사회, ‘소비자보호인증설계사’ 공동 인증 실시](https://www.insnews.co.kr/news/articleView.html?idxno=93211)
-- [농업용 드론 보급 늘자 사고도 급증… 보험금 지급 3년 새 4.7배](https://www.insnews.co.kr/news/articleView.html?idxno=93194)
-- [금융보안원, 금융분야 보안 점검 강화 위해 ‘AI 에이전트 보안 점검기준’ 마련](https://www.insnews.co.kr/news/articleView.html?idxno=93192)
-- [하나손보, 불법금융 아웃… ‘사람 살리는 금융’ 힘 보탠다](https://www.insnews.co.kr/news/articleView.html?idxno=93179)
-- [AI 사고 피해, 개발사 CEO의 배상 책임은… 보험업계 검토 착수](https://www.insnews.co.kr/news/articleView.html?idxno=93176)
+- [대형 GA 32곳, 3년간 제재 42건… 과태료 17억6540만원](https://www.insnews.co.kr/news/articleView.html?idxno=93252)
+- [15세 미만 재난보험 보장 공백 손본다… 정부·보험업계 제도개선 논의](https://www.insnews.co.kr/news/articleView.html?idxno=93250)
+- [DB손해보험, ‘프랜차이즈공제조합’ 설립 협력… 전용 상품 개발 추진](https://www.insnews.co.kr/news/articleView.html?idxno=93236)
+- [ABL생명, ‘(무)우리WON더채움종신보험’ 출시… ‘암·뇌·심’ 진단 시 사망보험금 선지급](https://www.insnews.co.kr/news/articleView.html?idxno=93235)
+- [OK금융, 예별손보 ‘주식매매계약’ 체결… 보험업 진출로 종합금융그룹 도약](https://www.insnews.co.kr/news/articleView.html?idxno=93233)
 
 ## 💰 국내 경제·금융
-- [파격적 주주환원으로 실적 부진 돌파하는 제일기획](https://www.hankyung.com/article/202610079012i)
-- [몸값 134조원…SK하이닉스 솔리다임, 美 IPO 주관사 선정](https://www.hankyung.com/article/202610080307i)
-- [알테오젠, 장 초반 6% 급락…'키트루다 SC' 유럽 판매 제동](https://www.hankyung.com/article/2026100802756)
-- [펩트론, 릴리와 공동연구·기술평가 종료 소식에 '급락'](https://www.hankyung.com/article/2026100801556)
-- [코스피, 美 국채금리 부담에 장 초반 약세…외국인·기관 '팔자'](https://www.hankyung.com/article/2026100801166)
+- [﻿AI 랠리의 뒤편, '6% 금리'의 그림자가 다가온다 [조윤남의 사이클투자]](https://www.hankyung.com/article/202610066078i)
+- [여전히 높은 국제유가…향후 전망 및 관련주 투자전략은](https://www.hankyung.com/article/202610081292i)
+- [갑자기 터진 'AI 수요' 걱정, 사실 아니라는데 기술주 발작 [김현석의 월스트리트나우]](https://www.hankyung.com/article/202610092324i)
+- ["오픈AI 매출 기대 못 미친다"…S&P500·나스닥 '하락' [뉴욕증시 브리핑]](https://www.hankyung.com/article/2026100923007)
+- ['860% 급등' 실화냐…'소부장 대장주' 됐는데 또 한방 남았다](https://www.hankyung.com/article/2026100817881)
 
 ## 📈 주식·시장
-- [분기 영업이익 107조 찍었는데…전기전자 대형주 순매도 흐름 [주식 초고수는 지금]](https://www.mk.co.kr/news/stock/12171236)
-- [[MK시그널] 에이티그리티 스페셜티 홀딩스 매도신호 포착, 수익률 27% 달성](https://www.mk.co.kr/news/stock/12171210)
-- [[MK시그널] 한양디지텍, AI 반도체 업황 개선에 따른 수혜 기대감 등에 주가 상승세... MK시그널 추천 후 상승률 27.24% 기록](https://www.mk.co.kr/news/stock/12171166)
-- [“투자자만 울컥하겠네”…역대 최다 기록한 ETF 괴리율, 무슨 일](https://www.mk.co.kr/news/economy/12171138)
-- [LG전자 주가 급락에 하나증권 “단기 실적보다 AI 냉각사업 주목”](https://www.mk.co.kr/news/stock/12171108)
+- [브라질증시 폭등 예상한 전설의 ‘투자 기계’…함께 매수한 종목은?](https://www.mk.co.kr/news/stock/12172188)
+- [세달만에 90만원 뚝, 33% 급락한 SK하닉…코스피 톱 10곳 중 8곳도 떨어졌다](https://www.mk.co.kr/news/stock/12172148)
+- [“전기차 안 팔려 죽을맛이었는데”…K배터리 기업, 호실적 낸 비결은](https://www.mk.co.kr/news/business/12172123)
+- [100조 실적 잔칫날인데 삼전 주가는 왜…“극단적 저평가”라는데](https://www.mk.co.kr/news/stock/12171940)
+- [한울반도체, 20억원 규모 유상증자 실시](https://www.mk.co.kr/news/stock/12171873)
 
 ## 🌏 글로벌 경제·정세
-- ["데이터센터 더 지을 필요 없다”…AI 컴퓨팅 효율 2배 노리는 스타트업](https://www.hankyung.com/article/202610080317i)
-- [美관세에 악기값 급등…저소득 학교 음악교육 직격탄](https://www.hankyung.com/article/202610080209i)
-- [AI 붐에 美기업 이익 27% 급증…빅테크 쏠림은 심화](https://www.hankyung.com/article/202610089936i)
-- ["한국인이 쓸어갔다"…정작 일본은 '이 약' 못 구할까 발동동 [도쿄나우]](https://www.hankyung.com/article/202610080063i)
-- ['총리' 빼고 "다카이치 사나에"…中 발언에 일본 '부글부글'](https://www.hankyung.com/article/202610089745i)
+- [가짜 코로나 백신 증명서 산 축구 국대 주장…2.4억 벌금형 집유](https://www.hankyung.com/article/2026100924477)
+- [日, 30년물 국채금리 4.25% 사상 최고](https://www.hankyung.com/article/202610092409i)
+- [트럼프 "11월 3일 중간선거 전까지 이란 공격 안 할 것"](https://www.hankyung.com/article/2026100923297)
+- [AI부터 금융·여행까지…월가 매수 의견 잇따라 [월가 업&다운]](https://www.hankyung.com/article/202610092235i)
+- [미국서 대만을 겨냥 첩보활동을 벌이는 中 [이번주 WSJ]](https://www.hankyung.com/article/202610082191i)
 
 ## 🔥 팔로업 추천 (300회 이상)
-- 1,058회 [2026-10-06] 💡 “주사 안 놓으면 해고야”  이 한마디로 병원 직원을 협박해 프로포폴...
-- 429회 [2026-10-07] 다들 금리 내려간다고 기대했잖아.  📌 막상 열어보니 22년 만에 최고치...
-- 387회 [2026-10-06] “내 전재산인데, 설마 반의반 토막이라도 건지겠지.”  막막하게 버티다 ...
-- 365회 [2026-10-06] 면제나 대체복무만 믿고 자녀 진로 짰다가 뒤통수 맞는 집들이 늘고 있어....
-- 310회 [2026-10-07] 지갑 닫고 버티면 노후가 편해질 거라 믿었어.  하지만 물가 오른 만큼 ...
+- 475회 [2026-10-07] 다들 금리 내려간다고 기대했잖아.  📌 막상 열어보니 22년 만에 최고치...
+- 338회 [2026-10-07] 지갑 닫고 버티면 노후가 편해질 거라 믿었어.  하지만 물가 오른 만큼 ...
 
 ---
 *총 60개 기사 수집됨*
