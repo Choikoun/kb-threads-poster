@@ -4928,7 +4928,11 @@
     "likes": 1,
     "replies": 3,
     "media_type": "TEXT_POST",
-    "reblog_date": "2026-10-05"
+    "reblog_date": "2026-10-05",
+    "reposted": true,
+    "reposted_id": "18088122905277560",
+    "reposted_date": "2026-10-10",
+    "remixed": true
   },
   {
     "id": "17992489574822967",
@@ -4939,7 +4943,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "TEXT_POST",
-    "reblog_date": "2026-10-05"
+    "reblog_date": "2026-10-05",
+    "reposted": true,
+    "reposted_id": "18635682889049326",
+    "reposted_date": "2026-10-10",
+    "remixed": true
   },
   {
     "id": "17899316619350968",
@@ -4950,7 +4958,11 @@
     "likes": 2,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-05"
+    "reblog_date": "2026-10-05",
+    "reposted": true,
+    "reposted_id": "17986552853882244",
+    "reposted_date": "2026-10-10",
+    "remixed": true
   },
   {
     "id": "17887651872440029",
@@ -4961,7 +4973,11 @@
     "likes": 0,
     "replies": 1,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-05"
+    "reblog_date": "2026-10-05",
+    "reposted": true,
+    "reposted_id": "18150234088544358",
+    "reposted_date": "2026-10-10",
+    "remixed": true
   },
   {
     "id": "18107708944864606",
@@ -4972,7 +4988,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-05"
+    "reblog_date": "2026-10-05",
+    "reposted": true,
+    "reposted_id": "18098151509427285",
+    "reposted_date": "2026-10-10",
+    "remixed": true
   },
   {
     "id": "18583204558067403",
@@ -4983,7 +5003,11 @@
     "likes": 1,
     "replies": 3,
     "media_type": "TEXT_POST",
-    "reblog_date": "2026-10-05"
+    "reblog_date": "2026-10-05",
+    "reposted": true,
+    "reposted_id": "18074356019741876",
+    "reposted_date": "2026-10-10",
+    "remixed": true
   },
   {
     "id": "18073283714403054",
@@ -4994,7 +5018,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "TEXT_POST",
-    "reblog_date": "2026-10-05"
+    "reblog_date": "2026-10-05",
+    "reposted": true,
+    "reposted_id": "18645795790056409",
+    "reposted_date": "2026-10-10",
+    "remixed": true
   },
   {
     "id": "18061515689748245",
@@ -5005,7 +5033,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-05"
+    "reblog_date": "2026-10-05",
+    "reposted": true,
+    "reposted_id": "18081295661356748",
+    "reposted_date": "2026-10-10",
+    "remixed": true
   },
   {
     "id": "18179274352414551",
@@ -5016,7 +5048,11 @@
     "likes": 0,
     "replies": 2,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-05"
+    "reblog_date": "2026-10-05",
+    "reposted": true,
+    "reposted_id": "18467038447184378",
+    "reposted_date": "2026-10-10",
+    "remixed": true
   },
   {
     "id": "18057548984523294",
@@ -5027,7 +5063,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "TEXT_POST",
-    "reblog_date": "2026-10-05"
+    "reblog_date": "2026-10-05",
+    "reposted": true,
+    "reposted_id": "18193437637409112",
+    "reposted_date": "2026-10-10",
+    "remixed": true
   },
   {
     "id": "18087278408428510",
@@ -5038,7 +5078,11 @@
     "likes": 0,
     "replies": 2,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-05"
+    "reblog_date": "2026-10-05",
+    "reposted": true,
+    "reposted_id": "18117870520785223",
+    "reposted_date": "2026-10-10",
+    "remixed": true
   },
   {
     "id": "18110409593044992",
@@ -5049,7 +5093,11 @@
     "likes": 0,
     "replies": 2,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-05"
+    "reblog_date": "2026-10-05",
+    "reposted": true,
+    "reposted_id": "18068444684787742",
+    "reposted_date": "2026-10-10",
+    "remixed": true
   },
   {
     "id": "18066690137557121",
@@ -5060,7 +5108,11 @@
     "likes": 2,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-09"
+    "reblog_date": "2026-10-09",
+    "reposted": true,
+    "reposted_id": "18137751340713253",
+    "reposted_date": "2026-10-10",
+    "remixed": true
   },
   {
     "id": "18603675244037877",
@@ -5071,7 +5123,11 @@
     "likes": 1,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-09"
+    "reblog_date": "2026-10-09",
+    "reposted": true,
+    "reposted_id": "18172455064457188",
+    "reposted_date": "2026-10-10",
+    "remixed": true
   },
   {
     "id": "18020278364858990",
@@ -5082,7 +5138,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-09"
+    "reblog_date": "2026-10-09",
+    "reposted": true,
+    "reposted_id": "18138209449712305",
+    "reposted_date": "2026-10-10",
+    "remixed": true
   },
   {
     "id": "17980244409061915",
@@ -5093,7 +5153,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-09"
+    "reblog_date": "2026-10-09",
+    "reposted": true,
+    "reposted_id": "18010514429986999",
+    "reposted_date": "2026-10-10",
+    "remixed": true
   },
   {
     "id": "18153574951483018",
@@ -5104,7 +5168,11 @@
     "likes": 1,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-09"
+    "reblog_date": "2026-10-09",
+    "reposted": true,
+    "reposted_id": "18032029025903527",
+    "reposted_date": "2026-10-10",
+    "remixed": true
   },
   {
     "id": "18102876629217681",
@@ -5115,7 +5183,11 @@
     "likes": 2,
     "replies": 2,
     "media_type": "TEXT_POST",
-    "reblog_date": "2026-10-09"
+    "reblog_date": "2026-10-09",
+    "reposted": true,
+    "reposted_id": "18147583291560393",
+    "reposted_date": "2026-10-10",
+    "remixed": true
   },
   {
     "id": "18099101030357555",
@@ -5126,7 +5198,11 @@
     "likes": 0,
     "replies": 2,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-09"
+    "reblog_date": "2026-10-09",
+    "reposted": true,
+    "reposted_id": "18139333276722269",
+    "reposted_date": "2026-10-10",
+    "remixed": true
   },
   {
     "id": "18079754654366591",
@@ -5137,7 +5213,11 @@
     "likes": 0,
     "replies": 2,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-09"
+    "reblog_date": "2026-10-09",
+    "reposted": true,
+    "reposted_id": "18102537362455852",
+    "reposted_date": "2026-10-10",
+    "remixed": true
   },
   {
     "id": "18090386897543836",
@@ -5148,7 +5228,11 @@
     "likes": 0,
     "replies": 4,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-10"
+    "reblog_date": "2026-10-10",
+    "reposted": true,
+    "reposted_id": "18005886579005836",
+    "reposted_date": "2026-10-10",
+    "remixed": true
   },
   {
     "id": "17863339260656971",
@@ -6051,5 +6135,93 @@
     "replies": 3,
     "media_type": "TEXT_POST",
     "reblog_date": "2026-11-28"
+  },
+  {
+    "id": "17976746298131333",
+    "date": "2026-10-09",
+    "text": "30년 넘게 일군 호텔을 자식에게 넘기려던 회장님,   수백억 원 상속세",
+    "full_text": "30년 넘게 일군 호텔을 자식에게 넘기려던 회장님, \n\n수백억 원 상속세 고지서를 받고 멈칫했어.\n\n📌 핵심 자산이 주차장이나 창고 취급을 받게 생겼거든.\n\n가업 승계 구조를 미리 손보지 않은 대가가 이렇게 돌아와.\n\n#증여 #상속",
+    "views": 829,
+    "likes": 0,
+    "replies": 3,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-12-05"
+  },
+  {
+    "id": "18131515882775378",
+    "date": "2026-10-09",
+    "text": "💡 30년 지킨 호텔 건물이 주차장 부지와 똑같은 취급을 받을 줄은 몰랐",
+    "full_text": "💡 30년 지킨 호텔 건물이 주차장 부지와 똑같은 취급을 받을 줄은 몰랐어.\n\n가업을 이어받으려던 대표는 수백억 원대 상속세 고지서를 마주했지.\n\n오래된 자산을 품고 있던 기업들이 하나둘 버티지 못하고 흔들리는 중이야.\n\n자산 평가 방식 하나 바뀐 게 기업의 운명을 갈라놓고 있어.\n\n#증여 #상속",
+    "views": 804,
+    "likes": 0,
+    "replies": 5,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-12-05"
+  },
+  {
+    "id": "17914095213535914",
+    "date": "2026-10-07",
+    "text": "다들 금리 내려간다고 기대했잖아.  📌 막상 열어보니 22년 만에 최고치",
+    "full_text": "다들 금리 내려간다고 기대했잖아.\n\n📌 막상 열어보니 22년 만에 최고치야.\n\n시장 분위기가 한순간에 뒤집히고 있어.\n\n#오늘 #이슈",
+    "views": 475,
+    "likes": 2,
+    "replies": 2,
+    "media_type": "TEXT_POST",
+    "reblog_date": "2026-12-05"
+  },
+  {
+    "id": "18633950410026552",
+    "date": "2026-10-06",
+    "text": "“내 전재산인데, 설마 반의반 토막이라도 건지겠지.”  막막하게 버티다 ",
+    "full_text": "“내 전재산인데, 설마 반의반 토막이라도 건지겠지.”\n\n막막하게 버티다 보증금 전액을 날리는 게 현실이야.\n\n정부 보장 비율은 딱 3분의 1 수준이야.\n\n남은 몫을 어떻게 채우느냐가 갈림길이야.\n\n#증여 #상속",
+    "views": 407,
+    "likes": 1,
+    "replies": 4,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-12-05"
+  },
+  {
+    "id": "18179850394437400",
+    "date": "2026-10-06",
+    "text": "면제나 대체복무만 믿고 자녀 진로 짰다가 뒤통수 맞는 집들이 늘고 있어.",
+    "full_text": "면제나 대체복무만 믿고 자녀 진로 짰다가 뒤통수 맞는 집들이 늘고 있어.\n\n정부에서 보충역 감축과 예술체육요원 폐지를 공식적으로 추진하고 있거든.\n\n나중에 제도가 바뀌었을 때 원망해 봐야 이미 시간은 다 지나간 뒤야.\n\n당장 내년부터 적용될 수도 있는 흐름을 읽지 못하면 자녀 커리어 계획 전체가 흔들릴 수 있어.\n\n제도가 바뀔 때 가장 먼저 손해 보는 건 언제나 미리 대비하지 않은 사람들이야.\n\n#세금 #정책",
+    "views": 365,
+    "likes": 1,
+    "replies": 2,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-12-05"
+  },
+  {
+    "id": "18284575780295473",
+    "date": "2026-10-07",
+    "text": "지갑 닫고 버티면 노후가 편해질 거라 믿었어.  하지만 물가 오른 만큼 ",
+    "full_text": "지갑 닫고 버티면 노후가 편해질 거라 믿었어.\n\n하지만 물가 오른 만큼 통장은 비어가.\n\n결국 국가가 준다는 보조금만 기다리게 돼.\n\n이런 구조론 남은 시간 동안 선택지가 없어.\n\n#증여 #상속",
+    "views": 338,
+    "likes": 1,
+    "replies": 3,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-12-05"
+  },
+  {
+    "id": "18071882633760374",
+    "date": "2026-10-09",
+    "text": "어떤 금융사,  해킹 당했다고 비상 걸렸어.  🔍 범인 잡고 보니 내부 ",
+    "full_text": "어떤 금융사, \n해킹 당했다고 비상 걸렸어.\n\n🔍 범인 잡고 보니 내부 직원 계정이었어.\n\n외부 세력 소행인 줄 알았는데 결국 안에서부터 뚫렸던 거야.\n\n#법인 #증여",
+    "views": 330,
+    "likes": 2,
+    "replies": 4,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-12-05"
+  },
+  {
+    "id": "18460186327189763",
+    "date": "2026-10-09",
+    "text": "회장님이 주식 투자로 1조 원 넘는 수익을 거뒀다는 소식이 나왔어.  💡",
+    "full_text": "회장님이 주식 투자로 1조 원 넘는 수익을 거뒀다는 소식이 나왔어.\n\n💡 1100억 원을 넣어서 1조 2천억 원을 벌어들인 구조야.\n\n시장이 어떻게 움직이든 돈 냄새를 맡는 곳은 따로 있어.\n\n#오늘 #이슈",
+    "views": 313,
+    "likes": 1,
+    "replies": 3,
+    "media_type": "TEXT_POST",
+    "reblog_date": "2026-12-05"
   }
 ]
