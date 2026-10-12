@@ -1,0 +1,10874 @@
+[
+ {
+  "keyword": "메르치화재보험",
+  "pc": 50,
+  "mobile": 500,
+  "total": 550,
+  "comp": "높음",
+  "docs": 496,
+  "ratio": 1.109
+ },
+ {
+  "keyword": "단기납종신보험판매중지",
+  "pc": 50,
+  "mobile": 180,
+  "total": 230,
+  "comp": "높음",
+  "docs": 307,
+  "ratio": 0.749
+ },
+ {
+  "keyword": "증여세율표",
+  "pc": 420,
+  "mobile": 1670,
+  "total": 2090,
+  "comp": "높음",
+  "docs": 6729,
+  "ratio": 0.311
+ },
+ {
+  "keyword": "권원보험",
+  "pc": 540,
+  "mobile": 1610,
+  "total": 2150,
+  "comp": "중간",
+  "docs": 7193,
+  "ratio": 0.299
+ },
+ {
+  "keyword": "단기임대어플",
+  "pc": 440,
+  "mobile": 2200,
+  "total": 2640,
+  "comp": "높음",
+  "docs": 9220,
+  "ratio": 0.286
+ },
+ {
+  "keyword": "오늘상장주식",
+  "pc": 110,
+  "mobile": 590,
+  "total": 700,
+  "comp": "높음",
+  "docs": 3243,
+  "ratio": 0.216
+ },
+ {
+  "keyword": "장외주식38",
+  "pc": 510,
+  "mobile": 1700,
+  "total": 2210,
+  "comp": "중간",
+  "docs": 15600,
+  "ratio": 0.142
+ },
+ {
+  "keyword": "일시납연금보험",
+  "pc": 560,
+  "mobile": 1900,
+  "total": 2460,
+  "comp": "높음",
+  "docs": 18045,
+  "ratio": 0.136
+ },
+ {
+  "keyword": "AIG생명보험",
+  "pc": 720,
+  "mobile": 2070,
+  "total": 2790,
+  "comp": "높음",
+  "docs": 22540,
+  "ratio": 0.124
+ },
+ {
+  "keyword": "단기납종신보험",
+  "pc": 270,
+  "mobile": 740,
+  "total": 1010,
+  "comp": "높음",
+  "docs": 9364,
+  "ratio": 0.108
+ },
+ {
+  "keyword": "재난배상책임보험",
+  "pc": 840,
+  "mobile": 1420,
+  "total": 2260,
+  "comp": "높음",
+  "docs": 24405,
+  "ratio": 0.093
+ },
+ {
+  "keyword": "대습상속",
+  "pc": 770,
+  "mobile": 1960,
+  "total": 2730,
+  "comp": "높음",
+  "docs": 30773,
+  "ratio": 0.089
+ },
+ {
+  "keyword": "퇴직연금디폴트옵션",
+  "pc": 440,
+  "mobile": 1150,
+  "total": 1590,
+  "comp": "높음",
+  "docs": 18511,
+  "ratio": 0.086
+ },
+ {
+  "keyword": "세무법인백현",
+  "pc": 60,
+  "mobile": 80,
+  "total": 140,
+  "comp": "중간",
+  "docs": 1808,
+  "ratio": 0.077
+ },
+ {
+  "keyword": "IRP계좌출금",
+  "pc": 170,
+  "mobile": 690,
+  "total": 860,
+  "comp": "높음",
+  "docs": 11941,
+  "ratio": 0.072
+ },
+ {
+  "keyword": "과세전적부심사",
+  "pc": 240,
+  "mobile": 340,
+  "total": 580,
+  "comp": "높음",
+  "docs": 9875,
+  "ratio": 0.059
+ },
+ {
+  "keyword": "형제간증여세",
+  "pc": 130,
+  "mobile": 1240,
+  "total": 1370,
+  "comp": "높음",
+  "docs": 23774,
+  "ratio": 0.058
+ },
+ {
+  "keyword": "동거주택상속공제",
+  "pc": 350,
+  "mobile": 890,
+  "total": 1240,
+  "comp": "높음",
+  "docs": 22710,
+  "ratio": 0.055
+ },
+ {
+  "keyword": "아리바이오주식",
+  "pc": 40,
+  "mobile": 150,
+  "total": 190,
+  "comp": "높음",
+  "docs": 3434,
+  "ratio": 0.055
+ },
+ {
+  "keyword": "달러종신보험",
+  "pc": 210,
+  "mobile": 620,
+  "total": 830,
+  "comp": "중간",
+  "docs": 15420,
+  "ratio": 0.054
+ },
+ {
+  "keyword": "부동산양도세율",
+  "pc": 530,
+  "mobile": 2180,
+  "total": 2710,
+  "comp": "중간",
+  "docs": 50297,
+  "ratio": 0.054
+ },
+ {
+  "keyword": "증여세연부연납",
+  "pc": 260,
+  "mobile": 450,
+  "total": 710,
+  "comp": "높음",
+  "docs": 13515,
+  "ratio": 0.053
+ },
+ {
+  "keyword": "부부증여한도",
+  "pc": 420,
+  "mobile": 2490,
+  "total": 2910,
+  "comp": "높음",
+  "docs": 56189,
+  "ratio": 0.052
+ },
+ {
+  "keyword": "토지양도세율",
+  "pc": 200,
+  "mobile": 720,
+  "total": 920,
+  "comp": "높음",
+  "docs": 17686,
+  "ratio": 0.052
+ },
+ {
+  "keyword": "부담부증여",
+  "pc": 650,
+  "mobile": 1760,
+  "total": 2410,
+  "comp": "높음",
+  "docs": 46829,
+  "ratio": 0.051
+ },
+ {
+  "keyword": "상속세율표",
+  "pc": 170,
+  "mobile": 1010,
+  "total": 1180,
+  "comp": "높음",
+  "docs": 24327,
+  "ratio": 0.049
+ },
+ {
+  "keyword": "영종도월세",
+  "pc": 200,
+  "mobile": 960,
+  "total": 1160,
+  "comp": "높음",
+  "docs": 26556,
+  "ratio": 0.044
+ },
+ {
+  "keyword": "상속세연부연납",
+  "pc": 250,
+  "mobile": 510,
+  "total": 760,
+  "comp": "높음",
+  "docs": 17736,
+  "ratio": 0.043
+ },
+ {
+  "keyword": "신협공제보험",
+  "pc": 170,
+  "mobile": 350,
+  "total": 520,
+  "comp": "높음",
+  "docs": 12555,
+  "ratio": 0.041
+ },
+ {
+  "keyword": "법인세중간예납",
+  "pc": 620,
+  "mobile": 280,
+  "total": 900,
+  "comp": "높음",
+  "docs": 23723,
+  "ratio": 0.038
+ },
+ {
+  "keyword": "주택화재보험비교사이트",
+  "pc": 180,
+  "mobile": 310,
+  "total": 490,
+  "comp": "높음",
+  "docs": 13775,
+  "ratio": 0.036
+ },
+ {
+  "keyword": "한정승인신문공고",
+  "pc": 480,
+  "mobile": 860,
+  "total": 1340,
+  "comp": "높음",
+  "docs": 37419,
+  "ratio": 0.036
+ },
+ {
+  "keyword": "더신사법무법인",
+  "pc": 160,
+  "mobile": 220,
+  "total": 380,
+  "comp": "중간",
+  "docs": 11214,
+  "ratio": 0.034
+ },
+ {
+  "keyword": "자녀증여세면제한도",
+  "pc": 330,
+  "mobile": 950,
+  "total": 1280,
+  "comp": "높음",
+  "docs": 39830,
+  "ratio": 0.032
+ },
+ {
+  "keyword": "CI보험",
+  "pc": 740,
+  "mobile": 1840,
+  "total": 2580,
+  "comp": "높음",
+  "docs": 83303,
+  "ratio": 0.031
+ },
+ {
+  "keyword": "상속분할협의서",
+  "pc": 300,
+  "mobile": 1230,
+  "total": 1530,
+  "comp": "높음",
+  "docs": 50760,
+  "ratio": 0.03
+ },
+ {
+  "keyword": "국세소멸시효",
+  "pc": 190,
+  "mobile": 880,
+  "total": 1070,
+  "comp": "높음",
+  "docs": 36214,
+  "ratio": 0.03
+ },
+ {
+  "keyword": "상가화재보험비교사이트",
+  "pc": 40,
+  "mobile": 80,
+  "total": 120,
+  "comp": "높음",
+  "docs": 4210,
+  "ratio": 0.029
+ },
+ {
+  "keyword": "농지양도소득세",
+  "pc": 360,
+  "mobile": 1460,
+  "total": 1820,
+  "comp": "높음",
+  "docs": 63539,
+  "ratio": 0.029
+ },
+ {
+  "keyword": "백내장실비보험",
+  "pc": 50,
+  "mobile": 480,
+  "total": 530,
+  "comp": "높음",
+  "docs": 18230,
+  "ratio": 0.029
+ },
+ {
+  "keyword": "대구상속포기",
+  "pc": 30,
+  "mobile": 590,
+  "total": 620,
+  "comp": "높음",
+  "docs": 22797,
+  "ratio": 0.027
+ },
+ {
+  "keyword": "IRP계좌개설이벤트",
+  "pc": 100,
+  "mobile": 160,
+  "total": 260,
+  "comp": "높음",
+  "docs": 10183,
+  "ratio": 0.026
+ },
+ {
+  "keyword": "부정교합보험",
+  "pc": 100,
+  "mobile": 610,
+  "total": 710,
+  "comp": "높음",
+  "docs": 27128,
+  "ratio": 0.026
+ },
+ {
+  "keyword": "가지급금",
+  "pc": 1690,
+  "mobile": 1190,
+  "total": 2880,
+  "comp": "높음",
+  "docs": 111934,
+  "ratio": 0.026
+ },
+ {
+  "keyword": "임대인배상책임보험",
+  "pc": 390,
+  "mobile": 1040,
+  "total": 1430,
+  "comp": "높음",
+  "docs": 57798,
+  "ratio": 0.025
+ },
+ {
+  "keyword": "개인형퇴직연금IRP",
+  "pc": 520,
+  "mobile": 1890,
+  "total": 2410,
+  "comp": "높음",
+  "docs": 99348,
+  "ratio": 0.024
+ },
+ {
+  "keyword": "연금저축계좌개설",
+  "pc": 510,
+  "mobile": 1710,
+  "total": 2220,
+  "comp": "높음",
+  "docs": 91616,
+  "ratio": 0.024
+ },
+ {
+  "keyword": "가업상속공제",
+  "pc": 560,
+  "mobile": 770,
+  "total": 1330,
+  "comp": "높음",
+  "docs": 56494,
+  "ratio": 0.024
+ },
+ {
+  "keyword": "DM손해보험",
+  "pc": 30,
+  "mobile": 110,
+  "total": 140,
+  "comp": "중간",
+  "docs": 5827,
+  "ratio": 0.024
+ },
+ {
+  "keyword": "월세방",
+  "pc": 250,
+  "mobile": 1050,
+  "total": 1300,
+  "comp": "높음",
+  "docs": 55029,
+  "ratio": 0.024
+ },
+ {
+  "keyword": "상속세일괄공제",
+  "pc": 230,
+  "mobile": 550,
+  "total": 780,
+  "comp": "높음",
+  "docs": 33969,
+  "ratio": 0.023
+ },
+ {
+  "keyword": "국세체납소멸시효",
+  "pc": 50,
+  "mobile": 450,
+  "total": 500,
+  "comp": "높음",
+  "docs": 21649,
+  "ratio": 0.023
+ },
+ {
+  "keyword": "퇴직금지급기한",
+  "pc": 930,
+  "mobile": 1480,
+  "total": 2410,
+  "comp": "높음",
+  "docs": 106560,
+  "ratio": 0.023
+ },
+ {
+  "keyword": "운서동월세",
+  "pc": 50,
+  "mobile": 330,
+  "total": 380,
+  "comp": "높음",
+  "docs": 16707,
+  "ratio": 0.023
+ },
+ {
+  "keyword": "내보험다모아",
+  "pc": 230,
+  "mobile": 390,
+  "total": 620,
+  "comp": "높음",
+  "docs": 27844,
+  "ratio": 0.022
+ },
+ {
+  "keyword": "일시납연금",
+  "pc": 140,
+  "mobile": 300,
+  "total": 440,
+  "comp": "중간",
+  "docs": 20424,
+  "ratio": 0.022
+ },
+ {
+  "keyword": "스마트팜지원사업",
+  "pc": 550,
+  "mobile": 1700,
+  "total": 2250,
+  "comp": "높음",
+  "docs": 102555,
+  "ratio": 0.022
+ },
+ {
+  "keyword": "시골집임대",
+  "pc": 500,
+  "mobile": 1780,
+  "total": 2280,
+  "comp": "높음",
+  "docs": 102299,
+  "ratio": 0.022
+ },
+ {
+  "keyword": "전세권설정비용",
+  "pc": 430,
+  "mobile": 1130,
+  "total": 1560,
+  "comp": "높음",
+  "docs": 69469,
+  "ratio": 0.022
+ },
+ {
+  "keyword": "가지급금인정이자",
+  "pc": 360,
+  "mobile": 150,
+  "total": 510,
+  "comp": "높음",
+  "docs": 24064,
+  "ratio": 0.021
+ },
+ {
+  "keyword": "자살사망보험금",
+  "pc": 250,
+  "mobile": 1850,
+  "total": 2100,
+  "comp": "높음",
+  "docs": 106311,
+  "ratio": 0.02
+ },
+ {
+  "keyword": "개인사업자폐업신고",
+  "pc": 1070,
+  "mobile": 1920,
+  "total": 2990,
+  "comp": "높음",
+  "docs": 152219,
+  "ratio": 0.02
+ },
+ {
+  "keyword": "상속포기각서",
+  "pc": 220,
+  "mobile": 370,
+  "total": 590,
+  "comp": "높음",
+  "docs": 29412,
+  "ratio": 0.02
+ },
+ {
+  "keyword": "탈세제보",
+  "pc": 170,
+  "mobile": 380,
+  "total": 550,
+  "comp": "낮음",
+  "docs": 27565,
+  "ratio": 0.02
+ },
+ {
+  "keyword": "다모아보험",
+  "pc": 470,
+  "mobile": 440,
+  "total": 910,
+  "comp": "높음",
+  "docs": 45472,
+  "ratio": 0.02
+ },
+ {
+  "keyword": "주식토론방",
+  "pc": 110,
+  "mobile": 330,
+  "total": 440,
+  "comp": "높음",
+  "docs": 23724,
+  "ratio": 0.019
+ },
+ {
+  "keyword": "LH청년전세임대주택",
+  "pc": 480,
+  "mobile": 870,
+  "total": 1350,
+  "comp": "높음",
+  "docs": 69797,
+  "ratio": 0.019
+ },
+ {
+  "keyword": "푸르덴셜종신보험",
+  "pc": 20,
+  "mobile": 80,
+  "total": 100,
+  "comp": "높음",
+  "docs": 5609,
+  "ratio": 0.018
+ },
+ {
+  "keyword": "무지외반증보험",
+  "pc": 5,
+  "mobile": 100,
+  "total": 105,
+  "comp": "높음",
+  "docs": 5859,
+  "ratio": 0.018
+ },
+ {
+  "keyword": "온라인법인설립시스템",
+  "pc": 1480,
+  "mobile": 320,
+  "total": 1800,
+  "comp": "높음",
+  "docs": 100226,
+  "ratio": 0.018
+ },
+ {
+  "keyword": "전기공사업양도양수",
+  "pc": 50,
+  "mobile": 360,
+  "total": 410,
+  "comp": "높음",
+  "docs": 22393,
+  "ratio": 0.018
+ },
+ {
+  "keyword": "비상장주식양도소득세",
+  "pc": 300,
+  "mobile": 340,
+  "total": 640,
+  "comp": "높음",
+  "docs": 36962,
+  "ratio": 0.017
+ },
+ {
+  "keyword": "세금체납소멸시효",
+  "pc": 70,
+  "mobile": 360,
+  "total": 430,
+  "comp": "높음",
+  "docs": 25194,
+  "ratio": 0.017
+ },
+ {
+  "keyword": "대장용종보험",
+  "pc": 160,
+  "mobile": 810,
+  "total": 970,
+  "comp": "높음",
+  "docs": 57276,
+  "ratio": 0.017
+ },
+ {
+  "keyword": "변액보험",
+  "pc": 880,
+  "mobile": 2000,
+  "total": 2880,
+  "comp": "높음",
+  "docs": 181086,
+  "ratio": 0.016
+ },
+ {
+  "keyword": "달러연금보험",
+  "pc": 420,
+  "mobile": 1420,
+  "total": 1840,
+  "comp": "중간",
+  "docs": 118281,
+  "ratio": 0.016
+ },
+ {
+  "keyword": "변액연금보험",
+  "pc": 330,
+  "mobile": 1470,
+  "total": 1800,
+  "comp": "높음",
+  "docs": 113494,
+  "ratio": 0.016
+ },
+ {
+  "keyword": "종신보험연금전환",
+  "pc": 150,
+  "mobile": 670,
+  "total": 820,
+  "comp": "높음",
+  "docs": 50430,
+  "ratio": 0.016
+ },
+ {
+  "keyword": "종신보험상속세",
+  "pc": 80,
+  "mobile": 250,
+  "total": 330,
+  "comp": "높음",
+  "docs": 20243,
+  "ratio": 0.016
+ },
+ {
+  "keyword": "상속세공제한도",
+  "pc": 250,
+  "mobile": 1180,
+  "total": 1430,
+  "comp": "높음",
+  "docs": 90192,
+  "ratio": 0.016
+ },
+ {
+  "keyword": "원천세신고방법",
+  "pc": 530,
+  "mobile": 370,
+  "total": 900,
+  "comp": "높음",
+  "docs": 54947,
+  "ratio": 0.016
+ },
+ {
+  "keyword": "대상포진보험",
+  "pc": 140,
+  "mobile": 1130,
+  "total": 1270,
+  "comp": "높음",
+  "docs": 81300,
+  "ratio": 0.016
+ },
+ {
+  "keyword": "제왕절개보험",
+  "pc": 130,
+  "mobile": 800,
+  "total": 930,
+  "comp": "높음",
+  "docs": 59809,
+  "ratio": 0.016
+ },
+ {
+  "keyword": "상가임대차보호법10년",
+  "pc": 490,
+  "mobile": 1290,
+  "total": 1780,
+  "comp": "높음",
+  "docs": 110503,
+  "ratio": 0.016
+ },
+ {
+  "keyword": "일시납저축보험",
+  "pc": 40,
+  "mobile": 130,
+  "total": 170,
+  "comp": "높음",
+  "docs": 11542,
+  "ratio": 0.015
+ },
+ {
+  "keyword": "성조숙증보험",
+  "pc": 50,
+  "mobile": 290,
+  "total": 340,
+  "comp": "높음",
+  "docs": 23436,
+  "ratio": 0.015
+ },
+ {
+  "keyword": "부부간증여",
+  "pc": 350,
+  "mobile": 1330,
+  "total": 1680,
+  "comp": "높음",
+  "docs": 110373,
+  "ratio": 0.015
+ },
+ {
+  "keyword": "유산상속비율",
+  "pc": 60,
+  "mobile": 660,
+  "total": 720,
+  "comp": "중간",
+  "docs": 49372,
+  "ratio": 0.015
+ },
+ {
+  "keyword": "농지증여세",
+  "pc": 60,
+  "mobile": 260,
+  "total": 320,
+  "comp": "높음",
+  "docs": 20915,
+  "ratio": 0.015
+ },
+ {
+  "keyword": "지방세소멸시효",
+  "pc": 70,
+  "mobile": 190,
+  "total": 260,
+  "comp": "높음",
+  "docs": 17185,
+  "ratio": 0.015
+ },
+ {
+  "keyword": "상속세자녀공제",
+  "pc": 230,
+  "mobile": 1220,
+  "total": 1450,
+  "comp": "중간",
+  "docs": 106424,
+  "ratio": 0.014
+ },
+ {
+  "keyword": "상속세신고기한",
+  "pc": 460,
+  "mobile": 970,
+  "total": 1430,
+  "comp": "높음",
+  "docs": 101070,
+  "ratio": 0.014
+ },
+ {
+  "keyword": "조세포탈",
+  "pc": 200,
+  "mobile": 450,
+  "total": 650,
+  "comp": "높음",
+  "docs": 48081,
+  "ratio": 0.014
+ },
+ {
+  "keyword": "부산상속포기",
+  "pc": 10,
+  "mobile": 510,
+  "total": 520,
+  "comp": "높음",
+  "docs": 38122,
+  "ratio": 0.014
+ },
+ {
+  "keyword": "비사업용토지양도세",
+  "pc": 110,
+  "mobile": 240,
+  "total": 350,
+  "comp": "높음",
+  "docs": 24303,
+  "ratio": 0.014
+ },
+ {
+  "keyword": "증여세소멸시효",
+  "pc": 20,
+  "mobile": 90,
+  "total": 110,
+  "comp": "높음",
+  "docs": 7624,
+  "ratio": 0.014
+ },
+ {
+  "keyword": "연금저축계좌개설이벤트",
+  "pc": 60,
+  "mobile": 160,
+  "total": 220,
+  "comp": "중간",
+  "docs": 15433,
+  "ratio": 0.014
+ },
+ {
+  "keyword": "연금저축이전이벤트",
+  "pc": 70,
+  "mobile": 140,
+  "total": 210,
+  "comp": "높음",
+  "docs": 14600,
+  "ratio": 0.014
+ },
+ {
+  "keyword": "장기요양보험료",
+  "pc": 830,
+  "mobile": 1840,
+  "total": 2670,
+  "comp": "높음",
+  "docs": 201051,
+  "ratio": 0.013
+ },
+ {
+  "keyword": "비과세개인연금",
+  "pc": 470,
+  "mobile": 1660,
+  "total": 2130,
+  "comp": "높음",
+  "docs": 159083,
+  "ratio": 0.013
+ },
+ {
+  "keyword": "부산상속포기법무사",
+  "pc": 40,
+  "mobile": 230,
+  "total": 270,
+  "comp": "중간",
+  "docs": 20636,
+  "ratio": 0.013
+ },
+ {
+  "keyword": "국유지임대",
+  "pc": 90,
+  "mobile": 170,
+  "total": 260,
+  "comp": "높음",
+  "docs": 19738,
+  "ratio": 0.013
+ },
+ {
+  "keyword": "풍세산업단지",
+  "pc": 60,
+  "mobile": 120,
+  "total": 180,
+  "comp": "높음",
+  "docs": 14143,
+  "ratio": 0.013
+ },
+ {
+  "keyword": "원천세신고",
+  "pc": 840,
+  "mobile": 500,
+  "total": 1340,
+  "comp": "중간",
+  "docs": 106584,
+  "ratio": 0.013
+ },
+ {
+  "keyword": "퇴직연금IRP계좌개설",
+  "pc": 170,
+  "mobile": 430,
+  "total": 600,
+  "comp": "높음",
+  "docs": 45894,
+  "ratio": 0.013
+ },
+ {
+  "keyword": "퇴직금추계액",
+  "pc": 110,
+  "mobile": 20,
+  "total": 130,
+  "comp": "높음",
+  "docs": 10296,
+  "ratio": 0.013
+ },
+ {
+  "keyword": "비과세예금",
+  "pc": 290,
+  "mobile": 1870,
+  "total": 2160,
+  "comp": "높음",
+  "docs": 176232,
+  "ratio": 0.012
+ },
+ {
+  "keyword": "세제적격연금보험",
+  "pc": 20,
+  "mobile": 90,
+  "total": 110,
+  "comp": "높음",
+  "docs": 9316,
+  "ratio": 0.012
+ },
+ {
+  "keyword": "자녀증여세세율",
+  "pc": 180,
+  "mobile": 820,
+  "total": 1000,
+  "comp": "높음",
+  "docs": 85500,
+  "ratio": 0.012
+ },
+ {
+  "keyword": "형제증여세",
+  "pc": 60,
+  "mobile": 370,
+  "total": 430,
+  "comp": "높음",
+  "docs": 34439,
+  "ratio": 0.012
+ },
+ {
+  "keyword": "상속세인적공제",
+  "pc": 90,
+  "mobile": 180,
+  "total": 270,
+  "comp": "높음",
+  "docs": 21884,
+  "ratio": 0.012
+ },
+ {
+  "keyword": "현금상속세면제한도",
+  "pc": 5,
+  "mobile": 130,
+  "total": 135,
+  "comp": "중간",
+  "docs": 11693,
+  "ratio": 0.012
+ },
+ {
+  "keyword": "간이과세자부가세신고",
+  "pc": 460,
+  "mobile": 820,
+  "total": 1280,
+  "comp": "높음",
+  "docs": 109333,
+  "ratio": 0.012
+ },
+ {
+  "keyword": "미국주식하는법",
+  "pc": 70,
+  "mobile": 240,
+  "total": 310,
+  "comp": "높음",
+  "docs": 25425,
+  "ratio": 0.012
+ },
+ {
+  "keyword": "IRP이전이벤트",
+  "pc": 30,
+  "mobile": 70,
+  "total": 100,
+  "comp": "높음",
+  "docs": 8483,
+  "ratio": 0.012
+ },
+ {
+  "keyword": "부동산취등록세",
+  "pc": 230,
+  "mobile": 580,
+  "total": 810,
+  "comp": "중간",
+  "docs": 69787,
+  "ratio": 0.012
+ },
+ {
+  "keyword": "일시적1가구2주택비과세",
+  "pc": 170,
+  "mobile": 390,
+  "total": 560,
+  "comp": "높음",
+  "docs": 46001,
+  "ratio": 0.012
+ },
+ {
+  "keyword": "저축성보험",
+  "pc": 270,
+  "mobile": 700,
+  "total": 970,
+  "comp": "높음",
+  "docs": 91396,
+  "ratio": 0.011
+ },
+ {
+  "keyword": "즉시연금1억",
+  "pc": 60,
+  "mobile": 260,
+  "total": 320,
+  "comp": "높음",
+  "docs": 28226,
+  "ratio": 0.011
+ },
+ {
+  "keyword": "저축성보험비과세",
+  "pc": 60,
+  "mobile": 200,
+  "total": 260,
+  "comp": "높음",
+  "docs": 23506,
+  "ratio": 0.011
+ },
+ {
+  "keyword": "요로결석보험",
+  "pc": 30,
+  "mobile": 180,
+  "total": 210,
+  "comp": "높음",
+  "docs": 18686,
+  "ratio": 0.011
+ },
+ {
+  "keyword": "연금보험일시납",
+  "pc": 30,
+  "mobile": 170,
+  "total": 200,
+  "comp": "높음",
+  "docs": 18045,
+  "ratio": 0.011
+ },
+ {
+  "keyword": "음식물배상책임보험",
+  "pc": 220,
+  "mobile": 650,
+  "total": 870,
+  "comp": "높음",
+  "docs": 79137,
+  "ratio": 0.011
+ },
+ {
+  "keyword": "1억증여세",
+  "pc": 190,
+  "mobile": 1060,
+  "total": 1250,
+  "comp": "높음",
+  "docs": 113087,
+  "ratio": 0.011
+ },
+ {
+  "keyword": "상속재산분할심판",
+  "pc": 150,
+  "mobile": 910,
+  "total": 1060,
+  "comp": "높음",
+  "docs": 94013,
+  "ratio": 0.011
+ },
+ {
+  "keyword": "상속세배우자공제",
+  "pc": 160,
+  "mobile": 850,
+  "total": 1010,
+  "comp": "높음",
+  "docs": 95325,
+  "ratio": 0.011
+ },
+ {
+  "keyword": "증여취득세율",
+  "pc": 330,
+  "mobile": 660,
+  "total": 990,
+  "comp": "높음",
+  "docs": 89931,
+  "ratio": 0.011
+ },
+ {
+  "keyword": "형제간증여",
+  "pc": 140,
+  "mobile": 830,
+  "total": 970,
+  "comp": "높음",
+  "docs": 86384,
+  "ratio": 0.011
+ },
+ {
+  "keyword": "상속등기법무사비용",
+  "pc": 220,
+  "mobile": 720,
+  "total": 940,
+  "comp": "높음",
+  "docs": 88770,
+  "ratio": 0.011
+ },
+ {
+  "keyword": "상속취득세율",
+  "pc": 240,
+  "mobile": 610,
+  "total": 850,
+  "comp": "높음",
+  "docs": 74004,
+  "ratio": 0.011
+ },
+ {
+  "keyword": "울산상속법무사",
+  "pc": 50,
+  "mobile": 180,
+  "total": 230,
+  "comp": "높음",
+  "docs": 20779,
+  "ratio": 0.011
+ },
+ {
+  "keyword": "부담부증여계약서",
+  "pc": 80,
+  "mobile": 90,
+  "total": 170,
+  "comp": "높음",
+  "docs": 15176,
+  "ratio": 0.011
+ },
+ {
+  "keyword": "토지보상평가지침",
+  "pc": 140,
+  "mobile": 30,
+  "total": 170,
+  "comp": "높음",
+  "docs": 15273,
+  "ratio": 0.011
+ },
+ {
+  "keyword": "법인세중간예납가산세",
+  "pc": 90,
+  "mobile": 20,
+  "total": 110,
+  "comp": "높음",
+  "docs": 9884,
+  "ratio": 0.011
+ },
+ {
+  "keyword": "생명보험비교사이트",
+  "pc": 130,
+  "mobile": 1380,
+  "total": 1510,
+  "comp": "높음",
+  "docs": 154656,
+  "ratio": 0.01
+ },
+ {
+  "keyword": "다이렉트정기보험",
+  "pc": 100,
+  "mobile": 360,
+  "total": 460,
+  "comp": "중간",
+  "docs": 44161,
+  "ratio": 0.01
+ },
+ {
+  "keyword": "상가화재보험",
+  "pc": 270,
+  "mobile": 640,
+  "total": 910,
+  "comp": "높음",
+  "docs": 88859,
+  "ratio": 0.01
+ },
+ {
+  "keyword": "한정승인상속포기",
+  "pc": 370,
+  "mobile": 2010,
+  "total": 2380,
+  "comp": "높음",
+  "docs": 226853,
+  "ratio": 0.01
+ },
+ {
+  "keyword": "재산세계산",
+  "pc": 750,
+  "mobile": 1360,
+  "total": 2110,
+  "comp": "낮음",
+  "docs": 216705,
+  "ratio": 0.01
+ },
+ {
+  "keyword": "상속세및증여세법",
+  "pc": 1490,
+  "mobile": 320,
+  "total": 1810,
+  "comp": "높음",
+  "docs": 182692,
+  "ratio": 0.01
+ },
+ {
+  "keyword": "국세체납소멸",
+  "pc": 40,
+  "mobile": 340,
+  "total": 380,
+  "comp": "높음",
+  "docs": 38446,
+  "ratio": 0.01
+ },
+ {
+  "keyword": "법인세세율",
+  "pc": 850,
+  "mobile": 750,
+  "total": 1600,
+  "comp": "높음",
+  "docs": 157509,
+  "ratio": 0.01
+ },
+ {
+  "keyword": "고배당주",
+  "pc": 760,
+  "mobile": 2190,
+  "total": 2950,
+  "comp": "높음",
+  "docs": 302213,
+  "ratio": 0.01
+ },
+ {
+  "keyword": "종소세신고기간",
+  "pc": 210,
+  "mobile": 900,
+  "total": 1110,
+  "comp": "높음",
+  "docs": 112435,
+  "ratio": 0.01
+ },
+ {
+  "keyword": "보세창고",
+  "pc": 260,
+  "mobile": 280,
+  "total": 540,
+  "comp": "높음",
+  "docs": 53179,
+  "ratio": 0.01
+ },
+ {
+  "keyword": "종신보험만기",
+  "pc": 110,
+  "mobile": 730,
+  "total": 840,
+  "comp": "높음",
+  "docs": 89207,
+  "ratio": 0.009
+ },
+ {
+  "keyword": "IRP이벤트",
+  "pc": 90,
+  "mobile": 150,
+  "total": 240,
+  "comp": "높음",
+  "docs": 27769,
+  "ratio": 0.009
+ },
+ {
+  "keyword": "GI보험",
+  "pc": 90,
+  "mobile": 120,
+  "total": 210,
+  "comp": "높음",
+  "docs": 23095,
+  "ratio": 0.009
+ },
+ {
+  "keyword": "상속세신고",
+  "pc": 890,
+  "mobile": 1900,
+  "total": 2790,
+  "comp": "높음",
+  "docs": 296459,
+  "ratio": 0.009
+ },
+ {
+  "keyword": "상속포기한정승인",
+  "pc": 490,
+  "mobile": 1530,
+  "total": 2020,
+  "comp": "높음",
+  "docs": 226956,
+  "ratio": 0.009
+ },
+ {
+  "keyword": "1가구2주택양도세",
+  "pc": 320,
+  "mobile": 1210,
+  "total": 1530,
+  "comp": "높음",
+  "docs": 167588,
+  "ratio": 0.009
+ },
+ {
+  "keyword": "유류분제도",
+  "pc": 110,
+  "mobile": 1060,
+  "total": 1170,
+  "comp": "높음",
+  "docs": 132846,
+  "ratio": 0.009
+ },
+ {
+  "keyword": "상속기여분",
+  "pc": 60,
+  "mobile": 790,
+  "total": 850,
+  "comp": "높음",
+  "docs": 99766,
+  "ratio": 0.009
+ },
+ {
+  "keyword": "상속협의서",
+  "pc": 90,
+  "mobile": 410,
+  "total": 500,
+  "comp": "높음",
+  "docs": 53535,
+  "ratio": 0.009
+ },
+ {
+  "keyword": "상속세신고수수료",
+  "pc": 110,
+  "mobile": 180,
+  "total": 290,
+  "comp": "높음",
+  "docs": 31334,
+  "ratio": 0.009
+ },
+ {
+  "keyword": "임원퇴직금규정",
+  "pc": 210,
+  "mobile": 100,
+  "total": 310,
+  "comp": "높음",
+  "docs": 35339,
+  "ratio": 0.009
+ },
+ {
+  "keyword": "60대실비보험",
+  "pc": 110,
+  "mobile": 500,
+  "total": 610,
+  "comp": "높음",
+  "docs": 65977,
+  "ratio": 0.009
+ },
+ {
+  "keyword": "상가건물임대차보호법",
+  "pc": 1100,
+  "mobile": 830,
+  "total": 1930,
+  "comp": "높음",
+  "docs": 205366,
+  "ratio": 0.009
+ },
+ {
+  "keyword": "평택지제역세권",
+  "pc": 40,
+  "mobile": 280,
+  "total": 320,
+  "comp": "높음",
+  "docs": 35942,
+  "ratio": 0.009
+ },
+ {
+  "keyword": "개인사업자주소지변경",
+  "pc": 660,
+  "mobile": 930,
+  "total": 1590,
+  "comp": "높음",
+  "docs": 175193,
+  "ratio": 0.009
+ },
+ {
+  "keyword": "종신보험해지",
+  "pc": 120,
+  "mobile": 660,
+  "total": 780,
+  "comp": "높음",
+  "docs": 96626,
+  "ratio": 0.008
+ },
+ {
+  "keyword": "폐업철거지원금",
+  "pc": 390,
+  "mobile": 1550,
+  "total": 1940,
+  "comp": "높음",
+  "docs": 230646,
+  "ratio": 0.008
+ },
+ {
+  "keyword": "피상속인",
+  "pc": 930,
+  "mobile": 1560,
+  "total": 2490,
+  "comp": "높음",
+  "docs": 329630,
+  "ratio": 0.008
+ },
+ {
+  "keyword": "상속세신고방법",
+  "pc": 400,
+  "mobile": 840,
+  "total": 1240,
+  "comp": "높음",
+  "docs": 157502,
+  "ratio": 0.008
+ },
+ {
+  "keyword": "증여세개정",
+  "pc": 170,
+  "mobile": 690,
+  "total": 860,
+  "comp": "높음",
+  "docs": 110786,
+  "ratio": 0.008
+ },
+ {
+  "keyword": "상속세신고서류",
+  "pc": 190,
+  "mobile": 440,
+  "total": 630,
+  "comp": "높음",
+  "docs": 82570,
+  "ratio": 0.008
+ },
+ {
+  "keyword": "납부불성실가산세",
+  "pc": 410,
+  "mobile": 130,
+  "total": 540,
+  "comp": "높음",
+  "docs": 65996,
+  "ratio": 0.008
+ },
+ {
+  "keyword": "가업승계증여세과세특례",
+  "pc": 90,
+  "mobile": 40,
+  "total": 130,
+  "comp": "높음",
+  "docs": 15678,
+  "ratio": 0.008
+ },
+ {
+  "keyword": "주식유료강의",
+  "pc": 50,
+  "mobile": 220,
+  "total": 270,
+  "comp": "높음",
+  "docs": 32899,
+  "ratio": 0.008
+ },
+ {
+  "keyword": "대표이사가수금",
+  "pc": 80,
+  "mobile": 30,
+  "total": 110,
+  "comp": "높음",
+  "docs": 12994,
+  "ratio": 0.008
+ },
+ {
+  "keyword": "법인폐업절차",
+  "pc": 400,
+  "mobile": 860,
+  "total": 1260,
+  "comp": "높음",
+  "docs": 160099,
+  "ratio": 0.008
+ },
+ {
+  "keyword": "IRP해지",
+  "pc": 200,
+  "mobile": 520,
+  "total": 720,
+  "comp": "높음",
+  "docs": 88410,
+  "ratio": 0.008
+ },
+ {
+  "keyword": "연금저축계좌이벤트",
+  "pc": 70,
+  "mobile": 180,
+  "total": 250,
+  "comp": "높음",
+  "docs": 32387,
+  "ratio": 0.008
+ },
+ {
+  "keyword": "첫날부터입원비보험",
+  "pc": 30,
+  "mobile": 190,
+  "total": 220,
+  "comp": "높음",
+  "docs": 27547,
+  "ratio": 0.008
+ },
+ {
+  "keyword": "마사지샵임대",
+  "pc": 10,
+  "mobile": 200,
+  "total": 210,
+  "comp": "높음",
+  "docs": 24845,
+  "ratio": 0.008
+ },
+ {
+  "keyword": "종부세환급",
+  "pc": 30,
+  "mobile": 110,
+  "total": 140,
+  "comp": "높음",
+  "docs": 18434,
+  "ratio": 0.008
+ },
+ {
+  "keyword": "근로소득세계산법",
+  "pc": 870,
+  "mobile": 840,
+  "total": 1710,
+  "comp": "중간",
+  "docs": 202913,
+  "ratio": 0.008
+ },
+ {
+  "keyword": "KODEX배당가치",
+  "pc": 90,
+  "mobile": 250,
+  "total": 340,
+  "comp": "중간",
+  "docs": 42722,
+  "ratio": 0.008
+ },
+ {
+  "keyword": "즉시연금",
+  "pc": 340,
+  "mobile": 1680,
+  "total": 2020,
+  "comp": "높음",
+  "docs": 289660,
+  "ratio": 0.007
+ },
+ {
+  "keyword": "연금저축신탁",
+  "pc": 100,
+  "mobile": 290,
+  "total": 390,
+  "comp": "높음",
+  "docs": 55415,
+  "ratio": 0.007
+ },
+ {
+  "keyword": "보험부담보",
+  "pc": 50,
+  "mobile": 190,
+  "total": 240,
+  "comp": "높음",
+  "docs": 33400,
+  "ratio": 0.007
+ },
+ {
+  "keyword": "IRP통장개설",
+  "pc": 50,
+  "mobile": 130,
+  "total": 180,
+  "comp": "높음",
+  "docs": 24487,
+  "ratio": 0.007
+ },
+ {
+  "keyword": "지역건강보험료계산",
+  "pc": 310,
+  "mobile": 820,
+  "total": 1130,
+  "comp": "중간",
+  "docs": 158046,
+  "ratio": 0.007
+ },
+ {
+  "keyword": "양도세신고",
+  "pc": 1170,
+  "mobile": 1100,
+  "total": 2270,
+  "comp": "높음",
+  "docs": 319303,
+  "ratio": 0.007
+ },
+ {
+  "keyword": "증여계약서",
+  "pc": 980,
+  "mobile": 1270,
+  "total": 2250,
+  "comp": "높음",
+  "docs": 321273,
+  "ratio": 0.007
+ },
+ {
+  "keyword": "과세이연",
+  "pc": 410,
+  "mobile": 370,
+  "total": 780,
+  "comp": "중간",
+  "docs": 104310,
+  "ratio": 0.007
+ },
+ {
+  "keyword": "증여세신고서류",
+  "pc": 210,
+  "mobile": 430,
+  "total": 640,
+  "comp": "높음",
+  "docs": 95928,
+  "ratio": 0.007
+ },
+ {
+  "keyword": "상속세납부기한",
+  "pc": 100,
+  "mobile": 400,
+  "total": 500,
+  "comp": "높음",
+  "docs": 75573,
+  "ratio": 0.007
+ },
+ {
+  "keyword": "농지증여",
+  "pc": 120,
+  "mobile": 290,
+  "total": 410,
+  "comp": "높음",
+  "docs": 55485,
+  "ratio": 0.007
+ },
+ {
+  "keyword": "재혼가정상속",
+  "pc": 70,
+  "mobile": 140,
+  "total": 210,
+  "comp": "높음",
+  "docs": 28215,
+  "ratio": 0.007
+ },
+ {
+  "keyword": "양도소득세신고대행수수료",
+  "pc": 40,
+  "mobile": 80,
+  "total": 120,
+  "comp": "높음",
+  "docs": 16831,
+  "ratio": 0.007
+ },
+ {
+  "keyword": "주식차트보는법",
+  "pc": 600,
+  "mobile": 2010,
+  "total": 2610,
+  "comp": "높음",
+  "docs": 362584,
+  "ratio": 0.007
+ },
+ {
+  "keyword": "법인부가세신고기간",
+  "pc": 460,
+  "mobile": 460,
+  "total": 920,
+  "comp": "높음",
+  "docs": 138468,
+  "ratio": 0.007
+ },
+ {
+  "keyword": "IRP계좌개설방법",
+  "pc": 110,
+  "mobile": 230,
+  "total": 340,
+  "comp": "높음",
+  "docs": 45979,
+  "ratio": 0.007
+ },
+ {
+  "keyword": "해외주식양도소득세신고",
+  "pc": 130,
+  "mobile": 260,
+  "total": 390,
+  "comp": "높음",
+  "docs": 55453,
+  "ratio": 0.007
+ },
+ {
+  "keyword": "달러연금",
+  "pc": 630,
+  "mobile": 2350,
+  "total": 2980,
+  "comp": "높음",
+  "docs": 413480,
+  "ratio": 0.007
+ },
+ {
+  "keyword": "비과세연금보험",
+  "pc": 320,
+  "mobile": 700,
+  "total": 1020,
+  "comp": "높음",
+  "docs": 159022,
+  "ratio": 0.006
+ },
+ {
+  "keyword": "IRP퇴직연금수령",
+  "pc": 130,
+  "mobile": 530,
+  "total": 660,
+  "comp": "높음",
+  "docs": 107707,
+  "ratio": 0.006
+ },
+ {
+  "keyword": "퇴직연금DC",
+  "pc": 320,
+  "mobile": 340,
+  "total": 660,
+  "comp": "높음",
+  "docs": 116848,
+  "ratio": 0.006
+ },
+ {
+  "keyword": "경영인정기보험",
+  "pc": 250,
+  "mobile": 290,
+  "total": 540,
+  "comp": "높음",
+  "docs": 84595,
+  "ratio": 0.006
+ },
+ {
+  "keyword": "연금저축이벤트",
+  "pc": 90,
+  "mobile": 250,
+  "total": 340,
+  "comp": "높음",
+  "docs": 54763,
+  "ratio": 0.006
+ },
+ {
+  "keyword": "사망보험금10억",
+  "pc": 40,
+  "mobile": 230,
+  "total": 270,
+  "comp": "높음",
+  "docs": 43333,
+  "ratio": 0.006
+ },
+ {
+  "keyword": "화재보험비교사이트",
+  "pc": 310,
+  "mobile": 820,
+  "total": 1130,
+  "comp": "높음",
+  "docs": 178368,
+  "ratio": 0.006
+ },
+ {
+  "keyword": "원스톱폐업지원",
+  "pc": 160,
+  "mobile": 200,
+  "total": 360,
+  "comp": "높음",
+  "docs": 64893,
+  "ratio": 0.006
+ },
+ {
+  "keyword": "주택화재보험비교",
+  "pc": 120,
+  "mobile": 200,
+  "total": 320,
+  "comp": "높음",
+  "docs": 52343,
+  "ratio": 0.006
+ },
+ {
+  "keyword": "양도세계산",
+  "pc": 660,
+  "mobile": 1390,
+  "total": 2050,
+  "comp": "높음",
+  "docs": 320276,
+  "ratio": 0.006
+ },
+ {
+  "keyword": "상속유류분",
+  "pc": 210,
+  "mobile": 1250,
+  "total": 1460,
+  "comp": "높음",
+  "docs": 239622,
+  "ratio": 0.006
+ },
+ {
+  "keyword": "상속세계산",
+  "pc": 310,
+  "mobile": 990,
+  "total": 1300,
+  "comp": "높음",
+  "docs": 213919,
+  "ratio": 0.006
+ },
+ {
+  "keyword": "1가구1주택양도세",
+  "pc": 210,
+  "mobile": 920,
+  "total": 1130,
+  "comp": "높음",
+  "docs": 185979,
+  "ratio": 0.006
+ },
+ {
+  "keyword": "상속포기신고",
+  "pc": 230,
+  "mobile": 780,
+  "total": 1010,
+  "comp": "높음",
+  "docs": 180637,
+  "ratio": 0.006
+ },
+ {
+  "keyword": "증여유류분",
+  "pc": 10,
+  "mobile": 780,
+  "total": 790,
+  "comp": "높음",
+  "docs": 138661,
+  "ratio": 0.006
+ },
+ {
+  "keyword": "미국주식양도세",
+  "pc": 130,
+  "mobile": 480,
+  "total": 610,
+  "comp": "높음",
+  "docs": 95635,
+  "ratio": 0.006
+ },
+ {
+  "keyword": "사실혼상속",
+  "pc": 40,
+  "mobile": 450,
+  "total": 490,
+  "comp": "높음",
+  "docs": 76590,
+  "ratio": 0.006
+ },
+ {
+  "keyword": "한정승인공고",
+  "pc": 100,
+  "mobile": 370,
+  "total": 470,
+  "comp": "높음",
+  "docs": 79409,
+  "ratio": 0.006
+ },
+ {
+  "keyword": "5천만원증여세",
+  "pc": 60,
+  "mobile": 380,
+  "total": 440,
+  "comp": "높음",
+  "docs": 74207,
+  "ratio": 0.006
+ },
+ {
+  "keyword": "1가구2주택양도소득세율",
+  "pc": 80,
+  "mobile": 280,
+  "total": 360,
+  "comp": "높음",
+  "docs": 56674,
+  "ratio": 0.006
+ },
+ {
+  "keyword": "더스마트상속",
+  "pc": 120,
+  "mobile": 230,
+  "total": 350,
+  "comp": "중간",
+  "docs": 60993,
+  "ratio": 0.006
+ },
+ {
+  "keyword": "유산상속세",
+  "pc": 30,
+  "mobile": 260,
+  "total": 290,
+  "comp": "높음",
+  "docs": 50489,
+  "ratio": 0.006
+ },
+ {
+  "keyword": "영농조합법인",
+  "pc": 320,
+  "mobile": 900,
+  "total": 1220,
+  "comp": "높음",
+  "docs": 220361,
+  "ratio": 0.006
+ },
+ {
+  "keyword": "연금저축계좌세액공제",
+  "pc": 340,
+  "mobile": 770,
+  "total": 1110,
+  "comp": "높음",
+  "docs": 178302,
+  "ratio": 0.006
+ },
+ {
+  "keyword": "IRP통장",
+  "pc": 110,
+  "mobile": 350,
+  "total": 460,
+  "comp": "높음",
+  "docs": 81005,
+  "ratio": 0.006
+ },
+ {
+  "keyword": "실비4세대",
+  "pc": 100,
+  "mobile": 440,
+  "total": 540,
+  "comp": "높음",
+  "docs": 93184,
+  "ratio": 0.006
+ },
+ {
+  "keyword": "케이비생명보험",
+  "pc": 40,
+  "mobile": 70,
+  "total": 110,
+  "comp": "높음",
+  "docs": 18538,
+  "ratio": 0.006
+ },
+ {
+  "keyword": "오산세교",
+  "pc": 690,
+  "mobile": 1500,
+  "total": 2190,
+  "comp": "높음",
+  "docs": 379530,
+  "ratio": 0.006
+ },
+ {
+  "keyword": "연신내상가",
+  "pc": 70,
+  "mobile": 160,
+  "total": 230,
+  "comp": "중간",
+  "docs": 41439,
+  "ratio": 0.006
+ },
+ {
+  "keyword": "영등포단기임대",
+  "pc": 20,
+  "mobile": 90,
+  "total": 110,
+  "comp": "높음",
+  "docs": 19322,
+  "ratio": 0.006
+ },
+ {
+  "keyword": "바이오주식",
+  "pc": 370,
+  "mobile": 1660,
+  "total": 2030,
+  "comp": "높음",
+  "docs": 327119,
+  "ratio": 0.006
+ },
+ {
+  "keyword": "실시간주식차트",
+  "pc": 260,
+  "mobile": 880,
+  "total": 1140,
+  "comp": "높음",
+  "docs": 191552,
+  "ratio": 0.006
+ },
+ {
+  "keyword": "보험고지의무위반",
+  "pc": 170,
+  "mobile": 650,
+  "total": 820,
+  "comp": "높음",
+  "docs": 134019,
+  "ratio": 0.006
+ },
+ {
+  "keyword": "자금세탁방지",
+  "pc": 360,
+  "mobile": 380,
+  "total": 740,
+  "comp": "높음",
+  "docs": 125954,
+  "ratio": 0.006
+ },
+ {
+  "keyword": "개인연금소득공제",
+  "pc": 370,
+  "mobile": 1240,
+  "total": 1610,
+  "comp": "높음",
+  "docs": 320313,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "비과세저축보험",
+  "pc": 130,
+  "mobile": 450,
+  "total": 580,
+  "comp": "높음",
+  "docs": 125349,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "치질보험",
+  "pc": 30,
+  "mobile": 210,
+  "total": 240,
+  "comp": "높음",
+  "docs": 45249,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "토지공시지가",
+  "pc": 1160,
+  "mobile": 510,
+  "total": 1670,
+  "comp": "중간",
+  "docs": 340172,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "상속한정승인",
+  "pc": 410,
+  "mobile": 1170,
+  "total": 1580,
+  "comp": "높음",
+  "docs": 295415,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "재산상속비율",
+  "pc": 120,
+  "mobile": 1410,
+  "total": 1530,
+  "comp": "높음",
+  "docs": 285409,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "자녀증여세",
+  "pc": 280,
+  "mobile": 1110,
+  "total": 1390,
+  "comp": "높음",
+  "docs": 261413,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "상속세공제",
+  "pc": 320,
+  "mobile": 900,
+  "total": 1220,
+  "comp": "높음",
+  "docs": 226739,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "유류분소송",
+  "pc": 80,
+  "mobile": 950,
+  "total": 1030,
+  "comp": "높음",
+  "docs": 201562,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "특별한정승인",
+  "pc": 320,
+  "mobile": 510,
+  "total": 830,
+  "comp": "높음",
+  "docs": 167852,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "유류분반환",
+  "pc": 60,
+  "mobile": 740,
+  "total": 800,
+  "comp": "높음",
+  "docs": 147956,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "유류분계산",
+  "pc": 20,
+  "mobile": 710,
+  "total": 730,
+  "comp": "높음",
+  "docs": 159065,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "상속재산분할비율",
+  "pc": 180,
+  "mobile": 540,
+  "total": 720,
+  "comp": "높음",
+  "docs": 157112,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "양도소득세면제",
+  "pc": 150,
+  "mobile": 570,
+  "total": 720,
+  "comp": "높음",
+  "docs": 152277,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "상속주택양도세",
+  "pc": 190,
+  "mobile": 510,
+  "total": 700,
+  "comp": "높음",
+  "docs": 131405,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "양도소득세신고서류",
+  "pc": 210,
+  "mobile": 440,
+  "total": 650,
+  "comp": "높음",
+  "docs": 119878,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "가업상속",
+  "pc": 90,
+  "mobile": 430,
+  "total": 520,
+  "comp": "높음",
+  "docs": 106332,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "금융재산상속공제",
+  "pc": 190,
+  "mobile": 300,
+  "total": 490,
+  "comp": "높음",
+  "docs": 89602,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "상속세과세표준",
+  "pc": 160,
+  "mobile": 290,
+  "total": 450,
+  "comp": "높음",
+  "docs": 99312,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "조세불복",
+  "pc": 110,
+  "mobile": 340,
+  "total": 450,
+  "comp": "높음",
+  "docs": 98067,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "법정상속지분",
+  "pc": 60,
+  "mobile": 320,
+  "total": 380,
+  "comp": "높음",
+  "docs": 84278,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "농지양도세",
+  "pc": 60,
+  "mobile": 220,
+  "total": 280,
+  "comp": "높음",
+  "docs": 56638,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "대전상속포기",
+  "pc": 60,
+  "mobile": 80,
+  "total": 140,
+  "comp": "높음",
+  "docs": 29066,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "미국주식양도세신고",
+  "pc": 20,
+  "mobile": 110,
+  "total": 130,
+  "comp": "중간",
+  "docs": 27275,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "국세기본법",
+  "pc": 1780,
+  "mobile": 450,
+  "total": 2230,
+  "comp": "높음",
+  "docs": 437916,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "주식계좌개설",
+  "pc": 310,
+  "mobile": 1910,
+  "total": 2220,
+  "comp": "높음",
+  "docs": 433342,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "해외주식세금",
+  "pc": 360,
+  "mobile": 1850,
+  "total": 2210,
+  "comp": "높음",
+  "docs": 439875,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "지방세체납",
+  "pc": 390,
+  "mobile": 680,
+  "total": 1070,
+  "comp": "높음",
+  "docs": 210783,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "사업소득지급명세서",
+  "pc": 470,
+  "mobile": 260,
+  "total": 730,
+  "comp": "높음",
+  "docs": 160570,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "부가가치세면세사업자",
+  "pc": 280,
+  "mobile": 320,
+  "total": 600,
+  "comp": "높음",
+  "docs": 128788,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "주식자동매매프로그램",
+  "pc": 230,
+  "mobile": 320,
+  "total": 550,
+  "comp": "높음",
+  "docs": 120794,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "자기주식소각",
+  "pc": 240,
+  "mobile": 220,
+  "total": 460,
+  "comp": "높음",
+  "docs": 90245,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "주식하는방법",
+  "pc": 70,
+  "mobile": 280,
+  "total": 350,
+  "comp": "높음",
+  "docs": 69425,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "국세탕감",
+  "pc": 60,
+  "mobile": 120,
+  "total": 180,
+  "comp": "높음",
+  "docs": 38174,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "세무포탈",
+  "pc": 140,
+  "mobile": 5,
+  "total": 145,
+  "comp": "높음",
+  "docs": 30961,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "연금저축한도",
+  "pc": 370,
+  "mobile": 950,
+  "total": 1320,
+  "comp": "높음",
+  "docs": 260781,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "공유오피스사업자등록",
+  "pc": 380,
+  "mobile": 650,
+  "total": 1030,
+  "comp": "높음",
+  "docs": 199885,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "건설업양도양수",
+  "pc": 520,
+  "mobile": 150,
+  "total": 670,
+  "comp": "높음",
+  "docs": 122627,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "임원퇴직금계산",
+  "pc": 130,
+  "mobile": 10,
+  "total": 140,
+  "comp": "낮음",
+  "docs": 26922,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "IRP계좌이벤트",
+  "pc": 40,
+  "mobile": 70,
+  "total": 110,
+  "comp": "높음",
+  "docs": 20819,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "보험면책기간",
+  "pc": 250,
+  "mobile": 1640,
+  "total": 1890,
+  "comp": "높음",
+  "docs": 395790,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "신생아실비보험",
+  "pc": 30,
+  "mobile": 110,
+  "total": 140,
+  "comp": "높음",
+  "docs": 30424,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "재산세확인",
+  "pc": 840,
+  "mobile": 940,
+  "total": 1780,
+  "comp": "중간",
+  "docs": 381573,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "오피스텔단기임대",
+  "pc": 210,
+  "mobile": 890,
+  "total": 1100,
+  "comp": "높음",
+  "docs": 226274,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "현금증여신고",
+  "pc": 180,
+  "mobile": 560,
+  "total": 740,
+  "comp": "높음",
+  "docs": 140865,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "가게양도양수",
+  "pc": 50,
+  "mobile": 210,
+  "total": 260,
+  "comp": "높음",
+  "docs": 49867,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "개인사업자상호변경",
+  "pc": 320,
+  "mobile": 610,
+  "total": 930,
+  "comp": "높음",
+  "docs": 171262,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "중고식기세척기",
+  "pc": 40,
+  "mobile": 320,
+  "total": 360,
+  "comp": "높음",
+  "docs": 65811,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "자살보험금",
+  "pc": 120,
+  "mobile": 570,
+  "total": 690,
+  "comp": "높음",
+  "docs": 140348,
+  "ratio": 0.005
+ },
+ {
+  "keyword": "연금종류",
+  "pc": 300,
+  "mobile": 1730,
+  "total": 2030,
+  "comp": "높음",
+  "docs": 489049,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "종신보험이란",
+  "pc": 130,
+  "mobile": 1120,
+  "total": 1250,
+  "comp": "높음",
+  "docs": 325063,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "연금저축IRP",
+  "pc": 400,
+  "mobile": 850,
+  "total": 1250,
+  "comp": "높음",
+  "docs": 287971,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "종신연금보험",
+  "pc": 140,
+  "mobile": 550,
+  "total": 690,
+  "comp": "높음",
+  "docs": 170312,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "종신보험비교",
+  "pc": 120,
+  "mobile": 500,
+  "total": 620,
+  "comp": "높음",
+  "docs": 156425,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "사망정기보험",
+  "pc": 130,
+  "mobile": 470,
+  "total": 600,
+  "comp": "높음",
+  "docs": 140443,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "변액연금",
+  "pc": 160,
+  "mobile": 350,
+  "total": 510,
+  "comp": "높음",
+  "docs": 117984,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "퇴직연금수수료",
+  "pc": 230,
+  "mobile": 240,
+  "total": 470,
+  "comp": "높음",
+  "docs": 122459,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "퇴직연금종류",
+  "pc": 190,
+  "mobile": 260,
+  "total": 450,
+  "comp": "높음",
+  "docs": 126754,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "사적연금",
+  "pc": 100,
+  "mobile": 320,
+  "total": 420,
+  "comp": "높음",
+  "docs": 95886,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "확정급여형퇴직연금",
+  "pc": 150,
+  "mobile": 130,
+  "total": 280,
+  "comp": "높음",
+  "docs": 62287,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "폐업신고",
+  "pc": 860,
+  "mobile": 950,
+  "total": 1810,
+  "comp": "높음",
+  "docs": 406809,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "자영업자폐업",
+  "pc": 160,
+  "mobile": 950,
+  "total": 1110,
+  "comp": "높음",
+  "docs": 294663,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "공장화재보험",
+  "pc": 330,
+  "mobile": 260,
+  "total": 590,
+  "comp": "높음",
+  "docs": 139660,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "임대인화재보험",
+  "pc": 70,
+  "mobile": 150,
+  "total": 220,
+  "comp": "높음",
+  "docs": 61408,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "토지거래허가",
+  "pc": 1200,
+  "mobile": 1530,
+  "total": 2730,
+  "comp": "높음",
+  "docs": 660101,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "2주택양도세",
+  "pc": 430,
+  "mobile": 2100,
+  "total": 2530,
+  "comp": "높음",
+  "docs": 590928,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "양도소득세계산",
+  "pc": 660,
+  "mobile": 1050,
+  "total": 1710,
+  "comp": "높음",
+  "docs": 450545,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "상속세증여세",
+  "pc": 300,
+  "mobile": 1180,
+  "total": 1480,
+  "comp": "높음",
+  "docs": 352024,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "한정상속",
+  "pc": 190,
+  "mobile": 1290,
+  "total": 1480,
+  "comp": "높음",
+  "docs": 398516,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "취득세계산",
+  "pc": 520,
+  "mobile": 850,
+  "total": 1370,
+  "comp": "낮음",
+  "docs": 391415,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "유산상속",
+  "pc": 90,
+  "mobile": 1090,
+  "total": 1180,
+  "comp": "높음",
+  "docs": 303590,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "부동산양도세신고",
+  "pc": 340,
+  "mobile": 500,
+  "total": 840,
+  "comp": "높음",
+  "docs": 232922,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "상속포기서류",
+  "pc": 200,
+  "mobile": 620,
+  "total": 820,
+  "comp": "높음",
+  "docs": 216767,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "상속취득세",
+  "pc": 240,
+  "mobile": 560,
+  "total": 800,
+  "comp": "높음",
+  "docs": 184922,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "주식증여세",
+  "pc": 150,
+  "mobile": 600,
+  "total": 750,
+  "comp": "높음",
+  "docs": 193944,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "주택임대사업자양도세",
+  "pc": 200,
+  "mobile": 530,
+  "total": 730,
+  "comp": "높음",
+  "docs": 184468,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "빚상속포기",
+  "pc": 40,
+  "mobile": 540,
+  "total": 580,
+  "comp": "높음",
+  "docs": 133218,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "자녀증여세신고",
+  "pc": 310,
+  "mobile": 200,
+  "total": 510,
+  "comp": "높음",
+  "docs": 143252,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "상속세세무조사",
+  "pc": 80,
+  "mobile": 370,
+  "total": 450,
+  "comp": "높음",
+  "docs": 110820,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "현금상속세",
+  "pc": 50,
+  "mobile": 390,
+  "total": 440,
+  "comp": "높음",
+  "docs": 117841,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "조세심판",
+  "pc": 130,
+  "mobile": 310,
+  "total": 440,
+  "comp": "낮음",
+  "docs": 102324,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "현금증여계약서",
+  "pc": 190,
+  "mobile": 120,
+  "total": 310,
+  "comp": "높음",
+  "docs": 79167,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "상속취득세신고서류",
+  "pc": 70,
+  "mobile": 80,
+  "total": 150,
+  "comp": "높음",
+  "docs": 34409,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "인천상속포기",
+  "pc": 50,
+  "mobile": 100,
+  "total": 150,
+  "comp": "높음",
+  "docs": 36068,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "비상장주식",
+  "pc": 810,
+  "mobile": 1520,
+  "total": 2330,
+  "comp": "높음",
+  "docs": 604449,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "주식매도수수료",
+  "pc": 210,
+  "mobile": 1490,
+  "total": 1700,
+  "comp": "높음",
+  "docs": 391923,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "장외주식거래",
+  "pc": 240,
+  "mobile": 1240,
+  "total": 1480,
+  "comp": "높음",
+  "docs": 332509,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "상장폐지주식",
+  "pc": 120,
+  "mobile": 840,
+  "total": 960,
+  "comp": "높음",
+  "docs": 269619,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "주식입문",
+  "pc": 740,
+  "mobile": 100,
+  "total": 840,
+  "comp": "높음",
+  "docs": 217661,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "주식리딩방",
+  "pc": 150,
+  "mobile": 560,
+  "total": 710,
+  "comp": "중간",
+  "docs": 192217,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "외환시세",
+  "pc": 90,
+  "mobile": 340,
+  "total": 430,
+  "comp": "높음",
+  "docs": 104339,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "국세소멸",
+  "pc": 50,
+  "mobile": 330,
+  "total": 380,
+  "comp": "높음",
+  "docs": 97014,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "법인가지급금",
+  "pc": 190,
+  "mobile": 140,
+  "total": 330,
+  "comp": "높음",
+  "docs": 91449,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "세금소멸시효",
+  "pc": 60,
+  "mobile": 200,
+  "total": 260,
+  "comp": "높음",
+  "docs": 71877,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "지방세미납",
+  "pc": 90,
+  "mobile": 160,
+  "total": 250,
+  "comp": "높음",
+  "docs": 60569,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "세금포탈",
+  "pc": 60,
+  "mobile": 150,
+  "total": 210,
+  "comp": "높음",
+  "docs": 58972,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "노무법인",
+  "pc": 1040,
+  "mobile": 1560,
+  "total": 2600,
+  "comp": "높음",
+  "docs": 582521,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "종합소득세신고기간",
+  "pc": 410,
+  "mobile": 1100,
+  "total": 1510,
+  "comp": "높음",
+  "docs": 412079,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "퇴직급여계산",
+  "pc": 550,
+  "mobile": 520,
+  "total": 1070,
+  "comp": "낮음",
+  "docs": 273163,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "IRP퇴직연금계좌",
+  "pc": 180,
+  "mobile": 550,
+  "total": 730,
+  "comp": "높음",
+  "docs": 176292,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "세무조정계산서",
+  "pc": 530,
+  "mobile": 200,
+  "total": 730,
+  "comp": "높음",
+  "docs": 167844,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "연금계좌개설",
+  "pc": 110,
+  "mobile": 540,
+  "total": 650,
+  "comp": "높음",
+  "docs": 150254,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "개인IRP계좌",
+  "pc": 180,
+  "mobile": 450,
+  "total": 630,
+  "comp": "높음",
+  "docs": 178590,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "DC형퇴직연금",
+  "pc": 240,
+  "mobile": 190,
+  "total": 430,
+  "comp": "높음",
+  "docs": 99937,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "IRP계좌이전",
+  "pc": 90,
+  "mobile": 190,
+  "total": 280,
+  "comp": "중간",
+  "docs": 71514,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "한국투자증권IRP",
+  "pc": 90,
+  "mobile": 100,
+  "total": 190,
+  "comp": "높음",
+  "docs": 45729,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "건강보험료인상",
+  "pc": 480,
+  "mobile": 760,
+  "total": 1240,
+  "comp": "높음",
+  "docs": 341960,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "토지카페",
+  "pc": 120,
+  "mobile": 2710,
+  "total": 2830,
+  "comp": "높음",
+  "docs": 669811,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "양도세세율",
+  "pc": 340,
+  "mobile": 810,
+  "total": 1150,
+  "comp": "높음",
+  "docs": 275157,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "월세명도소송",
+  "pc": 60,
+  "mobile": 620,
+  "total": 680,
+  "comp": "높음",
+  "docs": 180419,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "단기임대사이트",
+  "pc": 130,
+  "mobile": 210,
+  "total": 340,
+  "comp": "높음",
+  "docs": 86668,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "허위세금계산서",
+  "pc": 40,
+  "mobile": 290,
+  "total": 330,
+  "comp": "높음",
+  "docs": 82845,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "양도세환급",
+  "pc": 50,
+  "mobile": 150,
+  "total": 200,
+  "comp": "높음",
+  "docs": 45945,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "서현역상가",
+  "pc": 30,
+  "mobile": 130,
+  "total": 160,
+  "comp": "높음",
+  "docs": 44127,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "충북혁신도시상가",
+  "pc": 50,
+  "mobile": 90,
+  "total": 140,
+  "comp": "높음",
+  "docs": 31314,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "상봉역상가",
+  "pc": 10,
+  "mobile": 100,
+  "total": 110,
+  "comp": "중간",
+  "docs": 29224,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "법인사업자등록증발급",
+  "pc": 1040,
+  "mobile": 580,
+  "total": 1620,
+  "comp": "높음",
+  "docs": 396525,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "사업자등록증주소변경",
+  "pc": 640,
+  "mobile": 330,
+  "total": 970,
+  "comp": "높음",
+  "docs": 231325,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "간이사업자등록",
+  "pc": 260,
+  "mobile": 510,
+  "total": 770,
+  "comp": "높음",
+  "docs": 209524,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "대부업사업자등록",
+  "pc": 120,
+  "mobile": 360,
+  "total": 480,
+  "comp": "높음",
+  "docs": 122310,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "SPC법인",
+  "pc": 100,
+  "mobile": 80,
+  "total": 180,
+  "comp": "높음",
+  "docs": 49977,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "비과세적금",
+  "pc": 140,
+  "mobile": 670,
+  "total": 810,
+  "comp": "높음",
+  "docs": 206726,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "국내고배당주",
+  "pc": 140,
+  "mobile": 390,
+  "total": 530,
+  "comp": "높음",
+  "docs": 146171,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "국세면책",
+  "pc": 40,
+  "mobile": 270,
+  "total": 310,
+  "comp": "높음",
+  "docs": 70883,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "연구인력개발비세액공제",
+  "pc": 120,
+  "mobile": 20,
+  "total": 140,
+  "comp": "높음",
+  "docs": 31301,
+  "ratio": 0.004
+ },
+ {
+  "keyword": "보험대리점",
+  "pc": 1090,
+  "mobile": 1650,
+  "total": 2740,
+  "comp": "높음",
+  "docs": 936715,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "사망보험금",
+  "pc": 310,
+  "mobile": 2270,
+  "total": 2580,
+  "comp": "높음",
+  "docs": 952907,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "연금계좌",
+  "pc": 480,
+  "mobile": 1900,
+  "total": 2380,
+  "comp": "높음",
+  "docs": 858208,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "퇴직연금계좌",
+  "pc": 300,
+  "mobile": 680,
+  "total": 980,
+  "comp": "높음",
+  "docs": 318909,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "개인연금수령",
+  "pc": 160,
+  "mobile": 820,
+  "total": 980,
+  "comp": "높음",
+  "docs": 364704,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "개인연금수령액",
+  "pc": 160,
+  "mobile": 650,
+  "total": 810,
+  "comp": "높음",
+  "docs": 235272,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "연금적금",
+  "pc": 110,
+  "mobile": 570,
+  "total": 680,
+  "comp": "높음",
+  "docs": 239262,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "보장성보험",
+  "pc": 150,
+  "mobile": 490,
+  "total": 640,
+  "comp": "높음",
+  "docs": 237457,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "연금보험종류",
+  "pc": 90,
+  "mobile": 530,
+  "total": 620,
+  "comp": "높음",
+  "docs": 225115,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "IRP이전",
+  "pc": 90,
+  "mobile": 200,
+  "total": 290,
+  "comp": "높음",
+  "docs": 89229,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "변액종신보험",
+  "pc": 30,
+  "mobile": 220,
+  "total": 250,
+  "comp": "높음",
+  "docs": 71595,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "외국계보험회사",
+  "pc": 30,
+  "mobile": 210,
+  "total": 240,
+  "comp": "높음",
+  "docs": 83369,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "IRP수수료비교",
+  "pc": 40,
+  "mobile": 90,
+  "total": 130,
+  "comp": "높음",
+  "docs": 43793,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "종신보험비과세",
+  "pc": 30,
+  "mobile": 90,
+  "total": 120,
+  "comp": "높음",
+  "docs": 40778,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "즉시연금비과세",
+  "pc": 10,
+  "mobile": 90,
+  "total": 100,
+  "comp": "높음",
+  "docs": 31966,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "회사단체상해보험",
+  "pc": 50,
+  "mobile": 50,
+  "total": 100,
+  "comp": "높음",
+  "docs": 32748,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "마을금고보험",
+  "pc": 10,
+  "mobile": 90,
+  "total": 100,
+  "comp": "높음",
+  "docs": 32078,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "누수보험",
+  "pc": 600,
+  "mobile": 1570,
+  "total": 2170,
+  "comp": "높음",
+  "docs": 820188,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "건물화재보험",
+  "pc": 260,
+  "mobile": 370,
+  "total": 630,
+  "comp": "높음",
+  "docs": 184722,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "자영업자폐업지원금",
+  "pc": 90,
+  "mobile": 430,
+  "total": 520,
+  "comp": "높음",
+  "docs": 152452,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "부동산취득세",
+  "pc": 950,
+  "mobile": 1760,
+  "total": 2710,
+  "comp": "높음",
+  "docs": 949397,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "자녀증여",
+  "pc": 350,
+  "mobile": 1150,
+  "total": 1500,
+  "comp": "높음",
+  "docs": 516798,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "법정상속인",
+  "pc": 210,
+  "mobile": 980,
+  "total": 1190,
+  "comp": "높음",
+  "docs": 352200,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "한정승인절차",
+  "pc": 220,
+  "mobile": 950,
+  "total": 1170,
+  "comp": "높음",
+  "docs": 347070,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "세무조사대상",
+  "pc": 210,
+  "mobile": 840,
+  "total": 1050,
+  "comp": "높음",
+  "docs": 405970,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "재산상속포기",
+  "pc": 110,
+  "mobile": 860,
+  "total": 970,
+  "comp": "높음",
+  "docs": 374171,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "상속등기기간",
+  "pc": 250,
+  "mobile": 700,
+  "total": 950,
+  "comp": "높음",
+  "docs": 280513,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "상속지분",
+  "pc": 80,
+  "mobile": 830,
+  "total": 910,
+  "comp": "높음",
+  "docs": 334034,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "현금증여",
+  "pc": 90,
+  "mobile": 730,
+  "total": 820,
+  "comp": "높음",
+  "docs": 292394,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "상속등기서류",
+  "pc": 200,
+  "mobile": 600,
+  "total": 800,
+  "comp": "높음",
+  "docs": 265593,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "빚상속",
+  "pc": 30,
+  "mobile": 760,
+  "total": 790,
+  "comp": "높음",
+  "docs": 238000,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "사망후상속기간",
+  "pc": 100,
+  "mobile": 650,
+  "total": 750,
+  "comp": "높음",
+  "docs": 233108,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "유언상속",
+  "pc": 30,
+  "mobile": 720,
+  "total": 750,
+  "comp": "높음",
+  "docs": 276194,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "상속포기기간",
+  "pc": 140,
+  "mobile": 590,
+  "total": 730,
+  "comp": "높음",
+  "docs": 244766,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "자녀가부모에게증여",
+  "pc": 140,
+  "mobile": 590,
+  "total": 730,
+  "comp": "높음",
+  "docs": 270247,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "상속포기비용",
+  "pc": 80,
+  "mobile": 540,
+  "total": 620,
+  "comp": "높음",
+  "docs": 188486,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "한정승인비용",
+  "pc": 120,
+  "mobile": 470,
+  "total": 590,
+  "comp": "높음",
+  "docs": 235310,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "증여취득세",
+  "pc": 250,
+  "mobile": 330,
+  "total": 580,
+  "comp": "높음",
+  "docs": 210288,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "토지상속절차",
+  "pc": 110,
+  "mobile": 340,
+  "total": 450,
+  "comp": "높음",
+  "docs": 156038,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "상속재산파산",
+  "pc": 190,
+  "mobile": 240,
+  "total": 430,
+  "comp": "높음",
+  "docs": 145461,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "배우자상속세",
+  "pc": 50,
+  "mobile": 380,
+  "total": 430,
+  "comp": "높음",
+  "docs": 137695,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "대전상속",
+  "pc": 5,
+  "mobile": 340,
+  "total": 345,
+  "comp": "높음",
+  "docs": 123263,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "토지상속세",
+  "pc": 60,
+  "mobile": 260,
+  "total": 320,
+  "comp": "높음",
+  "docs": 99761,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "상속포기신고서류",
+  "pc": 70,
+  "mobile": 180,
+  "total": 250,
+  "comp": "높음",
+  "docs": 95397,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "양도세신고서류",
+  "pc": 70,
+  "mobile": 160,
+  "total": 230,
+  "comp": "높음",
+  "docs": 72313,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "상속포기법무사비용",
+  "pc": 50,
+  "mobile": 180,
+  "total": 230,
+  "comp": "높음",
+  "docs": 75199,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "주식증여계약서",
+  "pc": 180,
+  "mobile": 50,
+  "total": 230,
+  "comp": "높음",
+  "docs": 77662,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "주택연금상속",
+  "pc": 20,
+  "mobile": 210,
+  "total": 230,
+  "comp": "높음",
+  "docs": 80782,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "양도세필요경비",
+  "pc": 70,
+  "mobile": 130,
+  "total": 200,
+  "comp": "높음",
+  "docs": 79192,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "부산상속법무사",
+  "pc": 110,
+  "mobile": 90,
+  "total": 200,
+  "comp": "중간",
+  "docs": 61598,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "가업승계증여세",
+  "pc": 50,
+  "mobile": 110,
+  "total": 160,
+  "comp": "높음",
+  "docs": 50186,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "부산상속전문법무사",
+  "pc": 60,
+  "mobile": 90,
+  "total": 150,
+  "comp": "중간",
+  "docs": 47819,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "상속전담센터",
+  "pc": 80,
+  "mobile": 60,
+  "total": 140,
+  "comp": "낮음",
+  "docs": 55813,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "차등배당",
+  "pc": 90,
+  "mobile": 50,
+  "total": 140,
+  "comp": "높음",
+  "docs": 49522,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "유류분소멸시효",
+  "pc": 60,
+  "mobile": 70,
+  "total": 130,
+  "comp": "높음",
+  "docs": 38880,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "한정승인청산절차",
+  "pc": 40,
+  "mobile": 80,
+  "total": 120,
+  "comp": "높음",
+  "docs": 38614,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "상속포기위임장",
+  "pc": 60,
+  "mobile": 50,
+  "total": 110,
+  "comp": "높음",
+  "docs": 35303,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "조세",
+  "pc": 590,
+  "mobile": 2320,
+  "total": 2910,
+  "comp": "높음",
+  "docs": 1160121,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "주식거래수수료",
+  "pc": 310,
+  "mobile": 1780,
+  "total": 2090,
+  "comp": "높음",
+  "docs": 799723,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "미국주식시세",
+  "pc": 10,
+  "mobile": 1180,
+  "total": 1190,
+  "comp": "높음",
+  "docs": 447711,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "주식소각",
+  "pc": 200,
+  "mobile": 580,
+  "total": 780,
+  "comp": "중간",
+  "docs": 307347,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "주식차트연구소",
+  "pc": 130,
+  "mobile": 220,
+  "total": 350,
+  "comp": "중간",
+  "docs": 112587,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "파동시세",
+  "pc": 10,
+  "mobile": 150,
+  "total": 160,
+  "comp": "높음",
+  "docs": 55182,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "부가세미납",
+  "pc": 20,
+  "mobile": 110,
+  "total": 130,
+  "comp": "높음",
+  "docs": 50529,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "비상장주식사는법",
+  "pc": 30,
+  "mobile": 90,
+  "total": 120,
+  "comp": "높음",
+  "docs": 37911,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "비영리법인",
+  "pc": 760,
+  "mobile": 700,
+  "total": 1460,
+  "comp": "높음",
+  "docs": 504433,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "세무기장",
+  "pc": 630,
+  "mobile": 710,
+  "total": 1340,
+  "comp": "높음",
+  "docs": 525068,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "세탁기이전설치",
+  "pc": 140,
+  "mobile": 610,
+  "total": 750,
+  "comp": "높음",
+  "docs": 289226,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "연금계좌세액공제",
+  "pc": 230,
+  "mobile": 510,
+  "total": 740,
+  "comp": "높음",
+  "docs": 232435,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "사단법인설립",
+  "pc": 290,
+  "mobile": 450,
+  "total": 740,
+  "comp": "높음",
+  "docs": 211581,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "연금저축연말정산",
+  "pc": 190,
+  "mobile": 420,
+  "total": 610,
+  "comp": "높음",
+  "docs": 179260,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "연말정산연금저축",
+  "pc": 180,
+  "mobile": 410,
+  "total": 590,
+  "comp": "높음",
+  "docs": 179266,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "건설양도양수",
+  "pc": 120,
+  "mobile": 370,
+  "total": 490,
+  "comp": "높음",
+  "docs": 162237,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "법인해산",
+  "pc": 120,
+  "mobile": 320,
+  "total": 440,
+  "comp": "높음",
+  "docs": 160833,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "IRPISA",
+  "pc": 130,
+  "mobile": 290,
+  "total": 420,
+  "comp": "높음",
+  "docs": 162546,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "법인세신고기간",
+  "pc": 190,
+  "mobile": 230,
+  "total": 420,
+  "comp": "중간",
+  "docs": 162976,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "IRP연말정산",
+  "pc": 110,
+  "mobile": 240,
+  "total": 350,
+  "comp": "높음",
+  "docs": 108494,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "법인세과세표준",
+  "pc": 240,
+  "mobile": 110,
+  "total": 350,
+  "comp": "높음",
+  "docs": 106681,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "법인사업자등록증주소변경",
+  "pc": 240,
+  "mobile": 100,
+  "total": 340,
+  "comp": "높음",
+  "docs": 105643,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "한국투자증권퇴직연금",
+  "pc": 150,
+  "mobile": 110,
+  "total": 260,
+  "comp": "높음",
+  "docs": 81244,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "원천세계산",
+  "pc": 140,
+  "mobile": 20,
+  "total": 160,
+  "comp": "높음",
+  "docs": 60651,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "법인세수정신고",
+  "pc": 110,
+  "mobile": 20,
+  "total": 130,
+  "comp": "높음",
+  "docs": 41757,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "거래명세서프로그램",
+  "pc": 70,
+  "mobile": 50,
+  "total": 120,
+  "comp": "높음",
+  "docs": 35607,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "노인장기요양보험제도",
+  "pc": 180,
+  "mobile": 330,
+  "total": 510,
+  "comp": "높음",
+  "docs": 166201,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "다이렉트건강보험",
+  "pc": 140,
+  "mobile": 360,
+  "total": 500,
+  "comp": "높음",
+  "docs": 144015,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "요실금보험",
+  "pc": 5,
+  "mobile": 110,
+  "total": 115,
+  "comp": "높음",
+  "docs": 38893,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "보험분석어플",
+  "pc": 30,
+  "mobile": 70,
+  "total": 100,
+  "comp": "높음",
+  "docs": 38618,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "양도양수",
+  "pc": 1080,
+  "mobile": 1480,
+  "total": 2560,
+  "comp": "높음",
+  "docs": 816203,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "평택토지",
+  "pc": 140,
+  "mobile": 1110,
+  "total": 1250,
+  "comp": "높음",
+  "docs": 412930,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "재산세감면",
+  "pc": 140,
+  "mobile": 440,
+  "total": 580,
+  "comp": "높음",
+  "docs": 202296,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "상가임대사이트",
+  "pc": 320,
+  "mobile": 240,
+  "total": 560,
+  "comp": "높음",
+  "docs": 198789,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "부동산임대업",
+  "pc": 170,
+  "mobile": 370,
+  "total": 540,
+  "comp": "높음",
+  "docs": 205927,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "원룸단기임대",
+  "pc": 130,
+  "mobile": 390,
+  "total": 520,
+  "comp": "높음",
+  "docs": 188407,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "오산세교지구",
+  "pc": 70,
+  "mobile": 190,
+  "total": 260,
+  "comp": "높음",
+  "docs": 83660,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "망원동상가",
+  "pc": 60,
+  "mobile": 150,
+  "total": 210,
+  "comp": "높음",
+  "docs": 71502,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "무보증금월세",
+  "pc": 20,
+  "mobile": 170,
+  "total": 190,
+  "comp": "높음",
+  "docs": 57159,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "범계역상가",
+  "pc": 30,
+  "mobile": 160,
+  "total": 190,
+  "comp": "높음",
+  "docs": 58457,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "발산역상가",
+  "pc": 40,
+  "mobile": 120,
+  "total": 160,
+  "comp": "높음",
+  "docs": 60256,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "전기면허양도양수",
+  "pc": 90,
+  "mobile": 20,
+  "total": 110,
+  "comp": "높음",
+  "docs": 37507,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "대구폐업철거",
+  "pc": 90,
+  "mobile": 80,
+  "total": 170,
+  "comp": "높음",
+  "docs": 48619,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "중고업소용식기세척기",
+  "pc": 10,
+  "mobile": 100,
+  "total": 110,
+  "comp": "높음",
+  "docs": 37619,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "근로소득세계산",
+  "pc": 870,
+  "mobile": 230,
+  "total": 1100,
+  "comp": "낮음",
+  "docs": 323338,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "보험고지의무",
+  "pc": 210,
+  "mobile": 790,
+  "total": 1000,
+  "comp": "높음",
+  "docs": 291276,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "QQQ배당",
+  "pc": 80,
+  "mobile": 180,
+  "total": 260,
+  "comp": "높음",
+  "docs": 76395,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "KODEX고배당",
+  "pc": 60,
+  "mobile": 70,
+  "total": 130,
+  "comp": "중간",
+  "docs": 47592,
+  "ratio": 0.003
+ },
+ {
+  "keyword": "보험비교사이트",
+  "pc": 890,
+  "mobile": 1410,
+  "total": 2300,
+  "comp": "높음",
+  "docs": 1282691,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "보험증권",
+  "pc": 800,
+  "mobile": 1230,
+  "total": 2030,
+  "comp": "높음",
+  "docs": 1320399,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "달러보험",
+  "pc": 430,
+  "mobile": 1380,
+  "total": 1810,
+  "comp": "높음",
+  "docs": 832035,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "당뇨보험",
+  "pc": 160,
+  "mobile": 950,
+  "total": 1110,
+  "comp": "높음",
+  "docs": 507210,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "내연금알아보기",
+  "pc": 380,
+  "mobile": 590,
+  "total": 970,
+  "comp": "높음",
+  "docs": 437009,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "외국인건강보험",
+  "pc": 150,
+  "mobile": 520,
+  "total": 670,
+  "comp": "높음",
+  "docs": 324434,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "생명보험금액",
+  "pc": 70,
+  "mobile": 570,
+  "total": 640,
+  "comp": "높음",
+  "docs": 388275,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "보험적금",
+  "pc": 90,
+  "mobile": 520,
+  "total": 610,
+  "comp": "높음",
+  "docs": 382129,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "IRP연금저축",
+  "pc": 160,
+  "mobile": 440,
+  "total": 600,
+  "comp": "높음",
+  "docs": 287966,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "연금보험소득공제",
+  "pc": 90,
+  "mobile": 480,
+  "total": 570,
+  "comp": "높음",
+  "docs": 325386,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "종신연금",
+  "pc": 70,
+  "mobile": 350,
+  "total": 420,
+  "comp": "높음",
+  "docs": 192675,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "개인연금IRP",
+  "pc": 130,
+  "mobile": 290,
+  "total": 420,
+  "comp": "높음",
+  "docs": 223333,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "연금보험수령액",
+  "pc": 70,
+  "mobile": 340,
+  "total": 410,
+  "comp": "높음",
+  "docs": 262969,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "만기환급형보험",
+  "pc": 70,
+  "mobile": 270,
+  "total": 340,
+  "comp": "높음",
+  "docs": 199846,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "자녀연금저축",
+  "pc": 60,
+  "mobile": 230,
+  "total": 290,
+  "comp": "높음",
+  "docs": 158359,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "증권사연금저축",
+  "pc": 60,
+  "mobile": 230,
+  "total": 290,
+  "comp": "높음",
+  "docs": 170187,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "은행개인연금저축",
+  "pc": 50,
+  "mobile": 210,
+  "total": 260,
+  "comp": "높음",
+  "docs": 147700,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "연금저축이전",
+  "pc": 70,
+  "mobile": 180,
+  "total": 250,
+  "comp": "높음",
+  "docs": 160130,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "연금보험비과세",
+  "pc": 70,
+  "mobile": 170,
+  "total": 240,
+  "comp": "높음",
+  "docs": 159022,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "개인사업자연금저축",
+  "pc": 30,
+  "mobile": 200,
+  "total": 230,
+  "comp": "중간",
+  "docs": 131937,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "우리은행연금저축",
+  "pc": 80,
+  "mobile": 130,
+  "total": 210,
+  "comp": "높음",
+  "docs": 113360,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "연금저축종류",
+  "pc": 60,
+  "mobile": 130,
+  "total": 190,
+  "comp": "높음",
+  "docs": 112153,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "IRP수수료",
+  "pc": 60,
+  "mobile": 130,
+  "total": 190,
+  "comp": "높음",
+  "docs": 83229,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "기업은행연금저축",
+  "pc": 50,
+  "mobile": 130,
+  "total": 180,
+  "comp": "높음",
+  "docs": 100100,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "개인형퇴직연금",
+  "pc": 60,
+  "mobile": 110,
+  "total": 170,
+  "comp": "높음",
+  "docs": 106986,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "종신형연금보험",
+  "pc": 30,
+  "mobile": 130,
+  "total": 160,
+  "comp": "높음",
+  "docs": 87963,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "노년연금",
+  "pc": 20,
+  "mobile": 140,
+  "total": 160,
+  "comp": "중간",
+  "docs": 82410,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "일시납보험",
+  "pc": 20,
+  "mobile": 80,
+  "total": 100,
+  "comp": "높음",
+  "docs": 41921,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "화재보험비교",
+  "pc": 230,
+  "mobile": 420,
+  "total": 650,
+  "comp": "높음",
+  "docs": 424138,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "보험부업",
+  "pc": 60,
+  "mobile": 290,
+  "total": 350,
+  "comp": "높음",
+  "docs": 166206,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "부동산양도세",
+  "pc": 360,
+  "mobile": 980,
+  "total": 1340,
+  "comp": "높음",
+  "docs": 828991,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "부동산양도소득세",
+  "pc": 380,
+  "mobile": 900,
+  "total": 1280,
+  "comp": "높음",
+  "docs": 806713,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "상속등기",
+  "pc": 390,
+  "mobile": 770,
+  "total": 1160,
+  "comp": "높음",
+  "docs": 588938,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "상속증여세",
+  "pc": 90,
+  "mobile": 1020,
+  "total": 1110,
+  "comp": "높음",
+  "docs": 462957,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "상속비율",
+  "pc": 70,
+  "mobile": 940,
+  "total": 1010,
+  "comp": "높음",
+  "docs": 406718,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "개인사업자법인전환",
+  "pc": 380,
+  "mobile": 460,
+  "total": 840,
+  "comp": "높음",
+  "docs": 426774,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "배우자증여",
+  "pc": 110,
+  "mobile": 720,
+  "total": 830,
+  "comp": "높음",
+  "docs": 370922,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "토지상속",
+  "pc": 30,
+  "mobile": 760,
+  "total": 790,
+  "comp": "높음",
+  "docs": 426443,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "부모재산상속",
+  "pc": 10,
+  "mobile": 770,
+  "total": 780,
+  "comp": "높음",
+  "docs": 485766,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "상속공제",
+  "pc": 220,
+  "mobile": 540,
+  "total": 760,
+  "comp": "높음",
+  "docs": 431548,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "주식증여",
+  "pc": 190,
+  "mobile": 520,
+  "total": 710,
+  "comp": "높음",
+  "docs": 390360,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "부동산상속서류",
+  "pc": 70,
+  "mobile": 620,
+  "total": 690,
+  "comp": "높음",
+  "docs": 350921,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "상속포기절차",
+  "pc": 120,
+  "mobile": 560,
+  "total": 680,
+  "comp": "높음",
+  "docs": 317840,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "사전증여",
+  "pc": 110,
+  "mobile": 540,
+  "total": 650,
+  "comp": "높음",
+  "docs": 292914,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "증여신고방법",
+  "pc": 300,
+  "mobile": 310,
+  "total": 610,
+  "comp": "높음",
+  "docs": 324169,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "상속증여세법",
+  "pc": 200,
+  "mobile": 410,
+  "total": 610,
+  "comp": "높음",
+  "docs": 285116,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "증여재산공제",
+  "pc": 250,
+  "mobile": 330,
+  "total": 580,
+  "comp": "높음",
+  "docs": 265691,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "한정상속포기",
+  "pc": 40,
+  "mobile": 530,
+  "total": 570,
+  "comp": "높음",
+  "docs": 242851,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "한정승인서류",
+  "pc": 110,
+  "mobile": 450,
+  "total": 560,
+  "comp": "높음",
+  "docs": 239983,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "법인양도양수",
+  "pc": 110,
+  "mobile": 440,
+  "total": 550,
+  "comp": "높음",
+  "docs": 223737,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "증여세공제",
+  "pc": 140,
+  "mobile": 350,
+  "total": 490,
+  "comp": "높음",
+  "docs": 274085,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "부동산증여계약서",
+  "pc": 240,
+  "mobile": 250,
+  "total": 490,
+  "comp": "높음",
+  "docs": 227804,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "토지양도소득세",
+  "pc": 130,
+  "mobile": 350,
+  "total": 480,
+  "comp": "높음",
+  "docs": 290048,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "주택증여세",
+  "pc": 70,
+  "mobile": 400,
+  "total": 470,
+  "comp": "높음",
+  "docs": 235874,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "상속재산분할협의",
+  "pc": 70,
+  "mobile": 380,
+  "total": 450,
+  "comp": "높음",
+  "docs": 235426,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "상속등기비용",
+  "pc": 80,
+  "mobile": 370,
+  "total": 450,
+  "comp": "높음",
+  "docs": 225276,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "자기주식취득",
+  "pc": 180,
+  "mobile": 270,
+  "total": 450,
+  "comp": "높음",
+  "docs": 216761,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "토지보상절차",
+  "pc": 70,
+  "mobile": 360,
+  "total": 430,
+  "comp": "중간",
+  "docs": 249733,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "취득세세율",
+  "pc": 190,
+  "mobile": 220,
+  "total": 410,
+  "comp": "높음",
+  "docs": 247062,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "비상장주식평가",
+  "pc": 290,
+  "mobile": 110,
+  "total": 400,
+  "comp": "높음",
+  "docs": 188365,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "자녀상속세",
+  "pc": 50,
+  "mobile": 350,
+  "total": 400,
+  "comp": "높음",
+  "docs": 186791,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "상속감정평가",
+  "pc": 50,
+  "mobile": 350,
+  "total": 400,
+  "comp": "높음",
+  "docs": 233657,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "유류분상속",
+  "pc": 50,
+  "mobile": 320,
+  "total": 370,
+  "comp": "높음",
+  "docs": 239609,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "상속전문로펌",
+  "pc": 10,
+  "mobile": 350,
+  "total": 360,
+  "comp": "높음",
+  "docs": 146511,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "세무조사대응",
+  "pc": 70,
+  "mobile": 290,
+  "total": 360,
+  "comp": "높음",
+  "docs": 229753,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "증여세세무조사",
+  "pc": 30,
+  "mobile": 310,
+  "total": 340,
+  "comp": "높음",
+  "docs": 139992,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "증여세신고서",
+  "pc": 180,
+  "mobile": 140,
+  "total": 320,
+  "comp": "높음",
+  "docs": 196439,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "양도소득세기본세율",
+  "pc": 120,
+  "mobile": 200,
+  "total": 320,
+  "comp": "높음",
+  "docs": 197669,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "양도세계산법",
+  "pc": 60,
+  "mobile": 240,
+  "total": 300,
+  "comp": "높음",
+  "docs": 176616,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "주택상속세",
+  "pc": 40,
+  "mobile": 230,
+  "total": 270,
+  "comp": "높음",
+  "docs": 172256,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "조세소송",
+  "pc": 30,
+  "mobile": 230,
+  "total": 260,
+  "comp": "높음",
+  "docs": 152596,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "상속세계산법",
+  "pc": 40,
+  "mobile": 200,
+  "total": 240,
+  "comp": "높음",
+  "docs": 146674,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "양도소득세필요경비",
+  "pc": 100,
+  "mobile": 120,
+  "total": 220,
+  "comp": "높음",
+  "docs": 125565,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "상속세납부방법",
+  "pc": 50,
+  "mobile": 140,
+  "total": 190,
+  "comp": "높음",
+  "docs": 120798,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "세종시국가산업단지",
+  "pc": 30,
+  "mobile": 160,
+  "total": 190,
+  "comp": "낮음",
+  "docs": 76996,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "상속권",
+  "pc": 30,
+  "mobile": 140,
+  "total": 170,
+  "comp": "높음",
+  "docs": 112293,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "양도소득세신고수수료",
+  "pc": 70,
+  "mobile": 80,
+  "total": 150,
+  "comp": "높음",
+  "docs": 79256,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "유산상속포기",
+  "pc": 60,
+  "mobile": 80,
+  "total": 140,
+  "comp": "높음",
+  "docs": 72266,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "특별한정승인비용",
+  "pc": 30,
+  "mobile": 110,
+  "total": 140,
+  "comp": "높음",
+  "docs": 73368,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "상속세감정평가",
+  "pc": 50,
+  "mobile": 60,
+  "total": 110,
+  "comp": "높음",
+  "docs": 66328,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "상속한정승인공고",
+  "pc": 50,
+  "mobile": 50,
+  "total": 100,
+  "comp": "높음",
+  "docs": 50805,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "주식차트",
+  "pc": 900,
+  "mobile": 1980,
+  "total": 2880,
+  "comp": "높음",
+  "docs": 1690568,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "해외주식시간",
+  "pc": 160,
+  "mobile": 2340,
+  "total": 2500,
+  "comp": "중간",
+  "docs": 1293271,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "주식용어",
+  "pc": 270,
+  "mobile": 930,
+  "total": 1200,
+  "comp": "높음",
+  "docs": 722712,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "해외주식수수료",
+  "pc": 170,
+  "mobile": 830,
+  "total": 1000,
+  "comp": "높음",
+  "docs": 425789,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "신규상장주식",
+  "pc": 90,
+  "mobile": 890,
+  "total": 980,
+  "comp": "높음",
+  "docs": 638615,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "미국주식수수료",
+  "pc": 170,
+  "mobile": 720,
+  "total": 890,
+  "comp": "높음",
+  "docs": 490385,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "주식매매수수료",
+  "pc": 160,
+  "mobile": 700,
+  "total": 860,
+  "comp": "높음",
+  "docs": 400891,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "주식매매일지",
+  "pc": 420,
+  "mobile": 370,
+  "total": 790,
+  "comp": "높음",
+  "docs": 470944,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "주식트레이더",
+  "pc": 170,
+  "mobile": 560,
+  "total": 730,
+  "comp": "높음",
+  "docs": 321554,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "환율추세",
+  "pc": 250,
+  "mobile": 450,
+  "total": 700,
+  "comp": "높음",
+  "docs": 429880,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "주식장외거래",
+  "pc": 110,
+  "mobile": 460,
+  "total": 570,
+  "comp": "높음",
+  "docs": 332514,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "해외주식시세",
+  "pc": 10,
+  "mobile": 520,
+  "total": 530,
+  "comp": "높음",
+  "docs": 250610,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "개인사업자부가세신고",
+  "pc": 140,
+  "mobile": 320,
+  "total": 460,
+  "comp": "높음",
+  "docs": 236586,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "중국주식사는법",
+  "pc": 70,
+  "mobile": 370,
+  "total": 440,
+  "comp": "높음",
+  "docs": 204674,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "요즘뜨는주식",
+  "pc": 30,
+  "mobile": 380,
+  "total": 410,
+  "comp": "높음",
+  "docs": 242069,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "근로소득세세율",
+  "pc": 180,
+  "mobile": 140,
+  "total": 320,
+  "comp": "높음",
+  "docs": 176727,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "주식투자로100억만들기",
+  "pc": 70,
+  "mobile": 180,
+  "total": 250,
+  "comp": "높음",
+  "docs": 136112,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "정기세무조사",
+  "pc": 100,
+  "mobile": 80,
+  "total": 180,
+  "comp": "높음",
+  "docs": 91019,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "장외주식거래방법",
+  "pc": 30,
+  "mobile": 140,
+  "total": 170,
+  "comp": "높음",
+  "docs": 112968,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "국세분할납부",
+  "pc": 40,
+  "mobile": 130,
+  "total": 170,
+  "comp": "높음",
+  "docs": 78149,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "국세미납",
+  "pc": 50,
+  "mobile": 100,
+  "total": 150,
+  "comp": "높음",
+  "docs": 97337,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "부가세체납",
+  "pc": 20,
+  "mobile": 100,
+  "total": 120,
+  "comp": "높음",
+  "docs": 52828,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "세액공제",
+  "pc": 690,
+  "mobile": 1440,
+  "total": 2130,
+  "comp": "높음",
+  "docs": 1372660,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "소득세계산",
+  "pc": 1520,
+  "mobile": 510,
+  "total": 2030,
+  "comp": "낮음",
+  "docs": 1094187,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "법인설립비용",
+  "pc": 500,
+  "mobile": 640,
+  "total": 1140,
+  "comp": "높음",
+  "docs": 578341,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "절세계좌",
+  "pc": 210,
+  "mobile": 710,
+  "total": 920,
+  "comp": "높음",
+  "docs": 451322,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "법인정관",
+  "pc": 560,
+  "mobile": 270,
+  "total": 830,
+  "comp": "높음",
+  "docs": 338369,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "법인청산",
+  "pc": 160,
+  "mobile": 460,
+  "total": 620,
+  "comp": "높음",
+  "docs": 324453,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "연금저축소득공제",
+  "pc": 190,
+  "mobile": 420,
+  "total": 610,
+  "comp": "높음",
+  "docs": 291350,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "온라인법인설립",
+  "pc": 440,
+  "mobile": 110,
+  "total": 550,
+  "comp": "높음",
+  "docs": 278785,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "개인연금세액공제",
+  "pc": 110,
+  "mobile": 360,
+  "total": 470,
+  "comp": "높음",
+  "docs": 243997,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "영리법인",
+  "pc": 280,
+  "mobile": 180,
+  "total": 460,
+  "comp": "중간",
+  "docs": 219548,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "퇴직연금계산",
+  "pc": 190,
+  "mobile": 260,
+  "total": 450,
+  "comp": "낮음",
+  "docs": 269785,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "개인연금저축소득공제",
+  "pc": 190,
+  "mobile": 260,
+  "total": 450,
+  "comp": "높음",
+  "docs": 180010,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "개인IRP",
+  "pc": 130,
+  "mobile": 310,
+  "total": 440,
+  "comp": "높음",
+  "docs": 235188,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "법인폐업신고",
+  "pc": 160,
+  "mobile": 180,
+  "total": 340,
+  "comp": "높음",
+  "docs": 139399,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "퇴직연금연말정산",
+  "pc": 110,
+  "mobile": 200,
+  "total": 310,
+  "comp": "높음",
+  "docs": 126147,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "연말정산IRP",
+  "pc": 100,
+  "mobile": 150,
+  "total": 250,
+  "comp": "중간",
+  "docs": 108494,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "연금저축계좌이전",
+  "pc": 50,
+  "mobile": 100,
+  "total": 150,
+  "comp": "높음",
+  "docs": 90217,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "연금이전이벤트",
+  "pc": 30,
+  "mobile": 70,
+  "total": 100,
+  "comp": "높음",
+  "docs": 42681,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "건강보험납부",
+  "pc": 1140,
+  "mobile": 770,
+  "total": 1910,
+  "comp": "높음",
+  "docs": 773906,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "연금소득세",
+  "pc": 320,
+  "mobile": 890,
+  "total": 1210,
+  "comp": "높음",
+  "docs": 536072,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "내실비보험확인",
+  "pc": 130,
+  "mobile": 550,
+  "total": 680,
+  "comp": "높음",
+  "docs": 297149,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "신생아보험",
+  "pc": 130,
+  "mobile": 400,
+  "total": 530,
+  "comp": "높음",
+  "docs": 230170,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "의료실비보험비교사이트",
+  "pc": 80,
+  "mobile": 350,
+  "total": 430,
+  "comp": "높음",
+  "docs": 186202,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "통풍보험",
+  "pc": 70,
+  "mobile": 310,
+  "total": 380,
+  "comp": "높음",
+  "docs": 171802,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "오피스텔월세",
+  "pc": 550,
+  "mobile": 2180,
+  "total": 2730,
+  "comp": "높음",
+  "docs": 1451905,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "세금환급",
+  "pc": 340,
+  "mobile": 1590,
+  "total": 1930,
+  "comp": "높음",
+  "docs": 1022781,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "단기임대주택",
+  "pc": 190,
+  "mobile": 770,
+  "total": 960,
+  "comp": "높음",
+  "docs": 387262,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "부동산권리보험",
+  "pc": 100,
+  "mobile": 730,
+  "total": 830,
+  "comp": "높음",
+  "docs": 450644,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "토지양도세",
+  "pc": 160,
+  "mobile": 490,
+  "total": 650,
+  "comp": "높음",
+  "docs": 265686,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "주택보유세",
+  "pc": 130,
+  "mobile": 420,
+  "total": 550,
+  "comp": "높음",
+  "docs": 304518,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "전세보증금소송",
+  "pc": 5,
+  "mobile": 540,
+  "total": 545,
+  "comp": "높음",
+  "docs": 341681,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "재산세과세기준일",
+  "pc": 190,
+  "mobile": 140,
+  "total": 330,
+  "comp": "중간",
+  "docs": 187972,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "용인토지매매",
+  "pc": 60,
+  "mobile": 260,
+  "total": 320,
+  "comp": "높음",
+  "docs": 206098,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "상가매매사이트",
+  "pc": 120,
+  "mobile": 190,
+  "total": 310,
+  "comp": "높음",
+  "docs": 167733,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "매매사업자양도세",
+  "pc": 90,
+  "mobile": 220,
+  "total": 310,
+  "comp": "높음",
+  "docs": 162417,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "마곡역상가",
+  "pc": 50,
+  "mobile": 250,
+  "total": 300,
+  "comp": "높음",
+  "docs": 132966,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "임대형기숙사",
+  "pc": 120,
+  "mobile": 120,
+  "total": 240,
+  "comp": "높음",
+  "docs": 132933,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "동두천상가",
+  "pc": 40,
+  "mobile": 200,
+  "total": 240,
+  "comp": "높음",
+  "docs": 118197,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "양도세면제",
+  "pc": 30,
+  "mobile": 200,
+  "total": 230,
+  "comp": "높음",
+  "docs": 129309,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "당진토지",
+  "pc": 40,
+  "mobile": 160,
+  "total": 200,
+  "comp": "높음",
+  "docs": 108707,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "연남동상가",
+  "pc": 40,
+  "mobile": 130,
+  "total": 170,
+  "comp": "높음",
+  "docs": 75280,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "양도소득세환급",
+  "pc": 50,
+  "mobile": 110,
+  "total": 160,
+  "comp": "높음",
+  "docs": 87419,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "홍대상가임대",
+  "pc": 50,
+  "mobile": 80,
+  "total": 130,
+  "comp": "높음",
+  "docs": 69139,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "수유역상가",
+  "pc": 10,
+  "mobile": 90,
+  "total": 100,
+  "comp": "높음",
+  "docs": 48925,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "사업자등록증명",
+  "pc": 2350,
+  "mobile": 440,
+  "total": 2790,
+  "comp": "중간",
+  "docs": 1692856,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "개인사업자등록증발급",
+  "pc": 560,
+  "mobile": 620,
+  "total": 1180,
+  "comp": "중간",
+  "docs": 535946,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "사업장주소변경",
+  "pc": 380,
+  "mobile": 530,
+  "total": 910,
+  "comp": "높음",
+  "docs": 465038,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "개인사업자주소변경",
+  "pc": 320,
+  "mobile": 410,
+  "total": 730,
+  "comp": "높음",
+  "docs": 312079,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "스마트스토어사업자등록",
+  "pc": 120,
+  "mobile": 150,
+  "total": 270,
+  "comp": "높음",
+  "docs": 172392,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "자영업폐업",
+  "pc": 80,
+  "mobile": 180,
+  "total": 260,
+  "comp": "높음",
+  "docs": 138935,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "주식실시간",
+  "pc": 210,
+  "mobile": 1800,
+  "total": 2010,
+  "comp": "높음",
+  "docs": 1061971,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "미국배당주",
+  "pc": 450,
+  "mobile": 1250,
+  "total": 1700,
+  "comp": "중간",
+  "docs": 1054054,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "노후자격증",
+  "pc": 260,
+  "mobile": 590,
+  "total": 850,
+  "comp": "높음",
+  "docs": 491010,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "고배당주식",
+  "pc": 90,
+  "mobile": 510,
+  "total": 600,
+  "comp": "높음",
+  "docs": 292254,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "주식차트사이트",
+  "pc": 100,
+  "mobile": 40,
+  "total": 140,
+  "comp": "높음",
+  "docs": 86352,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "건물청소용역",
+  "pc": 50,
+  "mobile": 80,
+  "total": 130,
+  "comp": "높음",
+  "docs": 79982,
+  "ratio": 0.002
+ },
+ {
+  "keyword": "노후준비",
+  "pc": 1020,
+  "mobile": 1490,
+  "total": 2510,
+  "comp": "높음",
+  "docs": 3048679,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "노후생활비",
+  "pc": 380,
+  "mobile": 1170,
+  "total": 1550,
+  "comp": "높음",
+  "docs": 1188723,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "저축보험",
+  "pc": 340,
+  "mobile": 1140,
+  "total": 1480,
+  "comp": "높음",
+  "docs": 1034441,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "노후자금",
+  "pc": 270,
+  "mobile": 940,
+  "total": 1210,
+  "comp": "높음",
+  "docs": 887693,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "노후연금",
+  "pc": 210,
+  "mobile": 800,
+  "total": 1010,
+  "comp": "높음",
+  "docs": 988846,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "정기보험",
+  "pc": 570,
+  "mobile": 390,
+  "total": 960,
+  "comp": "높음",
+  "docs": 1845392,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "단체보험",
+  "pc": 550,
+  "mobile": 380,
+  "total": 930,
+  "comp": "높음",
+  "docs": 1171818,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "보험중개사",
+  "pc": 290,
+  "mobile": 470,
+  "total": 760,
+  "comp": "높음",
+  "docs": 621957,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "개인연금보험",
+  "pc": 290,
+  "mobile": 430,
+  "total": 720,
+  "comp": "높음",
+  "docs": 718933,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "연금계산",
+  "pc": 120,
+  "mobile": 430,
+  "total": 550,
+  "comp": "높음",
+  "docs": 836808,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "한의원보험",
+  "pc": 60,
+  "mobile": 390,
+  "total": 450,
+  "comp": "높음",
+  "docs": 746211,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "개인퇴직연금",
+  "pc": 150,
+  "mobile": 270,
+  "total": 420,
+  "comp": "높음",
+  "docs": 525220,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "50대노후준비",
+  "pc": 150,
+  "mobile": 270,
+  "total": 420,
+  "comp": "높음",
+  "docs": 369742,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "보험어플",
+  "pc": 70,
+  "mobile": 330,
+  "total": 400,
+  "comp": "높음",
+  "docs": 367585,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "개인연금계좌",
+  "pc": 100,
+  "mobile": 300,
+  "total": 400,
+  "comp": "높음",
+  "docs": 445222,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "질병사망보험금",
+  "pc": 60,
+  "mobile": 330,
+  "total": 390,
+  "comp": "높음",
+  "docs": 311471,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "연금보험연금저축",
+  "pc": 80,
+  "mobile": 290,
+  "total": 370,
+  "comp": "높음",
+  "docs": 423491,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "3대질병보험",
+  "pc": 80,
+  "mobile": 270,
+  "total": 350,
+  "comp": "높음",
+  "docs": 568431,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "비과세저축",
+  "pc": 70,
+  "mobile": 270,
+  "total": 340,
+  "comp": "높음",
+  "docs": 317868,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "재산종합보험",
+  "pc": 230,
+  "mobile": 90,
+  "total": 320,
+  "comp": "높음",
+  "docs": 390074,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "연금소득공제",
+  "pc": 100,
+  "mobile": 200,
+  "total": 300,
+  "comp": "높음",
+  "docs": 569946,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "개인연금종류",
+  "pc": 90,
+  "mobile": 200,
+  "total": 290,
+  "comp": "높음",
+  "docs": 228721,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "부모님사망보험",
+  "pc": 20,
+  "mobile": 270,
+  "total": 290,
+  "comp": "높음",
+  "docs": 211023,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "적금보험",
+  "pc": 50,
+  "mobile": 240,
+  "total": 290,
+  "comp": "높음",
+  "docs": 382129,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "40대노후준비",
+  "pc": 70,
+  "mobile": 220,
+  "total": 290,
+  "comp": "높음",
+  "docs": 328862,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "질병사망보험",
+  "pc": 30,
+  "mobile": 240,
+  "total": 270,
+  "comp": "높음",
+  "docs": 454403,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "여성질환보험",
+  "pc": 50,
+  "mobile": 220,
+  "total": 270,
+  "comp": "높음",
+  "docs": 422440,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "은퇴자금",
+  "pc": 50,
+  "mobile": 210,
+  "total": 260,
+  "comp": "높음",
+  "docs": 491181,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "퇴직연금운용",
+  "pc": 100,
+  "mobile": 150,
+  "total": 250,
+  "comp": "높음",
+  "docs": 252587,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "생명보험가격",
+  "pc": 20,
+  "mobile": 210,
+  "total": 230,
+  "comp": "높음",
+  "docs": 323456,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "비과세연금",
+  "pc": 70,
+  "mobile": 160,
+  "total": 230,
+  "comp": "높음",
+  "docs": 286491,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "비과세연금저축",
+  "pc": 60,
+  "mobile": 170,
+  "total": 230,
+  "comp": "높음",
+  "docs": 170872,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "퇴직연금수익률",
+  "pc": 80,
+  "mobile": 140,
+  "total": 220,
+  "comp": "높음",
+  "docs": 252719,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "일반사망보험금",
+  "pc": 20,
+  "mobile": 190,
+  "total": 210,
+  "comp": "높음",
+  "docs": 371409,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "소득공제연금저축",
+  "pc": 60,
+  "mobile": 150,
+  "total": 210,
+  "comp": "높음",
+  "docs": 291342,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "즉시연금보험",
+  "pc": 50,
+  "mobile": 150,
+  "total": 200,
+  "comp": "높음",
+  "docs": 139759,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "질병후유장해보험",
+  "pc": 30,
+  "mobile": 170,
+  "total": 200,
+  "comp": "높음",
+  "docs": 178812,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "퇴직연금IRP계좌",
+  "pc": 90,
+  "mobile": 110,
+  "total": 200,
+  "comp": "높음",
+  "docs": 176293,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "상해사망보험금",
+  "pc": 40,
+  "mobile": 140,
+  "total": 180,
+  "comp": "높음",
+  "docs": 341896,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "세액공제연금저축",
+  "pc": 40,
+  "mobile": 140,
+  "total": 180,
+  "comp": "높음",
+  "docs": 262404,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "연금저축보험비교",
+  "pc": 50,
+  "mobile": 120,
+  "total": 170,
+  "comp": "높음",
+  "docs": 156829,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "3대질병진단비보험",
+  "pc": 80,
+  "mobile": 90,
+  "total": 170,
+  "comp": "높음",
+  "docs": 130227,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "퇴직연금포트폴리오",
+  "pc": 60,
+  "mobile": 110,
+  "total": 170,
+  "comp": "높음",
+  "docs": 126315,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "퇴직연금저축",
+  "pc": 50,
+  "mobile": 110,
+  "total": 160,
+  "comp": "높음",
+  "docs": 306851,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "홈쇼핑보험",
+  "pc": 30,
+  "mobile": 120,
+  "total": 150,
+  "comp": "높음",
+  "docs": 146695,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "적금형보험",
+  "pc": 10,
+  "mobile": 110,
+  "total": 120,
+  "comp": "높음",
+  "docs": 117116,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "연금수령액계산",
+  "pc": 20,
+  "mobile": 100,
+  "total": 120,
+  "comp": "낮음",
+  "docs": 221153,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "파킨슨보험",
+  "pc": 20,
+  "mobile": 90,
+  "total": 110,
+  "comp": "높음",
+  "docs": 108050,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "정기사망보험",
+  "pc": 20,
+  "mobile": 80,
+  "total": 100,
+  "comp": "높음",
+  "docs": 140442,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "장애인전용보험",
+  "pc": 30,
+  "mobile": 70,
+  "total": 100,
+  "comp": "높음",
+  "docs": 78562,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "재해사망보험금",
+  "pc": 30,
+  "mobile": 70,
+  "total": 100,
+  "comp": "높음",
+  "docs": 192076,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "연금저축보험이전",
+  "pc": 30,
+  "mobile": 70,
+  "total": 100,
+  "comp": "높음",
+  "docs": 85798,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "배상책임보험",
+  "pc": 630,
+  "mobile": 1070,
+  "total": 1700,
+  "comp": "높음",
+  "docs": 1344304,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "보험신문",
+  "pc": 320,
+  "mobile": 220,
+  "total": 540,
+  "comp": "높음",
+  "docs": 777566,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "보험료환급",
+  "pc": 90,
+  "mobile": 420,
+  "total": 510,
+  "comp": "높음",
+  "docs": 809990,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "개인사업자정부지원금",
+  "pc": 110,
+  "mobile": 400,
+  "total": 510,
+  "comp": "높음",
+  "docs": 831122,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "법인차량보험",
+  "pc": 280,
+  "mobile": 190,
+  "total": 470,
+  "comp": "높음",
+  "docs": 749279,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "전세보증금보험",
+  "pc": 130,
+  "mobile": 310,
+  "total": 440,
+  "comp": "높음",
+  "docs": 493116,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "화재배상책임보험",
+  "pc": 100,
+  "mobile": 250,
+  "total": 350,
+  "comp": "높음",
+  "docs": 241711,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "소상공인폐업",
+  "pc": 110,
+  "mobile": 230,
+  "total": 340,
+  "comp": "높음",
+  "docs": 452559,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "소상공인폐업지원",
+  "pc": 100,
+  "mobile": 220,
+  "total": 320,
+  "comp": "높음",
+  "docs": 320337,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "법인보험대리점",
+  "pc": 40,
+  "mobile": 100,
+  "total": 140,
+  "comp": "높음",
+  "docs": 241797,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "세일즈마케팅",
+  "pc": 50,
+  "mobile": 60,
+  "total": 110,
+  "comp": "높음",
+  "docs": 199362,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "보험디비",
+  "pc": 50,
+  "mobile": 50,
+  "total": 100,
+  "comp": "높음",
+  "docs": 74327,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "세무법인",
+  "pc": 730,
+  "mobile": 1070,
+  "total": 1800,
+  "comp": "높음",
+  "docs": 1719523,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "세법",
+  "pc": 670,
+  "mobile": 730,
+  "total": 1400,
+  "comp": "높음",
+  "docs": 1232133,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "상속절차",
+  "pc": 170,
+  "mobile": 1200,
+  "total": 1370,
+  "comp": "높음",
+  "docs": 1208854,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "상속인",
+  "pc": 330,
+  "mobile": 1040,
+  "total": 1370,
+  "comp": "높음",
+  "docs": 2093138,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "상속법",
+  "pc": 210,
+  "mobile": 1130,
+  "total": 1340,
+  "comp": "높음",
+  "docs": 1957299,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "상속증여",
+  "pc": 170,
+  "mobile": 1080,
+  "total": 1250,
+  "comp": "높음",
+  "docs": 1068699,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "감정평가법인",
+  "pc": 500,
+  "mobile": 710,
+  "total": 1210,
+  "comp": "높음",
+  "docs": 1007253,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "재산상속",
+  "pc": 80,
+  "mobile": 1110,
+  "total": 1190,
+  "comp": "높음",
+  "docs": 1612513,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "상속재산",
+  "pc": 110,
+  "mobile": 960,
+  "total": 1070,
+  "comp": "높음",
+  "docs": 1612557,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "증여상속",
+  "pc": 180,
+  "mobile": 820,
+  "total": 1000,
+  "comp": "높음",
+  "docs": 1068686,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "배우자상속",
+  "pc": 50,
+  "mobile": 900,
+  "total": 950,
+  "comp": "높음",
+  "docs": 655962,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "상속분쟁",
+  "pc": 230,
+  "mobile": 710,
+  "total": 940,
+  "comp": "높음",
+  "docs": 667538,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "상속기간",
+  "pc": 50,
+  "mobile": 860,
+  "total": 910,
+  "comp": "높음",
+  "docs": 1137896,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "상속소송",
+  "pc": 60,
+  "mobile": 820,
+  "total": 880,
+  "comp": "높음",
+  "docs": 912259,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "부동산상속",
+  "pc": 50,
+  "mobile": 750,
+  "total": 800,
+  "comp": "높음",
+  "docs": 1296392,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "주식양도",
+  "pc": 130,
+  "mobile": 640,
+  "total": 770,
+  "comp": "높음",
+  "docs": 732407,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "상속분할",
+  "pc": 20,
+  "mobile": 740,
+  "total": 760,
+  "comp": "높음",
+  "docs": 644391,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "상속법률상담",
+  "pc": 70,
+  "mobile": 680,
+  "total": 750,
+  "comp": "높음",
+  "docs": 860556,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "부동산증여",
+  "pc": 110,
+  "mobile": 610,
+  "total": 720,
+  "comp": "높음",
+  "docs": 937276,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "채무상속",
+  "pc": 20,
+  "mobile": 690,
+  "total": 710,
+  "comp": "높음",
+  "docs": 568023,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "부동산세무상담",
+  "pc": 170,
+  "mobile": 460,
+  "total": 630,
+  "comp": "높음",
+  "docs": 795426,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "부동산상속절차",
+  "pc": 60,
+  "mobile": 570,
+  "total": 630,
+  "comp": "높음",
+  "docs": 538469,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "주택양도세",
+  "pc": 170,
+  "mobile": 440,
+  "total": 610,
+  "comp": "높음",
+  "docs": 734098,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "상속서류",
+  "pc": 80,
+  "mobile": 510,
+  "total": 590,
+  "comp": "높음",
+  "docs": 778091,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "상속재산분할소송",
+  "pc": 90,
+  "mobile": 420,
+  "total": 510,
+  "comp": "높음",
+  "docs": 353514,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "증여세상속세",
+  "pc": 110,
+  "mobile": 370,
+  "total": 480,
+  "comp": "높음",
+  "docs": 352004,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "부동산상속세",
+  "pc": 80,
+  "mobile": 370,
+  "total": 450,
+  "comp": "높음",
+  "docs": 313209,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "재산상속절차",
+  "pc": 100,
+  "mobile": 350,
+  "total": 450,
+  "comp": "높음",
+  "docs": 806897,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "한정승인기간",
+  "pc": 110,
+  "mobile": 320,
+  "total": 430,
+  "comp": "높음",
+  "docs": 296701,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "상속주택주택수",
+  "pc": 100,
+  "mobile": 300,
+  "total": 400,
+  "comp": "높음",
+  "docs": 545319,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "상속법무사",
+  "pc": 130,
+  "mobile": 260,
+  "total": 390,
+  "comp": "높음",
+  "docs": 764534,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "증여세절세",
+  "pc": 50,
+  "mobile": 340,
+  "total": 390,
+  "comp": "높음",
+  "docs": 270960,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "양도소득세비과세",
+  "pc": 130,
+  "mobile": 260,
+  "total": 390,
+  "comp": "높음",
+  "docs": 351411,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "사망후상속",
+  "pc": 10,
+  "mobile": 360,
+  "total": 370,
+  "comp": "높음",
+  "docs": 461656,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "상속세법",
+  "pc": 190,
+  "mobile": 160,
+  "total": 350,
+  "comp": "높음",
+  "docs": 365230,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "상속채무",
+  "pc": 10,
+  "mobile": 340,
+  "total": 350,
+  "comp": "높음",
+  "docs": 568037,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "한정승인상속",
+  "pc": 20,
+  "mobile": 300,
+  "total": 320,
+  "comp": "높음",
+  "docs": 295388,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "법인세무조사",
+  "pc": 40,
+  "mobile": 280,
+  "total": 320,
+  "comp": "높음",
+  "docs": 438931,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "부동산양도소득세신고",
+  "pc": 170,
+  "mobile": 130,
+  "total": 300,
+  "comp": "높음",
+  "docs": 304827,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "2주택자양도세",
+  "pc": 80,
+  "mobile": 210,
+  "total": 290,
+  "comp": "높음",
+  "docs": 534806,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "상속세절세",
+  "pc": 60,
+  "mobile": 220,
+  "total": 280,
+  "comp": "높음",
+  "docs": 215785,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "상속전문법무사",
+  "pc": 60,
+  "mobile": 220,
+  "total": 280,
+  "comp": "높음",
+  "docs": 558834,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "상가양도세",
+  "pc": 70,
+  "mobile": 210,
+  "total": 280,
+  "comp": "높음",
+  "docs": 189669,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "부동산증여서류",
+  "pc": 60,
+  "mobile": 210,
+  "total": 270,
+  "comp": "높음",
+  "docs": 213419,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "부동산세법",
+  "pc": 100,
+  "mobile": 170,
+  "total": 270,
+  "comp": "높음",
+  "docs": 525548,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "증여세상담",
+  "pc": 90,
+  "mobile": 170,
+  "total": 260,
+  "comp": "높음",
+  "docs": 316772,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "증여세무상담",
+  "pc": 60,
+  "mobile": 190,
+  "total": 250,
+  "comp": "높음",
+  "docs": 386962,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "상속법무사비용",
+  "pc": 40,
+  "mobile": 200,
+  "total": 240,
+  "comp": "높음",
+  "docs": 274731,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "한정승인법무사",
+  "pc": 60,
+  "mobile": 180,
+  "total": 240,
+  "comp": "높음",
+  "docs": 171074,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "배우자증여세",
+  "pc": 40,
+  "mobile": 200,
+  "total": 240,
+  "comp": "높음",
+  "docs": 160383,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "상속세세금",
+  "pc": 30,
+  "mobile": 190,
+  "total": 220,
+  "comp": "높음",
+  "docs": 435166,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "양도소득세기본공제",
+  "pc": 80,
+  "mobile": 140,
+  "total": 220,
+  "comp": "높음",
+  "docs": 222215,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "주식증여신고",
+  "pc": 110,
+  "mobile": 110,
+  "total": 220,
+  "comp": "높음",
+  "docs": 166563,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "한정상속승인",
+  "pc": 60,
+  "mobile": 150,
+  "total": 210,
+  "comp": "높음",
+  "docs": 295388,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "종합부동산세과세대상",
+  "pc": 100,
+  "mobile": 90,
+  "total": 190,
+  "comp": "높음",
+  "docs": 162871,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "상속포기법무사",
+  "pc": 40,
+  "mobile": 140,
+  "total": 180,
+  "comp": "높음",
+  "docs": 209233,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "양도세절세",
+  "pc": 10,
+  "mobile": 170,
+  "total": 180,
+  "comp": "높음",
+  "docs": 247968,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "토지증여",
+  "pc": 60,
+  "mobile": 110,
+  "total": 170,
+  "comp": "높음",
+  "docs": 301378,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "상속세상담",
+  "pc": 60,
+  "mobile": 100,
+  "total": 160,
+  "comp": "높음",
+  "docs": 297936,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "국제조세",
+  "pc": 50,
+  "mobile": 110,
+  "total": 160,
+  "comp": "높음",
+  "docs": 163323,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "증여세비과세",
+  "pc": 60,
+  "mobile": 100,
+  "total": 160,
+  "comp": "높음",
+  "docs": 135399,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "상속재산분할합의서",
+  "pc": 80,
+  "mobile": 80,
+  "total": 160,
+  "comp": "높음",
+  "docs": 116478,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "토지감정평가비용",
+  "pc": 50,
+  "mobile": 110,
+  "total": 160,
+  "comp": "높음",
+  "docs": 270246,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "상속포기방법",
+  "pc": 50,
+  "mobile": 100,
+  "total": 150,
+  "comp": "높음",
+  "docs": 281987,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "상속한정승인비용",
+  "pc": 30,
+  "mobile": 110,
+  "total": 140,
+  "comp": "높음",
+  "docs": 115474,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "형제간상속",
+  "pc": 20,
+  "mobile": 120,
+  "total": 140,
+  "comp": "높음",
+  "docs": 208391,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "상속세납부",
+  "pc": 80,
+  "mobile": 60,
+  "total": 140,
+  "comp": "높음",
+  "docs": 220561,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "상속공증",
+  "pc": 30,
+  "mobile": 100,
+  "total": 130,
+  "comp": "높음",
+  "docs": 88952,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "상속세계산방법",
+  "pc": 40,
+  "mobile": 80,
+  "total": 120,
+  "comp": "높음",
+  "docs": 125615,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "상속등기시필요서류",
+  "pc": 40,
+  "mobile": 80,
+  "total": 120,
+  "comp": "높음",
+  "docs": 174920,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "증여공제한도",
+  "pc": 40,
+  "mobile": 80,
+  "total": 120,
+  "comp": "높음",
+  "docs": 163457,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "상속포기범위",
+  "pc": 20,
+  "mobile": 100,
+  "total": 120,
+  "comp": "높음",
+  "docs": 148770,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "증여신고서류",
+  "pc": 40,
+  "mobile": 80,
+  "total": 120,
+  "comp": "높음",
+  "docs": 185511,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "주식증여세신고",
+  "pc": 60,
+  "mobile": 60,
+  "total": 120,
+  "comp": "높음",
+  "docs": 109873,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "상속동의서",
+  "pc": 60,
+  "mobile": 50,
+  "total": 110,
+  "comp": "높음",
+  "docs": 159821,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "법인개인사업자",
+  "pc": 420,
+  "mobile": 2310,
+  "total": 2730,
+  "comp": "높음",
+  "docs": 2525960,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "개인사업자세금",
+  "pc": 490,
+  "mobile": 1960,
+  "total": 2450,
+  "comp": "높음",
+  "docs": 1753903,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "주식수수료",
+  "pc": 370,
+  "mobile": 1740,
+  "total": 2110,
+  "comp": "높음",
+  "docs": 1428561,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "주식상한가",
+  "pc": 190,
+  "mobile": 920,
+  "total": 1110,
+  "comp": "높음",
+  "docs": 765801,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "주식방송",
+  "pc": 640,
+  "mobile": 150,
+  "total": 790,
+  "comp": "높음",
+  "docs": 926572,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "장외주식",
+  "pc": 200,
+  "mobile": 460,
+  "total": 660,
+  "comp": "높음",
+  "docs": 502385,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "주식초보",
+  "pc": 160,
+  "mobile": 450,
+  "total": 610,
+  "comp": "높음",
+  "docs": 1170492,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "주식사이트",
+  "pc": 280,
+  "mobile": 290,
+  "total": 570,
+  "comp": "높음",
+  "docs": 950974,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "비상장주식거래",
+  "pc": 210,
+  "mobile": 310,
+  "total": 520,
+  "comp": "높음",
+  "docs": 372196,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "주식그래프",
+  "pc": 110,
+  "mobile": 400,
+  "total": 510,
+  "comp": "높음",
+  "docs": 341475,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "주식학원",
+  "pc": 60,
+  "mobile": 410,
+  "total": 470,
+  "comp": "높음",
+  "docs": 412686,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "주식강의",
+  "pc": 160,
+  "mobile": 300,
+  "total": 460,
+  "comp": "높음",
+  "docs": 769699,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "미국주식사는법",
+  "pc": 100,
+  "mobile": 350,
+  "total": 450,
+  "comp": "높음",
+  "docs": 498836,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "주식검색기",
+  "pc": 90,
+  "mobile": 340,
+  "total": 430,
+  "comp": "높음",
+  "docs": 420671,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "주식스터디",
+  "pc": 80,
+  "mobile": 180,
+  "total": 260,
+  "comp": "높음",
+  "docs": 319850,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "보험압류",
+  "pc": 20,
+  "mobile": 230,
+  "total": 250,
+  "comp": "높음",
+  "docs": 485743,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "유망주식",
+  "pc": 40,
+  "mobile": 170,
+  "total": 210,
+  "comp": "높음",
+  "docs": 385993,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "철도주식",
+  "pc": 20,
+  "mobile": 180,
+  "total": 200,
+  "comp": "높음",
+  "docs": 260116,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "세금면책",
+  "pc": 90,
+  "mobile": 100,
+  "total": 190,
+  "comp": "높음",
+  "docs": 257004,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "장외주식시세",
+  "pc": 30,
+  "mobile": 150,
+  "total": 180,
+  "comp": "높음",
+  "docs": 179040,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "해외주식사는법",
+  "pc": 30,
+  "mobile": 150,
+  "total": 180,
+  "comp": "중간",
+  "docs": 291983,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "주식모의투자",
+  "pc": 50,
+  "mobile": 110,
+  "total": 160,
+  "comp": "높음",
+  "docs": 121870,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "비상장주식거래방법",
+  "pc": 70,
+  "mobile": 90,
+  "total": 160,
+  "comp": "높음",
+  "docs": 143967,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "주식계좌이벤트",
+  "pc": 10,
+  "mobile": 130,
+  "total": 140,
+  "comp": "높음",
+  "docs": 234196,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "주식보조지표",
+  "pc": 40,
+  "mobile": 90,
+  "total": 130,
+  "comp": "높음",
+  "docs": 188089,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "세금체납압류",
+  "pc": 20,
+  "mobile": 90,
+  "total": 110,
+  "comp": "높음",
+  "docs": 174603,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "드론관련주식",
+  "pc": 20,
+  "mobile": 90,
+  "total": 110,
+  "comp": "높음",
+  "docs": 116645,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "법인설립",
+  "pc": 1240,
+  "mobile": 920,
+  "total": 2160,
+  "comp": "높음",
+  "docs": 2155209,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "법인등기",
+  "pc": 1300,
+  "mobile": 300,
+  "total": 1600,
+  "comp": "높음",
+  "docs": 1931087,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "법인사업자조건",
+  "pc": 160,
+  "mobile": 570,
+  "total": 730,
+  "comp": "높음",
+  "docs": 1415603,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "2차전지주식",
+  "pc": 100,
+  "mobile": 590,
+  "total": 690,
+  "comp": "높음",
+  "docs": 768862,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "법인대표자변경",
+  "pc": 250,
+  "mobile": 370,
+  "total": 620,
+  "comp": "높음",
+  "docs": 885988,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "세무대리인",
+  "pc": 250,
+  "mobile": 360,
+  "total": 610,
+  "comp": "높음",
+  "docs": 451689,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "농업법인",
+  "pc": 200,
+  "mobile": 410,
+  "total": 610,
+  "comp": "높음",
+  "docs": 603811,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "법인주소변경",
+  "pc": 340,
+  "mobile": 260,
+  "total": 600,
+  "comp": "높음",
+  "docs": 548947,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "연말정산세액공제",
+  "pc": 180,
+  "mobile": 360,
+  "total": 540,
+  "comp": "높음",
+  "docs": 399632,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "연금세액공제",
+  "pc": 140,
+  "mobile": 310,
+  "total": 450,
+  "comp": "높음",
+  "docs": 402989,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "법인설립서류",
+  "pc": 210,
+  "mobile": 190,
+  "total": 400,
+  "comp": "높음",
+  "docs": 517628,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "법인설립요건",
+  "pc": 100,
+  "mobile": 220,
+  "total": 320,
+  "comp": "높음",
+  "docs": 338324,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "법인세신고",
+  "pc": 190,
+  "mobile": 120,
+  "total": 310,
+  "comp": "높음",
+  "docs": 348702,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "법인설립컨설팅",
+  "pc": 10,
+  "mobile": 250,
+  "total": 260,
+  "comp": "높음",
+  "docs": 401981,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "퇴직연금소득공제",
+  "pc": 70,
+  "mobile": 180,
+  "total": 250,
+  "comp": "높음",
+  "docs": 225863,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "퇴직IRP",
+  "pc": 70,
+  "mobile": 170,
+  "total": 240,
+  "comp": "높음",
+  "docs": 250194,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "법인세계산",
+  "pc": 170,
+  "mobile": 70,
+  "total": 240,
+  "comp": "높음",
+  "docs": 289734,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "개정세법",
+  "pc": 200,
+  "mobile": 30,
+  "total": 230,
+  "comp": "높음",
+  "docs": 361511,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "법인설립등기",
+  "pc": 180,
+  "mobile": 40,
+  "total": 220,
+  "comp": "높음",
+  "docs": 369697,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "물류창고임대",
+  "pc": 100,
+  "mobile": 120,
+  "total": 220,
+  "comp": "높음",
+  "docs": 320648,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "급여지급명세서",
+  "pc": 130,
+  "mobile": 90,
+  "total": 220,
+  "comp": "높음",
+  "docs": 227338,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "법인설립자본금",
+  "pc": 80,
+  "mobile": 140,
+  "total": 220,
+  "comp": "높음",
+  "docs": 304854,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "비영리법인설립",
+  "pc": 130,
+  "mobile": 90,
+  "total": 220,
+  "comp": "높음",
+  "docs": 246839,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "개인연금연말정산",
+  "pc": 50,
+  "mobile": 160,
+  "total": 210,
+  "comp": "높음",
+  "docs": 162966,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "1인법인설립절차",
+  "pc": 70,
+  "mobile": 120,
+  "total": 190,
+  "comp": "높음",
+  "docs": 356071,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "부가가치세신고방법",
+  "pc": 80,
+  "mobile": 110,
+  "total": 190,
+  "comp": "높음",
+  "docs": 310610,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "1인법인설립비용",
+  "pc": 70,
+  "mobile": 120,
+  "total": 190,
+  "comp": "높음",
+  "docs": 322966,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "세무조정료",
+  "pc": 70,
+  "mobile": 100,
+  "total": 170,
+  "comp": "높음",
+  "docs": 187976,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "비과세통장",
+  "pc": 40,
+  "mobile": 130,
+  "total": 170,
+  "comp": "높음",
+  "docs": 216832,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "개인연금저축세액공제",
+  "pc": 50,
+  "mobile": 110,
+  "total": 160,
+  "comp": "높음",
+  "docs": 164821,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "IRP개인연금",
+  "pc": 30,
+  "mobile": 120,
+  "total": 150,
+  "comp": "높음",
+  "docs": 223334,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "법인부가세신고",
+  "pc": 100,
+  "mobile": 50,
+  "total": 150,
+  "comp": "높음",
+  "docs": 261317,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "개인퇴직연금IRP",
+  "pc": 40,
+  "mobile": 100,
+  "total": 140,
+  "comp": "높음",
+  "docs": 156084,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "가족법인설립",
+  "pc": 60,
+  "mobile": 80,
+  "total": 140,
+  "comp": "높음",
+  "docs": 262359,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "법인주소이전등기",
+  "pc": 90,
+  "mobile": 50,
+  "total": 140,
+  "comp": "높음",
+  "docs": 274188,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "연말정산소득공제연금저축",
+  "pc": 40,
+  "mobile": 100,
+  "total": 140,
+  "comp": "높음",
+  "docs": 142522,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "법인기장료",
+  "pc": 70,
+  "mobile": 70,
+  "total": 140,
+  "comp": "높음",
+  "docs": 142245,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "법인자본금증자",
+  "pc": 80,
+  "mobile": 50,
+  "total": 130,
+  "comp": "높음",
+  "docs": 91361,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "인터넷법인설립",
+  "pc": 110,
+  "mobile": 20,
+  "total": 130,
+  "comp": "높음",
+  "docs": 233991,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "연말정산개인연금",
+  "pc": 30,
+  "mobile": 90,
+  "total": 120,
+  "comp": "높음",
+  "docs": 162965,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "개인연금저축계좌",
+  "pc": 30,
+  "mobile": 90,
+  "total": 120,
+  "comp": "높음",
+  "docs": 230352,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "법인세환급",
+  "pc": 90,
+  "mobile": 30,
+  "total": 120,
+  "comp": "높음",
+  "docs": 101911,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "증권사IRP",
+  "pc": 30,
+  "mobile": 70,
+  "total": 100,
+  "comp": "높음",
+  "docs": 99756,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "퇴직금수령IRP",
+  "pc": 40,
+  "mobile": 60,
+  "total": 100,
+  "comp": "높음",
+  "docs": 93996,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "비상주사무실사업자등록",
+  "pc": 70,
+  "mobile": 30,
+  "total": 100,
+  "comp": "높음",
+  "docs": 139225,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "사회복지법인설립",
+  "pc": 40,
+  "mobile": 60,
+  "total": 100,
+  "comp": "높음",
+  "docs": 178028,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "건강종합보험",
+  "pc": 210,
+  "mobile": 850,
+  "total": 1060,
+  "comp": "높음",
+  "docs": 1203655,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "청년보험",
+  "pc": 320,
+  "mobile": 690,
+  "total": 1010,
+  "comp": "높음",
+  "docs": 757647,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "보험사종류",
+  "pc": 160,
+  "mobile": 660,
+  "total": 820,
+  "comp": "높음",
+  "docs": 1382508,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "연금수령",
+  "pc": 70,
+  "mobile": 520,
+  "total": 590,
+  "comp": "높음",
+  "docs": 744848,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "고혈압보험",
+  "pc": 80,
+  "mobile": 400,
+  "total": 480,
+  "comp": "높음",
+  "docs": 366020,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "노후연금상품",
+  "pc": 90,
+  "mobile": 310,
+  "total": 400,
+  "comp": "높음",
+  "docs": 355329,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "교정보험",
+  "pc": 70,
+  "mobile": 320,
+  "total": 390,
+  "comp": "높음",
+  "docs": 612613,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "혈관보험",
+  "pc": 50,
+  "mobile": 330,
+  "total": 380,
+  "comp": "높음",
+  "docs": 727193,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "실버보험",
+  "pc": 60,
+  "mobile": 160,
+  "total": 220,
+  "comp": "높음",
+  "docs": 296764,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "3대진단비보험",
+  "pc": 100,
+  "mobile": 110,
+  "total": 210,
+  "comp": "높음",
+  "docs": 172018,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "실비보험갱신",
+  "pc": 40,
+  "mobile": 150,
+  "total": 190,
+  "comp": "높음",
+  "docs": 240355,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "갑상선보험",
+  "pc": 20,
+  "mobile": 170,
+  "total": 190,
+  "comp": "높음",
+  "docs": 226156,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "상해보험실비보험",
+  "pc": 20,
+  "mobile": 170,
+  "total": 190,
+  "comp": "높음",
+  "docs": 206206,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "실비보험비갱신형",
+  "pc": 30,
+  "mobile": 150,
+  "total": 180,
+  "comp": "높음",
+  "docs": 122886,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "롯데생명보험",
+  "pc": 50,
+  "mobile": 110,
+  "total": 160,
+  "comp": "높음",
+  "docs": 107844,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "고혈압당뇨보험",
+  "pc": 30,
+  "mobile": 120,
+  "total": 150,
+  "comp": "높음",
+  "docs": 265869,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "보험정리어플",
+  "pc": 30,
+  "mobile": 120,
+  "total": 150,
+  "comp": "높음",
+  "docs": 100993,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "시니어보험",
+  "pc": 30,
+  "mobile": 100,
+  "total": 130,
+  "comp": "높음",
+  "docs": 171822,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "50대실비보험료",
+  "pc": 10,
+  "mobile": 90,
+  "total": 100,
+  "comp": "높음",
+  "docs": 76662,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "학자금보험",
+  "pc": 10,
+  "mobile": 90,
+  "total": 100,
+  "comp": "높음",
+  "docs": 110714,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "세금납부",
+  "pc": 1700,
+  "mobile": 1280,
+  "total": 2980,
+  "comp": "높음",
+  "docs": 2444824,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "원룸월세",
+  "pc": 370,
+  "mobile": 1820,
+  "total": 2190,
+  "comp": "높음",
+  "docs": 1695129,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "과세",
+  "pc": 590,
+  "mobile": 1580,
+  "total": 2170,
+  "comp": "낮음",
+  "docs": 3482011,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "세계맥주",
+  "pc": 150,
+  "mobile": 1880,
+  "total": 2030,
+  "comp": "높음",
+  "docs": 2020293,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "전세매물",
+  "pc": 390,
+  "mobile": 1330,
+  "total": 1720,
+  "comp": "높음",
+  "docs": 2707299,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "세무상담",
+  "pc": 550,
+  "mobile": 1160,
+  "total": 1710,
+  "comp": "높음",
+  "docs": 2140523,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "상가권리금",
+  "pc": 850,
+  "mobile": 620,
+  "total": 1470,
+  "comp": "높음",
+  "docs": 1781366,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "부동산매매사업자",
+  "pc": 380,
+  "mobile": 890,
+  "total": 1270,
+  "comp": "중간",
+  "docs": 2257757,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "집합건물",
+  "pc": 450,
+  "mobile": 370,
+  "total": 820,
+  "comp": "높음",
+  "docs": 569539,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "토지용도변경",
+  "pc": 160,
+  "mobile": 390,
+  "total": 550,
+  "comp": "높음",
+  "docs": 640452,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "동대문상가",
+  "pc": 70,
+  "mobile": 410,
+  "total": 480,
+  "comp": "중간",
+  "docs": 417970,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "평택상가",
+  "pc": 80,
+  "mobile": 390,
+  "total": 470,
+  "comp": "높음",
+  "docs": 717163,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "점포임대",
+  "pc": 60,
+  "mobile": 400,
+  "total": 460,
+  "comp": "높음",
+  "docs": 773624,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "상가공실",
+  "pc": 150,
+  "mobile": 270,
+  "total": 420,
+  "comp": "높음",
+  "docs": 811225,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "임대업",
+  "pc": 130,
+  "mobile": 280,
+  "total": 410,
+  "comp": "높음",
+  "docs": 277799,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "3주택양도세",
+  "pc": 70,
+  "mobile": 340,
+  "total": 410,
+  "comp": "높음",
+  "docs": 530622,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "법인폐업",
+  "pc": 190,
+  "mobile": 210,
+  "total": 400,
+  "comp": "높음",
+  "docs": 330356,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "의정부상가",
+  "pc": 100,
+  "mobile": 280,
+  "total": 380,
+  "comp": "높음",
+  "docs": 484538,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "오피스텔임대사업자",
+  "pc": 70,
+  "mobile": 300,
+  "total": 370,
+  "comp": "중간",
+  "docs": 574049,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "토지매매사이트",
+  "pc": 180,
+  "mobile": 120,
+  "total": 300,
+  "comp": "높음",
+  "docs": 216712,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "원룸건물매매",
+  "pc": 50,
+  "mobile": 250,
+  "total": 300,
+  "comp": "높음",
+  "docs": 482736,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "부동산단기임대",
+  "pc": 50,
+  "mobile": 230,
+  "total": 280,
+  "comp": "높음",
+  "docs": 538664,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "광주상가임대",
+  "pc": 60,
+  "mobile": 220,
+  "total": 280,
+  "comp": "높음",
+  "docs": 212982,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "단기임대오피스텔",
+  "pc": 60,
+  "mobile": 200,
+  "total": 260,
+  "comp": "높음",
+  "docs": 226256,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "오산상가",
+  "pc": 90,
+  "mobile": 170,
+  "total": 260,
+  "comp": "높음",
+  "docs": 406330,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "화성시토지매매",
+  "pc": 70,
+  "mobile": 160,
+  "total": 230,
+  "comp": "높음",
+  "docs": 213932,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "강남상가월세",
+  "pc": 30,
+  "mobile": 190,
+  "total": 220,
+  "comp": "높음",
+  "docs": 303029,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "안산상가매매",
+  "pc": 30,
+  "mobile": 150,
+  "total": 180,
+  "comp": "높음",
+  "docs": 135760,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "대치동상가",
+  "pc": 30,
+  "mobile": 140,
+  "total": 170,
+  "comp": "높음",
+  "docs": 216250,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "6개월단기임대",
+  "pc": 50,
+  "mobile": 110,
+  "total": 160,
+  "comp": "높음",
+  "docs": 146203,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "3개월단기임대",
+  "pc": 40,
+  "mobile": 110,
+  "total": 150,
+  "comp": "높음",
+  "docs": 190547,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "가산세감면",
+  "pc": 120,
+  "mobile": 30,
+  "total": 150,
+  "comp": "높음",
+  "docs": 182411,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "압구정상가",
+  "pc": 30,
+  "mobile": 110,
+  "total": 140,
+  "comp": "높음",
+  "docs": 184508,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "광주광역시월세",
+  "pc": 60,
+  "mobile": 70,
+  "total": 130,
+  "comp": "높음",
+  "docs": 91899,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "노원역상가",
+  "pc": 50,
+  "mobile": 80,
+  "total": 130,
+  "comp": "높음",
+  "docs": 118476,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "부산상가나라",
+  "pc": 50,
+  "mobile": 80,
+  "total": 130,
+  "comp": "중간",
+  "docs": 125810,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "역삼동상가",
+  "pc": 40,
+  "mobile": 80,
+  "total": 120,
+  "comp": "높음",
+  "docs": 190603,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "청담동상가",
+  "pc": 10,
+  "mobile": 110,
+  "total": 120,
+  "comp": "높음",
+  "docs": 174202,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "산본상가",
+  "pc": 30,
+  "mobile": 90,
+  "total": 120,
+  "comp": "높음",
+  "docs": 139671,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "노래방임대",
+  "pc": 10,
+  "mobile": 110,
+  "total": 120,
+  "comp": "높음",
+  "docs": 105698,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "단기임대원룸",
+  "pc": 30,
+  "mobile": 80,
+  "total": 110,
+  "comp": "높음",
+  "docs": 188403,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "점포양도양수",
+  "pc": 30,
+  "mobile": 80,
+  "total": 110,
+  "comp": "높음",
+  "docs": 136277,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "상가양도양수",
+  "pc": 40,
+  "mobile": 60,
+  "total": 100,
+  "comp": "높음",
+  "docs": 175736,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "소상공인지원사업",
+  "pc": 550,
+  "mobile": 680,
+  "total": 1230,
+  "comp": "높음",
+  "docs": 1258072,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "임대사업자등록",
+  "pc": 380,
+  "mobile": 690,
+  "total": 1070,
+  "comp": "높음",
+  "docs": 1690150,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "법인사업자등록증",
+  "pc": 330,
+  "mobile": 240,
+  "total": 570,
+  "comp": "높음",
+  "docs": 938131,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "사업자주소변경",
+  "pc": 360,
+  "mobile": 180,
+  "total": 540,
+  "comp": "높음",
+  "docs": 853444,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "상가철거비용",
+  "pc": 130,
+  "mobile": 400,
+  "total": 530,
+  "comp": "높음",
+  "docs": 810896,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "상가원상복구",
+  "pc": 150,
+  "mobile": 260,
+  "total": 410,
+  "comp": "높음",
+  "docs": 570670,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "개인사업자직원등록",
+  "pc": 120,
+  "mobile": 280,
+  "total": 400,
+  "comp": "높음",
+  "docs": 392332,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "카페폐업",
+  "pc": 110,
+  "mobile": 250,
+  "total": 360,
+  "comp": "높음",
+  "docs": 466806,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "사업자등록주소변경",
+  "pc": 190,
+  "mobile": 160,
+  "total": 350,
+  "comp": "높음",
+  "docs": 537402,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "법인사업자주소변경",
+  "pc": 190,
+  "mobile": 130,
+  "total": 320,
+  "comp": "높음",
+  "docs": 259426,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "프리랜서사업자등록",
+  "pc": 90,
+  "mobile": 220,
+  "total": 310,
+  "comp": "높음",
+  "docs": 320564,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "식당폐업",
+  "pc": 70,
+  "mobile": 220,
+  "total": 290,
+  "comp": "높음",
+  "docs": 563917,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "사업장현황신고",
+  "pc": 140,
+  "mobile": 90,
+  "total": 230,
+  "comp": "높음",
+  "docs": 292790,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "식당폐업정리",
+  "pc": 20,
+  "mobile": 190,
+  "total": 210,
+  "comp": "높음",
+  "docs": 292833,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "사업장주소지변경",
+  "pc": 80,
+  "mobile": 60,
+  "total": 140,
+  "comp": "높음",
+  "docs": 273881,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "상가철거지원금",
+  "pc": 20,
+  "mobile": 90,
+  "total": 110,
+  "comp": "높음",
+  "docs": 196875,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "법인등기부등본변경",
+  "pc": 90,
+  "mobile": 20,
+  "total": 110,
+  "comp": "높음",
+  "docs": 152902,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "은퇴",
+  "pc": 530,
+  "mobile": 1910,
+  "total": 2440,
+  "comp": "중간",
+  "docs": 4333295,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "부천이사업체",
+  "pc": 70,
+  "mobile": 330,
+  "total": 400,
+  "comp": "높음",
+  "docs": 313207,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "배당주식",
+  "pc": 100,
+  "mobile": 290,
+  "total": 390,
+  "comp": "높음",
+  "docs": 487626,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "종소세신고",
+  "pc": 110,
+  "mobile": 190,
+  "total": 300,
+  "comp": "높음",
+  "docs": 217114,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "퇴직자연말정산",
+  "pc": 60,
+  "mobile": 140,
+  "total": 200,
+  "comp": "높음",
+  "docs": 136475,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "재고조사업체",
+  "pc": 70,
+  "mobile": 70,
+  "total": 140,
+  "comp": "높음",
+  "docs": 155927,
+  "ratio": 0.001
+ },
+ {
+  "keyword": "보험사",
+  "pc": 720,
+  "mobile": 1740,
+  "total": 2460,
+  "comp": "높음",
+  "docs": 10687772,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "보험금",
+  "pc": 370,
+  "mobile": 500,
+  "total": 870,
+  "comp": "높음",
+  "docs": 8918955,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "사망보험",
+  "pc": 460,
+  "mobile": 180,
+  "total": 640,
+  "comp": "높음",
+  "docs": 1435900,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "건강검진보험",
+  "pc": 110,
+  "mobile": 300,
+  "total": 410,
+  "comp": "높음",
+  "docs": 1131216,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "보험회사종류",
+  "pc": 60,
+  "mobile": 330,
+  "total": 390,
+  "comp": "높음",
+  "docs": 780776,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "가족보험",
+  "pc": 40,
+  "mobile": 290,
+  "total": 330,
+  "comp": "높음",
+  "docs": 4225371,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "생명보험사",
+  "pc": 120,
+  "mobile": 170,
+  "total": 290,
+  "comp": "높음",
+  "docs": 1057309,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "건강연금",
+  "pc": 240,
+  "mobile": 40,
+  "total": 280,
+  "comp": "높음",
+  "docs": 1316627,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "종합보험비교",
+  "pc": 50,
+  "mobile": 220,
+  "total": 270,
+  "comp": "높음",
+  "docs": 974646,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "필수보험",
+  "pc": 30,
+  "mobile": 240,
+  "total": 270,
+  "comp": "높음",
+  "docs": 3980426,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "저축연금",
+  "pc": 70,
+  "mobile": 200,
+  "total": 270,
+  "comp": "높음",
+  "docs": 921511,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "노후대비",
+  "pc": 80,
+  "mobile": 170,
+  "total": 250,
+  "comp": "높음",
+  "docs": 1706600,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "연금저축상품",
+  "pc": 70,
+  "mobile": 150,
+  "total": 220,
+  "comp": "높음",
+  "docs": 441376,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "단기보험",
+  "pc": 40,
+  "mobile": 180,
+  "total": 220,
+  "comp": "높음",
+  "docs": 1068059,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "퇴직연금보험",
+  "pc": 80,
+  "mobile": 130,
+  "total": 210,
+  "comp": "높음",
+  "docs": 464554,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "의료비보장보험",
+  "pc": 90,
+  "mobile": 120,
+  "total": 210,
+  "comp": "높음",
+  "docs": 880243,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "보험회사이름",
+  "pc": 20,
+  "mobile": 190,
+  "total": 210,
+  "comp": "높음",
+  "docs": 497742,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "아무나보험",
+  "pc": 10,
+  "mobile": 180,
+  "total": 190,
+  "comp": "높음",
+  "docs": 1161666,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "연금보험비교",
+  "pc": 50,
+  "mobile": 130,
+  "total": 180,
+  "comp": "높음",
+  "docs": 452993,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "인터넷보험",
+  "pc": 50,
+  "mobile": 130,
+  "total": 180,
+  "comp": "높음",
+  "docs": 2211955,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "IRP연금",
+  "pc": 30,
+  "mobile": 140,
+  "total": 170,
+  "comp": "높음",
+  "docs": 397222,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "보험연금",
+  "pc": 20,
+  "mobile": 150,
+  "total": 170,
+  "comp": "높음",
+  "docs": 1751492,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "건강종합보험비교",
+  "pc": 5,
+  "mobile": 160,
+  "total": 165,
+  "comp": "높음",
+  "docs": 385640,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "연금저축연금보험",
+  "pc": 40,
+  "mobile": 120,
+  "total": 160,
+  "comp": "높음",
+  "docs": 423487,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "일반사망보험",
+  "pc": 20,
+  "mobile": 140,
+  "total": 160,
+  "comp": "높음",
+  "docs": 519103,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "비과세상품",
+  "pc": 70,
+  "mobile": 90,
+  "total": 160,
+  "comp": "높음",
+  "docs": 419955,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "보험설계상담",
+  "pc": 30,
+  "mobile": 130,
+  "total": 160,
+  "comp": "높음",
+  "docs": 1355029,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "장애인보험",
+  "pc": 40,
+  "mobile": 120,
+  "total": 160,
+  "comp": "높음",
+  "docs": 909696,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "개인저축연금",
+  "pc": 30,
+  "mobile": 120,
+  "total": 150,
+  "comp": "높음",
+  "docs": 435818,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "연금상품",
+  "pc": 40,
+  "mobile": 100,
+  "total": 140,
+  "comp": "높음",
+  "docs": 1101690,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "보험앱",
+  "pc": 20,
+  "mobile": 120,
+  "total": 140,
+  "comp": "높음",
+  "docs": 1288035,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "보험특약",
+  "pc": 30,
+  "mobile": 110,
+  "total": 140,
+  "comp": "높음",
+  "docs": 1359174,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "연금보험료계산",
+  "pc": 40,
+  "mobile": 90,
+  "total": 130,
+  "comp": "낮음",
+  "docs": 305667,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "정기보험이란",
+  "pc": 20,
+  "mobile": 110,
+  "total": 130,
+  "comp": "높음",
+  "docs": 1845378,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "환급형보험",
+  "pc": 30,
+  "mobile": 100,
+  "total": 130,
+  "comp": "높음",
+  "docs": 422505,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "예금보험",
+  "pc": 50,
+  "mobile": 80,
+  "total": 130,
+  "comp": "중간",
+  "docs": 706710,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "부부연금",
+  "pc": 10,
+  "mobile": 110,
+  "total": 120,
+  "comp": "높음",
+  "docs": 439593,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "연금저축비교",
+  "pc": 30,
+  "mobile": 90,
+  "total": 120,
+  "comp": "높음",
+  "docs": 287940,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "생명보험회사",
+  "pc": 50,
+  "mobile": 70,
+  "total": 120,
+  "comp": "높음",
+  "docs": 516116,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "사망보험금금액",
+  "pc": 10,
+  "mobile": 100,
+  "total": 110,
+  "comp": "높음",
+  "docs": 441140,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "요양보호사보험",
+  "pc": 20,
+  "mobile": 90,
+  "total": 110,
+  "comp": "높음",
+  "docs": 395626,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "보험저축",
+  "pc": 20,
+  "mobile": 90,
+  "total": 110,
+  "comp": "높음",
+  "docs": 1034420,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "연금상담",
+  "pc": 10,
+  "mobile": 100,
+  "total": 110,
+  "comp": "높음",
+  "docs": 1108302,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "퇴직금보험",
+  "pc": 30,
+  "mobile": 70,
+  "total": 100,
+  "comp": "높음",
+  "docs": 672188,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "노후연금보험",
+  "pc": 20,
+  "mobile": 80,
+  "total": 100,
+  "comp": "높음",
+  "docs": 428253,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "건강보험금액",
+  "pc": 30,
+  "mobile": 70,
+  "total": 100,
+  "comp": "높음",
+  "docs": 1739145,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "자녀연금보험",
+  "pc": 30,
+  "mobile": 70,
+  "total": 100,
+  "comp": "높음",
+  "docs": 305681,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "정부지원사업",
+  "pc": 1250,
+  "mobile": 950,
+  "total": 2200,
+  "comp": "높음",
+  "docs": 4635783,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "보험영업",
+  "pc": 160,
+  "mobile": 280,
+  "total": 440,
+  "comp": "높음",
+  "docs": 2263184,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "법인컨설팅",
+  "pc": 70,
+  "mobile": 350,
+  "total": 420,
+  "comp": "높음",
+  "docs": 1801561,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "법인영업",
+  "pc": 90,
+  "mobile": 210,
+  "total": 300,
+  "comp": "높음",
+  "docs": 2006798,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "재해보험",
+  "pc": 60,
+  "mobile": 240,
+  "total": 300,
+  "comp": "높음",
+  "docs": 716675,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "법인차보험",
+  "pc": 120,
+  "mobile": 160,
+  "total": 280,
+  "comp": "높음",
+  "docs": 1112044,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "폐업지원",
+  "pc": 90,
+  "mobile": 140,
+  "total": 230,
+  "comp": "높음",
+  "docs": 794186,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "기업보험",
+  "pc": 90,
+  "mobile": 100,
+  "total": 190,
+  "comp": "높음",
+  "docs": 3574691,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "법인보험",
+  "pc": 60,
+  "mobile": 120,
+  "total": 180,
+  "comp": "높음",
+  "docs": 2384077,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "배상보험",
+  "pc": 60,
+  "mobile": 100,
+  "total": 160,
+  "comp": "높음",
+  "docs": 1797970,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "보험료납부",
+  "pc": 50,
+  "mobile": 80,
+  "total": 130,
+  "comp": "높음",
+  "docs": 1643536,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "사업자환급",
+  "pc": 10,
+  "mobile": 110,
+  "total": 120,
+  "comp": "높음",
+  "docs": 950153,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "화재보험특약",
+  "pc": 30,
+  "mobile": 80,
+  "total": 110,
+  "comp": "높음",
+  "docs": 278637,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "적정보험료",
+  "pc": 20,
+  "mobile": 80,
+  "total": 100,
+  "comp": "높음",
+  "docs": 242332,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "배당",
+  "pc": 650,
+  "mobile": 1730,
+  "total": 2380,
+  "comp": "높음",
+  "docs": 6178120,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "가족법인",
+  "pc": 280,
+  "mobile": 470,
+  "total": 750,
+  "comp": "높음",
+  "docs": 3237109,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "토지등기",
+  "pc": 440,
+  "mobile": 180,
+  "total": 620,
+  "comp": "높음",
+  "docs": 2560585,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "사업자등록",
+  "pc": 280,
+  "mobile": 170,
+  "total": 450,
+  "comp": "높음",
+  "docs": 11747236,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "상속신고",
+  "pc": 130,
+  "mobile": 280,
+  "total": 410,
+  "comp": "높음",
+  "docs": 859809,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "상속상담",
+  "pc": 50,
+  "mobile": 330,
+  "total": 380,
+  "comp": "높음",
+  "docs": 1610340,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "법인전환",
+  "pc": 210,
+  "mobile": 150,
+  "total": 360,
+  "comp": "높음",
+  "docs": 1485685,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "납세자",
+  "pc": 70,
+  "mobile": 270,
+  "total": 340,
+  "comp": "낮음",
+  "docs": 866623,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "건물시세",
+  "pc": 140,
+  "mobile": 180,
+  "total": 320,
+  "comp": "높음",
+  "docs": 1813371,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "상속전문",
+  "pc": 10,
+  "mobile": 290,
+  "total": 300,
+  "comp": "높음",
+  "docs": 1721678,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "등록세",
+  "pc": 120,
+  "mobile": 180,
+  "total": 300,
+  "comp": "중간",
+  "docs": 9351399,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "양도소득세기준",
+  "pc": 70,
+  "mobile": 200,
+  "total": 270,
+  "comp": "높음",
+  "docs": 614110,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "토지감정평가",
+  "pc": 80,
+  "mobile": 180,
+  "total": 260,
+  "comp": "높음",
+  "docs": 1996820,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "상속전문법무법인",
+  "pc": 20,
+  "mobile": 210,
+  "total": 230,
+  "comp": "높음",
+  "docs": 475805,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "상속재산관리인",
+  "pc": 90,
+  "mobile": 90,
+  "total": 180,
+  "comp": "높음",
+  "docs": 374865,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "세무조사신고",
+  "pc": 40,
+  "mobile": 130,
+  "total": 170,
+  "comp": "높음",
+  "docs": 437157,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "양도소득세절세",
+  "pc": 10,
+  "mobile": 160,
+  "total": 170,
+  "comp": "높음",
+  "docs": 356587,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "주택증여",
+  "pc": 30,
+  "mobile": 130,
+  "total": 160,
+  "comp": "높음",
+  "docs": 539217,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "상속법무법인",
+  "pc": 10,
+  "mobile": 140,
+  "total": 150,
+  "comp": "높음",
+  "docs": 637336,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "상속포기서",
+  "pc": 60,
+  "mobile": 70,
+  "total": 130,
+  "comp": "높음",
+  "docs": 280017,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "증여상담",
+  "pc": 50,
+  "mobile": 70,
+  "total": 120,
+  "comp": "높음",
+  "docs": 777240,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "증여서류",
+  "pc": 30,
+  "mobile": 90,
+  "total": 120,
+  "comp": "높음",
+  "docs": 350956,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "건물감정평가",
+  "pc": 40,
+  "mobile": 80,
+  "total": 120,
+  "comp": "높음",
+  "docs": 1996860,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "부동산세금상담",
+  "pc": 30,
+  "mobile": 90,
+  "total": 120,
+  "comp": "높음",
+  "docs": 993093,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "증여방법",
+  "pc": 30,
+  "mobile": 80,
+  "total": 110,
+  "comp": "높음",
+  "docs": 749328,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "상속파산",
+  "pc": 40,
+  "mobile": 70,
+  "total": 110,
+  "comp": "높음",
+  "docs": 237149,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "증여와상속",
+  "pc": 20,
+  "mobile": 90,
+  "total": 110,
+  "comp": "높음",
+  "docs": 1068679,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "법인부동산",
+  "pc": 20,
+  "mobile": 90,
+  "total": 110,
+  "comp": "높음",
+  "docs": 4017883,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "부동산상속등기",
+  "pc": 30,
+  "mobile": 70,
+  "total": 100,
+  "comp": "중간",
+  "docs": 428791,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "증여절차",
+  "pc": 30,
+  "mobile": 70,
+  "total": 100,
+  "comp": "높음",
+  "docs": 485924,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "부동산증여방법",
+  "pc": 20,
+  "mobile": 80,
+  "total": 100,
+  "comp": "높음",
+  "docs": 435770,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "주식정보",
+  "pc": 130,
+  "mobile": 2010,
+  "total": 2140,
+  "comp": "높음",
+  "docs": 8286845,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "주식거래",
+  "pc": 420,
+  "mobile": 1240,
+  "total": 1660,
+  "comp": "높음",
+  "docs": 5958235,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "주식뉴스",
+  "pc": 300,
+  "mobile": 1310,
+  "total": 1610,
+  "comp": "높음",
+  "docs": 4065738,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "상장주식",
+  "pc": 210,
+  "mobile": 1280,
+  "total": 1490,
+  "comp": "높음",
+  "docs": 3030720,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "AI주식투자",
+  "pc": 230,
+  "mobile": 960,
+  "total": 1190,
+  "comp": "높음",
+  "docs": 2438121,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "주식계좌",
+  "pc": 200,
+  "mobile": 840,
+  "total": 1040,
+  "comp": "높음",
+  "docs": 2324093,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "절세",
+  "pc": 280,
+  "mobile": 540,
+  "total": 820,
+  "comp": "낮음",
+  "docs": 2122613,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "주식종목",
+  "pc": 190,
+  "mobile": 620,
+  "total": 810,
+  "comp": "높음",
+  "docs": 5664545,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "법인사업자",
+  "pc": 300,
+  "mobile": 360,
+  "total": 660,
+  "comp": "높음",
+  "docs": 5378188,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "주식프로그램",
+  "pc": 210,
+  "mobile": 370,
+  "total": 580,
+  "comp": "높음",
+  "docs": 1199339,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "중국주식투자",
+  "pc": 90,
+  "mobile": 440,
+  "total": 530,
+  "comp": "중간",
+  "docs": 1956048,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "주식포트폴리오",
+  "pc": 150,
+  "mobile": 370,
+  "total": 520,
+  "comp": "높음",
+  "docs": 1722855,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "주식투자하는법",
+  "pc": 70,
+  "mobile": 390,
+  "total": 460,
+  "comp": "높음",
+  "docs": 1175056,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "주식종류",
+  "pc": 70,
+  "mobile": 330,
+  "total": 400,
+  "comp": "높음",
+  "docs": 1338253,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "주식전문가",
+  "pc": 70,
+  "mobile": 270,
+  "total": 340,
+  "comp": "높음",
+  "docs": 3710468,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "세금감면",
+  "pc": 70,
+  "mobile": 270,
+  "total": 340,
+  "comp": "높음",
+  "docs": 910711,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "개인사업자세금신고",
+  "pc": 60,
+  "mobile": 280,
+  "total": 340,
+  "comp": "높음",
+  "docs": 758021,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "저평가주식",
+  "pc": 50,
+  "mobile": 250,
+  "total": 300,
+  "comp": "높음",
+  "docs": 775685,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "주식으로돈벌기",
+  "pc": 40,
+  "mobile": 240,
+  "total": 280,
+  "comp": "높음",
+  "docs": 1953315,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "10월상장주식",
+  "pc": 30,
+  "mobile": 250,
+  "total": 280,
+  "comp": "중간",
+  "docs": 1078854,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "사업자세금",
+  "pc": 80,
+  "mobile": 190,
+  "total": 270,
+  "comp": "중간",
+  "docs": 3609394,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "주식매매",
+  "pc": 70,
+  "mobile": 170,
+  "total": 240,
+  "comp": "높음",
+  "docs": 3476663,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "세무조정",
+  "pc": 120,
+  "mobile": 120,
+  "total": 240,
+  "comp": "높음",
+  "docs": 606875,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "미국주식투자",
+  "pc": 80,
+  "mobile": 150,
+  "total": 230,
+  "comp": "높음",
+  "docs": 5084320,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "주식트레이딩",
+  "pc": 50,
+  "mobile": 170,
+  "total": 220,
+  "comp": "높음",
+  "docs": 553921,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "주식기초",
+  "pc": 70,
+  "mobile": 140,
+  "total": 210,
+  "comp": "높음",
+  "docs": 1222771,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "주식리포트",
+  "pc": 80,
+  "mobile": 100,
+  "total": 180,
+  "comp": "높음",
+  "docs": 781681,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "주식차트분석",
+  "pc": 70,
+  "mobile": 100,
+  "total": 170,
+  "comp": "높음",
+  "docs": 976599,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "주식수익",
+  "pc": 30,
+  "mobile": 140,
+  "total": 170,
+  "comp": "높음",
+  "docs": 7023907,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "주식증권",
+  "pc": 60,
+  "mobile": 90,
+  "total": 150,
+  "comp": "높음",
+  "docs": 4497940,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "주식투자사이트",
+  "pc": 30,
+  "mobile": 100,
+  "total": 130,
+  "comp": "높음",
+  "docs": 573548,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "미국주식종목",
+  "pc": 20,
+  "mobile": 110,
+  "total": 130,
+  "comp": "높음",
+  "docs": 2352630,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "세금미납",
+  "pc": 30,
+  "mobile": 90,
+  "total": 120,
+  "comp": "높음",
+  "docs": 264971,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "주식동영상",
+  "pc": 5,
+  "mobile": 110,
+  "total": 115,
+  "comp": "높음",
+  "docs": 350312,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "국세상담",
+  "pc": 60,
+  "mobile": 50,
+  "total": 110,
+  "comp": "중간",
+  "docs": 792994,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "주식매매계약서",
+  "pc": 90,
+  "mobile": 20,
+  "total": 110,
+  "comp": "높음",
+  "docs": 229652,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "주식거래방법",
+  "pc": 20,
+  "mobile": 90,
+  "total": 110,
+  "comp": "높음",
+  "docs": 1660533,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "주식교육",
+  "pc": 40,
+  "mobile": 60,
+  "total": 100,
+  "comp": "높음",
+  "docs": 1808371,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "미국주식차트",
+  "pc": 50,
+  "mobile": 50,
+  "total": 100,
+  "comp": "높음",
+  "docs": 606628,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "개인사업자절세방법",
+  "pc": 40,
+  "mobile": 60,
+  "total": 100,
+  "comp": "높음",
+  "docs": 334399,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "주식차트공부",
+  "pc": 50,
+  "mobile": 50,
+  "total": 100,
+  "comp": "높음",
+  "docs": 509902,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "세금상담",
+  "pc": 30,
+  "mobile": 70,
+  "total": 100,
+  "comp": "높음",
+  "docs": 3442509,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "사업자금",
+  "pc": 30,
+  "mobile": 70,
+  "total": 100,
+  "comp": "높음",
+  "docs": 5647770,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "개인사업자등록",
+  "pc": 330,
+  "mobile": 600,
+  "total": 930,
+  "comp": "높음",
+  "docs": 3156017,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "세탁기설치",
+  "pc": 110,
+  "mobile": 490,
+  "total": 600,
+  "comp": "높음",
+  "docs": 2579302,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "법인사업자설립",
+  "pc": 90,
+  "mobile": 350,
+  "total": 440,
+  "comp": "높음",
+  "docs": 1142255,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "법인회사설립",
+  "pc": 50,
+  "mobile": 340,
+  "total": 390,
+  "comp": "높음",
+  "docs": 882650,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "법인회사",
+  "pc": 80,
+  "mobile": 260,
+  "total": 340,
+  "comp": "높음",
+  "docs": 4187079,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "1인법인",
+  "pc": 130,
+  "mobile": 200,
+  "total": 330,
+  "comp": "높음",
+  "docs": 6145031,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "법인인수",
+  "pc": 30,
+  "mobile": 280,
+  "total": 310,
+  "comp": "높음",
+  "docs": 1096801,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "의료법인",
+  "pc": 120,
+  "mobile": 180,
+  "total": 300,
+  "comp": "높음",
+  "docs": 1194704,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "1인법인설립",
+  "pc": 150,
+  "mobile": 110,
+  "total": 260,
+  "comp": "높음",
+  "docs": 982689,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "노후자금준비",
+  "pc": 50,
+  "mobile": 180,
+  "total": 230,
+  "comp": "높음",
+  "docs": 480295,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "법인자본금",
+  "pc": 100,
+  "mobile": 120,
+  "total": 220,
+  "comp": "높음",
+  "docs": 705316,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "법인설립상담",
+  "pc": 20,
+  "mobile": 200,
+  "total": 220,
+  "comp": "높음",
+  "docs": 724748,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "법인등기변경",
+  "pc": 150,
+  "mobile": 50,
+  "total": 200,
+  "comp": "높음",
+  "docs": 546856,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "퇴직연금투자",
+  "pc": 60,
+  "mobile": 140,
+  "total": 200,
+  "comp": "높음",
+  "docs": 527304,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "은퇴설계",
+  "pc": 110,
+  "mobile": 80,
+  "total": 190,
+  "comp": "높음",
+  "docs": 522576,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "은퇴준비",
+  "pc": 110,
+  "mobile": 70,
+  "total": 180,
+  "comp": "높음",
+  "docs": 1368025,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "개인사업자",
+  "pc": 50,
+  "mobile": 120,
+  "total": 170,
+  "comp": "높음",
+  "docs": 10252860,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "법인세금",
+  "pc": 50,
+  "mobile": 110,
+  "total": 160,
+  "comp": "높음",
+  "docs": 2202053,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "퇴직금상담",
+  "pc": 40,
+  "mobile": 120,
+  "total": 160,
+  "comp": "높음",
+  "docs": 598005,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "법인주소이전",
+  "pc": 100,
+  "mobile": 50,
+  "total": 150,
+  "comp": "높음",
+  "docs": 514616,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "법인등록",
+  "pc": 90,
+  "mobile": 60,
+  "total": 150,
+  "comp": "높음",
+  "docs": 4608197,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "개인법인",
+  "pc": 40,
+  "mobile": 100,
+  "total": 140,
+  "comp": "높음",
+  "docs": 6048665,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "일본주식투자",
+  "pc": 40,
+  "mobile": 100,
+  "total": 140,
+  "comp": "중간",
+  "docs": 1179483,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "법인설립대행",
+  "pc": 70,
+  "mobile": 60,
+  "total": 130,
+  "comp": "높음",
+  "docs": 343657,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "절세방법",
+  "pc": 40,
+  "mobile": 90,
+  "total": 130,
+  "comp": "높음",
+  "docs": 1115565,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "법인변경등기",
+  "pc": 80,
+  "mobile": 40,
+  "total": 120,
+  "comp": "높음",
+  "docs": 546858,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "세무대리",
+  "pc": 50,
+  "mobile": 70,
+  "total": 120,
+  "comp": "높음",
+  "docs": 614690,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "개인사업자법인사업자",
+  "pc": 60,
+  "mobile": 60,
+  "total": 120,
+  "comp": "높음",
+  "docs": 2525957,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "주식회사설립",
+  "pc": 50,
+  "mobile": 60,
+  "total": 110,
+  "comp": "높음",
+  "docs": 1039221,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "법인만들기",
+  "pc": 40,
+  "mobile": 70,
+  "total": 110,
+  "comp": "높음",
+  "docs": 4277798,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "부동산법인설립",
+  "pc": 50,
+  "mobile": 60,
+  "total": 110,
+  "comp": "높음",
+  "docs": 599707,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "연말정산연금",
+  "pc": 30,
+  "mobile": 70,
+  "total": 100,
+  "comp": "높음",
+  "docs": 303834,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "법인기장",
+  "pc": 70,
+  "mobile": 30,
+  "total": 100,
+  "comp": "높음",
+  "docs": 434566,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "이사해주세요",
+  "pc": 20,
+  "mobile": 80,
+  "total": 100,
+  "comp": "높음",
+  "docs": 3836281,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "법인결산",
+  "pc": 60,
+  "mobile": 40,
+  "total": 100,
+  "comp": "높음",
+  "docs": 287935,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "보험회사",
+  "pc": 440,
+  "mobile": 1440,
+  "total": 1880,
+  "comp": "높음",
+  "docs": 4928969,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "보험설계",
+  "pc": 330,
+  "mobile": 780,
+  "total": 1110,
+  "comp": "높음",
+  "docs": 2882548,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "보험상담",
+  "pc": 310,
+  "mobile": 770,
+  "total": 1080,
+  "comp": "높음",
+  "docs": 8679445,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "질병보험",
+  "pc": 100,
+  "mobile": 430,
+  "total": 530,
+  "comp": "높음",
+  "docs": 2017260,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "보험견적",
+  "pc": 190,
+  "mobile": 200,
+  "total": 390,
+  "comp": "높음",
+  "docs": 2769152,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "보험계약자",
+  "pc": 60,
+  "mobile": 290,
+  "total": 350,
+  "comp": "높음",
+  "docs": 3802234,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "건강보험비교",
+  "pc": 60,
+  "mobile": 240,
+  "total": 300,
+  "comp": "높음",
+  "docs": 1671432,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "관절보험",
+  "pc": 50,
+  "mobile": 250,
+  "total": 300,
+  "comp": "높음",
+  "docs": 716889,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "통합보험",
+  "pc": 40,
+  "mobile": 260,
+  "total": 300,
+  "comp": "높음",
+  "docs": 1218789,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "3대보험",
+  "pc": 50,
+  "mobile": 220,
+  "total": 270,
+  "comp": "높음",
+  "docs": 5076031,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "공제보험",
+  "pc": 90,
+  "mobile": 170,
+  "total": 260,
+  "comp": "높음",
+  "docs": 1389146,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "보험비",
+  "pc": 50,
+  "mobile": 200,
+  "total": 250,
+  "comp": "높음",
+  "docs": 896079,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "보장보험",
+  "pc": 20,
+  "mobile": 230,
+  "total": 250,
+  "comp": "높음",
+  "docs": 4087768,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "30대보험료",
+  "pc": 10,
+  "mobile": 220,
+  "total": 230,
+  "comp": "높음",
+  "docs": 1150137,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "2대질병보험",
+  "pc": 10,
+  "mobile": 200,
+  "total": 210,
+  "comp": "높음",
+  "docs": 549027,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "4인가족보험료",
+  "pc": 30,
+  "mobile": 170,
+  "total": 200,
+  "comp": "높음",
+  "docs": 528373,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "실비보험금액",
+  "pc": 40,
+  "mobile": 160,
+  "total": 200,
+  "comp": "높음",
+  "docs": 402981,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "외국인보험",
+  "pc": 70,
+  "mobile": 130,
+  "total": 200,
+  "comp": "높음",
+  "docs": 1017603,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "치료비보험",
+  "pc": 40,
+  "mobile": 150,
+  "total": 190,
+  "comp": "높음",
+  "docs": 2306683,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "내보험금찾기",
+  "pc": 40,
+  "mobile": 140,
+  "total": 180,
+  "comp": "높음",
+  "docs": 1437817,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "손해보험회사",
+  "pc": 80,
+  "mobile": 100,
+  "total": 180,
+  "comp": "높음",
+  "docs": 1156110,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "보험광고",
+  "pc": 70,
+  "mobile": 80,
+  "total": 150,
+  "comp": "높음",
+  "docs": 1539253,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "보험금찾기",
+  "pc": 50,
+  "mobile": 100,
+  "total": 150,
+  "comp": "높음",
+  "docs": 2599819,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "4대보험사이트",
+  "pc": 110,
+  "mobile": 20,
+  "total": 130,
+  "comp": "높음",
+  "docs": 521181,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "당뇨고혈압보험",
+  "pc": 5,
+  "mobile": 120,
+  "total": 125,
+  "comp": "높음",
+  "docs": 265869,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "퇴직보험",
+  "pc": 40,
+  "mobile": 70,
+  "total": 110,
+  "comp": "높음",
+  "docs": 919651,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "생활비보험",
+  "pc": 10,
+  "mobile": 100,
+  "total": 110,
+  "comp": "높음",
+  "docs": 3120091,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "보험컨설턴트",
+  "pc": 10,
+  "mobile": 90,
+  "total": 100,
+  "comp": "높음",
+  "docs": 255572,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "부동산상가",
+  "pc": 360,
+  "mobile": 1470,
+  "total": 1830,
+  "comp": "높음",
+  "docs": 8103842,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "상가투자",
+  "pc": 130,
+  "mobile": 1130,
+  "total": 1260,
+  "comp": "높음",
+  "docs": 3335418,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "상가매물",
+  "pc": 320,
+  "mobile": 910,
+  "total": 1230,
+  "comp": "높음",
+  "docs": 3337801,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "상가부동산",
+  "pc": 310,
+  "mobile": 530,
+  "total": 840,
+  "comp": "높음",
+  "docs": 8103839,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "서울상가매매",
+  "pc": 100,
+  "mobile": 420,
+  "total": 520,
+  "comp": "높음",
+  "docs": 1140855,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "임대계약서",
+  "pc": 210,
+  "mobile": 270,
+  "total": 480,
+  "comp": "높음",
+  "docs": 1884757,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "사업장",
+  "pc": 180,
+  "mobile": 280,
+  "total": 460,
+  "comp": "낮음",
+  "docs": 20095889,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "토지임대",
+  "pc": 140,
+  "mobile": 300,
+  "total": 440,
+  "comp": "높음",
+  "docs": 3219357,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "서울상가",
+  "pc": 110,
+  "mobile": 250,
+  "total": 360,
+  "comp": "높음",
+  "docs": 6178371,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "서울상가임대",
+  "pc": 80,
+  "mobile": 250,
+  "total": 330,
+  "comp": "높음",
+  "docs": 1271039,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "상가전문부동산",
+  "pc": 90,
+  "mobile": 200,
+  "total": 290,
+  "comp": "높음",
+  "docs": 3922106,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "원룸임대",
+  "pc": 60,
+  "mobile": 210,
+  "total": 270,
+  "comp": "높음",
+  "docs": 1576744,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "가게임대",
+  "pc": 30,
+  "mobile": 220,
+  "total": 250,
+  "comp": "높음",
+  "docs": 743721,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "상가시세",
+  "pc": 130,
+  "mobile": 120,
+  "total": 250,
+  "comp": "높음",
+  "docs": 1644296,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "토지투자",
+  "pc": 90,
+  "mobile": 150,
+  "total": 240,
+  "comp": "높음",
+  "docs": 3392713,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "김포상가",
+  "pc": 50,
+  "mobile": 170,
+  "total": 220,
+  "comp": "높음",
+  "docs": 708409,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "잠실상가",
+  "pc": 60,
+  "mobile": 150,
+  "total": 210,
+  "comp": "높음",
+  "docs": 481001,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "강남상가",
+  "pc": 40,
+  "mobile": 160,
+  "total": 200,
+  "comp": "높음",
+  "docs": 1754408,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "법인매매",
+  "pc": 70,
+  "mobile": 110,
+  "total": 180,
+  "comp": "높음",
+  "docs": 2090302,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "광주상가",
+  "pc": 60,
+  "mobile": 120,
+  "total": 180,
+  "comp": "높음",
+  "docs": 1027606,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "프랜차이즈사업",
+  "pc": 50,
+  "mobile": 120,
+  "total": 170,
+  "comp": "높음",
+  "docs": 1021766,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "양도소득세상담",
+  "pc": 50,
+  "mobile": 100,
+  "total": 150,
+  "comp": "높음",
+  "docs": 423612,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "토지전문부동산",
+  "pc": 40,
+  "mobile": 110,
+  "total": 150,
+  "comp": "높음",
+  "docs": 3641977,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "단지내상가",
+  "pc": 60,
+  "mobile": 90,
+  "total": 150,
+  "comp": "높음",
+  "docs": 2609371,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "수원역상가",
+  "pc": 50,
+  "mobile": 100,
+  "total": 150,
+  "comp": "높음",
+  "docs": 401946,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "신사업",
+  "pc": 60,
+  "mobile": 80,
+  "total": 140,
+  "comp": "높음",
+  "docs": 606124,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "용인상가",
+  "pc": 30,
+  "mobile": 100,
+  "total": 130,
+  "comp": "높음",
+  "docs": 853243,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "토지구매",
+  "pc": 50,
+  "mobile": 80,
+  "total": 130,
+  "comp": "높음",
+  "docs": 401486,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "양도세상담",
+  "pc": 50,
+  "mobile": 80,
+  "total": 130,
+  "comp": "높음",
+  "docs": 332597,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "상가양도",
+  "pc": 50,
+  "mobile": 80,
+  "total": 130,
+  "comp": "높음",
+  "docs": 714105,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "강남상가임대",
+  "pc": 70,
+  "mobile": 60,
+  "total": 130,
+  "comp": "높음",
+  "docs": 539417,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "고덕상가",
+  "pc": 40,
+  "mobile": 90,
+  "total": 130,
+  "comp": "높음",
+  "docs": 286589,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "집단기임대",
+  "pc": 10,
+  "mobile": 110,
+  "total": 120,
+  "comp": "높음",
+  "docs": 354663,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "가게양도",
+  "pc": 20,
+  "mobile": 100,
+  "total": 120,
+  "comp": "높음",
+  "docs": 1113660,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "용인토지",
+  "pc": 30,
+  "mobile": 90,
+  "total": 120,
+  "comp": "높음",
+  "docs": 460815,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "한달임대",
+  "pc": 20,
+  "mobile": 90,
+  "total": 110,
+  "comp": "높음",
+  "docs": 1065967,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "단기임대사업",
+  "pc": 20,
+  "mobile": 90,
+  "total": 110,
+  "comp": "높음",
+  "docs": 395058,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "2주단기임대",
+  "pc": 20,
+  "mobile": 90,
+  "total": 110,
+  "comp": "높음",
+  "docs": 239582,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "한달월세",
+  "pc": 30,
+  "mobile": 80,
+  "total": 110,
+  "comp": "높음",
+  "docs": 707902,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "월세상가",
+  "pc": 10,
+  "mobile": 100,
+  "total": 110,
+  "comp": "높음",
+  "docs": 2710441,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "건물임대",
+  "pc": 40,
+  "mobile": 70,
+  "total": 110,
+  "comp": "높음",
+  "docs": 4810472,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "화성토지",
+  "pc": 20,
+  "mobile": 80,
+  "total": 100,
+  "comp": "높음",
+  "docs": 473520,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "상가매입",
+  "pc": 30,
+  "mobile": 70,
+  "total": 100,
+  "comp": "높음",
+  "docs": 747773,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "상가거래",
+  "pc": 50,
+  "mobile": 50,
+  "total": 100,
+  "comp": "높음",
+  "docs": 2378106,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "영등포상가",
+  "pc": 20,
+  "mobile": 80,
+  "total": 100,
+  "comp": "높음",
+  "docs": 491652,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "상가철거",
+  "pc": 190,
+  "mobile": 590,
+  "total": 780,
+  "comp": "높음",
+  "docs": 1743735,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "사업가",
+  "pc": 170,
+  "mobile": 580,
+  "total": 750,
+  "comp": "낮음",
+  "docs": 20549571,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "개인사업자등록방법",
+  "pc": 280,
+  "mobile": 260,
+  "total": 540,
+  "comp": "높음",
+  "docs": 1746833,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "건물철거업체",
+  "pc": 50,
+  "mobile": 480,
+  "total": 530,
+  "comp": "높음",
+  "docs": 1070162,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "사업소득신고",
+  "pc": 200,
+  "mobile": 170,
+  "total": 370,
+  "comp": "높음",
+  "docs": 1449203,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "직장인사업자등록",
+  "pc": 80,
+  "mobile": 210,
+  "total": 290,
+  "comp": "높음",
+  "docs": 713664,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "폐업철거",
+  "pc": 70,
+  "mobile": 150,
+  "total": 220,
+  "comp": "높음",
+  "docs": 742889,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "부동산법인",
+  "pc": 70,
+  "mobile": 140,
+  "total": 210,
+  "comp": "높음",
+  "docs": 4017895,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "1인사업자",
+  "pc": 80,
+  "mobile": 120,
+  "total": 200,
+  "comp": "높음",
+  "docs": 11641858,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "신규사업자등록",
+  "pc": 80,
+  "mobile": 100,
+  "total": 180,
+  "comp": "높음",
+  "docs": 1156157,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "사업자주소이전",
+  "pc": 100,
+  "mobile": 70,
+  "total": 170,
+  "comp": "높음",
+  "docs": 754069,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "건물철거",
+  "pc": 70,
+  "mobile": 100,
+  "total": 170,
+  "comp": "높음",
+  "docs": 2014652,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "부모님증여",
+  "pc": 30,
+  "mobile": 120,
+  "total": 150,
+  "comp": "높음",
+  "docs": 399499,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "사업자등록번호",
+  "pc": 70,
+  "mobile": 60,
+  "total": 130,
+  "comp": "높음",
+  "docs": 6627956,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "사업자등록번호찾기",
+  "pc": 100,
+  "mobile": 30,
+  "total": 130,
+  "comp": "높음",
+  "docs": 1376383,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "온라인사업자등록",
+  "pc": 60,
+  "mobile": 70,
+  "total": 130,
+  "comp": "높음",
+  "docs": 1687125,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "신규사업자",
+  "pc": 20,
+  "mobile": 100,
+  "total": 120,
+  "comp": "높음",
+  "docs": 3810603,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "사업장임대차계약서",
+  "pc": 60,
+  "mobile": 60,
+  "total": 120,
+  "comp": "높음",
+  "docs": 313245,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "학원폐업",
+  "pc": 30,
+  "mobile": 70,
+  "total": 100,
+  "comp": "높음",
+  "docs": 216266,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "사무실임대차계약서",
+  "pc": 80,
+  "mobile": 20,
+  "total": 100,
+  "comp": "높음",
+  "docs": 321175,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "연금개시",
+  "pc": 30,
+  "mobile": 90,
+  "total": 120,
+  "comp": "높음",
+  "docs": 246773,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "금주식",
+  "pc": 380,
+  "mobile": 1940,
+  "total": 2320,
+  "comp": "높음",
+  "docs": 5978935,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "금융소득",
+  "pc": 340,
+  "mobile": 900,
+  "total": 1240,
+  "comp": "높음",
+  "docs": 4296257,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "건물관리사",
+  "pc": 280,
+  "mobile": 810,
+  "total": 1090,
+  "comp": "높음",
+  "docs": 4278864,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "건물관리",
+  "pc": 460,
+  "mobile": 440,
+  "total": 900,
+  "comp": "높음",
+  "docs": 13774503,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "건물관리업체",
+  "pc": 270,
+  "mobile": 330,
+  "total": 600,
+  "comp": "높음",
+  "docs": 3124435,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "배당투자",
+  "pc": 160,
+  "mobile": 310,
+  "total": 470,
+  "comp": "높음",
+  "docs": 3348807,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "건물청소업체",
+  "pc": 180,
+  "mobile": 230,
+  "total": 410,
+  "comp": "높음",
+  "docs": 1971563,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "미국월배당주",
+  "pc": 60,
+  "mobile": 300,
+  "total": 360,
+  "comp": "높음",
+  "docs": 774807,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "건물청소",
+  "pc": 110,
+  "mobile": 230,
+  "total": 340,
+  "comp": "높음",
+  "docs": 3807691,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "AI관련주식",
+  "pc": 60,
+  "mobile": 270,
+  "total": 330,
+  "comp": "높음",
+  "docs": 1590231,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "배당주투자",
+  "pc": 90,
+  "mobile": 210,
+  "total": 300,
+  "comp": "높음",
+  "docs": 2140073,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "외국주식",
+  "pc": 30,
+  "mobile": 250,
+  "total": 280,
+  "comp": "중간",
+  "docs": 2264280,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "로봇관련주식",
+  "pc": 50,
+  "mobile": 170,
+  "total": 220,
+  "comp": "높음",
+  "docs": 516842,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "건물관리업",
+  "pc": 90,
+  "mobile": 120,
+  "total": 210,
+  "comp": "높음",
+  "docs": 1066753,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "게임주식",
+  "pc": 50,
+  "mobile": 160,
+  "total": 210,
+  "comp": "높음",
+  "docs": 1338751,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "수입관세",
+  "pc": 90,
+  "mobile": 110,
+  "total": 200,
+  "comp": "높음",
+  "docs": 692254,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "건물관리인",
+  "pc": 50,
+  "mobile": 140,
+  "total": 190,
+  "comp": "높음",
+  "docs": 5393454,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "주식가격",
+  "pc": 30,
+  "mobile": 160,
+  "total": 190,
+  "comp": "높음",
+  "docs": 6044512,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "일반사업자",
+  "pc": 50,
+  "mobile": 120,
+  "total": 170,
+  "comp": "높음",
+  "docs": 9201096,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "투자세액공제",
+  "pc": 130,
+  "mobile": 40,
+  "total": 170,
+  "comp": "높음",
+  "docs": 527597,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "분기배당주",
+  "pc": 60,
+  "mobile": 90,
+  "total": 150,
+  "comp": "높음",
+  "docs": 668748,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "건물누수",
+  "pc": 40,
+  "mobile": 100,
+  "total": 140,
+  "comp": "높음",
+  "docs": 1646504,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "일반사업자세금",
+  "pc": 20,
+  "mobile": 120,
+  "total": 140,
+  "comp": "높음",
+  "docs": 1433085,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "보험민원",
+  "pc": 40,
+  "mobile": 100,
+  "total": 140,
+  "comp": "높음",
+  "docs": 518106,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "건물종합관리",
+  "pc": 80,
+  "mobile": 50,
+  "total": 130,
+  "comp": "높음",
+  "docs": 1355850,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "인천건물관리",
+  "pc": 40,
+  "mobile": 80,
+  "total": 120,
+  "comp": "높음",
+  "docs": 1151066,
+  "ratio": 0.0
+ },
+ {
+  "keyword": "건물관리회사",
+  "pc": 50,
+  "mobile": 50,
+  "total": 100,
+  "comp": "높음",
+  "docs": 1517370,
+  "ratio": 0.0
+ }
+]
