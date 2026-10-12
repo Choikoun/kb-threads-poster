@@ -28,6 +28,9 @@ jobs:
       - name: 패키지 설치
         run: pip install requests feedparser google-genai beautifulsoup4 python-dotenv Pillow edge-tts
       - name: 영상 제작
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
         run: python ${{ github.event.inputs.module }}.py
       - name: 릴리스 업로드
         env:
