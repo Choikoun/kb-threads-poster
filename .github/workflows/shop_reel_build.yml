@@ -1,0 +1,38 @@
+name: 쇼핑 릴스 영상 제작 (수동 실행)
+
+on:
+  workflow_dispatch:
+    inputs:
+      module:
+        description: '영상 제작 스크립트 모듈명 (예: shop_reel_mat)'
+        required: true
+      out:
+        description: '생성되는 mp4 경로 (예: blog_images/shop_2026-10-08_탄소매트/reel_mat.mp4)'
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: ffmpeg 설치
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+      - name: 패키지 설치
+        run: pip install requests feedparser google-genai beautifulsoup4 python-dotenv Pillow edge-tts
+      - name: 영상 제작
+        run: python ${{ github.event.inputs.module }}.py
+      - name: 릴리스 업로드
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TAG="shop-reel-$(TZ=Asia/Seoul date +'%Y%m%d-%H%M%S')"
+          gh release create "$TAG" "${{ github.event.inputs.out }}" --title "$TAG" --notes "shop reel asset"
+          echo "URL: https://github.com/${{ github.repository }}/releases/download/$TAG/$(basename '${{ github.event.inputs.out }}')"
