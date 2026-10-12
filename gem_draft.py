@@ -48,15 +48,19 @@ def draft(keyword, extra=''):
             box.send_keys(Keys.SHIFT, Keys.ENTER)
     time.sleep(0.5)
     box.send_keys(Keys.ENTER)
-    prev, t = -1, ''
-    for _ in range(120):
+    prev, t, stable = -1, '', 0
+    for i in range(120):
         time.sleep(5)
         try:
             d.title
         except Exception:
             d = nb.get_driver()
         t = d.execute_script("const m=document.querySelectorAll('model-response,message-content');return m.length?m[m.length-1].innerText:''")
-        if len(t) > 1500 and len(t) == prev:
+        stable = stable + 1 if (len(t) == prev and len(t) > 0) else 0
+        if len(t) > 1500 and stable >= 1:
+            break
+        if 0 < len(t) < 400 and stable >= 3 and i >= 5:  # 짧은 응답이 멈춰 있으면 거절/오류 응답 → 오래 기다리지 말고 즉시 반환
+            print('Gem 거절/짧은 응답:', t[:80])
             break
         prev = len(t)
     return t
