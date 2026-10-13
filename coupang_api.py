@@ -26,10 +26,14 @@ def search(keyword, limit=10):
     return r.status_code, r.json() if r.headers.get('content-type', '').startswith('application/json') else r.text
 
 
-def deeplink(urls):
+def deeplink(urls, sub_id=None):
+    """쿠팡 URL → 제휴 단축링크. sub_id를 주면 리포트(coupang_report.py)에서 채널/글별로 구분됨(영문·숫자 권장, 예: blog_gitden)"""
     path = BASE + '/deeplink'
+    body = {'coupangUrls': urls}
+    if sub_id:
+        body['subId'] = sub_id
     r = requests.post(HOST + path, headers={'Authorization': _auth('POST', path), 'Content-Type': 'application/json'},
-                      data=json.dumps({'coupangUrls': urls}), timeout=20)
+                      data=json.dumps(body), timeout=20)
     return r.status_code, r.json()
 
 
