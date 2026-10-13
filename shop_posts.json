@@ -38,5 +38,21 @@
    "coupang_blog": "blog_kkleejen",
    "coupang_threads": "threads_kkleejen"
   }
+ },
+ {
+  "key": "labase_dish_rack",
+  "title": "라바제 식기건조대 가격 비교, DLM-8690이 8만 원대부터 25만 원대까지 달라요",
+  "naver": "https://blog.naver.com/sobok_biz/224441058249",
+  "date": "2026-10-14",
+  "keyword": "라바제 식기건조대",
+  "links": {
+   "naver_brandconnect": [
+    "homebar",
+    "ongo",
+    "js"
+   ],
+   "coupang_blog": "blog_labase",
+   "coupang_threads": "threads_labase"
+  }
  }
 ]
