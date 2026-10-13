@@ -78,6 +78,18 @@ def post(text, image=None, video=None, replies=(), dry=False):
     return main_id
 
 
+def reply_to(post_id, text):
+    """이미 올라간 쓰레드 글에 답글 추가(쿠팡 링크 포함 시 수수료 문구 자동)"""
+    if 'coupang' in text.lower() and DISCLOSURE not in text:
+        text += '\n\n' + DISCLOSURE
+    rc = requests.post(f'{BASE}/me/threads', params={'media_type': 'TEXT', 'text': text, 'reply_to_id': post_id,
+                                                     'access_token': TOKEN}, timeout=30).json()
+    time.sleep(3)
+    rid, raw = _publish(rc.get('id'))
+    print('답글 발행:', rid or raw)
+    return rid
+
+
 def refresh():
     r = requests.get('https://graph.threads.net/refresh_access_token',
                      params={'grant_type': 'th_refresh_token', 'access_token': TOKEN}, timeout=30).json()
@@ -97,9 +109,12 @@ if __name__ == '__main__':
     ap.add_argument('--reply', action='append', default=[])
     ap.add_argument('--dry', action='store_true')
     ap.add_argument('--refresh', action='store_true')
+    ap.add_argument('--reply-to')
     a = ap.parse_args()
     if a.refresh:
         refresh()
+    elif a.reply_to and a.text:
+        reply_to(a.reply_to, a.text)
     elif a.text:
         post(a.text, a.image, a.video, a.reply, a.dry)
     else:
