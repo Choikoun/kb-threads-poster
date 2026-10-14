@@ -1,0 +1,47 @@
+name: 릴스 지표 수집 (수동 실행)
+
+on:
+  workflow_dispatch:
+    inputs:
+      count:
+        description: '최근 릴스 개수'
+        required: false
+        default: '80'
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  reel_insights:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: 패키지 설치
+        run: pip install requests python-dotenv
+      - name: 릴스 지표 수집
+        env:
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+        run: python reel_insights.py ${{ github.event.inputs.count }}
+      - name: 결과 커밋
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add reel_insights.json reel_insights.md
+          git diff --staged --quiet || git commit -m "릴스 지표 수집 결과"
+          pushed=false
+          for attempt in 1 2 3 4 5; do
+            if git pull --rebase origin main && git push; then
+              pushed=true
+              break
+            fi
+            git rebase --abort 2>/dev/null || true
+            sleep $((attempt * 5))
+          done
+          if [ "$pushed" = false ]; then
+            echo "::error::push 실패"
+            exit 1
+          fi
