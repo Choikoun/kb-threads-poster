@@ -4,6 +4,8 @@
 import sys, json, importlib
 from datetime import datetime, timezone, timedelta
 sys.stdout.reconfigure(encoding='utf-8')
+import os
+os.environ['REEL_SAVE_CTA'] = '1'
 mod = sys.argv[1]
 importlib.import_module(mod).main()
 KST = timezone(timedelta(hours=9))

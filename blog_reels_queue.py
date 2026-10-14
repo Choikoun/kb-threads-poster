@@ -5,6 +5,8 @@ reels_queue.json: [{"module": "xxx_reels_post", "status": "pending|done", "queue
 import sys, json, importlib
 from datetime import datetime, timezone, timedelta
 sys.stdout.reconfigure(encoding='utf-8')
+import os
+os.environ['REEL_SAVE_CTA'] = '1'
 from annuity_video_poster import load_ig_log, save_ig_log
 
 QUEUE = 'reels_queue.json'

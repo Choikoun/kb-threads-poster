@@ -1,0 +1,24 @@
+name: 영상 렌더 테스트 (게시 없음, 수동)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  render_test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: ffmpeg 설치
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+      - name: 패키지 설치
+        run: pip install requests feedparser google-genai beautifulsoup4 python-dotenv Pillow edge-tts
+      - name: 렌더 테스트
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+        run: python video_render_test.py

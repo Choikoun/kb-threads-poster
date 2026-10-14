@@ -4,7 +4,8 @@
 매주 1회, 뉴스 기반 훅을 짧은 세로형(9:16) 영상으로 제작해 Threads에 VIDEO로 포스팅
 이미지(AI 일러스트/Pexels 실사)에 Ken Burns 효과 + 한글 TTS 내레이션
 """
-import os, sys, json, re, glob, random, subprocess, asyncio
+import os
+import re, sys, json, re, glob, random, subprocess, asyncio
 from datetime import datetime, timezone, timedelta
 from PIL import Image, ImageDraw
 from google import genai
@@ -303,7 +304,10 @@ async def _tts_timed(text, output_path, voice):
 
 
 def generate_narration_timed(text, output_path=AUDIO_PATH, voice=VOICE):
-    """내레이션 생성 + 단어 타임스탬프 반환. 타임스탬프 수집 실패 시 (경로, []) 반환."""
+    """내레이션 생성 + 단어 타임스탬프 반환. 타임스탬프 수집 실패 시 (경로, []) 반환.
+    환경변수 REEL_SAVE_CTA=1(블로그 유도 릴스)이면 끝에 저장 유도 한 문장을 붙인다."""
+    if os.environ.get('REEL_SAVE_CTA') == '1' and '저장' not in text:
+        text = text.rstrip() + ' 나중에 다시 보시려면 저장해두세요.'
     try:
         boundaries = asyncio.run(_tts_timed(text, output_path, voice))
     except Exception as e:
@@ -393,7 +397,7 @@ SUB_FONT = os.path.join('fonts', 'NanumGothicExtraBold.ttf')
 
 def build_video_multi(frame_paths, audio_path, output_path=OUTPUT_VIDEO, duration=12.0,
                       bgm_path=None, phrases=None, work_dir=None,
-                      end_card=None, end_card_seconds=2.8):
+                      end_card=None, end_card_seconds=2.8, cut_seconds=2.3):
     """장면 컷 전환 + 줌(홀짝 교차) + 선택적 BGM + 선택적 싱크 자막(phrases) 번인.
     phrases: [{'start','end','text'}] — generate_narration_timed + make_subtitle_phrases 결과.
     end_card: 내레이션 끝난 뒤 end_card_seconds 동안 붙는 마지막 화면(QR 등). BGM은 끊기지 않고 이어짐."""
@@ -401,10 +405,18 @@ def build_video_multi(frame_paths, audio_path, output_path=OUTPUT_VIDEO, duratio
     n = len(frame_paths)
     seg_frames = int(round(duration * fps / n))
 
-    all_frames = list(frame_paths)
+    # 숏폼 컷 속도: 장면당 약 cut_seconds초마다 같은 이미지를 줌 방향을 바꿔 다시 컷(훅 장면=첫 장면은 분할 안 함)
+    all_frames, frame_counts = [], []
+    for k, fp in enumerate(frame_paths):
+        subs = 1 if k == 0 else max(1, int(round(seg_frames / (cut_seconds * fps))))
+        base = seg_frames // subs
+        for j in range(subs):
+            all_frames.append(fp)
+            frame_counts.append(base if j < subs - 1 else seg_frames - base * (subs - 1))
     use_endcard = bool(end_card) and os.path.exists(end_card)
     if use_endcard:
         all_frames.append(end_card)
+        frame_counts.append(int(round(end_card_seconds * fps)))
     m = len(all_frames)                      # 오디오 입력 인덱스
     end_frames = int(round(end_card_seconds * fps))
     total_duration = duration + (end_card_seconds if use_endcard else 0)
@@ -423,7 +435,7 @@ def build_video_multi(frame_paths, audio_path, output_path=OUTPUT_VIDEO, duratio
             zexpr = "min(zoom+0.0012,1.12)"          # 줌인
         else:
             zexpr = "if(lte(on,1),1.12,max(1.0,zoom-0.0012))"  # 줌아웃
-        d = end_frames if (use_endcard and k == m - 1) else seg_frames
+        d = frame_counts[k]
         parts.append(
             f"[{k}:v]scale=2160:3840,"
             f"zoompan=z='{zexpr}':d={d}:s=1080x1920:fps={fps},"
@@ -442,10 +454,13 @@ def build_video_multi(frame_paths, audio_path, output_path=OUTPUT_VIDEO, duratio
             with open(tf, 'w', encoding='utf-8') as f:
                 f.write(ph['text'].strip())
             tf_ff = tf.replace('\\', '/')
+            has_num = bool(re.search(r'[0-9]', ph['text']))  # 숫자 구절은 크고 노랗게(핵심 수치 강조)
+            fs, fc = (78, '0xFFD54A') if has_num else (62, 'white')
             nxt = f'vs{i}'
             parts.append(
                 f"[{cur}]drawtext=fontfile='{fontfile}':textfile='{tf_ff}'"
-                f":fontsize=62:fontcolor=white:borderw=6:bordercolor=black@0.85"
+                f":fontsize={fs}"
+                f":fontcolor={fc}:borderw=6:bordercolor=black@0.85"
                 f":x=(w-text_w)/2:y=h*0.68"
                 f":enable='between(t,{ph['start']:.2f},{ph['end']:.2f})'[{nxt}]"
             )
