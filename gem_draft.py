@@ -12,6 +12,25 @@ import naver_blog_poster as nb
 
 sys.stdout.reconfigure(encoding='utf-8')
 GEM = 'https://gemini.google.com/gem/20d720618964'
+MASK = '--mask' in sys.argv
+NOPRO = '--nopro' in sys.argv
+MASK_MAP = [('가업승계', 'GS'), ('증여', 'ZY'), ('상속', 'SS')]
+MASK_LEGEND = ('[용어 표기 규칙] 이 요청에서 ZY는 부모 등이 재산을 무상으로 넘겨주는 것(증여)을, SS는 사망으로 재산이 넘어가는 것(상속)을, GS는 가업을 물려주는 것을 뜻하는 약어입니다. '
+               '글에서도 이 약어를 그대로(ZY, SS, GS, 예: ZY세, ZY재산공제) 쓰고 풀어쓰지 마세요.')
+
+
+def mask(t):
+    for a, b in MASK_MAP:
+        t = t.replace(a, b)
+    return t
+
+
+def unmask(t):
+    for a, b in MASK_MAP:
+        t = t.replace(b, a)
+    return t
+
+
 CUSTOM = '--custom' in sys.argv  # 재무 글용 기본조건 대신 --extra/--facts-file 내용만 사용(다른 주제 글)
 
 BASE_COND = ("[작성 조건] 모바일에서 편하게 읽히고 훑어만 봐도 핵심이 이해되게 쓴다. "
@@ -31,13 +50,14 @@ def draft(keyword, extra=''):
     d = nb.get_driver()
     d.get(GEM)
     time.sleep(4)
-    # 모델 3.1 Pro 선택
-    d.execute_script("[...document.querySelectorAll('button')].find(b=>b.offsetParent&&/Flash|Pro/.test(b.innerText))?.click()")
-    time.sleep(1)
-    d.execute_script("[...document.querySelectorAll('button,[role=menuitem]')].find(e=>e.offsetParent&&e.innerText.includes('3.1 Pro'))?.click()")
-    time.sleep(1)
-    d.get(GEM)
-    time.sleep(4)
+    # 모델 3.1 Pro 선택 (--nopro: 전환 생략. Pro가 보험·세금 주제를 거절하는 경우가 있어 기본 모델로 시도)
+    if not NOPRO:
+        d.execute_script("[...document.querySelectorAll('button')].find(b=>b.offsetParent&&/Flash|Pro/.test(b.innerText))?.click()")
+        time.sleep(1)
+        d.execute_script("[...document.querySelectorAll('button,[role=menuitem]')].find(e=>e.offsetParent&&e.innerText.includes('3.1 Pro'))?.click()")
+        time.sleep(1)
+        d.get(GEM)
+        time.sleep(4)
     prompt = keyword + '\n' + (extra if CUSTOM else BASE_COND + ((' ' + extra) if extra else ''))
     box = d.find_element(By.CSS_SELECTOR, 'div.ql-editor')
     box.click()
@@ -63,7 +83,7 @@ def draft(keyword, extra=''):
             print('Gem 거절/짧은 응답:', t[:80])
             break
         prev = len(t)
-    return t
+    return unmask(t) if MASK else t
 
 
 if __name__ == '__main__':
@@ -74,5 +94,11 @@ if __name__ == '__main__':
         facts = ' '.join(open(sys.argv[sys.argv.index('--facts-file') + 1], encoding='utf-8').read().split())
         extra = (extra + ' ' if extra else '') + ('[사실자료 — 이 자료에 있는 사실·수치만 사용하고, 없는 내용은 지어내지 말 것. 확정되지 않은 사항은 "확정되지 않았다"고 쓸 것] ' + facts)
     text = draft(kw, extra)
+    for _try in range(4):  # 거절은 확률적(같은 입력도 되다 안 되다 함) → 새 대화로 재시도
+        if len(text) >= 400:
+            break
+        print('재시도', _try + 1)
+        time.sleep(3)
+        text = draft(kw, extra)
     open(out, 'w', encoding='utf-8').write(text)
     print(len(text), '자 →', out)
