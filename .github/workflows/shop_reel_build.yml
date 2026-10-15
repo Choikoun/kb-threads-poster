@@ -9,6 +9,10 @@ on:
       out:
         description: '생성되는 mp4 경로 (예: blog_images/shop_2026-10-08_탄소매트/reel_mat.mp4)'
         required: true
+      voice:
+        description: '음성(선택): ko-KR-SunHiNeural(여) / ko-KR-InJoonNeural(남)'
+        required: false
+        default: ''
 
 permissions:
   contents: write
@@ -31,6 +35,8 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          SHOP_VOICE: ${{ github.event.inputs.voice }}
+          SHOP_OUT: ${{ github.event.inputs.out }}
         run: python ${{ github.event.inputs.module }}.py
       - name: 릴리스 업로드
         env:

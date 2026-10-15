@@ -54,5 +54,16 @@
    "coupang_blog": "blog_labase",
    "coupang_threads": "threads_labase"
   }
+ },
+ {
+  "key": "amt_square_pan",
+  "title": "AMT 사각팬 가격 비교, 같은 이름 모델이 네이버와 쿠팡에서 최대 29,240원 차이",
+  "naver": "https://blog.naver.com/sobok_biz/224442216630",
+  "date": "2026-10-15",
+  "keyword": "AMT 사각팬",
+  "links": {
+   "coupang_blog": "blog_amt",
+   "coupang_threads": "threads_amt"
+  }
  }
 ]
