@@ -1,42 +1,41 @@
 # 📰 일일 브리핑
-*2026-10-14 10:08 KST*
+*2026-10-15 09:28 KST*
 
 ---
 
 ## 🔖 보험 동향
+- [화재보험협회, 다문화 학생 ‘안전이음 지원사업’ 참여](https://www.insnews.co.kr/news/articleView.html?idxno=93330)
+- [한화생명, ‘필요할때 쓰는 종신보험’ 선보여](https://www.insnews.co.kr/news/articleView.html?idxno=93309)
 - [무보, 지역 수출기업 애로 청취·맞춤형 무역보험 지원](https://www.insnews.co.kr/news/articleView.html?idxno=93301)
 - [화재보험협회, 행안부·농협과 ‘화재안전 강화’ 나선다](https://www.insnews.co.kr/news/articleView.html?idxno=93293)
 - [KB국민은행, 연말정산 대비 ‘2026년 연말 절세 Festival’ 이벤트 실시](https://www.insnews.co.kr/news/articleView.html?idxno=93289)
-- [큐핏, 보험상품 경험위험률 산출 핵심 기술 3종 특허 등록](https://www.insnews.co.kr/news/articleView.html?idxno=93285)
-- [금융보안원, ‘FISCON 2026’ 개최… AI 시대 금융보안 전략 모색](https://www.insnews.co.kr/news/articleView.html?idxno=93284)
 
 ## 💰 국내 경제·금융
-- [대한제강, 美 알래스카 LNG 투자 언급에 25% 급등…강관주 강세](https://www.hankyung.com/article/2026101404756)
-- [코스피, 상승 출발해 6100선 회복…삼전닉스 동반 강세](https://www.hankyung.com/article/2026101403456)
-- [투자원금 1000만원 초고수…급락한 삼성전자 담았다](https://www.hankyung.com/article/202610140188i)
-- [흔들리는 국장…서학개미 선호하는 '미국 주식' 따져보니](https://www.hankyung.com/article/202610139110i)
-- ["신세계, 실적 전망치 하향 조정 불가피…목표가↓"-흥국](https://www.hankyung.com/article/2026101402436)
+- [[속보] 코스피, 장중 4%대 급락…매도 사이드카 발동](https://www.hankyung.com/article/2026101531096)
+- [진코스텍, 코스닥 이전상장 첫날 약세](https://www.hankyung.com/article/2026101531066)
+- [[속보] 코스피, 美 물가 충격에 5%대 폭락 출발…5600선으로 밀려](https://www.hankyung.com/article/2026101530646)
+- [초고수의 선택은 SK하이닉스…삼성전자·LG엔솔은 순매도](https://www.hankyung.com/article/202610152923i)
+- [중동전쟁 이후 급락…한국전력 목표주가 일제히 내렸다](https://www.hankyung.com/article/202610152927i)
 
 ## 📈 주식·시장
-- [“코스피 5000 무너진다” 피난처는 결국 ‘이 주식’](https://www.mk.co.kr/news/stock/12175273)
-- [복잡한 금형 설계도 AI로 쉽게...마키나락스 120억 규모 산업부 R&D 참여](https://www.mk.co.kr/news/stock/12175228)
-- [[MK시그널] 티이엠씨, 반도체 특수가스 경쟁력과 실적 개선 기대감 등에 주가 상승세... MK시그널 추천 후 상승률 18.11% 기록](https://www.mk.co.kr/news/stock/12175193)
-- [“왜 코스피만 더 박살난거죠?”…글로벌 반도체주 하락속 韓 충격 유독 큰데](https://www.mk.co.kr/news/stock/12175144)
-- [“코스피 급락했는데 괜찮나요?”…국민참여성장펀드, 손실 방어 어디까지](https://www.mk.co.kr/news/economy/12175134)
+- [[속보] 급락장에 코스피 이어 코스닥도 매도 사이드카 발동](https://www.mk.co.kr/news/stock/12176436)
+- [[속보] 코스피·코스닥 매도 사이드카 동반 발동…미 물가 충격에 급락](https://www.mk.co.kr/news/stock/12176424)
+- [[속보] 코스피, 5.6% 급락한 5673개장…코스닥도 4.8% 내려](https://www.mk.co.kr/news/stock/12176419)
+- [“삼전 주가, 역사적 저평가”라는데…KB증권 “비중 확대할 기회”](https://www.mk.co.kr/news/stock/12176392)
+- [AI 멈추면 경기침체가 온다...CPI 높았는데 장기금리 떨어진 이유](https://www.mk.co.kr/news/business/12176388)
 
 ## 🌏 글로벌 경제·정세
-- [[속보] 트럼프 "대만, 알래스카 파이프라인 가스 30% 구매 합의"](https://www.hankyung.com/article/2026101407517)
-- [한국 대미 투자부터 띄운 트럼프 '새 입'…첫날부터 '시끌'](https://www.hankyung.com/article/202610140252H)
-- [트럼프 "선거 끝나도 나는 대통령…후티 공격 잊지 않을 것" [이상은의 워싱턴나우]](https://www.hankyung.com/article/202610140117i)
-- [트럼프 "중간선거 끝나도 안 잊는다"…사우디 공격한 후티에 보복 경고](https://www.hankyung.com/article/2026101400417)
-- [WSJ "이란, 美 중간선거 후 전쟁 대비…지상전 시사"](https://www.hankyung.com/article/2026101398787)
+- ["은행원 수천 명을 AI 개발자로"…日, 사무·영업직 대전환](https://www.hankyung.com/article/202610152884i)
+- [日, 美 반도체 공장건설에 28조원 투자…글로벌파운드리 주가↑ [이상은의 워싱턴나우]](https://www.hankyung.com/article/202610152731i)
+- [중국·러시아 위협에…日, 미국 핵무기 반입 허용하나](https://www.hankyung.com/article/202610152808i)
+- [미군 "이란 연계 선박 격침…미 해군 함정 표적 삼았다"](https://www.hankyung.com/article/2026101527667)
+- ['미국이 그렇게 막았는데'…중국 반도체 '잭팟' 터졌다 [차이나 워치]](https://www.hankyung.com/article/202610142548i)
 
 ## 🔥 팔로업 추천 (300회 이상)
-- 803회 [2026-10-12] 국세청이 쏘아 올린 조 단위 소송, 결과 알고 있나.  ⚠️ 초고액 사건...
-- 705회 [2026-10-11] 어떤 집안, 부모님 치매 오시고 나서 통장 돈 한 푼 못 썼어.  📌 본...
-- 383회 [2026-10-11] "내가 정신있을 때 내 통장에서 돈 좀 빼놔야 하나 봐."  정작 아프고...
-- 321회 [2026-10-13] 대통령 아파트 따라 샀다고 세무조사 맞는다는 얘기 들었어?  📍 실거래가...
-- 305회 [2026-10-11] 조 단위 자산가들이 해외 신탁으로 세금을 피하던 통로가 막히고 있어.  ...
+- 759회 [2026-10-14] 어떤 기업 임원, 외제차 매장에서 딜러를 허리띠로 때렸어.  경찰이 와도...
+- 576회 [2026-10-14] 35년을 살림하며 남편을 뒷바라지한 아내, 결국 법원에 재산분할을 청구했...
+- 501회 [2026-10-14] 35년을 살림하고 뒷바라지한 아내,   이혼하면서 남편 노후 연금 나눠달...
+- 414회 [2026-10-13] 대통령 아파트 따라 샀다고 세무조사 맞는다는 얘기 들었어?  📍 실거래가...
 
 ---
 *총 60개 기사 수집됨*
