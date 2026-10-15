@@ -36,13 +36,71 @@ SCENES = [
 PRODUCTS = []
 
 
-def background(L):
+def cover(path, dim=0.55, blur=0):
+    ph = Image.open(path).convert('RGB')
+    r = max(W / ph.width, H / ph.height)
+    ph = ph.resize((int(ph.width * r) + 1, int(ph.height * r) + 1))
+    x, y = (ph.width - W) // 2, (ph.height - H) // 2
+    ph = ph.crop((x, y, x + W, y + H))
+    if blur:
+        ph = ph.filter(ImageFilter.GaussianBlur(blur))
+    return Image.blend(ph, Image.new('RGB', (W, H), c('#0F1A33')), dim)
+
+
+def bg_for(i):
+    return cover(f'{IMG_DIR}/' + ('01_AMT사각팬_대표이미지.jpg' if i % 2 == 0 else '07_AMT사각팬_클로징.jpg'), 0.5 if i % 2 == 0 else 0.45)
+
+
+def product_card(im, L, y0=610, size=520):
+    from PIL import ImageChops
+    d = ImageDraw.Draw(im)
     ph = Image.open(f'{IMG_DIR}/prod_{L}.jpg').convert('RGB')
-    bg = ph.resize((H, H)).crop(((H - W) // 2, 0, (H - W) // 2 + W, H)).filter(ImageFilter.GaussianBlur(40))
-    bg = Image.blend(bg, Image.new('RGB', (W, H), c('#0F1A33')), 0.55)
-    s = ph.resize((W, W))
-    bg.paste(s, (0, 150))
-    return bg
+    bb = ImageChops.difference(ph, Image.new('RGB', ph.size, (255, 255, 255))).point(lambda v: 255 if v > 24 else 0).getbbox()
+    if bb:
+        ph = ph.crop(bb)
+    cw, ch = W - 260, size
+    r = min(cw / ph.width, ch / ph.height)
+    ph = ph.resize((int(ph.width * r), int(ph.height * r)))
+    d.rounded_rectangle([110, y0, W - 110, y0 + size + 60], radius=36, fill=c('#FFFFFF'))
+    im.paste(ph, ((W - ph.width) // 2, y0 + 30 + (size - ph.height) // 2))
+
+
+def bars(im, rows, y0, hi=None, dim_others=True, gap=None):
+    """rows: [(라벨, 값, 색)], 0원 기준 가로 막대"""
+    ov = Image.new('RGBA', (W, H), (0, 0, 0, 0))
+    ImageDraw.Draw(ov).rounded_rectangle([50, y0 - 30, W - 50, y0 + 100 * len(rows) + 50], radius=28, fill=(15, 26, 51, 215))
+    im.paste(Image.alpha_composite(im.convert('RGBA'), ov).convert('RGB'))
+    d = ImageDraw.Draw(im)
+    mx = max(v for _, v, _ in rows)
+    x0, wmax = 330, 600
+    for k, (lab, v, col) in enumerate(rows):
+        y = y0 + k * 100 + 30
+        on = hi is None or hi == k
+        col_ = c(col) if on else tuple(int(t * 0.45 + 28) for t in c(col))
+        d.text((70, y), lab, font=load_font('bold', 30), fill=c('#FFFFFF') if on else c('#8A91A3'), anchor='lm')
+        d.rounded_rectangle([x0, y - 24, x0 + int(wmax * v / mx), y + 24], radius=12, fill=col_)
+        d.text((x0 + int(wmax * v / mx) - 14, y), f'{v:,}', font=load_font('extrabold', 30), fill=c('#FFFFFF'), anchor='rm')
+    if gap:
+        d.text((W // 2, y0 + 100 * len(rows) + 5), gap, font=load_font('extrabold', 36), fill=c('#FFD27A'), anchor='mm')
+
+
+def checklist(im, y0):
+    ov = Image.new('RGBA', (W, H), (0, 0, 0, 0))
+    ImageDraw.Draw(ov).rounded_rectangle([50, y0, W - 50, y0 + 380], radius=28, fill=(15, 26, 51, 225))
+    im.paste(Image.alpha_composite(im.convert('RGBA'), ov).convert('RGB'))
+    d = ImageDraw.Draw(im)
+    for k, t in enumerate(['크기: 22cm · 24cm 중 어떤 것?', '구성: 뚜껑이 포함인지', '모델명이 같은지']):
+        y = y0 + 80 + k * 110
+        d.ellipse([90, y - 28, 146, y + 28], outline=c('#FFD27A'), width=5)
+        d.line([103, y, 115, y + 12, 135, y - 12], fill=c('#FFD27A'), width=6)
+        d.text((175, y), t, font=load_font('bold', 40), fill=c('#FFFFFF'), anchor='lm')
+
+
+def bookmark(im, cx, cy):
+    d = ImageDraw.Draw(im)
+    w, h = 190, 280
+    d.polygon([(cx - w // 2, cy - h // 2), (cx + w // 2, cy - h // 2), (cx + w // 2, cy + h // 2),
+               (cx, cy + h // 2 - 70), (cx - w // 2, cy + h // 2)], fill=c('#FFD27A'))
 
 
 def banner(im, title, big, small, col):
@@ -52,7 +110,7 @@ def banner(im, title, big, small, col):
     im.paste(Image.alpha_composite(im.convert('RGBA'), ov).convert('RGB'))
     d = ImageDraw.Draw(im)
     d.text((W // 2, 250), title, font=load_font('bold', 40), fill=c('#FFFFFF'), anchor='mm')
-    lines = big.split('\n')
+    lines = big.split(chr(10))
     size = 110 if max(len(x) for x in lines) <= 7 else (92 if len(lines) == 1 else 82)
     y0 = 400 - (len(lines) - 1) * size * 0.55
     for i, ln in enumerate(lines):
@@ -66,25 +124,34 @@ def foot(im):
     d.text((W // 2, 1790), '정보 정리용 · 쿠팡 파트너스 활동으로 수수료를 받을 수 있음', font=load_font('regular', 26), fill=c('#B8BECC'), anchor='mm')
 
 
-def info_frame(sc, path):
+NAVER_A = ('네이버 AMT코리아', 152000, '#B8925A')
+NAVER_B = ('네이버 뎀블루', 146670, '#B8925A')
+CP_A = ('쿠팡 로켓배송', 122760, '#2F9D6F')
+
+
+def info_frame(i, sc, path):
     L, title, big, small, col, _ = sc
-    im = background(L)
+    im = bg_for(i)
     banner(im, title, big, small, col)
-    foot(im)
-    im.save(path)
-    return path
-
-
-def product_frame(pr, path):
-    L, name, price, _ = pr
-    im = background(L)
-    ov = Image.new('RGBA', (W, H), (0, 0, 0, 0))
-    ImageDraw.Draw(ov).rounded_rectangle([50, 190, W - 50, 470], radius=28, fill=(15, 26, 51, 215))
-    im.paste(Image.alpha_composite(im.convert('RGBA'), ov).convert('RGB'))
-    d = ImageDraw.Draw(im)
-    d.text((W // 2, 245), '쿠팡 판매 목록 · 시험 대상 제품 아님', font=load_font('bold', 34), fill=c('#FFB4A8'), anchor='mm')
-    d.text((W // 2, 335), name, font=load_font('extrabold', 54), fill=c('#FFFFFF'), anchor='mm')
-    d.text((W // 2, 420), price, font=load_font('extrabold', 66), fill=c('#FFD27A'), anchor='mm')
+    rows = [NAVER_A, NAVER_B, CP_A]
+    if i == 0:
+        product_card(im, 'A', 610, 400)
+        bars(im, rows, 1180, None, gap='최저 ↔ 최고 29,240원 차이')
+    elif i in (1, 2, 3):
+        product_card(im, 'A', 610, 440)
+        bars(im, rows, 1200, hi=i - 1)
+    elif i == 4:
+        product_card(im, 'B', 610, 400)
+        bars(im, [('네이버 24cm', 132000, '#B8925A'), ('쿠팡 24cm', 109880, '#2F9D6F')], 1230, gap='쿠팡이 22,120원 낮음')
+    elif i == 5:
+        product_card(im, 'C', 610, 360)
+        checklist(im, 1100)
+    else:
+        bookmark(im, W // 2, 900)
+        ov = Image.new('RGBA', (W, H), (0, 0, 0, 0))
+        ImageDraw.Draw(ov).rounded_rectangle([90, 1110, W - 90, 1230], radius=28, fill=(15, 26, 51, 225))
+        im.paste(Image.alpha_composite(im.convert('RGBA'), ov).convert('RGB'))
+        ImageDraw.Draw(im).text((W // 2, 1170), '프로필 링크 → 블로그에 전체 비교', font=load_font('bold', 42), fill=c('#FFFFFF'), anchor='mm')
     foot(im)
     im.save(path)
     return path
@@ -93,7 +160,9 @@ def product_frame(pr, path):
 def main():
     tmp = tempfile.mkdtemp()
     try:
-        frames = [info_frame(s, os.path.join(tmp, f'f{i}.png')) for i, s in enumerate(SCENES)]
+        frames = [info_frame(i, s, os.path.join(tmp, f'f{i}.png')) for i, s in enumerate(SCENES)]
+        if os.environ.get('SHOP_PREVIEW'):
+            [shutil.copy(f, f'_tmp_vid/prev{i}.png') for i, f in enumerate(frames)]; return
         narration = ' '.join([s[5] for s in SCENES] + [p[3] for p in PRODUCTS])
         audio = os.path.join(tmp, 'nar.mp3')
         _, bounds = generate_narration_timed(narration, output_path=audio, voice=(os.environ.get('SHOP_VOICE') or 'ko-KR-SunHiNeural'))
