@@ -5,7 +5,7 @@ Gemini Gem("SEO블로그 제작 gem")으로 블로그 초안 생성 (자동화 �
 - 모델을 3.1 Pro로 바꿔서 실행 (Flash-Lite는 분량·품질 부족)
 - 결과는 초안일 뿐: 세법·보험 숫자는 반드시 검산 후 naver.txt로 정리할 것 (메모리 feedback_blog_gem_workflow)
 """
-import sys, time
+import sys, time, os
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 import naver_blog_poster as nb
@@ -65,16 +65,23 @@ def draft(keyword, extra=''):
     prompt = keyword + '\n' + (extra if CUSTOM else BASE_COND + ((' ' + extra) if extra else ''))
     box = d.find_element(By.CSS_SELECTOR, 'div.ql-editor')
     box.click()
-    lines = prompt.split('\n')
-    for i, l in enumerate(lines):
-        box.send_keys(l)
-        if i < len(lines) - 1:
-            box.send_keys(Keys.SHIFT, Keys.ENTER)
-    time.sleep(0.5)
+    if len(prompt) > 1500 and os.environ.get('GEM_TYPE') != '1':
+        # 긴 본문(윤문용)은 한 글자씩 입력하면 입력창이 멈추는 일이 있어 한 번에 붙여 넣는다
+        d.execute_script("arguments[0].focus();document.execCommand('insertText',false,arguments[1]);", box, prompt)
+    else:
+        lines = prompt.split('\n')
+        for i, l in enumerate(lines):
+            box.send_keys(l)
+            if i < len(lines) - 1:
+                box.send_keys(Keys.SHIFT, Keys.ENTER)
+    time.sleep(1)
     box.send_keys(Keys.ENTER)
     prev, t, stable = -1, '', 0
     for i in range(120):
         time.sleep(5)
+        if i >= 15 and len(t) == 0:  # 75초가 지나도 응답이 전혀 없으면 전송 실패로 보고 즉시 재시도
+            print('Gem 응답 없음(전송 실패 추정)')
+            break
         try:
             d.title
         except Exception:
