@@ -13,6 +13,7 @@ from card_generator import load_font, hex_to_rgb
 from video_poster import generate_narration_timed, get_audio_duration, pick_bgm, SUB_FONT, make_subtitle_phrases
 
 W, H, FPS = 1080, 1920, 30
+TEMPO = float(os.environ.get('SHOP_TEMPO') or 1.12)   # Gemini TTS는 느린 편이라 약간 빠르게
 c = hex_to_rgb
 NAVY, GOLD, RED, GREEN = '#1B2A4A', '#B8925A', '#D9534F', '#2F9D6F'
 
@@ -161,6 +162,51 @@ def foot(im):
                             font=load_font('regular', 26), fill=c('#B8BECC'), anchor='mm')
 
 
+def gemini_tts(text, wav_path, voice='Kore', model='gemini-3.8-flash-tts',
+               style=''):
+    """Gemini TTS(무료 등급 있음). 24kHz 16bit PCM을 wav로 저장하고 길이(초)를 반환. 단어 타임스탬프는 없음."""
+    import base64, wave, requests, time
+    key = os.environ.get('GEMINI_API_KEY') or os.environ.get('GOOGLE_API_KEY')
+    body = {'contents': [{'parts': [{'text': style + text}]}],
+            'generationConfig': {'responseModalities': ['AUDIO'],
+                                 'speechConfig': {'voiceConfig': {'prebuiltVoiceConfig': {'voiceName': voice}}}}}
+    for attempt in range(4):
+        r = requests.post(f'https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent',
+                          params={'key': key}, json=body, timeout=120)
+        if r.status_code == 200:
+            try:
+                pcm = base64.b64decode(r.json()['candidates'][0]['content']['parts'][0]['inlineData']['data'])
+                break
+            except (KeyError, IndexError):
+                pass
+        print('  Gemini TTS 재시도', attempt + 1, r.status_code, r.text[:120])
+        time.sleep(5 * (attempt + 1))
+    else:
+        raise RuntimeError('Gemini TTS 실패')
+    with wave.open(wav_path, 'wb') as w:
+        w.setnchannels(1); w.setsampwidth(2); w.setframerate(24000); w.writeframes(pcm)
+    return len(pcm) / 2 / 24000
+
+
+def split_phrases(text, start, end, max_chars=14):
+    """타임스탬프가 없을 때: 문장을 짧은 구절로 나누고 글자 수 비례로 시간 배분"""
+    import re
+    words, phrases, cur = re.split(r'\s+', text.strip()), [], ''
+    for w in words:
+        if cur and len(cur) + 1 + len(w) > max_chars:
+            phrases.append(cur); cur = w
+        else:
+            cur = (cur + ' ' + w).strip()
+    if cur:
+        phrases.append(cur)
+    total = sum(len(p) for p in phrases) or 1
+    t, out = start, []
+    for p in phrases:
+        d = (end - start) * len(p) / total
+        out.append({'start': t, 'end': t + d, 'text': p}); t += d
+    return out
+
+
 def run(scenes, render, out, voice=None, preview=False):
     """scenes: [{'say': 내레이션, ...임의 필드}]  render(scene, i, p, t, t01, work) -> PIL.Image (p: 장면 시작 0.8초 진행도)"""
     voice = voice or os.environ.get('SHOP_VOICE') or 'ko-KR-SunHiNeural'
@@ -168,12 +214,18 @@ def run(scenes, render, out, voice=None, preview=False):
     try:
         auds, durs, phrases, t0 = [], [], [], 0.0
         for i, sc in enumerate(scenes):
-            ap = os.path.join(tmp, f'a{i}.mp3')
-            _, bounds = generate_narration_timed(sc['say'], output_path=ap, voice=voice)
-            ad = get_audio_duration(ap)
-            D = round(ad + 0.35, 2)
-            for ph in make_subtitle_phrases(bounds):
-                phrases.append({'start': ph['start'] + t0, 'end': ph['end'] + t0, 'text': ph['text']})
+            if voice.startswith('gemini:'):
+                ap = os.path.join(tmp, f'a{i}.wav')
+                ad = gemini_tts(sc['say'], ap, voice=voice.split(':', 1)[1]) / TEMPO   # 재생 때 TEMPO배속(ffmpeg atempo)
+                D = round(ad + 0.35, 2)
+                phrases += split_phrases(sc['say'], t0, t0 + ad)
+            else:
+                ap = os.path.join(tmp, f'a{i}.mp3')
+                _, bounds = generate_narration_timed(sc['say'], output_path=ap, voice=voice)
+                ad = get_audio_duration(ap)
+                D = round(ad + 0.35, 2)
+                for ph in make_subtitle_phrases(bounds):
+                    phrases.append({'start': ph['start'] + t0, 'end': ph['end'] + t0, 'text': ph['text']})
             auds.append(ap); durs.append(D); t0 += D
             print(f'장면{i} {D}초')
         if preview:
@@ -211,7 +263,7 @@ def run(scenes, render, out, voice=None, preview=False):
             cur = nxt
         parts.append(f'[{cur}]null[vout]')
         for i, D in enumerate(durs):
-            parts.append(f'[{ns + i}:a]apad=whole_dur={D},atrim=0:{D}[x{i}]')
+            parts.append(f'[{ns + i}:a]' + (f'atempo={TEMPO},' if voice.startswith('gemini:') else '') + f'apad=whole_dur={D},atrim=0:{D}[x{i}]')
         parts.append(''.join(f'[x{i}]' for i in range(ns)) + f'concat=n={ns}:v=0:a=1[nar]')
         if bgm and os.path.exists(bgm):
             parts.append(f'[{2 * ns}:a]volume=0.12[bg]')
