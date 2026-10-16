@@ -1,13 +1,13 @@
 # 🏛️ KTV 국무회의 브리핑
-*2026-10-15 20:38 KST*
+*2026-10-16 20:32 KST*
 
 ---
 
-## 출범 500일 앞둔 이재명 정부, 민생·강력범죄·개헌 논의까지!
-🔗 https://youtu.be/4sy54_EyD20
+## #정은경 보건복지부 장관과 #하정우 부위원장이 소매를 걷어붙인 역대급 행사?! 한국형 소버린 AI와 신약 개발을 위해 100만 명 바이오 데이터 기증 프로젝트 시작됐다! #명벤져스
+🔗 https://youtu.be/KePiYXwof6c
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=4sy54_EyD20! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=KePiYXwof6c! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
@@ -17,11 +17,11 @@ There are two ...
 
 ---
 
-## 프로 일잘러 #김정관 장관을 새벽부터 저녁 늦게까지 밀착 취재했더니, 잠시도 쉴 틈이 없었다! 5극3특 관련한 8번째 출장기 #명벤져스
-🔗 https://youtu.be/0ReWGz10zWg
+## (26.10.16.) 제1차 주택공급 정례브리핑
+🔗 https://youtu.be/8vppAgqApOE
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=0ReWGz10zWg! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=8vppAgqApOE! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
@@ -31,11 +31,11 @@ There are two ...
 
 ---
 
-## (26.10.15.) 제49차 대통령 주재 수석보좌관회의 모두발언
-🔗 https://youtu.be/1ii5w_hnY7g
+## (26.10.16.) 산림사업 추진실태 합동점검 결과 관련 브리핑
+🔗 https://youtu.be/ANhj9V4U5sM
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=1ii5w_hnY7g! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=ANhj9V4U5sM! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
