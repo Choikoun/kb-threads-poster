@@ -159,7 +159,7 @@ def bookmark(im, p, t):
 
 def foot(im):
     ImageDraw.Draw(im).text((W // 2, 1790), '정보 정리용 · 쿠팡 파트너스 활동으로 수수료를 받을 수 있음',
-                            font=load_font('regular', 26), fill=c('#B8BECC'), anchor='mm')
+                            font=load_font('bold', 32), fill=c('#E6E9F2'), anchor='mm')
 
 
 def gemini_tts(text, wav_path, voice='Kore', model='gemini-3.8-flash-tts',
