@@ -87,3 +87,4 @@ research/tistory_seo_gemini_deep_research_2026-10-16.txt 참고. **실명 노출
 - 미리보기: `KB_PREVIEW=1 python <모듈>.py` → `_tmp_kb/` PNG(TTS·ffmpeg 불필요). 서버 렌더 테스트: Actions `kb_anim_render_test.yml`(게시 없음).
 - 로컬은 edge-tts가 403으로 막히고 ffmpeg가 없어서 실제 영상은 Actions에서만 만들어진다. shop_anim.py는 쇼핑 세션 소유라 수정하지 않는다.
 - 효과 비교: 애니메이션 릴스가 5개 이상 쌓이면 reel_insights.yml 재수집 → 기존 방식 대비 평균 시청·조회 비교(instagram_log의 engine='kb_anim' 표시 사용).
+- **길이: 장면 4개·총 28~30초 이내.** 견본(IRP, 5장면)이 서버 렌더에서 36.5초로 길게 나왔다 → 새 릴스는 장면당 대본 1~2문장(약 40자 안팎), 장면 4개로. 장면별 길이 = 해당 TTS 길이+0.35초.
