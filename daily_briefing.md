@@ -1,41 +1,41 @@
 # 📰 일일 브리핑
-*2026-10-15 09:28 KST*
+*2026-10-16 09:18 KST*
 
 ---
 
 ## 🔖 보험 동향
-- [화재보험협회, 다문화 학생 ‘안전이음 지원사업’ 참여](https://www.insnews.co.kr/news/articleView.html?idxno=93330)
-- [한화생명, ‘필요할때 쓰는 종신보험’ 선보여](https://www.insnews.co.kr/news/articleView.html?idxno=93309)
-- [무보, 지역 수출기업 애로 청취·맞춤형 무역보험 지원](https://www.insnews.co.kr/news/articleView.html?idxno=93301)
-- [화재보험협회, 행안부·농협과 ‘화재안전 강화’ 나선다](https://www.insnews.co.kr/news/articleView.html?idxno=93293)
-- [KB국민은행, 연말정산 대비 ‘2026년 연말 절세 Festival’ 이벤트 실시](https://www.insnews.co.kr/news/articleView.html?idxno=93289)
+- [일본 은행·보험, 해외채권 팔고 일본 국채 사들여](https://www.insnews.co.kr/news/articleView.html?idxno=93349)
+- [사이버보험 성장 걸림돌, 보험료보다 경영진 인식 부족](https://www.insnews.co.kr/news/articleView.html?idxno=93347)
+- [현대해상, 가입 후 ‘안전운전 실적 반영’ 기술 특허 취득](https://www.insnews.co.kr/news/articleView.html?idxno=93342)
+- [KB손해보험, 모바일 앱 ‘이용 편의성’ 높인다](https://www.insnews.co.kr/news/articleView.html?idxno=93339)
+- [흥국생명 ‘플렉스리턴100종신보험’… “노후 생활비에 건강보장까지”](https://www.insnews.co.kr/news/articleView.html?idxno=93338)
 
 ## 💰 국내 경제·금융
-- [[속보] 코스피, 장중 4%대 급락…매도 사이드카 발동](https://www.hankyung.com/article/2026101531096)
-- [진코스텍, 코스닥 이전상장 첫날 약세](https://www.hankyung.com/article/2026101531066)
-- [[속보] 코스피, 美 물가 충격에 5%대 폭락 출발…5600선으로 밀려](https://www.hankyung.com/article/2026101530646)
-- [초고수의 선택은 SK하이닉스…삼성전자·LG엔솔은 순매도](https://www.hankyung.com/article/202610152923i)
-- [중동전쟁 이후 급락…한국전력 목표주가 일제히 내렸다](https://www.hankyung.com/article/202610152927i)
+- ['급락 후 무조건 올랐다'…월가 "코스피·메모리 저가매수 기회"](https://www.hankyung.com/article/202610165257i)
+- [62% 급등에도 '역대급 매도 폭탄'…발칵 뒤집어진 대만 증시](https://www.hankyung.com/article/2026101654166)
+- [반도체 빼고 랠리…조정 끝? 데드캣 바운스? [김현석의 월스트리트나우]](https://www.hankyung.com/article/202610165211i)
+- ["휴젤, 美 판매체제 전환에 3분기 실적 부진…목표가↓"-현대차](https://www.hankyung.com/article/2026101653636)
+- ["AI 슈퍼사이클 벌써 끝났나"…나흘 만에 시총 1조달러 증발](https://www.hankyung.com/article/2026101653047)
 
 ## 📈 주식·시장
-- [[속보] 급락장에 코스피 이어 코스닥도 매도 사이드카 발동](https://www.mk.co.kr/news/stock/12176436)
-- [[속보] 코스피·코스닥 매도 사이드카 동반 발동…미 물가 충격에 급락](https://www.mk.co.kr/news/stock/12176424)
-- [[속보] 코스피, 5.6% 급락한 5673개장…코스닥도 4.8% 내려](https://www.mk.co.kr/news/stock/12176419)
-- [“삼전 주가, 역사적 저평가”라는데…KB증권 “비중 확대할 기회”](https://www.mk.co.kr/news/stock/12176392)
-- [AI 멈추면 경기침체가 온다...CPI 높았는데 장기금리 떨어진 이유](https://www.mk.co.kr/news/business/12176388)
+- [[속보] ‘전날 7%대 급락’ 코스피, 1%대 상승 출발…코스닥도 상승](https://www.mk.co.kr/news/stock/12177449)
+- [PPI 폭등했는데 금리 왜 떨어졌나... 증시 색깔 이렇게 바뀐다](https://www.mk.co.kr/news/economy/12177435)
+- [“두산에너빌리티, 올해 3분기 실적 시장 기대치 하회 전망” 목표가↓](https://www.mk.co.kr/news/stock/12177408)
+- [“10만원까지 빠져라, 주식 더 받는다”…삼성전자 직원 익명글에 뿔난 주주들](https://www.mk.co.kr/news/economy/12177162)
+- [“그 돈이 전재산이란 말이에요”…하락장 못 견딘 이들, 20대가 가장 많았다](https://www.mk.co.kr/news/stock/12177116)
 
 ## 🌏 글로벌 경제·정세
-- ["은행원 수천 명을 AI 개발자로"…日, 사무·영업직 대전환](https://www.hankyung.com/article/202610152884i)
-- [日, 美 반도체 공장건설에 28조원 투자…글로벌파운드리 주가↑ [이상은의 워싱턴나우]](https://www.hankyung.com/article/202610152731i)
-- [중국·러시아 위협에…日, 미국 핵무기 반입 허용하나](https://www.hankyung.com/article/202610152808i)
-- [미군 "이란 연계 선박 격침…미 해군 함정 표적 삼았다"](https://www.hankyung.com/article/2026101527667)
-- ['미국이 그렇게 막았는데'…중국 반도체 '잭팟' 터졌다 [차이나 워치]](https://www.hankyung.com/article/202610142548i)
+- ["AI에 일 맡겼더니, 뜻밖의 문제가…" 삼성전자에 기회 왔다](https://www.hankyung.com/article/202610165354i)
+- [승조원 없는 145t '유령 군함'…美항모와 함께 이란 앞으로](https://www.hankyung.com/article/2026101652097)
+- [[속보] 트럼프 "미군기지 난사범 총살형 생중계되지 않을 것"](https://www.hankyung.com/article/2026101551177)
+- [美 9월 생산자물가 1.3% 급등…무게 실리는 Fed 금리 인상](https://www.hankyung.com/article/2026101550921)
+- [일본, 경영·관리 비자 요건 강화하자…외국인 '우르르' 빠져나가](https://www.hankyung.com/article/2026101550697)
 
 ## 🔥 팔로업 추천 (300회 이상)
-- 759회 [2026-10-14] 어떤 기업 임원, 외제차 매장에서 딜러를 허리띠로 때렸어.  경찰이 와도...
-- 576회 [2026-10-14] 35년을 살림하며 남편을 뒷바라지한 아내, 결국 법원에 재산분할을 청구했...
-- 501회 [2026-10-14] 35년을 살림하고 뒷바라지한 아내,   이혼하면서 남편 노후 연금 나눠달...
-- 414회 [2026-10-13] 대통령 아파트 따라 샀다고 세무조사 맞는다는 얘기 들었어?  📍 실거래가...
+- 1,085회 [2026-10-14] 35년을 살림하며 남편을 뒷바라지한 아내, 결국 법원에 재산분할을 청구했...
+- 761회 [2026-10-14] 어떤 기업 임원, 외제차 매장에서 딜러를 허리띠로 때렸어.  경찰이 와도...
+- 579회 [2026-10-14] 35년을 살림하고 뒷바라지한 아내,   이혼하면서 남편 노후 연금 나눠달...
+- 367회 [2026-10-15] 평생 월 200만 원 나온다는데 100명 중 2명만 가입하는 이유를 아냐...
 
 ---
 *총 60개 기사 수집됨*
