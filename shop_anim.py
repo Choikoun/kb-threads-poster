@@ -170,7 +170,7 @@ def gemini_tts(text, wav_path, voice='Kore', model='gemini-3.8-flash-tts',
     body = {'contents': [{'parts': [{'text': style + text}]}],
             'generationConfig': {'responseModalities': ['AUDIO'],
                                  'speechConfig': {'voiceConfig': {'prebuiltVoiceConfig': {'voiceName': voice}}}}}
-    for attempt in range(4):
+    for attempt in range(8):
         r = requests.post(f'https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent',
                           params={'key': key}, json=body, timeout=120)
         if r.status_code == 200:
@@ -179,8 +179,13 @@ def gemini_tts(text, wav_path, voice='Kore', model='gemini-3.8-flash-tts',
                 break
             except (KeyError, IndexError):
                 pass
-        print('  Gemini TTS 재시도', attempt + 1, r.status_code, r.text[:120])
-        time.sleep(5 * (attempt + 1))
+        print('  Gemini TTS 재시도', attempt + 1, r.status_code, r.text[:160].replace(chr(10), ' '))
+        wait = 8 * (attempt + 1)
+        if r.status_code == 429:       # 무료 등급은 분당 호출 제한 → 안내된 대기시간(없으면 30초 이상) 후 재시도
+            import re
+            m = re.search(r'retry in ([0-9.]+)s', r.text) or re.search(r'"retryDelay": "([0-9.]+)s"', r.text)
+            wait = (float(m.group(1)) + 2) if m else max(30, wait)
+        time.sleep(wait)
     else:
         raise RuntimeError('Gemini TTS 실패')
     with wave.open(wav_path, 'wb') as w:
