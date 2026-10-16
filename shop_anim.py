@@ -162,31 +162,43 @@ def foot(im):
                             font=load_font('bold', 32), fill=c('#E6E9F2'), anchor='mm')
 
 
-def gemini_tts(text, wav_path, voice='Kore', model='gemini-3.8-flash-tts',
-               style=''):
-    """Gemini TTS(무료 등급 있음). 24kHz 16bit PCM을 wav로 저장하고 길이(초)를 반환. 단어 타임스탬프는 없음."""
-    import base64, wave, requests, time
+_TTS_MODELS = (os.environ.get('SHOP_TTS_MODELS') or 'gemini-3.8-flash-tts,gemini-3.1-flash-tts-preview,gemini-3.8-flash-lite-tts').split(',')
+_tts_dead = set()   # 오늘 한도(무료 등급 모델별 일 10회)를 다 쓴 모델
+
+
+def gemini_tts(text, wav_path, voice='Kore', style=''):
+    """Gemini TTS(무료 등급은 모델별 하루 10회·분당 제한). 한도 소진 모델은 건너뛰고 다음 모델로.
+    24kHz 16bit PCM을 wav로 저장하고 길이(초)를 반환. 단어 타임스탬프는 없음."""
+    import base64, wave, requests, time, re
     key = os.environ.get('GEMINI_API_KEY') or os.environ.get('GOOGLE_API_KEY')
     body = {'contents': [{'parts': [{'text': style + text}]}],
             'generationConfig': {'responseModalities': ['AUDIO'],
                                  'speechConfig': {'voiceConfig': {'prebuiltVoiceConfig': {'voiceName': voice}}}}}
-    for attempt in range(8):
-        r = requests.post(f'https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent',
+    pcm = None
+    for attempt in range(12):
+        models = [m for m in _TTS_MODELS if m not in _tts_dead]
+        if not models:
+            raise RuntimeError('Gemini TTS 모델 한도 모두 소진')
+        m = models[0]
+        r = requests.post(f'https://generativelanguage.googleapis.com/v1beta/models/{m}:generateContent',
                           params={'key': key}, json=body, timeout=120)
         if r.status_code == 200:
             try:
                 pcm = base64.b64decode(r.json()['candidates'][0]['content']['parts'][0]['inlineData']['data'])
+                print('  TTS 모델:', m)
                 break
             except (KeyError, IndexError):
                 pass
-        print('  Gemini TTS 재시도', attempt + 1, r.status_code, r.text[:160].replace(chr(10), ' '))
+        print('  Gemini TTS 재시도', attempt + 1, m, r.status_code, r.text[:140].replace(chr(10), ' '))
         wait = 8 * (attempt + 1)
-        if r.status_code == 429:       # 무료 등급은 분당 호출 제한 → 안내된 대기시간(없으면 30초 이상) 후 재시도
-            import re
-            m = re.search(r'retry in ([0-9.]+)s', r.text) or re.search(r'"retryDelay": "([0-9.]+)s"', r.text)
-            wait = (float(m.group(1)) + 2) if m else max(30, wait)
+        if r.status_code == 429:
+            h = re.search(r'retry in (?:(\d+)h)?(?:(\d+)m)?([0-9.]+)s', r.text)
+            secs = (int(h.group(1) or 0) * 3600 + int(h.group(2) or 0) * 60 + float(h.group(3))) if h else 30
+            if secs > 120:          # 일일 한도 소진 → 이 모델은 오늘 포기
+                _tts_dead.add(m); continue
+            wait = secs + 2
         time.sleep(wait)
-    else:
+    if pcm is None:
         raise RuntimeError('Gemini TTS 실패')
     with wave.open(wav_path, 'wb') as w:
         w.setnchannels(1); w.setsampwidth(2); w.setframerate(24000); w.writeframes(pcm)
