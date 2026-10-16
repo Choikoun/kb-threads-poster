@@ -105,7 +105,7 @@ if __name__ == '__main__':
         facts = ' '.join(open(sys.argv[sys.argv.index('--facts-file') + 1], encoding='utf-8').read().split())
         extra = (extra + ' ' if extra else '') + ('[사실자료 — 이 자료에 있는 사실·수치만 사용하고, 없는 내용은 지어내지 말 것. 확정되지 않은 사항은 "확정되지 않았다"고 쓸 것] ' + facts)
     text = draft(kw, extra)
-    for _try in range(4):  # 거절은 확률적(같은 입력도 되다 안 되다 함) → 새 대화로 재시도
+    for _try in range(int(os.environ.get('GEM_RETRIES', '4'))):  # 거절은 확률적(같은 입력도 되다 안 되다 함) → 새 대화로 재시도
         if len(text) >= 400:
             break
         print('재시도', _try + 1)
