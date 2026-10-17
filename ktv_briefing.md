@@ -1,47 +1,4 @@
 # 🏛️ KTV 국무회의 브리핑
-*2026-10-16 20:32 KST*
+*2026-10-17 19:52 KST*
 
----
-
-## #정은경 보건복지부 장관과 #하정우 부위원장이 소매를 걷어붙인 역대급 행사?! 한국형 소버린 AI와 신약 개발을 위해 100만 명 바이오 데이터 기증 프로젝트 시작됐다! #명벤져스
-🔗 https://youtu.be/KePiYXwof6c
-
-[자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=KePiYXwof6c! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-There are two ...
-
----
-
-## (26.10.16.) 제1차 주택공급 정례브리핑
-🔗 https://youtu.be/8vppAgqApOE
-
-[자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=8vppAgqApOE! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-There are two ...
-
----
-
-## (26.10.16.) 산림사업 추진실태 합동점검 결과 관련 브리핑
-🔗 https://youtu.be/ANhj9V4U5sM
-
-[자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=ANhj9V4U5sM! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-There are two ...
-
----
-
+오늘 관련 영상 없음
