@@ -5243,7 +5243,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-12"
+    "reblog_date": "2026-10-12",
+    "reposted": true,
+    "reposted_id": "18131252710813244",
+    "reposted_date": "2026-10-17",
+    "remixed": true
   },
   {
     "id": "18559121569078788",
@@ -5254,7 +5258,11 @@
     "likes": 0,
     "replies": 4,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-12"
+    "reblog_date": "2026-10-12",
+    "reposted": true,
+    "reposted_id": "18132016660796085",
+    "reposted_date": "2026-10-17",
+    "remixed": true
   },
   {
     "id": "18004274330994126",
@@ -5265,7 +5273,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-12"
+    "reblog_date": "2026-10-12",
+    "reposted": true,
+    "reposted_id": "17908570671326134",
+    "reposted_date": "2026-10-17",
+    "remixed": true
   },
   {
     "id": "18085198817668238",
@@ -5276,7 +5288,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-12"
+    "reblog_date": "2026-10-12",
+    "reposted": true,
+    "reposted_id": "17881380564626815",
+    "reposted_date": "2026-10-17",
+    "remixed": true
   },
   {
     "id": "18366627940211407",
@@ -5287,7 +5303,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "TEXT_POST",
-    "reblog_date": "2026-10-12"
+    "reblog_date": "2026-10-12",
+    "reposted": true,
+    "reposted_id": "17971219533173364",
+    "reposted_date": "2026-10-17",
+    "remixed": true
   },
   {
     "id": "18116774245907206",
@@ -5298,7 +5318,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-12"
+    "reblog_date": "2026-10-12",
+    "reposted": true,
+    "reposted_id": "18468284653140782",
+    "reposted_date": "2026-10-17",
+    "remixed": true
   },
   {
     "id": "18016618316866011",
@@ -5309,7 +5333,11 @@
     "likes": 10,
     "replies": 1,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-17"
+    "reblog_date": "2026-10-17",
+    "reposted": true,
+    "reposted_id": "18640904497062036",
+    "reposted_date": "2026-10-17",
+    "remixed": true
   },
   {
     "id": "18019171082879537",
@@ -5320,7 +5348,11 @@
     "likes": 1,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-17"
+    "reblog_date": "2026-10-17",
+    "reposted": true,
+    "reposted_id": "18343230256259346",
+    "reposted_date": "2026-10-17",
+    "remixed": true
   },
   {
     "id": "18105076244351159",
@@ -5331,7 +5363,11 @@
     "likes": 1,
     "replies": 2,
     "media_type": "TEXT_POST",
-    "reblog_date": "2026-10-17"
+    "reblog_date": "2026-10-17",
+    "reposted": true,
+    "reposted_id": "18097367000450088",
+    "reposted_date": "2026-10-17",
+    "remixed": true
   },
   {
     "id": "18109018385034190",
@@ -5342,7 +5378,11 @@
     "likes": 0,
     "replies": 2,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-17"
+    "reblog_date": "2026-10-17",
+    "reposted": true,
+    "reposted_id": "17984818761088427",
+    "reposted_date": "2026-10-17",
+    "remixed": true
   },
   {
     "id": "17901491541514932",
@@ -5353,7 +5393,11 @@
     "likes": 3,
     "replies": 4,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-17"
+    "reblog_date": "2026-10-17",
+    "reposted": true,
+    "reposted_id": "18134084539660404",
+    "reposted_date": "2026-10-17",
+    "remixed": true
   },
   {
     "id": "18113354824768149",
@@ -5364,7 +5408,11 @@
     "likes": 5,
     "replies": 4,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-17"
+    "reblog_date": "2026-10-17",
+    "reposted": true,
+    "reposted_id": "18116886187803808",
+    "reposted_date": "2026-10-17",
+    "remixed": true
   },
   {
     "id": "17977463196096111",
@@ -5375,7 +5423,11 @@
     "likes": 2,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-17"
+    "reblog_date": "2026-10-17",
+    "reposted": true,
+    "reposted_id": "18230225668329042",
+    "reposted_date": "2026-10-17",
+    "remixed": true
   },
   {
     "id": "18131255083730387",
@@ -6223,5 +6275,82 @@
     "replies": 3,
     "media_type": "TEXT_POST",
     "reblog_date": "2026-12-05"
+  },
+  {
+    "id": "18077820488436136",
+    "date": "2026-10-16",
+    "text": "평생 은행 창구에서 남들 돈만 세어주던 지점장이 있었어. 정년 퇴직을 하",
+    "full_text": "평생 은행 창구에서 남들 돈만 세어주던 지점장이 있었어.\n정년 퇴직을 하자마자 스마트폰 하나 들고 제주도로 내려갔지.\n지금은 봄가을엔 일하고 겨울엔 훌쩍 여행을 떠나는 삶을 살아.\n매달 통장에 꽂히는 돈만 8백만 원이 넘는다고 해.\n남들은 부러워하며 운이 좋았다고 말하지만.\n사실 퇴직금 쥐고 가만히 앉아있던 사람들과는 시작점부터 달랐어.\n\n#증여 #상속",
+    "views": 1163,
+    "likes": 1,
+    "replies": 5,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-12-12"
+  },
+  {
+    "id": "17953754427290776",
+    "date": "2026-10-14",
+    "text": "35년을 살림하며 남편을 뒷바라지한 아내, 결국 법원에 재산분할을 청구했",
+    "full_text": "35년을 살림하며 남편을 뒷바라지한 아내,\n결국 법원에 재산분할을 청구했어.\n\n🔑 돌아온 답은 \"내 명의 연금은 내 돈\"이라는 남편의 거절이었지.\n\n평생 집안일만 하느라 내 이름으로 된 소득이 없던 사람은,\n퇴직하는 순간 남편의 쌈지돈 하나 제대로 건드리지 못하는 구조가 돼.\n\n결국 법원은 연금도 부부의 공동 재산으로 봤지만,\n당사자는 이미 지칠 대로 지친 뒤였어.\n\n#증여 #상속",
+    "views": 1089,
+    "likes": 1,
+    "replies": 3,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-12-12"
+  },
+  {
+    "id": "18092776517466015",
+    "date": "2026-10-14",
+    "text": "어떤 기업 임원, 외제차 매장에서 딜러를 허리띠로 때렸어.  경찰이 와도",
+    "full_text": "어떤 기업 임원, 외제차 매장에서 딜러를 허리띠로 때렸어.\n\n경찰이 와도 벌금 내면 그만이라며 큰소리쳤대.\n\n🔑 가진 게 돈이라 법이 우스운 걸까.\n\n결국 오너만 사과문 올리고 회사는 수습하느라 난리야.\n\n#법인 #증여",
+    "views": 764,
+    "likes": 0,
+    "replies": 4,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-12-12"
+  },
+  {
+    "id": "18166544131489767",
+    "date": "2026-10-14",
+    "text": "35년을 살림하고 뒷바라지한 아내,   이혼하면서 남편 노후 연금 나눠달",
+    "full_text": "35년을 살림하고 뒷바라지한 아내, \n\n이혼하면서 남편 노후 연금 나눠달라고 했어.\n\n🔑 남편은 내 명의로 된 내 돈이라며 선을 그었지.\n\n평생 희생했는데 법적 내 몫은 어디까지일까.\n\n결국 남의 일 같지 않은 내 노후의 보루가 흔들리는 순간이야.\n\n#증여 #상속",
+    "views": 581,
+    "likes": 0,
+    "replies": 4,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-12-12"
+  },
+  {
+    "id": "17901763071377671",
+    "date": "2026-10-13",
+    "text": "대통령 아파트 따라 샀다고 세무조사 맞는다는 얘기 들었어?  📍 실거래가",
+    "full_text": "대통령 아파트 따라 샀다고 세무조사 맞는다는 얘기 들었어?\n\n📍 실거래가 신고 내역:\n• 자금출처 소명 안내문 발송\n• 편법증여 혐의 정밀 검증\n\n결국 남들 따라 산 타이밍이 검증 표적이 된 구조야.\n\n#법인 #증여",
+    "views": 415,
+    "likes": 0,
+    "replies": 4,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-12-12"
+  },
+  {
+    "id": "18227556769331689",
+    "date": "2026-10-15",
+    "text": "평생 월 200만 원 나온다는데 100명 중 2명만 가입하는 이유를 아냐",
+    "full_text": "평생 월 200만 원 나온다는데 100명 중 2명만 가입하는 이유를 아냐?\n\n집 한 채만 쥐고 살던 김 씨가 결국 주택연금을 포기하고 자식에게 집을 물려주기로 마음먹었다.\n\n정작 세상을 떠날 때까지 계산해 보니 내 집인데 내 뜻대로 굴리기 어려운 조건들이 발목을 잡았기 때문이다.\n\n결국 나이 먹어 손에 쥐는 현금과 자식에게 남기는 유산 사이에서 선택의 기로에 갇히게 된다.\n\n#증여 #상속",
+    "views": 377,
+    "likes": 0,
+    "replies": 4,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-12-12"
+  },
+  {
+    "id": "18207887767370216",
+    "date": "2026-10-16",
+    "text": "💡 브라질 계란 수입을 두고 정치권 공방이 뜨거워.  외교부까지 나서서 ",
+    "full_text": "💡 브라질 계란 수입을 두고 정치권 공방이 뜨거워.\n\n외교부까지 나서서 반박하고 난리가 난 이유.\n\n단순한 식탁 물가 안정을 넘어서는 외교적 계산이 깔려 있는 거지.\n\n#부동산 #정책",
+    "views": 301,
+    "likes": 2,
+    "replies": 1,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-12-12"
   }
 ]

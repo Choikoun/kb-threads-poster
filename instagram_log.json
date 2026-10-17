@@ -121,7 +121,7 @@
     "date": "2026-06-23 15:33",
     "reach": 80,
     "saved": 0,
-    "likes": 1,
+    "likes": 0,
     "comments": 0
   },
   {
@@ -2443,7 +2443,7 @@
     "type": "reels",
     "selected_title": "빅웨이브로보틱스, 코스닥 상장 첫날 200%대 급등",
     "date": "2026-09-30 01:56",
-    "reach": 26,
+    "reach": 27,
     "saved": 0,
     "likes": 0,
     "comments": 0
@@ -2463,7 +2463,7 @@
     "type": "reels",
     "selected_title": "해외금융계좌신고 블로그 유도 릴스",
     "date": "2026-09-30 11:24",
-    "reach": 35,
+    "reach": 36,
     "saved": 0,
     "likes": 0,
     "comments": 1
@@ -2473,7 +2473,7 @@
     "type": "reels",
     "selected_title": "퇴직연금세액공제 블로그 유도 릴스",
     "date": "2026-09-30 16:20",
-    "reach": 119,
+    "reach": 120,
     "saved": 0,
     "likes": 0,
     "comments": 1
@@ -2654,7 +2654,7 @@
     "type": "reels",
     "selected_title": "금융권 잇단 해킹사태에 증권업계도 '긴장'…휴일도 비상근무",
     "date": "2026-10-05 18:31",
-    "reach": 39,
+    "reach": 40,
     "saved": 0,
     "likes": 0,
     "comments": 0
@@ -2725,7 +2725,7 @@
     "type": "reels",
     "selected_title": "이소영 '노란우산 건보료 이중 부과…전통시장관 품목 제한 검토'(종합)",
     "date": "2026-10-07 18:06",
-    "reach": 43,
+    "reach": 45,
     "saved": 0,
     "likes": 0,
     "comments": 0
@@ -2745,7 +2745,7 @@
     "type": "reels",
     "selected_title": "퇴직연금디폴트옵션 블로그 유도 릴스",
     "date": "2026-10-08 11:41",
-    "reach": 43,
+    "reach": 44,
     "saved": 0,
     "likes": 0,
     "comments": 1
@@ -2765,7 +2765,7 @@
     "type": "reels",
     "selected_title": "이장한 종근당그룹 회장 세 자녀에 지분 전량 증여",
     "date": "2026-10-09 02:55",
-    "reach": 40,
+    "reach": 41,
     "saved": 0,
     "likes": 0,
     "comments": 0
@@ -2775,7 +2775,7 @@
     "type": "card",
     "selected_title": "연금보험 노후설계 소재",
     "date": "2026-10-09 02:57",
-    "reach": 3,
+    "reach": 5,
     "saved": 0,
     "likes": 0,
     "comments": 1
@@ -2785,7 +2785,7 @@
     "type": "reels",
     "selected_title": "AI 랠리의 뒤편, '6% 금리'의 그림자가 다가온다",
     "date": "2026-10-09 18:29",
-    "reach": 87,
+    "reach": 90,
     "saved": 0,
     "likes": 0,
     "comments": 0
@@ -2795,7 +2795,7 @@
     "type": "reels",
     "selected_title": "美 재정 적자 2조 달러 눈앞…'2021년 이후 최대'",
     "date": "2026-10-10 02:29",
-    "reach": 109,
+    "reach": 110,
     "saved": 0,
     "likes": 0,
     "comments": 0
@@ -2804,96 +2804,160 @@
     "ig_post_id": "18634243528027904",
     "type": "reels",
     "selected_title": "랩 수익률, 코스피의 6배…수수료 더 내도 전문가 찾는다",
-    "date": "2026-10-10 17:49"
+    "date": "2026-10-10 17:49",
+    "reach": 43,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18071872763742954",
     "type": "reels",
     "selected_title": "[홍보] 중임등기 셀프 도구 릴스",
-    "date": "2026-10-11 01:13"
+    "date": "2026-10-11 01:13",
+    "reach": 103,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "17987125352877728",
     "type": "reels",
     "selected_title": "노사연, ♥이무송은 어쩌고..“의사 아내가 로망, 바람 피울 일도 없어” (‘동치미’)",
-    "date": "2026-10-11 01:17"
+    "date": "2026-10-11 01:17",
+    "reach": 143,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "17929053756420443",
     "type": "reels",
     "selected_title": "‘가평 계곡살인’ 이은해, 남편 유족연금 1300만원 받아 갔는데···환수는 ‘0원’",
-    "date": "2026-10-11 18:12"
+    "date": "2026-10-11 18:12",
+    "reach": 155,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18117113521804972",
     "type": "reels",
     "selected_title": "총 1억3500만 원 납입한 일반 계좌 vs IRP 계좌…15년 후 자산 차이는? [금융 리터러시2.0]",
-    "date": "2026-10-12 01:41"
+    "date": "2026-10-12 01:41",
+    "reach": 50,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "17958623145218686",
     "type": "reels",
     "selected_title": "달러보험단점 블로그 유도 릴스",
-    "date": "2026-10-12 09:59"
+    "date": "2026-10-12 09:59",
+    "reach": 41,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "18446523883125560",
     "type": "reels",
     "selected_title": "코스피 급락에 두달 만에 매도 사이드카 발동…'육천피'도 위태",
-    "date": "2026-10-14 03:24"
+    "date": "2026-10-14 03:24",
+    "reach": 37,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18193596019403169",
     "type": "reels",
     "selected_title": "단기납종신 판매중단 이후 블로그 유도 릴스",
-    "date": "2026-10-14 10:33"
+    "date": "2026-10-14 10:33",
+    "reach": 15,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "18130897369690961",
     "type": "reels",
     "selected_title": "연봉 2배에 반도체 기술 넘겨…공소청 첫 기술유출 기소",
-    "date": "2026-10-14 16:55"
+    "date": "2026-10-14 16:55",
+    "reach": 81,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "17898112533398832",
     "type": "reels",
     "selected_title": "35년 뒷바라진 한 아내에게 “연금은 내 돈, 못 준다” 선 그은 남편",
-    "date": "2026-10-15 00:52"
+    "date": "2026-10-15 00:52",
+    "reach": 131,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18039969599839466",
     "type": "reels",
     "selected_title": "IRP계좌출금 블로그 유도 릴스",
-    "date": "2026-10-15 09:54"
+    "date": "2026-10-15 09:54",
+    "reach": 47,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "18025315607865595",
     "type": "reels",
     "selected_title": "신설법인 10월 9일 ~ 10월 15일",
-    "date": "2026-10-15 16:40"
+    "date": "2026-10-15 16:40",
+    "reach": 21,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18137379175732754",
     "type": "reels",
     "selected_title": "“평생 월 200만원 꽂힌다는데”…100명 중 2명만 가입하는 주택연금 왜?",
-    "date": "2026-10-16 00:39"
+    "date": "2026-10-16 00:39",
+    "reach": 125,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18135824668660218",
     "type": "reels",
     "selected_title": "즉시연금1억 블로그 유도 릴스",
-    "date": "2026-10-16 09:20"
+    "date": "2026-10-16 09:20",
+    "reach": 8,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "17898088869674324",
     "type": "reels",
     "selected_title": "“깜빡이 깜빡했다가 과태료”…좌회전 대기 중 방향등 안 켜면 최고 4만원",
-    "date": "2026-10-16 16:27"
+    "date": "2026-10-16 16:27",
+    "reach": 120,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "17987165784118309",
     "type": "reels",
     "selected_title": "김용빈 전 대우조선해양건설 회장, 배임 혐의로 징역 4년",
-    "date": "2026-10-17 00:25"
+    "date": "2026-10-17 00:25",
+    "reach": 21,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   }
 ]
