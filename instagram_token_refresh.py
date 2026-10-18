@@ -64,10 +64,47 @@ def update_github_secret(new_token):
         sys.exit(1)
 
 
+def page_token_for_instagram(user_token):
+    """장기 User 토큰으로 /me/accounts 를 조회해 인스타 비즈니스 계정에 연결된 페이지의 Page 토큰을 얻는다.
+    장기 User 토큰에서 얻은 Page 토큰은 만료되지 않는다(2026-10-18 User 토큰 60일 만료 사고 대응). 못 찾으면 None."""
+    ig_id = os.environ.get('INSTAGRAM_BUSINESS_ACCOUNT_ID', '')
+    r = requests.get('https://graph.facebook.com/v21.0/me/accounts',
+                     params={'fields': 'id,name,access_token,instagram_business_account{id}',
+                             'limit': 100, 'access_token': user_token}, timeout=30)
+    if not r.ok:
+        print(f'페이지 목록 조회 실패(User 토큰 유지): {r.text[:200]}')
+        return None
+    for pg in r.json().get('data', []):
+        if (pg.get('instagram_business_account') or {}).get('id') == ig_id and pg.get('access_token'):
+            print(f"인스타 연결 페이지 확인: {pg.get('name')} (페이지 토큰 사용)")
+            return pg['access_token']
+    print('인스타 비즈니스 계정에 연결된 페이지를 찾지 못함(User 토큰 유지)')
+    return None
+
+
+def token_expiry(token):
+    """debug_token 으로 만료 시각 확인 → (expires_at 초, 0이면 만료 없음) / 실패 시 None"""
+    r = requests.get('https://graph.facebook.com/v21.0/debug_token',
+                     params={'input_token': token, 'access_token': f'{APP_ID}|{APP_SECRET}'}, timeout=30)
+    if not r.ok:
+        return None
+    return r.json().get('data', {}).get('expires_at')
+
+
 def main():
     print('Instagram 토큰 갱신 중...')
-    new_token = refresh_token()
-    update_github_secret(new_token)
+    user_token = refresh_token()
+    final = user_token
+    page = page_token_for_instagram(user_token)
+    if page:
+        exp = token_expiry(page)
+        print('페이지 토큰 만료 정보(expires_at, 0이면 무기한):', exp)
+        if exp == 0:
+            final = page
+    if final is user_token:
+        print('※ 만료 없는 토큰을 만들지 못해 60일짜리 User 토큰을 저장합니다. 약 55일 뒤 수동 재발급이 필요합니다.')
+    ok = update_github_secret(final)
+    print('저장한 토큰 종류:', '페이지 토큰(무기한)' if final is not user_token else 'User 장기 토큰(60일)')
 
 
 if __name__ == '__main__':
