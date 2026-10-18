@@ -44,6 +44,9 @@ def update_github_secret(new_token):
         f'https://api.github.com/repos/{REPO}/actions/secrets/public-key',
         headers=headers, timeout=15)
     pk_data = pk_resp.json()
+    if 'key' not in pk_data:
+        print(f'GH_PAT로 secret 공개키 조회 실패: HTTP {pk_resp.status_code} {str(pk_data)[:200]} — GH_PAT 만료/권한 부족 가능(repo 권한 또는 Secrets:write 필요)')
+        sys.exit(1)
 
     # 토큰 암호화
     pk = PublicKey(pk_data['key'].encode(), encoder=Base64Encoder)
@@ -74,7 +77,14 @@ def page_token_for_instagram(user_token):
     if not r.ok:
         print(f'페이지 목록 조회 실패(User 토큰 유지): {r.text[:200]}')
         return None
-    for pg in r.json().get('data', []):
+    pages = r.json().get('data', [])
+    print(f'조회된 페이지 {len(pages)}개:', [(pg.get('name'), (pg.get('instagram_business_account') or {}).get('id') == ig_id) for pg in pages])
+    try:
+        d = requests.get('https://graph.facebook.com/v21.0/debug_token', params={'input_token': user_token, 'access_token': f'{APP_ID}|{APP_SECRET}'}, timeout=30).json().get('data', {})
+        print('토큰 권한(scopes):', d.get('scopes'), '/ 만료:', d.get('expires_at'))
+    except Exception as e:
+        print('debug_token 조회 실패:', e)
+    for pg in pages:
         if (pg.get('instagram_business_account') or {}).get('id') == ig_id and pg.get('access_token'):
             print(f"인스타 연결 페이지 확인: {pg.get('name')} (페이지 토큰 사용)")
             return pg['access_token']
