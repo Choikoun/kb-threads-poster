@@ -82,6 +82,12 @@ def page_token_for_instagram(user_token):
     try:
         d = requests.get('https://graph.facebook.com/v21.0/debug_token', params={'input_token': user_token, 'access_token': f'{APP_ID}|{APP_SECRET}'}, timeout=30).json().get('data', {})
         print('토큰 권한(scopes):', d.get('scopes'), '/ 만료:', d.get('expires_at'))
+        rb = requests.get('https://graph.facebook.com/v21.0/me/businesses', params={'fields': 'id,name', 'access_token': user_token}, timeout=30)
+        print('비즈니스 포트폴리오 조회:', rb.status_code, str(rb.json())[:300])
+        for b in rb.json().get('data', []):
+            for edge in ('owned_pages', 'client_pages'):
+                re_ = requests.get(f"https://graph.facebook.com/v21.0/{b['id']}/{edge}", params={'fields': 'id,name,instagram_business_account{id}', 'access_token': user_token}, timeout=30)
+                print(f"  {b.get('name')} {edge}:", re_.status_code, str(re_.json())[:300])
     except Exception as e:
         print('debug_token 조회 실패:', e)
     for pg in pages:
