@@ -88,5 +88,17 @@
    "coupang_blog": "blog_kai",
    "coupang_threads": "threads_kai"
   }
+ },
+ {
+  "key": "hurom_h400",
+  "title": "휴롬 H400 가격 비교, 쿠팡과 네이버 표기가가 최대 55,000원 차이 났어요",
+  "naver": "https://blog.naver.com/sobok_biz/224446008506",
+  "date": "2026-10-19",
+  "keyword": "휴롬 H400",
+  "links": {
+   "coupang_blog": "blog_hurom",
+   "coupang_threads": "threads_hurom"
+  },
+  "duplicate_unpublished_id": "224446007312"
  }
 ]
