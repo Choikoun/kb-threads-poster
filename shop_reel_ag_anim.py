@@ -25,7 +25,7 @@ SCENES = [
          items=['물에 담가 두지 않기', '식기세척기 피하기', '쓴 뒤 세워서 말리기'],
          say='물에 담그거나 식기세척기에 넣는 건 피하라는 안내가 많아요.'),
     dict(kind='cta', title='저장해두세요', big='살 때 꺼내보기', small='직접 써본 후기 아님 · 쿠팡 파트너스 수수료', col=GOLD,
-         say='저장해 두고, 살 때 꺼내 보세요. 자세한 비교는 프로필 블로그에 있어요.'),
+         say='저장해 두고, 살 때 꺼내 보세요. 자세한 비교는 블로그에 있어요.'),
 ]
 _bgs = {}
 
@@ -60,7 +60,7 @@ def render(sc, i, p, t, t01, work):
             A.bookmark(im, max(0.0, (t - 0.2) / 0.8), t)
             if t > 0.8:
                 A.panel(im, [90, 1110, A.W - 90, 1230], alpha=225)
-                ImageDraw.Draw(im).text((A.W // 2, 1170), '프로필 링크 → 블로그에 전체 비교', font=load_font('bold', 42), fill=(255, 255, 255), anchor='mm')
+                ImageDraw.Draw(im).text((A.W // 2, 1170), '블로그에 전체 비교가 있어요', font=load_font('bold', 42), fill=(255, 255, 255), anchor='mm')
     A.foot(im)
     return im
 
