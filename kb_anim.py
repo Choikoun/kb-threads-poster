@@ -58,6 +58,8 @@ def bars2(im, rows, y0, p, fmt=None, gap=None, hi=None):
             d.rounded_rectangle([x0, y - 24, x0 + w, y + 24], radius=12, fill=col_)
             if w > 150:
                 d.text((x0 + w - 14, y), fmt(v * q), font=load_font('extrabold', 30), fill=c('#FFFFFF'), anchor='rm')
+            else:  # 짧은 막대는 숫자를 막대 오른쪽 바깥에
+                d.text((x0 + w + 16, y), fmt(v * q), font=load_font('extrabold', 30), fill=c('#FFFFFF'), anchor='lm')
     if gap and p > 0.7:
         d.text((W // 2, y0 + 100 * len(rows) + 5), gap, font=load_font('extrabold', 36), fill=c('#FFD27A'), anchor='mm')
 
