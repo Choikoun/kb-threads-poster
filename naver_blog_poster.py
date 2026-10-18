@@ -151,7 +151,8 @@ def expand_lines(lines):
         if not s:
             out.append('')
             continue
-        if s.startswith('[IMG:') or s.startswith('## ') or 'http://' in s or 'https://' in s:
+        if s.startswith('[IMG:') or s.startswith('## ') or 'http://' in s or 'https://' in s \
+                or s.startswith('> ') or s == '[구분선]':
             out.append(s)
             continue
         s = NUM_RE.sub(_circle, s)
@@ -159,8 +160,6 @@ def expand_lines(lines):
         if m:
             head = NUM_RE.sub(_circle, m.group(1).strip()).rstrip('.')
             rest = m.group(2).strip()
-            if out and out[-1] != '':
-                out.append('')
             out.append(f'**{head}**')
             if rest:
                 out.extend(_group_sentences(rest))
@@ -169,13 +168,24 @@ def expand_lines(lines):
     return out
 
 
+def _plain(l):
+    """원고 표기(소제목 **, 인용구 >, 강조 ==, 링크 [문구](주소))를 걷어낸 화면 표시 텍스트."""
+    s = l.strip()
+    if s.startswith('> '):
+        s = s[2:]
+    s = re.sub(r'\[([^\]]+)\]\(https?://[^)\s]+\)', r'\1', s)
+    return s.replace('**', '').replace('==', '').strip()
+
+
 def verify_body_order(driver, lines):
-    """본문이 의도한 순서·개수대로 들어갔는지 확인 (자동목록/커서 점프로 뒤섞인 글이 발행되는 사고 방지)."""
-    expected = [l.replace('**', '').strip() for l in lines
-                if l.strip() and not l.strip().startswith('[IMG')]
-    paras = [p.text.replace('​', '').strip()
-             for p in driver.find_elements(By.CSS_SELECTOR, '.se-section-text .se-text-paragraph')]
-    paras = [p for p in paras if p]
+    """본문이 의도한 순서·개수대로 들어갔는지 확인 (자동목록/커서 점프로 뒤섞인 글이 발행되는 사고 방지).
+    소제목·인용구 박스 안의 문단도 문서 순서대로 함께 비교한다(제목 영역 제외)."""
+    expected = [_plain(l) for l in lines
+                if l.strip() and not l.strip().startswith('[IMG') and l.strip() != '[구분선]']
+    paras = [p.replace('​', '').strip() for p in driver.execute_script(
+        "return [...document.querySelectorAll('.se-component:not(.se-documentTitle) .se-text-paragraph')]"
+        ".map(p=>{const c=p.cloneNode(true); c.querySelectorAll('.se-placeholder,.__se_placeholder').forEach(x=>x.remove()); return c.textContent;});")]
+    paras = [p for p in paras if p and '글감과 함께' not in p and p != '출처 입력']
     if len(paras) != len(expected):
         with open('_verify_dump.txt', 'w', encoding='utf-8') as f:
             f.write('EXPECTED\n' + '\n'.join(expected) + '\n\nACTUAL\n' + '\n'.join(paras))
@@ -392,9 +402,40 @@ def insert_image(driver, wait, image_path):
 
 
 def type_body(driver, wait, lines, base_dir):
+    import naver_editor_tools as T
     set_bold(driver, False)  # 시작 시점 한 번만 확인(수정 모드에서 굵게 상태로 시작하는 문제). 줄마다 JS를 부르면 커서가 튄다.
-    for line in lines:
+    # 소제목·구분선·인용구 박스는 위아래 여백이 서식에 이미 있으므로, 그 옆의 빈 줄(빈 문단)은 건너뛴다.
+    def _structural(x):
+        x = x.strip()
+        return x == '[구분선]' or x.startswith('> ') or bool(T.HEAD_FULL.match(x))
+    kept = []
+    for k, l in enumerate(lines):
+        if l.strip() == '':
+            prev = next((p for p in reversed(kept) if p.strip()), None)
+            nxt = next((n for n in lines[k + 1:] if n.strip()), None)
+            if (prev is not None and _structural(prev) and kept and kept[-1].strip() != '') or (nxt is not None and _structural(nxt)):
+                continue
+        kept.append(l)
+    lines = kept
+    i = 0
+    while i < len(lines):
+        line = lines[i]
         s = line.strip()
+        i += 1
+        if s.startswith('> '):  # 인용구 박스: 연속된 '> ' 줄을 한 박스로
+            block = [s[2:]]
+            while i < len(lines) and lines[i].strip().startswith('> '):
+                block.append(lines[i].strip()[2:])
+                i += 1
+            T.quote_box(driver, block)
+            continue
+        if s == '[구분선]':
+            T.divider(driver)
+            continue
+        m = T.HEAD_FULL.match(s)
+        if m:  # 소제목 줄: 문단 서식 '소제목'
+            T.heading(driver, m.group(1).strip())
+            continue
         if s.startswith('[IMG:') and s.endswith(']'):
             img = os.path.join(base_dir, s[5:-1].strip())
             if not os.path.exists(img):
@@ -412,22 +453,20 @@ def type_body(driver, wait, lines, base_dir):
             send_chord(driver, Keys.CONTROL, 'b')
             send(driver, '\n')
             continue
-        # 인라인 강조: **텍스트** → 굵게 (굵게는 소제목·핵심 강조에만; 나머지는 반드시 보통체)
-        parts = line.split('**')
-        for i, part in enumerate(parts):
-            if not part:
-                continue
-            if i % 2 == 1:
-                send_chord(driver, Keys.CONTROL, 'b')
-                send(driver, part)
-                send_chord(driver, Keys.CONTROL, 'b')
-            else:
-                send(driver, part)
+        # 인라인: ==강조==(노란 배경), [문구](주소)(링크). 별표 굵게는 쓰지 않는다(ai_tell_check 금지).
+        T.type_inline(driver, line)
         send(driver, '\n')
-        if 'http://' in line or 'https://' in line:
+        if s.startswith('http://') or s.startswith('https://'):
             # URL은 SmartEditor가 잠시 뒤 링크 카드로 자동 변환함 — 그 전에 다음 줄이
             # 같은 줄로 붙어버리는 경우가 있어 변환이 끝날 시간을 준다.
+            # 변환이 끝나기 전에 전체선택(Ctrl+A, 줄간격 적용)이 겹치면 본문이 카드로 대체될 수 있어(10-18 사고) 카드가 생길 때까지 기다린다.
+            n0 = driver.execute_script("return document.querySelectorAll('.se-component.se-oglink').length")
             time.sleep(1.2)
+            for _w in range(24):
+                if driver.execute_script("return document.querySelectorAll('.se-component.se-oglink').length") > n0:
+                    break
+                time.sleep(0.5)
+            time.sleep(0.8)
             send_chord(driver, Keys.CONTROL, Keys.END)  # 카드 변환 후 커서가 튀는 것 방지
         else:
             time.sleep(0.05)
@@ -508,6 +547,10 @@ def post_to_naver(meta, lines, base_dir, dry=False, update_logno=None):
     if not title:
         raise ValueError('글파일에 "제목:" 이 없어요.')
     check_keyword(meta, lines)
+    import ai_tell_check
+    _e, _w = ai_tell_check.report(lines, ' (네이버)')
+    if _e:
+        raise RuntimeError('AI 티 점검 오류가 있어 발행을 중단합니다. 원고를 고친 뒤 다시 실행하세요.')
 
     driver = get_driver()
     acquire_work_tab(driver)
@@ -539,8 +582,11 @@ def post_to_naver(meta, lines, base_dir, dry=False, update_logno=None):
     focus_body(driver)
     type_body(driver, wait, lines, base_dir)
     verify_body_order(driver, lines)
-    body_text = driver.find_element(By.CSS_SELECTOR, '.se-section-text').text.strip()
-    first_line = next((l.strip() for l in lines if l.strip() and not l.strip().startswith('[IMG')), '')
+    import naver_editor_tools as _T
+    _T.set_line_height(driver, 180, debug=bool(os.environ.get('NAVER_DEBUG_LH')))
+    body_text = driver.execute_script(
+        "return [...document.querySelectorAll('.se-component:not(.se-documentTitle)')].map(c=>c.innerText).join(' ');")
+    first_line = _plain(next((l for l in lines if l.strip() and not l.strip().startswith('[IMG') and l.strip() != '[구분선]'), ''))
     if first_line[:10] not in body_text:
         driver.save_screenshot('debug_body_typed_fail.png')
         raise RuntimeError(f'본문이 실제로 입력되지 않았어요 (debug_body_typed_fail.png 확인)')

@@ -104,11 +104,32 @@ def _internal_link(url):
     return None, None
 
 
+LINK_MD = re.compile(r'\[([^\]]+)\]\((https?://[^)\s]+)\)')
+INLINE_RE = re.compile(r'\[([^\]]+)\]\((https?://[^)\s]+)\)|==([^=]+)==')
+HILITE_STYLE = 'background-color:#fff8b2;'
+
+
+def _inline(text):
+    """한 줄의 인라인 처리: 별표(**) 강조는 절대 출력하지 않는다(AI 글 티, 사용자 금지 10-18).
+    [표시문구](주소) 는 링크(출처는 주소를 노출하지 않고 제목에 링크), ==강조== 는 노란 배경."""
+    text = text.replace('**', '')
+    out, pos = [], 0
+    for m in INLINE_RE.finditer(text):
+        out.append(html.escape(text[pos:m.start()]))
+        if m.group(1):
+            out.append(f'<a href="{html.escape(m.group(2), quote=True)}" target="_blank" rel="noopener">{html.escape(m.group(1))}</a>')
+        else:
+            out.append(f'<span style="{HILITE_STYLE}">{html.escape(m.group(3))}</span>')
+        pos = m.end()
+    out.append(html.escape(text[pos:]))
+    return ''.join(out)
+
+
 def _para(text_lines):
     parts = []
     for ln in text_lines:
         parts.extend(nb._group_sentences(ln))
-    body = '<br>'.join(html.escape(p) for p in parts)
+    body = '<br>'.join(_inline(p) for p in parts)
     body = re.sub(r'^(\d{1,2})[.)]\s+', lambda m: (nb.CIRCLED[int(m.group(1)) - 1] if 1 <= int(m.group(1)) <= 12 else m.group(1) + ')') + ' ', body)
     return f'<p data-ke-size="size16">{body}</p>'
 
@@ -154,6 +175,29 @@ def build_html(lines):
             b = b[1:]
             if not b:
                 continue
+        if any(x == '[구분선]' or x.startswith('> ') for x in b):
+            buf, qbuf = [], []
+
+            def _flush_q():
+                if qbuf:
+                    inner = _para(list(qbuf)).replace('<p data-ke-size="size16">', '<p data-ke-size="size16" style="margin:0;">', 1)
+                    out.append(f'<div style="background:#F7F5F0;border-left:4px solid {GOLD};padding:16px 18px;border-radius:4px;margin:8px 0 18px;">{inner}</div>')
+                    qbuf.clear()
+
+            def _flush_p():
+                if buf:
+                    out.append(_para(list(buf)))
+                    buf.clear()
+            for x in b:
+                if x == '[구분선]':
+                    _flush_q(); _flush_p()
+                    out.append('<hr data-ke-type="horizontalRule" data-ke-style="style1">')
+                elif x.startswith('> '):
+                    _flush_p(); qbuf.append(x[2:])
+                else:
+                    _flush_q(); buf.append(x)
+            _flush_q(); _flush_p()
+            continue
         # URL 줄: 내부링크/외부링크
         text, links = [], []
         for x in b:
@@ -274,6 +318,10 @@ def publish(driver):
 
 
 def post_to_tistory(meta, lines, base_dir, cat, dry=False):
+    import ai_tell_check
+    _e, _w = ai_tell_check.report(lines, ' (티스토리)')
+    if _e:
+        raise RuntimeError('AI 티 점검 오류가 있어 발행을 중단합니다. 원고를 고친 뒤 다시 실행하세요.')
     driver = nb.get_driver()
     ensure_login(driver)
     time.sleep(1)
