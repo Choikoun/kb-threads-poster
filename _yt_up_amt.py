@@ -4,8 +4,8 @@ sys.stdout.reconfigure(encoding='utf-8')
 import naver_blog_poster as nb
 from selenium.webdriver.common.by import By
 d = nb.get_driver()
-vid = os.path.abspath('_tmp_vid/kai_reel.mp4')
-title = '카이 손톱깎이 중 사이즈 네이버 4,800원 쿠팡 5,800원 #shorts'
+vid = os.path.abspath('_tmp_vid/hurom_reel.mp4')
+title = '휴롬 H400 가격 쿠팡 324,000원 네이버 379,000원 #shorts'
 desc = open('_yt_desc.txt', encoding='utf-8').read()
 d.get('https://studio.youtube.com/channel/UCoHfUNfb812NsJRxhnDt5og/videos/upload?d=ud')
 time.sleep(8)
