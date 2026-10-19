@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""휴롬 모델 구분 릴스(링크 없음)(shop_anim 엔진). SHOP_VOICE=gemini:Kore / SHOP_OUT / SHOP_PREVIEW"""
+"""휴롬 모델 구분 릴스(shop_anim 엔진). SHOP_VOICE=gemini:Kore / SHOP_OUT / SHOP_PREVIEW"""
 import os, sys
 sys.stdout.reconfigure(encoding='utf-8')
 import shop_anim as A
@@ -24,7 +24,7 @@ SCENES = [
     dict(kind='check', card='B', title='가격만 보면 헷갈려요', big='모델명 먼저 확인', small='사양은 상세 페이지 사양표로', col=RED,
          items=['모델명 H400·H410·H430', '색상과 구성품', '판매자와 보증기간'],
          say='가격만 보면 다른 모델을 비교하게 돼요. 모델명부터 확인하세요.'),
-    dict(kind='cta', title='저장해두세요', big='살 때 꺼내보기', small='직접 써본 후기 아님 · 정보 정리', col=GOLD,
+    dict(kind='cta', title='저장해두세요', big='살 때 꺼내보기', small='직접 써본 후기 아님 · 쿠팡 파트너스 수수료', col=GOLD,
          say='저장해 두고, 살 때 꺼내 보세요. 전체 가격 비교는 블로그에 있어요.'),
 ]
 _bgs = {}
@@ -55,12 +55,6 @@ def render(sc, i, p, t, t01, work):
     A.foot(im)
     return im
 
-
-def _foot(im):
-    ImageDraw.Draw(im).text((A.W // 2, 1790), '정보 정리용 · 직접 써본 후기 아님', font=load_font('bold', 32), fill=c('#E6E9F2'), anchor='mm')
-
-
-A.foot = _foot
 
 if __name__ == '__main__':
     A.run(SCENES, render, OUT, preview=bool(os.environ.get('SHOP_PREVIEW')))
