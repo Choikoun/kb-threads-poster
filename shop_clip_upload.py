@@ -43,9 +43,10 @@ let p=t; for(let i=0;i<5&&p;i++){const b=p.querySelector&&p.querySelector("butto
 time.sleep(1)
 # 콘텐츠 링크: 블로그 글 선택
 click(vis("//span[normalize-space(.)='블로그']")[0]); time.sleep(3)
-rows = d.execute_script('''const key=arguments[0]; const out=[...document.querySelectorAll("li,div")].filter(e=>(e.innerText||"").includes(key)&&e.querySelector("button")&&(e.innerText||"").length<250);
-if(!out.length) return false; const b=out[out.length-1].querySelector("button"); b.click(); return true''', blog_title)
-print('블로그 글 선택:', rows)
+t = [e for e in d.find_elements(By.XPATH, f"//*[contains(normalize-space(text()),'{blog_title}')]") if e.is_displayed()]
+btn = t[0].find_element(By.XPATH, "ancestor::*[.//button[normalize-space(.)='선택']][1]//button[normalize-space(.)='선택']")
+d.execute_script('arguments[0].click()', btn)
+print('블로그 글 선택:', btn.text)
 time.sleep(2)
 click(vis("//button[normalize-space(.)='등록']")[0]); time.sleep(8)
 print(d.current_url)
