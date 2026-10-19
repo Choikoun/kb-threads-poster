@@ -290,7 +290,7 @@ def run(scenes, render, out, voice=None, preview=False):
             amap = '[nar]'
         total = sum(durs)
         cmd += ['-filter_complex', ';'.join(parts), '-map', '[vout]', '-map', amap, '-c:v', 'libx264', '-preset', 'medium',
-                '-crf', '22', '-c:a', 'aac', '-b:a', '128k', '-r', str(FPS), '-t', f'{total:.2f}', '-movflags', '+faststart', out]
+                '-crf', '22', '-c:a', 'aac', '-b:a', '128k', '-r', str(FPS), '-t', f'{total:.2f}', '-map_metadata', '-1', '-fflags', '+bitexact', '-movflags', '+faststart', out]
         subprocess.run(cmd, check=True)
         print('완료:', out, f'{total:.1f}초')
     finally:
