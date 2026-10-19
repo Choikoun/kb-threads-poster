@@ -33,13 +33,14 @@ time.sleep(5)
 ta = d.find_element(By.CSS_SELECTOR, 'textarea'); ta.click(); ta.send_keys(desc)
 covers = d.find_elements(By.CSS_SELECTOR, 'img[class*=coverImg]')
 click(covers[min(cover, len(covers) - 1)])
-click(vis("//span[normalize-space(.)='1차 카테고리']")[0]); time.sleep(1)
-click(vis("//button[normalize-space(.)='쇼핑']")[0]); time.sleep(1)
-click(vis("//span[normalize-space(.)='2차 카테고리']")[0]); time.sleep(1)
-click(vis("//button[normalize-space(.)='쇼핑']")[-1]); time.sleep(1)
+# 카테고리: 추천 칩('쇼핑 > 쇼핑')을 누르면 1차·2차가 한 번에 지정된다(드롭다운 직접 선택은 2차가 누락돼 등록 실패한 적 있음)
+chips = d.find_elements(By.CSS_SELECTOR, 'button[class*=categoryTag]')
+click(chips[0]); time.sleep(1.5)
 # 광고·협찬 설정 토글 켜기
-d.execute_script('''const t=[...document.querySelectorAll("*")].find(e=>e.children.length==0&&(e.innerText||"").trim().startsWith("광고")&&(e.innerText||"").includes("협찬 설정"));
-let p=t; for(let i=0;i<5&&p;i++){const b=p.querySelector&&p.querySelector("button[class*=Toggle]"); if(b){b.click(); return} p=p.parentElement}''')
+h = vis("//*[contains(normalize-space(text()),'협찬 설정')]")[0]
+tg = h.find_element(By.XPATH, "ancestor::*[.//button[contains(@class,'Toggle')]][1]//button[contains(@class,'Toggle')]")
+if 'toggleOn' not in tg.get_attribute('class'):
+    click(tg)
 time.sleep(1)
 # 콘텐츠 링크: 블로그 글 선택
 click(vis("//span[normalize-space(.)='블로그']")[0]); time.sleep(3)
@@ -49,5 +50,4 @@ d.execute_script('arguments[0].click()', btn)
 print('블로그 글 선택:', btn.text)
 time.sleep(2)
 click(vis("//button[normalize-space(.)='등록']")[0]); time.sleep(8)
-print(d.current_url)
-print('공개' in d.execute_script('return document.body.innerText'))
+print(d.current_url)   # 성공 시 /web/contents/clips 로 이동(초안 URL에 남으면 설명·카테고리 등 필수값 누락)
