@@ -51,6 +51,15 @@ def _logged_in(driver):
     return '/auth/login' not in u and 'accounts.kakao' not in u
 
 
+def _persist_login(driver):
+    """로그인 쿠키(세션 쿠키)에 만료일을 붙여 크롬 재시작 후에도 유지(login_keepalive.py, 2026-10-20)."""
+    try:
+        import login_keepalive
+        login_keepalive.persist(driver)
+    except Exception as e:
+        print('로그인 쿠키 영구화 건너뜀:', str(e)[:60])
+
+
 def ensure_login(driver):
     """티스토리 세션쿠키는 크롬 재시작 때마다 풀린다. 카카오 쿠키가 살아 있으면 저장계정 클릭만으로 재로그인(비밀번호 입력 없음)."""
     try:
@@ -64,6 +73,7 @@ def ensure_login(driver):
     time.sleep(2)
     _dismiss_alert(driver)
     if _logged_in(driver):
+        _persist_login(driver)
         return True
     for b in driver.find_elements(By.CSS_SELECTOR, 'a,button'):
         if '카카오' in b.text:
@@ -78,6 +88,7 @@ def ensure_login(driver):
                 break
         time.sleep(6)
     if _logged_in(driver):
+        _persist_login(driver)
         return True
     raise RuntimeError('티스토리 로그인이 풀려 있고 자동 재로그인에 실패했어요. 크롬 창에서 카카오 로그인(로그인 상태 유지 체크)을 한 번 해주세요.')
 
