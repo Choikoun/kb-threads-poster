@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """네이버 클립(PC 웹 clipcreators.naver.com) 업로드 — 쇼핑 블로그 계정(shop_chrome_profile, 9223 헤드리스 크롬)
-사용: python shop_clip_upload.py <영상.mp4> "<설명 300자 이내>" "<연결할 블로그 글 제목 일부>" [커버번호=1]
+사용: python shop_clip_upload.py <영상.mp4> "<설명 300자 이내>" "<연결할 블로그 글 제목 일부>" [커버번호=1] ["<쇼핑커넥트 상품명 일부>"]
 2026-10-19 휴롬 H400 업로드로 순서 검증(설명→커버→카테고리 쇼핑/쇼핑→광고·협찬 ON→콘텐츠 링크 블로그→전체 공개→등록).
 설명엔 쿠팡 파트너스·쇼핑 커넥트 수수료 문구를 넣는다(후기 아님 명시). 광고·협찬 설정은 항상 켠다."""
 import os, sys, time
@@ -11,6 +11,7 @@ from selenium.webdriver.common.by import By
 
 video, desc, blog_title = os.path.abspath(sys.argv[1]), sys.argv[2], sys.argv[3]
 cover = int(sys.argv[4]) if len(sys.argv) > 4 else 1
+sc_product = sys.argv[5] if len(sys.argv) > 5 else ''   # 쇼핑커넥트 정보 태그로 붙일 상품명 일부(브랜드 커넥트에서 링크 발급한 상품만 목록에 뜸)
 d = nb.get_driver()
 d.set_window_size(1400, 1000)
 
@@ -51,6 +52,13 @@ try:
 except Exception as e:
     print('AI 활용 설정 토글 실패:', e)
 time.sleep(1)
+# 쇼핑커넥트 정보 태그: '최근 링크 발급한 상품' 목록에서 상품명으로 선택(광고·협찬 설정은 자동 적용됨)
+if sc_product:
+    click(vis("//span[normalize-space(.)='쇼핑커넥트']")[0]); time.sleep(3)
+    pt = [e for e in d.find_elements(By.XPATH, f"//*[contains(normalize-space(text()),'{sc_product}')]") if e.is_displayed()]
+    pb = pt[0].find_element(By.XPATH, "ancestor::*[.//button[normalize-space(.)='선택']][1]//button[normalize-space(.)='선택']")
+    d.execute_script('arguments[0].click()', pb); time.sleep(3)
+    print('쇼핑커넥트 태그 선택:', sc_product)
 # 콘텐츠 링크: 블로그 글 선택
 click(vis("//span[normalize-space(.)='블로그']")[0]); time.sleep(3)
 t = [e for e in d.find_elements(By.XPATH, f"//*[contains(normalize-space(text()),'{blog_title}')]") if e.is_displayed()]
