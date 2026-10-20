@@ -42,12 +42,21 @@ tg = h.find_element(By.XPATH, "ancestor::*[.//button[contains(@class,'Toggle')]]
 if 'toggleOn' not in tg.get_attribute('class'):
     click(tg)
 time.sleep(1)
+# AI 활용 설정 토글 켜기(AI 합성 음성·영상이라 표시)
+try:
+    h2 = vis("//*[contains(normalize-space(text()),'AI 활용 설정')]")[0]
+    tg2 = h2.find_element(By.XPATH, "ancestor::*[.//button[contains(@class,'Toggle')]][1]//button[contains(@class,'Toggle')]")
+    if 'toggleOn' not in tg2.get_attribute('class'):
+        click(tg2)
+except Exception as e:
+    print('AI 활용 설정 토글 실패:', e)
+time.sleep(1)
 # 콘텐츠 링크: 블로그 글 선택
 click(vis("//span[normalize-space(.)='블로그']")[0]); time.sleep(3)
 t = [e for e in d.find_elements(By.XPATH, f"//*[contains(normalize-space(text()),'{blog_title}')]") if e.is_displayed()]
 btn = t[0].find_element(By.XPATH, "ancestor::*[.//button[normalize-space(.)='선택']][1]//button[normalize-space(.)='선택']")
 d.execute_script('arguments[0].click()', btn)
-print('블로그 글 선택:', btn.text)
+print('블로그 글 선택 클릭')
 time.sleep(2)
 click(vis("//button[normalize-space(.)='등록']")[0]); time.sleep(8)
 print(d.current_url)   # 성공 시 /web/contents/clips 로 이동(초안 URL에 남으면 설명·카테고리 등 필수값 누락)
