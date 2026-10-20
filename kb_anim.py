@@ -18,6 +18,34 @@ import shop_anim as A
 from shop_anim import c, ease, W, H, NAVY, GOLD, RED, GREEN
 from card_generator import load_font
 
+def _safe_phrases(boundaries, max_words=4, max_chars=13, gap_break=0.3):
+    """자막 구절이 화면 폭을 넘지 않게: 단어를 더하면 max_chars 를 넘는 경우 먼저 끊는다.
+    (video_poster.make_subtitle_phrases 는 넘은 뒤에 끊어 숫자·긴 단어가 섞이면 17~19자까지 늘어나 좌우가 잘렸다 — 2026-10-20 발견.
+    shop_anim 은 수정하지 않고 KB 경로에서만 이 모듈 안에서 교체한다.)"""
+    phrases, cur, start = [], [], None
+    for i, b in enumerate(boundaries):
+        if cur and len(' '.join(w['text'] for w in cur + [b])) > max_chars:
+            phrases.append({'start': start, 'end': cur[-1]['end'], 'text': ' '.join(w['text'] for w in cur)})
+            cur, start = [], None
+        if start is None:
+            start = b['start']
+        cur.append(b)
+        nxt = boundaries[i + 1] if i + 1 < len(boundaries) else None
+        pause = nxt is not None and (nxt['start'] - b['end']) >= gap_break
+        if len(cur) >= max_words or pause:
+            phrases.append({'start': start, 'end': b['end'], 'text': ' '.join(w['text'] for w in cur)})
+            cur, start = [], None
+    if cur:
+        phrases.append({'start': start, 'end': cur[-1]['end'], 'text': ' '.join(w['text'] for w in cur)})
+    for i in range(len(phrases) - 1):
+        phrases[i]['end'] = max(phrases[i]['end'], phrases[i + 1]['start'])
+    if phrases:
+        phrases[-1]['end'] += 0.3
+    return phrases
+
+
+A.make_subtitle_phrases = _safe_phrases
+
 FOOT = '정보 정리용 · 가상 사례이며 세법과 제도는 바뀔 수 있습니다'
 _bg = {}
 
