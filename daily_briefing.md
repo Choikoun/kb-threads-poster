@@ -1,41 +1,39 @@
 # 📰 일일 브리핑
-*2026-10-20 10:02 KST*
+*2026-10-21 09:33 KST*
 
 ---
 
 ## 🔖 보험 동향
+- [4대 은행, SK하이닉스·무보와 반도체 협력기업에 2조원 금융지원](https://www.insnews.co.kr/news/articleView.html?idxno=93419)
+- [KB라이프, 시니어 금융사기 예방교육… 실생활 사례 중심 대응력 강화](https://www.insnews.co.kr/news/articleView.html?idxno=93406)
+- [메트라이프생명, ‘(무)메트라이프 변액리치정기보험’ 출시… 사망보장·자산관리 결합](https://www.insnews.co.kr/news/articleView.html?idxno=93402)
+- [큐핏, ‘보험요율 자동 산출 기술’ 특허 등록](https://www.insnews.co.kr/news/articleView.html?idxno=93400)
 - [삼성생명, ‘삼성 시니어대표건강보험’ 개정 출시](https://www.insnews.co.kr/news/articleView.html?idxno=93396)
-- [보험계약부터 판매·보상까지… 국정감사 금융감독원에 제도 개선 주문](https://www.insnews.co.kr/news/articleView.html?idxno=93395)
-- [해킹 대응·대출금리 산정에 질타… 고개 숙인 5대 시중은행장](https://www.insnews.co.kr/news/articleView.html?idxno=93393)
-- [보험업권, 취약어르신 65만명에 낙상 치료비·치매배상책임보험 무료 지원](https://www.insnews.co.kr/news/articleView.html?idxno=93387)
-- [롯데손해보험, ‘댕댕이랑 여행갈땐 보험’ 출시… 견주 위험 보장 집중](https://www.insnews.co.kr/news/articleView.html?idxno=93386)
 
 ## 💰 국내 경제·금융
-- [[마켓라이브] 나스닥 반등에도 웃지 못하는 코스피…삼성전기·현대로템 조정](https://www.hankyung.com/article/202610202306i)
-- [美 기술주 반등도 소용 없네…코스피, 다시 5700선 아래로](https://www.hankyung.com/article/2026102023486)
-- [엘리스그룹, 코스닥 상장 첫날 27% 급락](https://www.hankyung.com/article/2026102023736)
-- [삼전·하이닉스 팔아치운 초고수, 코스닥서 '이것' 샀다는데](https://www.hankyung.com/article/202610202208i)
-- ["삼성전자, 내년 영업익 555조원 전망…성장 동력 흔들리지 않아"-KB](https://www.hankyung.com/article/2026102020576)
+- ["삼전닉스 밀려도 웃었다"…급락장서 선방한 제약·바이오주 [분석+]](https://www.hankyung.com/article/2026102146356)
+- ["농심, 3분기 실적 기대치 밑돌 전망"-유안타](https://www.hankyung.com/article/2026102148346)
+- ['가짜뉴스'에 반색한 주가…머스크 "스페이스X, 테슬라 합병 위원회 구성" [김현석의 월스트리트나우]](https://www.hankyung.com/article/202610214695i)
+- ["KT&G, 해외 담배·배당 '쌍끌이'…목표가↑"-유안타](https://www.hankyung.com/article/2026102147316)
+- ["오늘도 내 계좌 녹겠네"…美 반도체주 하루 만에 또 약세 전환](https://www.hankyung.com/article/2026102146806)
 
 ## 📈 주식·시장
-- [‘먹는 탈모 치료제’ 임상 희소식에 관련주 급등…삼익제약, 17%대↑](https://www.mk.co.kr/news/stock/12180308)
-- [간밤 뉴욕증시 올랐길래 기대했는데…코스피 장 초반 2% 하락이라니](https://www.mk.co.kr/news/stock/12180302)
-- [[MK시그널] 한국콜마, K-뷰티 수출 호조에 따른 ODM 사업 경쟁력 부각 등에 주가 상승세... MK시그널 추천 후 상승률 10.04% 기록](https://www.mk.co.kr/news/stock/12180287)
-- [“불법 투자로 돈 벌다가, 퇴사하면 그만?”…증권가 주식투자의 민낯](https://www.mk.co.kr/news/economy/12180261)
-- [삼성전자 주가 19% 떨어졌는데…KB증권 “내년 이익성장 이미 확보”](https://www.mk.co.kr/news/stock/12180252)
+- [“코스피, 심폐소생 가능합니까?”…전문가 3인이 꼽은 반등 조건 [증시 긴급진단]](https://www.mk.co.kr/news/stock/12181353)
+- [“같은 반도체 국가, 대만은 5% 한국은 -9%”…생태계 차이 크다는데 [오늘 나온 보고서]](https://www.mk.co.kr/news/stock/12181352)
+- [“한화생명, 3분기 순이익 하회 전망으로 배당확보가 관건”…목표가↓](https://www.mk.co.kr/news/stock/12181346)
+- [“휴젤, 미국 직판 전환에 매출 줄고 비용 늘고”…목표가↓](https://www.mk.co.kr/news/stock/12181337)
+- [반도체 주식 내던진 외인... 재매수 시점은 언제일까](https://www.mk.co.kr/news/business/12181294)
 
 ## 🌏 글로벌 경제·정세
-- [트럼프 국방비 5000억달러 증액 흔들…美 방산주 급락](https://www.hankyung.com/article/202610202383i)
-- ["당장 시청 그만둘 것"…폭스뉴스에 선전포고 날린 트럼프, 왜?](https://www.hankyung.com/article/202610202239H)
-- [중국과 더 가까워진 러시아…일본과 관계는 '전후 최악' [도쿄나우]](https://www.hankyung.com/article/202610202172i)
-- ["김정은 만남 모르겠다"…두달 만에 말 바꾼 트럼프, 속내는?](https://www.hankyung.com/article/202610202027H)
-- ["이민자들이 프랑스 산산조각 냈다"…트럼프 '폭탄 발언'](https://www.hankyung.com/article/2026102019467)
+- [실적 좋아도 웃지 못한 넷플릭스…광고 매출 전망 낮추자 주가 6% 급락](https://www.hankyung.com/article/202610214864i)
+- [AI 붐 꺼질라…월가, 빅테크 부도 대비 CDS 매입 급증[밤 사이 해외뉴스]](https://www.hankyung.com/article/202610214764i)
+- [트럼프에 밀착한 다카이치 1년…중국인 관광객은 반토막](https://www.hankyung.com/article/202610214694i)
+- ["한국 기업서 일하고 싶어요"…일본 구직자 절반 관심](https://www.hankyung.com/article/202610214654i)
+- [매출 15배 폭증했는데 손실 107조원…앤트로픽 IPO 앞두고 드러난 실적](https://www.hankyung.com/article/2026102146477)
 
 ## 🔥 팔로업 추천 (300회 이상)
-- 531회 [2026-10-18] 어떤 축구선수, 해외에서 뛴 소득에 세금 폭탄 맞았어.  🔑 세법상 거주...
-- 513회 [2026-10-18] 사망보험금을 살아있을 때 미리 쓸 수 있는 상품들이 늘고 있어.  1. ...
-- 368회 [2026-10-18] "국무회의 공개라 말 못한다"  이 한마디에 회의실 공기가 완전히 얼어붙...
-- 365회 [2026-10-19] 지인 명의로 보험 몇 개 가입해 두고 일부러 몇 년씩 납부 안 한 채로 ...
+- 368회 [2026-10-19] 지인 명의로 보험 몇 개 가입해 두고 일부러 몇 년씩 납부 안 한 채로 ...
+- 339회 [2026-10-20] ‘국가를 당사자로 하는 계약에 관한 법률 시행령 제76조 제1항 제3호’...
 
 ---
 *총 60개 기사 수집됨*
