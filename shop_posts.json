@@ -109,5 +109,15 @@
   "keyword": "도마 교체 시기",
   "type": "info_no_affiliate",
   "links": {}
+ },
+ {
+  "key": "gotman_container",
+  "title": "고트만 밀폐용기 가격, 호수별 쿠팡 표기가 정리",
+  "naver": "https://blog.naver.com/sobok_biz/224449211675",
+  "date": "2026-10-21",
+  "keyword": "고트만 밀폐용기",
+  "links": {
+   "coupang_blog": "blog_gotman*"
+  }
  }
 ]
