@@ -1,0 +1,65 @@
+#!/usr/bin/env python3
+"""IG 카드뉴스 2건 — (A) 연금 수령액 계산기(아티팩트 링크), (B) 가수금뜻 블로그 글 요약.
+사용: python promo_1022_ig_post.py preview|calc|gasu   (preview 는 카드 PNG만 만들고 게시하지 않는다)
+주의: 계산기는 특정 상품 안내장 산식 기준 예시이므로 보증·수익 단정 표현, 회사·상품명은 쓰지 않는다."""
+import sys, os
+sys.stdout.reconfigure(encoding='utf-8')
+from dotenv import load_dotenv; load_dotenv()
+import annuity_poster as ap
+import card_generator as cg
+
+CALC_URL = 'https://claude.ai/artifact/5uA4SVsd1gPewP2JKi5UWx'
+CALC = {
+    'card_data': {
+        'tag': '# 연금 수령액 계산',
+        'hook_big': '연금, 얼마 받는지\n직접 넣어보세요',
+        'hook_sub': '나이·월 보험료·납입기간·개시나이 · 무료',
+        'points': [
+            {'title': '넣는 건 5가지', 'body': '성별, 가입나이, 월 보험료,\n납입기간, 연금개시나이만\n넣으면 바로 계산됩니다.'},
+            {'title': '100세까지 한눈에', 'body': '연 연금액, 월 환산액,\n100세까지 총 수령액,\n원금 회수 시점이 나옵니다.'},
+            {'title': '그래프로 확인', 'body': '나이별 누적 수령액을\n그래프로 보고\n산출 과정도 확인합니다.'},
+            {'title': '꼭 알아둘 점', 'body': '상품 안내장 산식 기준 예시이고\n해지하면 환급금이\n납입보험료보다 적을 수 있습니다.'},
+        ],
+        'closing': '숫자를 먼저 보고\n판단하세요.',
+        'cta': '링크는 캡션과 댓글에 있습니다'
+    },
+    'caption': ('연금, 가입하면 얼마 받는지 설계서 받기 전에는 감이 안 오죠.\n\n'
+                '성별, 가입나이, 월 보험료, 납입기간, 연금개시나이를 넣으면 100세까지 받는 연금액과 원금 회수 시점, 나이별 누적 수령액 그래프가 나오는 계산기를 만들었습니다. 무료입니다.\n\n'
+                f'계산기 → {CALC_URL}\n\n'
+                '상품 안내장 산식 기준의 예시 계산이며, 실제 금액과 조건은 가입제안서와 약관으로 확인해야 합니다. 중도 해지 시 환급금은 납입보험료보다 적거나 없을 수 있습니다. 특정 상품 가입을 권유하지 않습니다.\n\n'
+                '#연금 #연금보험 #연금수령액 #연금계산기 #노후준비 #은퇴설계 #보험상식'),
+}
+GASU = {
+    'card_data': {
+        'tag': '# 가수금뜻',
+        'hook_big': '대표가 넣은 돈이\n회사엔 빚이 됩니다',
+        'hook_sub': '가수금과 가지급금, 방향부터 정리',
+        'points': [
+            {'title': '가수금이란', 'body': '대표가 회사에 넣은 돈을\n회사가 갚아야 할 부채로\n적어 둔 계정입니다.'},
+            {'title': '가지급금은 반대', 'body': '회사가 대표에게 내보낸 돈,\n회사가 받을 돈입니다.\n두 계정은 한 쌍으로 봅니다.'},
+            {'title': '부채비율 가정', 'body': '자기자본 5억·부채 5억이면 100%,\n가수금 3억이 얹히면 160%\n(설명용 가정)'},
+            {'title': '먼저 확인할 것', 'body': '잔액이 쌓인 내역, 입금 출처,\n이자 약정 여부를\n세무사와 확인하세요.'},
+        ],
+        'closing': '정리하지 않으면\n설명할 일이 늘어납니다.',
+        'cta': '프로필 링크 → 블로그에 전체 정리'
+    },
+    'caption': ('회사 통장이 비었을 때 대표가 개인 돈을 넣어 급한 불을 끈 적 있으신가요?\n\n'
+                '그 돈은 장부에 가수금으로 적히고, 회사 입장에서는 갚아야 할 부채입니다. 반대로 회사가 대표에게 내보낸 돈은 가지급금이죠.\n'
+                '자기자본 5억 원에 부채 5억 원이면 부채비율이 100%인데, 가수금 3억 원이 더해지면 160%가 됩니다(설명용 가정).\n\n'
+                '이자 처리와 가지급금 상계는 자료마다 설명이 달라 사실관계 확인이 필요합니다. 국세청 회신과 보도를 기준으로 정리한 내용은 블로그에 있습니다. 구체적인 세금 처리는 세무사와 확인하세요.\n\n'
+                '#가수금뜻 #가수금 #가지급금 #법인대표 #법인세무 #부채비율'),
+}
+
+if __name__ == '__main__':
+    mode = sys.argv[1] if len(sys.argv) > 1 else 'preview'
+    if mode == 'preview':
+        for name, v in (('calc', CALC), ('gasu', GASU)):
+            paths = cg.generate_card_set(v['card_data'], output_dir=f'_card_preview_{name}', category='insurance')
+            print(name, len(paths), '장', paths[0])
+    else:
+        v = CALC if mode == 'calc' else GASU
+        ig_id = ap.post_instagram(v)
+        if not ig_id:
+            print('발행 실패'); sys.exit(1)
+        ap.log_instagram(ig_id, '연금 수령액 계산기 홍보' if mode == 'calc' else '가수금뜻 블로그 요약 카드')
+        print('IG 발행 완료:', ig_id)
