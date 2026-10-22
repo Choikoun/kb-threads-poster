@@ -50,16 +50,36 @@ GASU = {
                 '#가수금뜻 #가수금 #가지급금 #법인대표 #법인세무 #부채비율'),
 }
 
+GUN = {
+    'card_data': {
+        'tag': '# 지역가입자 건보료 상한액',
+        'hook_big': '건강보험료,\n월 459만원이 최대입니다',
+        'hook_sub': '2026년 지역가입자 상한·하한 정리',
+        'points': [
+            {'title': '상한은 월 4,591,740원', 'body': '소득과 재산이 아무리 많아도\n지역가입자 월 보험료는\n이 금액까지만 부과됩니다.'},
+            {'title': '하한은 월 20,160원', 'body': '상한은 하한의 약 228배.\n2026년 1월분부터\n적용되는 기준입니다.'},
+            {'title': '직장가입자는?', 'body': '보수월액 보험료 상한은\n9,183,480원(회사와 반반),\n소득월액 상한은 4,591,740원.'},
+            {'title': '내 보험료는', 'body': '최근 고지서와\n공단 조회로\n직접 확인하세요.'},
+        ],
+        'closing': '상한을 알면\n보험료가 보입니다.',
+        'cta': '자세한 정리는 내일 블로그에 올라옵니다'
+    },
+    'caption': ('건강보험료는 소득과 재산이 늘면 끝없이 오르는 것 같죠.\n\n'
+                '2026년 1월분부터 지역가입자의 월 건강보험료 상한은 4,591,740원, 하한은 20,160원입니다(보건복지부 고시). 직장가입자는 보수월액 보험료 상한이 9,183,480원이고 근로자 몫은 절반입니다. 월급 외 이자·배당·임대 소득에 붙는 소득월액 보험료 상한도 4,591,740원입니다.\n\n'
+                '내 보험료가 상한에 가까운지는 고지서와 국민건강보험공단 조회로 확인해야 합니다. 부과체계는 바뀔 수 있어 최신 안내를 우선하세요. 자세한 정리는 블로그에 올릴 예정입니다.\n\n'
+                '#지역가입자건보료상한액 #건강보험료 #건보료상한 #건강보험료상한액 #지역가입자 #은퇴준비'),
+}
+
 if __name__ == '__main__':
     mode = sys.argv[1] if len(sys.argv) > 1 else 'preview'
     if mode == 'preview':
-        for name, v in (('calc', CALC), ('gasu', GASU)):
+        for name, v in (('calc', CALC), ('gasu', GASU), ('gun', GUN)):
             paths = cg.generate_card_set(v['card_data'], output_dir=f'_card_preview_{name}', category='insurance')
             print(name, len(paths), '장', paths[0])
     else:
-        v = CALC if mode == 'calc' else GASU
+        v = {'calc': CALC, 'gasu': GASU, 'gun': GUN}[mode]
         ig_id = ap.post_instagram(v)
         if not ig_id:
             print('발행 실패'); sys.exit(1)
-        ap.log_instagram(ig_id, '연금 수령액 계산기 홍보' if mode == 'calc' else '가수금뜻 블로그 요약 카드')
+        ap.log_instagram(ig_id, {'calc': '연금 수령액 계산기 홍보', 'gasu': '가수금뜻 블로그 요약 카드', 'gun': '지역가입자건보료상한액 요약 카드'}[mode])
         print('IG 발행 완료:', ig_id)
