@@ -119,5 +119,16 @@
   "links": {
    "coupang_blog": "blog_gotman*"
   }
+ },
+ {
+  "key": "libi_container",
+  "title": "리브비 밀폐용기 가격, 용량·수량별 표기가 정리",
+  "naver": "https://blog.naver.com/sobok_biz/224449836396",
+  "date": "2026-10-22",
+  "keyword": "리브비 밀폐용기",
+  "links": {
+   "naver_connect": "3",
+   "coupang_blog": "blog_libi*3"
+  }
  }
 ]
