@@ -130,5 +130,15 @@
    "naver_connect": "3",
    "coupang_blog": "blog_libi*3"
   }
+ },
+ {
+  "key": "damchi_container",
+  "title": "담치락 밀폐용기 가격, 호수·세트별 쿠팡 옵션 정리",
+  "naver": "https://blog.naver.com/sobok_biz/224451379177",
+  "date": "2026-10-23",
+  "keyword": "담치락 밀폐용기",
+  "links": {
+   "coupang_blog": "blog_damchi"
+  }
  }
 ]
