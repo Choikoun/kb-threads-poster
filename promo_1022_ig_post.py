@@ -70,16 +70,37 @@ GUN = {
                 '#지역가입자건보료상한액 #건강보험료 #건보료상한 #건강보험료상한액 #지역가입자 #은퇴준비'),
 }
 
+GAJI = {
+    'card_data': {
+        'tag': '# 가지급금뜻',
+        'hook_big': '방치하면 세금이\n따라옵니다',
+        'hook_sub': '가지급금뜻과 세 가지 불이익',
+        'points': [
+            {'title': '가지급금이란', 'body': '회사가 대표에게 내보냈지만\n쓰임새가 정리되지 않은 돈,\n회사가 받을 돈입니다.'},
+            {'title': '세 가지 불이익', 'body': '지급이자 일부 불인정,\n인정이자 과세,\n임원이면 상여 처분.'},
+            {'title': '인정이자 가정', 'body': '가지급금 3억에 연 4.6% 가정하면\n받지 않은 이자 연 1,380만 원도\n회사 수익으로 봅니다(설명용).'},
+            {'title': '먼저 확인할 것', 'body': '잔액이 쌓인 내역,\n가수금 상계 여부,\n이자 약정을 세무사와 확인.'},
+        ],
+        'closing': '쌓일수록 설명할 일이\n늘어납니다.',
+        'cta': '프로필 링크 → 블로그에 전체 정리'
+    },
+    'caption': ('회사 장부에 대표 앞으로 나간 돈이 얼마나 남아 있는지 확인해 보셨나요?\n\n'
+                '가지급금은 회사가 대표에게 내보냈지만 쓰임새가 정리되지 않은 돈입니다. 방치하면 지급이자 일부 불인정, 인정이자 과세, 상여 처분이 따라올 수 있습니다.\n'
+                '가지급금 3억 원에 연 4.6%를 가정하면 받지 않은 이자 1,380만 원도 회사 수익으로 봅니다(설명용 가정, 실제 이자율은 회사마다 다름).\n\n'
+                '정리 방법은 방법마다 세금과 요건이 달라 세무사와 확인해야 합니다. 법령과 공개 자료로 정리한 내용은 블로그에 있습니다.\n\n'
+                '#가지급금뜻 #가지급금 #가지급금인정이자 #법인대표 #법인세무'),
+}
+
 if __name__ == '__main__':
     mode = sys.argv[1] if len(sys.argv) > 1 else 'preview'
     if mode == 'preview':
-        for name, v in (('calc', CALC), ('gasu', GASU), ('gun', GUN)):
+        for name, v in (('calc', CALC), ('gasu', GASU), ('gun', GUN), ('gaji', GAJI)):
             paths = cg.generate_card_set(v['card_data'], output_dir=f'_card_preview_{name}', category='insurance')
             print(name, len(paths), '장', paths[0])
     else:
-        v = {'calc': CALC, 'gasu': GASU, 'gun': GUN}[mode]
+        v = {'calc': CALC, 'gasu': GASU, 'gun': GUN, 'gaji': GAJI}[mode]
         ig_id = ap.post_instagram(v)
         if not ig_id:
             print('발행 실패'); sys.exit(1)
-        ap.log_instagram(ig_id, {'calc': '연금 수령액 계산기 홍보', 'gasu': '가수금뜻 블로그 요약 카드', 'gun': '지역가입자건보료상한액 요약 카드'}[mode])
+        ap.log_instagram(ig_id, {'calc': '연금 수령액 계산기 홍보', 'gasu': '가수금뜻 블로그 요약 카드', 'gun': '지역가입자건보료상한액 요약 카드', 'gaji': '가지급금뜻 블로그 요약 카드'}[mode])
         print('IG 발행 완료:', ig_id)
