@@ -5438,7 +5438,11 @@
     "likes": 1,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-20"
+    "reblog_date": "2026-10-20",
+    "reposted": true,
+    "reposted_id": "18101892863674184",
+    "reposted_date": "2026-10-24",
+    "remixed": true
   },
   {
     "id": "18365963593208691",
@@ -5449,7 +5453,11 @@
     "likes": 0,
     "replies": 4,
     "media_type": "TEXT_POST",
-    "reblog_date": "2026-10-20"
+    "reblog_date": "2026-10-20",
+    "reposted": true,
+    "reposted_id": "17996781293838462",
+    "reposted_date": "2026-10-24",
+    "remixed": true
   },
   {
     "id": "18036088484824185",
@@ -5460,7 +5468,11 @@
     "likes": 2,
     "replies": 2,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-20"
+    "reblog_date": "2026-10-20",
+    "reposted": true,
+    "reposted_id": "18127342741789445",
+    "reposted_date": "2026-10-24",
+    "remixed": true
   },
   {
     "id": "18097978229346743",
@@ -5471,7 +5483,11 @@
     "likes": 1,
     "replies": 1,
     "media_type": "TEXT_POST",
-    "reblog_date": "2026-10-20"
+    "reblog_date": "2026-10-20",
+    "reposted": true,
+    "reposted_id": "18450450373124690",
+    "reposted_date": "2026-10-24",
+    "remixed": true
   },
   {
     "id": "18090269117216198",
@@ -5482,7 +5498,11 @@
     "likes": 1,
     "replies": 4,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-20"
+    "reblog_date": "2026-10-20",
+    "reposted": true,
+    "reposted_id": "17949465225351374",
+    "reposted_date": "2026-10-24",
+    "remixed": true
   },
   {
     "id": "18007772528953156",
@@ -5493,7 +5513,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-20"
+    "reblog_date": "2026-10-20",
+    "reposted": true,
+    "reposted_id": "18372844414208004",
+    "reposted_date": "2026-10-24",
+    "remixed": true
   },
   {
     "id": "18033686447839447",
@@ -5504,7 +5528,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-20"
+    "reblog_date": "2026-10-20",
+    "reposted": true,
+    "reposted_id": "18171068644461173",
+    "reposted_date": "2026-10-24",
+    "remixed": true
   },
   {
     "id": "17883521634683004",
@@ -5515,7 +5543,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-20"
+    "reblog_date": "2026-10-20",
+    "reposted": true,
+    "reposted_id": "18121824242296395",
+    "reposted_date": "2026-10-24",
+    "remixed": true
   },
   {
     "id": "18070087409489902",
@@ -5526,7 +5558,11 @@
     "likes": 0,
     "replies": 9,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-20"
+    "reblog_date": "2026-10-20",
+    "reposted": true,
+    "reposted_id": "18131296807703974",
+    "reposted_date": "2026-10-24",
+    "remixed": true
   },
   {
     "id": "18117783916939779",
@@ -5537,7 +5573,11 @@
     "likes": 0,
     "replies": 2,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-24"
+    "reblog_date": "2026-10-24",
+    "reposted": true,
+    "reposted_id": "17916602583467511",
+    "reposted_date": "2026-10-24",
+    "remixed": true
   },
   {
     "id": "18146788921557370",
@@ -5548,7 +5588,11 @@
     "likes": 0,
     "replies": 1,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-24"
+    "reblog_date": "2026-10-24",
+    "reposted": true,
+    "reposted_id": "18119823352961770",
+    "reposted_date": "2026-10-24",
+    "remixed": true
   },
   {
     "id": "18191963182388765",
@@ -5559,7 +5603,11 @@
     "likes": 0,
     "replies": 2,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-24"
+    "reblog_date": "2026-10-24",
+    "reposted": true,
+    "reposted_id": "18112097267593344",
+    "reposted_date": "2026-10-24",
+    "remixed": true
   },
   {
     "id": "18101557091196508",
@@ -6352,5 +6400,71 @@
     "replies": 1,
     "media_type": "IMAGE",
     "reblog_date": "2026-12-12"
+  },
+  {
+    "id": "18434341075177708",
+    "date": "2026-10-22",
+    "text": "사고 터졌을 때 유족이랑 빨리 합의하면 형량 줄어들 거라고 믿는 대표들이",
+    "full_text": "사고 터졌을 때 유족이랑 빨리 합의하면 형량 줄어들 거라고 믿는 대표들이 참 많더라.\n\n막상 현장 관리 부실로 문제가 커져도 돈으로 수습하면 된다는 계산부터 앞서는 거지.\n\n하지만 이번 재판 결과는 그 공식이 더 이상 통하지 않는다는 걸 보여줬어.\n\n피해 규모가 크고 구조적 결함이 뚜렷할 때는 합의서보다 법적 책임 무게가 훨씬 무겁게 작용해.\n\n결국 사후 수습에만 매달리는 대표들이 가장 크게 놓치는 부분이 바로 이 지점이야.\n\n#법인 #증여",
+    "views": 4562,
+    "likes": 2,
+    "replies": 4,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-12-19"
+  },
+  {
+    "id": "18028206644916556",
+    "date": "2026-10-22",
+    "text": "스튜디오 본식 앨범을 고르러 갔던 부부가 있었다.  기본 계약금만 믿고 ",
+    "full_text": "스튜디오 본식 앨범을 고르러 갔던 부부가 있었다.\n\n기본 계약금만 믿고 갔다가 눈앞에서 청구서를 받았다.\n\n샘플과 똑같이 맞추려면 원본 파일 비용부터 추가금 폭탄이 붙었다.\n\n결국 처음 생각했던 예산보다 수백만 원을 더 내고 돌아왔다.\n\n결혼 준비는 늘 숨겨진 비용이 마지막에 발목을 잡는다.\n\n#증여 #상속",
+    "views": 700,
+    "likes": 0,
+    "replies": 5,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-12-19"
+  },
+  {
+    "id": "18170623543463251",
+    "date": "2026-10-23",
+    "text": "어떤 예약자, 내 이름이랑 번호가 그대로 새어 나간 걸 기사로 봤어.  ",
+    "full_text": "어떤 예약자, 내 이름이랑 번호가 그대로 새어 나간 걸 기사로 봤어.\n\n🔑 알고 보니 협력사 시스템 뚫려서 대량으로 털린 거였지.\n\n내 정보는 내가 지켰다고 생각했는데 참 가관이야.\n\n결국 그 사람, 멍하니 보상 절차만 알아보고 있어.\n\n#증여 #상속",
+    "views": 445,
+    "likes": 0,
+    "replies": 4,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-12-19"
+  },
+  {
+    "id": "17913865488520416",
+    "date": "2026-10-23",
+    "text": "어디선가 공급이 풀리면 집값이 순식간에 내려앉을 거라는 확신을 갖고 있었",
+    "full_text": "어디선가 공급이 풀리면 집값이 순식간에 내려앉을 거라는 확신을 갖고 있었어.\n\n부동산은 영원히 오르기만 할 줄 알고 전 재산을 쏟아부었지.\n\n지방에 아파트 몇 채를 쥐고 버티던 사람이었어.\n\n정부가 바뀔 때마다 정책은 흔들렸고 시장은 정반대로 움직였어.\n\n공급이 본격화된다는 발표가 나오자마자 매수 문의는 완전히 끊겼어.\n\n버티면 된다고 믿었지만 매달 나가는 이자는 숨통을 조여왔어.\n\n결국 손절매를 고민하는 사이 자산은 반토막 나 있었어.\n\n#증여 #상속",
+    "views": 404,
+    "likes": 0,
+    "replies": 3,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-12-19"
+  },
+  {
+    "id": "18093099452659264",
+    "date": "2026-10-21",
+    "text": "대남 확성기,  1년 4개월 만에 다시 켜진대.  📌 전 국경선에서 동시",
+    "full_text": "대남 확성기, \n1년 4개월 만에 다시 켜진대.\n\n📌 전 국경선에서 동시에 울릴 거래.\n\n조용한 줄 알았던 접경 지역에,\n또다시 소음 공포가 시작되는 셈이야.\n\n#부동산 #정책",
+    "views": 369,
+    "likes": 0,
+    "replies": 2,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-12-19"
+  },
+  {
+    "id": "18073016609740039",
+    "date": "2026-10-20",
+    "text": "‘국가를 당사자로 하는 계약에 관한 법률 시행령 제76조 제1항 제3호’",
+    "full_text": "‘국가를 당사자로 하는 계약에 관한 법률 시행령 제76조 제1항 제3호’\n\n조달 시장에서 2년 동안 숨도 못 쉬게 만드는 무서운 조항이다.\n\n대형 방산·건설사라고 예외는 없어.\n\n입찰 자격이 24개월 동안 통째로 막히는 순간\n\n매출의 파이프라인이 한 번에 끊겨.\n\n수백억 원대 수주가 걸린 현장들이 당장 멈춰 서는 구조야.\n\n규모가 크다고 안심할 수 없는 이유가 여기에 있어.\n\n#부동산 #정책",
+    "views": 349,
+    "likes": 0,
+    "replies": 3,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-12-19"
   }
 ]
