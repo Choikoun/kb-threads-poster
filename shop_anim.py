@@ -13,7 +13,8 @@ from card_generator import load_font, hex_to_rgb
 from video_poster import generate_narration_timed, get_audio_duration, pick_bgm, SUB_FONT, make_subtitle_phrases
 
 W, H, FPS = 1080, 1920, 30
-TEMPO = float(os.environ.get('SHOP_TEMPO') or 1.12)   # Gemini TTS는 느린 편이라 약간 빠르게
+TEMPO = float(os.environ.get('SHOP_TEMPO') or 1.0)   # 10-25: 배속 제거(기계음 느낌 완화)
+TTS_STYLE = os.environ.get('SHOP_TTS_STYLE') or '친구에게 알려주듯 자연스러운 구어체로, 차분하고 따뜻한 말투로 읽어 주세요. 문장 사이에는 짧게 숨을 쉬듯 쉬어 주세요: '
 c = hex_to_rgb
 NAVY, GOLD, RED, GREEN = '#1B2A4A', '#B8925A', '#D9534F', '#2F9D6F'
 
@@ -233,7 +234,7 @@ def run(scenes, render, out, voice=None, preview=False):
         for i, sc in enumerate(scenes):
             if voice.startswith('gemini:'):
                 ap = os.path.join(tmp, f'a{i}.wav')
-                ad = gemini_tts(sc['say'], ap, voice=voice.split(':', 1)[1]) / TEMPO   # 재생 때 TEMPO배속(ffmpeg atempo)
+                ad = gemini_tts(sc['say'], ap, voice=voice.split(':', 1)[1], style=TTS_STYLE) / TEMPO   # 재생 때 TEMPO배속(ffmpeg atempo)
                 D = round(ad + 0.35, 2)
                 phrases += split_phrases(sc['say'], t0, t0 + ad)
             else:
