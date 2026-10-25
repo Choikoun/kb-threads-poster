@@ -91,16 +91,36 @@ GAJI = {
                 '#가지급금뜻 #가지급금 #가지급금인정이자 #법인대표 #법인세무'),
 }
 
+NYUN = {
+    'card_data': {
+        'tag': '# 66년생 국민연금',
+        'hook_big': '66년생 국민연금,\n만 64세부터입니다',
+        'hook_sub': '조기는 59세 · 소득 있으면 감액 확인',
+        'points': [
+            {'title': '수령 나이', 'body': '1965~1968년생은 64세,\n조기노령연금은 59세부터.\n66년생은 2030년입니다.'},
+            {'title': '앞당기면', 'body': '59세에 받으면 지급률 70%,\n1년 늦출 때마다 약 6%p 올라\n63세는 94%입니다.'},
+            {'title': '미루면', 'body': '최대 5년까지 연기 가능,\n1년마다 7.2%씩 늘어\n5년이면 36%입니다.'},
+            {'title': '소득이 있으면', 'body': '지급개시연령부터 5년 동안\n소득이 기준을 넘으면\n연금이 감액될 수 있습니다.'},
+        ],
+        'closing': '받는 나이 전에\n내 소득부터 확인하세요.',
+        'cta': '프로필 링크 → 블로그에 전체 정리'
+    },
+    'caption': ('내 국민연금 예상액과 앞으로 5년의 소득 계획을 나란히 놓고 따져 보셨나요?\n\n'
+                '1965~1968년생의 노령연금 수급개시연령은 64세이고 조기노령연금은 59세부터입니다(국민연금공단 안내). 59세에 받으면 지급률 70%, 연기는 최대 5년까지 1년마다 7.2%씩 늘어납니다.\n\n'
+                '지급개시연령부터 5년 동안은 소득이 기준을 넘으면 연금이 감액될 수 있어, 사업을 계속하는 분은 소득 기준을 먼저 확인해야 합니다. 정리한 내용은 블로그에 있습니다. 내 연금액은 공단 조회로 확인하세요.\n\n'
+                '#66년생국민연금수령나이 #국민연금 #국민연금수령나이 #조기노령연금 #연기연금 #노후준비'),
+}
+
 if __name__ == '__main__':
     mode = sys.argv[1] if len(sys.argv) > 1 else 'preview'
     if mode == 'preview':
-        for name, v in (('calc', CALC), ('gasu', GASU), ('gun', GUN), ('gaji', GAJI)):
+        for name, v in (('calc', CALC), ('gasu', GASU), ('gun', GUN), ('gaji', GAJI), ('nyun', NYUN)):
             paths = cg.generate_card_set(v['card_data'], output_dir=f'_card_preview_{name}', category='insurance')
             print(name, len(paths), '장', paths[0])
     else:
-        v = {'calc': CALC, 'gasu': GASU, 'gun': GUN, 'gaji': GAJI}[mode]
+        v = {'calc': CALC, 'gasu': GASU, 'gun': GUN, 'gaji': GAJI, 'nyun': NYUN}[mode]
         ig_id = ap.post_instagram(v)
         if not ig_id:
             print('발행 실패'); sys.exit(1)
-        ap.log_instagram(ig_id, {'calc': '연금 수령액 계산기 홍보', 'gasu': '가수금뜻 블로그 요약 카드', 'gun': '지역가입자건보료상한액 요약 카드', 'gaji': '가지급금뜻 블로그 요약 카드'}[mode])
+        ap.log_instagram(ig_id, {'calc': '연금 수령액 계산기 홍보', 'gasu': '가수금뜻 블로그 요약 카드', 'gun': '지역가입자건보료상한액 요약 카드', 'gaji': '가지급금뜻 블로그 요약 카드', 'nyun': '66년생국민연금수령나이 블로그 요약 카드'}[mode])
         print('IG 발행 완료:', ig_id)
