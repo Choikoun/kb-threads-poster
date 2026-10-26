@@ -263,7 +263,10 @@ def run(scenes, render, out, voice=None, preview=False):
         for ap in auds:
             cmd += ['-i', ap]
         ns = len(scenes)
-        bgm = pick_bgm() if os.environ.get('SHOP_BGM') else None   # 10-26: 유튜브 저작권 클레임(INPLUSMUSIC) 때문에 기본 BGM 없음
+        # 10-26: 외부 무료음원(assets/)은 유튜브 Content ID 클레임이 걸려 쓰지 않고, 코드로 직접 합성한 오리지널 BGM(assets_safe/, gen_bgm.py)만 쓴다. SHOP_BGM=none이면 음악 없음
+        import glob as _g, random as _r
+        _safe = _g.glob(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'assets_safe', '*.mp3'))
+        bgm = None if os.environ.get('SHOP_BGM') == 'none' else (_r.choice(_safe) if _safe else None)
         if bgm and os.path.exists(bgm):
             cmd += ['-stream_loop', '-1', '-i', bgm]
         parts = [''.join(f'[{k}:v]' for k in range(ns)) + f'concat=n={ns}:v=1:a=0,format=yuv420p,setsar=1[vc]']
@@ -284,7 +287,7 @@ def run(scenes, render, out, voice=None, preview=False):
             parts.append(f'[{ns + i}:a]' + (f'atempo={TEMPO},' if voice.startswith('gemini:') else '') + f'apad=whole_dur={D},atrim=0:{D}[x{i}]')
         parts.append(''.join(f'[x{i}]' for i in range(ns)) + f'concat=n={ns}:v=0:a=1[nar]')
         if bgm and os.path.exists(bgm):
-            parts.append(f'[{2 * ns}:a]volume=0.12[bg]')
+            parts.append(f'[{2 * ns}:a]volume=0.16[bg]')
             parts.append('[nar][bg]amix=inputs=2:duration=first:dropout_transition=0[aout]')
             amap = '[aout]'
         else:
