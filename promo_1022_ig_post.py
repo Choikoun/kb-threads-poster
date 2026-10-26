@@ -111,16 +111,36 @@ NYUN = {
                 '#66년생국민연금수령나이 #국민연금 #국민연금수령나이 #조기노령연금 #연기연금 #노후준비'),
 }
 
+COIN = {
+    'card_data': {
+        'tag': '# 코인과세유예가능성',
+        'hook_big': '코인 과세 유예?\n결정된 바는 없습니다',
+        'hook_sub': '2027년 시행 앞두고 확인된 것만 정리',
+        'points': [
+            {'title': '현행법', 'body': '2027년 1월 1일부터\n연 250만 원 공제 후\n22%(지방소득세 포함).'},
+            {'title': '확인된 움직임', 'body': '10/16 2029년으로 늦추는\n개정안 발의, 10/25 청와대는\n검토 중이며 결정된 바 없다고.'},
+            {'title': '논의 배경(보도)', 'body': '20대 이하·30대 계좌 44.1%,\n미국 CARF 2029년 참여,\n손실 이월공제 불가 논란.'},
+            {'title': '직접 확인할 것', 'body': '당정 협의·세법 심사 결과,\n거래 기록 보관,\n해외 거래소 신고 여부.'},
+        ],
+        'closing': '시행일이 어떻게 되든\n기록은 필요합니다.',
+        'cta': '프로필 링크 → 블로그에 전체 정리'
+    },
+    'caption': ('내 가상자산 거래 기록, 취득 시점과 금액까지 보관돼 있는지 확인해 보셨나요?\n\n'
+                '현행법은 2027년 1월 1일부터 연 250만 원을 공제한 뒤 22%(지방소득세 포함)를 과세합니다. 10월 25일 청와대가 유예를 검토 중이라는 보도가 나왔지만 청와대는 결정된 바 없다고 밝혔습니다.\n\n'
+                '유예될지는 예측하지 않고 2026년 10월 26일까지의 보도를 기준으로 확인된 내용만 블로그에 정리했습니다. 투자 권유가 아니며 구체적인 세금 처리는 세무사와 확인하세요.\n\n'
+                '#코인과세유예가능성 #가상자산과세 #코인과세 #코인세금 #가상자산세금'),
+}
+
 if __name__ == '__main__':
     mode = sys.argv[1] if len(sys.argv) > 1 else 'preview'
     if mode == 'preview':
-        for name, v in (('calc', CALC), ('gasu', GASU), ('gun', GUN), ('gaji', GAJI), ('nyun', NYUN)):
+        for name, v in (('calc', CALC), ('gasu', GASU), ('gun', GUN), ('gaji', GAJI), ('nyun', NYUN), ('coin', COIN)):
             paths = cg.generate_card_set(v['card_data'], output_dir=f'_card_preview_{name}', category='insurance')
             print(name, len(paths), '장', paths[0])
     else:
-        v = {'calc': CALC, 'gasu': GASU, 'gun': GUN, 'gaji': GAJI, 'nyun': NYUN}[mode]
+        v = {'calc': CALC, 'gasu': GASU, 'gun': GUN, 'gaji': GAJI, 'nyun': NYUN, 'coin': COIN}[mode]
         ig_id = ap.post_instagram(v)
         if not ig_id:
             print('발행 실패'); sys.exit(1)
-        ap.log_instagram(ig_id, {'calc': '연금 수령액 계산기 홍보', 'gasu': '가수금뜻 블로그 요약 카드', 'gun': '지역가입자건보료상한액 요약 카드', 'gaji': '가지급금뜻 블로그 요약 카드', 'nyun': '66년생국민연금수령나이 블로그 요약 카드'}[mode])
+        ap.log_instagram(ig_id, {'calc': '연금 수령액 계산기 홍보', 'gasu': '가수금뜻 블로그 요약 카드', 'gun': '지역가입자건보료상한액 요약 카드', 'gaji': '가지급금뜻 블로그 요약 카드', 'nyun': '66년생국민연금수령나이 블로그 요약 카드', 'coin': '코인과세유예가능성 블로그 요약 카드'}[mode])
         print('IG 발행 완료:', ig_id)
