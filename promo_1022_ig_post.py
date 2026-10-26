@@ -131,16 +131,37 @@ COIN = {
                 '#코인과세유예가능성 #가상자산과세 #코인과세 #코인세금 #가상자산세금'),
 }
 
+COIN2 = {
+    'card_data': {
+        'tag': '# 코인 과세 손실',
+        'hook_big': '이익은 과세,\n손실은 못 넘깁니다',
+        'hook_sub': '코인 과세 형평성 논란, 구조만 정리',
+        'points': [
+            {'title': '현행법', 'body': '2027년 1월 1일부터\n연 250만 원 공제 후\n22%(지방소득세 포함).'},
+            {'title': '손실 이월 불가', 'body': '손실을 다음 해로 넘겨\n공제할 수 없다고\n보도는 전합니다.'},
+            {'title': '가정 사례', 'body': '2027년 +1,000만 원 → 세금 약 165만 원,\n2028년 −1,000만 원 손실은\n다음 해로 못 넘김(설명용).'},
+            {'title': '논란의 이유', 'body': '금융투자소득세는 이월공제가\n허용돼 형평성 논란,\n유예 논의 배경으로 거론됩니다.'},
+        ],
+        'closing': '결정된 바는 없습니다.\n기록부터 챙기세요.',
+        'cta': '프로필 링크 → 블로그에 전체 정리'
+    },
+    'caption': ('코인으로 이익을 낸 해와 손실을 낸 해, 세금은 서로 이어질까요?\n\n'
+                '현행법은 2027년 1월 1일부터 연 250만 원을 공제한 뒤 22%(지방소득세 포함)를 과세합니다. 보도에 따르면 손실은 다음 해로 넘겨 공제할 수 없고, 이 점이 형평성 논란으로 거론됩니다.\n'
+                '가정으로 2027년에 1,000만 원 이익이면 세금은 약 165만 원이고, 2028년에 1,000만 원 손실이 나도 그 손실은 다음 해로 넘길 수 없습니다(설명용).\n\n'
+                '유예 여부는 10월 26일 기준 결정된 바 없고, 예측하지 않습니다. 투자 권유가 아니며 구체적인 세금 처리는 세무사와 확인하세요.\n\n'
+                '#코인과세 #가상자산과세 #코인세금 #코인과세유예가능성 #손실이월공제'),
+}
+
 if __name__ == '__main__':
     mode = sys.argv[1] if len(sys.argv) > 1 else 'preview'
     if mode == 'preview':
-        for name, v in (('calc', CALC), ('gasu', GASU), ('gun', GUN), ('gaji', GAJI), ('nyun', NYUN), ('coin', COIN)):
+        for name, v in (('calc', CALC), ('gasu', GASU), ('gun', GUN), ('gaji', GAJI), ('nyun', NYUN), ('coin', COIN), ('coin2', COIN2)):
             paths = cg.generate_card_set(v['card_data'], output_dir=f'_card_preview_{name}', category='insurance')
             print(name, len(paths), '장', paths[0])
     else:
-        v = {'calc': CALC, 'gasu': GASU, 'gun': GUN, 'gaji': GAJI, 'nyun': NYUN, 'coin': COIN}[mode]
+        v = {'calc': CALC, 'gasu': GASU, 'gun': GUN, 'gaji': GAJI, 'nyun': NYUN, 'coin': COIN, 'coin2': COIN2}[mode]
         ig_id = ap.post_instagram(v)
         if not ig_id:
             print('발행 실패'); sys.exit(1)
-        ap.log_instagram(ig_id, {'calc': '연금 수령액 계산기 홍보', 'gasu': '가수금뜻 블로그 요약 카드', 'gun': '지역가입자건보료상한액 요약 카드', 'gaji': '가지급금뜻 블로그 요약 카드', 'nyun': '66년생국민연금수령나이 블로그 요약 카드', 'coin': '코인과세유예가능성 블로그 요약 카드'}[mode])
+        ap.log_instagram(ig_id, {'calc': '연금 수령액 계산기 홍보', 'gasu': '가수금뜻 블로그 요약 카드', 'gun': '지역가입자건보료상한액 요약 카드', 'gaji': '가지급금뜻 블로그 요약 카드', 'nyun': '66년생국민연금수령나이 블로그 요약 카드', 'coin': '코인과세유예가능성 블로그 요약 카드', 'coin2': '코인 과세 손실 이월 불가 카드'}[mode])
         print('IG 발행 완료:', ig_id)
