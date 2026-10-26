@@ -1,40 +1,41 @@
 # 📰 일일 브리핑
-*2026-10-25 09:15 KST*
+*2026-10-26 09:10 KST*
 
 ---
 
 ## 🔖 보험 동향
-- [화재보험협회, 제26회 불조심 어린이마당 행사 시상식 개최](https://www.insnews.co.kr/news/articleView.html?idxno=93479)
-- [9월까지 車보험 손해율 84.3%… 개선에도 수익성 부담 지속](https://www.insnews.co.kr/news/articleView.html?idxno=93478)
-- [NH농협생명, 이상거래탐지시스템 도입… 금융사기 대응 강화](https://www.insnews.co.kr/news/articleView.html?idxno=93469)
-- [KB국민은행, 중국에서도 ‘KB스타뱅킹’으로 간편하게 결제](https://www.insnews.co.kr/news/articleView.html?idxno=93462)
-- [교보생명, ﻿보험금 지급까지 2시간… 생명보험업계 최단기간](https://www.insnews.co.kr/news/articleView.html?idxno=93466)
+- [3분기 퇴직연금 적립금 542조… 증시 조정 속 보험·은행 동반 감소](https://www.insnews.co.kr/news/articleView.html?idxno=93459)
+- [고령화 시대 보험시장, 상품 경쟁 넘어 상담 역량이 핵심](https://www.insnews.co.kr/news/articleView.html?idxno=93457)
+- [민간 우주기업 공제 가입 허용… 우주보험 선택지 확대](https://www.insnews.co.kr/news/articleView.html?idxno=93456)
+- [내달부터 초기 실손보험 할인… 유지·전환 득실 따져야](https://www.insnews.co.kr/news/articleView.html?idxno=93455)
+- [[RMI보험경영연구소의 보험이슈 톡톡] 퇴직연금의 미래, 장기성과와 보험사의 역할](https://www.insnews.co.kr/news/articleView.html?idxno=93452)
 
 ## 💰 국내 경제·금융
-- [코스피, 바닥 다지기 나설까…美 FOMC·삼전닉스 실적 주목 [주간전망]](https://www.hankyung.com/article/2026102308326)
-- [코스피 빠질 때 혼자 37% '불기둥'…실적 두 배 터진 이 회사 [종목+]](https://www.hankyung.com/article/2026102309936)
-- [미국 주식시장은 트럼프 1기 때를 닮아가고 있다 [조윤남의 사이클투자]](https://www.hankyung.com/article/202610191057i)
-- [결국은 높아진 금리 때문에 생긴 문제들](https://www.hankyung.com/article/202610231113i)
-- ["인니 증시 반값 됐다"…상반기 1위서 '최저가'로, 코스피 바닥 논쟁](https://www.hankyung.com/article/202610231657i)
+- ["코스피 하단 5200…비중확대 말고 정유·해운 등 선별투자"](https://www.hankyung.com/article/2026102640936)
+- [그야말로 '미친 실적'…"삼전닉스 영업이익 1571조 시대 온다"](https://www.hankyung.com/article/2026102640676)
+- [[스타워즈] iM證 삼공오공, 지수 레버리지 ETF 단타로 1위 탈환](https://www.hankyung.com/article/2026102531336)
+- [개미들 국내 증시 탈출할 때…대치동 부자들이 담은 '이 주식'](https://www.hankyung.com/article/202610216130i)
+- ["SK하이닉스, 솔리다임 IPO 철회로 주주환원 강화 기대"-메리츠](https://www.hankyung.com/article/2026102639586)
 
 ## 📈 주식·시장
-- [증시 큰 변동성에도 버티는 보험주…배당·방어주로 부각된다는데](https://www.mk.co.kr/news/stock/12184896)
-- [“SK하닉 고점서 절반넘게 날아갔는데 중복상장?”…분노 잇따르자 철회](https://www.mk.co.kr/news/stock/12184884)
-- [9100→5500까지 하락한 코스피…“11월은 W자 반등에 주목”](https://www.mk.co.kr/news/stock/12184843)
-- [‘채시라 남편’ 김태욱 회사에 日마루베니 공개매수…주가 상한가 직행](https://www.mk.co.kr/news/stock/12184713)
-- [“실적 좋다며, 왜 내 주식만?”…미장보다 더 빠지는 국장의 비밀](https://www.mk.co.kr/news/stock/12184712)
+- [5500선 시험대 오른 코스피…삼전닉스 주주환원·FOMC·빅테크 실적 주목](https://www.mk.co.kr/news/stock/12185370)
+- [하나증권 “우리금융지주, 3분기 실적 기대치 충족…주주환원도 기대”](https://www.mk.co.kr/news/stock/12185369)
+- [“넥센타이어, 고유가·환율 역풍에 수익성 흔들”…목표가↓](https://www.mk.co.kr/news/stock/12185355)
+- [“하나금융지주, 자본비율 개선 제한적이지만 배당 매력 더욱 부각”](https://www.mk.co.kr/news/stock/12185342)
+- [장 열리니 하이닉스 30% 폭락?…외면받는 넥스트레이드, 거래량 급감 이유는](https://www.mk.co.kr/news/stock/12185324)
 
 ## 🌏 글로벌 경제·정세
-- [중국계 AI 해킹 도구 확산…韓日 금융기관도 공격받았다](https://www.hankyung.com/article/202610242500i)
-- [선거 앞둔 트럼프, 캐나다 관세 품목 조정…밸브·카펫으로 대체 부과](https://www.hankyung.com/article/2026102422997)
-- [AI 해킹 공격 '분당 100만회'…“고치기도 전에 또 뚫린다”](https://www.hankyung.com/article/202610242294i)
-- ["결국 엔비디아가 돈 댄다"…중간 선거 끝나면 또 전쟁?[월가 백브리핑]](https://www.hankyung.com/article/202610242082i)
-- [트럼프, 대이란 추가 공습 시사…"이란 끝나면 쿠바 처리"](https://www.hankyung.com/article/2026102421657)
+- [베일 벗는 '퀀트 제왕'…100억달러대 투자왕국 드러나나](https://www.hankyung.com/article/202610264117i)
+- ["가솔린차 더는 안 판다"…일본車 '파격 결단' 내린 이유는](https://www.hankyung.com/article/202610264120i)
+- [물가 뛰어도 금리 동결…미·유럽·일본 중앙은행 신중론](https://www.hankyung.com/article/202610264095i)
+- [[밤 사이 해외뉴스] 중국 소비 위축에 유럽 명품업체 시총 2500억유로 증발](https://www.hankyung.com/article/202610264068i)
+- [[밤 사이 해외뉴스 영상] 암 재발 위험 42% 낮췄는데…모더나 주가 19% 급락한 이유](https://www.hankyung.com/article/202610264004i)
 
 ## 🔥 팔로업 추천 (300회 이상)
-- 569회 [2026-10-24] 폐업만은 피하려 버티지만 실상은 버틸수록 적자가 쌓이는 구조야.  매출은...
-- 461회 [2026-10-23] 어떤 예약자, 내 이름이랑 번호가 그대로 새어 나간 걸 기사로 봤어.  ...
-- 445회 [2026-10-23] 어디선가 공급이 풀리면 집값이 순식간에 내려앉을 거라는 확신을 갖고 있었...
+- 765회 [2026-10-25] 내년 1월부터 세금 떼겠다고 엄포를 놓더니,  막상 뚜껑을 열어보니 또 ...
+- 652회 [2026-10-25] 빚 6억을 안고 식당을 차렸을 때 내 손에 쥐인 돈은 월 80만 원이었다...
+- 614회 [2026-10-24] 폐업만은 피하려 버티지만 실상은 버틸수록 적자가 쌓이는 구조야.  매출은...
+- 445회 [2026-10-25] 면허 취소 수치가 나온 운전자가 현장에서 대법원까지 갔어.  💡 측정 직...
 
 ---
 *총 60개 기사 수집됨*
