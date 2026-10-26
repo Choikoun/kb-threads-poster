@@ -1,4 +1,19 @@
 # 🏛️ KTV 국무회의 브리핑
-*2026-10-25 20:41 KST*
+*2026-10-26 22:14 KST*
 
-오늘 관련 영상 없음
+---
+
+## 먹고 즐기며 국민과 소통한 하루! #송미령 장관이 외국인 관광객에게 한식의 우수성 알린 뜻깊은 오늘은 10월 24일 한식의 날 #명벤져스
+🔗 https://youtu.be/RxWEiE7nmzA
+
+[자막 없음: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=RxWEiE7nmzA! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There are two ...
+
+---
+
