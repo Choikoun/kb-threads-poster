@@ -162,5 +162,15 @@
    "naver_connect": "3",
    "coupang_blog": "3"
   }
+ },
+ {
+  "key": "taean_mulgyeol",
+  "title": "태안 물결카라반 요금, 객실·요일별 가격 정리",
+  "naver": "https://blog.naver.com/sobok_biz/224453840128",
+  "date": "2026-10-26",
+  "keyword": "태안 물결카라반",
+  "links": {
+   "coupang_blog": "blog_mulgyeol_trip"
+  }
  }
 ]
