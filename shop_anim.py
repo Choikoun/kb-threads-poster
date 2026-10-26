@@ -13,8 +13,8 @@ from card_generator import load_font, hex_to_rgb
 from video_poster import generate_narration_timed, get_audio_duration, pick_bgm, SUB_FONT, make_subtitle_phrases
 
 W, H, FPS = 1080, 1920, 30
-TEMPO = float(os.environ.get('SHOP_TEMPO') or 1.0)   # 10-25: 배속 제거(기계음 느낌 완화)
-TTS_STYLE = os.environ.get('SHOP_TTS_STYLE') or '친구에게 알려주듯 자연스러운 구어체로, 차분하고 따뜻한 말투로 읽어 주세요. 문장 사이에는 짧게 숨을 쉬듯 쉬어 주세요: '
+TEMPO = float(os.environ.get('SHOP_TEMPO') or 1.2)   # 10-26: 말투 지시 때문에 길어진 영상(1:55)을 줄이려 1.2배
+TTS_STYLE = os.environ.get('SHOP_TTS_STYLE') or '자연스럽고 또렷하게, 조금 빠른 속도로 읽어 주세요: '
 c = hex_to_rgb
 NAVY, GOLD, RED, GREEN = '#1B2A4A', '#B8925A', '#D9534F', '#2F9D6F'
 
@@ -263,7 +263,7 @@ def run(scenes, render, out, voice=None, preview=False):
         for ap in auds:
             cmd += ['-i', ap]
         ns = len(scenes)
-        bgm = pick_bgm()
+        bgm = pick_bgm() if os.environ.get('SHOP_BGM') else None   # 10-26: 유튜브 저작권 클레임(INPLUSMUSIC) 때문에 기본 BGM 없음
         if bgm and os.path.exists(bgm):
             cmd += ['-stream_loop', '-1', '-i', bgm]
         parts = [''.join(f'[{k}:v]' for k in range(ns)) + f'concat=n={ns}:v=1:a=0,format=yuv420p,setsar=1[vc]']
