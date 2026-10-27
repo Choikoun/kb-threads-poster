@@ -152,16 +152,36 @@ COIN2 = {
                 '#코인과세 #가상자산과세 #코인세금 #코인과세유예가능성 #손실이월공제'),
 }
 
+STOCK = {
+    'card_data': {
+        'tag': '# 비상장주식양도세율',
+        'hook_big': '같은 이익,\n세율은 10%와 20%',
+        'hook_sub': '비상장주식 양도세율을 가르는 세 가지',
+        'points': [
+            {'title': '중소기업 여부', 'body': '대주주가 아니면\n중소기업 주식 10%,\n그 밖의 주식 20%.'},
+            {'title': '대주주 여부', 'body': '비상장 대주주는 지분 4% 또는\n10억 원 이상,\n세율은 20~25%.'},
+            {'title': '보유기간', 'body': '중소기업 외 법인 대주주가\n1년 미만 보유하면\n30%까지 올라갑니다.'},
+            {'title': '같은 이익 5,000만 원', 'body': '공제 250만 원을 빼면 4,750만 원,\n10%면 약 475만 원,\n20%면 약 950만 원(설명용).'},
+        ],
+        'closing': '내 지분이 어느 쪽인지\n먼저 확인하세요.',
+        'cta': '프로필 링크 → 블로그에 전체 정리'
+    },
+    'caption': ('내 회사 주식이 중소기업에 해당하는지, 내 지분이 대주주 기준을 넘는지 확인해 보셨나요?\n\n'
+                '비상장주식은 소액주주라도 팔면 양도소득세 과세 대상입니다. 대주주가 아닌 경우 중소기업 주식은 10%, 그 밖의 주식은 20%이고, 비상장 대주주 요건은 지분 4% 또는 시가총액 10억 원입니다(국세청 안내).\n\n'
+                '숫자는 설명용 가정이며 실제 세금은 필요경비와 신고에 따라 다릅니다. 구체적인 세금 계산은 세무사와 확인하세요. 정리한 내용은 블로그에 있습니다.\n\n'
+                '#비상장주식양도세율 #비상장주식 #양도소득세 #법인대표 #주식양도'),
+}
+
 if __name__ == '__main__':
     mode = sys.argv[1] if len(sys.argv) > 1 else 'preview'
     if mode == 'preview':
-        for name, v in (('calc', CALC), ('gasu', GASU), ('gun', GUN), ('gaji', GAJI), ('nyun', NYUN), ('coin', COIN), ('coin2', COIN2)):
+        for name, v in (('calc', CALC), ('gasu', GASU), ('gun', GUN), ('gaji', GAJI), ('nyun', NYUN), ('coin', COIN), ('coin2', COIN2), ('stock', STOCK)):
             paths = cg.generate_card_set(v['card_data'], output_dir=f'_card_preview_{name}', category='insurance')
             print(name, len(paths), '장', paths[0])
     else:
-        v = {'calc': CALC, 'gasu': GASU, 'gun': GUN, 'gaji': GAJI, 'nyun': NYUN, 'coin': COIN, 'coin2': COIN2}[mode]
+        v = {'calc': CALC, 'gasu': GASU, 'gun': GUN, 'gaji': GAJI, 'nyun': NYUN, 'coin': COIN, 'coin2': COIN2, 'stock': STOCK}[mode]
         ig_id = ap.post_instagram(v)
         if not ig_id:
             print('발행 실패'); sys.exit(1)
-        ap.log_instagram(ig_id, {'calc': '연금 수령액 계산기 홍보', 'gasu': '가수금뜻 블로그 요약 카드', 'gun': '지역가입자건보료상한액 요약 카드', 'gaji': '가지급금뜻 블로그 요약 카드', 'nyun': '66년생국민연금수령나이 블로그 요약 카드', 'coin': '코인과세유예가능성 블로그 요약 카드', 'coin2': '코인 과세 손실 이월 불가 카드'}[mode])
+        ap.log_instagram(ig_id, {'calc': '연금 수령액 계산기 홍보', 'gasu': '가수금뜻 블로그 요약 카드', 'gun': '지역가입자건보료상한액 요약 카드', 'gaji': '가지급금뜻 블로그 요약 카드', 'nyun': '66년생국민연금수령나이 블로그 요약 카드', 'coin': '코인과세유예가능성 블로그 요약 카드', 'coin2': '코인 과세 손실 이월 불가 카드', 'stock': '비상장주식양도세율 블로그 요약 카드'}[mode])
         print('IG 발행 완료:', ig_id)

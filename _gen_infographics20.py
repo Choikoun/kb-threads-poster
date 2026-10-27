@@ -1,0 +1,52 @@
+from PIL import Image, ImageDraw
+from card_generator import load_font, hex_to_rgb
+OUT='blog_images/2026-10-27_비상장주식양도세율'
+P='비상장주식양도세율'
+BG="#F7F5F0";NAVY="#1B2A4A";GOLD="#B8925A";GRAY="#6B7280";RED="#B5473A";GREEN="#2F7D5D"
+W=1200; c=hex_to_rgb
+def canvas(h):
+    im=Image.new('RGB',(W,h),c(BG)); return im, ImageDraw.Draw(im)
+sub=load_font('bold',32); body=load_font('regular',28); small=load_font('regular',24); big=load_font('extrabold',40)
+def box(d,y,h,col,left,right=None,lsize=36):
+    d.rectangle([90,y,W-90,y+h],fill=c("#FFFFFF"),outline=c(col),width=4)
+    d.text((130,y+h//2),left,font=load_font('extrabold',lsize),fill=c(col),anchor='lm')
+    if right: d.text((W-130,y+h//2),right,font=body,fill=c(NAVY),anchor='rm')
+im,d=canvas(900)
+d.rectangle([0,0,W,14],fill=c(GOLD))
+d.text((70,230),"비상장주식양도세율",font=load_font('extrabold',98),fill=c(NAVY))
+d.text((70,400),"10%와 20%를 가르는",font=load_font('extrabold',72),fill=c(NAVY))
+d.text((70,500),"세 가지 기준",font=load_font('extrabold',92),fill=c(GOLD))
+d.text((70,680),"국세청 안내와 소득세법 기준으로 정리",font=sub,fill=c(GRAY))
+im.save(f'{OUT}/01_{P}_대표이미지.png')
+im,d=canvas(960)
+d.text((60,55),"비상장주식 양도세율, 이렇게 갈립니다",font=big,fill=c(NAVY))
+d.text((60,120),"2026년 소득세법 제104조 기준 · 지방소득세 별도",font=body,fill=c(GRAY))
+box(d,190,110,GREEN,"10%","대주주 아닌 사람 · 중소기업 주식",30)
+box(d,320,110,NAVY,"20%","대주주 아닌 사람 · 중소기업 외 주식",30)
+box(d,450,110,GOLD,"20~25%","대주주 · 중소기업 외 법인 주식",30)
+box(d,580,110,RED,"30%","대주주 · 중소기업 외 · 1년 미만 보유",30)
+d.text((90,760),"대주주 중소기업 주식은 20%",font=sub,fill=c(NAVY))
+d.text((90,815),"기본공제 연 250만 원은 따로 적용",font=small,fill=c(GRAY))
+im.save(f'{OUT}/02_{P}_세율갈래.png')
+im,d=canvas(860)
+d.text((60,55),"같은 이익, 세율에 따른 차이",font=big,fill=c(NAVY))
+d.text((60,120),"A씨(가정) · 양도차익 5,000만 원 · 기본공제 250만 원 반영",font=body,fill=c(GRAY))
+box(d,200,130,GREEN,"중소기업 주식 10%","약 475만 원",34)
+box(d,360,130,RED,"중소기업 외 20%","약 950만 원",34)
+d.text((90,560),"과세표준 4,750만 원 기준 · 지방소득세는 별도",font=sub,fill=c(NAVY))
+d.text((90,615),"설명용 가정이며 실제 세금은 필요경비와 신고에 따라 다릅니다",font=small,fill=c(GRAY))
+im.save(f'{OUT}/03_{P}_계산가정.png')
+im,d=canvas(900)
+d.text((60,55),"양도 전에 확인할 세 가지",font=big,fill=c(NAVY))
+d.text((60,120),"세율은 이 세 가지로 갈립니다",font=body,fill=c(GRAY))
+box(d,200,130,GREEN,"1","우리 회사가 중소기업에 해당하는지",32)
+box(d,360,130,NAVY,"2","내 지분이 4% 또는 10억 원을 넘는지",32)
+box(d,520,130,GOLD,"3","보유기간 1년 미만 · 특수관계인 거래인지",30)
+d.text((90,730),"신고는 반기마다 예정신고 대상입니다",font=sub,fill=c(NAVY))
+im.save(f'{OUT}/04_{P}_확인순서.png')
+im,d=canvas(780)
+d.text((60,55),"핵심 정리",font=big,fill=c(NAVY))
+for i,(k,v,col) in enumerate([("1","대주주 아닌 중소기업 10% · 그 외 20%",NAVY),("2","대주주 4% 또는 10억 원 이상 20~25%",RED),("3","가족 거래는 시가부터 확인",GREEN)]):
+    box(d,160+i*190,150,col,k,None,44); d.text((220,160+i*190+75),v,font=sub,fill=c(NAVY),anchor='lm')
+im.save(f'{OUT}/05_{P}_핵심정리.png')
+print('ok')
