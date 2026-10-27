@@ -9,7 +9,7 @@ IMG = 'blog_images/shop_2026-10-14_라바제식기건조대'
 OUT = os.environ.get('SHOP_OUT') or f'{IMG}/reel_lbz_anim.mp4'
 SCENES = [
     dict(kind='bars', card='A', title='라바제 식기건조대 DLM-8690', big='거의 3배 차이', small='쿠팡 목록 표기가 · 2026-10-14 조회', col=RED,
-         rows=[('슬림 세로형', 88900, GREEN), ('옵션 목록', 116000, GOLD), ('올스텐 대용량', 209860, GOLD), ('3종세트', 255000, RED)], gap='같은 모델명 · 구성 일치는 확인하지 못했어요',
+         rows=[('슬림 세로형', 88900, GREEN), ('올스텐 대용량', 209860, GOLD), ('3종세트', 255000, RED)], gap='같은 모델명 · 구성 일치는 확인하지 못했어요',
          say='라바제 식기건조대 DLM-8690이 쿠팡에서 8만 8천 9백 원부터 25만 5천 원까지 다르게 표기됐어요.'),
     dict(kind='check', card='B', title='가격이 갈리는 이유 후보', big='구성이 달라요', small='확정은 못 했어요', col=GOLD,
          items=['3종세트: 건조대·수저통·트레이', '단품: 건조대만 판매', '일본 직수입 · 판매처 차이'],
