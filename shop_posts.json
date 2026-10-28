@@ -53,6 +53,14 @@
    ],
    "coupang_blog": "blog_labase",
    "coupang_threads": "threads_labase"
+  },
+  "reel_20261028": {
+   "ig": "18075845447752724",
+   "threads": "18016682729752174",
+   "yt": "shop_yt_upload",
+   "clip": "등록",
+   "tiktok": "게시",
+   "links": "blog_images/_lbz2_reel_links.json"
   }
  },
  {
@@ -172,5 +180,14 @@
   "links": {
    "coupang_blog": "blog_mulgyeol_trip"
   }
+ },
+ {
+  "key": "container_packing_info",
+  "title": "밀폐용기 패킹 교체 시기, 변형·냄새·세척 기준 정리",
+  "naver": "https://blog.naver.com/sobok_biz/224455193765",
+  "date": "2026-10-28",
+  "keyword": "밀폐용기 패킹 교체 시기",
+  "type": "info_no_affiliate",
+  "links": {}
  }
 ]
