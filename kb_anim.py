@@ -126,16 +126,16 @@ def preview(scenes, seconds=3.0, d='_tmp_kb'):
     print('미리보기 저장:', d)
 
 
-# 음성: 2026-10-28 사용자 선택(Gemini 표현력 주문 음성). KB_VOICE 로 바꾸고, Gemini 한도·오류 시 기존 SunHi 로 되돌린다.
-KB_EXPR_STYLE = ('실제 사람이 친구에게 설명하듯 자연스럽게 말해 주세요. 억양에 높낮이를 주고, 핵심 숫자와 결론 앞에서는 강조하며 '
-                 '잠깐 쉬어 읽어 주세요. 문장 끝을 기계적으로 내리지 말고 부드럽게 이어 주세요: ')
+# 음성: 2026-10-28 사용자 선택(Gemini Aoede·빠른 표현 주문, G 샘플). KB_VOICE 로 바꾸고, Gemini 한도·오류 시 기존 SunHi 로 되돌린다.
+KB_EXPR_STYLE = ('실제 사람이 친구에게 설명하듯 자연스럽게, 경쾌하고 빠른 속도로 말해 주세요. 억양에 높낮이를 주고 '
+                 '핵심 숫자 앞에서만 짧게 강조하되, 길게 끌거나 오래 쉬지 말고 이어서 읽어 주세요: ')
 KB_TEMPO = float(os.environ.get('KB_TEMPO') or 1.5)
 
 
 def make_video(scenes, out):
     if os.environ.get('KB_PREVIEW'):
         return preview(scenes)
-    voice = os.environ.get('KB_VOICE') or 'gemini:Kore'
+    voice = os.environ.get('KB_VOICE') or 'gemini:Aoede'
     if voice.startswith('gemini:'):
         A.TTS_STYLE = KB_EXPR_STYLE
         A.TEMPO = KB_TEMPO
