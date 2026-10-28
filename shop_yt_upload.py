@@ -19,7 +19,10 @@ print(js('_yt_radio.js'))
 # 더보기('자세히 보기') 펼쳐 유료 프로모션 선택
 d.execute_script('''const hs=[...document.querySelectorAll("ytcp-button,button")].filter(e=>(e.innerText||"").trim()==="자세히 보기"); const h=hs[hs.length-1]; if(h){h.scrollIntoView({block:"center"}); h.click()}''')
 time.sleep(2)
-print(d.execute_script('''const r=[...document.querySelectorAll("tp-yt-paper-radio-button")].find(e=>(e.innerText||"").trim().startsWith("예, 동영상에 유료 프로모션")); if(!r) return "no promo radio"; r.scrollIntoView({block:"center"}); r.click(); return "promo yes: "+r.getAttribute("aria-checked")'''))
+if len(sys.argv) > 4 and sys.argv[4] == 'nopromo':
+    print('제휴 없는 정보성 영상: 유료 프로모션 표시 생략')
+else:
+    print(d.execute_script('''const r=[...document.querySelectorAll("tp-yt-paper-radio-button")].find(e=>(e.innerText||"").trim().startsWith("예, 동영상에 유료 프로모션")); if(!r) return "no promo radio"; r.scrollIntoView({block:"center"}); r.click(); return "promo yes: "+r.getAttribute("aria-checked")'''))
 for _ in range(3):
     time.sleep(3); print(js('_yt_click.js', '다음'))
 time.sleep(3); print(js('_yt_pub.js')); time.sleep(2)
