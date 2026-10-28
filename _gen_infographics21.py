@@ -1,0 +1,50 @@
+from PIL import Image, ImageDraw
+from card_generator import load_font, hex_to_rgb
+OUT='blog_images/2026-10-28_국민연금반납금'
+P='국민연금반납금'
+BG="#F7F5F0";NAVY="#1B2A4A";GOLD="#B8925A";GRAY="#6B7280";RED="#B5473A";GREEN="#2F7D5D"
+W=1200; c=hex_to_rgb
+def canvas(h):
+    im=Image.new('RGB',(W,h),c(BG)); return im, ImageDraw.Draw(im)
+sub=load_font('bold',32); body=load_font('regular',28); small=load_font('regular',24); big=load_font('extrabold',40)
+def box(d,y,h,col,left,right=None,lsize=36):
+    d.rectangle([90,y,W-90,y+h],fill=c("#FFFFFF"),outline=c(col),width=4)
+    d.text((130,y+h//2),left,font=load_font('extrabold',lsize),fill=c(col),anchor='lm')
+    if right: d.text((W-130,y+h//2),right,font=body,fill=c(NAVY),anchor='rm')
+im,d=canvas(900)
+d.rectangle([0,0,W,14],fill=c(GOLD))
+d.text((70,230),"국민연금반납금",font=load_font('extrabold',110),fill=c(NAVY))
+d.text((70,400),"145만 원이",font=load_font('extrabold',72),fill=c(NAVY))
+d.text((70,500),"320만 원 되는 이유",font=load_font('extrabold',84),fill=c(GOLD))
+d.text((70,680),"국민연금공단 안내와 보도 사례로 정리",font=sub,fill=c(GRAY))
+im.save(f'{OUT}/01_{P}_대표이미지.png')
+im,d=canvas(900)
+d.text((60,55),"반납금 이자는 이렇게 붙습니다",font=big,fill=c(NAVY))
+d.text((60,120),"국민연금공단 안내 기준 · 현재 이율은 공단 조회로 확인",font=body,fill=c(GRAY))
+box(d,200,130,GOLD,"기간","지급 월 ~ 신청 월의 전월",32)
+box(d,360,130,NAVY,"이율","1년 만기 정기예금 이자율",32)
+box(d,520,130,RED,"1년 초과","이자를 원금에 더해 다시 계산",32)
+d.text((90,730),"오래 둘수록 반납액이 불어납니다",font=sub,fill=c(NAVY))
+im.save(f'{OUT}/02_{P}_이자구조.png')
+im,d=canvas(900)
+d.text((60,55),"보도 사례(A씨) · 반납과 연금 변화",font=big,fill=c(NAVY))
+d.text((60,120),"개인 사례이며 모두에게 같은 결과는 아닙니다",font=body,fill=c(GRAY))
+box(d,200,130,GOLD,"1998년 반환일시금","약 145만 원",32)
+box(d,360,130,RED,"이자 포함 반납액","약 320만 원",32)
+box(d,520,130,GREEN,"예상 연금","월 98만 → 107만 원",32)
+d.text((90,730),"기사 계산: 연 약 108만 원, 3년이면 약 324만 원",font=sub,fill=c(NAVY))
+im.save(f'{OUT}/03_{P}_사례.png')
+im,d=canvas(900)
+d.text((60,55),"반납이 어려운 경우와 확인 사항",font=big,fill=c(NAVY))
+d.text((60,120),"신청 전에 공단 상담으로 꼭 확인하세요",font=body,fill=c(GRAY))
+box(d,200,120,RED,"가입기간 10년 미만","만 60세에 받은 반환일시금은 반납 불가(기사)",28)
+box(d,345,120,GOLD,"소급통산 기간","공무원·군인 등 반환일시금 지급 기간 제외",28)
+box(d,490,120,NAVY,"신청 후","지사 담당자가 전화로 다시 확인",30)
+d.text((90,690),"취소·장애연금 조건은 원문 확인 필요",font=sub,fill=c(NAVY))
+im.save(f'{OUT}/04_{P}_제외조건.png')
+im,d=canvas(780)
+d.text((60,55),"핵심 정리",font=big,fill=c(NAVY))
+for i,(k,v,col) in enumerate([("1","반환일시금에 이자를 더해 가입기간 복원",NAVY),("2","가입 중이어야 신청 · 분할 3·12·24회",RED),("3","반납액과 예상 연금액은 공단에서 확인",GREEN)]):
+    box(d,160+i*190,150,col,k,None,44); d.text((220,160+i*190+75),v,font=sub,fill=c(NAVY),anchor='lm')
+im.save(f'{OUT}/05_{P}_핵심정리.png')
+print('ok')

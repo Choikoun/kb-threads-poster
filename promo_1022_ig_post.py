@@ -172,16 +172,36 @@ STOCK = {
                 '#비상장주식양도세율 #비상장주식 #양도소득세 #법인대표 #주식양도'),
 }
 
+BANAP = {
+    'card_data': {
+        'tag': '# 국민연금반납금',
+        'hook_big': '반환일시금 145만 원이\n반납엔 320만 원',
+        'hook_sub': '국민연금반납금, 이자 구조 정리',
+        'points': [
+            {'title': '반납이란', 'body': '받은 반환일시금에 이자를 더해\n내고 가입기간을 복원합니다.\n현재 가입 중이어야 신청.'},
+            {'title': '이자 계산', 'body': '지급 월부터 신청 월 전월까지\n1년 만기 정기예금 이자율로,\n1년 넘으면 이자에 이자.'},
+            {'title': '분할납부', 'body': '1년 미만 3회, 5년 미만 12회,\n5년 이상 24회 이내\n분할해도 이자가 붙습니다.'},
+            {'title': '보도 사례', 'body': '약 145만 원이 이자 포함 약 320만 원,\n예상 연금 월 98만→107만 원\n(개인 사례).'},
+        ],
+        'closing': '반납액과 예상 연금은\n공단에서 먼저 확인하세요.',
+        'cta': '프로필 링크 → 블로그에 전체 정리'
+    },
+    'caption': ('예전에 받은 반환일시금이 있는지, 반납하면 연금이 얼마나 달라지는지 확인해 보셨나요?\n\n'
+                '반환일시금을 받은 뒤 다시 가입자가 되면 받은 돈에 이자를 더해 반납하고 가입기간을 복원할 수 있습니다(국민연금공단 안내). 이자는 지급 월부터 신청 월 전월까지 1년 만기 정기예금 이자율로 계산하고, 분할은 종전 가입기간에 따라 3·12·24회 이내입니다.\n\n'
+                '보도된 사례에서는 약 145만 원이 이자 포함 약 320만 원이 됐고 예상 연금이 월 98만 원에서 107만 원으로 늘었지만, 개인 사례라 결과는 다릅니다. 내 반납액은 국민연금 1355나 공단 홈페이지로 확인하세요. 자세한 정리는 블로그에 있습니다.\n\n'
+                '#국민연금반납금 #국민연금반환일시금 #국민연금반납 #노후준비 #국민연금'),
+}
+
 if __name__ == '__main__':
     mode = sys.argv[1] if len(sys.argv) > 1 else 'preview'
     if mode == 'preview':
-        for name, v in (('calc', CALC), ('gasu', GASU), ('gun', GUN), ('gaji', GAJI), ('nyun', NYUN), ('coin', COIN), ('coin2', COIN2), ('stock', STOCK)):
+        for name, v in (('calc', CALC), ('gasu', GASU), ('gun', GUN), ('gaji', GAJI), ('nyun', NYUN), ('coin', COIN), ('coin2', COIN2), ('stock', STOCK), ('banap', BANAP)):
             paths = cg.generate_card_set(v['card_data'], output_dir=f'_card_preview_{name}', category='insurance')
             print(name, len(paths), '장', paths[0])
     else:
-        v = {'calc': CALC, 'gasu': GASU, 'gun': GUN, 'gaji': GAJI, 'nyun': NYUN, 'coin': COIN, 'coin2': COIN2, 'stock': STOCK}[mode]
+        v = {'calc': CALC, 'gasu': GASU, 'gun': GUN, 'gaji': GAJI, 'nyun': NYUN, 'coin': COIN, 'coin2': COIN2, 'stock': STOCK, 'banap': BANAP}[mode]
         ig_id = ap.post_instagram(v)
         if not ig_id:
             print('발행 실패'); sys.exit(1)
-        ap.log_instagram(ig_id, {'calc': '연금 수령액 계산기 홍보', 'gasu': '가수금뜻 블로그 요약 카드', 'gun': '지역가입자건보료상한액 요약 카드', 'gaji': '가지급금뜻 블로그 요약 카드', 'nyun': '66년생국민연금수령나이 블로그 요약 카드', 'coin': '코인과세유예가능성 블로그 요약 카드', 'coin2': '코인 과세 손실 이월 불가 카드', 'stock': '비상장주식양도세율 블로그 요약 카드'}[mode])
+        ap.log_instagram(ig_id, {'calc': '연금 수령액 계산기 홍보', 'gasu': '가수금뜻 블로그 요약 카드', 'gun': '지역가입자건보료상한액 요약 카드', 'gaji': '가지급금뜻 블로그 요약 카드', 'nyun': '66년생국민연금수령나이 블로그 요약 카드', 'coin': '코인과세유예가능성 블로그 요약 카드', 'coin2': '코인 과세 손실 이월 불가 카드', 'stock': '비상장주식양도세율 블로그 요약 카드', 'banap': '국민연금반납금 블로그 요약 카드'}[mode])
         print('IG 발행 완료:', ig_id)
