@@ -192,16 +192,36 @@ BANAP = {
                 '#국민연금반납금 #국민연금반환일시금 #국민연금반납 #노후준비 #국민연금'),
 }
 
+BANAP2 = {
+    'card_data': {
+        'tag': '# 국민연금반납금',
+        'hook_big': '반납하고 싶어도\n안 되는 경우가 있습니다',
+        'hook_sub': '국민연금 반납금, 자격과 제외 조건',
+        'points': [
+            {'title': '신청 자격', 'body': '반환일시금을 받은 적이 있고\n지금 국민연금에 가입 중인\n사람이 신청할 수 있습니다.'},
+            {'title': '안 되는 경우', 'body': '가입 10년 미만으로 60세에 받은\n반환일시금은 반납 불가(보도),\n공무원·군인 등 소급통산 기간도 제외.'},
+            {'title': '신청 방법', 'body': '방문·우편·팩스·정부24·홈페이지·\n모바일앱·디지털 ARS로 가능,\n신청 후 지사에서 전화로 확인합니다.'},
+            {'title': '먼저 확인', 'body': '받은 이력과 이자 포함 반납액,\n예상 연금액은 국민연금 1355\n(평일 09~18시)에서 확인.'},
+        ],
+        'closing': '신청 전에\n내 이력부터 확인하세요.',
+        'cta': '프로필 링크 → 블로그에 전체 정리'
+    },
+    'caption': ('예전에 받은 반환일시금, 반납하고 싶은데 대상이 되는지 확인해 보셨나요?\n\n'
+                '반납은 반환일시금을 받은 적이 있고 현재 가입 중인 사람이 신청할 수 있습니다(국민연금공단 안내). 보도에 따르면 가입기간 10년 미만으로 만 60세에 받은 반환일시금은 반납할 수 없고, 공무원·군인·사립학교교직원 등 소급통산 기간이 포함된 반환일시금 지급 기간은 신청 기간에서 제외됩니다.\n\n'
+                '신청은 방문, 우편, 팩스, 정부24, 공단 홈페이지, 모바일앱, 디지털 ARS로 할 수 있고 신청 뒤 지사 담당자가 전화로 다시 확인합니다. 내 반납액과 예상 연금은 국민연금 1355에서 확인하세요. 이자 구조와 사례는 블로그에 정리했습니다.\n\n'
+                '#국민연금반납금 #국민연금반환일시금 #국민연금반납 #노후준비 #국민연금'),
+}
+
 if __name__ == '__main__':
     mode = sys.argv[1] if len(sys.argv) > 1 else 'preview'
     if mode == 'preview':
-        for name, v in (('calc', CALC), ('gasu', GASU), ('gun', GUN), ('gaji', GAJI), ('nyun', NYUN), ('coin', COIN), ('coin2', COIN2), ('stock', STOCK), ('banap', BANAP)):
+        for name, v in (('calc', CALC), ('gasu', GASU), ('gun', GUN), ('gaji', GAJI), ('nyun', NYUN), ('coin', COIN), ('coin2', COIN2), ('stock', STOCK), ('banap', BANAP), ('banap2', BANAP2)):
             paths = cg.generate_card_set(v['card_data'], output_dir=f'_card_preview_{name}', category='insurance')
             print(name, len(paths), '장', paths[0])
     else:
-        v = {'calc': CALC, 'gasu': GASU, 'gun': GUN, 'gaji': GAJI, 'nyun': NYUN, 'coin': COIN, 'coin2': COIN2, 'stock': STOCK, 'banap': BANAP}[mode]
+        v = {'calc': CALC, 'gasu': GASU, 'gun': GUN, 'gaji': GAJI, 'nyun': NYUN, 'coin': COIN, 'coin2': COIN2, 'stock': STOCK, 'banap': BANAP, 'banap2': BANAP2}[mode]
         ig_id = ap.post_instagram(v)
         if not ig_id:
             print('발행 실패'); sys.exit(1)
-        ap.log_instagram(ig_id, {'calc': '연금 수령액 계산기 홍보', 'gasu': '가수금뜻 블로그 요약 카드', 'gun': '지역가입자건보료상한액 요약 카드', 'gaji': '가지급금뜻 블로그 요약 카드', 'nyun': '66년생국민연금수령나이 블로그 요약 카드', 'coin': '코인과세유예가능성 블로그 요약 카드', 'coin2': '코인 과세 손실 이월 불가 카드', 'stock': '비상장주식양도세율 블로그 요약 카드', 'banap': '국민연금반납금 블로그 요약 카드'}[mode])
+        ap.log_instagram(ig_id, {'calc': '연금 수령액 계산기 홍보', 'gasu': '가수금뜻 블로그 요약 카드', 'gun': '지역가입자건보료상한액 요약 카드', 'gaji': '가지급금뜻 블로그 요약 카드', 'nyun': '66년생국민연금수령나이 블로그 요약 카드', 'coin': '코인과세유예가능성 블로그 요약 카드', 'coin2': '코인 과세 손실 이월 불가 카드', 'stock': '비상장주식양도세율 블로그 요약 카드', 'banap': '국민연금반납금 블로그 요약 카드', 'banap2': '국민연금반납금 자격·제외조건 카드'}[mode])
         print('IG 발행 완료:', ig_id)
