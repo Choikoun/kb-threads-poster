@@ -189,5 +189,16 @@
   "keyword": "밀폐용기 패킹 교체 시기",
   "type": "info_no_affiliate",
   "links": {}
+ },
+ {
+  "key": "naimoli_carbon_mat",
+  "title": "나이몰리 탄소매트 가격, 소노세레노·돌체클래식 비교",
+  "naver": "https://blog.naver.com/sobok_biz/224457513926",
+  "date": "2026-10-29",
+  "keyword": "나이몰리 탄소매트",
+  "links": {
+   "naver_connect": "4",
+   "file": "blog_images/_bc_links_nm.json"
+  }
  }
 ]
