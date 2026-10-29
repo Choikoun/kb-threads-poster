@@ -1,13 +1,13 @@
 # 🏛️ KTV 국무회의 브리핑
-*2026-10-28 22:06 KST*
+*2026-10-29 22:13 KST*
 
 ---
 
-## 이 대통령의 지시에 전례 없는 노력을 기울이고 있는 한성숙 국무총리. 범부처가 주택 신속공급에 직을 걸고 끝까지 간다! #명벤져스
-🔗 https://youtu.be/BXNCumzXwOM
+## ‘정말 놀라웠습니다’ 한성숙 총리 & 정은경·이소영 장관을 감탄하게 만든 공장의 비밀?! 두 눈 휘둥그레지는 현장 시찰~ #명벤져스 함께 뭉친 이유는?!
+🔗 https://youtu.be/PRSJCLFSprE
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=BXNCumzXwOM! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=PRSJCLFSprE! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
@@ -17,11 +17,11 @@ There are two ...
 
 ---
 
-## 고깃집이 군 장비 낙찰?! 페이퍼컴퍼니로 입찰 싹쓸이! 정부, '벌떼 입찰' 근절 나선다
-🔗 https://youtu.be/ZglqM1lfhZU
+## (26.10.29.) 한-독일 정상회담 공동언론발표
+🔗 https://youtu.be/VW1OJb5NFek
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=ZglqM1lfhZU! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=VW1OJb5NFek! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
@@ -31,11 +31,11 @@ There are two ...
 
 ---
 
-## #송미령 장관이 차근차근 준비해 놓은 농어촌의 미래! 가시적인 효과 드러나더니 급기야 기본소득까지 지급. #명벤져스
-🔗 https://youtu.be/efguq7IftzI
+## 신규 택지 6곳 추가 발표… 76,700호 공급 #뉴스 #서울 #주택 #경기 #부동산 #국토교통부 #공급 #신규택지 #하남 #도심
+🔗 https://youtu.be/2PhQbPkf_aY
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=efguq7IftzI! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=2PhQbPkf_aY! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
@@ -45,11 +45,11 @@ There are two ...
 
 ---
 
-## (26.10.28.) 국민생명안전위원회 전체회의｜"오늘도, 무사히" 이제 나라의 책무입니다
-🔗 https://youtu.be/M0Z8-F8yNHA
+## 이럴 줄 알았으면 공무원 안 했다!?는 솔직 고백은 물론 #김정관 #산업부 장관이 던진 돌직구에 250여 명이 초집중! 대경권 들썩이게 한 김정관 장관의 연설 #명벤져스
+🔗 https://youtu.be/HoIlQFsptOs
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=M0Z8-F8yNHA! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=HoIlQFsptOs! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
@@ -59,11 +59,39 @@ There are two ...
 
 ---
 
-## (26.10.28.) 2026년 가을철 산불방지 대책 수립 및 추진계획 관련 산림청 브리핑
-🔗 https://youtu.be/YZKgjHp3kNQ
+## (26.10.29.) 제1차 담배 유해성 관리 기본계획 및 담배 유해성분 정보공개 방안 부처 합동브리핑
+🔗 https://youtu.be/g9ROo9P2o9U
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=YZKgjHp3kNQ! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=g9ROo9P2o9U! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There are two ...
+
+---
+
+## (26.10.29.) 제2차 주택공급 국토교통부 정례브리핑
+🔗 https://youtu.be/oe7--Nn1iuw
+
+[자막 없음: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=oe7--Nn1iuw! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There are two ...
+
+---
+
+## 세계가 K-원자력에 주목한다! 한국에서 개최된 IAEA 원자력 장관회의 의장을 맡아  기자회견하랴, 진행하랴, 격려하랴...쉴 틈 없이 바쁜 배경훈 부총리의 하루 #명벤져스
+🔗 https://youtu.be/T-obomX6AAs
+
+[자막 없음: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=T-obomX6AAs! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
