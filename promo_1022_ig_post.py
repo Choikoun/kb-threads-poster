@@ -212,16 +212,36 @@ BANAP2 = {
                 '#국민연금반납금 #국민연금반환일시금 #국민연금반납 #노후준비 #국민연금'),
 }
 
+GAUP = {
+    'card_data': {
+        'tag': '# 가업상속공제개정안',
+        'hook_big': '가업상속공제,\n경영 30년과 한도 1,000억',
+        'hook_sub': '2026년 세제개편안 · 확정 전 정리',
+        'points': [
+            {'title': '무엇이 바뀌나', 'body': '경영기간 10년→30년,\n사후관리 5년→10년,\n최대 한도 600억→1,000억.'},
+            {'title': '한도 산식', 'body': '경영연수 × 20억 원,\n30년 600억, 40년 800억,\n50년 이상 최대 1,000억.'},
+            {'title': '범위가 좁아짐', 'body': '업종 1,205개 중 727개만,\n토지는 수도권 2배·그 외 3배,\n20~30년은 사후관리 연장.'},
+            {'title': '아직 확정 전', 'body': '정부 개편안 단계로\n국회 심의에서 바뀔 수 있고,\n2027년 7월 이후 상속분 적용 예정.'},
+        ],
+        'closing': '확정 전 숫자로\n결정하지 마세요.',
+        'cta': '프로필 링크 → 블로그에 전체 정리'
+    },
+    'caption': ('우리 회사의 경영연수와 업종이 가업상속공제 개편안 기준에 들어가는지 확인해 보셨나요?\n\n'
+                '2026년 8월 3일 발표된 세제개편안에서 가업상속공제는 피상속인 경영기간 30년, 사후관리 10년, 한도 경영연수 × 20억 원(최대 1,000억 원)으로 바뀌는 것으로 보도됐습니다. 업종은 727개로 줄고 토지 공제 범위도 줄어듭니다.\n\n'
+                '아직 정부 개편안 단계라 국회 심의에서 내용과 시기가 바뀔 수 있고, 2027년 7월 1일 이후 상속개시분부터 적용될 예정이라고 합니다. 확정 전 숫자로 결정하지 말고 세무사와 확인하세요. 정리한 내용은 블로그에 있습니다.\n\n'
+                '#가업상속공제개정안 #가업상속공제 #가업승계 #상속세 #법인대표'),
+}
+
 if __name__ == '__main__':
     mode = sys.argv[1] if len(sys.argv) > 1 else 'preview'
     if mode == 'preview':
-        for name, v in (('calc', CALC), ('gasu', GASU), ('gun', GUN), ('gaji', GAJI), ('nyun', NYUN), ('coin', COIN), ('coin2', COIN2), ('stock', STOCK), ('banap', BANAP), ('banap2', BANAP2)):
+        for name, v in (('calc', CALC), ('gasu', GASU), ('gun', GUN), ('gaji', GAJI), ('nyun', NYUN), ('coin', COIN), ('coin2', COIN2), ('stock', STOCK), ('banap', BANAP), ('banap2', BANAP2), ('gaup', GAUP)):
             paths = cg.generate_card_set(v['card_data'], output_dir=f'_card_preview_{name}', category='insurance')
             print(name, len(paths), '장', paths[0])
     else:
-        v = {'calc': CALC, 'gasu': GASU, 'gun': GUN, 'gaji': GAJI, 'nyun': NYUN, 'coin': COIN, 'coin2': COIN2, 'stock': STOCK, 'banap': BANAP, 'banap2': BANAP2}[mode]
+        v = {'calc': CALC, 'gasu': GASU, 'gun': GUN, 'gaji': GAJI, 'nyun': NYUN, 'coin': COIN, 'coin2': COIN2, 'stock': STOCK, 'banap': BANAP, 'banap2': BANAP2, 'gaup': GAUP}[mode]
         ig_id = ap.post_instagram(v)
         if not ig_id:
             print('발행 실패'); sys.exit(1)
-        ap.log_instagram(ig_id, {'calc': '연금 수령액 계산기 홍보', 'gasu': '가수금뜻 블로그 요약 카드', 'gun': '지역가입자건보료상한액 요약 카드', 'gaji': '가지급금뜻 블로그 요약 카드', 'nyun': '66년생국민연금수령나이 블로그 요약 카드', 'coin': '코인과세유예가능성 블로그 요약 카드', 'coin2': '코인 과세 손실 이월 불가 카드', 'stock': '비상장주식양도세율 블로그 요약 카드', 'banap': '국민연금반납금 블로그 요약 카드', 'banap2': '국민연금반납금 자격·제외조건 카드'}[mode])
+        ap.log_instagram(ig_id, {'calc': '연금 수령액 계산기 홍보', 'gasu': '가수금뜻 블로그 요약 카드', 'gun': '지역가입자건보료상한액 요약 카드', 'gaji': '가지급금뜻 블로그 요약 카드', 'nyun': '66년생국민연금수령나이 블로그 요약 카드', 'coin': '코인과세유예가능성 블로그 요약 카드', 'coin2': '코인 과세 손실 이월 불가 카드', 'stock': '비상장주식양도세율 블로그 요약 카드', 'banap': '국민연금반납금 블로그 요약 카드', 'banap2': '국민연금반납금 자격·제외조건 카드', 'gaup': '가업상속공제개정안 블로그 요약 카드'}[mode])
         print('IG 발행 완료:', ig_id)
