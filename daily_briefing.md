@@ -1,40 +1,39 @@
 # 📰 일일 브리핑
-*2026-10-29 10:44 KST*
+*2026-10-30 10:52 KST*
 
 ---
 
 ## 🔖 보험 동향
+- [금융위, 보험사기 연루 보험업종사자 29명 제재… 19명 등록취소](https://www.insnews.co.kr/news/articleView.html?idxno=93592)
+- [금감원, 보험사 계리가정 관리 강화… 연말 ‘집중 점검’ 예고](https://www.insnews.co.kr/news/articleView.html?idxno=93587)
+- [생명보험재단, 직장인 고민 나누는 ‘SOS고민말하자’ 공개](https://www.insnews.co.kr/news/articleView.html?idxno=93581)
 - [KB라이프, ‘에이지테크’로 시니어 돌봄 혁신… AI·로봇 현장 적용 확대](https://www.insnews.co.kr/news/articleView.html?idxno=93568)
 - [NH농협손해보험, 소공인 전용 ‘NH제조소상공인화재보험’ 출시](https://www.insnews.co.kr/news/articleView.html?idxno=93566)
-- [NH농협금융 3분기 누적 순익 2조5278억원… 출범 후 최대 실적](https://www.insnews.co.kr/news/articleView.html?idxno=93560)
-- [청년 첫 연금보험료 지원 사전신청 1만 명 돌파](https://www.insnews.co.kr/news/articleView.html?idxno=93558)
-- [교보라플, 미니보험 가입 ‘3분’으로 간소화](https://www.insnews.co.kr/news/articleView.html?idxno=93557)
 
 ## 💰 국내 경제·금융
-- [체코 원전 시공계약 결렬 소식에…대우건설·두에빌 주가 폭락](https://www.hankyung.com/article/2026102927056)
-- [중국도 빗장 풀었다…'완전 액티브 ETF' 한국만 올스톱](https://www.hankyung.com/article/2026102651416)
-- ["향후 3년치 D램·HBM 완판"…하이닉스 주가 또 불기둥](https://www.hankyung.com/article/2026102925946)
-- ['숨은 K뷰티 수혜주' 여기 있었네… 공장 풀가동에 주가도 '쑥'](https://www.hankyung.com/article/202610280915i)
-- [대선 쇼크에 주가 뚝…월가는 왜 '남미 아마존'을 사라고 할까](https://www.hankyung.com/article/202610281096i)
+- [알파벳 실적 쇼크에 코스피 5%대 급락…매도 사이드카 발동](https://www.hankyung.com/article/202610305596i)
+- [예탁원 "내달 상장사 52곳 주식 1억923만주 의무보유등록 해제"](https://www.hankyung.com/article/2026103056246)
+- [대신증권 "3분기 기준 IRP 10년 수익률 6.12%…증권업계 1위"](https://www.hankyung.com/article/2026103056026)
+- [[속보] 코스피 4%대 급락…매도 사이드카 발동](https://www.hankyung.com/article/2026103055336)
+- [[오늘의 증권가 콜] 삼성SDI, 삼성전자, 현대차, 한화에어로스페이스, 두산에너빌, 한화솔루션, 아모레퍼시픽 등](https://www.hankyung.com/article/202610305391i)
 
 ## 📈 주식·시장
-- [[MK시그널] 플렉스틸 인더스트리즈 매도신호 포착, 수익률 43.6% 달성](https://www.mk.co.kr/news/stock/12189573)
-- [하이닉스 역대급 실적날 구글이 ‘경고장’ 내던졌다?](https://www.mk.co.kr/news/stock/12189564)
-- [하이닉스 ‘어닝 서프라이즈’에 반도체 랠리 이어가나…코스피 장초반 보합권](https://www.mk.co.kr/news/stock/12189547)
-- [중동 윤활기유 공급 차질에 증권가 “SK엔무브 수혜 예상”](https://www.mk.co.kr/news/stock/12189543)
-- [[MK시그널] 에프에스티, 차세대 EUV 펠리클 개발 모멘텀 부각 등에 주가 10.77% 상승세](https://www.mk.co.kr/news/stock/12189526)
+- [구글·아마존發 AI 돈맥경화 우려 … 코스피 다시 5500선 시험대](https://www.mk.co.kr/news/stock/12191288)
+- [[속보] 코스피 4%대 급락…매도 사이드카 발동](https://www.mk.co.kr/news/stock/12191260)
+- [[MK시그널] 메모리 반도체 기업 마이크론 테크놀러지, 매수신호 발생](https://www.mk.co.kr/news/stock/12191256)
+- [[단독] MS “北, 한국에 악성코드 100개 뿌렸다…AI 해킹, 최고 수준”](https://www.mk.co.kr/news/stock/12191238)
+- [[MK시그널] 한화비전, 어닝 서프라이즈 달성에 주가 상승세... MK시그널 추천 후 상승률 30.99% 기록](https://www.mk.co.kr/news/stock/12191223)
 
 ## 🌏 글로벌 경제·정세
-- [주식 안 팔고 돈 빌린다…54조 아닌 5.4조달러 시장](https://www.hankyung.com/article/202610292243i)
-- [MS, 직원 6만명에 희망퇴직 제안…AI 투자비 압박](https://www.hankyung.com/article/202610292210i)
-- ["로봇 수입, 국가안보에 위협" 발칵…트럼프, 또 관세 꺼내나](https://www.hankyung.com/article/2026102921137)
-- [워시 Fed 의장 "한국 경제 주시…신현송 총재와 20년 지기" [Fed워치]](https://www.hankyung.com/article/202610291911i)
-- [워시 "3분기 GDP 3% 넘을 수도…인플레 낮추는 게 책무" [Fed워치]](https://www.hankyung.com/article/202610291899i)
+- [AI 시장 40조달러라는 앤트로픽…지식노동 가치로 계산](https://www.hankyung.com/article/202610305042i)
+- [[밤 사이 해외뉴스 영상] 10대2로 금리 동결…美 중앙은행 내부서 '인상론' 고개](https://www.hankyung.com/article/202610304991i)
+- [[밤 사이 해외뉴스] 美연금 1000조원 AI 투자 노출…거품 붕괴 우려 확산](https://www.hankyung.com/article/202610305005i)
+- [美, 이란 공격 임박 뚜렷한 징후…"오늘 트럼프에 공격옵션 보고"](https://www.hankyung.com/article/2026103049327)
+- [유니클로도 가격 올리려다 '백기'…일본에 무슨 일이](https://www.hankyung.com/article/2026102946097)
 
 ## 🔥 팔로업 추천 (300회 이상)
-- 1,808회 [2026-10-27] 가족 이름으로 가입된 보험, 생각보다 안전하지 않을 수 있어.  1. 피...
-- 1,210회 [2026-10-27] 부하가 쓴 법인카드를 그냥 믿고 넘겨줬다면, 나중에 그 대가는 대표가 전...
-- 420회 [2026-10-27] 지분 넘기려고 주가 슬슬 내려둘 땐 절세라고 믿었지.  지분 가치 낮춰서...
+- 815회 [2026-10-29] 이혼 후 홀로 아이를 키우던 유명인이 뒤늦게 심리상담 대학원에 들어갔어....
+- 577회 [2026-10-29] 지인 명의로 동업하다가 세금 폭탄 맞고 나서야 구조가 잘못됐다는 걸 알았...
 
 ---
 *총 60개 기사 수집됨*
