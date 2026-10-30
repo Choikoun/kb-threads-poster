@@ -232,16 +232,36 @@ GAUP = {
                 '#가업상속공제개정안 #가업상속공제 #가업승계 #상속세 #법인대표'),
 }
 
+NRY = {
+    'card_data': {
+        'tag': '# 노란우산해지환급금',
+        'hook_big': '노란우산 임의해지,\n세금 16.5%가 붙습니다',
+        'hook_sub': '해지 사유에 따라 세금이 달라집니다',
+        'points': [
+            {'title': '임의해지', 'body': '해약환급금은 기타소득으로\n소득세 15% + 지방소득세 1.5%,\n합쳐 16.5%입니다.'},
+            {'title': '공제 사유', 'body': '폐업·사망·법인대표 퇴임,\n만 60세 이상 + 120개월 납부 등은\n퇴직소득세로 과세됩니다.'},
+            {'title': '가정 사례', 'body': '월 50만 원×4년 전액 공제,\n환급금 2,550만 원이면\n세금 약 420만 원(설명용).'},
+            {'title': '해지 전 확인', 'body': '해지 사유가 공제 사유인지,\n대출 잔액은 즉시 상환,\n초기 해지 원금 여부를 확인.'},
+        ],
+        'closing': '해지 전에 내 사유부터\n확인하세요.',
+        'cta': '프로필 링크 → 블로그에 전체 정리'
+    },
+    'caption': ('노란우산을 해지하려는 사유가 공제 사유에 해당하는지 확인해 보셨나요?\n\n'
+                '노란우산 임의해지의 해약환급금은 기타소득으로 보아 16.5%(소득세 15%·지방소득세 1.5%)가 원천징수되고, 폐업·사망·법인대표 퇴임·만 60세 이상(120개월 이상 납부) 같은 공제 사유는 퇴직소득세로 과세됩니다(노란우산 안내).\n\n'
+                '숫자는 설명용 가정이며 퇴직소득세 세율과 현재의 초기 해지 기준은 확인하지 못했습니다. 해지 전 노란우산 상담센터로 내 환급금과 세금을 확인하세요. 자세한 정리는 블로그에 있습니다.\n\n'
+                '#노란우산해지환급금 #노란우산 #노란우산해지 #노란우산세금 #소상공인'),
+}
+
 if __name__ == '__main__':
     mode = sys.argv[1] if len(sys.argv) > 1 else 'preview'
     if mode == 'preview':
-        for name, v in (('calc', CALC), ('gasu', GASU), ('gun', GUN), ('gaji', GAJI), ('nyun', NYUN), ('coin', COIN), ('coin2', COIN2), ('stock', STOCK), ('banap', BANAP), ('banap2', BANAP2), ('gaup', GAUP)):
+        for name, v in (('calc', CALC), ('gasu', GASU), ('gun', GUN), ('gaji', GAJI), ('nyun', NYUN), ('coin', COIN), ('coin2', COIN2), ('stock', STOCK), ('banap', BANAP), ('banap2', BANAP2), ('gaup', GAUP), ('nry', NRY)):
             paths = cg.generate_card_set(v['card_data'], output_dir=f'_card_preview_{name}', category='insurance')
             print(name, len(paths), '장', paths[0])
     else:
-        v = {'calc': CALC, 'gasu': GASU, 'gun': GUN, 'gaji': GAJI, 'nyun': NYUN, 'coin': COIN, 'coin2': COIN2, 'stock': STOCK, 'banap': BANAP, 'banap2': BANAP2, 'gaup': GAUP}[mode]
+        v = {'calc': CALC, 'gasu': GASU, 'gun': GUN, 'gaji': GAJI, 'nyun': NYUN, 'coin': COIN, 'coin2': COIN2, 'stock': STOCK, 'banap': BANAP, 'banap2': BANAP2, 'gaup': GAUP, 'nry': NRY}[mode]
         ig_id = ap.post_instagram(v)
         if not ig_id:
             print('발행 실패'); sys.exit(1)
-        ap.log_instagram(ig_id, {'calc': '연금 수령액 계산기 홍보', 'gasu': '가수금뜻 블로그 요약 카드', 'gun': '지역가입자건보료상한액 요약 카드', 'gaji': '가지급금뜻 블로그 요약 카드', 'nyun': '66년생국민연금수령나이 블로그 요약 카드', 'coin': '코인과세유예가능성 블로그 요약 카드', 'coin2': '코인 과세 손실 이월 불가 카드', 'stock': '비상장주식양도세율 블로그 요약 카드', 'banap': '국민연금반납금 블로그 요약 카드', 'banap2': '국민연금반납금 자격·제외조건 카드', 'gaup': '가업상속공제개정안 블로그 요약 카드'}[mode])
+        ap.log_instagram(ig_id, {'calc': '연금 수령액 계산기 홍보', 'gasu': '가수금뜻 블로그 요약 카드', 'gun': '지역가입자건보료상한액 요약 카드', 'gaji': '가지급금뜻 블로그 요약 카드', 'nyun': '66년생국민연금수령나이 블로그 요약 카드', 'coin': '코인과세유예가능성 블로그 요약 카드', 'coin2': '코인 과세 손실 이월 불가 카드', 'stock': '비상장주식양도세율 블로그 요약 카드', 'banap': '국민연금반납금 블로그 요약 카드', 'banap2': '국민연금반납금 자격·제외조건 카드', 'gaup': '가업상속공제개정안 블로그 요약 카드', 'nry': '노란우산해지환급금 블로그 요약 카드'}[mode])
         print('IG 발행 완료:', ig_id)

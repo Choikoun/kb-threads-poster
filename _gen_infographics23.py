@@ -1,0 +1,51 @@
+from PIL import Image, ImageDraw
+from card_generator import load_font, hex_to_rgb
+OUT='blog_images/2026-10-30_노란우산해지환급금'
+P='노란우산해지환급금'
+BG="#F7F5F0";NAVY="#1B2A4A";GOLD="#B8925A";GRAY="#6B7280";RED="#B5473A";GREEN="#2F7D5D"
+W=1200; c=hex_to_rgb
+def canvas(h):
+    im=Image.new('RGB',(W,h),c(BG)); return im, ImageDraw.Draw(im)
+sub=load_font('bold',32); body=load_font('regular',28); small=load_font('regular',24); big=load_font('extrabold',40)
+def box(d,y,h,col,left,right=None,lsize=36):
+    d.rectangle([90,y,W-90,y+h],fill=c("#FFFFFF"),outline=c(col),width=4)
+    d.text((130,y+h//2),left,font=load_font('extrabold',lsize),fill=c(col),anchor='lm')
+    if right: d.text((W-130,y+h//2),right,font=body,fill=c(NAVY),anchor='rm')
+im,d=canvas(900)
+d.rectangle([0,0,W,14],fill=c(GOLD))
+d.text((70,230),"노란우산해지환급금",font=load_font('extrabold',98),fill=c(NAVY))
+d.text((70,400),"임의해지면",font=load_font('extrabold',80),fill=c(NAVY))
+d.text((70,510),"세금 16.5%",font=load_font('extrabold',100),fill=c(GOLD))
+d.text((70,680),"노란우산 공식 안내 기준으로 정리",font=sub,fill=c(GRAY))
+im.save(f'{OUT}/01_{P}_대표이미지.png')
+im,d=canvas(900)
+d.text((60,55),"임의해지와 공제 사유 해지",font=big,fill=c(NAVY))
+d.text((60,120),"해지 사유에 따라 세금이 갈립니다",font=body,fill=c(GRAY))
+box(d,200,150,RED,"임의해지","기타소득세 16.5% (지방소득세 포함)",30)
+box(d,380,150,GREEN,"공제 사유","퇴직소득세로 과세 · 세율은 확인 필요",30)
+d.text((90,610),"공제 사유: 폐업·사망·법인대표 퇴임·노령 등",font=sub,fill=c(NAVY))
+d.text((90,665),"노령은 만 60세 이상 + 부금 120개월 이상",font=small,fill=c(GRAY))
+im.save(f'{OUT}/02_{P}_해지구분.png')
+im,d=canvas(860)
+d.text((60,55),"임의해지 세금 구조(가정)",font=big,fill=c(NAVY))
+d.text((60,120),"A씨(가정) · 월 50만 원 × 4년 · 전액 소득공제 받음",font=body,fill=c(GRAY))
+box(d,200,120,NAVY,"납입 부금","2,400만 원",32)
+box(d,340,120,GOLD,"해약환급금(가정)","2,550만 원",32)
+box(d,480,120,RED,"세금 16.5%","약 420만 원",32)
+d.text((90,670),"소득공제 안 받은 부분은 과세에서 빠집니다",font=sub,fill=c(NAVY))
+d.text((90,725),"실제 환급금과 공제 이력은 사람마다 다릅니다",font=small,fill=c(GRAY))
+im.save(f'{OUT}/03_{P}_세금가정.png')
+im,d=canvas(860)
+d.text((60,55),"해지 전에 확인할 세 가지",font=big,fill=c(NAVY))
+d.text((60,120),"내 환급금과 세금은 상담센터에서 확인하세요",font=body,fill=c(GRAY))
+box(d,200,120,GOLD,"1","내 해지 사유가 공제 사유인지·필요 서류",30)
+box(d,345,120,NAVY,"2","공제계약대출 잔액은 해지 때 즉시 상환",30)
+box(d,490,120,GREEN,"3","납입 횟수가 적은 초기 해지의 원금 여부",30)
+d.text((90,690),"노란우산 상담센터에서 같이 물어보세요",font=sub,fill=c(NAVY))
+im.save(f'{OUT}/04_{P}_확인할것.png')
+im,d=canvas(780)
+d.text((60,55),"핵심 정리",font=big,fill=c(NAVY))
+for i,(k,v,col) in enumerate([("1","부금+복리 이자 · 임의해지 세금 16.5%",NAVY),("2","공제 사유는 퇴직소득세 · 세 부담 다를 수 있음",RED),("3","해지 전 사유·대출·납입 횟수 확인",GREEN)]):
+    box(d,160+i*190,150,col,k,None,44); d.text((220,160+i*190+75),v,font=sub,fill=c(NAVY),anchor='lm')
+im.save(f'{OUT}/05_{P}_핵심정리.png')
+print('ok')
