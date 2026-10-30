@@ -1,211 +1,218 @@
 [
- {
-  "key": "carbon_mat_guide",
-  "title": "탄소매트 고르기 전에 확인할 5가지, 소비자원 시험 결과로 정리했습니다",
-  "naver": "https://blog.naver.com/sobok_biz/224435045337",
-  "date": "2026-10-08",
-  "keyword": "탄소매트"
- },
- {
-  "key": "heated_humidifier_guide",
-  "title": "가열식 가습기 고르기 전에 확인할 5가지, 소비자원 시험 결과로 정리했습니다",
-  "naver": "https://blog.naver.com/sobok_biz/224438951293",
-  "date": "2026-10-12",
-  "keyword": "가열식 가습기"
- },
- {
-  "key": "gitden_carbon_mat",
-  "title": "깃든 탄소매트 가격 비교, 공식몰 129,000원과 쿠팡 목록 가격 차이 정리",
-  "naver": "https://blog.naver.com/sobok_biz/224439576475",
-  "date": "2026-10-12",
-  "keyword": "깃든 탄소매트"
- },
- {
-  "key": "neoflam_glasse_z",
-  "title": "네오플램 글라쎄Z 가격 비교, 베큐씰로 바뀐 점과 쿠팡 구성별 가격 정리",
-  "naver": "https://blog.naver.com/sobok_biz/224440315996",
-  "date": "2026-10-13",
-  "keyword": "네오플램 글라쎄Z"
- },
- {
-  "key": "kkleejen_humidifier",
-  "title": "끌리젠 가습기 가격 비교, 네이버와 쿠팡 298,000원과 부품·소모품 가격 정리",
-  "naver": "https://blog.naver.com/sobok_biz/224440739902",
-  "date": "2026-10-13",
-  "keyword": "끌리젠 가습기",
-  "links": {
-   "naver_brandconnect": "https://naver.me/G8fxrLru",
-   "coupang_blog": "blog_kkleejen",
-   "coupang_threads": "threads_kkleejen"
-  }
- },
- {
-  "key": "labase_dish_rack",
-  "title": "라바제 식기건조대 가격 비교, DLM-8690이 8만 원대부터 25만 원대까지 달라요",
-  "naver": "https://blog.naver.com/sobok_biz/224441058249",
-  "date": "2026-10-14",
-  "keyword": "라바제 식기건조대",
-  "links": {
-   "naver_brandconnect": [
-    "homebar",
-    "ongo",
-    "js"
-   ],
-   "coupang_blog": "blog_labase",
-   "coupang_threads": "threads_labase"
+  {
+    "key": "carbon_mat_guide",
+    "title": "탄소매트 고르기 전에 확인할 5가지, 소비자원 시험 결과로 정리했습니다",
+    "naver": "https://blog.naver.com/sobok_biz/224435045337",
+    "date": "2026-10-08",
+    "keyword": "탄소매트"
   },
-  "reel_20261028": {
-   "ig": "18075845447752724",
-   "threads": "18016682729752174",
-   "yt": "shop_yt_upload",
-   "clip": "등록",
-   "tiktok": "게시",
-   "links": "blog_images/_lbz2_reel_links.json"
-  }
- },
- {
-  "key": "amt_square_pan",
-  "title": "AMT 사각팬 가격 비교, 같은 이름 모델이 네이버와 쿠팡에서 최대 29,240원 차이",
-  "naver": "https://blog.naver.com/sobok_biz/224442216630",
-  "date": "2026-10-15",
-  "keyword": "AMT 사각팬",
-  "links": {
-   "coupang_blog": "blog_amt",
-   "coupang_threads": "threads_amt"
-  }
- },
- {
-  "key": "endgrain_board",
-  "title": "엔드그레인 도마 가격 비교, 아카시아·월넛·편백 소재별 쿠팡·네이버 목록가 정리",
-  "naver": "https://blog.naver.com/sobok_biz/224443398979",
-  "date": "2026-10-16",
-  "keyword": "앤드그레인 도마",
-  "links": {
-   "coupang_blog": "blog_ag",
-   "coupang_threads": "threads_ag"
+  {
+    "key": "heated_humidifier_guide",
+    "title": "가열식 가습기 고르기 전에 확인할 5가지, 소비자원 시험 결과로 정리했습니다",
+    "naver": "https://blog.naver.com/sobok_biz/224438951293",
+    "date": "2026-10-12",
+    "keyword": "가열식 가습기"
   },
-  "threads": "18334086574277378"
- },
- {
-  "key": "kai_nail_clipper",
-  "title": "카이 손톱깎이 가격 비교, 소·중·대 사이즈별 네이버·쿠팡 표기가와 품번 정리",
-  "naver": "https://blog.naver.com/sobok_biz/224443498858",
-  "date": "2026-10-16",
-  "keyword": "카이 손톱깎이",
-  "links": {
-   "coupang_blog": "blog_kai",
-   "coupang_threads": "threads_kai"
-  }
- },
- {
-  "key": "hurom_h400",
-  "title": "휴롬 H400 가격 비교, 쿠팡과 네이버 표기가가 최대 55,000원 차이 났어요",
-  "naver": "https://blog.naver.com/sobok_biz/224446008506",
-  "date": "2026-10-19",
-  "keyword": "휴롬 H400",
-  "links": {
-   "coupang_blog": "blog_hurom",
-   "coupang_threads": "threads_hurom"
+  {
+    "key": "gitden_carbon_mat",
+    "title": "깃든 탄소매트 가격 비교, 공식몰 129,000원과 쿠팡 목록 가격 차이 정리",
+    "naver": "https://blog.naver.com/sobok_biz/224439576475",
+    "date": "2026-10-12",
+    "keyword": "깃든 탄소매트"
   },
-  "duplicate_unpublished_id": "224446007312"
- },
- {
-  "key": "dosa_replace_info",
-  "title": "도마 교체 시기, 칼자국 깊이와 재질별 기준 정리",
-  "naver": "https://blog.naver.com/sobok_biz/224447412856",
-  "date": "2026-10-20",
-  "keyword": "도마 교체 시기",
-  "type": "info_no_affiliate",
-  "links": {}
- },
- {
-  "key": "gotman_container",
-  "title": "고트만 밀폐용기 가격, 호수별 쿠팡 표기가 정리",
-  "naver": "https://blog.naver.com/sobok_biz/224449211675",
-  "date": "2026-10-21",
-  "keyword": "고트만 밀폐용기",
-  "links": {
-   "coupang_blog": "blog_gotman*"
-  }
- },
- {
-  "key": "libi_container",
-  "title": "리브비 밀폐용기 가격, 용량·수량별 표기가 정리",
-  "naver": "https://blog.naver.com/sobok_biz/224449836396",
-  "date": "2026-10-22",
-  "keyword": "리브비 밀폐용기",
-  "links": {
-   "naver_connect": "3",
-   "coupang_blog": "blog_libi*3"
-  }
- },
- {
-  "key": "damchi_container",
-  "title": "담치락 밀폐용기 가격, 호수·세트별 쿠팡 옵션 정리",
-  "naver": "https://blog.naver.com/sobok_biz/224451379177",
-  "date": "2026-10-23",
-  "keyword": "담치락 밀폐용기",
-  "links": {
-   "coupang_blog": "blog_damchi"
-  }
- },
- {
-  "key": "tupperware_container",
-  "title": "타파웨어 반찬통 가격, 공식몰 세트별 네이버 표기가 정리",
-  "naver": "https://blog.naver.com/sobok_biz/224451982727",
-  "date": "2026-10-24",
-  "keyword": "타파웨어 반찬통",
-  "links": {
-   "naver_connect": "3",
-   "coupang_blog": "3"
-  }
- },
- {
-  "key": "prepara_container",
-  "title": "프리파라 밀폐용기 가격, 브루클린 세트별 표기가 비교",
-  "naver": "https://blog.naver.com/sobok_biz/224453403785",
-  "date": "2026-10-25",
-  "keyword": "프리파라 밀폐용기",
-  "links": {
-   "naver_connect": "3",
-   "coupang_blog": "3"
-  }
- },
- {
-  "key": "taean_mulgyeol",
-  "title": "태안 물결카라반 요금, 객실·요일별 가격 정리",
-  "naver": "https://blog.naver.com/sobok_biz/224453840128",
-  "date": "2026-10-26",
-  "keyword": "태안 물결카라반",
-  "links": {
-   "coupang_blog": "blog_mulgyeol_trip"
-  }
- },
- {
-  "key": "container_packing_info",
-  "title": "밀폐용기 패킹 교체 시기, 변형·냄새·세척 기준 정리",
-  "naver": "https://blog.naver.com/sobok_biz/224455193765",
-  "date": "2026-10-28",
-  "keyword": "밀폐용기 패킹 교체 시기",
-  "type": "info_no_affiliate",
-  "links": {}
- },
- {
-  "key": "naimoli_carbon_mat",
-  "title": "나이몰리 탄소매트 가격, 소노세레노·돌체클래식 비교",
-  "naver": "https://blog.naver.com/sobok_biz/224457513926",
-  "date": "2026-10-29",
-  "keyword": "나이몰리 탄소매트",
-  "links": {
-   "naver_connect": "4",
-   "file": "blog_images/_bc_links_nm.json"
+  {
+    "key": "neoflam_glasse_z",
+    "title": "네오플램 글라쎄Z 가격 비교, 베큐씰로 바뀐 점과 쿠팡 구성별 가격 정리",
+    "naver": "https://blog.naver.com/sobok_biz/224440315996",
+    "date": "2026-10-13",
+    "keyword": "네오플램 글라쎄Z"
   },
-  "reel": {
-   "ig": "18121129183943714",
-   "threads": "17931408432420009",
-   "yt": "nm_reel",
-   "clip": "쇼핑커넥트 나이몰리 태그",
-   "tiktok": "게시"
+  {
+    "key": "kkleejen_humidifier",
+    "title": "끌리젠 가습기 가격 비교, 네이버와 쿠팡 298,000원과 부품·소모품 가격 정리",
+    "naver": "https://blog.naver.com/sobok_biz/224440739902",
+    "date": "2026-10-13",
+    "keyword": "끌리젠 가습기",
+    "links": {
+      "naver_brandconnect": "https://naver.me/G8fxrLru",
+      "coupang_blog": "blog_kkleejen",
+      "coupang_threads": "threads_kkleejen"
+    }
+  },
+  {
+    "key": "labase_dish_rack",
+    "title": "라바제 식기건조대 가격 비교, DLM-8690이 8만 원대부터 25만 원대까지 달라요",
+    "naver": "https://blog.naver.com/sobok_biz/224441058249",
+    "date": "2026-10-14",
+    "keyword": "라바제 식기건조대",
+    "links": {
+      "naver_brandconnect": [
+        "homebar",
+        "ongo",
+        "js"
+      ],
+      "coupang_blog": "blog_labase",
+      "coupang_threads": "threads_labase"
+    },
+    "reel_20261028": {
+      "ig": "18075845447752724",
+      "threads": "18016682729752174",
+      "yt": "shop_yt_upload",
+      "clip": "등록",
+      "tiktok": "게시",
+      "links": "blog_images/_lbz2_reel_links.json"
+    }
+  },
+  {
+    "key": "amt_square_pan",
+    "title": "AMT 사각팬 가격 비교, 같은 이름 모델이 네이버와 쿠팡에서 최대 29,240원 차이",
+    "naver": "https://blog.naver.com/sobok_biz/224442216630",
+    "date": "2026-10-15",
+    "keyword": "AMT 사각팬",
+    "links": {
+      "coupang_blog": "blog_amt",
+      "coupang_threads": "threads_amt"
+    }
+  },
+  {
+    "key": "endgrain_board",
+    "title": "엔드그레인 도마 가격 비교, 아카시아·월넛·편백 소재별 쿠팡·네이버 목록가 정리",
+    "naver": "https://blog.naver.com/sobok_biz/224443398979",
+    "date": "2026-10-16",
+    "keyword": "앤드그레인 도마",
+    "links": {
+      "coupang_blog": "blog_ag",
+      "coupang_threads": "threads_ag"
+    },
+    "threads": "18334086574277378"
+  },
+  {
+    "key": "kai_nail_clipper",
+    "title": "카이 손톱깎이 가격 비교, 소·중·대 사이즈별 네이버·쿠팡 표기가와 품번 정리",
+    "naver": "https://blog.naver.com/sobok_biz/224443498858",
+    "date": "2026-10-16",
+    "keyword": "카이 손톱깎이",
+    "links": {
+      "coupang_blog": "blog_kai",
+      "coupang_threads": "threads_kai"
+    }
+  },
+  {
+    "key": "hurom_h400",
+    "title": "휴롬 H400 가격 비교, 쿠팡과 네이버 표기가가 최대 55,000원 차이 났어요",
+    "naver": "https://blog.naver.com/sobok_biz/224446008506",
+    "date": "2026-10-19",
+    "keyword": "휴롬 H400",
+    "links": {
+      "coupang_blog": "blog_hurom",
+      "coupang_threads": "threads_hurom"
+    },
+    "duplicate_unpublished_id": "224446007312"
+  },
+  {
+    "key": "dosa_replace_info",
+    "title": "도마 교체 시기, 칼자국 깊이와 재질별 기준 정리",
+    "naver": "https://blog.naver.com/sobok_biz/224447412856",
+    "date": "2026-10-20",
+    "keyword": "도마 교체 시기",
+    "type": "info_no_affiliate",
+    "links": {}
+  },
+  {
+    "key": "gotman_container",
+    "title": "고트만 밀폐용기 가격, 호수별 쿠팡 표기가 정리",
+    "naver": "https://blog.naver.com/sobok_biz/224449211675",
+    "date": "2026-10-21",
+    "keyword": "고트만 밀폐용기",
+    "links": {
+      "coupang_blog": "blog_gotman*"
+    }
+  },
+  {
+    "key": "libi_container",
+    "title": "리브비 밀폐용기 가격, 용량·수량별 표기가 정리",
+    "naver": "https://blog.naver.com/sobok_biz/224449836396",
+    "date": "2026-10-22",
+    "keyword": "리브비 밀폐용기",
+    "links": {
+      "naver_connect": "3",
+      "coupang_blog": "blog_libi*3"
+    }
+  },
+  {
+    "key": "damchi_container",
+    "title": "담치락 밀폐용기 가격, 호수·세트별 쿠팡 옵션 정리",
+    "naver": "https://blog.naver.com/sobok_biz/224451379177",
+    "date": "2026-10-23",
+    "keyword": "담치락 밀폐용기",
+    "links": {
+      "coupang_blog": "blog_damchi"
+    }
+  },
+  {
+    "key": "tupperware_container",
+    "title": "타파웨어 반찬통 가격, 공식몰 세트별 네이버 표기가 정리",
+    "naver": "https://blog.naver.com/sobok_biz/224451982727",
+    "date": "2026-10-24",
+    "keyword": "타파웨어 반찬통",
+    "links": {
+      "naver_connect": "3",
+      "coupang_blog": "3"
+    }
+  },
+  {
+    "key": "prepara_container",
+    "title": "프리파라 밀폐용기 가격, 브루클린 세트별 표기가 비교",
+    "naver": "https://blog.naver.com/sobok_biz/224453403785",
+    "date": "2026-10-25",
+    "keyword": "프리파라 밀폐용기",
+    "links": {
+      "naver_connect": "3",
+      "coupang_blog": "3"
+    }
+  },
+  {
+    "key": "taean_mulgyeol",
+    "title": "태안 물결카라반 요금, 객실·요일별 가격 정리",
+    "naver": "https://blog.naver.com/sobok_biz/224453840128",
+    "date": "2026-10-26",
+    "keyword": "태안 물결카라반",
+    "links": {
+      "coupang_blog": "blog_mulgyeol_trip"
+    }
+  },
+  {
+    "key": "container_packing_info",
+    "title": "밀폐용기 패킹 교체 시기, 변형·냄새·세척 기준 정리",
+    "naver": "https://blog.naver.com/sobok_biz/224455193765",
+    "date": "2026-10-28",
+    "keyword": "밀폐용기 패킹 교체 시기",
+    "type": "info_no_affiliate",
+    "links": {}
+  },
+  {
+    "key": "naimoli_carbon_mat",
+    "title": "나이몰리 탄소매트 가격, 소노세레노·돌체클래식 비교",
+    "naver": "https://blog.naver.com/sobok_biz/224457513926",
+    "date": "2026-10-29",
+    "keyword": "나이몰리 탄소매트",
+    "links": {
+      "naver_connect": "4",
+      "file": "blog_images/_bc_links_nm.json"
+    },
+    "reel": {
+      "ig": "18121129183943714",
+      "threads": "17931408432420009",
+      "yt": "nm_reel",
+      "clip": "쇼핑커넥트 나이몰리 태그",
+      "tiktok": "게시"
+    }
+  },
+  {
+    "key": "asobu_tumbler",
+    "title": "아소부 텀블러 가격, 네이버·쿠팡 모델별 비교",
+    "naver": "https://blog.naver.com/sobok_biz/224459025468",
+    "date": "2026-10-30",
+    "keyword": "아소부 텀블러"
   }
- }
 ]
