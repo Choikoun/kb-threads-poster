@@ -252,16 +252,36 @@ NRY = {
                 '#노란우산해지환급금 #노란우산 #노란우산해지 #노란우산세금 #소상공인'),
 }
 
+RPT = {
+    'card_data': {
+        'tag': '# 퇴직연금세금몇프로',
+        'hook_big': '퇴직연금 세금,\n받는 방식에 따라 갈립니다',
+        'hook_sub': '연금수령 70% vs 일시금, 국세청 안내 기준',
+        'points': [
+            {'title': '연금으로 받으면', 'body': '이연퇴직소득세의 70%만,\n10년 초과 60%, 20년 초과 50%\n(2026.1.1 이후 수령분).'},
+            {'title': '운용수익', 'body': '연금소득세 70세 미만 5%,\n70~80세 4%, 80세 이상 3%\n종신형은 3%(2026년~).'},
+            {'title': '일시금으로 받으면', 'body': '이연퇴직소득은 퇴직소득세,\n세액공제분·운용수익은\n기타소득 15% 분리과세.'},
+            {'title': '연 1,500만 원', 'body': '연금소득 합계 1,500만 원 이하면\n분리과세 선택, 초과하면\n종합과세 또는 15% 분리과세.'},
+        ],
+        'closing': '받는 방식을 정하기 전에\n내 이연퇴직소득세부터.',
+        'cta': '프로필 링크 → 블로그에 전체 정리'
+    },
+    'caption': ('내 연금계좌의 이연퇴직소득세가 얼마인지, 몇 년에 나눠 받을 계획인지 확인해 보셨나요?\n\n'
+                '국세청 안내에 따르면 이연퇴직소득을 연금으로 받으면 이연퇴직소득세의 70%를 내고, 연금 수령 연차가 10년을 넘으면 60%, 20년을 넘으면 50%입니다(2026년 1월 1일 이후 수령분). 일시금으로 꺼내면 이연퇴직소득세가 그대로 원천징수되고 운용수익 등은 기타소득 15%로 분리과세됩니다.\n\n'
+                '숫자는 설명용 가정이며 연금수령 한도와 내 세액은 연금계좌를 가진 금융회사에서 확인하세요. 자세한 정리는 블로그에 있습니다.\n\n'
+                '#퇴직연금세금몇프로 #퇴직연금 #연금소득세 #퇴직소득세 #IRP'),
+}
+
 if __name__ == '__main__':
     mode = sys.argv[1] if len(sys.argv) > 1 else 'preview'
     if mode == 'preview':
-        for name, v in (('calc', CALC), ('gasu', GASU), ('gun', GUN), ('gaji', GAJI), ('nyun', NYUN), ('coin', COIN), ('coin2', COIN2), ('stock', STOCK), ('banap', BANAP), ('banap2', BANAP2), ('gaup', GAUP), ('nry', NRY)):
+        for name, v in (('calc', CALC), ('gasu', GASU), ('gun', GUN), ('gaji', GAJI), ('nyun', NYUN), ('coin', COIN), ('coin2', COIN2), ('stock', STOCK), ('banap', BANAP), ('banap2', BANAP2), ('gaup', GAUP), ('nry', NRY), ('rpt', RPT)):
             paths = cg.generate_card_set(v['card_data'], output_dir=f'_card_preview_{name}', category='insurance')
             print(name, len(paths), '장', paths[0])
     else:
-        v = {'calc': CALC, 'gasu': GASU, 'gun': GUN, 'gaji': GAJI, 'nyun': NYUN, 'coin': COIN, 'coin2': COIN2, 'stock': STOCK, 'banap': BANAP, 'banap2': BANAP2, 'gaup': GAUP, 'nry': NRY}[mode]
+        v = {'calc': CALC, 'gasu': GASU, 'gun': GUN, 'gaji': GAJI, 'nyun': NYUN, 'coin': COIN, 'coin2': COIN2, 'stock': STOCK, 'banap': BANAP, 'banap2': BANAP2, 'gaup': GAUP, 'nry': NRY, 'rpt': RPT}[mode]
         ig_id = ap.post_instagram(v)
         if not ig_id:
             print('발행 실패'); sys.exit(1)
-        ap.log_instagram(ig_id, {'calc': '연금 수령액 계산기 홍보', 'gasu': '가수금뜻 블로그 요약 카드', 'gun': '지역가입자건보료상한액 요약 카드', 'gaji': '가지급금뜻 블로그 요약 카드', 'nyun': '66년생국민연금수령나이 블로그 요약 카드', 'coin': '코인과세유예가능성 블로그 요약 카드', 'coin2': '코인 과세 손실 이월 불가 카드', 'stock': '비상장주식양도세율 블로그 요약 카드', 'banap': '국민연금반납금 블로그 요약 카드', 'banap2': '국민연금반납금 자격·제외조건 카드', 'gaup': '가업상속공제개정안 블로그 요약 카드', 'nry': '노란우산해지환급금 블로그 요약 카드'}[mode])
+        ap.log_instagram(ig_id, {'calc': '연금 수령액 계산기 홍보', 'gasu': '가수금뜻 블로그 요약 카드', 'gun': '지역가입자건보료상한액 요약 카드', 'gaji': '가지급금뜻 블로그 요약 카드', 'nyun': '66년생국민연금수령나이 블로그 요약 카드', 'coin': '코인과세유예가능성 블로그 요약 카드', 'coin2': '코인 과세 손실 이월 불가 카드', 'stock': '비상장주식양도세율 블로그 요약 카드', 'banap': '국민연금반납금 블로그 요약 카드', 'banap2': '국민연금반납금 자격·제외조건 카드', 'gaup': '가업상속공제개정안 블로그 요약 카드', 'nry': '노란우산해지환급금 블로그 요약 카드', 'rpt': '퇴직연금세금몇프로 블로그 요약 카드'}[mode])
         print('IG 발행 완료:', ig_id)
