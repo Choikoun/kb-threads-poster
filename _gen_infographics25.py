@@ -1,0 +1,52 @@
+from PIL import Image, ImageDraw
+from card_generator import load_font, hex_to_rgb
+OUT='blog_images/2026-11-01_신생아취득세감면'
+P='신생아취득세감면'
+BG="#F7F5F0";NAVY="#1B2A4A";GOLD="#B8925A";GRAY="#6B7280";RED="#B5473A";GREEN="#2F7D5D"
+W=1200; c=hex_to_rgb
+def canvas(h):
+    im=Image.new('RGB',(W,h),c(BG)); return im, ImageDraw.Draw(im)
+sub=load_font('bold',32); body=load_font('regular',28); small=load_font('regular',24); big=load_font('extrabold',40)
+def box(d,y,h,col,left,right=None,lsize=36):
+    d.rectangle([90,y,W-90,y+h],fill=c("#FFFFFF"),outline=c(col),width=4)
+    d.text((130,y+h//2),left,font=load_font('extrabold',lsize),fill=c(col),anchor='lm')
+    if right: d.text((W-130,y+h//2),right,font=body,fill=c(NAVY),anchor='rm')
+im,d=canvas(900)
+d.rectangle([0,0,W,14],fill=c(GOLD))
+d.text((70,230),"신생아취득세감면",font=load_font('extrabold',110),fill=c(NAVY))
+d.text((70,400),"출산 후 5년 이내",font=load_font('extrabold',76),fill=c(NAVY))
+d.text((70,510),"최대 500만 원",font=load_font('extrabold',96),fill=c(GOLD))
+d.text((70,680),"법령 개정이유와 정부 발표 기준",font=sub,fill=c(GRAY))
+im.save(f'{OUT}/01_{P}_대표이미지.png')
+im,d=canvas(860)
+d.text((60,55),"감면 한도 구조(가정)",font=big,fill=c(NAVY))
+d.text((60,120),"A씨 가족(가정) · 취득세는 100% 감면, 한도 500만 원",font=body,fill=c(GRAY))
+box(d,200,130,GOLD,"취득세 800만 원","감면 500만 원 + 납부 300만 원",30)
+box(d,360,130,GREEN,"취득세 400만 원","전액 감면 · 납부 0원",30)
+d.text((90,560),"감면은 100%지만 한도가 500만 원",font=sub,fill=c(NAVY))
+d.text((90,615),"실제 취득세액과 세율은 지자체에서 확인하세요",font=small,fill=c(GRAY))
+im.save(f'{OUT}/02_{P}_한도.png')
+im,d=canvas(960)
+d.text((60,55),"신생아취득세감면 요건과 기한",font=big,fill=c(NAVY))
+d.text((60,120),"지방세특례제한법 개정(시행 2026년 1월 1일)",font=body,fill=c(GRAY))
+box(d,190,110,GOLD,"시기","출산 후 5년 이내 취득",32)
+box(d,320,110,NAVY,"가격","취득당시가액 12억 원 이하",32)
+box(d,450,110,GREEN,"목적","자녀와 함께 거주할 목적",32)
+box(d,580,110,RED,"기한","2028년 12월 31일까지 연장",32)
+d.text((90,760),"7년으로 늘리는 안은 결정된 바 없음",font=sub,fill=c(NAVY))
+d.text((90,815),"국무조정실 보도설명자료(2026.8.11)",font=small,fill=c(GRAY))
+im.save(f'{OUT}/03_{P}_요건.png')
+im,d=canvas(860)
+d.text((60,55),"취득하기 전에 확인할 세 가지",font=big,fill=c(NAVY))
+d.text((60,120),"추징·신청·중복 여부는 지자체에서 확인하세요",font=body,fill=c(GRAY))
+box(d,200,120,GOLD,"1","출산일로부터 5년 이내에 취득하는지",30)
+box(d,345,120,NAVY,"2","취득당시가액이 12억 원 이하인지",30)
+box(d,490,120,GREEN,"3","거주 목적과 지켜야 할 조건이 무엇인지",30)
+d.text((90,690),"위택스나 지자체 세무 부서에 문의하세요",font=sub,fill=c(NAVY))
+im.save(f'{OUT}/04_{P}_확인할것.png')
+im,d=canvas(780)
+d.text((60,55),"핵심 정리",font=big,fill=c(NAVY))
+for i,(k,v,col) in enumerate([("1","출산 후 5년 · 12억 이하 · 거주 목적",NAVY),("2","취득세 100% 감면 · 한도 500만 원",RED),("3","기한 2028.12.31 · 7년 확대는 결정 전",GREEN)]):
+    box(d,160+i*190,150,col,k,None,44); d.text((220,160+i*190+75),v,font=sub,fill=c(NAVY),anchor='lm')
+im.save(f'{OUT}/05_{P}_핵심정리.png')
+print('ok')
