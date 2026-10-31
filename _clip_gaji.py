@@ -22,5 +22,5 @@ for t in tags:
     a = sh('gh','release','view',t['tagName'],'--json','assets','-q','.assets[].name')
     if 'kb_anim.mp4' in a:
         subprocess.run(['gh','release','download',t['tagName'],'-p','kb_anim.mp4','-D','_tmp_vid','--clobber'],check=True); print('영상', t['tagName']); break
-desc = "퇴직금을 몇 년에 나눠 받을지 계획해 보셨나요? 이연퇴직소득을 연금으로 받으면 이연퇴직소득세의 70%, 10년 초과 60%, 20년 초과 50%라는 국세청 안내와 일시금 세금을 블로그에 정리했습니다. 내 세액은 금융회사에서 확인하세요. 특정 상품 가입을 권유하지 않습니다. #퇴직연금세금몇프로 #퇴직연금 #연금소득세"
-sys.exit(subprocess.run([sys.executable,'naver_clip_poster.py','_tmp_vid/kb_anim.mp4',desc,'퇴직연금세금몇프로','1']).returncode)
+desc = "우리 집 취득 시점이 출산일로부터 5년 안에 들어가는지 확인해 보셨나요? 신생아 취득세 감면은 출산 후 5년 이내, 12억 원 이하, 거주 목적이 요건이고 100% 감면에 한도 500만 원, 기한은 2028년 12월 31일까지입니다. 5년을 7년으로 늘리는 안은 결정된 바 없습니다. 추징 요건과 신청 방법은 지자체에서 확인하세요. 특정 상품 가입을 권유하지 않습니다. #신생아취득세감면 #출산가구취득세감면 #취득세감면"
+sys.exit(subprocess.run([sys.executable,'naver_clip_poster.py','_tmp_vid/kb_anim.mp4',desc,'신생아취득세감면','1']).returncode)
