@@ -272,16 +272,36 @@ RPT = {
                 '#퇴직연금세금몇프로 #퇴직연금 #연금소득세 #퇴직소득세 #IRP'),
 }
 
+NBT = {
+    'card_data': {
+        'tag': '# 신생아취득세감면',
+        'hook_big': '출산 후 집 샀다면,\n취득세 최대 500만 원',
+        'hook_sub': '법령 개정이유·정부 발표 기준 정리',
+        'points': [
+            {'title': '대상', 'body': '출산 후 5년 이내 취득,\n12억 원 이하 주택,\n자녀와 거주할 목적.'},
+            {'title': '한도', 'body': '취득세 100% 감면이지만\n최대 500만 원까지\n(초과분은 납부).'},
+            {'title': '기한', 'body': '2028년 12월 31일까지\n연장(법률 제21309호,\n2026.1.1 시행).'},
+            {'title': '7년 확대', 'body': '5년을 7년으로 늘리는 안은\n국무조정실이 결정된 바\n없다고 설명했습니다.'},
+        ],
+        'closing': '취득 전에 출산일과\n주택 가격부터 확인.',
+        'cta': '프로필 링크 → 블로그에 전체 정리'
+    },
+    'caption': ('우리 집 취득 시점이 출산일로부터 5년 안에 들어가는지 확인해 보셨나요?\n\n'
+                '지방세특례제한법 개정이유에 따르면 출산 후 5년 이내, 취득당시가액 12억 원 이하, 자녀와 거주할 목적의 주택이 대상입니다. 취득세 100% 감면이지만 한도는 500만 원이고 감면 기한은 2028년 12월 31일까지입니다.\n\n'
+                '5년을 7년으로 늘리는 방안은 국무조정실이 결정된 바 없다고 밝혔습니다. 추징 요건과 신청 방법은 취득 전에 지자체에 확인하세요. 자세한 정리는 블로그에 있습니다.\n\n'
+                '#신생아취득세감면 #출산가구취득세감면 #취득세감면 #출산양육주택'),
+}
+
 if __name__ == '__main__':
     mode = sys.argv[1] if len(sys.argv) > 1 else 'preview'
     if mode == 'preview':
-        for name, v in (('calc', CALC), ('gasu', GASU), ('gun', GUN), ('gaji', GAJI), ('nyun', NYUN), ('coin', COIN), ('coin2', COIN2), ('stock', STOCK), ('banap', BANAP), ('banap2', BANAP2), ('gaup', GAUP), ('nry', NRY), ('rpt', RPT)):
+        for name, v in (('calc', CALC), ('gasu', GASU), ('gun', GUN), ('gaji', GAJI), ('nyun', NYUN), ('coin', COIN), ('coin2', COIN2), ('stock', STOCK), ('banap', BANAP), ('banap2', BANAP2), ('gaup', GAUP), ('nry', NRY), ('rpt', RPT), ('nbt', NBT)):
             paths = cg.generate_card_set(v['card_data'], output_dir=f'_card_preview_{name}', category='insurance')
             print(name, len(paths), '장', paths[0])
     else:
-        v = {'calc': CALC, 'gasu': GASU, 'gun': GUN, 'gaji': GAJI, 'nyun': NYUN, 'coin': COIN, 'coin2': COIN2, 'stock': STOCK, 'banap': BANAP, 'banap2': BANAP2, 'gaup': GAUP, 'nry': NRY, 'rpt': RPT}[mode]
+        v = {'calc': CALC, 'gasu': GASU, 'gun': GUN, 'gaji': GAJI, 'nyun': NYUN, 'coin': COIN, 'coin2': COIN2, 'stock': STOCK, 'banap': BANAP, 'banap2': BANAP2, 'gaup': GAUP, 'nry': NRY, 'rpt': RPT, 'nbt': NBT}[mode]
         ig_id = ap.post_instagram(v)
         if not ig_id:
             print('발행 실패'); sys.exit(1)
-        ap.log_instagram(ig_id, {'calc': '연금 수령액 계산기 홍보', 'gasu': '가수금뜻 블로그 요약 카드', 'gun': '지역가입자건보료상한액 요약 카드', 'gaji': '가지급금뜻 블로그 요약 카드', 'nyun': '66년생국민연금수령나이 블로그 요약 카드', 'coin': '코인과세유예가능성 블로그 요약 카드', 'coin2': '코인 과세 손실 이월 불가 카드', 'stock': '비상장주식양도세율 블로그 요약 카드', 'banap': '국민연금반납금 블로그 요약 카드', 'banap2': '국민연금반납금 자격·제외조건 카드', 'gaup': '가업상속공제개정안 블로그 요약 카드', 'nry': '노란우산해지환급금 블로그 요약 카드', 'rpt': '퇴직연금세금몇프로 블로그 요약 카드'}[mode])
+        ap.log_instagram(ig_id, {'calc': '연금 수령액 계산기 홍보', 'gasu': '가수금뜻 블로그 요약 카드', 'gun': '지역가입자건보료상한액 요약 카드', 'gaji': '가지급금뜻 블로그 요약 카드', 'nyun': '66년생국민연금수령나이 블로그 요약 카드', 'coin': '코인과세유예가능성 블로그 요약 카드', 'coin2': '코인 과세 손실 이월 불가 카드', 'stock': '비상장주식양도세율 블로그 요약 카드', 'banap': '국민연금반납금 블로그 요약 카드', 'banap2': '국민연금반납금 자격·제외조건 카드', 'gaup': '가업상속공제개정안 블로그 요약 카드', 'nry': '노란우산해지환급금 블로그 요약 카드', 'rpt': '퇴직연금세금몇프로 블로그 요약 카드', 'nbt': '신생아취득세감면 블로그 요약 카드'}[mode])
         print('IG 발행 완료:', ig_id)
