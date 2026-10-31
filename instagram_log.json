@@ -2915,7 +2915,7 @@
     "type": "reels",
     "selected_title": "신설법인 10월 9일 ~ 10월 15일",
     "date": "2026-10-15 16:40",
-    "reach": 21,
+    "reach": 22,
     "saved": 0,
     "likes": 0,
     "comments": 0
@@ -3119,7 +3119,7 @@
     "type": "card",
     "selected_title": "가수금뜻 블로그 요약 카드",
     "date": "2026-10-21 21:14",
-    "reach": 1,
+    "reach": 2,
     "saved": 0,
     "likes": 0,
     "comments": 1
@@ -3129,7 +3129,7 @@
     "type": "card",
     "selected_title": "연금 수령액 계산기 홍보",
     "date": "2026-10-21 21:18",
-    "reach": 2,
+    "reach": 3,
     "saved": 0,
     "likes": 0,
     "comments": 1
@@ -3149,7 +3149,7 @@
     "type": "card",
     "selected_title": "지역가입자건보료상한액 요약 카드",
     "date": "2026-10-22 15:15",
-    "reach": 1,
+    "reach": 2,
     "saved": 0,
     "likes": 0,
     "comments": 1
@@ -3169,7 +3169,7 @@
     "type": "reels",
     "selected_title": "홍의락 가스公 사장, 32.5억 신고…송파 올림픽훼밀리타운 21.8억 [재산공개]",
     "date": "2026-10-23 00:56",
-    "reach": 41,
+    "reach": 42,
     "saved": 0,
     "likes": 0,
     "comments": 0
@@ -3190,7 +3190,7 @@
     "type": "reels",
     "selected_title": "‘이정재 최대주주’ 아티스트컴퍼니, 전 임원 등 5명 고소…6.8억 배임 혐의",
     "date": "2026-10-23 17:16",
-    "reach": 35,
+    "reach": 42,
     "saved": 0,
     "likes": 0,
     "comments": 0
@@ -3210,7 +3210,7 @@
     "type": "card",
     "selected_title": "가지급금뜻 블로그 요약 카드",
     "date": "2026-10-24 08:45",
-    "reach": 0,
+    "reach": 2,
     "saved": 0,
     "likes": 0,
     "comments": 1
@@ -3221,7 +3221,7 @@
     "selected_title": "가지급금뜻 블로그 유도 릴스(애니메이션)",
     "engine": "kb_anim",
     "date": "2026-10-24 08:48",
-    "reach": 13,
+    "reach": 43,
     "saved": 0,
     "likes": 0,
     "comments": 1
@@ -3230,186 +3230,306 @@
     "ig_post_id": "17899114248396128",
     "type": "reels",
     "selected_title": "비과세 배당 매력 부각에...외국인 한 달간 4600억 쓸어담은 '이 종목'",
-    "date": "2026-10-24 16:32"
+    "date": "2026-10-24 16:32",
+    "reach": 2,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18113427536165715",
     "type": "reels",
     "selected_title": "[홍보] 중임등기 셀프 도구 릴스",
-    "date": "2026-10-24 23:28"
+    "date": "2026-10-24 23:28",
+    "reach": 106,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18126602183479082",
     "type": "reels",
     "selected_title": "‘채시라 남편’ 김태욱 회사에 日마루베니 공개매수…주가 상한가 직행",
-    "date": "2026-10-24 23:38"
+    "date": "2026-10-24 23:38",
+    "reach": 42,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18036163172904028",
     "type": "reels",
     "selected_title": "아내 몰래 땅 사 이혼 위기…그래도 산이 좋다",
-    "date": "2026-10-25 16:46"
+    "date": "2026-10-25 16:46",
+    "reach": 115,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18119397910993997",
     "type": "card",
     "selected_title": "66년생국민연금수령나이 블로그 요약 카드",
-    "date": "2026-10-25 21:41"
+    "date": "2026-10-25 21:41",
+    "reach": 4,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "18135936118643691",
     "type": "reels",
     "selected_title": "66년생국민연금수령나이 블로그 유도 릴스(애니메이션)",
     "engine": "kb_anim",
-    "date": "2026-10-25 21:42"
+    "date": "2026-10-25 21:42",
+    "reach": 49,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "17938599516123151",
     "type": "reels",
     "selected_title": "KB '10월 서울 아파트값 0.61% 오라…상승률 연내 최저'",
-    "date": "2026-10-25 23:59"
+    "date": "2026-10-25 23:59",
+    "reach": 43,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18130221086488310",
     "type": "card",
     "selected_title": "코인과세유예가능성 블로그 요약 카드",
-    "date": "2026-10-26 10:43"
+    "date": "2026-10-26 10:43",
+    "reach": 3,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "18051124217739629",
     "type": "reels",
     "selected_title": "코인과세유예가능성 블로그 유도 릴스(애니메이션)",
     "engine": "kb_anim",
-    "date": "2026-10-26 10:45"
+    "date": "2026-10-26 10:45",
+    "reach": 44,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "17888878446485821",
     "type": "card",
     "selected_title": "코인 과세 손실 이월 불가 카드",
-    "date": "2026-10-26 16:41"
+    "date": "2026-10-26 16:41",
+    "reach": 3,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "18089855732665259",
     "type": "reels",
     "selected_title": "국토부 \"주택 구입비 내 금융자산 비중 증가…실수요 중심 시장 영향\"",
-    "date": "2026-10-26 17:02"
+    "date": "2026-10-26 17:02",
+    "reach": 42,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "17947412550452310",
     "type": "reels",
     "selected_title": "100억 벌고 90억 잃어도 세금은 100억 기준...증권사 교육세 13배 폭증",
-    "date": "2026-10-27 02:27"
+    "date": "2026-10-27 02:27",
+    "reach": 47,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18100916906390509",
     "type": "card",
     "selected_title": "비상장주식양도세율 블로그 요약 카드",
-    "date": "2026-10-27 11:44"
+    "date": "2026-10-27 11:44",
+    "reach": 2,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "17876309826587969",
     "type": "reels",
     "selected_title": "비상장주식양도세율 블로그 유도 릴스(애니메이션)",
     "engine": "kb_anim",
-    "date": "2026-10-27 11:46"
+    "date": "2026-10-27 11:46",
+    "reach": 41,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "17915960613524885",
     "type": "reels",
     "selected_title": "100만 유튜버 납치·살인미수범, 징역 30년→15년…2심서 대폭 감형",
-    "date": "2026-10-27 17:16"
+    "date": "2026-10-27 17:16",
+    "reach": 107,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18032196716888770",
     "type": "reels",
     "selected_title": "SK텔레콤, 앤트로픽 美 IPO 추진 소식에 장 초반 '강세'",
-    "date": "2026-10-28 01:45"
+    "date": "2026-10-28 01:45",
+    "reach": 42,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "17867263647679999",
     "type": "card",
     "selected_title": "종신보험 활용법 소재",
-    "date": "2026-10-28 01:49"
+    "date": "2026-10-28 01:49",
+    "reach": 1,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18181906591432813",
     "type": "card",
     "selected_title": "국민연금반납금 블로그 요약 카드",
-    "date": "2026-10-28 16:00"
+    "date": "2026-10-28 16:00",
+    "reach": 3,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "18131582857694048",
     "type": "reels",
     "selected_title": "국민연금반납금 블로그 유도 릴스(애니메이션)",
     "engine": "kb_anim",
-    "date": "2026-10-28 16:04"
+    "date": "2026-10-28 16:04",
+    "reach": 125,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "18593572951070543",
     "type": "reels",
     "selected_title": "공정위, 라면담합 정조준…농심·삼양·팔도·오뚜기 현장조사",
-    "date": "2026-10-28 17:53"
+    "date": "2026-10-28 17:53",
+    "reach": 112,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "17911579374482003",
     "type": "card",
     "selected_title": "국민연금반납금 자격·제외조건 카드",
-    "date": "2026-10-28 22:07"
+    "date": "2026-10-28 22:07",
+    "reach": 2,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "18093990011677284",
     "type": "reels",
     "selected_title": "SK하이닉스 '100조 주주환원'에…코스피 단숨에 5800선 돌파",
-    "date": "2026-10-29 02:13"
+    "date": "2026-10-29 02:13",
+    "reach": 43,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18110520395462380",
     "type": "card",
     "selected_title": "가업상속공제개정안 블로그 요약 카드",
-    "date": "2026-10-29 10:49"
+    "date": "2026-10-29 10:49",
+    "reach": 6,
+    "saved": 1,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "18072730601497558",
     "type": "reels",
     "selected_title": "가업상속공제개정안 블로그 유도 릴스(애니메이션)",
     "engine": "kb_anim",
-    "date": "2026-10-29 10:50"
+    "date": "2026-10-29 10:50",
+    "reach": 91,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "18109083260369936",
     "type": "reels",
     "selected_title": "KB금융 3분기 순익 1.9조 … 역대 최대실적",
-    "date": "2026-10-29 17:47"
+    "date": "2026-10-29 17:47",
+    "reach": 109,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18118483208047372",
     "type": "reels",
     "selected_title": "“내가 피해 줬나”…김현숙, 이혼 후 아들 한마디에 심리상담 대학원行",
-    "date": "2026-10-30 02:28"
+    "date": "2026-10-30 02:28",
+    "reach": 49,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "17879735922565133",
     "type": "card",
     "selected_title": "노란우산해지환급금 블로그 요약 카드",
-    "date": "2026-10-30 14:09"
+    "date": "2026-10-30 14:09",
+    "reach": 2,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "18075342770775201",
     "type": "reels",
     "selected_title": "노란우산해지환급금 블로그 유도 릴스(애니메이션)",
     "engine": "kb_anim",
-    "date": "2026-10-30 14:11"
+    "date": "2026-10-30 14:11",
+    "reach": 36,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "18043750490836535",
     "type": "reels",
     "selected_title": "GS건설 아파트 커뮤니티 예약 시스템서 개인정보 유출",
-    "date": "2026-10-30 17:53"
+    "date": "2026-10-30 17:53",
+    "reach": 43,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18226163476338330",
     "type": "reels",
     "selected_title": "“30% 예상했는데 50%나 깎인다고?”…국민연금 신청자의 ‘착각’ [배짱 편한 은퇴]",
-    "date": "2026-10-31 02:04"
+    "date": "2026-10-31 02:04",
+    "reach": 15,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   }
 ]

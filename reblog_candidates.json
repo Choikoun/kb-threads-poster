@@ -5618,7 +5618,11 @@
     "likes": 0,
     "replies": 2,
     "media_type": "TEXT_POST",
-    "reblog_date": "2026-10-26"
+    "reblog_date": "2026-10-26",
+    "reposted": true,
+    "reposted_id": "18349461226269151",
+    "reposted_date": "2026-10-31",
+    "remixed": true
   },
   {
     "id": "18093475517640374",
@@ -5629,7 +5633,11 @@
     "likes": 1,
     "replies": 4,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-26"
+    "reblog_date": "2026-10-26",
+    "reposted": true,
+    "reposted_id": "18130359643852000",
+    "reposted_date": "2026-10-31",
+    "remixed": true
   },
   {
     "id": "17976500961065949",
@@ -5640,7 +5648,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-26"
+    "reblog_date": "2026-10-26",
+    "reposted": true,
+    "reposted_id": "18197892739386267",
+    "reposted_date": "2026-10-31",
+    "remixed": true
   },
   {
     "id": "18114120172785864",
@@ -5651,7 +5663,11 @@
     "likes": 0,
     "replies": 2,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-26"
+    "reblog_date": "2026-10-26",
+    "reposted": true,
+    "reposted_id": "18135659818709749",
+    "reposted_date": "2026-10-31",
+    "remixed": true
   },
   {
     "id": "18136400866611104",
@@ -5662,7 +5678,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-26"
+    "reblog_date": "2026-10-26",
+    "reposted": true,
+    "reposted_id": "18638781016008566",
+    "reposted_date": "2026-10-31",
+    "remixed": true
   },
   {
     "id": "18125498872800352",
@@ -5673,7 +5693,11 @@
     "likes": 1,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-28"
+    "reblog_date": "2026-10-28",
+    "reposted": true,
+    "reposted_id": "18131971663875632",
+    "reposted_date": "2026-10-31",
+    "remixed": true
   },
   {
     "id": "18105940877332020",
@@ -5684,7 +5708,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-28"
+    "reblog_date": "2026-10-28",
+    "reposted": true,
+    "reposted_id": "17889937644685430",
+    "reposted_date": "2026-10-31",
+    "remixed": true
   },
   {
     "id": "18035203676647859",
@@ -5695,7 +5723,11 @@
     "likes": 0,
     "replies": 4,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-28"
+    "reblog_date": "2026-10-28",
+    "reposted": true,
+    "reposted_id": "18081003230403635",
+    "reposted_date": "2026-10-31",
+    "remixed": true
   },
   {
     "id": "17907046485498880",
@@ -5706,7 +5738,11 @@
     "likes": 0,
     "replies": 2,
     "media_type": "TEXT_POST",
-    "reblog_date": "2026-10-28"
+    "reblog_date": "2026-10-28",
+    "reposted": true,
+    "reposted_id": "18023093831934232",
+    "reposted_date": "2026-10-31",
+    "remixed": true
   },
   {
     "id": "18186026695401840",
@@ -5717,7 +5753,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "TEXT_POST",
-    "reblog_date": "2026-10-28"
+    "reblog_date": "2026-10-28",
+    "reposted": true,
+    "reposted_id": "18118735061070092",
+    "reposted_date": "2026-10-31",
+    "remixed": true
   },
   {
     "id": "17989201853849233",
@@ -5728,7 +5768,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-10-28"
+    "reblog_date": "2026-10-28",
+    "reposted": true,
+    "reposted_id": "18182220481437931",
+    "reposted_date": "2026-10-31",
+    "remixed": true
   },
   {
     "id": "18109870121028375",
@@ -6466,5 +6510,49 @@
     "replies": 3,
     "media_type": "IMAGE",
     "reblog_date": "2026-12-19"
+  },
+  {
+    "id": "18102439844636213",
+    "date": "2026-10-27",
+    "text": "가족 이름으로 가입된 보험, 생각보다 안전하지 않을 수 있어.  1. 피",
+    "full_text": "가족 이름으로 가입된 보험, 생각보다 안전하지 않을 수 있어.\n\n1. 피보험자 몰래 계약이 체결되는 경우가 생각보다 흔해.\n2. 수익자와 계약자 구조가 복잡하게 얽혀 있으면 위험 신호야.\n3. 가족 명의로 된 계약이라도 내가 직접 내용을 꼭 확인해야 해.\n\n가족이라는 믿음만 믿고 방치하면 결국 큰 화로 돌아와.\n\n#증여 #상속",
+    "views": 1809,
+    "likes": 0,
+    "replies": 4,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-12-26"
+  },
+  {
+    "id": "18064842182543151",
+    "date": "2026-10-29",
+    "text": "이혼 후 홀로 아이를 키우던 유명인이 뒤늦게 심리상담 대학원에 들어갔어.",
+    "full_text": "이혼 후 홀로 아이를 키우던 유명인이 뒤늦게 심리상담 대학원에 들어갔어.\n\n엄마는 아이에게 최선을 다했다고 믿었지만 자식의 한마디에 큰 충격을 받았던 거야.\n\n재산 분할과 양육비 싸움이 끝난 뒤에도 진짜 위기는 따로 찾아와.\n\n법적인 정리가 마무리돼도 가족 관계의 균열은 오랜 시간 남는 법이지.\n\n결국 서류 위의 해결보다 관계를 회복하는 비용이 더 크게 다가오더라고.\n\n#증여 #상속",
+    "views": 917,
+    "likes": 1,
+    "replies": 4,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-12-26"
+  },
+  {
+    "id": "18470521399138079",
+    "date": "2026-10-29",
+    "text": "지인 명의로 동업하다가 세금 폭탄 맞고 나서야 구조가 잘못됐다는 걸 알았",
+    "full_text": "지인 명의로 동업하다가 세금 폭탄 맞고 나서야 구조가 잘못됐다는 걸 알았다.\n\n매달 나가는 인건비와 퇴직금 계산을 자금 사정만 보고 대충 넘기면 결국 회사의 발목을 잡는다.\n\n정부 추진안이 통과되면 2030년까지 모든 사업장의 퇴직급여 사외적립이 강제된다.\n\n결국 현금 흐름을 미리 조율하지 못한 대표들만 한 번에 자금 압박을 받게 설계되어 있다.\n\n#법인 #증여",
+    "views": 683,
+    "likes": 3,
+    "replies": 4,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-12-26"
+  },
+  {
+    "id": "18114869386850048",
+    "date": "2026-10-30",
+    "text": "강남 한복판 대형 아파트 상속,  수십 년 묵은 소유권 분쟁이 드디어 끝",
+    "full_text": "강남 한복판 대형 아파트 상속, \n수십 년 묵은 소유권 분쟁이 드디어 끝났어.\n\n🔑 죽은 사람 이름으로 남아있던 땅이 \n결국 유족 품으로 넘어간 거야.\n\n재건축 조합만 속이 타들어 가는 중.\n\n#증여 #상속",
+    "views": 574,
+    "likes": 0,
+    "replies": 5,
+    "media_type": "IMAGE",
+    "reblog_date": "2026-12-26"
   }
 ]
