@@ -1,4 +1,19 @@
 # 🏛️ KTV 국무회의 브리핑
-*2026-10-31 21:43 KST*
+*2026-11-01 22:33 KST*
 
-오늘 관련 영상 없음
+---
+
+## 대통령도 지켜봤던 국산 극초음속 무기! 마하 5 이상에 변칙 기동까지?｜패트리엇, 천궁Ⅱ로도 막기 어려운 국산 극초음속 활공비행체(HGV) 무서운 진짜 이유
+🔗 https://youtu.be/2SF5hZRbYLY
+
+[자막 없음: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=2SF5hZRbYLY! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There are two ...
+
+---
+
