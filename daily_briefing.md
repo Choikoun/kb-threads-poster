@@ -1,38 +1,39 @@
 # 📰 일일 브리핑
-*2026-11-01 10:00 KST*
+*2026-11-02 10:28 KST*
 
 ---
 
 ## 🔖 보험 동향
-- [교보생명, ‘모닝브리핑’ 도입… 변액보험 펀드 관리 지원](https://www.insnews.co.kr/news/articleView.html?idxno=93604)
-- [현대해상, AI로 가입 가능 상품 추리고 맞춤 설계안 제안](https://www.insnews.co.kr/news/articleView.html?idxno=93603)
-- [삼성생명, 11월 다이렉트 보험 이벤트 실시](https://www.insnews.co.kr/news/articleView.html?idxno=93602)
-- [카카오페이손보, ‘댕댕런2026’서 반려인 4000명에 펫보험 알린다](https://www.insnews.co.kr/news/articleView.html?idxno=93601)
-- [금융위, 보험사기 연루 보험업종사자 29명 제재… 19명 등록취소](https://www.insnews.co.kr/news/articleView.html?idxno=93592)
+- [한화손보, 교직원 전용 보험 플랜 출시… “교직원 특화 보장”](https://www.insnews.co.kr/news/articleView.html?idxno=93616)
+- [보험판매전문회사 입법 추진… 당국 우려 넘어설 해법은](https://www.insnews.co.kr/news/articleView.html?idxno=93600)
+- [보험사, 하지정맥류 입원 심사기준 사전 안내 강화](https://www.insnews.co.kr/news/articleView.html?idxno=93577)
+- [지갑 없는 해외여행, 우리은행·삼성전자 ‘결제 동맹’](https://www.insnews.co.kr/news/articleView.html?idxno=93575)
+- [[금융의 날 ②] 보험의 날에서 금융의 날로… 기념일에 담긴 역사](https://www.insnews.co.kr/news/articleView.html?idxno=93561)
 
 ## 💰 국내 경제·금융
-- [AI 투자금 찾아 일본까지…빅테크, 엔화 자금 22조원 끌어갔다](https://www.hankyung.com/article/202611017818i)
-- [코스피 힘 못 쓰는데 2.8조 몰렸다…개미들 꽂힌 '이 상품' [이수의 ETF줌인]](https://www.hankyung.com/article/2026103061976)
-- ['AI 쇼크'에 미국 기술주 폭락…중간선거가 전환점 될까 [다음주 주요 변수 미리보기]](https://www.hankyung.com/article/202610317524i)
-- [2027년 경제, 반도체 업황이 최대 변수](https://www.hankyung.com/article/202610281094i)
-- ['증시 바닥 찍었네' 기대감 폭발하더니…'3200억' 몰린 곳](https://www.hankyung.com/article/2026103173617)
+- ["한 달만에 목표주가 43% 올랐다고?"…알짜 반도체 장비주는?](https://www.hankyung.com/article/202611029291i)
+- [공모주 '슈퍼위크' 열기…반도체·방산·로봇·신약 등 6곳 출사표](https://www.hankyung.com/article/202610306355i)
+- [LG씨엔에스, AI·클라우드 성장 기대에 8%대 강세](https://www.hankyung.com/article/2026110293756)
+- [한국철강, 비상장 전환 위한 공개매수에 장 초반 23% '급등'](https://www.hankyung.com/article/2026110293736)
+- [효성화학, 3분기 적자전환에 20% 가까운 '급락'](https://www.hankyung.com/article/2026110293566)
 
 ## 📈 주식·시장
-- [‘몸값 2700조’ 앤트로픽 상장에 기대감 높은데…국내서 투자되나 보니](https://www.mk.co.kr/news/stock/12192529)
-- [“월요일 개장이 두렵습니다”…나스닥100 한달 새 2700조 증발](https://www.mk.co.kr/news/stock/12192467)
-- [“누가 삼전닉스에 물릴 것을 걱정하랴” … 오히려 매수할 시기 딱 나왔다](https://www.mk.co.kr/news/business/12192441)
-- [“‘반도체 업황 연동’ 보안株라 불러주세요”…36% 반등한 한화비전 [이주의 Bull기둥]](https://www.mk.co.kr/news/stock/12192400)
-- [“52년 만에 최악의 하루”…주가 29% 폭락 인텔, 시총 183조원 증발](https://www.mk.co.kr/news/stock/12192398)
+- [[MK시그널] 포티넷 매도신호 포착, 수익률 68.4% 달성](https://www.mk.co.kr/news/stock/12193190)
+- [[MK시그널] HD현대마린엔진, 포트폴리오 다각화 기대감에 주가 상승세... MK시그널 추천 후 상승률 28.65% 기록](https://www.mk.co.kr/news/stock/12193152)
+- [세계 코인 1위 바이낸스서 8조원 털렸는데 … 트럼프는 “김정은 만난다” ?](https://www.mk.co.kr/news/stock/12193142)
+- [샘표·샘표식품, 합병 발표… 주가는 나란히 ‘상한가’ 직행](https://www.mk.co.kr/news/stock/12193140)
+- [“코스피 1년만 더 기다릴까요?”…내년 ‘상반기까지만’ 전망 나온 이유는 [오늘나온 보고서]](https://www.mk.co.kr/news/stock/12193096)
 
 ## 🌏 글로벌 경제·정세
-- ["AI로 그린 거 아냐?"…의혹 쏟아진 초등생 수상작 공개 중단 [도쿄나우]](https://www.hankyung.com/article/202611017824i)
-- [이란 매체 "美, 호르무즈서 어선 2척 공격"…미군은 답변 없어](https://www.hankyung.com/article/2026103177167)
-- [이란 최고지도자, 美·이스라엘에 경고…"공격 땐 무제한 대응"](https://www.hankyung.com/article/2026103177057)
-- ["트럼프 집 앞에 미사일이?"…방공미사일 '어벤저' 포착](https://www.hankyung.com/article/2026103176927)
-- ["9·11 테러 악몽 떠오르게 한 트럼프 백악관의 핼러윈 파티 이벤트"](https://www.hankyung.com/article/2026103176617)
+- [美 '1000달러 자율주행 장치' 논란…3명 사망·14명 부상](https://www.hankyung.com/article/202611029073i)
+- [[밤 사이 해외뉴스 영상] 고위험 회사채 급락…유럽 CCC급 수익률 21% 넘어](https://www.hankyung.com/article/202611029022i)
+- [[밤 사이 해외뉴스] 63억달러 털린 바이낸스…피해 메우기 총력](https://www.hankyung.com/article/202611028998i)
+- [한국 이어 日도 핵잠 논의 본격화…美 "중국 해군 견제에 기여" [도쿄나우]](https://www.hankyung.com/article/202611028977i)
+- [트럼프 어휘는 '초등 4학년 수준'…달라진 건 따로 있었다](https://www.hankyung.com/article/202611028942H)
 
 ## 🔥 팔로업 추천 (300회 이상)
-- 1,532회 [2026-10-30] 강남 한복판 대형 아파트 상속,  수십 년 묵은 소유권 분쟁이 드디어 끝...
+- 362회 [2026-11-01] ⚠️ 공공기관 자산 매각, 앞으로 총리 승인 없으면 단 한 발짝도 못 나...
+- 341회 [2026-10-31] 상속 재산 정리하다가 화재로 서류까지 타버리면 가족들 고생이 시작돼.  ...
 
 ---
 *총 60개 기사 수집됨*
