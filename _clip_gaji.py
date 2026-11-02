@@ -22,5 +22,5 @@ for t in tags:
     a = sh('gh','release','view',t['tagName'],'--json','assets','-q','.assets[].name')
     if 'kb_anim.mp4' in a:
         subprocess.run(['gh','release','download',t['tagName'],'-p','kb_anim.mp4','-D','_tmp_vid','--clobber'],check=True); print('영상', t['tagName']); break
-desc = "우리 집 취득 시점이 출산일로부터 5년 안에 들어가는지 확인해 보셨나요? 신생아 취득세 감면은 출산 후 5년 이내, 12억 원 이하, 거주 목적이 요건이고 100% 감면에 한도 500만 원, 기한은 2028년 12월 31일까지입니다. 5년을 7년으로 늘리는 안은 결정된 바 없습니다. 추징 요건과 신청 방법은 지자체에서 확인하세요. 특정 상품 가입을 권유하지 않습니다. #신생아취득세감면 #출산가구취득세감면 #취득세감면"
-sys.exit(subprocess.run([sys.executable,'naver_clip_poster.py','_tmp_vid/kb_anim.mp4',desc,'신생아취득세감면','1']).returncode)
+desc = "우리 가족의 소득 합계와 재산세 과세표준이 어느 구간인지 확인해 보셨나요? 직장피부양자는 소득 합계 연 2천만 원 이하, 재산세 과세표준 5억 4천만 원 이하여야 하고, 5.4억 초과 9억 이하면 소득은 연 1천만 원 이하여야 합니다. 사업자등록이 없고 사업소득이 연 500만 원 이하면 없는 것으로 봅니다. 내 자격은 국민건강보험공단에서 확인하세요. 특정 상품 가입을 권유하지 않습니다. #직장피부양자뜻 #건강보험피부양자 #피부양자조건"
+sys.exit(subprocess.run([sys.executable,'naver_clip_poster.py','_tmp_vid/kb_anim.mp4',desc,'직장피부양자뜻','1']).returncode)
