@@ -22,5 +22,5 @@ for t in tags:
     a = sh('gh','release','view',t['tagName'],'--json','assets','-q','.assets[].name')
     if 'kb_anim.mp4' in a:
         subprocess.run(['gh','release','download',t['tagName'],'-p','kb_anim.mp4','-D','_tmp_vid','--clobber'],check=True); print('영상', t['tagName']); break
-desc = "우리 가족의 소득 합계와 재산세 과세표준이 어느 구간인지 확인해 보셨나요? 직장피부양자는 소득 합계 연 2천만 원 이하, 재산세 과세표준 5억 4천만 원 이하여야 하고, 5.4억 초과 9억 이하면 소득은 연 1천만 원 이하여야 합니다. 사업자등록이 없고 사업소득이 연 500만 원 이하면 없는 것으로 봅니다. 내 자격은 국민건강보험공단에서 확인하세요. 특정 상품 가입을 권유하지 않습니다. #직장피부양자뜻 #건강보험피부양자 #피부양자조건"
-sys.exit(subprocess.run([sys.executable,'naver_clip_poster.py','_tmp_vid/kb_anim.mp4',desc,'직장피부양자뜻','1']).returncode)
+desc = "우리 가족의 공동상속인과 상속세 신고기한을 정리해 보셨나요? 민법 제1013조는 공동상속인이 언제든지 협의로 상속재산을 분할할 수 있다고 정하고, 법정상속분은 균분이며 배우자는 5할이 가산됩니다. 상속세는 상속개시일이 속하는 달의 말일부터 6개월 이내에 신고합니다. 협의서 서류와 세금은 세무서나 전문가에게 확인하세요. 특정 상품 가입을 권유하지 않습니다. #상속재산분할협의서예시 #법정상속분 #상속세신고기한"
+sys.exit(subprocess.run([sys.executable,'naver_clip_poster.py','_tmp_vid/kb_anim.mp4',desc,'상속재산분할협의서예시','1']).returncode)
