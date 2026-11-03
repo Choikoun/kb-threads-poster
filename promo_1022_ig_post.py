@@ -312,16 +312,36 @@ PIBU = {
                 '#직장피부양자뜻 #건강보험피부양자 #피부양자조건 #건강보험료'),
 }
 
+SGB = {
+    'card_data': {
+        'tag': '# 상속재산분할협의서예시',
+        'hook_big': '상속재산 나눌 때,\n협의와 신고기한',
+        'hook_sub': '민법·상속세 및 증여세법 조문 기준 정리',
+        'points': [
+            {'title': '협의 분할', 'body': '공동상속인은 언제든지\n협의로 상속재산을 나눌 수 있고\n법령이 정한 서식은 없습니다.'},
+            {'title': '법정상속분', 'body': '균분이고 배우자는 5할 가산,\n배우자와 자녀 2명이면\n3/7, 2/7, 2/7 (가정).'},
+            {'title': '신고기한', 'body': '상속개시일이 속하는 달의\n말일부터 6개월 이내,\n외국 주소는 9개월.'},
+            {'title': '소급효', 'body': '분할은 상속개시 때로 소급하나\n제삼자의 권리는\n해하지 못합니다.'},
+        ],
+        'closing': '신고기한부터\n먼저 계산해 보세요.',
+        'cta': '프로필 링크 → 블로그에 전체 정리'
+    },
+    'caption': ('우리 가족의 공동상속인과 상속세 신고기한을 정리해 보셨나요?\n\n'
+                '민법 제1013조는 공동상속인이 언제든지 협의로 상속재산을 분할할 수 있다고 정하고, 법령이 정한 서식은 따로 없습니다. 법정상속분은 균분이고 배우자는 5할이 가산됩니다. 상속세는 상속개시일이 속하는 달의 말일부터 6개월 이내에 신고합니다.\n\n'
+                '협의서 서류와 협의 내용에 따른 세금은 세무서나 전문가에게 확인하세요. 자세한 정리는 블로그에 있습니다.\n\n'
+                '#상속재산분할협의서예시 #법정상속분 #상속세신고기한 #상속'),
+}
+
 if __name__ == '__main__':
     mode = sys.argv[1] if len(sys.argv) > 1 else 'preview'
     if mode == 'preview':
-        for name, v in (('calc', CALC), ('gasu', GASU), ('gun', GUN), ('gaji', GAJI), ('nyun', NYUN), ('coin', COIN), ('coin2', COIN2), ('stock', STOCK), ('banap', BANAP), ('banap2', BANAP2), ('gaup', GAUP), ('nry', NRY), ('rpt', RPT), ('nbt', NBT), ('pibu', PIBU)):
+        for name, v in (('calc', CALC), ('gasu', GASU), ('gun', GUN), ('gaji', GAJI), ('nyun', NYUN), ('coin', COIN), ('coin2', COIN2), ('stock', STOCK), ('banap', BANAP), ('banap2', BANAP2), ('gaup', GAUP), ('nry', NRY), ('rpt', RPT), ('nbt', NBT), ('pibu', PIBU), ('sgb', SGB)):
             paths = cg.generate_card_set(v['card_data'], output_dir=f'_card_preview_{name}', category='insurance')
             print(name, len(paths), '장', paths[0])
     else:
-        v = {'calc': CALC, 'gasu': GASU, 'gun': GUN, 'gaji': GAJI, 'nyun': NYUN, 'coin': COIN, 'coin2': COIN2, 'stock': STOCK, 'banap': BANAP, 'banap2': BANAP2, 'gaup': GAUP, 'nry': NRY, 'rpt': RPT, 'nbt': NBT, 'pibu': PIBU}[mode]
+        v = {'calc': CALC, 'gasu': GASU, 'gun': GUN, 'gaji': GAJI, 'nyun': NYUN, 'coin': COIN, 'coin2': COIN2, 'stock': STOCK, 'banap': BANAP, 'banap2': BANAP2, 'gaup': GAUP, 'nry': NRY, 'rpt': RPT, 'nbt': NBT, 'pibu': PIBU, 'sgb': SGB}[mode]
         ig_id = ap.post_instagram(v)
         if not ig_id:
             print('발행 실패'); sys.exit(1)
-        ap.log_instagram(ig_id, {'calc': '연금 수령액 계산기 홍보', 'gasu': '가수금뜻 블로그 요약 카드', 'gun': '지역가입자건보료상한액 요약 카드', 'gaji': '가지급금뜻 블로그 요약 카드', 'nyun': '66년생국민연금수령나이 블로그 요약 카드', 'coin': '코인과세유예가능성 블로그 요약 카드', 'coin2': '코인 과세 손실 이월 불가 카드', 'stock': '비상장주식양도세율 블로그 요약 카드', 'banap': '국민연금반납금 블로그 요약 카드', 'banap2': '국민연금반납금 자격·제외조건 카드', 'gaup': '가업상속공제개정안 블로그 요약 카드', 'nry': '노란우산해지환급금 블로그 요약 카드', 'rpt': '퇴직연금세금몇프로 블로그 요약 카드', 'nbt': '신생아취득세감면 블로그 요약 카드', 'pibu': '직장피부양자뜻 블로그 요약 카드'}[mode])
+        ap.log_instagram(ig_id, {'calc': '연금 수령액 계산기 홍보', 'gasu': '가수금뜻 블로그 요약 카드', 'gun': '지역가입자건보료상한액 요약 카드', 'gaji': '가지급금뜻 블로그 요약 카드', 'nyun': '66년생국민연금수령나이 블로그 요약 카드', 'coin': '코인과세유예가능성 블로그 요약 카드', 'coin2': '코인 과세 손실 이월 불가 카드', 'stock': '비상장주식양도세율 블로그 요약 카드', 'banap': '국민연금반납금 블로그 요약 카드', 'banap2': '국민연금반납금 자격·제외조건 카드', 'gaup': '가업상속공제개정안 블로그 요약 카드', 'nry': '노란우산해지환급금 블로그 요약 카드', 'rpt': '퇴직연금세금몇프로 블로그 요약 카드', 'nbt': '신생아취득세감면 블로그 요약 카드', 'pibu': '직장피부양자뜻 블로그 요약 카드', 'sgb': '상속재산분할협의서예시 블로그 요약 카드'}[mode])
         print('IG 발행 완료:', ig_id)
