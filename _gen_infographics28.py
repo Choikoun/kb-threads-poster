@@ -1,0 +1,61 @@
+from PIL import Image, ImageDraw
+from card_generator import load_font, hex_to_rgb
+OUT='blog_images/2026-11-04_67년생국민연금수령나이'
+P='67년생국민연금수령나이'
+BG="#F7F5F0";NAVY="#1B2A4A";GOLD="#B8925A";GRAY="#6B7280";RED="#B5473A";GREEN="#2F7D5D"
+W=1200; c=hex_to_rgb
+def canvas(h):
+    im=Image.new('RGB',(W,h),c(BG)); return im, ImageDraw.Draw(im)
+sub=load_font('bold',32); body=load_font('regular',28); small=load_font('regular',24); big=load_font('extrabold',40)
+def box(d,y,h,col,left,right=None,lsize=36):
+    d.rectangle([90,y,W-90,y+h],fill=c("#FFFFFF"),outline=c(col),width=4)
+    d.text((130,y+h//2),left,font=load_font('extrabold',lsize),fill=c(col),anchor='lm')
+    if right: d.text((W-130,y+h//2),right,font=body,fill=c(NAVY),anchor='rm')
+im,d=canvas(900)
+d.rectangle([0,0,W,14],fill=c(GOLD))
+d.text((70,200),"67년생국민연금수령나이",font=load_font('extrabold',84),fill=c(NAVY))
+d.text((70,380),"정상 수령은 만 64세",font=load_font('extrabold',76),fill=c(NAVY))
+d.text((70,490),"조기는 올해부터",font=load_font('extrabold',96),fill=c(GOLD))
+d.text((70,680),"국민연금공단 노령연금 안내 기준",font=sub,fill=c(GRAY))
+im.save(f'{OUT}/01_{P}_대표이미지.png')
+im,d=canvas(860)
+d.text((60,55),"67년생 국민연금 시계",font=big,fill=c(NAVY))
+d.text((60,120),"공단 표 1965~68년생 기준에 출생연도를 대입한 연도",font=body,fill=c(GRAY))
+box(d,200,120,GOLD,"2026년","만 59세 · 조기노령연금 개시연령",30)
+box(d,340,120,NAVY,"2031년","만 64세 · 노령연금 개시연령",30)
+box(d,480,120,GREEN,"2036년","만 69세 · 연기연금 최대 5년 끝",30)
+d.text((90,670),"연도는 출생연도를 대입한 계산이며 공단 표에는 연령만 있습니다",font=small,fill=c(GRAY))
+im.save(f'{OUT}/02_{P}_연도시계.png')
+im,d=canvas(900)
+d.text((60,55),"조기노령연금 조건 3가지",font=big,fill=c(NAVY))
+d.text((60,120),"세 가지를 모두 채워야 신청할 수 있습니다",font=body,fill=c(GRAY))
+box(d,200,110,GOLD,"1","국민연금 가입기간 10년 이상",28)
+box(d,340,110,NAVY,"2","조기노령연금 개시연령(59세) 이상",28)
+box(d,480,110,RED,"3","소득이 있는 업무에 종사하지 않을 것",28)
+d.text((90,640),"소득이 있는 업무: 월평균소득금액이 A값(2026년 3,193,511원) 초과",font=sub,fill=c(NAVY))
+d.text((90,695),"해당 기간에는 조기노령연금 지급이 정지됩니다",font=small,fill=c(GRAY))
+im.save(f'{OUT}/03_{P}_조기조건.png')
+im,d=canvas(900)
+d.text((60,55),"조기 지급률 예시(1966년생 기준)",font=big,fill=c(NAVY))
+d.text((60,120),"공단 안내에는 1967년생 수치가 없어 예시 그대로만 싣습니다",font=body,fill=c(GRAY))
+rows=[("59세","70%",GOLD),("60세","76%",NAVY),("61세","82%",NAVY),("62세","88%",NAVY),("63세","94%",GREEN)]
+for i,(a,b,col) in enumerate(rows):
+    box(d,190+i*110,90,col,a,b,30)
+d.text((90,760),"(노령연금액 - 부양가족연금액) x 지급률 + 부양가족연금액",font=small,fill=c(GRAY))
+d.text((90,805),"내 지급률과 금액은 공단 상담에서 확인하세요",font=small,fill=c(GRAY))
+im.save(f'{OUT}/04_{P}_지급률예시.png')
+im,d=canvas(860)
+d.text((60,55),"64세 이후 5년간 소득 감액",font=big,fill=c(NAVY))
+d.text((60,120),"A값 3,193,511원 + 200만 원 = 약 519만 원 이상이면 대상",font=body,fill=c(GRAY))
+box(d,200,110,GOLD,"초과 200~300만","15만 원 + 200만 초과분의 15%",26)
+box(d,340,110,NAVY,"초과 300~400만","30만 원 + 300만 초과분의 20%",26)
+box(d,480,110,RED,"초과 400만 이상","50만 원 + 400만 초과분의 25%",26)
+d.text((90,650),"감액 한도는 노령연금의 1/2",font=sub,fill=c(NAVY))
+d.text((90,705),"5년 안에 소득활동을 그만두면 감액 없는 연금액을 받습니다",font=small,fill=c(GRAY))
+im.save(f'{OUT}/05_{P}_소득감액.png')
+im,d=canvas(780)
+d.text((60,55),"핵심 정리",font=big,fill=c(NAVY))
+for i,(k,v,col) in enumerate([("1","정상 64세(2031년), 조기 59세(2026년)",NAVY),("2","조기는 소득이 없어야 하고 64세 후 5년 감액",RED),("3","연기 최대 5년 연 7.2%, 건보료·세금 함께 확인",GREEN)]):
+    box(d,160+i*190,150,col,k,None,44); d.text((220,160+i*190+75),v,font=sub,fill=c(NAVY),anchor='lm')
+im.save(f'{OUT}/06_{P}_핵심정리.png')
+print('ok')

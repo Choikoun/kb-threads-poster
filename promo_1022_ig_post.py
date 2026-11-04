@@ -332,16 +332,36 @@ SGB = {
                 '#상속재산분할협의서예시 #법정상속분 #상속세신고기한 #상속'),
 }
 
+NPA = {
+    'card_data': {
+        'tag': '# 67년생국민연금수령나이',
+        'hook_big': '67년생 국민연금,\n올해 59세 조기 신청',
+        'hook_sub': '국민연금공단 노령연금 안내 기준 정리',
+        'points': [
+            {'title': '연도 시계', 'body': '2026년 만 59세 조기 개시,\n2031년 만 64세 노령연금,\n연기는 최대 5년.'},
+            {'title': '조기 조건', 'body': '가입 10년 이상,\n59세 이상,\n소득이 있는 업무에 종사하지 않을 것.'},
+            {'title': '소득 감액', 'body': '64세 이후 5년 동안\n월평균소득이 약 519만 원 이상이면\n연금이 줄 수 있습니다.'},
+            {'title': '연기연금', 'body': '1년마다 7.2%씩 늘지만\n건강보험료와 세금도\n함께 확인하세요.'},
+        ],
+        'closing': '내 소득부터\n먼저 확인해 보세요.',
+        'cta': '프로필 링크 → 블로그에 전체 정리'
+    },
+    'caption': ('67년생이라면 올해가 조기노령연금 개시 나이인 만 59세가 되는 해입니다. 내 월평균소득과 가입기간을 확인해 보셨나요?\n\n'
+                '공단 안내에서 1965~68년생은 노령연금 64세, 조기노령연금 59세입니다. 조기노령연금은 가입기간 10년 이상이고 소득이 있는 업무에 종사하지 않아야 하며, 64세 이후에도 5년 동안은 소득에 따라 감액될 수 있습니다.\n\n'
+                '내 연금액과 지급률은 국민연금공단에서 확인하세요. 자세한 정리는 블로그에 있습니다.\n\n'
+                '#67년생국민연금수령나이 #조기노령연금 #국민연금소득감액 #국민연금'),
+}
+
 if __name__ == '__main__':
     mode = sys.argv[1] if len(sys.argv) > 1 else 'preview'
     if mode == 'preview':
-        for name, v in (('calc', CALC), ('gasu', GASU), ('gun', GUN), ('gaji', GAJI), ('nyun', NYUN), ('coin', COIN), ('coin2', COIN2), ('stock', STOCK), ('banap', BANAP), ('banap2', BANAP2), ('gaup', GAUP), ('nry', NRY), ('rpt', RPT), ('nbt', NBT), ('pibu', PIBU), ('sgb', SGB)):
+        for name, v in (('calc', CALC), ('gasu', GASU), ('gun', GUN), ('gaji', GAJI), ('nyun', NYUN), ('coin', COIN), ('coin2', COIN2), ('stock', STOCK), ('banap', BANAP), ('banap2', BANAP2), ('gaup', GAUP), ('nry', NRY), ('rpt', RPT), ('nbt', NBT), ('pibu', PIBU), ('sgb', SGB), ('npa', NPA)):
             paths = cg.generate_card_set(v['card_data'], output_dir=f'_card_preview_{name}', category='insurance')
             print(name, len(paths), '장', paths[0])
     else:
-        v = {'calc': CALC, 'gasu': GASU, 'gun': GUN, 'gaji': GAJI, 'nyun': NYUN, 'coin': COIN, 'coin2': COIN2, 'stock': STOCK, 'banap': BANAP, 'banap2': BANAP2, 'gaup': GAUP, 'nry': NRY, 'rpt': RPT, 'nbt': NBT, 'pibu': PIBU, 'sgb': SGB}[mode]
+        v = {'calc': CALC, 'gasu': GASU, 'gun': GUN, 'gaji': GAJI, 'nyun': NYUN, 'coin': COIN, 'coin2': COIN2, 'stock': STOCK, 'banap': BANAP, 'banap2': BANAP2, 'gaup': GAUP, 'nry': NRY, 'rpt': RPT, 'nbt': NBT, 'pibu': PIBU, 'sgb': SGB, 'npa': NPA}[mode]
         ig_id = ap.post_instagram(v)
         if not ig_id:
             print('발행 실패'); sys.exit(1)
-        ap.log_instagram(ig_id, {'calc': '연금 수령액 계산기 홍보', 'gasu': '가수금뜻 블로그 요약 카드', 'gun': '지역가입자건보료상한액 요약 카드', 'gaji': '가지급금뜻 블로그 요약 카드', 'nyun': '66년생국민연금수령나이 블로그 요약 카드', 'coin': '코인과세유예가능성 블로그 요약 카드', 'coin2': '코인 과세 손실 이월 불가 카드', 'stock': '비상장주식양도세율 블로그 요약 카드', 'banap': '국민연금반납금 블로그 요약 카드', 'banap2': '국민연금반납금 자격·제외조건 카드', 'gaup': '가업상속공제개정안 블로그 요약 카드', 'nry': '노란우산해지환급금 블로그 요약 카드', 'rpt': '퇴직연금세금몇프로 블로그 요약 카드', 'nbt': '신생아취득세감면 블로그 요약 카드', 'pibu': '직장피부양자뜻 블로그 요약 카드', 'sgb': '상속재산분할협의서예시 블로그 요약 카드'}[mode])
+        ap.log_instagram(ig_id, {'calc': '연금 수령액 계산기 홍보', 'gasu': '가수금뜻 블로그 요약 카드', 'gun': '지역가입자건보료상한액 요약 카드', 'gaji': '가지급금뜻 블로그 요약 카드', 'nyun': '66년생국민연금수령나이 블로그 요약 카드', 'coin': '코인과세유예가능성 블로그 요약 카드', 'coin2': '코인 과세 손실 이월 불가 카드', 'stock': '비상장주식양도세율 블로그 요약 카드', 'banap': '국민연금반납금 블로그 요약 카드', 'banap2': '국민연금반납금 자격·제외조건 카드', 'gaup': '가업상속공제개정안 블로그 요약 카드', 'nry': '노란우산해지환급금 블로그 요약 카드', 'rpt': '퇴직연금세금몇프로 블로그 요약 카드', 'nbt': '신생아취득세감면 블로그 요약 카드', 'pibu': '직장피부양자뜻 블로그 요약 카드', 'sgb': '상속재산분할협의서예시 블로그 요약 카드', 'npa': '67년생국민연금수령나이 블로그 요약 카드'}[mode])
         print('IG 발행 완료:', ig_id)
