@@ -1,13 +1,13 @@
 # 🏛️ KTV 국무회의 브리핑
-*2026-11-04 23:40 KST*
+*2026-11-05 23:45 KST*
 
 ---
 
-## 속이 꽉 찬 배추 보고 한숨 쉰 송미령 장관?! 가격 폭락으로 시름하는 농가 살리려 송미령 장관이 현장에서 발표한 수급안정대책 #명벤져스 #현장영상
-🔗 https://youtu.be/Z8NgwB1gvCM
+## 국민과 직접 소통한다! ‘대통령의 Y’ 첫 공개 #이재명대통령 #KTV #청와대 #국민소통 #대통령의Y
+🔗 https://youtu.be/YR5CmExMQCg
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=Z8NgwB1gvCM! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=YR5CmExMQCg! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
@@ -17,11 +17,11 @@ There are two ...
 
 ---
 
-## (26.11.4.)'대통령의 Y', 유튜브 ' KTV이매진' 채널과 '이재명' 채널에 5일 오후 9시 공개/ 성기홍 홍보소통수석 브리핑
-🔗 https://youtu.be/aAJctNBpK88
+## (26.11.5.) 대수보 결과 관련 강유정 수석대변인 브리핑
+🔗 https://youtu.be/m-JMRqhVVoE
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=aAJctNBpK88! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=m-JMRqhVVoE! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
@@ -31,11 +31,11 @@ There are two ...
 
 ---
 
-## 청와대 출입기자가 직접 발로 뛰어 꿀 정보 가져옴! 청와대 사랑채에 가면 #이재명 대통령과 사진을 찍을 수 있다?! #잼프네컷😘 이 모든 게 무료라니👀
-🔗 https://youtu.be/Z7glPXXVPrA
+## (26.11.5.) 제51차 대통령 주재 수석보좌관회의 모두발언
+🔗 https://youtu.be/Csn-jkWHHI4
 
 [자막 없음: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=Z7glPXXVPrA! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=Csn-jkWHHI4! This is most likely caused by:
 
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
