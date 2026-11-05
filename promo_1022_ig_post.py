@@ -352,16 +352,36 @@ NPA = {
                 '#67년생국민연금수령나이 #조기노령연금 #국민연금소득감액 #국민연금'),
 }
 
+VAT = {
+    'card_data': {
+        'tag': '# 부가세납부달',
+        'hook_big': '부가세 신고는 2번,\n납부는 최대 4번',
+        'hook_sub': '국세청 신고납부기한·가산세 안내 기준 정리',
+        'points': [
+            {'title': '개인 일반', 'body': '7월·1월 확정신고,\n4월·10월엔 예정고지서가\n따로 옵니다.'},
+            {'title': '예정고지', 'body': '직전 6개월 납부세액의 50%,\n확정신고 때 이미 낸\n세금으로 빠집니다.'},
+            {'title': '법인·간이', 'body': '법인은 4·7·10·1월,\n간이는 다음해 1월 25일까지\n한 번 신고합니다.'},
+            {'title': '가산세', 'body': '무신고 20%, 과소신고 10%,\n납부 지연은 1일 22/100,000가\n붙을 수 있습니다.'},
+        ],
+        'closing': '다음 기한 2027년\n1월 25일을 확인하세요.',
+        'cta': '프로필 링크 → 블로그에 전체 정리'
+    },
+    'caption': ('개인사업자 부가세는 신고는 2번인데 내는 돈은 최대 4번입니다. 4월·10월 예정고지서 금액, 기억하시나요?\n\n'
+                '국세청 안내에서 개인 일반사업자는 7월·1월 확정신고에 4월·10월 예정고지가 더해집니다. 예정고지는 직전 6개월 납부세액의 50%이고 확정신고 때 차감됩니다.\n\n'
+                '내 기한과 세액은 홈택스나 세무 전문가와 확인하세요. 자세한 정리는 블로그에 있습니다.\n\n'
+                '#부가세납부달 #부가세예정고지서 #부가세가산세율 #개인사업자'),
+}
+
 if __name__ == '__main__':
     mode = sys.argv[1] if len(sys.argv) > 1 else 'preview'
     if mode == 'preview':
-        for name, v in (('calc', CALC), ('gasu', GASU), ('gun', GUN), ('gaji', GAJI), ('nyun', NYUN), ('coin', COIN), ('coin2', COIN2), ('stock', STOCK), ('banap', BANAP), ('banap2', BANAP2), ('gaup', GAUP), ('nry', NRY), ('rpt', RPT), ('nbt', NBT), ('pibu', PIBU), ('sgb', SGB), ('npa', NPA)):
+        for name, v in (('calc', CALC), ('gasu', GASU), ('gun', GUN), ('gaji', GAJI), ('nyun', NYUN), ('coin', COIN), ('coin2', COIN2), ('stock', STOCK), ('banap', BANAP), ('banap2', BANAP2), ('gaup', GAUP), ('nry', NRY), ('rpt', RPT), ('nbt', NBT), ('pibu', PIBU), ('sgb', SGB), ('npa', NPA), ('vat', VAT)):
             paths = cg.generate_card_set(v['card_data'], output_dir=f'_card_preview_{name}', category='insurance')
             print(name, len(paths), '장', paths[0])
     else:
-        v = {'calc': CALC, 'gasu': GASU, 'gun': GUN, 'gaji': GAJI, 'nyun': NYUN, 'coin': COIN, 'coin2': COIN2, 'stock': STOCK, 'banap': BANAP, 'banap2': BANAP2, 'gaup': GAUP, 'nry': NRY, 'rpt': RPT, 'nbt': NBT, 'pibu': PIBU, 'sgb': SGB, 'npa': NPA}[mode]
+        v = {'calc': CALC, 'gasu': GASU, 'gun': GUN, 'gaji': GAJI, 'nyun': NYUN, 'coin': COIN, 'coin2': COIN2, 'stock': STOCK, 'banap': BANAP, 'banap2': BANAP2, 'gaup': GAUP, 'nry': NRY, 'rpt': RPT, 'nbt': NBT, 'pibu': PIBU, 'sgb': SGB, 'npa': NPA, 'vat': VAT}[mode]
         ig_id = ap.post_instagram(v)
         if not ig_id:
             print('발행 실패'); sys.exit(1)
-        ap.log_instagram(ig_id, {'calc': '연금 수령액 계산기 홍보', 'gasu': '가수금뜻 블로그 요약 카드', 'gun': '지역가입자건보료상한액 요약 카드', 'gaji': '가지급금뜻 블로그 요약 카드', 'nyun': '66년생국민연금수령나이 블로그 요약 카드', 'coin': '코인과세유예가능성 블로그 요약 카드', 'coin2': '코인 과세 손실 이월 불가 카드', 'stock': '비상장주식양도세율 블로그 요약 카드', 'banap': '국민연금반납금 블로그 요약 카드', 'banap2': '국민연금반납금 자격·제외조건 카드', 'gaup': '가업상속공제개정안 블로그 요약 카드', 'nry': '노란우산해지환급금 블로그 요약 카드', 'rpt': '퇴직연금세금몇프로 블로그 요약 카드', 'nbt': '신생아취득세감면 블로그 요약 카드', 'pibu': '직장피부양자뜻 블로그 요약 카드', 'sgb': '상속재산분할협의서예시 블로그 요약 카드', 'npa': '67년생국민연금수령나이 블로그 요약 카드'}[mode])
+        ap.log_instagram(ig_id, {'calc': '연금 수령액 계산기 홍보', 'gasu': '가수금뜻 블로그 요약 카드', 'gun': '지역가입자건보료상한액 요약 카드', 'gaji': '가지급금뜻 블로그 요약 카드', 'nyun': '66년생국민연금수령나이 블로그 요약 카드', 'coin': '코인과세유예가능성 블로그 요약 카드', 'coin2': '코인 과세 손실 이월 불가 카드', 'stock': '비상장주식양도세율 블로그 요약 카드', 'banap': '국민연금반납금 블로그 요약 카드', 'banap2': '국민연금반납금 자격·제외조건 카드', 'gaup': '가업상속공제개정안 블로그 요약 카드', 'nry': '노란우산해지환급금 블로그 요약 카드', 'rpt': '퇴직연금세금몇프로 블로그 요약 카드', 'nbt': '신생아취득세감면 블로그 요약 카드', 'pibu': '직장피부양자뜻 블로그 요약 카드', 'sgb': '상속재산분할협의서예시 블로그 요약 카드', 'npa': '67년생국민연금수령나이 블로그 요약 카드', 'vat': '부가세납부달 블로그 요약 카드'}[mode])
         print('IG 발행 완료:', ig_id)
