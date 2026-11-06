@@ -1,0 +1,59 @@
+name: 예약 발행 후속 (Threads·릴스·IG 카드)
+
+on:
+  workflow_dispatch:
+    inputs:
+      key:
+        description: 'timed_social/<key>.json (비우면 오늘 날짜 기준)'
+        required: false
+        default: ''
+  schedule:
+    - cron: '40 0 7 11 *'   # 2026-11-07 09:40 KST
+    - cron: '40 1 8 11 *'   # 2026-11-08 10:40 KST
+
+permissions:
+  contents: write
+  actions: write
+  issues: write
+
+jobs:
+  follow_up:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: 패키지 설치
+        run: pip install requests feedparser google-genai beautifulsoup4 python-dotenv Pillow
+      - name: 후속 작업 실행
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+          INSTAGRAM_BUSINESS_ACCOUNT_ID: ${{ secrets.INSTAGRAM_BUSINESS_ACCOUNT_ID }}
+        run: python timed_social.py ${{ github.event.inputs.key }}
+      - name: 로그 커밋
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config merge.jsonlog.driver "python merge_json_log.py %O %A %B"
+          git add blog_posts.json content_log.json
+          git diff --staged --quiet || git commit -m "예약 발행 후속: blog_posts·로그"
+          pushed=false
+          for attempt in 1 2 3 4 5; do
+            if git pull --rebase --autostash origin main && git push; then pushed=true; break; fi
+            git rebase --abort 2>/dev/null || true
+            sleep $((attempt * 5))
+          done
+          [ "$pushed" = true ] || { echo "::error::push 실패"; exit 1; }
+      - name: 실패 알림
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue create \
+            --title "⚠️ 예약 후속 실패: $(TZ=Asia/Seoul date +'%Y-%m-%d %H:%M')" \
+            --body "[로그](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})"
