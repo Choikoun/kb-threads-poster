@@ -1,0 +1,70 @@
+name: 쇼핑 릴스 예약 게시 (인스타그램·스레드)
+
+# 인스타그램·스레드 API는 예약 기능이 없어서, 정해진 날짜(한국시간)에 이 워크플로가 대신 올린다.
+# 11-07, 11-08 오전 9시 20분(KST) = 00:20 UTC. 필요한 시크릿: SHOP_IG_LOGIN_TOKEN, SHOP_IG_USER_ID, SHOP_THREADS_ACCESS_TOKEN
+# 수동 실행(workflow_dispatch)의 item 에 pot 또는 rice 를 넣으면 날짜와 무관하게 해당 건을 올린다.
+on:
+  schedule:
+    - cron: '20 0 7 11 *'
+    - cron: '20 0 8 11 *'
+  workflow_dispatch:
+    inputs:
+      item:
+        description: 'pot(11-07 전기포트) 또는 rice(11-08 쌀통)'
+        required: true
+      dry:
+        description: 'true 면 올리지 않고 점검만'
+        required: false
+        default: 'false'
+
+permissions:
+  contents: read
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: 패키지 설치
+        run: pip install requests python-dotenv
+      - name: 오늘 올릴 건 정하기
+        id: pick
+        env:
+          INPUT_ITEM: ${{ github.event.inputs.item }}
+        run: |
+          D=$(TZ=Asia/Seoul date +%Y-%m-%d)
+          ITEM="$INPUT_ITEM"
+          if [ -z "$ITEM" ]; then
+            if [ "$D" = "2026-11-07" ]; then ITEM=pot; fi
+            if [ "$D" = "2026-11-08" ]; then ITEM=rice; fi
+          fi
+          echo "날짜 $D, 항목 ${ITEM:-없음}"
+          echo "item=$ITEM" >> "$GITHUB_OUTPUT"
+      - name: 인스타그램 릴스
+        if: steps.pick.outputs.item != ''
+        env:
+          SHOP_IG_LOGIN_TOKEN: ${{ secrets.SHOP_IG_LOGIN_TOKEN }}
+          SHOP_IG_USER_ID: ${{ secrets.SHOP_IG_USER_ID }}
+          ITEM: ${{ steps.pick.outputs.item }}
+          DRY: ${{ github.event.inputs.dry }}
+        run: |
+          if [ "$ITEM" = "pot" ]; then URL="https://github.com/${{ github.repository }}/releases/download/shop-reel-20261106-222622/reel_pot_split.mp4"; fi
+          if [ "$ITEM" = "rice" ]; then URL="https://github.com/${{ github.repository }}/releases/download/shop-reel-20261106-222702/reel_rice_split.mp4"; fi
+          ARGS=""
+          if [ "$DRY" = "true" ]; then ARGS="--dry"; fi
+          python shop_instagram.py --reel "$URL" --caption "$(cat _cap_${ITEM}_ig.txt)" $ARGS
+      - name: 스레드
+        if: steps.pick.outputs.item != ''
+        env:
+          SHOP_THREADS_ACCESS_TOKEN: ${{ secrets.SHOP_THREADS_ACCESS_TOKEN }}
+          ITEM: ${{ steps.pick.outputs.item }}
+          DRY: ${{ github.event.inputs.dry }}
+        run: |
+          if [ "$ITEM" = "pot" ]; then URL="https://github.com/${{ github.repository }}/releases/download/shop-reel-20261106-222622/reel_pot_split.mp4"; fi
+          if [ "$ITEM" = "rice" ]; then URL="https://github.com/${{ github.repository }}/releases/download/shop-reel-20261106-222702/reel_rice_split.mp4"; fi
+          ARGS=""
+          if [ "$DRY" = "true" ]; then ARGS="--dry"; fi
+          python shop_threads.py --text "$(cat _cap_${ITEM}_th.txt)" --video "$URL" --reply "$(cat _cap_${ITEM}_th_reply.txt)" $ARGS
