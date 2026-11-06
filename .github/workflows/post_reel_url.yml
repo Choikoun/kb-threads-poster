@@ -1,0 +1,54 @@
+name: 릴스 게시 (이미 업로드된 영상 URL)
+
+on:
+  workflow_dispatch:
+    inputs:
+      video_url:
+        description: 'GitHub Release 영상 URL'
+        required: true
+      caption_module:
+        description: 'CAPTION 변수를 가진 모듈명'
+        required: true
+      title:
+        description: '로그용 제목'
+        required: true
+      engine:
+        description: '로그용 엔진명'
+        required: false
+        default: 'manual'
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: 패키지 설치
+        run: pip install requests feedparser google-genai beautifulsoup4 python-dotenv Pillow edge-tts
+      - name: 릴스 게시
+        env:
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+          INSTAGRAM_BUSINESS_ACCOUNT_ID: ${{ secrets.INSTAGRAM_BUSINESS_ACCOUNT_ID }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+        run: python post_reel_url.py "${{ github.event.inputs.video_url }}" "${{ github.event.inputs.caption_module }}" "${{ github.event.inputs.title }}" "${{ github.event.inputs.engine }}"
+      - name: 로그 커밋
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config merge.jsonlog.driver "python merge_json_log.py %O %A %B"
+          git add instagram_log.json
+          git diff --staged --quiet || git commit -m "릴스 게시 로그(영상 URL 게시)"
+          pushed=false
+          for attempt in 1 2 3 4 5; do
+            if git pull --rebase --autostash origin main && git push; then pushed=true; break; fi
+            git rebase --abort 2>/dev/null || true
+            sleep $((attempt * 5))
+          done
+          [ "$pushed" = true ] || { echo "::error::push 실패"; exit 1; }
