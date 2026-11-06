@@ -1,0 +1,15 @@
+name: 네이버 RSS 접근 시험
+
+on:
+  workflow_dispatch:
+
+jobs:
+  rss:
+    runs-on: ubuntu-latest
+    steps:
+      - name: RSS 읽기
+        run: |
+          code=$(curl -s -o rss.xml -w '%{http_code}' -A 'Mozilla/5.0' https://rss.blog.naver.com/sobok__biz.xml)
+          echo "HTTP $code, bytes $(wc -c < rss.xml)"
+          grep -o '<title>[^<]*</title>' rss.xml | head -4
+          grep -o '<link>[^<]*</link>' rss.xml | head -4
