@@ -37,6 +37,8 @@ jobs:
           INSTAGRAM_BUSINESS_ACCOUNT_ID: ${{ secrets.INSTAGRAM_BUSINESS_ACCOUNT_ID }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python post_reel_url.py "${{ github.event.inputs.video_url }}" "${{ github.event.inputs.caption_module }}" "${{ github.event.inputs.title }}" "${{ github.event.inputs.engine }}"
       - name: 로그 커밋
         run: |
