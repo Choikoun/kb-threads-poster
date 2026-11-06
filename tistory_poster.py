@@ -311,13 +311,43 @@ h3:d.querySelectorAll('h3').length,len:d.body.innerText.length,last:d.body.lastE
         raise RuntimeError(f'본문 검증 실패: {r} (기대 이미지 {len(imgs)}, 소제목 {expected_h3})')
 
 
-def publish(driver):
+def set_schedule(driver, when):
+    """발행 레이어에서 '예약'을 고르고 날짜·시·분을 맞춘다. when='YYYY-MM-DD HH:MM'."""
+    from datetime import datetime
+    dt = datetime.strptime(when, '%Y-%m-%d %H:%M')
+    btn = [e for e in driver.find_elements(By.CSS_SELECTOR, 'button.btn_date') if e.text.strip() == '예약'][0]
+    driver.execute_script('arguments[0].click()', btn); time.sleep(1)
+    driver.execute_script("arguments[0].click()", driver.find_element(By.CSS_SELECTOR, 'button.btn_reserve')); time.sleep(1)
+    cur = driver.execute_script("return document.querySelector('.box_calendar .txt_calendar').innerText")
+    cm = int(cur.split('년')[1].replace('월', '').strip())
+    for _ in range(abs(dt.month - cm)):
+        sel = 'button.btn_next' if dt.month > cm else 'button.btn_prev'
+        driver.execute_script("arguments[0].click()", driver.find_element(By.CSS_SELECTOR, '.box_calendar ' + sel)); time.sleep(0.4)
+    days = [e for e in driver.find_elements(By.CSS_SELECTOR, '.box_calendar button.btn_day') if e.text.strip() == str(dt.day) and not e.get_attribute('disabled')]
+    if not days:
+        raise RuntimeError('예약 날짜를 달력에서 못 찾았어요')
+    driver.execute_script("arguments[0].click()", days[0]); time.sleep(0.6)
+    from selenium.webdriver.common.keys import Keys
+    # JS로 value만 바꾸면 화면에는 맞게 보여도 저장 때 현재 시각이 들어가므로(2026-11-06 확인) 실제 키 입력으로 넣는다.
+    for el_id, val in (('dateHour', dt.hour), ('dateMinute', dt.minute)):
+        e = driver.find_element(By.ID, el_id)
+        driver.execute_script('arguments[0].scrollIntoView({block:"center"})', e)
+        e.click(); e.send_keys(Keys.CONTROL, 'a'); e.send_keys(Keys.BACKSPACE); e.send_keys(f'{val:02d}'); e.send_keys(Keys.TAB); time.sleep(0.4)
+    got = driver.execute_script("return [document.querySelector('button.btn_reserve').innerText.trim(), document.getElementById('dateHour').value, document.getElementById('dateMinute').value]")
+    print('예약 설정:', got)
+    if got[0] != dt.strftime('%Y-%m-%d') or int(got[1]) != dt.hour or int(got[2]) != dt.minute:
+        raise RuntimeError(f'예약 시간이 기대와 다릅니다: {got}')
+
+
+def publish(driver, schedule=None):
     driver.find_element(By.ID, 'publish-layer-btn').click()
     time.sleep(1.5)
     driver.execute_script("const r=document.querySelector('#open20'); r.click(); r.dispatchEvent(new Event('change',{bubbles:true}));")
     time.sleep(0.5)
+    if schedule:
+        set_schedule(driver, schedule)
     label = driver.execute_script("return document.querySelector('#publish-btn').innerText.trim()")
-    if '공개 발행' not in label.replace(' ', '') and '발행' not in label:
+    if '발행' not in label:
         raise RuntimeError(f'공개 설정이 안 바뀌었어요(버튼: {label}).')
     driver.find_element(By.ID, 'publish-btn').click()
     for _ in range(30):
@@ -328,7 +358,7 @@ def publish(driver):
     raise RuntimeError('발행 후 이동을 확인하지 못했어요.')
 
 
-def post_to_tistory(meta, lines, base_dir, cat, dry=False):
+def post_to_tistory(meta, lines, base_dir, cat, dry=False, schedule=None):
     import ai_tell_check
     _e, _w = ai_tell_check.report(lines, ' (티스토리)')
     if _e:
@@ -352,7 +382,7 @@ def post_to_tistory(meta, lines, base_dir, cat, dry=False):
     if dry:
         print('DRY: 발행 직전까지 채웠어요(발행 안 함).')
         return None
-    url = publish(driver)
+    url = publish(driver, schedule)
     print('발행 후 주소:', url)
     return url
 
@@ -369,4 +399,5 @@ if __name__ == '__main__':
         path = sys.argv[2]
         cat = sys.argv[sys.argv.index('--cat') + 1]
         meta, lines, base = nb.parse_post_file(path)
-        post_to_tistory(meta, lines, base, cat, dry='--dry' in sys.argv)
+        _at = sys.argv[sys.argv.index('--at') + 1] if '--at' in sys.argv else None
+        post_to_tistory(meta, lines, base, cat, dry='--dry' in sys.argv, schedule=_at)

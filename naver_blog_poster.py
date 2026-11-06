@@ -542,7 +542,38 @@ def check_keyword(meta, lines, base_dir=None):
             print(f"⚠️ 파일명에 키워드가 없는 이미지: {no_kw} — 네이버는 alt 텍스트를 파일명 그대로 쓰니, 파일명에 키워드를 넣는 걸 권장해요.")
 
 
-def post_to_naver(meta, lines, base_dir, dry=False, update_logno=None):
+def set_schedule(driver, wait, when):
+    """발행 설정 레이어에서 '예약'을 고르고 날짜·시·분을 맞춘다. when='YYYY-MM-DD HH:MM'(분은 10분 단위)."""
+    from datetime import datetime
+    from selenium.webdriver.support.ui import Select
+    dt = datetime.strptime(when, '%Y-%m-%d %H:%M')
+    if dt.minute % 10:
+        raise ValueError('예약 분은 10분 단위만 가능합니다.')
+    lab = [e for e in driver.find_elements(By.XPATH, '//label[normalize-space(.)="예약"]') if e.is_displayed()][0]
+    js_click(driver, lab); time.sleep(1)
+    inp = [e for e in driver.find_elements(By.CSS_SELECTOR, 'input[class*=input_date]') if e.is_displayed()][0]
+    js_click(driver, inp); time.sleep(1)
+    cur = driver.execute_script('return arguments[0].value', inp)
+    cm = int(cur.replace(' ', '').split('.')[1])
+    for _ in range(abs(dt.month - cm)):
+        sel = '.ui-datepicker-next' if dt.month > cm else '.ui-datepicker-prev'
+        js_click(driver, driver.find_element(By.CSS_SELECTOR, sel)); time.sleep(0.4)
+    days = [e for e in driver.find_elements(By.CSS_SELECTOR, '.ui-datepicker table td:not(.ui-state-disabled) button') if (e.get_attribute('textContent') or '').strip() == str(dt.day)]
+    if not days:
+        raise RuntimeError('예약 날짜를 달력에서 못 찾았어요')
+    js_click(driver, days[0]); time.sleep(0.6)
+    Select(driver.find_element(By.CSS_SELECTOR, 'select[class*=hour_option]')).select_by_value(f'{dt.hour:02d}')
+    Select(driver.find_element(By.CSS_SELECTOR, 'select[class*=minute_option]')).select_by_value(f'{dt.minute:02d}')
+    time.sleep(0.5)
+    got = (driver.execute_script('return arguments[0].value', inp),
+           driver.find_element(By.CSS_SELECTOR, 'select[class*=hour_option]').get_attribute('value'),
+           driver.find_element(By.CSS_SELECTOR, 'select[class*=minute_option]').get_attribute('value'))
+    print(f'예약 설정: {got}')
+    if got[0].replace(' ', '') != dt.strftime('%Y.%m.%d') or got[1] != f'{dt.hour:02d}' or got[2] != f'{dt.minute:02d}':
+        raise RuntimeError(f'예약 시간이 기대와 다릅니다: {got}')
+
+
+def post_to_naver(meta, lines, base_dir, dry=False, update_logno=None, schedule=None):
     title = meta.get('제목', '').strip()
     if not title:
         raise ValueError('글파일에 "제목:" 이 없어요.')
@@ -609,6 +640,9 @@ def post_to_naver(meta, lines, base_dir, dry=False, update_logno=None):
         if meta.get('태그'):
             input_tags(driver, wait, [t for t in meta['태그'].split(',') if t.strip()])
 
+    if schedule:
+        set_schedule(driver, wait, schedule)
+
     driver.save_screenshot('debug_publish_layer.png')
 
     if dry:
@@ -654,9 +688,10 @@ if __name__ == '__main__':
         park_window(get_driver())
     elif mode == 'post' and len(sys.argv) > 2:
         meta, lines, base_dir = parse_post_file(sys.argv[2])
-        post_to_naver(meta, lines, base_dir, dry='--dry' in sys.argv)
+        _at = sys.argv[sys.argv.index('--at') + 1] if '--at' in sys.argv else None
+        post_to_naver(meta, lines, base_dir, dry='--dry' in sys.argv, schedule=_at)
     elif mode == 'update' and len(sys.argv) > 3:
         meta, lines, base_dir = parse_post_file(sys.argv[3])
         post_to_naver(meta, lines, base_dir, dry='--dry' in sys.argv, update_logno=sys.argv[2])
     else:
-        print('사용법: python naver_blog_poster.py start | post <글파일.txt> [--dry] | update <logNo> <글파일.txt> [--dry]')
+        print('사용법: python naver_blog_poster.py start | post <글파일.txt> [--dry] [--at "YYYY-MM-DD HH:MM"(예약, 10분 단위)] | update <logNo> <글파일.txt> [--dry]')
