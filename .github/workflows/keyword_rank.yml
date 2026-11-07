@@ -1,0 +1,47 @@
+name: 키워드 순위 추적 (상위 노출에서 빠지면 재작성 후보)
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 23 * * *'   # 매일 08:30 KST
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  rank:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: 패키지 설치
+        run: pip install requests
+      - name: 순위 확인
+        run: python keyword_rank_check.py
+      - name: 새로 빠진 키워드 알림
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ -s new_confirmed.txt ]; then
+            gh issue create --title "📉 상위 노출에서 빠진 키워드 ($(TZ=Asia/Seoul date +'%Y-%m-%d'))" --body "연속 2회 10위 밖으로 나간 키워드입니다. 재작성 후보:
+
+$(cat new_confirmed.txt)
+
+전체 목록은 rewrite_candidates.md를 보세요."
+          fi
+      - name: 로그 커밋
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add keyword_registry.json keyword_rank_log.json rewrite_candidates.md
+          git diff --staged --quiet || git commit -m "키워드 순위 로그 갱신"
+          pushed=false
+          for attempt in 1 2 3 4 5; do
+            if git pull --rebase --autostash origin main && git push; then pushed=true; break; fi
+            git rebase --abort 2>/dev/null || true
+            sleep $((attempt * 5))
+          done
+          [ "$pushed" = true ] || { echo "::error::push 실패"; exit 1; }

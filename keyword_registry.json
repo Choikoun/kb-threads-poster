@@ -1,0 +1,366 @@
+[
+ {
+  "logNo": "224415966644",
+  "keyword": "연금보험",
+  "title": "연금보험, 언제 가입해야 유리할까? 34세와 37세 비교로 알아보기",
+  "date": "2026-09-18",
+  "key": "annuity_timing"
+ },
+ {
+  "logNo": "224416537944",
+  "keyword": "연금보험 사망시",
+  "title": "연금보험 사망시 남는 돈은? 낸 돈의 120% 기준, 사망 시점별 실제 숫자",
+  "date": "2026-09-19",
+  "key": "annuity_death_benefit"
+ },
+ {
+  "logNo": "224417131934",
+  "keyword": "증여세 계산",
+  "title": "증여세 계산, 관계에 따라 공제가 이만큼 다릅니다 (배우자·자녀 실제 사례)",
+  "date": "2026-09-19",
+  "key": "gift_tax_calc"
+ },
+ {
+  "logNo": "224417982946",
+  "keyword": "상속세 기준",
+  "title": "상속세 기준, 배우자 있으면 10억까지 세금이 없습니다",
+  "date": "2026-09-20",
+  "key": "inheritance_tax_baseline"
+ },
+ {
+  "logNo": "224418676588",
+  "keyword": "손자증여",
+  "title": "손자증여, 할증 30% 있어도 손해가 아닌 경우가 있습니다",
+  "date": "2026-09-21",
+  "key": "grandchild_gift"
+ },
+ {
+  "logNo": "224420091461",
+  "keyword": "보험계약자변경",
+  "title": "보험계약자변경, 자녀 이름으로만 해두면 안심이 아닙니다",
+  "date": "2026-09-22",
+  "key": "insurance_contractor_change"
+ },
+ {
+  "logNo": "224420747694",
+  "keyword": "대표이사퇴직금",
+  "title": "대표이사퇴직금, 정관에 한 줄 없으면 한도의 절반도 못 받습니다",
+  "date": "2026-09-23",
+  "key": "ceo_retirement_pay"
+ },
+ {
+  "logNo": "224422731114",
+  "keyword": "상속세개편",
+  "title": "상속세개편, 병원도 가업상속공제 대상에서 빠지면 벌어지는 일",
+  "date": "2026-09-25",
+  "key": "hospital_inheritance_reform"
+ },
+ {
+  "logNo": "224422798865",
+  "keyword": "유족연금",
+  "title": "유족연금, 국민연금만으로 얼마나 받을 수 있을까",
+  "date": "2026-09-26",
+  "key": "survivor_pension"
+ },
+ {
+  "logNo": "224424232967",
+  "keyword": "부부공동명의",
+  "title": "부부공동명의, 종부세는 줄어도 재산세는 그대로인 이유",
+  "date": "2026-09-27",
+  "key": "joint_ownership_tax"
+ },
+ {
+  "logNo": "224424285562",
+  "keyword": "다주택자양도세",
+  "title": "다주택자양도세, 집 하나 더 있으면 세율이 이렇게 붙습니다",
+  "date": "2026-09-28",
+  "key": "multi_home_capital_gains_tax"
+ },
+ {
+  "logNo": "224424441725",
+  "keyword": "임대소득세",
+  "title": "임대소득세, 등록 여부에 따라 세금이 두 배 넘게 차이 납니다",
+  "date": "2026-09-29",
+  "key": "rental_income_tax"
+ },
+ {
+  "logNo": "224425234195",
+  "keyword": "부동산증여세",
+  "title": "부동산증여세, 5억 아파트 자녀에게 넘길 때 실제로 드는 돈",
+  "date": "2026-09-29",
+  "key": "real_estate_gift_tax"
+ },
+ {
+  "logNo": "224425363187",
+  "keyword": "축의금증여세",
+  "title": "축의금증여세, 안 내도 되는 돈과 신고해야 하는 돈은 따로 있습니다",
+  "date": "2026-09-29",
+  "key": "wedding_gift_tax"
+ },
+ {
+  "logNo": "224426010059",
+  "keyword": "특수관계인저가양도",
+  "title": "특수관계인저가양도, 가족끼리 싸게 팔면 걸리는 기준선",
+  "date": "2026-09-29",
+  "key": "related_party_low_price_transfer"
+ },
+ {
+  "logNo": "224426813701",
+  "keyword": "해외금융계좌신고",
+  "title": "해외금융계좌신고 대상, 5억원 기준과 미신고 시 대가",
+  "date": "2026-09-30",
+  "key": "overseas_account_report"
+ },
+ {
+  "logNo": "224427190542",
+  "keyword": "퇴직연금세액공제 한도",
+  "title": "퇴직연금세액공제 한도, 사업소득 5천만원 넘으면 세율부터 다릅니다",
+  "date": "2026-09-30",
+  "key": "retirement_pension_tax_credit"
+ },
+ {
+  "logNo": "224427992181",
+  "keyword": "특정법인증여의제",
+  "title": "특정법인증여의제, 배당 몰아주면 세금까지 몰아서 나옵니다",
+  "date": "2026-10-01",
+  "key": "specific_corp_deemed_gift"
+ },
+ {
+  "logNo": "224429230418",
+  "keyword": "가족간차용증",
+  "title": "가족간차용증, 이자율 하나 잘못 쓰면 증여세로 바뀝니다",
+  "date": "2026-10-02",
+  "key": "family_loan_agreement"
+ },
+ {
+  "logNo": "224429894315",
+  "keyword": "며느리증여",
+  "title": "며느리증여 한도, 아들은 5천만원인데 며느리는 1천만원입니다",
+  "date": "2026-10-03",
+  "key": "daughter_in_law_gift"
+ },
+ {
+  "logNo": "224430226967",
+  "keyword": "연금저축해지",
+  "title": "연금저축해지, 세액공제 받은 돈은 16.5%를 다시 냅니다",
+  "date": "2026-10-04",
+  "key": "pension_savings_cancel"
+ },
+ {
+  "logNo": "224430782231",
+  "keyword": "퇴직금정산",
+  "title": "퇴직금정산, 퇴사 14일을 넘기면 이자가 연 20%입니다",
+  "date": "2026-10-05",
+  "key": "severance_settlement"
+ },
+ {
+  "logNo": "224431384048",
+  "keyword": "사망보험금세금",
+  "title": "사망보험금세금, 받은 사람이 아니라 보험료를 낸 사람 기준입니다",
+  "date": "2026-10-06",
+  "key": "death_benefit_tax"
+ },
+ {
+  "logNo": "224431661138",
+  "keyword": "배당소득세",
+  "title": "배당소득세, 2천만 원을 넘기면 세금 계산이 달라집니다",
+  "date": "2026-10-07",
+  "key": "dividend_income_tax"
+ },
+ {
+  "logNo": "224432801176",
+  "keyword": "달러통장",
+  "title": "달러통장에 둔 달러, 평생 받는 연금 구조와 숫자로 비교해 봤습니다",
+  "date": "2026-10-08",
+  "key": "usd_pension_structure"
+ },
+ {
+  "logNo": "224434070247",
+  "keyword": "700종신 판매중지",
+  "title": "700종신 판매중지, 이미 가입한 계약은 그대로인데 7년 뒤 해지는 이득일까요",
+  "date": "2026-10-09",
+  "key": "jongshin700_halt"
+ },
+ {
+  "logNo": "224435044968",
+  "keyword": "퇴직연금디폴트옵션",
+  "title": "퇴직연금디폴트옵션, 직원이 지시하지 않으면 2주 뒤 자동 운용되는 구조입니다",
+  "date": "2026-10-10",
+  "key": "dc_default_option"
+ },
+ {
+  "logNo": "224438678775",
+  "keyword": "달러보험단점",
+  "title": "달러보험단점, 환율 이야기만 듣고 가입하면 놓치는 구조 7가지",
+  "date": "2026-10-13",
+  "key": "usd_insurance_cons"
+ },
+ {
+  "logNo": "224439643122",
+  "keyword": "증여세율표",
+  "title": "증여세율표, 세율은 증여한 금액이 아니라 공제 뺀 금액에 적용됩니다",
+  "date": "2026-10-14",
+  "key": "gift_tax_rate_table"
+ },
+ {
+  "logNo": "224441151714",
+  "keyword": "단기납종신보험판매중지",
+  "title": "단기납종신보험판매중지, 700종신 다음은 단기납종신일까요",
+  "date": "2026-10-14",
+  "key": "short_pay_whole_life"
+ },
+ {
+  "logNo": "224442259197",
+  "keyword": "IRP계좌출금",
+  "title": "IRP계좌출금, 법정 사유 5가지에 해당하지 않으면 해지밖에 없습니다",
+  "date": "2026-10-15",
+  "key": "irp_withdrawal"
+ },
+ {
+  "logNo": "224443397820",
+  "keyword": "즉시연금1억",
+  "title": "즉시연금1억, 월 수령액보다 먼저 확인할 비과세 조건과 수령 방식 세 가지",
+  "date": "2026-10-16",
+  "key": "immediate_annuity_100m"
+ },
+ {
+  "logNo": "224445752332",
+  "keyword": "311간편보험",
+  "title": "311간편보험, 치료 후 1년이 지나면 달라지는 고지 질문 세 가지",
+  "date": "2026-10-18",
+  "key": "simple_underwriting_311"
+ },
+ {
+  "logNo": "224446191708",
+  "keyword": "톤틴연금",
+  "title": "톤틴연금, 연금은 38% 늘 수 있고 사망 시 환급은 70%로 줄어드는 구조입니다",
+  "date": "2026-10-19",
+  "key": "tontine_annuity"
+ },
+ {
+  "logNo": "224447410690",
+  "keyword": "일시납달러연금보험",
+  "title": "일시납달러연금보험, 1억을 넣기 전에 환율이 영향을 주는 세 지점부터 확인하세요",
+  "date": "2026-10-20",
+  "key": "dollar_annuity_lump"
+ },
+ {
+  "logNo": "224448640659",
+  "keyword": "가수금뜻",
+  "title": "가수금뜻, 대표가 넣은 돈이 회사엔 빚이 되는 이유",
+  "date": "2026-10-22",
+  "key": "gasugeum_meaning"
+ },
+ {
+  "logNo": "224451379798",
+  "keyword": "지역가입자건보료상한액",
+  "title": "지역가입자건보료상한액 2026년 월 459만원까지",
+  "date": "2026-10-23",
+  "key": "regional_premium_cap"
+ },
+ {
+  "logNo": "224451981855",
+  "keyword": "가지급금뜻",
+  "title": "가지급금뜻, 방치하면 따라오는 세 가지 세금 문제",
+  "date": "2026-10-24",
+  "key": "gajigeum_meaning"
+ },
+ {
+  "logNo": "224453401041",
+  "keyword": "66년생국민연금수령나이",
+  "title": "66년생국민연금수령나이, 64세부터지만 조기는 59세",
+  "date": "2026-10-25",
+  "key": "pension_age_1966"
+ },
+ {
+  "logNo": "224453876931",
+  "keyword": "코인과세유예가능성",
+  "title": "코인과세유예가능성 2027년 시행 앞두고 확인된 것",
+  "date": "2026-10-26",
+  "key": "crypto_tax_deferral"
+ },
+ {
+  "logNo": "224455198187",
+  "keyword": "비상장주식양도세율",
+  "title": "비상장주식양도세율, 10%와 20%를 가르는 세 가지",
+  "date": "2026-10-27",
+  "key": "unlisted_stock_tax_rate"
+ },
+ {
+  "logNo": "224456569733",
+  "keyword": "국민연금반납금",
+  "title": "국민연금반납금, 145만원이 320만원 되는 이유",
+  "date": "2026-10-28",
+  "key": "nps_lumpsum_repay"
+ },
+ {
+  "logNo": "224457544162",
+  "keyword": "가업상속공제개정안",
+  "title": "가업상속공제개정안, 경영 30년과 한도 1,000억",
+  "date": "2026-10-29",
+  "key": "family_business_deduction_reform"
+ },
+ {
+  "logNo": "224459014413",
+  "keyword": "노란우산해지환급금",
+  "title": "노란우산해지환급금, 임의해지면 세금 16.5%",
+  "date": "2026-10-30",
+  "key": "noranumbrella_cancel_refund"
+ },
+ {
+  "logNo": "224460330088",
+  "keyword": "퇴직연금세금몇프로",
+  "title": "퇴직연금세금몇프로, 연금으로 받으면 70%만 냅니다",
+  "date": "2026-10-31",
+  "key": "retirement_pension_tax_rate"
+ },
+ {
+  "logNo": "224460641898",
+  "keyword": "신생아취득세감면",
+  "title": "신생아취득세감면, 출산 후 5년 이내 최대 500만원",
+  "date": "2026-11-01",
+  "key": "newborn_acquisition_tax_reduction"
+ },
+ {
+  "logNo": "224461936562",
+  "keyword": "직장피부양자뜻",
+  "title": "직장피부양자뜻, 소득 연 2천만원 재산 5.4억 기준",
+  "date": "2026-11-02",
+  "key": "workplace_dependent_meaning"
+ },
+ {
+  "logNo": "224463348153",
+  "keyword": "상속재산분할협의서예시",
+  "title": "상속재산분할협의서예시, 법정상속분과 신고기한 정리",
+  "date": "2026-11-03",
+  "key": "inheritance_division_agreement_example"
+ },
+ {
+  "logNo": "224464466282",
+  "keyword": "67년생국민연금수령나이",
+  "title": "67년생국민연금수령나이, 조기 신청은 올해부터 열립니다",
+  "date": "2026-11-04",
+  "key": "national_pension_age_1967"
+ },
+ {
+  "logNo": "224465639630",
+  "keyword": "부가세납부달",
+  "title": "부가세납부달, 개인사업자는 신고 2번에 납부 최대 4번",
+  "date": "2026-11-05",
+  "key": "vat_payment_month"
+ },
+ {
+  "logNo": "224466906754",
+  "keyword": "자녀상속세면제한도",
+  "title": "자녀상속세면제한도, 배우자 있으면 10억 없으면 5억",
+  "date": "2026-11-06",
+  "key": "child_inheritance_exemption"
+ },
+ {
+  "logNo": "224467700894",
+  "keyword": "상속세연부연납",
+  "title": "상속세연부연납, 2천만원 넘으면 최대 10년 나눠 냅니다",
+  "date": "2026-11-07",
+  "key": "inheritance_installment_payment"
+ }
+]
