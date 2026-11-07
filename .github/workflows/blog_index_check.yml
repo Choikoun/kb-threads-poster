@@ -1,0 +1,38 @@
+name: 제목 검색 노출 점검 (주 1회)
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * 1'   # 매주 월요일 09:00 KST
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: 패키지 설치
+        run: pip install requests
+      - name: 노출 점검
+        run: python -u blog_index_check.py | tee check_out.txt
+      - name: 요약
+        run: |
+          { echo "### 제목 검색 노출 점검"; echo '```'; tail -n 1 check_out.txt; grep '없음' check_out.txt | tail -n 15; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+      - name: 로그 커밋
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add blog_index_log.json
+          git diff --staged --quiet || git commit -m "제목 검색 노출 점검 로그 갱신"
+          pushed=false
+          for attempt in 1 2 3 4 5; do
+            if git pull --rebase --autostash origin main && git push; then pushed=true; break; fi
+            git rebase --abort 2>/dev/null || true
+            sleep $((attempt * 5))
+          done
+          [ "$pushed" = true ] || { echo "::error::push 실패"; exit 1; }
