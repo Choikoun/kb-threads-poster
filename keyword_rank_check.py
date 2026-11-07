@@ -11,6 +11,7 @@ KST = timezone(timedelta(hours=9))
 REG, LOG, CAND = 'keyword_registry.json', 'keyword_rank_log.json', 'rewrite_candidates.md'
 H = {'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148'}
 TOP = 10
+MIN_AGE_DAYS = 30
 
 def build_registry():
     reg = {}
@@ -61,7 +62,9 @@ def main():
         for x in reversed(ranks):
             if x is None or x > TOP: streak += 1
             else: break
-        if was_top and streak >= 1:
+        age = (datetime.now(KST).date() - datetime.strptime(r['date'], '%Y-%m-%d').date()).days
+        # 같은 키워드로 너무 자주 쓰면 중복·자기잠식 위험이 있어, 기존 글이 30일 이상 지난 뒤에만 후보로 올린다.
+        if was_top and streak >= 1 and age >= MIN_AGE_DAYS:
             cands.append((r, rank, 'confirmed' if streak >= 2 else 'watch', streak))
         time.sleep(0.4)
     json.dump(log, open(LOG, 'w', encoding='utf-8', newline='\n'), ensure_ascii=False)
