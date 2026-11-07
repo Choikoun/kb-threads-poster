@@ -26,11 +26,8 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           if [ -s new_confirmed.txt ]; then
-            gh issue create --title "📉 상위 노출에서 빠진 키워드 ($(TZ=Asia/Seoul date +'%Y-%m-%d'))" --body "연속 2회 10위 밖으로 나간 키워드입니다. 재작성 후보:
-
-$(cat new_confirmed.txt)
-
-전체 목록은 rewrite_candidates.md를 보세요."
+            { echo "연속 2회 10위 밖으로 나간 키워드입니다. 재작성 후보:"; echo; cat new_confirmed.txt; echo; echo "전체 목록은 rewrite_candidates.md를 보세요."; } > issue_body.md
+            gh issue create --title "📉 상위 노출에서 빠진 키워드 ($(TZ=Asia/Seoul date +'%Y-%m-%d'))" --body-file issue_body.md
           fi
       - name: 로그 커밋
         run: |

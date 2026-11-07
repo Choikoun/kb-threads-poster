@@ -73,10 +73,9 @@ def main():
     if not cands:
         lines.append('- 해당 없음')
     open(CAND, 'w', encoding='utf-8', newline='\n').write('\n'.join(lines) + '\n')
-    new_conf = [r for r, rank, st, sk in cands if sk == 2]
-    open('new_confirmed.txt', 'w', encoding='utf-8', newline='
-').write('
-'.join(f"{r['keyword']} ({r['date']} {r['title']})" for r in new_conf))
+    body = [f"{r['keyword']} ({r['date']} {r['title']})" for r, rank, st, sk in cands if sk == 2]
+    with open('new_confirmed.txt', 'w', encoding='utf-8', newline='\n') as f:
+        f.write('\n'.join(body))
     for r, rank, st, sk in cands:
         print('후보', st, r['keyword'], rank)
 
