@@ -5783,7 +5783,11 @@
     "likes": 0,
     "replies": 2,
     "media_type": "IMAGE",
-    "reblog_date": "2026-11-07"
+    "reblog_date": "2026-11-07",
+    "reposted": true,
+    "reposted_id": "18120498625994491",
+    "reposted_date": "2026-11-07",
+    "remixed": false
   },
   {
     "id": "18104993213223704",
@@ -5794,7 +5798,11 @@
     "likes": 1,
     "replies": 2,
     "media_type": "IMAGE",
-    "reblog_date": "2026-11-07"
+    "reblog_date": "2026-11-07",
+    "reposted": true,
+    "reposted_id": "17957344557032564",
+    "reposted_date": "2026-11-07",
+    "remixed": false
   },
   {
     "id": "17951276619036125",
@@ -5805,7 +5813,11 @@
     "likes": 0,
     "replies": 2,
     "media_type": "IMAGE",
-    "reblog_date": "2026-11-07"
+    "reblog_date": "2026-11-07",
+    "reposted": true,
+    "reposted_id": "18100650128413519",
+    "reposted_date": "2026-11-07",
+    "remixed": false
   },
   {
     "id": "17916871896241200",
@@ -5816,7 +5828,11 @@
     "likes": 0,
     "replies": 2,
     "media_type": "IMAGE",
-    "reblog_date": "2026-11-07"
+    "reblog_date": "2026-11-07",
+    "reposted": true,
+    "reposted_id": "17971238390984503",
+    "reposted_date": "2026-11-07",
+    "remixed": false
   },
   {
     "id": "17968877085157597",
@@ -5827,7 +5843,11 @@
     "likes": 0,
     "replies": 2,
     "media_type": "IMAGE",
-    "reblog_date": "2026-11-07"
+    "reblog_date": "2026-11-07",
+    "reposted": true,
+    "reposted_id": "18111159760907126",
+    "reposted_date": "2026-11-07",
+    "remixed": false
   },
   {
     "id": "18119468377906279",
@@ -5838,7 +5858,11 @@
     "likes": 1,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-11-07"
+    "reblog_date": "2026-11-07",
+    "reposted": true,
+    "reposted_id": "18192353032411897",
+    "reposted_date": "2026-11-07",
+    "remixed": false
   },
   {
     "id": "18230234968322238",
@@ -5849,7 +5873,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "TEXT_POST",
-    "reblog_date": "2026-11-07"
+    "reblog_date": "2026-11-07",
+    "reposted": true,
+    "reposted_id": "17882434401547833",
+    "reposted_date": "2026-11-07",
+    "remixed": false
   },
   {
     "id": "18121125556722109",
@@ -6554,5 +6582,38 @@
     "replies": 5,
     "media_type": "IMAGE",
     "reblog_date": "2026-12-26"
+  },
+  {
+    "id": "18102602603553265",
+    "date": "2026-11-04",
+    "text": "67년생이면 올해가 국민연금 조기수령 나이 만 59세가 되는 해야  공단",
+    "full_text": "67년생이면 올해가 국민연금 조기수령 나이 만 59세가 되는 해야\n\n공단 안내에서 1965~68년생은 노령연금 64세, 조기노령연금 59세야. 67년생은 2026년에 59세, 2031년에 64세가 돼.\n\n조기노령연금은 가입기간 10년 이상이고 소득이 있는 업무에 종사하지 않아야 해. 월평균소득금액이 A값 3,193,511원을 넘으면 소득이 있는 업무로 봐.\n\n64세 이후에도 5년 동안은 소득이 약 519만 원 이상이면 감액될 수 있어. 내 지급률과 금액은 공단에서 확인해.",
+    "views": 4877,
+    "likes": 6,
+    "replies": 2,
+    "media_type": "TEXT_POST",
+    "reblog_date": "2027-01-02"
+  },
+  {
+    "id": "18652694566002290",
+    "date": "2026-11-04",
+    "text": "지구에 데이터센터 세우려던 대기업 임원,  지방 토지 보상금 문제로 결국",
+    "full_text": "지구에 데이터센터 세우려던 대기업 임원,\n\n지방 토지 보상금 문제로 결국 계획 접었어.\n\n⚠️ 비용이 100배 더 들어도 우주로 나간대.\n\n땅값과 전력난 피하려다 궤도에 서버 올리는 시대야.\n\n#증여 #상속",
+    "views": 830,
+    "likes": 2,
+    "replies": 4,
+    "media_type": "IMAGE",
+    "reblog_date": "2027-01-02"
+  },
+  {
+    "id": "18074078381746625",
+    "date": "2026-11-05",
+    "text": "재건축 끝나면 당연히 내 집 가치가 오를 줄 알았지.  💡 조합원 한 명",
+    "full_text": "재건축 끝나면 당연히 내 집 가치가 오를 줄 알았지.\n\n💡 조합원 한 명당 2억 원이 넘는 청구서가 날아오고 있어.\n\n이런 통지서 받으면 집 팔아도 세금 내기 바빠.\n\n#세금 #정책",
+    "views": 444,
+    "likes": 1,
+    "replies": 3,
+    "media_type": "IMAGE",
+    "reblog_date": "2027-01-02"
   }
 ]
