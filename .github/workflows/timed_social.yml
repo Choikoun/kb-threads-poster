@@ -8,8 +8,12 @@ on:
         required: false
         default: ''
   schedule:
-    - cron: '40 0 7 11 *'   # 2026-11-07 09:40 KST
-    - cron: '40 1 8 11 *'   # 2026-11-08 10:40 KST
+    # 매일 09~14시(KST) 20분마다 확인. 오늘 날짜가 schedule.json에 있고 아직 처리 전일 때만 실제로 실행(GitHub cron 지연 대비).
+    - cron: '10,30,50 0-4 * * *'
+
+concurrency:
+  group: timed-social
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -22,12 +26,31 @@ jobs:
     timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
+      - name: 오늘 처리할 작업이 있는지 확인
+        id: need
+        env:
+          INPUT_KEY: ${{ github.event.inputs.key }}
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, os
+          from datetime import datetime, timezone, timedelta
+          key = os.environ.get('INPUT_KEY') or json.load(open('timed_social/schedule.json', encoding='utf-8')).get(datetime.now(timezone(timedelta(hours=9))).strftime('%Y-%m-%d'))
+          run = False
+          if key:
+              cfg = json.load(open(f'timed_social/{key}.json', encoding='utf-8'))
+              now = datetime.now(timezone(timedelta(hours=9))).strftime('%H:%M')
+              run = now >= cfg.get('not_before', '00:00') and not any(p['key'] == cfg['key'] for p in json.load(open('blog_posts.json', encoding='utf-8')))
+          print('run=' + ('true' if run else 'false'))
+          PY
       - uses: actions/setup-python@v5
+        if: steps.need.outputs.run == 'true'
         with:
           python-version: '3.11'
       - name: 패키지 설치
+        if: steps.need.outputs.run == 'true'
         run: pip install requests feedparser google-genai beautifulsoup4 python-dotenv Pillow
       - name: 후속 작업 실행
+        if: steps.need.outputs.run == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -36,6 +59,7 @@ jobs:
           INSTAGRAM_BUSINESS_ACCOUNT_ID: ${{ secrets.INSTAGRAM_BUSINESS_ACCOUNT_ID }}
         run: python timed_social.py ${{ github.event.inputs.key }}
       - name: 로그 커밋
+        if: steps.need.outputs.run == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"

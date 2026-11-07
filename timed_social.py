@@ -18,7 +18,7 @@ def pick_key():
     m = json.load(open('timed_social/schedule.json', encoding='utf-8'))
     return m.get(today)
 
-def find_url(title_match, tries=25, wait=60):
+def find_url(title_match, tries=8, wait=60):
     for i in range(tries):
         try:
             x = requests.get(RSS, headers={'User-Agent': 'Mozilla/5.0'}, timeout=20).text
@@ -45,7 +45,11 @@ def main():
         print('이미 처리됨(blog_posts.json에 있음), 중복 방지로 종료'); return 0
     url = find_url(cfg['title_match'])
     if not url:
-        print('::error::네이버 RSS에서 글을 찾지 못했습니다 (발행 안 됨 또는 지연)'); return 1
+        nb = cfg.get('not_before', '00:00'); h, m = map(int, nb.split(':'))
+        now = datetime.now(KST); limit = now.replace(hour=h, minute=m, second=0, microsecond=0) + timedelta(hours=3)
+        if now < limit:
+            print('RSS에 아직 없음, 다음 확인 때 다시 시도'); return 0
+        print('::error::네이버 RSS에서 글을 찾지 못했습니다 (예정 시각 3시간 후에도 없음)'); return 1
     print('네이버 URL', url)
     import news_auto_poster as n
     ok = n.post_to_threads(cfg['threads_text'], [cfg['comment'].format(url=url)], image_url=None, topic_tag=cfg['topic_tag'])

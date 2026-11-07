@@ -1,3 +1,13 @@
-{"key":"gift_tax_filing_deadline","date":"2026-11-08","title_match":"증여세신고기한, 말일부터 3개월","title":"증여세신고기한, 말일부터 3개월이고 3% 공제가 있습니다","tistory":"https://freedom-of-economic.tistory.com/331","topic_tag":"증여세","reel_module":"gft_anim_reels_post","ig_mode":"gft",
-"threads_text":"증여세는 받은 날이 아니라 그달 말일부터 3개월을 세\n\n국세청 안내 기준으로 증여일이 속한 달의 말일부터 3개월 이내에 신고해야 해. 6월 10일에 받았으면 9월 30일까지야.\n\n기한 안에 신고하면 신고세액공제 3%를 받고, 신고하지 않으면 일반 무신고 가산세 20%가 붙을 수 있어. 기한이 휴일이면 다음 날까지야.",
-"comment":"기한 계산과 가산세 전체 정리는 블로그에 있어\n{url}"}
+{
+ "key": "gift_tax_filing_deadline",
+ "date": "2026-11-08",
+ "title_match": "증여세신고기한, 말일부터 3개월",
+ "title": "증여세신고기한, 말일부터 3개월이고 3% 공제가 있습니다",
+ "tistory": "https://freedom-of-economic.tistory.com/331",
+ "topic_tag": "증여세",
+ "reel_module": "gft_anim_reels_post",
+ "ig_mode": "gft",
+ "threads_text": "증여세는 받은 날이 아니라 그달 말일부터 3개월을 세\n\n국세청 안내 기준으로 증여일이 속한 달의 말일부터 3개월 이내에 신고해야 해. 6월 10일에 받았으면 9월 30일까지야.\n\n기한 안에 신고하면 신고세액공제 3%를 받고, 신고하지 않으면 일반 무신고 가산세 20%가 붙을 수 있어. 기한이 휴일이면 다음 날까지야.",
+ "comment": "기한 계산과 가산세 전체 정리는 블로그에 있어\n{url}",
+ "not_before": "10:00"
+}
