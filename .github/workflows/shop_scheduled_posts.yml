@@ -7,10 +7,11 @@ on:
   schedule:
     - cron: '20 0 7 11 *'
     - cron: '20 0 8 11 *'
+    - cron: '20 0 9 11 *'
   workflow_dispatch:
     inputs:
       item:
-        description: 'pot(11-07 전기포트) 또는 rice(11-08 쌀통)'
+        description: 'pot(11-07 전기포트), rice(11-08 쌀통), hurom(11-09 휴롬 H420)'
         required: true
       dry:
         description: 'true 면 올리지 않고 점검만'
@@ -40,6 +41,7 @@ jobs:
           if [ -z "$ITEM" ]; then
             if [ "$D" = "2026-11-07" ]; then ITEM=pot; fi
             if [ "$D" = "2026-11-08" ]; then ITEM=rice; fi
+            if [ "$D" = "2026-11-09" ]; then ITEM=hurom; fi
           fi
           echo "날짜 $D, 항목 ${ITEM:-없음}"
           echo "item=$ITEM" >> "$GITHUB_OUTPUT"
@@ -53,6 +55,7 @@ jobs:
         run: |
           if [ "$ITEM" = "pot" ]; then URL="https://github.com/${{ github.repository }}/releases/download/shop-reel-20261106-222622/reel_pot_split.mp4"; fi
           if [ "$ITEM" = "rice" ]; then URL="https://github.com/${{ github.repository }}/releases/download/shop-reel-20261106-222702/reel_rice_split.mp4"; fi
+          if [ "$ITEM" = "hurom" ]; then URL="https://github.com/${{ github.repository }}/releases/download/shop-reel-20261109-005424/reel_hurom_split.mp4"; fi
           ARGS=""
           if [ "$DRY" = "true" ]; then ARGS="--dry"; fi
           python shop_instagram.py --reel "$URL" --caption "$(cat _cap_${ITEM}_ig.txt)" $ARGS
@@ -65,6 +68,7 @@ jobs:
         run: |
           if [ "$ITEM" = "pot" ]; then URL="https://github.com/${{ github.repository }}/releases/download/shop-reel-20261106-222622/reel_pot_split.mp4"; fi
           if [ "$ITEM" = "rice" ]; then URL="https://github.com/${{ github.repository }}/releases/download/shop-reel-20261106-222702/reel_rice_split.mp4"; fi
+          if [ "$ITEM" = "hurom" ]; then URL="https://github.com/${{ github.repository }}/releases/download/shop-reel-20261109-005424/reel_hurom_split.mp4"; fi
           ARGS=""
           if [ "$DRY" = "true" ]; then ARGS="--dry"; fi
           python shop_threads.py --text "$(cat _cap_${ITEM}_th.txt)" --video "$URL" --reply "$(cat _cap_${ITEM}_th_reply.txt)" $ARGS
