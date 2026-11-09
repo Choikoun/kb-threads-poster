@@ -1,10 +1,9 @@
 name: 쇼핑 블로그 순위·색인 추적
 
-# 매일 밤 10시(KST) = 13:00 UTC. 쇼핑 글(sobok_biz)이 네이버 블로그 검색에서 몇 위인지, 색인됐는지 기록한다.
+# 주의: 11-09 시험에서 GitHub 서버 IP로는 네이버가 검색 결과를 다르게 줘서(0/29) 매일 자동 실행은 끈 상태다. 수동 실행만 가능.
+# 쇼핑 글(sobok_biz)이 네이버 블로그 검색에서 몇 위인지, 색인됐는지 기록한다.
 # KB용 keyword_rank_check.py 와 별개. 결과는 shop_rank_log.json 에 날짜별로 쌓인다.
 on:
-  schedule:
-    - cron: '0 13 * * *'
   workflow_dispatch:
 
 permissions:

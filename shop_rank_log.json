@@ -29,8 +29,8 @@
   "hist": [
    {
     "d": "2026-11-09",
-    "indexed": false,
-    "title_pos": null,
+    "indexed": true,
+    "title_pos": 1,
     "rank": null
    }
   ]
@@ -41,8 +41,8 @@
   "hist": [
    {
     "d": "2026-11-09",
-    "indexed": false,
-    "title_pos": null,
+    "indexed": true,
+    "title_pos": 1,
     "rank": null
    }
   ]
@@ -53,8 +53,8 @@
   "hist": [
    {
     "d": "2026-11-09",
-    "indexed": false,
-    "title_pos": null,
+    "indexed": true,
+    "title_pos": 1,
     "rank": null
    }
   ]
@@ -221,8 +221,8 @@
   "hist": [
    {
     "d": "2026-11-09",
-    "indexed": false,
-    "title_pos": null,
+    "indexed": true,
+    "title_pos": 10,
     "rank": null
    }
   ]
@@ -233,8 +233,8 @@
   "hist": [
    {
     "d": "2026-11-09",
-    "indexed": false,
-    "title_pos": null,
+    "indexed": true,
+    "title_pos": 2,
     "rank": null
    }
   ]
@@ -245,8 +245,8 @@
   "hist": [
    {
     "d": "2026-11-09",
-    "indexed": false,
-    "title_pos": null,
+    "indexed": true,
+    "title_pos": 11,
     "rank": null
    }
   ]
@@ -293,8 +293,8 @@
   "hist": [
    {
     "d": "2026-11-09",
-    "indexed": false,
-    "title_pos": null,
+    "indexed": true,
+    "title_pos": 1,
     "rank": null
    }
   ]
@@ -305,8 +305,8 @@
   "hist": [
    {
     "d": "2026-11-09",
-    "indexed": false,
-    "title_pos": null,
+    "indexed": true,
+    "title_pos": 9,
     "rank": null
    }
   ]
@@ -329,8 +329,8 @@
   "hist": [
    {
     "d": "2026-11-09",
-    "indexed": false,
-    "title_pos": null,
+    "indexed": true,
+    "title_pos": 3,
     "rank": null
    }
   ]

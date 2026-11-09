@@ -52,6 +52,10 @@ def main():
         log = json.load(open(LOG, encoding='utf-8'))
     except Exception:
         log = {}
+    # 점검: 네이버가 이 환경(예: GitHub 서버 IP)에 검색 결과를 안 주면 기록을 남기지 않고 중단한다
+    probe = fetch_ids('락앤락 쌀통', 30)
+    if len(probe) < 10:
+        sys.exit('네이버 검색 결과를 받지 못했어요(%d건). 서버 IP 차단일 수 있어 기록하지 않아요. 내 PC에서 실행하세요.' % len(probe))
     rows = []
     for p in posts:
         u = str(p.get('naver', '')).rstrip('/')
