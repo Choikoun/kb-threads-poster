@@ -1,0 +1,41 @@
+name: 쇼핑 블로그 순위·색인 추적
+
+# 매일 밤 10시(KST) = 13:00 UTC. 쇼핑 글(sobok_biz)이 네이버 블로그 검색에서 몇 위인지, 색인됐는지 기록한다.
+# KB용 keyword_rank_check.py 와 별개. 결과는 shop_rank_log.json 에 날짜별로 쌓인다.
+on:
+  schedule:
+    - cron: '0 13 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: shop-rank-check
+  cancel-in-progress: false
+
+jobs:
+  rank:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: 패키지 설치
+        run: pip install requests
+      - name: 순위 조회
+        run: python shop_rank_check.py
+      - name: 기록 저장
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add shop_rank_log.json
+          if git diff --cached --quiet; then echo "변경 없음"; exit 0; fi
+          git commit -m "쇼핑 순위·색인 기록 $(TZ=Asia/Seoul date +%Y-%m-%d)"
+          for i in 1 2 3 4; do
+            git pull --rebase -X theirs && git push && exit 0
+            git rebase --abort 2>/dev/null || true
+            sleep $((i*5))
+          done
+          echo "푸시 실패"; exit 1
