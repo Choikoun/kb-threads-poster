@@ -365,5 +365,23 @@
    "clip": "미등록",
    "tiktok": "예약 11-09 09:00"
   }
+ },
+ {
+  "key": "malkonig_omnia",
+  "title": "말코닉 옴니아 가격, 쿠팡 435만~495만원 비교",
+  "naver": "예약 2026-11-10 10:30",
+  "date": "2026-11-10",
+  "keyword": "말코닉 옴니아",
+  "affiliate": "쿠팡 1곳",
+  "links": {
+   "coupang_blog": "blog_omnia"
+  },
+  "reel": {
+   "ig": "예약(깃허브 11-10)",
+   "threads": "예약(깃허브 11-10)",
+   "yt": "예약 11-10 11:00 https://youtube.com/shorts/9Qvwph4BeK4",
+   "clip": "미등록",
+   "tiktok": "예약 11-10 11:00"
+  }
  }
 ]
