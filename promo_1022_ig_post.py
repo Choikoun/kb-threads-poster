@@ -452,16 +452,36 @@ DAE = {
                 '#대습상속 #대습상속인 #대습상속분 #상속세'),
 }
 
+JEOK = {
+    'card_data': {
+        'tag': '# 과세전적부심사',
+        'hook_big': '과세전적부심사,\n통지받고 30일',
+        'hook_sub': '국세기본법 제81조의15 기준 정리',
+        'points': [
+            {'title': '청구 기한', 'body': '세무조사 결과 통지나\n과세예고통지를 받은 날부터\n30일 이내.'},
+            {'title': '청구하면', 'body': '결정이 날 때까지\n결정·경정이 보류되고\n30일 안에 결과를 통지.'},
+            {'title': '제외 사유', 'body': '고발·통고처분,\n제척기간 3개월 이하 등은\n청구할 수 없습니다.'},
+            {'title': '다른 길', 'body': '청구 대신\n조기 결정·경정을\n신청할 수도 있습니다.'},
+        ],
+        'closing': '통지서 받은 날부터\n30일째 날을 적어 두세요.',
+        'cta': '프로필 링크 → 블로그에 전체 정리'
+    },
+    'caption': ('세무조사 결과 통지서를 받으면 곧바로 세금이 확정될까요? 통지서 받은 날부터 30일째 날, 달력에 적어 두셨나요?\n\n'
+                '국세기본법 제81조의15에 따라 통지를 받은 날부터 30일 이내에 과세전적부심사를 청구할 수 있습니다. 청구하면 결정이 날 때까지 결정·경정이 보류되고 청구를 받은 날부터 30일 이내에 결과를 통지합니다.\n\n'
+                '내 통지서의 기한과 대응은 세무 전문가와 확인하세요. 자세한 정리는 블로그에 있습니다.\n\n'
+                '#과세전적부심사 #과세예고통지 #세무조사결과통지 #세무조사'),
+}
+
 if __name__ == '__main__':
     mode = sys.argv[1] if len(sys.argv) > 1 else 'preview'
     if mode == 'preview':
-        for name, v in (('calc', CALC), ('gasu', GASU), ('gun', GUN), ('gaji', GAJI), ('nyun', NYUN), ('coin', COIN), ('coin2', COIN2), ('stock', STOCK), ('banap', BANAP), ('banap2', BANAP2), ('gaup', GAUP), ('nry', NRY), ('rpt', RPT), ('nbt', NBT), ('pibu', PIBU), ('sgb', SGB), ('npa', NPA), ('vat', VAT), ('inh', INH), ('ybn', YBN), ('gft', GFT), ('dae', DAE)):
+        for name, v in (('calc', CALC), ('gasu', GASU), ('gun', GUN), ('gaji', GAJI), ('nyun', NYUN), ('coin', COIN), ('coin2', COIN2), ('stock', STOCK), ('banap', BANAP), ('banap2', BANAP2), ('gaup', GAUP), ('nry', NRY), ('rpt', RPT), ('nbt', NBT), ('pibu', PIBU), ('sgb', SGB), ('npa', NPA), ('vat', VAT), ('inh', INH), ('ybn', YBN), ('gft', GFT), ('dae', DAE), ('jeok', JEOK)):
             paths = cg.generate_card_set(v['card_data'], output_dir=f'_card_preview_{name}', category='insurance')
             print(name, len(paths), '장', paths[0])
     else:
-        v = {'calc': CALC, 'gasu': GASU, 'gun': GUN, 'gaji': GAJI, 'nyun': NYUN, 'coin': COIN, 'coin2': COIN2, 'stock': STOCK, 'banap': BANAP, 'banap2': BANAP2, 'gaup': GAUP, 'nry': NRY, 'rpt': RPT, 'nbt': NBT, 'pibu': PIBU, 'sgb': SGB, 'npa': NPA, 'vat': VAT, 'inh': INH, 'ybn': YBN, 'gft': GFT, 'dae': DAE}[mode]
+        v = {'calc': CALC, 'gasu': GASU, 'gun': GUN, 'gaji': GAJI, 'nyun': NYUN, 'coin': COIN, 'coin2': COIN2, 'stock': STOCK, 'banap': BANAP, 'banap2': BANAP2, 'gaup': GAUP, 'nry': NRY, 'rpt': RPT, 'nbt': NBT, 'pibu': PIBU, 'sgb': SGB, 'npa': NPA, 'vat': VAT, 'inh': INH, 'ybn': YBN, 'gft': GFT, 'dae': DAE, 'jeok': JEOK}[mode]
         ig_id = ap.post_instagram(v)
         if not ig_id:
             print('발행 실패'); sys.exit(1)
-        ap.log_instagram(ig_id, {'calc': '연금 수령액 계산기 홍보', 'gasu': '가수금뜻 블로그 요약 카드', 'gun': '지역가입자건보료상한액 요약 카드', 'gaji': '가지급금뜻 블로그 요약 카드', 'nyun': '66년생국민연금수령나이 블로그 요약 카드', 'coin': '코인과세유예가능성 블로그 요약 카드', 'coin2': '코인 과세 손실 이월 불가 카드', 'stock': '비상장주식양도세율 블로그 요약 카드', 'banap': '국민연금반납금 블로그 요약 카드', 'banap2': '국민연금반납금 자격·제외조건 카드', 'gaup': '가업상속공제개정안 블로그 요약 카드', 'nry': '노란우산해지환급금 블로그 요약 카드', 'rpt': '퇴직연금세금몇프로 블로그 요약 카드', 'nbt': '신생아취득세감면 블로그 요약 카드', 'pibu': '직장피부양자뜻 블로그 요약 카드', 'sgb': '상속재산분할협의서예시 블로그 요약 카드', 'npa': '67년생국민연금수령나이 블로그 요약 카드', 'vat': '부가세납부달 블로그 요약 카드', 'inh': '자녀상속세면제한도 블로그 요약 카드', 'ybn': '상속세연부연납 블로그 요약 카드', 'gft': '증여세신고기한 블로그 요약 카드', 'dae': '대습상속 블로그 요약 카드'}[mode])
+        ap.log_instagram(ig_id, {'calc': '연금 수령액 계산기 홍보', 'gasu': '가수금뜻 블로그 요약 카드', 'gun': '지역가입자건보료상한액 요약 카드', 'gaji': '가지급금뜻 블로그 요약 카드', 'nyun': '66년생국민연금수령나이 블로그 요약 카드', 'coin': '코인과세유예가능성 블로그 요약 카드', 'coin2': '코인 과세 손실 이월 불가 카드', 'stock': '비상장주식양도세율 블로그 요약 카드', 'banap': '국민연금반납금 블로그 요약 카드', 'banap2': '국민연금반납금 자격·제외조건 카드', 'gaup': '가업상속공제개정안 블로그 요약 카드', 'nry': '노란우산해지환급금 블로그 요약 카드', 'rpt': '퇴직연금세금몇프로 블로그 요약 카드', 'nbt': '신생아취득세감면 블로그 요약 카드', 'pibu': '직장피부양자뜻 블로그 요약 카드', 'sgb': '상속재산분할협의서예시 블로그 요약 카드', 'npa': '67년생국민연금수령나이 블로그 요약 카드', 'vat': '부가세납부달 블로그 요약 카드', 'inh': '자녀상속세면제한도 블로그 요약 카드', 'ybn': '상속세연부연납 블로그 요약 카드', 'gft': '증여세신고기한 블로그 요약 카드', 'dae': '대습상속 블로그 요약 카드', 'jeok': '과세전적부심사 블로그 요약 카드'}[mode])
         print('IG 발행 완료:', ig_id)
