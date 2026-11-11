@@ -63,7 +63,8 @@ def blog_info(b):
         ld = [x for x in ld if x]
         info['first_post'] = min(ld).strftime('%Y-%m-%d') if ld else None
         cutoff = datetime.now() - timedelta(days=30)
-        info['posts_30d'] = sum(1 for x in dates if x and x >= cutoff) if (not dates or total <= 30 or min(x for x in dates if x) < cutoff) else '30+'
+        vd = [x for x in dates if x]
+        info['posts_30d'] = sum(1 for x in vd if x >= cutoff) if (not vd or total <= 30 or min(vd) < cutoff) else '30+'
     t = get(f'https://m.blog.naver.com/{b}')
     if t:
         m = re.search(r'(\d[\d,]*)명의 이웃', t.text)
