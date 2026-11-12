@@ -492,16 +492,36 @@ DONG = {
                 '#동거주택상속공제 #상속세공제 #상속세 #1세대1주택'),
 }
 
+GYP = {
+    'card_data': {
+        'tag': '# 증여세연부연납',
+        'hook_big': '증여세연부연납,\n최대 5년',
+        'hook_sub': '상속세 및 증여세법 제71조 기준 정리',
+        'points': [
+            {'title': '신청 요건', 'body': '납부세액 2천만 원 초과,\n납세담보 제공,\n신고기한까지 신청.'},
+            {'title': '기간', 'body': '일반 증여재산은 5년,\n가업승계 과세특례 재산은\n15년까지.'},
+            {'title': '이자', 'body': '가산금 이자율은\n2024년 3월 22일부터\n연 3.5%.'},
+            {'title': '주의', 'body': '허가받으면 분납은 불가,\n납부기한을 어기면\n허가가 취소될 수 있습니다.'},
+        ],
+        'closing': '신고기한까지 담보를\n준비할 시간이 있는지 보세요.',
+        'cta': '프로필 링크 → 블로그에 전체 정리'
+    },
+    'caption': ('증여세가 크게 나왔는데 한꺼번에 내기 부담된다면? 신고기한까지 담보와 신청서를 준비할 시간은 충분한가요?\n\n'
+                '상속세 및 증여세법 제71조에 따라 증여세 납부세액이 2천만 원을 넘으면 담보를 내고 연부연납을 신청할 수 있고, 일반 증여재산은 허가일부터 5년입니다. 신청기한은 신고할 때 신고기한까지입니다.\n\n'
+                '내 증여의 신청 가능 여부는 세무 전문가와 확인하세요. 자세한 정리는 블로그에 있습니다.\n\n'
+                '#증여세연부연납 #증여세 #증여세분납 #증여세납부'),
+}
+
 if __name__ == '__main__':
     mode = sys.argv[1] if len(sys.argv) > 1 else 'preview'
     if mode == 'preview':
-        for name, v in (('calc', CALC), ('gasu', GASU), ('gun', GUN), ('gaji', GAJI), ('nyun', NYUN), ('coin', COIN), ('coin2', COIN2), ('stock', STOCK), ('banap', BANAP), ('banap2', BANAP2), ('gaup', GAUP), ('nry', NRY), ('rpt', RPT), ('nbt', NBT), ('pibu', PIBU), ('sgb', SGB), ('npa', NPA), ('vat', VAT), ('inh', INH), ('ybn', YBN), ('gft', GFT), ('dae', DAE), ('jeok', JEOK), ('dong', DONG)):
+        for name, v in (('calc', CALC), ('gasu', GASU), ('gun', GUN), ('gaji', GAJI), ('nyun', NYUN), ('coin', COIN), ('coin2', COIN2), ('stock', STOCK), ('banap', BANAP), ('banap2', BANAP2), ('gaup', GAUP), ('nry', NRY), ('rpt', RPT), ('nbt', NBT), ('pibu', PIBU), ('sgb', SGB), ('npa', NPA), ('vat', VAT), ('inh', INH), ('ybn', YBN), ('gft', GFT), ('dae', DAE), ('jeok', JEOK), ('dong', DONG), ('gyp', GYP)):
             paths = cg.generate_card_set(v['card_data'], output_dir=f'_card_preview_{name}', category='insurance')
             print(name, len(paths), '장', paths[0])
     else:
-        v = {'calc': CALC, 'gasu': GASU, 'gun': GUN, 'gaji': GAJI, 'nyun': NYUN, 'coin': COIN, 'coin2': COIN2, 'stock': STOCK, 'banap': BANAP, 'banap2': BANAP2, 'gaup': GAUP, 'nry': NRY, 'rpt': RPT, 'nbt': NBT, 'pibu': PIBU, 'sgb': SGB, 'npa': NPA, 'vat': VAT, 'inh': INH, 'ybn': YBN, 'gft': GFT, 'dae': DAE, 'jeok': JEOK, 'dong': DONG}[mode]
+        v = {'calc': CALC, 'gasu': GASU, 'gun': GUN, 'gaji': GAJI, 'nyun': NYUN, 'coin': COIN, 'coin2': COIN2, 'stock': STOCK, 'banap': BANAP, 'banap2': BANAP2, 'gaup': GAUP, 'nry': NRY, 'rpt': RPT, 'nbt': NBT, 'pibu': PIBU, 'sgb': SGB, 'npa': NPA, 'vat': VAT, 'inh': INH, 'ybn': YBN, 'gft': GFT, 'dae': DAE, 'jeok': JEOK, 'dong': DONG, 'gyp': GYP}[mode]
         ig_id = ap.post_instagram(v)
         if not ig_id:
             print('발행 실패'); sys.exit(1)
-        ap.log_instagram(ig_id, {'calc': '연금 수령액 계산기 홍보', 'gasu': '가수금뜻 블로그 요약 카드', 'gun': '지역가입자건보료상한액 요약 카드', 'gaji': '가지급금뜻 블로그 요약 카드', 'nyun': '66년생국민연금수령나이 블로그 요약 카드', 'coin': '코인과세유예가능성 블로그 요약 카드', 'coin2': '코인 과세 손실 이월 불가 카드', 'stock': '비상장주식양도세율 블로그 요약 카드', 'banap': '국민연금반납금 블로그 요약 카드', 'banap2': '국민연금반납금 자격·제외조건 카드', 'gaup': '가업상속공제개정안 블로그 요약 카드', 'nry': '노란우산해지환급금 블로그 요약 카드', 'rpt': '퇴직연금세금몇프로 블로그 요약 카드', 'nbt': '신생아취득세감면 블로그 요약 카드', 'pibu': '직장피부양자뜻 블로그 요약 카드', 'sgb': '상속재산분할협의서예시 블로그 요약 카드', 'npa': '67년생국민연금수령나이 블로그 요약 카드', 'vat': '부가세납부달 블로그 요약 카드', 'inh': '자녀상속세면제한도 블로그 요약 카드', 'ybn': '상속세연부연납 블로그 요약 카드', 'gft': '증여세신고기한 블로그 요약 카드', 'dae': '대습상속 블로그 요약 카드', 'jeok': '과세전적부심사 블로그 요약 카드', 'dong': '동거주택상속공제 블로그 요약 카드'}[mode])
+        ap.log_instagram(ig_id, {'calc': '연금 수령액 계산기 홍보', 'gasu': '가수금뜻 블로그 요약 카드', 'gun': '지역가입자건보료상한액 요약 카드', 'gaji': '가지급금뜻 블로그 요약 카드', 'nyun': '66년생국민연금수령나이 블로그 요약 카드', 'coin': '코인과세유예가능성 블로그 요약 카드', 'coin2': '코인 과세 손실 이월 불가 카드', 'stock': '비상장주식양도세율 블로그 요약 카드', 'banap': '국민연금반납금 블로그 요약 카드', 'banap2': '국민연금반납금 자격·제외조건 카드', 'gaup': '가업상속공제개정안 블로그 요약 카드', 'nry': '노란우산해지환급금 블로그 요약 카드', 'rpt': '퇴직연금세금몇프로 블로그 요약 카드', 'nbt': '신생아취득세감면 블로그 요약 카드', 'pibu': '직장피부양자뜻 블로그 요약 카드', 'sgb': '상속재산분할협의서예시 블로그 요약 카드', 'npa': '67년생국민연금수령나이 블로그 요약 카드', 'vat': '부가세납부달 블로그 요약 카드', 'inh': '자녀상속세면제한도 블로그 요약 카드', 'ybn': '상속세연부연납 블로그 요약 카드', 'gft': '증여세신고기한 블로그 요약 카드', 'dae': '대습상속 블로그 요약 카드', 'jeok': '과세전적부심사 블로그 요약 카드', 'dong': '동거주택상속공제 블로그 요약 카드', 'gyp': '증여세연부연납 블로그 요약 카드'}[mode])
         print('IG 발행 완료:', ig_id)
