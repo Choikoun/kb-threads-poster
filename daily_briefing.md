@@ -1,38 +1,37 @@
 # 📰 일일 브리핑
-*2026-11-11 10:52 KST*
+*2026-11-12 11:52 KST*
 
 ---
 
 ## 🔖 보험 동향
-- [서비스 수출실적, 무역보험과 연계… 기업 증빙 부담 줄인다](https://www.insnews.co.kr/news/articleView.html?idxno=93774)
-- [금융보안원, ‘2026 금융 AI Challenge’ 개최… 대상에 한화손보 ‘모의창구’](https://www.insnews.co.kr/news/articleView.html?idxno=93759)
-- [김철주 생명보험협회장, 생명존중 가치 바탕 ‘사람 살리는 금융’ 캠페인 동참](https://www.insnews.co.kr/news/articleView.html?idxno=93751)
-- [우리은행, 연말 퇴직연금 가입·납입 이벤트… 배달의민족 쿠폰 혜택](https://www.insnews.co.kr/news/articleView.html?idxno=93750)
-- [ABL생명, 불법사금융 예방 ‘사람 살리는 금융’ 동참](https://www.insnews.co.kr/news/articleView.html?idxno=93746)
+- [KB손해보험, 피프티피프티와 함께한 신규 웹예능 ‘Z-톡스’ 공개](https://www.insnews.co.kr/news/articleView.html?idxno=93791)
+- [NH농협손해보험, ‘지역사회공헌 인정기업’ 6년 연속 선정](https://www.insnews.co.kr/news/articleView.html?idxno=93790)
+- [KDB생명, 사망보험금 10년간 늘어나는 ‘더!행복플러스종신보험(무)’ 출시](https://www.insnews.co.kr/news/articleView.html?idxno=93782)
+- [보험연수원, ‘AI 안경’ 부정행위 적발 시 최대 3년 응시 제한](https://www.insnews.co.kr/news/articleView.html?idxno=93778)
+- [DB손해보험, ‘교통·환경챌린지 8기’ 데모데이 열어](https://www.insnews.co.kr/news/articleView.html?idxno=93776)
 
 ## 💰 국내 경제·금융
-- [예스티, 사상 최대 분기 영업이익 신기록 소식에 '급등'](https://www.hankyung.com/article/2026111194226)
-- [한진, 200억원 규모 자사주 전량 소각에 17%대 급등](https://www.hankyung.com/article/2026111193636)
-- [크래프톤 , 3분기 실적 실망에 장 초반 3%대 하락](https://www.hankyung.com/article/2026111192856)
-- [美 물가 쇼크에 코스피 약보합…코스닥은 외국인 매수에 '질주'](https://www.hankyung.com/article/2026111193136)
-- [[마켓라이브] 미국 물가 부담에 반도체 대형주 주춤…보안·바이오·클라우드는 강세](https://www.hankyung.com/article/202611119266i)
+- [초고수들, 네이버·DB하이텍 등 급락 종목들 왜 담았을까](https://www.hankyung.com/article/202611122332i)
+- [젠슨 황 해임 위기에 K반도체도 긴장…삼전닉스에 악재일까](https://www.hankyung.com/article/202611122331i)
+- [코스피, 개인 매수세 속 5400선 공방…삼성전자 2%대 강세](https://www.hankyung.com/article/2026111223646)
+- [돌아온 엔터주…JYP 20% 급등에 K팝 ETF도 '들썩'](https://www.hankyung.com/article/202611122278i)
+- [대신자산운용, '주주환원고배당펀드' 설정액 2000억원 돌파](https://www.hankyung.com/article/2026111220716)
 
 ## 📈 주식·시장
-- [반도체 반등 베팅한 초고수…셀트리온은 차익 실현 [주식 초고수는 지금]](https://www.mk.co.kr/news/stock/12205110)
-- [[MK시그널] 페이사인 매도신호 포착, 수익률 114.2% 달성](https://www.mk.co.kr/news/stock/12205097)
-- [셀바스AI, AI 음성합성 기술 예스24 전자책에 적용·상용화](https://www.mk.co.kr/news/stock/12205044)
-- [[MK시그널] 디어유, 중국 시장 진출 본격화에 따른 밸류에이션 재평가 기대감 등에 주가상승률 16.61%](https://www.mk.co.kr/news/stock/12205036)
-- [‘젠슨황 스캔들’ 엔비디아 이틀새 주가 -10%… 앤트로픽은 상장 강행?](https://www.mk.co.kr/news/stock/12205004)
+- [“물탈 돈도 없어요” 급락장에 개미 실탄 5조 증발…반등장에도 매도 행렬](https://www.mk.co.kr/news/stock/12206183)
+- [실적 부진 네이버 ‘사자’…15% 급락 DB하이텍도 담았다 [주식 초고수는 지금]](https://www.mk.co.kr/news/stock/12206180)
+- [[MK시그널] 쉘 매도신호 포착, 수익률 15.8% 달성](https://www.mk.co.kr/news/stock/12206089)
+- [E8, 상장폐지 우려에 “사실과 달라…기업가치 제고에 총력”](https://www.mk.co.kr/news/stock/12206070)
+- [“AI주 더 갈까, 꺾일까”…‘몸값 1.4조 달러’ 앤트로픽 상장에 투심 달렸다](https://www.mk.co.kr/news/stock/12206044)
 
 ## 🌏 글로벌 경제·정세
-- ["앨리스 황, 中 주가조작 기업인과 '10년 동업·부부행세'"](https://www.hankyung.com/article/2026111193977)
-- ["일본인 며느리 찾습니다"…한국 부모들 달라진 이유 [도쿄나우]](https://www.hankyung.com/article/202611119475i)
-- ["젠슨 황 의혹 몰랐다"던 트럼프…5월에 이미 알고 있었다](https://www.hankyung.com/article/2026111191647)
-- [[밤 사이 해외뉴스 영상] 앤트로픽, 기업가치 최대 1조4000억달러로 IPO 추진](https://www.hankyung.com/article/202611118989i)
-- [[밤 사이 해외뉴스]이란 전쟁에 석유 재고 5억배럴 감소…각국 '원유 창고' 확보 경쟁](https://www.hankyung.com/article/202611118956i)
+- [금리 2% 넘자 日 개인 국채 투자 사상 최대…7조달러 예금 이동하나](https://www.hankyung.com/article/202611122085i)
+- [[밤 사이 해외뉴스 영상] 美 민주당, 트럼프 '부패 의혹' 전방위 조사 예고](https://www.hankyung.com/article/202611121676i)
+- [[밤 사이 해외뉴스] 美 물가 다시 들썩…연준 12월 '빅스텝' 하나](https://www.hankyung.com/article/202611121609i)
+- [우동 한 그릇 3000원대로 '뚝'…고물가 일본의 '이상현상' [도쿄나우]](https://www.hankyung.com/article/202611121619i)
+- [[속보] NYT "젠슨 황, 엔비디아 여성 임원과도 불륜 관계"](https://www.hankyung.com/article/2026111215797)
 
 ## 🔥 팔로업 추천 (300회 이상)
-- 839회 [2026-11-04] 지구에 데이터센터 세우려던 대기업 임원,  지방 토지 보상금 문제로 결국...
 - 448회 [2026-11-05] 재건축 끝나면 당연히 내 집 가치가 오를 줄 알았지.  💡 조합원 한 명...
 - 325회 [2026-11-08] 증여세는 받은 날이 아니라 그달 말일부터 3개월을 세  국세청 안내 기준...
 
