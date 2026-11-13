@@ -44,6 +44,16 @@ def rank_of(keyword, log_no):
             seen.append(no)
     return (seen.index(log_no) + 1) if log_no in seen else None, len(seen)
 
+def integrated_rank(keyword, log_no):
+    """통합검색(실제 유입 경로) 화면에서 블로그 링크 출현 순서. 근사치."""
+    url = 'https://m.search.naver.com/search.naver?query=' + urllib.parse.quote(keyword)
+    html = requests.get(url, headers=H, timeout=20).text
+    seen = []
+    for blog, no in re.findall(r'blog\.naver\.com/([A-Za-z0-9_]+)/(\d{9,})', html):
+        if no not in seen:
+            seen.append(no)
+    return (seen.index(log_no) + 1) if log_no in seen else None
+
 def main():
     reg = build_registry() if ('--build' in sys.argv or not os.path.exists(REG)) else json.load(open(REG, encoding='utf-8'))
     log = json.load(open(LOG, encoding='utf-8')) if os.path.exists(LOG) else {}
@@ -55,7 +65,11 @@ def main():
         except Exception as e:
             print('오류', r['keyword'], str(e)[:60]); continue
         h = log.setdefault(r['logNo'], [])
-        h[:] = [x for x in h if x['d'] != today] + [{'d': today, 'rank': rank, 'n': n}]
+        try:
+            ir = integrated_rank(r['keyword'], r['logNo'])
+        except Exception:
+            ir = None
+        h[:] = [x for x in h if x['d'] != today] + [{'d': today, 'rank': rank, 'n': n, 'ir': ir}]
         ranks = [x['rank'] for x in h]
         was_top = any(x is not None and x <= TOP for x in ranks)
         streak = 0
@@ -69,7 +83,8 @@ def main():
         time.sleep(0.4)
     json.dump(log, open(LOG, 'w', encoding='utf-8', newline='\n'), ensure_ascii=False)
     top = sum(1 for r in reg if log.get(r['logNo']) and log[r['logNo']][-1]['rank'] and log[r['logNo']][-1]['rank'] <= TOP)
-    print(f'{today} 키워드 {len(reg)}개 중 {TOP}위 안 {top}개')
+    itop = sum(1 for r in reg if log.get(r['logNo']) and log[r['logNo']][-1].get('ir') and log[r['logNo']][-1]['ir'] <= 10)
+    print(f'{today} 키워드 {len(reg)}개 중 블로그탭 {TOP}위 안 {top}개, 통합검색 블로그 10번째 안 {itop}개')
     lines = [f'# 재작성 후보 ({today})', '', f'{TOP}위 안에 있다가 빠진 키워드입니다. confirmed는 연속 2회 이상 빠진 것, watch는 이번에 처음 빠진 것입니다.', '']
     for r, rank, st, _ in cands:
         lines.append(f"- [{st}] {r['keyword']} (현재 {'순위 밖' if rank is None else str(rank) + '위'}, 기존 글 {r['date']} {r['title']})")
