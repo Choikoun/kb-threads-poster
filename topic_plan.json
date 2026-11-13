@@ -1,0 +1,138 @@
+{
+ "date": "2026-11-13",
+ "rows": [
+  {
+   "keyword": "가업상속공제",
+   "volume": 1430,
+   "docs": 61042,
+   "ratio": 0.0234,
+   "published": [
+    "2026-09-25 상속세개편, 병원도 가업상속공제 대상에서 빠",
+    "2026-10-29 가업상속공제개정안, 경영 30년과 한도 1,"
+   ]
+  },
+  {
+   "keyword": "증여세율표",
+   "volume": 2060,
+   "docs": 11067,
+   "ratio": 0.1861,
+   "published": [
+    "2026-10-14 증여세율표, 세율은 증여한 금액이 아니라 공"
+   ]
+  },
+  {
+   "keyword": "배우자상속공제",
+   "volume": 1200,
+   "docs": 164523,
+   "ratio": 0.0073,
+   "published": []
+  },
+  {
+   "keyword": "동거주택상속공제",
+   "volume": 1040,
+   "docs": 24637,
+   "ratio": 0.0422,
+   "published": [
+    "2026-11-11 동거주택상속공제, 10년 이상 동거해야 최대"
+   ]
+  },
+  {
+   "keyword": "증여세연부연납",
+   "volume": 800,
+   "docs": 15833,
+   "ratio": 0.0505,
+   "published": [
+    "2026-11-12 증여세연부연납, 2천만원 넘으면 최대 5년 "
+   ]
+  },
+  {
+   "keyword": "부담부증여",
+   "volume": 2340,
+   "docs": 49946,
+   "ratio": 0.0469,
+   "published": [],
+   "small_in_top10": 8,
+   "mine_rank": null
+  },
+  {
+   "keyword": "비상장주식평가",
+   "volume": 400,
+   "docs": 205216,
+   "ratio": 0.0019,
+   "published": []
+  },
+  {
+   "keyword": "가지급금인정이자",
+   "volume": 640,
+   "docs": 26815,
+   "ratio": 0.0239,
+   "published": [],
+   "small_in_top10": 5,
+   "mine_rank": null
+  },
+  {
+   "keyword": "임원퇴직금",
+   "volume": 350,
+   "docs": 94062,
+   "ratio": 0.0037,
+   "published": []
+  },
+  {
+   "keyword": "퇴직금중간정산",
+   "volume": 13480,
+   "docs": 66552,
+   "ratio": 0.2025,
+   "published": [],
+   "small_in_top10": 7,
+   "mine_rank": null
+  },
+  {
+   "keyword": "상속세신고기한",
+   "volume": 1370,
+   "docs": 128991,
+   "ratio": 0.0106,
+   "published": []
+  },
+  {
+   "keyword": "증여재산공제",
+   "volume": 510,
+   "docs": 293287,
+   "ratio": 0.0017,
+   "published": []
+  },
+  {
+   "keyword": "증여세합산과세",
+   "volume": 15,
+   "docs": 110955,
+   "ratio": 0.0001,
+   "published": []
+  },
+  {
+   "keyword": "상속세물납",
+   "volume": 170,
+   "docs": 13644,
+   "ratio": 0.0125,
+   "published": [],
+   "small_in_top10": 4,
+   "mine_rank": null
+  },
+  {
+   "keyword": "사망보험금상속세",
+   "volume": 740,
+   "docs": 48031,
+   "ratio": 0.0154,
+   "published": [],
+   "small_in_top10": 6,
+   "mine_rank": null
+  },
+  {
+   "keyword": "달러종신보험",
+   "volume": 730,
+   "docs": 16661,
+   "ratio": 0.0438,
+   "published": [],
+   "small_in_top10": 6,
+   "mine_rank": null
+  }
+ ]
+}
