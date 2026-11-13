@@ -14,6 +14,10 @@ on:
       item:
         description: 'pot(11-07 전기포트), rice(11-08 쌀통), hurom(11-09 휴롬 H420), omnia(11-10 말코닉 옴니아), fel(11-11 펠리시타 저울), il(11-12 일월 온수매트)'
         required: true
+      video_url:
+        description: '(선택) 릴스 mp4 주소. 주면 item 별 하드코딩 주소 대신 이 주소를 쓴다(shop_run.py 가 사용)'
+        required: false
+        default: ''
       dry:
         description: 'true 면 올리지 않고 점검만'
         required: false
@@ -54,6 +58,7 @@ jobs:
           SHOP_IG_USER_ID: ${{ secrets.SHOP_IG_USER_ID }}
           ITEM: ${{ steps.pick.outputs.item }}
           DRY: ${{ github.event.inputs.dry }}
+          VIDEO_URL: ${{ github.event.inputs.video_url }}
         run: |
           if [ "$ITEM" = "pot" ]; then URL="https://github.com/${{ github.repository }}/releases/download/shop-reel-20261106-222622/reel_pot_split.mp4"; fi
           if [ "$ITEM" = "rice" ]; then URL="https://github.com/${{ github.repository }}/releases/download/shop-reel-20261106-222702/reel_rice_split.mp4"; fi
@@ -61,6 +66,7 @@ jobs:
           if [ "$ITEM" = "omnia" ]; then URL="https://github.com/${{ github.repository }}/releases/download/shop-reel-20261110-100113/reel_omnia_split.mp4"; fi
           if [ "$ITEM" = "fel" ]; then URL="https://github.com/${{ github.repository }}/releases/download/shop-reel-20261111-110415/reel_fel_split.mp4"; fi
           if [ "$ITEM" = "il" ]; then URL="https://github.com/${{ github.repository }}/releases/download/shop-reel-20261112-124623/reel_il_split.mp4"; fi
+          if [ -n "$VIDEO_URL" ]; then URL="$VIDEO_URL"; fi
           ARGS=""
           if [ "$DRY" = "true" ]; then ARGS="--dry"; fi
           python shop_instagram.py --reel "$URL" --caption "$(cat _cap_${ITEM}_ig.txt)" $ARGS
@@ -70,6 +76,7 @@ jobs:
           SHOP_THREADS_ACCESS_TOKEN: ${{ secrets.SHOP_THREADS_ACCESS_TOKEN }}
           ITEM: ${{ steps.pick.outputs.item }}
           DRY: ${{ github.event.inputs.dry }}
+          VIDEO_URL: ${{ github.event.inputs.video_url }}
         run: |
           if [ "$ITEM" = "pot" ]; then URL="https://github.com/${{ github.repository }}/releases/download/shop-reel-20261106-222622/reel_pot_split.mp4"; fi
           if [ "$ITEM" = "rice" ]; then URL="https://github.com/${{ github.repository }}/releases/download/shop-reel-20261106-222702/reel_rice_split.mp4"; fi
@@ -77,6 +84,7 @@ jobs:
           if [ "$ITEM" = "omnia" ]; then URL="https://github.com/${{ github.repository }}/releases/download/shop-reel-20261110-100113/reel_omnia_split.mp4"; fi
           if [ "$ITEM" = "fel" ]; then URL="https://github.com/${{ github.repository }}/releases/download/shop-reel-20261111-110415/reel_fel_split.mp4"; fi
           if [ "$ITEM" = "il" ]; then URL="https://github.com/${{ github.repository }}/releases/download/shop-reel-20261112-124623/reel_il_split.mp4"; fi
+          if [ -n "$VIDEO_URL" ]; then URL="$VIDEO_URL"; fi
           ARGS=""
           if [ "$DRY" = "true" ]; then ARGS="--dry"; fi
           python shop_threads.py --text "$(cat _cap_${ITEM}_th.txt)" --video "$URL" --reply "$(cat _cap_${ITEM}_th_reply.txt)" $ARGS
