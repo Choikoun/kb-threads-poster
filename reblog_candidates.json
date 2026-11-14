@@ -5888,7 +5888,11 @@
     "likes": 25,
     "replies": 4,
     "media_type": "IMAGE",
-    "reblog_date": "2026-11-14"
+    "reblog_date": "2026-11-14",
+    "reposted": true,
+    "reposted_id": "17931042414180236",
+    "reposted_date": "2026-11-14",
+    "remixed": false
   },
   {
     "id": "18632493205016573",
@@ -5899,7 +5903,11 @@
     "likes": 3,
     "replies": 2,
     "media_type": "TEXT_POST",
-    "reblog_date": "2026-11-14"
+    "reblog_date": "2026-11-14",
+    "reposted": true,
+    "reposted_id": "17912868816664402",
+    "reposted_date": "2026-11-14",
+    "remixed": false
   },
   {
     "id": "18073129478536645",
@@ -5910,7 +5918,11 @@
     "likes": 0,
     "replies": 2,
     "media_type": "IMAGE",
-    "reblog_date": "2026-11-14"
+    "reblog_date": "2026-11-14",
+    "reposted": true,
+    "reposted_id": "18100990214098197",
+    "reposted_date": "2026-11-14",
+    "remixed": false
   },
   {
     "id": "17904826320578855",
@@ -5921,7 +5933,11 @@
     "likes": 2,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-11-14"
+    "reblog_date": "2026-11-14",
+    "reposted": true,
+    "reposted_id": "18175999867455440",
+    "reposted_date": "2026-11-14",
+    "remixed": false
   },
   {
     "id": "18057978401549854",
@@ -5932,7 +5948,11 @@
     "likes": 1,
     "replies": 2,
     "media_type": "IMAGE",
-    "reblog_date": "2026-11-14"
+    "reblog_date": "2026-11-14",
+    "reposted": true,
+    "reposted_id": "18067473254686095",
+    "reposted_date": "2026-11-14",
+    "remixed": false
   },
   {
     "id": "18098706002185363",
@@ -5943,7 +5963,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-11-14"
+    "reblog_date": "2026-11-14",
+    "reposted": true,
+    "reposted_id": "17960363868018169",
+    "reposted_date": "2026-11-14",
+    "remixed": false
   },
   {
     "id": "18632894830058037",
@@ -5954,7 +5978,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-11-14"
+    "reblog_date": "2026-11-14",
+    "reposted": true,
+    "reposted_id": "18169679983480294",
+    "reposted_date": "2026-11-14",
+    "remixed": false
   },
   {
     "id": "18409329313082756",
@@ -5965,7 +5993,11 @@
     "likes": 2,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-11-14"
+    "reblog_date": "2026-11-14",
+    "reposted": true,
+    "reposted_id": "17945215950380548",
+    "reposted_date": "2026-11-14",
+    "remixed": false
   },
   {
     "id": "18126919540692195",
@@ -5976,7 +6008,11 @@
     "likes": 1,
     "replies": 4,
     "media_type": "IMAGE",
-    "reblog_date": "2026-11-14"
+    "reblog_date": "2026-11-14",
+    "reposted": true,
+    "reposted_id": "18116434310151613",
+    "reposted_date": "2026-11-14",
+    "remixed": false
   },
   {
     "id": "17986912410061339",
@@ -6615,5 +6651,16 @@
     "replies": 3,
     "media_type": "IMAGE",
     "reblog_date": "2027-01-02"
+  },
+  {
+    "id": "17873995299642268",
+    "date": "2026-11-08",
+    "text": "증여세는 받은 날이 아니라 그달 말일부터 3개월을 세  국세청 안내 기준",
+    "full_text": "증여세는 받은 날이 아니라 그달 말일부터 3개월을 세\n\n국세청 안내 기준으로 증여일이 속한 달의 말일부터 3개월 이내에 신고해야 해. 6월 10일에 받았으면 9월 30일까지야.\n\n기한 안에 신고하면 신고세액공제 3%를 받고, 신고하지 않으면 일반 무신고 가산세 20%가 붙을 수 있어. 기한이 휴일이면 다음 날까지야.",
+    "views": 325,
+    "likes": 0,
+    "replies": 2,
+    "media_type": "TEXT_POST",
+    "reblog_date": "2027-01-09"
   }
 ]

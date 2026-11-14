@@ -3435,7 +3435,7 @@
     "type": "card",
     "selected_title": "국민연금반납금 자격·제외조건 카드",
     "date": "2026-10-28 22:07",
-    "reach": 2,
+    "reach": 3,
     "saved": 0,
     "likes": 0,
     "comments": 1
@@ -3568,7 +3568,7 @@
     "type": "card",
     "selected_title": "신생아취득세감면 블로그 요약 카드",
     "date": "2026-11-01 00:44",
-    "reach": 2,
+    "reach": 3,
     "saved": 0,
     "likes": 0,
     "comments": 1
@@ -3721,7 +3721,7 @@
     "type": "card",
     "selected_title": "67년생국민연금수령나이 블로그 요약 카드",
     "date": "2026-11-04 11:13",
-    "reach": 1,
+    "reach": 2,
     "saved": 0,
     "likes": 0,
     "comments": 1
@@ -3763,7 +3763,7 @@
     "type": "card",
     "selected_title": "부가세납부달 블로그 요약 카드",
     "date": "2026-11-05 10:14",
-    "reach": 2,
+    "reach": 4,
     "saved": 0,
     "likes": 0,
     "comments": 1
@@ -3784,7 +3784,7 @@
     "type": "reels",
     "selected_title": "‘세기의 이혼’ 재산분할금 9440억…최태원, SK㈜ 주식 매각 마무리",
     "date": "2026-11-05 18:46",
-    "reach": 45,
+    "reach": 47,
     "saved": 0,
     "likes": 0,
     "comments": 0
@@ -3794,7 +3794,7 @@
     "type": "card",
     "selected_title": "자녀상속세면제한도 블로그 요약 카드",
     "date": "2026-11-06 10:35",
-    "reach": 0,
+    "reach": 2,
     "saved": 0,
     "likes": 0,
     "comments": 1
@@ -3805,7 +3805,7 @@
     "selected_title": "자녀상속세면제한도 블로그 유도 릴스(애니메이션)",
     "engine": "kb_anim",
     "date": "2026-11-06 10:38",
-    "reach": 41,
+    "reach": 42,
     "saved": 0,
     "likes": 0,
     "comments": 1
@@ -3816,7 +3816,7 @@
     "selected_title": "자녀상속세면제한도 캐릭터 릴스(hypit 시험)",
     "engine": "hypit_character",
     "date": "2026-11-06 23:07",
-    "reach": 42,
+    "reach": 43,
     "saved": 0,
     "likes": 0,
     "comments": 1
@@ -3825,97 +3825,157 @@
     "ig_post_id": "18494775787109351",
     "type": "card",
     "selected_title": "상속세연부연납 블로그 요약 카드",
-    "date": "2026-11-07 15:36"
+    "date": "2026-11-07 15:36",
+    "reach": 3,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "18112501940340470",
     "type": "reels",
     "selected_title": "상속세연부연납 블로그 유도 릴스(애니메이션)",
     "engine": "kb_anim",
-    "date": "2026-11-07 15:37"
+    "date": "2026-11-07 15:37",
+    "reach": 44,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "18145095532717070",
     "type": "card",
     "selected_title": "증여세신고기한 블로그 요약 카드",
-    "date": "2026-11-08 14:57"
+    "date": "2026-11-08 14:57",
+    "reach": 1,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "18100373756414839",
     "type": "reels",
     "selected_title": "증여세신고기한 블로그 유도 릴스(애니메이션)",
     "engine": "kb_anim",
-    "date": "2026-11-08 14:59"
+    "date": "2026-11-08 14:59",
+    "reach": 43,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "18034323791681836",
     "type": "card",
     "selected_title": "대습상속 블로그 요약 카드",
-    "date": "2026-11-09 10:12"
+    "date": "2026-11-09 10:12",
+    "reach": 3,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "18103491833535104",
     "type": "reels",
     "selected_title": "대습상속 블로그 유도 릴스(애니메이션)",
     "engine": "kb_anim",
-    "date": "2026-11-09 10:14"
+    "date": "2026-11-09 10:14",
+    "reach": 40,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "18160788241519864",
     "type": "card",
     "selected_title": "과세전적부심사 블로그 요약 카드",
-    "date": "2026-11-10 09:41"
+    "date": "2026-11-10 09:41",
+    "reach": 4,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "18472901836138435",
     "type": "reels",
     "selected_title": "과세전적부심사 블로그 유도 릴스(애니메이션)",
     "engine": "kb_anim",
-    "date": "2026-11-10 09:43"
+    "date": "2026-11-10 09:43",
+    "reach": 75,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "18454233193131815",
     "type": "card",
     "selected_title": "종신보험 활용법 소재",
-    "date": "2026-11-11 03:46"
+    "date": "2026-11-11 03:46",
+    "reach": 2,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18120936608279153",
     "type": "card",
     "selected_title": "동거주택상속공제 블로그 요약 카드",
-    "date": "2026-11-11 11:14"
+    "date": "2026-11-11 11:14",
+    "reach": 1,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "17913038625560713",
     "type": "reels",
     "selected_title": "동거주택상속공제 블로그 유도 릴스(애니메이션)",
     "engine": "kb_anim",
-    "date": "2026-11-11 11:16"
+    "date": "2026-11-11 11:16",
+    "reach": 10,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "18119479391046940",
     "type": "card",
     "selected_title": "증여세연부연납 블로그 요약 카드",
-    "date": "2026-11-12 12:47"
+    "date": "2026-11-12 12:47",
+    "reach": 2,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "18061542530557697",
     "type": "reels",
     "selected_title": "증여세연부연납 블로그 유도 릴스(애니메이션)",
     "engine": "kb_anim",
-    "date": "2026-11-12 12:50"
+    "date": "2026-11-12 12:50",
+    "reach": 7,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "18134756300305482",
     "type": "reels",
     "selected_title": "달러종신보험 일시납 블로그 유도 릴스(애니메이션)",
     "engine": "kb_anim",
-    "date": "2026-11-13 13:08"
+    "date": "2026-11-13 13:08",
+    "reach": 16,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "17899229616419487",
     "type": "card",
     "selected_title": "달러종신보험 블로그 요약 카드",
-    "date": "2026-11-13 13:11"
+    "date": "2026-11-13 13:11",
+    "reach": 2,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   }
 ]
