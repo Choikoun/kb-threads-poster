@@ -1,5 +1,5 @@
 # 📰 일일 브리핑
-*2026-11-14 11:16 KST*
+*2026-11-15 10:47 KST*
 
 ---
 
@@ -11,28 +11,27 @@
 - [토스인슈어런스, 연말까지 신입 보험설계사 육성 ‘지원’](https://www.insnews.co.kr/news/articleView.html?idxno=93824)
 
 ## 💰 국내 경제·금융
-- [엔비디아 반사이익 기대했는데…브로드컴에 무슨 일이 [월가 업&다운]](https://www.hankyung.com/article/202611136086i)
-- ["엔비디아 11% 빠질 때 30% 급등"…돈 몰린 '이 종목'](https://www.hankyung.com/article/2026111360727)
-- ["땡큐 젠슨 황"…공포의 폭락장서 '매수 버튼' 광클한 개미들 [분석+]](https://www.hankyung.com/article/2026111347546)
-- ['조선미녀' 구다이글로벌, 코스피 상장 도전장](https://www.hankyung.com/article/2026111359051)
-- ["AI만 잘나가는 줄 알았는데"…영업익 91% 뛴다는 '이 회사'](https://www.hankyung.com/article/2026111358631)
+- ["믿을 건 대표지수뿐"...연금개미, 반도체 팔고 S&P500 샀다](https://www.hankyung.com/article/202611135506i)
+- [키옥시아株 2.2조엔 판 도시바…재상장에 베팅](https://www.hankyung.com/article/202611156927i)
+- [﻿AI 기술주, 언제 사야 하나 [조윤남의 사이클투자]](https://www.hankyung.com/article/202611107544i)
+- [변동성 장세 지속…'젠슨 황 퇴진' 엔비디아 실적에 쏠리는 눈 [주간전망]](https://www.hankyung.com/article/2026111355876)
+- ["주식 사려고 빚 냈어요"…7조 폭풍매수 몰린 '두 종목'](https://www.hankyung.com/article/2026111567997)
 
 ## 📈 주식·시장
+- [AI는 멈추지 않는다 … 헤지펀드 패닉이 만들어 준 기회](https://www.mk.co.kr/news/stock/12208238)
 - [“10년 모은 4억이 1억으로…” 반도체 레버리지 투자에 무너진 30대 직장인의 눈물](https://www.mk.co.kr/news/stock/12208838)
 - [AI 기판 수요에…이수페타시스, 한주 새 42% ‘껑충’ [이주의 Bull기둥]](https://www.mk.co.kr/news/stock/12208811)
 - [‘젠슨황 스캔들’에 서학개미들이 1000억원 ‘폭풍 매수’한 종목은](https://www.mk.co.kr/news/stock/12208780)
 - [폭등할 때 지켜보다가 반토막 때 샀다...국민연금 3분기 3900억 지른 종목](https://www.mk.co.kr/news/stock/12208726)
-- [깜짝 실적에도 석 달 새 40% ‘뚝’ … AI 인프라 ETF 저가 매수 기회 왔나](https://www.mk.co.kr/news/stock/12208142)
 
 ## 🌏 글로벌 경제·정세
-- [엔비디아 임원 줄줄이 썼다는…'젠슨 황 복귀 촉구 서한' 알고보니](https://www.hankyung.com/article/2026111463467)
-- [33년 AI 황제 날린 '차이나 리스크'…테슬라·애플은 버틸 수 있을까[김인엽의 AI프런티어]](https://www.hankyung.com/article/202611134479i)
-- [3년 만에 미국 전역 항공 '꽁꽁' 묶여…"관제시스템 장애"](https://www.hankyung.com/article/2026111462967)
-- [엔비디아 봐준 美 상무부 실세... 러트닉의 오른팔에 쏠리는 눈길[워싱턴나우+]](https://www.hankyung.com/article/202611135841i)
-- [트럼프 뜻 따랐다는 러트닉…엔비디아 스캔들에 '경질' 위기](https://www.hankyung.com/article/2026111461827)
+- [美연구소 "中딥시크·키미, 엔비디아 최첨단 칩으로 훈련"](https://www.hankyung.com/article/2026111568077)
+- [머스크 "젠슨 황 없는 엔비디아, 공급망 장악력 약화"](https://www.hankyung.com/article/2026111567777)
+- [트럼프·시진핑·푸틴 19일 한자리에…韓 "제2의 얄타 안 된다"](https://www.hankyung.com/article/202611146533i)
+- [트럼프 방중 앞두고…美 "엔비디아 문제 회담서 다루지 않을 듯"](https://www.hankyung.com/article/2026111464937)
+- [젠슨 황 여파에 美 '칩 규제' 칼바람…중국 "희토류 맞불"](https://www.hankyung.com/article/2026111464557)
 
 ## 🔥 팔로업 추천 (300회 이상)
-- 461회 [2026-11-05] 재건축 끝나면 당연히 내 집 가치가 오를 줄 알았지.  💡 조합원 한 명...
 - 325회 [2026-11-08] 증여세는 받은 날이 아니라 그달 말일부터 3개월을 세  국세청 안내 기준...
 
 ---
