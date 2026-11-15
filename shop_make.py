@@ -103,7 +103,34 @@ def img_checklist(o):
     return im
 
 
-KINDS = dict(bars=img_bars, kv=img_kv, table=img_table, cards=img_cards, checklist=img_checklist)
+def img_product(o):
+    """쿠팡 파트너스 API 의 상품 사진 카드. o: pid(상품번호), q(검색어), title(표시 이름), price(표시 문구), note(한 줄), rocket(bool)
+    사진은 쿠팡 파트너스 API 가 주는 productImage 만 쓴다(공식몰 이미지는 저작권 때문에 쓰지 않는다)."""
+    import io, requests
+    import coupang_api as ca
+    url = None
+    code, j = ca.search(o['q'], limit=10)
+    for x in j.get('data', {}).get('productData', []):
+        if str(x['productId']) == str(o['pid']):
+            url = x['productImage']
+            break
+    im, d = canvas(520)
+    d.rectangle([40, 40, W - 40, 480], fill=c("#FFFFFF"), outline=c(GOLD), width=3)
+    if url:
+        ph = Image.open(io.BytesIO(requests.get(url, timeout=20).content)).convert('RGB').resize((400, 400))
+        im.paste(ph, (70, 60))
+    else:
+        print('경고: 상품 사진 없음', o['pid'])
+    d.text((520, 110), o['title'], font=load_font('extrabold', 34), fill=c(NAVY))
+    d.text((520, 200), o['price'], font=load_font('extrabold', 52), fill=c(RED))
+    if o.get('rocket'):
+        d.text((520, 280), "로켓 표기", font=load_font('bold', 28), fill=c(GREEN))
+    d.text((520, 350), o.get('note', ''), font=load_font('regular', 26), fill=c(GRAY))
+    d.text((520, 430), "쿠팡 검색 목록 표기 · 옵션별로 달라요", font=load_font('regular', 22), fill=c(GRAY))
+    return im
+
+
+KINDS = dict(bars=img_bars, kv=img_kv, table=img_table, cards=img_cards, checklist=img_checklist, product=img_product)
 
 
 def make_images(spec, folder):
