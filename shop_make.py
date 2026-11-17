@@ -152,8 +152,8 @@ def make_reel_module(spec, folder):
     h = re.sub(r'""".*?"""', '"""' + doc + '"""', h, count=1, flags=re.S)
     h = h.replace("IMG = 'blog_images/shop_2026-11-06_타임모어C3'", "IMG = '" + folder.replace('\\', '/') + "'")
     h = h.replace("reel_c3_split.mp4", f"reel_{key}_split.mp4").replace("BG = '01_타임모어C3_대표이미지.jpg'", "BG = '" + spec['hero_file'] + "'")
-    cta = dict(kind='cta', title='모델별 정리와 링크는 블로그에', head="댓글에 '비교'", note='직접 써본 후기 아님 · 쿠팡 파트너스 수수료',
-               say='링크는 블로그에 있어요. 궁금하면 댓글에 비교라고 남겨 주세요.')
+    cta = dict(kind='cta', title='쿠팡 링크는 설명란에', head="설명란과 댓글 링크", note='직접 써본 후기 아님 · 쿠팡 파트너스 수수료',
+               say='쿠팡 링크는 설명란과 댓글에 있어요. 옵션과 가격은 페이지에서 확인하세요.')
     scenes = spec['reel']['scenes'] + [cta]
     code = h + 'SCENES = [\n' + ''.join('    ' + repr(s) + ',\n' for s in scenes) + ']\n' + tail
     ast.parse(code)
@@ -164,10 +164,10 @@ def make_reel_module(spec, folder):
 
 def make_captions(spec):
     key, cap = spec['key'], spec['caption']
-    ask = "궁금한 상품이 있으면 댓글에 '비교'라고 남겨 주세요."
-    ig = (f"[광고] 쿠팡 파트너스 수수료 포함\n{cap['headline']}\n{cap['detail']}\n{ask} 전체 정리는 블로그에 있어요.\n"
+    link = f"쿠팡 {cap['reply_name']} 보기: {spec['reply_link']}"
+    ig = (f"[광고] 쿠팡 파트너스 수수료 포함\n{cap['headline']}\n{cap['detail']}\n{link}\n"
           f"※ 직접 써본 후기가 아닌 가격 정보 정리예요. 이 포스팅은 쿠팡 파트너스 활동의 일환으로, 수수료를 제공받습니다.\n\n{cap['tags']} #광고\n")
-    th = f"{cap['headline']}\n{cap['detail_short']} {ask}\n전체 정리는 블로그에 있어요. 직접 써본 후기가 아닌 가격 정보 정리예요.\n"
+    th = f"{cap['headline']}\n{cap['detail_short']}\n쿠팡 링크는 아래 댓글에 있어요. 직접 써본 후기가 아닌 가격 정보 정리예요.\n"
     files = {f'_cap_{key}_ig.txt': ig, f'_cap_{key}_tt.txt': ig, f'_cap_{key}_th.txt': th,
              f'_cap_{key}_th_reply.txt': f"쿠팡 {cap['reply_name']} 보기 → {spec['reply_link']}\n"}
     for n, t in files.items():
