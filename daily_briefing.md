@@ -1,35 +1,35 @@
 # 📰 일일 브리핑
-*2026-11-16 10:54 KST*
+*2026-11-17 13:25 KST*
 
 ---
 
 ## 🔖 보험 동향
-- [보험판매전문회사 제도화, GA-보험업계 이해관계 해소될까](https://www.insnews.co.kr/news/articleView.html?idxno=93838)
-- [車보험 ‘8주룰’이후, 초과 치료 신청 하루 600건 육박](https://www.insnews.co.kr/news/articleView.html?idxno=93815)
-- [IFRS17 4년 만에 IFRS18… 보험사 ‘영업이익’ 보는 법 달라져](https://www.insnews.co.kr/news/articleView.html?idxno=93814)
-- [경기 기후보험 첫 성적표… 취약계층 보장 집중, 실효성은 과제](https://www.insnews.co.kr/news/articleView.html?idxno=93803)
-- [중국 보험업계, 저금리 속 보장 중심 전환 촉구](https://www.insnews.co.kr/news/articleView.html?idxno=93800)
+- [상반기 車보험 물적담보 지급보험금, 사고 줄었는데 1.6%↑](https://www.insnews.co.kr/news/articleView.html?idxno=93880)
+- [금감원, ‘불법리베이트’ 한국보험금융에 등록취소 사전통지](https://www.insnews.co.kr/news/articleView.html?idxno=93873)
+- [롯데손보, 보험영업 흑자에도 투자손실 확대… 누적 순손실 1122억원](https://www.insnews.co.kr/news/articleView.html?idxno=93871)
+- [인카금융서비스, 3분기 누적 매출 9878억원… 사상 최대 실적](https://www.insnews.co.kr/news/articleView.html?idxno=93868)
+- [DB손보, 암 치료비 보완하는 인터넷 전용 ‘미니암보험’ 출시](https://www.insnews.co.kr/news/articleView.html?idxno=93847)
 
 ## 💰 국내 경제·금융
-- [에스에프씨, 올해 두 번째 코스피 IPO 도전…유캐스트는 5G 특화망 승부수](https://www.hankyung.com/article/202611134631i)
-- ['AI 컨닝' 방지 대책에 지슨 '上'…세코닉스·나무가도 급등](https://www.hankyung.com/article/2026111682976)
-- [[마켓라이브] 외국인·기관 매도에 코스피 강보합…삼성SDI·태양광주 강세](https://www.hankyung.com/article/202611168242i)
-- [코스피, 美 반도체 급락에도…개인 매수에 보합권 등락](https://www.hankyung.com/article/2026111682746)
-- [영광와이케이엠씨, 코스닥 상장 첫날 30%대 급등](https://www.hankyung.com/article/2026111682376)
+- ["반도체 흔들리자 18조 몰렸다"…단기자금 피난처](https://www.hankyung.com/article/202611171574i)
+- [[오전시황] 코스피 5000선 회복…하이닉스·기판주 상승 전환](https://www.hankyung.com/article/202611171364i)
+- [[개장시황]美 AI 칩 규제·엔비디아 여파에 코스피 5010선 후퇴…옵토닉스·나노팀 급등](https://www.hankyung.com/article/202611171350i)
+- [美 억만장자들, 젠슨 황 퇴진 전 엔비디아 털기…소로스도 20% 줄여](https://www.hankyung.com/article/2026111712527)
+- ["AI 부정행위 탐지 기술 개발 착수"…지슨, 또 장중 상한가](https://www.hankyung.com/article/2026111710966)
 
 ## 📈 주식·시장
-- [앤트로픽 상장 D-3…지분 가치 재조명에 반등하는 SKT 주가](https://www.mk.co.kr/news/stock/12209726)
-- [[MK시그널] 애비애나 헬스케어 홀딩스 매도신호 포착, 수익률 72.6% 달성](https://www.mk.co.kr/news/stock/12209689)
-- [“AI 부정행위, 우리가 잡는다”…열화상·전파탐지株 폭등](https://www.mk.co.kr/news/stock/12209670)
-- [코스피, 외국인·기관 매도에 상승 출발 후 보합권 등락](https://www.mk.co.kr/news/stock/12209648)
-- [[MK시그널] 고영, AI 반도체 검사 장비와 의료용 로봇의 시너지 기대감 등에 주가 상승률 21.48% 기록](https://www.mk.co.kr/news/stock/12209607)
+- [[단독] 中 해커, 아세안정상회의 공격…외교안보 해킹 전쟁 본격화](https://www.mk.co.kr/news/stock/12211059)
+- [삼성중공업·삼성전자 우선주 담고…삼성전자 본주는 매도 [주식 초고수는 지금]](https://www.mk.co.kr/news/stock/12210998)
+- [[MK시그널] 하이어퀘스트 매도신호 포착, 수익률 34.8% 달성](https://www.mk.co.kr/news/stock/12210923)
+- [구심점 사라진 AI 생태계 … 앤트로픽·삼전닉스가 구해낼까](https://www.mk.co.kr/news/stock/12210916)
+- [SG, 3분기 매출 10.9% 증가·영업이익 흑자전환… “4분기 실적 개선 기대”](https://www.mk.co.kr/news/stock/12210912)
 
 ## 🌏 글로벌 경제·정세
-- [[속보] 중국도 미중러 정상회담 개최 발표…"19일 선전서 열려"](https://www.hankyung.com/article/2026111685637)
-- ['오락가락' 美 반도체 수출통제 배경에 앨리스 황 있었나..커지는 의문[워싱턴나우+]](https://www.hankyung.com/article/202611157430i)
-- [AI 피하려 가치주 샀는데…펀드 안에도 기술주 가득](https://www.hankyung.com/article/202611168033i)
-- [[밤 사이 해외뉴스] 엔비디아 스캔들 불똥, 러트닉에게…경질론 제기](https://www.hankyung.com/article/202611167941i)
-- [[밤 사이 해외뉴스 영상] 엔비디아 파문에…미국, AI 반도체 규제 강화 추진](https://www.hankyung.com/article/202611167948i)
+- [챗GPT가 결제까지 대신한다…오픈AI, 'AI 지갑' 출시](https://www.hankyung.com/article/202611171429i)
+- [AI 특수에 매출 24% 급증했는데…시스코 주가 5% 급락](https://www.hankyung.com/article/202611171615i)
+- ["올해 주가 54% 폭락했는데"…中 전기차 업체의 '반격'](https://www.hankyung.com/article/202611171599i)
+- [일본이 이렇게 가난했나…25년 만에 드러난 충격 현실  [도쿄나우]](https://www.hankyung.com/article/202611170783i)
+- ["이란, 미사일 최대 2500기"…美 정보당국, 전력 재건 확인](https://www.hankyung.com/article/202611171026i)
 
 ## 🔥 팔로업 추천 (300회 이상)
 - 325회 [2026-11-08] 증여세는 받은 날이 아니라 그달 말일부터 3개월을 세  국세청 안내 기준...
