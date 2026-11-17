@@ -158,7 +158,7 @@ JSON만 출력:
 
     for attempt in range(3):
         try:
-            resp = client.models.generate_content(model='gemini-flash-lite-latest', contents=prompt)
+            resp = client.models.generate_content(model='gemini-3.1-flash-lite', contents=prompt)
             raw = resp.text.strip()
             m = re.search(r'\{[\s\S]*\}', raw)
             if m:

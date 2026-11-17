@@ -93,7 +93,7 @@ JSON만 출력:
 
     try:
         client = genai.Client(api_key=gemini_key)
-        resp = client.models.generate_content(model='gemini-flash-lite-latest', contents=prompt)
+        resp = client.models.generate_content(model='gemini-3.1-flash-lite', contents=prompt)
         m = re.search(r'\{[\s\S]*\}', resp.text.strip())
         new_fmt = json.loads(m.group(), strict=False) if m else None
     except Exception as e:
@@ -244,7 +244,7 @@ def remix_text(original_text, gemini_key):
 - 상담/DM 유도 절대 금지
 
 메인 포스트 텍스트만 출력. JSON 없이."""
-        resp = client.models.generate_content(model='gemini-flash-lite-latest', contents=prompt)
+        resp = client.models.generate_content(model='gemini-3.1-flash-lite', contents=prompt)
         return resp.text.strip()
     except Exception as e:
         print(f'  리믹스 생성 실패: {e}')
@@ -640,7 +640,7 @@ def run_analysis():
 
 JSON만 출력:
 {{"main": "...", "comments": ["댓글1", "댓글2"]}}"""
-                resp = client.models.generate_content(model='gemini-flash-lite-latest', contents=followup_prompt)
+                resp = client.models.generate_content(model='gemini-3.1-flash-lite', contents=followup_prompt)
                 m = re.search(r'\{[\s\S]*\}', resp.text.strip())
                 if m:
                     content = json.loads(m.group())
@@ -682,7 +682,7 @@ JSON만 출력:
 
 전부 반말. 200자 이내로 간결하게."""
             client = genai.Client(api_key=gemini_key)
-            resp = client.models.generate_content(model='gemini-flash-lite-latest', contents=prompt)
+            resp = client.models.generate_content(model='gemini-3.1-flash-lite', contents=prompt)
             print(f"\n🤖 다음 주 콘텐츠 전략 (Gemini 인사이트)")
             print(f"{'-'*60}")
             print(resp.text.strip())
@@ -710,7 +710,7 @@ JSON만 출력:
 200자 이내, 전부 반말, 번호 붙여서."""
             try:
                 client_b = genai.Client(api_key=gemini_key)
-                resp_b = client_b.models.generate_content(model='gemini-flash-lite-latest', contents=bottom_prompt)
+                resp_b = client_b.models.generate_content(model='gemini-3.1-flash-lite', contents=bottom_prompt)
                 print(f'\n📉 저성과 포스트 Gemini 진단 (조회수 하위 3개)')
                 print(f'{"-"*60}')
                 print(resp_b.text.strip())
@@ -745,7 +745,7 @@ JSON 배열만 출력 (다른 텍스트 없이):
 [{{"num": 1, "type": "반전형"}}, ...]"""
             try:
                 client_h = genai.Client(api_key=gemini_key)
-                resp_h = client_h.models.generate_content(model='gemini-flash-lite-latest', contents=hook_prompt)
+                resp_h = client_h.models.generate_content(model='gemini-3.1-flash-lite', contents=hook_prompt)
                 m_h = re.search(r'\[[\s\S]*\]', resp_h.text.strip())
                 if m_h:
                     classifications = json.loads(m_h.group())
@@ -853,7 +853,7 @@ JSON 배열만 출력 (다른 텍스트 없이):
 전부 반말, 150자 이내."""
             try:
                 client_p = genai.Client(api_key=gemini_key)
-                resp_p = client_p.models.generate_content(model='gemini-flash-lite-latest', contents=pattern_prompt)
+                resp_p = client_p.models.generate_content(model='gemini-3.1-flash-lite', contents=pattern_prompt)
                 print(f'  Gemini 분석: {resp_p.text.strip()}')
             except Exception as e:
                 print(f'  댓글 패턴 분석 실패: {e}')
