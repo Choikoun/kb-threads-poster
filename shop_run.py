@@ -98,7 +98,11 @@ def s_yt():
     link_txt = '\n'.join(f'{t}\n{u}' for t, u in links) or spec['reply_link']
     desc = f"{c['headline']}\n{c['detail']}\n\n쿠팡 링크 (가격은 검색 목록 표기, 옵션과 배송비는 페이지에서 확인)\n{link_txt}\n\n※ 직접 써본 후기가 아닌 가격 정보 정리예요.\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 수수료를 제공받습니다.\n\n{c['tags']}\n"
     open(f'_yt_desc_{key}.txt', 'w', encoding='utf-8').write(desc)
-    out = sh([sys.executable, 'shop_yt_upload.py', f'{folder}/reel_{key}_split.mp4', spec['yt_title'], f'_yt_desc_{key}.txt'], timeout=900)
+    for attempt in (1, 2):  # 첫 시도가 크롬 연결 오류로 자주 실패(11-17, 11-18) → 한 번 더 시도
+        out = sh([sys.executable, 'shop_yt_upload.py', f'{folder}/reel_{key}_split.mp4', spec['yt_title'], f'_yt_desc_{key}.txt'], check=False, timeout=900)
+        if '게시된 동영상' in out:
+            break
+        print('유튜브 업로드 재시도', attempt, flush=True); time.sleep(20)
     if '게시된 동영상' not in out:
         sys.exit('유튜브 게시 확인 실패: ' + out[-400:])
     m = re.search(r'https://youtube\.com/shorts/[\w-]+', out)
