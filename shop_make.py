@@ -109,10 +109,13 @@ def img_product(o):
     import io, requests
     import coupang_api as ca
     url = None
-    code, j = ca.search(o['q'], limit=10)
-    for x in j.get('data', {}).get('productData', []):
-        if str(x['productId']) == str(o['pid']):
-            url = x['productImage']
+    for q in dict.fromkeys([o['q'], o['title'], f"{o['q']} {o['title']}"]):  # 못 찾으면 다른 검색어로 재시도
+        code, j = ca.search(q, limit=10)
+        for x in j.get('data', {}).get('productData', []):
+            if str(x['productId']) == str(o['pid']):
+                url = x['productImage']
+                break
+        if url:
             break
     im, d = canvas(520)
     d.rectangle([40, 40, W - 40, 480], fill=c("#FFFFFF"), outline=c(GOLD), width=3)
