@@ -612,16 +612,36 @@ JBI = {
                 '#간병인보험 #간병인사용일당 #간병비 #간병보험금청구'),
 }
 
+GYK = {
+    'card_data': {
+        'tag': '# 건강보험임의계속가입',
+        'hook_big': '퇴사하고 받은\n첫 고지서가 기한 시작',
+        'hook_sub': '국민건강보험법 제110조 기준 정리',
+        'points': [
+            {'title': '신청 자격', 'body': '퇴직 전 18개월 중\n직장가입 통산 1년 이상이면\n신청할 수 있습니다.'},
+            {'title': '신청 기한', 'body': '첫 지역보험료 고지일부터\n납부기한에서 2개월이\n지나기 전까지.'},
+            {'title': '유지 기간', 'body': '퇴직 다음 날부터\n최대 36개월까지\n자격을 유지합니다.'},
+            {'title': '첫 보험료', 'body': '신청 뒤 첫 보험료를\n제때 내지 않으면\n자격을 유지할 수 없습니다.'},
+        ],
+        'closing': '퇴직 날짜와 첫 고지서\n시점부터 적어 두세요.',
+        'cta': '프로필 링크 → 블로그에 전체 정리'
+    },
+    'caption': ('퇴사하고 첫 지역보험료 고지서를 받았다면 신청 기한이 시작된 것입니다.\n\n'
+                '국민건강보험법 제110조는 퇴직 전 18개월 중 직장가입 기간이 통산 1년 이상이면 임의계속가입을 신청할 수 있게 합니다. 기한은 첫 지역보험료를 고지받은 날부터 그 납부기한에서 2개월이 지나기 전까지이고, 자격은 퇴직 다음 날부터 최대 36개월입니다. 신청 뒤 첫 보험료를 제때 내지 않으면 자격을 유지할 수 없습니다.\n\n'
+                '내 자격과 보험료는 국민건강보험공단에 확인하세요. 자세한 정리는 블로그에 있습니다.\n\n'
+                '#건강보험임의계속가입 #퇴직후건강보험 #임의계속가입 #퇴사후건강보험'),
+}
+
 if __name__ == '__main__':
     mode = sys.argv[1] if len(sys.argv) > 1 else 'preview'
     if mode == 'preview':
-        for name, v in (('calc', CALC), ('gasu', GASU), ('gun', GUN), ('gaji', GAJI), ('nyun', NYUN), ('coin', COIN), ('coin2', COIN2), ('stock', STOCK), ('banap', BANAP), ('banap2', BANAP2), ('gaup', GAUP), ('nry', NRY), ('rpt', RPT), ('nbt', NBT), ('pibu', PIBU), ('sgb', SGB), ('npa', NPA), ('vat', VAT), ('inh', INH), ('ybn', YBN), ('gft', GFT), ('dae', DAE), ('jeok', JEOK), ('dong', DONG), ('gyp', GYP), ('dol', DOL), ('bdj', BDJ), ('jgs', JGS), ('jmh', JMH), ('jbi', JBI)):
+        for name, v in (('calc', CALC), ('gasu', GASU), ('gun', GUN), ('gaji', GAJI), ('nyun', NYUN), ('coin', COIN), ('coin2', COIN2), ('stock', STOCK), ('banap', BANAP), ('banap2', BANAP2), ('gaup', GAUP), ('nry', NRY), ('rpt', RPT), ('nbt', NBT), ('pibu', PIBU), ('sgb', SGB), ('npa', NPA), ('vat', VAT), ('inh', INH), ('ybn', YBN), ('gft', GFT), ('dae', DAE), ('jeok', JEOK), ('dong', DONG), ('gyp', GYP), ('dol', DOL), ('bdj', BDJ), ('jgs', JGS), ('jmh', JMH), ('jbi', JBI), ('gyk', GYK)):
             paths = cg.generate_card_set(v['card_data'], output_dir=f'_card_preview_{name}', category='insurance')
             print(name, len(paths), '장', paths[0])
     else:
-        v = {'calc': CALC, 'gasu': GASU, 'gun': GUN, 'gaji': GAJI, 'nyun': NYUN, 'coin': COIN, 'coin2': COIN2, 'stock': STOCK, 'banap': BANAP, 'banap2': BANAP2, 'gaup': GAUP, 'nry': NRY, 'rpt': RPT, 'nbt': NBT, 'pibu': PIBU, 'sgb': SGB, 'npa': NPA, 'vat': VAT, 'inh': INH, 'ybn': YBN, 'gft': GFT, 'dae': DAE, 'jeok': JEOK, 'dong': DONG, 'gyp': GYP, 'dol': DOL, 'bdj': BDJ, 'jgs': JGS, 'jmh': JMH, 'jbi': JBI}[mode]
+        v = {'calc': CALC, 'gasu': GASU, 'gun': GUN, 'gaji': GAJI, 'nyun': NYUN, 'coin': COIN, 'coin2': COIN2, 'stock': STOCK, 'banap': BANAP, 'banap2': BANAP2, 'gaup': GAUP, 'nry': NRY, 'rpt': RPT, 'nbt': NBT, 'pibu': PIBU, 'sgb': SGB, 'npa': NPA, 'vat': VAT, 'inh': INH, 'ybn': YBN, 'gft': GFT, 'dae': DAE, 'jeok': JEOK, 'dong': DONG, 'gyp': GYP, 'dol': DOL, 'bdj': BDJ, 'jgs': JGS, 'jmh': JMH, 'jbi': JBI, 'gyk': GYK}[mode]
         ig_id = ap.post_instagram(v)
         if not ig_id:
             print('발행 실패'); sys.exit(1)
-        ap.log_instagram(ig_id, {'calc': '연금 수령액 계산기 홍보', 'gasu': '가수금뜻 블로그 요약 카드', 'gun': '지역가입자건보료상한액 요약 카드', 'gaji': '가지급금뜻 블로그 요약 카드', 'nyun': '66년생국민연금수령나이 블로그 요약 카드', 'coin': '코인과세유예가능성 블로그 요약 카드', 'coin2': '코인 과세 손실 이월 불가 카드', 'stock': '비상장주식양도세율 블로그 요약 카드', 'banap': '국민연금반납금 블로그 요약 카드', 'banap2': '국민연금반납금 자격·제외조건 카드', 'gaup': '가업상속공제개정안 블로그 요약 카드', 'nry': '노란우산해지환급금 블로그 요약 카드', 'rpt': '퇴직연금세금몇프로 블로그 요약 카드', 'nbt': '신생아취득세감면 블로그 요약 카드', 'pibu': '직장피부양자뜻 블로그 요약 카드', 'sgb': '상속재산분할협의서예시 블로그 요약 카드', 'npa': '67년생국민연금수령나이 블로그 요약 카드', 'vat': '부가세납부달 블로그 요약 카드', 'inh': '자녀상속세면제한도 블로그 요약 카드', 'ybn': '상속세연부연납 블로그 요약 카드', 'gft': '증여세신고기한 블로그 요약 카드', 'dae': '대습상속 블로그 요약 카드', 'jeok': '과세전적부심사 블로그 요약 카드', 'dong': '동거주택상속공제 블로그 요약 카드', 'gyp': '증여세연부연납 블로그 요약 카드', 'dol': '달러종신보험 블로그 요약 카드', 'bdj': '부담부증여 블로그 요약 카드', 'jgs': '퇴직금중간정산 블로그 요약 카드', 'jmh': '증여세면제한도 블로그 요약 카드', 'jbi': '간병인보험 블로그 요약 카드'}[mode])
+        ap.log_instagram(ig_id, {'calc': '연금 수령액 계산기 홍보', 'gasu': '가수금뜻 블로그 요약 카드', 'gun': '지역가입자건보료상한액 요약 카드', 'gaji': '가지급금뜻 블로그 요약 카드', 'nyun': '66년생국민연금수령나이 블로그 요약 카드', 'coin': '코인과세유예가능성 블로그 요약 카드', 'coin2': '코인 과세 손실 이월 불가 카드', 'stock': '비상장주식양도세율 블로그 요약 카드', 'banap': '국민연금반납금 블로그 요약 카드', 'banap2': '국민연금반납금 자격·제외조건 카드', 'gaup': '가업상속공제개정안 블로그 요약 카드', 'nry': '노란우산해지환급금 블로그 요약 카드', 'rpt': '퇴직연금세금몇프로 블로그 요약 카드', 'nbt': '신생아취득세감면 블로그 요약 카드', 'pibu': '직장피부양자뜻 블로그 요약 카드', 'sgb': '상속재산분할협의서예시 블로그 요약 카드', 'npa': '67년생국민연금수령나이 블로그 요약 카드', 'vat': '부가세납부달 블로그 요약 카드', 'inh': '자녀상속세면제한도 블로그 요약 카드', 'ybn': '상속세연부연납 블로그 요약 카드', 'gft': '증여세신고기한 블로그 요약 카드', 'dae': '대습상속 블로그 요약 카드', 'jeok': '과세전적부심사 블로그 요약 카드', 'dong': '동거주택상속공제 블로그 요약 카드', 'gyp': '증여세연부연납 블로그 요약 카드', 'dol': '달러종신보험 블로그 요약 카드', 'bdj': '부담부증여 블로그 요약 카드', 'jgs': '퇴직금중간정산 블로그 요약 카드', 'jmh': '증여세면제한도 블로그 요약 카드', 'jbi': '간병인보험 블로그 요약 카드', 'gyk': '건강보험임의계속가입 블로그 요약 카드'}[mode])
         print('IG 발행 완료:', ig_id)
