@@ -1,0 +1,43 @@
+{
+  "key": "mw",
+  "post_key": "lg_mwj25e",
+  "sub_key": "mw",
+  "keyword": "MWJ25E",
+  "title": "LG 전자레인지 MWJ25E 가격, LG전자 공식몰·쿠팡 비교",
+  "date": "2026-11-19",
+  "hero_query": "modern kitchen microwave oven",
+  "hero_file": "01_MWJ25E_대표이미지.jpg",
+  "yt_title": "LG 전자레인지 MWJ25E 공식몰 쿠팡 가격 차이 #shorts",
+  "reply_link": "https://link.coupang.com/a/iNkm7YXXiu",
+  "images": [
+    {"kind": "cards", "file": "02_MWJ25E_한눈에.png", "title": "LG 전자레인지 한눈에 보기", "sub": "LG전자 공식몰·쿠팡 검색 목록 · 2026-11-19 조회",
+     "rows": [["MWJ25E 공식몰", "260,000원 (할인 전 280,000원)"], ["MWJ25E 쿠팡 목록", "216,340원 ~ 485,100원"], ["MWJ20EDN 공식몰 / 쿠팡", "152,000원 / 237,500원"]]},
+    {"kind": "table", "file": "03_MWJ25E_공식몰가격.png", "title": "LG전자 공식몰 전자레인지 가격", "sub": "lge.co.kr · 크리스탈 베이지 · 2026-11-19 조회", "hdr": ["모델", "용량(가용용량)", "공식몰 가격(할인 전)"],
+     "rows": [["MWJ25E", "25L (13L)", "260,000원 (280,000원)"], ["MWJ23EI", "23L (13L)", "190,000원 (240,000원)"], ["MWJ20EDN", "20L (11L)", "152,000원 (179,000원)"]]},
+    {"kind": "kv", "file": "04_MWJ25E_공식사양.png", "title": "MWJ25E 공식 사양", "sub": "LG전자 공식몰 상품 페이지 · 2026-11-19 조회",
+     "rows": [["정격 고주파 출력", "1000W"], ["소비전력", "1,570W"], ["정격전압", "220V / 60Hz"], ["제품 크기 (WxHxD)", "476 x 272 x 370mm"], ["무게", "8.8kg"], ["동일 모델 출시년월", "2022년 3월"]]},
+    {"kind": "product", "file": "05_MWJ25E_쿠팡MWJ25E.png", "pid": 8772016544, "q": "LG 전자레인지 MWJ25E", "title": "LG MWJ25E 25L", "price": "216,340원~", "note": "옵션별 · 249,000원까지"},
+    {"kind": "product", "file": "06_MWJ25E_쿠팡MWJ25E높음.png", "pid": 9806329123, "q": "MWJ25E", "title": "LG전자 MWJ25E", "price": "485,100원", "note": "같은 모델명 · 공식몰 +225,100원"},
+    {"kind": "product", "file": "07_MWJ25E_쿠팡MWJ23EI.png", "pid": 9809128352, "q": "LG 전자레인지 MWJ23EI", "title": "LG MWJ23EI", "price": "190,340원", "note": "공식몰 190,000원"},
+    {"kind": "product", "file": "08_MWJ25E_쿠팡MWJ20EDN.png", "pid": 9797398871, "q": "LG전자 MWJ20EDN 크리스탈베이지", "title": "LG MWJ20EDN", "price": "237,500원", "note": "공식몰 152,000원"},
+    {"kind": "checklist", "file": "09_MWJ25E_확인체크리스트.png", "sub": "같은 모델명도 구성과 판매자에 따라 가격이 달라요",
+     "items": ["모델명 MWJ25E·23EI·20EDN", "용량과 설치 공간 크기", "설치비 배송비 폐가전 수거", "판매자와 보증 A/S", "본품 한 대인지 구성품", "반품 조건"]}
+  ],
+  "reel": {"scenes": [
+    {"kind": "split", "title": "LG 전자레인지 MWJ20EDN", "head": "공식몰과 쿠팡 표기 차이", "note": "LG전자 공식몰·쿠팡 검색 목록 · 2026-11-19 조회",
+     "L": {"name": "LG 공식몰", "price": "152,000원", "sub": "20L", "win": true}, "R": {"name": "쿠팡 목록", "price": "237,500원", "sub": "85,500원 높음", "bad": true},
+     "say": "LG 전자레인지 MWJ20EDN은 공식몰 152,000원, 쿠팡 목록은 237,500원으로 표기됐어요."},
+    {"kind": "split", "title": "LG 전자레인지 MWJ25E", "head": "쿠팡 같은 모델명 가격 차이", "note": "쿠팡 검색 목록 · 구성은 확인하지 못했어요",
+     "L": {"name": "쿠팡 최저", "price": "216,340원", "sub": "25L", "win": true}, "R": {"name": "쿠팡 최고", "price": "485,100원", "sub": "같은 모델명", "bad": true},
+     "say": "MWJ25E는 쿠팡에서 21만 원대부터 48만 원대까지 표기됐어요."},
+    {"kind": "big", "title": "결제 전 확인", "head": "모델명과 구성품", "note": "공식몰 MWJ25E는 260,000원이에요", "lines": ["모델명 MWJ25E", "본품 한 대인지", "설치비와 배송 조건"],
+     "say": "모델명과 구성품, 설치 조건을 먼저 확인하세요."}
+  ]},
+  "caption": {
+    "headline": "LG 전자레인지 MWJ20EDN은 공식몰 152,000원인데, 쿠팡 검색 목록에서는 237,500원으로 표기됐어요 (2026-11-19 조회)",
+    "detail": "MWJ25E는 공식몰 260,000원, 쿠팡 목록은 216,340원부터 485,100원까지 달랐어요. 쿠팡의 구성과 설치 조건은 확인하지 못했어요.",
+    "detail_short": "MWJ25E는 공식몰 260,000원, 쿠팡 목록은 216,340원부터 485,100원이었어요.",
+    "tags": "#LG전자레인지 #MWJ25E #전자레인지 #가격비교",
+    "reply_name": "LG 전자레인지 MWJ25E"
+  }
+}
