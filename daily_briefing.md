@@ -1,35 +1,38 @@
 # 📰 일일 브리핑
-*2026-11-18 12:39 KST*
+*2026-11-19 12:14 KST*
 
 ---
 
 ## 🔖 보험 동향
-- [카카오페이손해보험, 서민금융진흥원 ‘사람 살리는 금융’ 캠페인 동참](https://www.insnews.co.kr/news/articleView.html?idxno=93914)
-- [고의사고·허위입원으로 보험금 편취… 자동차 보험사기 주의보](https://www.insnews.co.kr/news/articleView.html?idxno=93904)
-- [한화손보, 글로벌 사이버 보안 기업 ‘시큐리티스코어카드’와 사이버보험 위험관리 강화](https://www.insnews.co.kr/news/articleView.html?idxno=93910)
-- [NH농협손해보험, 화훼 농가 찾아 ‘농촌 일손돕기’ 실시](https://www.insnews.co.kr/news/articleView.html?idxno=93908)
-- [화재보험협회, 보조배터리 과충전 위험 재현… 화재 예방·대피 강조](https://www.insnews.co.kr/news/articleView.html?idxno=93887)
+- [저축성보험 만기 지나도 3년 이내 ‘연금전환’ 가능](https://www.insnews.co.kr/news/articleView.html?idxno=93930)
+- [KB라이프, 법인보험대리점 6개사와 ‘금융소비자보호’ 협력 강화](https://www.insnews.co.kr/news/articleView.html?idxno=93937)
+- [삼성화재, ‘Global AIDC Forum 2026’ 개최… AI 인프라 위험관리 해법 모색](https://www.insnews.co.kr/news/articleView.html?idxno=93919)
+- [한국보험금융 등록취소 사전통지 후폭풍… 6000명 영업조직 촉각](https://www.insnews.co.kr/news/articleView.html?idxno=93924)
+- [우리금융, 영업부터 내부통제까지… ‘AI DAY’ 통해 계열사 AI 활용 사례 공유](https://www.insnews.co.kr/news/articleView.html?idxno=93920)
 
 ## 💰 국내 경제·금융
-- [엔비디아 '반짝 효과'였나…코스피, 장중 하락 전환해 5000선 아래로](https://www.hankyung.com/article/2026111843096)
-- ["엔비디아, 현명한 선택"…젠슨 황 빈 자리 메운 3명의 인물 [어닝콜 하이라이트]](https://www.hankyung.com/article/202611183265i)
-- [초고수들, 반도체 다시 사들여…제약·바이오 차익실현](https://www.hankyung.com/article/202611184151i)
-- [[오전 시황] 코스피 상승폭 0.74%로 축소…반도체 초반 급등 반납](https://www.hankyung.com/article/202611184191i)
-- [데이터센터 핵심 부품 중국산 막히자 '이 종목' 날았다](https://www.hankyung.com/article/202611184066i)
+- ["바닥 어디냐"…증권주, 업황 둔화·과징금 이중고에 '추락' [분석+]](https://www.hankyung.com/article/2026111962616)
+- ["중국인들 한국 대거 몰려온다"…여행·항공·카지노주 급등세](https://www.hankyung.com/article/2026111968666)
+- [[개장시황] 또 다시 5000선 내준 코스피… '한한령 완화'에 콘텐츠·여행주는 급등](https://www.hankyung.com/article/202611196760i)
+- [美 긴축 우려에 코스피 보합권…한한령 해제 수혜주 큰 폭 상승](https://www.hankyung.com/article/2026111967756)
+- [코스피, 상승 출발 후 보합권서 등락](https://www.hankyung.com/article/2026111966926)
 
 ## 📈 주식·시장
-- [[MK시그널] J. 질 매도신호 포착, 수익률 61.5% 달성](https://www.mk.co.kr/news/stock/12212146)
-- [엔비디아 깜짝 실적에 반도체 반등 … 이제 공은 앤트로픽으로](https://www.mk.co.kr/news/stock/12212141)
-- [[MK시그널] HD현대마린솔루션, 선박 AM 및 친환경 개조 사업의 성장 모멘텀 부각 등에 주가 상승률 12.99%](https://www.mk.co.kr/news/stock/12212123)
-- [엔비디아 ‘깜짝실적’에 삼전닉스 상승…하루 만에 장중 5100선 탈환](https://www.mk.co.kr/news/stock/12212109)
-- [삼성전기, 엔비디아와 협력 강화 소식에 장 초반 9%대 ‘쑥’](https://www.mk.co.kr/news/stock/12212106)
+- [퍼미라 “AI 시대 ‘사업 재설계’가 PE 성패 가른다” [GAII 2026 Live]](https://www.mk.co.kr/news/stock/12213493)
+- [칼라일 “AI 시대 PEF 경쟁력, AUM 아닌 데이터에” [GAII 2026 Live]](https://www.mk.co.kr/news/stock/12213436)
+- [수능날이면 들썩인다는 교육주…올해는 입시주보다 학습지주가 더 올랐다](https://www.mk.co.kr/news/stock/12213392)
+- [[MK시그널] 파마리서치, 리쥬란 해외 수출 호조와 성장 모멘텀 부각 등에 주가 상승세... MK시그널 추천 후 상승률 7.19% 기록](https://www.mk.co.kr/news/stock/12213372)
+- [[MK시그널] 아이큐비아 홀딩스 매도신호 포착, 수익률 38.7% 달성](https://www.mk.co.kr/news/stock/12213322)
 
 ## 🌏 글로벌 경제·정세
-- [젠슨 황 "복귀 원해" vs 이사회 "고려 안해"…엔비디아 실적은 서프라이즈 [박신영의 월가 아나토미]](https://www.hankyung.com/article/202611184351i)
-- [[속보] 시진핑 "WTO 핵심으로 다자무역 수호…자유·개방 시장 지지"](https://www.hankyung.com/article/2026111843837)
-- [美 Fed, AI가 경제에 미칠 충격 분석 착수…고용·증시 영향 시나리오 검토](https://www.hankyung.com/article/202611183961i)
-- [[속보] 루비오 美국무 "트럼프와 김정은의 만남, 진지한 아이디어"](https://www.hankyung.com/article/2026111840847)
-- [AI주 사두면 돈 벌던 시대 끝나…월가 투자전략 전환](https://www.hankyung.com/article/202611183882i)
+- ["돈키호테는 승승장구하는데"…일본 슈퍼마켓의 눈물](https://www.hankyung.com/article/2026111968907)
+- [트럼프·푸틴 다시 마주 앉는다…우크라이나 전쟁 종식 물꼬 틀까](https://www.hankyung.com/article/2026111968217)
+- [[속보] 트럼프 "시진핑과 젠슨황 문제 논의 안해"](https://www.hankyung.com/article/2026111965997)
+- [앤트로픽, 140조원 조달…스페이스X 제치고 역대 최대 IPO](https://www.hankyung.com/article/202611196515i)
+- [北도 놀란 트럼프 '성의 표시'…美, 유엔 인권결의안 채택 거부 [이상은의 워싱턴나우]](https://www.hankyung.com/article/202611196127i)
+
+## 🔥 팔로업 추천 (300회 이상)
+- 367회 [2026-11-18] 평생 살 집이라 생각하고 10년 넘게 꾹 참고 버텼는데.  오히려 1세대...
 
 ---
 *총 60개 기사 수집됨*
