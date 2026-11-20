@@ -31,6 +31,23 @@ for _ in range(30):
     if '/draft/' in d.current_url and d.find_elements(By.CSS_SELECTOR, 'textarea'):
         break
 time.sleep(5)
+
+
+def dismiss_popups():
+    """업로드 직후 뜨는 안내 팝업(PopUp_overlay)이 클릭을 가로막으면 확인/닫기 버튼으로 닫는다."""
+    for _ in range(4):
+        ov = [o for o in d.find_elements(By.CSS_SELECTOR, '[class*=PopUp_overlay]') if o.is_displayed()]
+        if not ov:
+            return
+        print('팝업:', ov[0].text[:200].replace('\n', ' | '))
+        btns = [b for b in d.find_elements(By.CSS_SELECTOR, '[class*=PopUp] button') if b.is_displayed()]
+        pick = next((b for b in btns if b.text.strip() in ('확인', '닫기', '다음에', '건너뛰기', '나중에')), btns[0] if btns else None)
+        if pick is None:
+            return
+        click(pick); time.sleep(2)
+
+
+dismiss_popups()
 ta = d.find_element(By.CSS_SELECTOR, 'textarea'); ta.click(); ta.send_keys(desc)
 covers = d.find_elements(By.CSS_SELECTOR, 'img[class*=coverImg]')
 if covers:
