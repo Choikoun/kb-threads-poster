@@ -43,7 +43,7 @@ def main():
     posts = json.load(open('blog_posts.json', encoding='utf-8'))
     if any(p['key'] == cfg['key'] for p in posts):
         print('이미 처리됨(blog_posts.json에 있음), 중복 방지로 종료'); return 0
-    url = find_url(cfg['title_match'])
+    url = cfg.get('naver_url') or find_url(cfg['title_match'])  # 기존 글 개정은 RSS에 안 뜨므로 URL 직접 지정
     if not url:
         nb = cfg.get('not_before', '00:00'); h, m = map(int, nb.split(':'))
         now = datetime.now(KST); limit = now.replace(hour=h, minute=m, second=0, microsecond=0) + timedelta(hours=3)
