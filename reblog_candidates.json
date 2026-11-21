@@ -6023,7 +6023,11 @@
     "likes": 2,
     "replies": 4,
     "media_type": "IMAGE",
-    "reblog_date": "2026-11-21"
+    "reblog_date": "2026-11-21",
+    "reposted": true,
+    "reposted_id": "17955715542295157",
+    "reposted_date": "2026-11-21",
+    "remixed": true
   },
   {
     "id": "18338768578254645",
@@ -6034,7 +6038,11 @@
     "likes": 0,
     "replies": 2,
     "media_type": "IMAGE",
-    "reblog_date": "2026-11-21"
+    "reblog_date": "2026-11-21",
+    "reposted": true,
+    "reposted_id": "17874762099643852",
+    "reposted_date": "2026-11-21",
+    "remixed": true
   },
   {
     "id": "18174687958456447",
@@ -6045,7 +6053,11 @@
     "likes": 0,
     "replies": 4,
     "media_type": "IMAGE",
-    "reblog_date": "2026-11-21"
+    "reblog_date": "2026-11-21",
+    "reposted": true,
+    "reposted_id": "18129042520681262",
+    "reposted_date": "2026-11-21",
+    "remixed": true
   },
   {
     "id": "18105722492219283",
@@ -6056,7 +6068,11 @@
     "likes": 0,
     "replies": 1,
     "media_type": "TEXT_POST",
-    "reblog_date": "2026-11-21"
+    "reblog_date": "2026-11-21",
+    "reposted": true,
+    "reposted_id": "18352960321284105",
+    "reposted_date": "2026-11-21",
+    "remixed": true
   },
   {
     "id": "17971774851164344",
@@ -6067,7 +6083,11 @@
     "likes": 0,
     "replies": 2,
     "media_type": "IMAGE",
-    "reblog_date": "2026-11-21"
+    "reblog_date": "2026-11-21",
+    "reposted": true,
+    "reposted_id": "18143685919617003",
+    "reposted_date": "2026-11-21",
+    "remixed": true
   },
   {
     "id": "17936519970124126",
@@ -6078,7 +6098,11 @@
     "likes": 0,
     "replies": 2,
     "media_type": "IMAGE",
-    "reblog_date": "2026-11-21"
+    "reblog_date": "2026-11-21",
+    "reposted": true,
+    "reposted_id": "18174489979466778",
+    "reposted_date": "2026-11-21",
+    "remixed": true
   },
   {
     "id": "18226724455329414",
@@ -6089,7 +6113,11 @@
     "likes": 0,
     "replies": 4,
     "media_type": "IMAGE",
-    "reblog_date": "2026-11-21"
+    "reblog_date": "2026-11-21",
+    "reposted": true,
+    "reposted_id": "17917406295558007",
+    "reposted_date": "2026-11-21",
+    "remixed": true
   },
   {
     "id": "17963067219206737",
@@ -6100,7 +6128,11 @@
     "likes": 0,
     "replies": 5,
     "media_type": "IMAGE",
-    "reblog_date": "2026-11-21"
+    "reblog_date": "2026-11-21",
+    "reposted": true,
+    "reposted_id": "18094608482220507",
+    "reposted_date": "2026-11-21",
+    "remixed": true
   },
   {
     "id": "18078770954381119",
@@ -6111,7 +6143,11 @@
     "likes": 0,
     "replies": 2,
     "media_type": "TEXT_POST",
-    "reblog_date": "2026-11-21"
+    "reblog_date": "2026-11-21",
+    "reposted": true,
+    "reposted_id": "18034948682857895",
+    "reposted_date": "2026-11-21",
+    "remixed": true
   },
   {
     "id": "17988131880051439",
@@ -6122,7 +6158,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "TEXT_POST",
-    "reblog_date": "2026-11-21"
+    "reblog_date": "2026-11-21",
+    "reposted": true,
+    "reposted_id": "18123212410988067",
+    "reposted_date": "2026-11-21",
+    "remixed": true
   },
   {
     "id": "18377709733233999",
@@ -6133,7 +6173,11 @@
     "likes": 0,
     "replies": 4,
     "media_type": "IMAGE",
-    "reblog_date": "2026-11-21"
+    "reblog_date": "2026-11-21",
+    "reposted": true,
+    "reposted_id": "18115127735606551",
+    "reposted_date": "2026-11-21",
+    "remixed": true
   },
   {
     "id": "17905882284567776",
@@ -6144,7 +6188,11 @@
     "likes": 0,
     "replies": 5,
     "media_type": "IMAGE",
-    "reblog_date": "2026-11-21"
+    "reblog_date": "2026-11-21",
+    "reposted": true,
+    "reposted_id": "17916780510287719",
+    "reposted_date": "2026-11-21",
+    "remixed": true
   },
   {
     "id": "18127036249885481",
@@ -6662,5 +6710,49 @@
     "replies": 2,
     "media_type": "TEXT_POST",
     "reblog_date": "2027-01-09"
+  },
+  {
+    "id": "18201927472387939",
+    "date": "2026-11-19",
+    "text": "현금 200억 가까이를 한 번에 태우는 결정, 아무나 못 해.  1. 개",
+    "full_text": "현금 200억 가까이를 한 번에 태우는 결정, 아무나 못 해.\n\n1. 개인 명의로 건물을 올리면 나중에 매각할 때 양도세 부담이 상당해.\n2. 반대로 법인을 활용해 취득하면 비용 처리나 지분 분산 측면에서 완전히 다른 계산기가 돌아가.\n3. 어떤 자산가들은 개인 자금을 투입하기보다 가족 법인을 통해 자산을 취득하는 전략을 쓰기도 해.\n\n개인의 현금인지 법인의 자본인지에 따라 10년 뒤 쥐고 있는 결과값이 달라져.\n\n#법인 #증여",
+    "views": 21851,
+    "likes": 19,
+    "replies": 4,
+    "media_type": "IMAGE",
+    "reblog_date": "2027-01-16"
+  },
+  {
+    "id": "17937074388144104",
+    "date": "2026-11-20",
+    "text": "부모님 병원비 혼자 다 냈어도, 형제들은 자기 상속권만 챙기려 할 거야.",
+    "full_text": "부모님 병원비 혼자 다 냈어도, 형제들은 자기 상속권만 챙기려 할 거야.\n\n1. 기여분은 법원이 알아서 계산해주지 않아 무조건 입증해야 해.\n2. 병원비 지출 내역이랑 간병 기록을 꼼꼼히 모아두는 게 첫 번째야.\n3. 사후에 싸우면 법정에서 훨씬 더 큰 비용이랑 시간이 깨질 수밖에 없어.\n\n나중에 억울한 일 겪지 않으려면 지금 미리 기록해둬.\n\n#증여 #상속",
+    "views": 2015,
+    "likes": 3,
+    "replies": 4,
+    "media_type": "IMAGE",
+    "reblog_date": "2027-01-16"
+  },
+  {
+    "id": "18125242361319452",
+    "date": "2026-11-20",
+    "text": "평생 고소득 전문직으로 살았어도 은퇴 후 세금 폭탄은 피할 수 없어.  ",
+    "full_text": "평생 고소득 전문직으로 살았어도 은퇴 후 세금 폭탄은 피할 수 없어.\n\n1. 고소득 전문직은 은퇴 후에도 연금과 금융소득이 합산돼 최고세율 구간에 머물러.\n2. 지방 의료 현장처럼 몸을 써서 버는 소득은 근로소득으로 분류되어 종합소득세를 더 가중시켜.\n3. 사전에 소득 구조를 비과세나 분리과세 중심으로 설계하지 않으면 사실상 반토막 난 실수령액을 마주하게 돼.\n\n자산의 원금은 그대로인데 세금으로만 수익이 깎여나가는 구조, 꼼꼼히 뜯어볼 시점이야.\n\n#증여 #상속",
+    "views": 411,
+    "likes": 0,
+    "replies": 5,
+    "media_type": "IMAGE",
+    "reblog_date": "2027-01-16"
+  },
+  {
+    "id": "18442970908183771",
+    "date": "2026-11-18",
+    "text": "평생 살 집이라 생각하고 10년 넘게 꾹 참고 버텼는데.  오히려 1세대",
+    "full_text": "평생 살 집이라 생각하고 10년 넘게 꾹 참고 버텼는데.\n\n오히려 1세대 1주택 비과세 혜택에서 예기치 못한 ‘장특공’ 한도 벽에 부딪히는 분들이 계셔.\n\n📌 10년 보유의 결실이 예상치 못한 세금 고지서로 돌아올 때 느껴지는 그 허탈함은 정말 남다를 거야.\n\n#증여 #상속",
+    "views": 402,
+    "likes": 0,
+    "replies": 5,
+    "media_type": "IMAGE",
+    "reblog_date": "2027-01-16"
   }
 ]

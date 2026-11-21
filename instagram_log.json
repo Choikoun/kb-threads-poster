@@ -3826,7 +3826,7 @@
     "type": "card",
     "selected_title": "상속세연부연납 블로그 요약 카드",
     "date": "2026-11-07 15:36",
-    "reach": 3,
+    "reach": 4,
     "saved": 0,
     "likes": 0,
     "comments": 1
@@ -3847,7 +3847,7 @@
     "type": "card",
     "selected_title": "증여세신고기한 블로그 요약 카드",
     "date": "2026-11-08 14:57",
-    "reach": 1,
+    "reach": 2,
     "saved": 0,
     "likes": 0,
     "comments": 1
@@ -3920,7 +3920,7 @@
     "type": "card",
     "selected_title": "동거주택상속공제 블로그 요약 카드",
     "date": "2026-11-11 11:14",
-    "reach": 1,
+    "reach": 2,
     "saved": 0,
     "likes": 0,
     "comments": 1
@@ -3931,7 +3931,7 @@
     "selected_title": "동거주택상속공제 블로그 유도 릴스(애니메이션)",
     "engine": "kb_anim",
     "date": "2026-11-11 11:16",
-    "reach": 10,
+    "reach": 11,
     "saved": 0,
     "likes": 0,
     "comments": 1
@@ -3941,7 +3941,7 @@
     "type": "card",
     "selected_title": "증여세연부연납 블로그 요약 카드",
     "date": "2026-11-12 12:47",
-    "reach": 2,
+    "reach": 3,
     "saved": 0,
     "likes": 0,
     "comments": 1
@@ -3963,7 +3963,7 @@
     "selected_title": "달러종신보험 일시납 블로그 유도 릴스(애니메이션)",
     "engine": "kb_anim",
     "date": "2026-11-13 13:08",
-    "reach": 16,
+    "reach": 17,
     "saved": 0,
     "likes": 0,
     "comments": 1
@@ -3973,7 +3973,7 @@
     "type": "card",
     "selected_title": "달러종신보험 블로그 요약 카드",
     "date": "2026-11-13 13:11",
-    "reach": 2,
+    "reach": 3,
     "saved": 0,
     "likes": 0,
     "comments": 1
@@ -3982,126 +3982,206 @@
     "ig_post_id": "17891371917476639",
     "type": "card",
     "selected_title": "부담부증여 블로그 요약 카드",
-    "date": "2026-11-15 19:18"
+    "date": "2026-11-15 19:18",
+    "reach": 2,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "17996088108069761",
     "type": "reels",
     "selected_title": "부담부증여 블로그 유도 릴스(애니메이션)",
     "engine": "kb_anim",
-    "date": "2026-11-15 19:20"
+    "date": "2026-11-15 19:20",
+    "reach": 39,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "18057976829603985",
     "type": "card",
     "selected_title": "퇴직금중간정산 블로그 요약 카드",
-    "date": "2026-11-16 10:39"
+    "date": "2026-11-16 10:39",
+    "reach": 3,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "18119015969111781",
     "type": "reels",
     "selected_title": "퇴직금중간정산 블로그 유도 릴스(애니메이션)",
     "engine": "kb_anim",
-    "date": "2026-11-16 10:41"
+    "date": "2026-11-16 10:41",
+    "reach": 43,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "17925520863449384",
     "type": "card",
     "selected_title": "증여세면제한도 블로그 요약 카드",
-    "date": "2026-11-17 12:19"
+    "date": "2026-11-17 12:19",
+    "reach": 2,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "18122526430989329",
     "type": "reels",
     "selected_title": "증여세면제한도 블로그 유도 릴스(애니메이션)",
     "engine": "kb_anim",
-    "date": "2026-11-17 12:22"
+    "date": "2026-11-17 12:22",
+    "reach": 41,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "18121721479979272",
     "type": "reels",
     "selected_title": "104% 보험사 손해율이 1년 만에 89%로 뚝?…계리가정 개선해야",
-    "date": "2026-11-18 04:56"
+    "date": "2026-11-18 04:56",
+    "reach": 5,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "17921240844533442",
     "type": "card",
     "selected_title": "종신보험 활용법 소재",
-    "date": "2026-11-18 04:59"
+    "date": "2026-11-18 04:59",
+    "reach": 2,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18171782527473420",
     "type": "card",
     "selected_title": "간병인보험 블로그 요약 카드",
-    "date": "2026-11-18 09:13"
+    "date": "2026-11-18 09:13",
+    "reach": 3,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "18221715568359870",
     "type": "reels",
     "selected_title": "간병인보험 블로그 유도 릴스(애니메이션)",
     "engine": "kb_anim",
-    "date": "2026-11-18 09:15"
+    "date": "2026-11-18 09:15",
+    "reach": 7,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "18137430730709259",
     "type": "reels",
     "selected_title": "개미들 ETF도 단타 당일매매 60% 넘어",
-    "date": "2026-11-18 19:46"
+    "date": "2026-11-18 19:46",
+    "reach": 5,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18136149529741552",
     "type": "reels",
     "selected_title": "수정테이프에 초소형 카메라…‘세무사 수석’ 범행 수법",
-    "date": "2026-11-19 04:27"
+    "date": "2026-11-19 04:27",
+    "reach": 156,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "17921586300529674",
     "type": "card",
     "selected_title": "건강보험임의계속가입 블로그 요약 카드",
-    "date": "2026-11-19 10:47"
+    "date": "2026-11-19 10:47",
+    "reach": 2,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "17915967540555772",
     "type": "reels",
     "selected_title": "건강보험임의계속가입 블로그 유도 릴스(애니메이션)",
     "engine": "kb_anim",
-    "date": "2026-11-19 10:51"
+    "date": "2026-11-19 10:51",
+    "reach": 25,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "18103726751072020",
     "type": "reels",
     "selected_title": "해외 안가는데 환율 뭔 상관? 생활비 16만원 절약 효과",
-    "date": "2026-11-19 19:42"
+    "date": "2026-11-19 19:42",
+    "reach": 1,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18121588061599589",
     "type": "reels",
     "selected_title": "유재석, 논현동 198억 현금 매입 부지 신축 건물 완공",
-    "date": "2026-11-20 04:32"
+    "date": "2026-11-20 04:32",
+    "reach": 10,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "17913360258488252",
     "type": "card",
     "selected_title": "케어네이션가족간병 블로그 요약 카드",
-    "date": "2026-11-20 10:21"
+    "date": "2026-11-20 10:21",
+    "reach": 1,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "17901717072394035",
     "type": "reels",
     "selected_title": "케어네이션 가족간병 블로그 유도 릴스(애니메이션)",
     "engine": "kb_anim",
-    "date": "2026-11-20 10:24"
+    "date": "2026-11-20 10:24",
+    "reach": 4,
+    "saved": 0,
+    "likes": 0,
+    "comments": 1
   },
   {
     "ig_post_id": "18148537057593647",
     "type": "reels",
     "selected_title": "나랏빚 이자만 25조원 넘었다…1~9월 기준 사상 처음",
-    "date": "2026-11-20 19:20"
+    "date": "2026-11-20 19:20",
+    "reach": 6,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   },
   {
     "ig_post_id": "18125173406075455",
     "type": "reels",
     "selected_title": "“지방서 일할 의사 모십니다” 일당 100만원 주고, 은퇴한 70대 채용",
-    "date": "2026-11-21 04:09"
+    "date": "2026-11-21 04:09",
+    "reach": 135,
+    "saved": 0,
+    "likes": 0,
+    "comments": 0
   }
 ]
