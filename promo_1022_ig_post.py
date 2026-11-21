@@ -653,16 +653,37 @@ GJB = {
 }
 
 
+SIL = {
+    'card_data': {
+        'tag': '# 실업급여조건',
+        'hook_big': '실업급여조건\n18개월 중 180일',
+        'hook_sub': '고용보험법 제40조·제58조 기준 정리',
+        'points': [
+            {'title': '180일 기준', 'body': '이직 전 18개월 중\n보수를 받은 날이\n합쳐서 180일 이상.'},
+            {'title': '퇴사 사유', 'body': '중대한 귀책 해고나\n전직·자영업 이직은\n제한될 수 있습니다.'},
+            {'title': '신청 기한', 'body': '이직 다음 날부터\n12개월 안에\n지급받아야 합니다.'},
+            {'title': '1일 상한', 'body': '기초일액 상한의 60%,\n68,100원으로\n계산됩니다.'},
+        ],
+        'closing': '내 180일과 퇴사 사유부터\n확인하세요.',
+        'cta': '프로필 링크 → 블로그에 전체 정리'
+    },
+    'caption': ('실업급여를 알아보고 있다면 18개월 중 180일과 퇴사 사유부터 확인하세요.\n\n'
+                '고용보험법 제40조는 이직 전 18개월 동안 피보험 단위기간이 합산 180일 이상일 것을 요건으로 정합니다. 보수를 받은 날의 합이 기준입니다. 제58조는 중대한 귀책사유 해고, 전직·자영업을 위한 이직 등을 수급자격 제한 사유로 두고, 정당한 사유는 고용노동부령에 맡깁니다. 이직 다음 날부터 12개월 안에 지급받아야 합니다.\n\n'
+                '내 수급 여부는 고용센터에 확인하세요. 자세한 정리는 블로그에 있습니다.\n\n'
+                '#실업급여조건 #실업급여180일 #자진퇴사실업급여 #구직급여'),
+}
+
+
 if __name__ == '__main__':
     mode = sys.argv[1] if len(sys.argv) > 1 else 'preview'
     if mode == 'preview':
-        for name, v in (('calc', CALC), ('gasu', GASU), ('gun', GUN), ('gaji', GAJI), ('nyun', NYUN), ('coin', COIN), ('coin2', COIN2), ('stock', STOCK), ('banap', BANAP), ('banap2', BANAP2), ('gaup', GAUP), ('nry', NRY), ('rpt', RPT), ('nbt', NBT), ('pibu', PIBU), ('sgb', SGB), ('npa', NPA), ('vat', VAT), ('inh', INH), ('ybn', YBN), ('gft', GFT), ('dae', DAE), ('jeok', JEOK), ('dong', DONG), ('gyp', GYP), ('dol', DOL), ('bdj', BDJ), ('jgs', JGS), ('jmh', JMH), ('jbi', JBI), ('gyk', GYK), ('gjb', GJB)):
+        for name, v in (('calc', CALC), ('gasu', GASU), ('gun', GUN), ('gaji', GAJI), ('nyun', NYUN), ('coin', COIN), ('coin2', COIN2), ('stock', STOCK), ('banap', BANAP), ('banap2', BANAP2), ('gaup', GAUP), ('nry', NRY), ('rpt', RPT), ('nbt', NBT), ('pibu', PIBU), ('sgb', SGB), ('npa', NPA), ('vat', VAT), ('inh', INH), ('ybn', YBN), ('gft', GFT), ('dae', DAE), ('jeok', JEOK), ('dong', DONG), ('gyp', GYP), ('dol', DOL), ('bdj', BDJ), ('jgs', JGS), ('jmh', JMH), ('jbi', JBI), ('gyk', GYK), ('gjb', GJB), ('sil', SIL)):
             paths = cg.generate_card_set(v['card_data'], output_dir=f'_card_preview_{name}', category='insurance')
             print(name, len(paths), '장', paths[0])
     else:
-        v = {'calc': CALC, 'gasu': GASU, 'gun': GUN, 'gaji': GAJI, 'nyun': NYUN, 'coin': COIN, 'coin2': COIN2, 'stock': STOCK, 'banap': BANAP, 'banap2': BANAP2, 'gaup': GAUP, 'nry': NRY, 'rpt': RPT, 'nbt': NBT, 'pibu': PIBU, 'sgb': SGB, 'npa': NPA, 'vat': VAT, 'inh': INH, 'ybn': YBN, 'gft': GFT, 'dae': DAE, 'jeok': JEOK, 'dong': DONG, 'gyp': GYP, 'dol': DOL, 'bdj': BDJ, 'jgs': JGS, 'jmh': JMH, 'jbi': JBI, 'gyk': GYK, 'gjb': GJB}[mode]
+        v = {'calc': CALC, 'gasu': GASU, 'gun': GUN, 'gaji': GAJI, 'nyun': NYUN, 'coin': COIN, 'coin2': COIN2, 'stock': STOCK, 'banap': BANAP, 'banap2': BANAP2, 'gaup': GAUP, 'nry': NRY, 'rpt': RPT, 'nbt': NBT, 'pibu': PIBU, 'sgb': SGB, 'npa': NPA, 'vat': VAT, 'inh': INH, 'ybn': YBN, 'gft': GFT, 'dae': DAE, 'jeok': JEOK, 'dong': DONG, 'gyp': GYP, 'dol': DOL, 'bdj': BDJ, 'jgs': JGS, 'jmh': JMH, 'jbi': JBI, 'gyk': GYK, 'gjb': GJB, 'sil': SIL}[mode]
         ig_id = ap.post_instagram(v)
         if not ig_id:
             print('발행 실패'); sys.exit(1)
-        ap.log_instagram(ig_id, {'calc': '연금 수령액 계산기 홍보', 'gasu': '가수금뜻 블로그 요약 카드', 'gun': '지역가입자건보료상한액 요약 카드', 'gaji': '가지급금뜻 블로그 요약 카드', 'nyun': '66년생국민연금수령나이 블로그 요약 카드', 'coin': '코인과세유예가능성 블로그 요약 카드', 'coin2': '코인 과세 손실 이월 불가 카드', 'stock': '비상장주식양도세율 블로그 요약 카드', 'banap': '국민연금반납금 블로그 요약 카드', 'banap2': '국민연금반납금 자격·제외조건 카드', 'gaup': '가업상속공제개정안 블로그 요약 카드', 'nry': '노란우산해지환급금 블로그 요약 카드', 'rpt': '퇴직연금세금몇프로 블로그 요약 카드', 'nbt': '신생아취득세감면 블로그 요약 카드', 'pibu': '직장피부양자뜻 블로그 요약 카드', 'sgb': '상속재산분할협의서예시 블로그 요약 카드', 'npa': '67년생국민연금수령나이 블로그 요약 카드', 'vat': '부가세납부달 블로그 요약 카드', 'inh': '자녀상속세면제한도 블로그 요약 카드', 'ybn': '상속세연부연납 블로그 요약 카드', 'gft': '증여세신고기한 블로그 요약 카드', 'dae': '대습상속 블로그 요약 카드', 'jeok': '과세전적부심사 블로그 요약 카드', 'dong': '동거주택상속공제 블로그 요약 카드', 'gyp': '증여세연부연납 블로그 요약 카드', 'dol': '달러종신보험 블로그 요약 카드', 'bdj': '부담부증여 블로그 요약 카드', 'jgs': '퇴직금중간정산 블로그 요약 카드', 'jmh': '증여세면제한도 블로그 요약 카드', 'jbi': '간병인보험 블로그 요약 카드', 'gyk': '건강보험임의계속가입 블로그 요약 카드', 'gjb': '케어네이션가족간병 블로그 요약 카드'}[mode])
+        ap.log_instagram(ig_id, {'calc': '연금 수령액 계산기 홍보', 'gasu': '가수금뜻 블로그 요약 카드', 'gun': '지역가입자건보료상한액 요약 카드', 'gaji': '가지급금뜻 블로그 요약 카드', 'nyun': '66년생국민연금수령나이 블로그 요약 카드', 'coin': '코인과세유예가능성 블로그 요약 카드', 'coin2': '코인 과세 손실 이월 불가 카드', 'stock': '비상장주식양도세율 블로그 요약 카드', 'banap': '국민연금반납금 블로그 요약 카드', 'banap2': '국민연금반납금 자격·제외조건 카드', 'gaup': '가업상속공제개정안 블로그 요약 카드', 'nry': '노란우산해지환급금 블로그 요약 카드', 'rpt': '퇴직연금세금몇프로 블로그 요약 카드', 'nbt': '신생아취득세감면 블로그 요약 카드', 'pibu': '직장피부양자뜻 블로그 요약 카드', 'sgb': '상속재산분할협의서예시 블로그 요약 카드', 'npa': '67년생국민연금수령나이 블로그 요약 카드', 'vat': '부가세납부달 블로그 요약 카드', 'inh': '자녀상속세면제한도 블로그 요약 카드', 'ybn': '상속세연부연납 블로그 요약 카드', 'gft': '증여세신고기한 블로그 요약 카드', 'dae': '대습상속 블로그 요약 카드', 'jeok': '과세전적부심사 블로그 요약 카드', 'dong': '동거주택상속공제 블로그 요약 카드', 'gyp': '증여세연부연납 블로그 요약 카드', 'dol': '달러종신보험 블로그 요약 카드', 'bdj': '부담부증여 블로그 요약 카드', 'jgs': '퇴직금중간정산 블로그 요약 카드', 'jmh': '증여세면제한도 블로그 요약 카드', 'jbi': '간병인보험 블로그 요약 카드', 'gyk': '건강보험임의계속가입 블로그 요약 카드', 'gjb': '케어네이션가족간병 블로그 요약 카드', 'sil': '실업급여조건 블로그 요약 카드'}[mode])
         print('IG 발행 완료:', ig_id)
