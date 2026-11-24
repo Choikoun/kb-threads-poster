@@ -1,42 +1,42 @@
 # 📰 일일 브리핑
-*2026-11-23 11:34 KST*
+*2026-11-24 14:56 KST*
 
 ---
 
 ## 🔖 보험 동향
-- [동양생명, ‘(무)우리WON하는다시온암보험(갱신형)’ 출시](https://www.insnews.co.kr/news/articleView.html?idxno=93977)
-- [[특별기고] AI 시대 금융소비자 보호, 출발은 ‘모두의 AI 리터러시’로부터](https://www.insnews.co.kr/news/articleView.html?idxno=93958)
-- [‘안심 외출’ 돕는 발달장애인 배상책임보험](https://www.insnews.co.kr/news/articleView.html?idxno=93946)
-- [삼성화재, 英 캐노피우스 인수로 ‘특종보험’ 해외 확장 가속화](https://www.insnews.co.kr/news/articleView.html?idxno=93938)
-- [보험사, 일상 속 위험진단… 맞춤형 관리 서비스 강화](https://www.insnews.co.kr/news/articleView.html?idxno=93931)
+- [교보라이프플래닛생명, 사내 생성형 AI ‘루아’ 전사 적용](https://www.insnews.co.kr/news/articleView.html?idxno=94010)
+- [GA 권한 확대 앞서 책임 강화부터… 보험판매전문회사 도입 신중론 제기](https://www.insnews.co.kr/news/articleView.html?idxno=94008)
+- [보험사기 전력자 보험시장 진입 제한… GA 제재 방식도 개편](https://www.insnews.co.kr/news/articleView.html?idxno=94006)
+- [한화생명, IRP 상품 매도 없이 연금 받는 ‘분할연금’ 선보여](https://www.insnews.co.kr/news/articleView.html?idxno=94003)
+- [ABL생명, 보험업계 최초 자금세탁방지 ‘대통령 표창’ 수상](https://www.insnews.co.kr/news/articleView.html?idxno=94001)
 
 ## 💰 국내 경제·금융
-- [초고수들, 네이버·삼성SDS 대거 담아…낙폭 큰 종목들 선별 매수](https://www.hankyung.com/article/202611233723i)
-- [코스피, 장중 3%대 하락 흐름…코스닥은 연중 최저치 추락](https://www.hankyung.com/article/2026112337206)
-- [증시 무너져도 끄떡없네…미국서 대박 나더니 '급등'](https://www.hankyung.com/article/202611233655i)
-- [골드만삭스 "美 증시 패닉지수 극단 수준…저가 매수 기회"](https://www.hankyung.com/article/2026112334847)
-- [케이엠에프·에이엔에이치스트럭쳐 코스닥 출격, '거래처 리스크' 시험대](https://www.hankyung.com/article/202611200148i)
+- [서학 초고수들, 칩 상승에 베팅...'젠슨 황 컴백 후 급등' 엔비디아는 차익실현 쏟아내](https://www.hankyung.com/article/202611246641i)
+- [[오전시황] 코스피 5000선 회복…반도체·로봇·MLCC株 줄줄이 급등](https://www.hankyung.com/article/202611246282i)
+- [코스콤, 안양 초등생 대상 코딩·AI 교육 1기 성과공유회](https://www.hankyung.com/article/2026112465376)
+- [KCGI운용, 전주사무소 개소…국민연금과 소통 강화](https://www.hankyung.com/article/2026112464316)
+- [젠슨 황 복귀에 양시장 '매수 사이드카'…'오천피' 안착할까](https://www.hankyung.com/article/2026112464156)
 
 ## 📈 주식·시장
-- [한 돈 100만원 넘게 주고 샀는데…금값 폭락에 개미 ‘저가 매수’ 중](https://www.mk.co.kr/news/stock/12215932)
-- [20년 묵힐 펀드엔 AI 담아야 정답…한투서 나왔다는데](https://www.mk.co.kr/news/stock/12215917)
-- [국민연금 때문에 꼬인 증시 수급 ... “증안펀드 10조론 역부족”](https://www.mk.co.kr/news/stock/12215898)
-- [피지컬AI 가 밀어올린 알체라…3분기 누적매출 71억](https://www.mk.co.kr/news/it/12215893)
-- [靑재정보좌관 “증시 충격 일시적일 수 있어…비관적으로 안 봐”](https://www.mk.co.kr/news/stock/12215890)
+- [금감원·거래소, 불법 공매도 합동 TF 가동…의심거래 즉시 조사](https://www.mk.co.kr/news/stock/12217093)
+- [‘롤러코스피’에 버팀목 될까…오늘부터 자사주 하루 주문 한도 완화](https://www.mk.co.kr/news/stock/12217089)
+- [“만원으로 美 대표지수 3종에 투자”…미래에셋, ‘4·4·2 ETF’ 내놓는다](https://www.mk.co.kr/news/stock/12217049)
+- [꺼지지 않는 ‘AI 버블론’…글로벌 투자 구루들 “위기 속에 기회 있다” [기자24시]](https://www.mk.co.kr/news/stock/12217030)
+- [초고수, 급등한 삼전닉스 팔고 네이버·SK스퀘어 담았다 [주식 초고수는 지금]](https://www.mk.co.kr/news/stock/12216964)
 
 ## 🌏 글로벌 경제·정세
-- [이란, 미사일 2발 동시발사대 첫 공개…"적에게 굴욕 줄 것"](https://www.hankyung.com/article/2026112331497)
-- [美정보수장 "우크라 문제선 푸틴은 미국의 친구 아냐"](https://www.hankyung.com/article/2026112329577)
-- [고물가에도 지갑 여는 미국인들…연말 소비 1조달러 전망](https://www.hankyung.com/article/202611232915i)
-- [美민주, 한국 3500억달러 대미투자 들여다본다…관세 청문회 추진](https://www.hankyung.com/article/2026112329517)
-- [트럼프에 8500억 안겨준 '밈코인' 근황 보니…'역대급 추락'](https://www.hankyung.com/article/2026112328807)
+- [매출 50% 늘었는데 주가는 하락…HPE, AI 호실적에도 웃지 못한 이유](https://www.hankyung.com/article/202611246951i)
+- [엔비디아 '숏' 쳤다가 날벼락···공매도 세력 하루 122억달러 평가손실](https://www.hankyung.com/article/202611246841i)
+- [美 AI 투자 1.3조달러…다른 산업 성장 여력 잠식](https://www.hankyung.com/article/202611246069i)
+- ["대통령이 CEO까지 정하나"…트럼프 나서자 뒤집힌 엔비디아 [영상]](https://www.hankyung.com/article/202611246442g)
+- [전쟁 장기화에 무너지는 러시아 군인…유출된 사망증명서 '충격'](https://www.hankyung.com/article/2026112461157)
 
 ## 🔥 팔로업 추천 (300회 이상)
-- 3,787회 [2026-11-22] 상속 분쟁 겪는 집 10곳 중 7곳은 생전 증여를 뒤늦게 문제 삼아.  ...
-- 1,126회 [2026-11-21] 지병이 있어도 가입할 수 있다는 말만 믿고 보험료를 꼬박 냈어.  막상 ...
-- 588회 [2026-11-22] 이번 주 제일 많이 본 글이야.  현금 200억 가까이를 한 번에 태우는...
-- 583회 [2026-11-21] 어제 뉴욕 증시에서 기술주들이 5% 넘게 쏟아졌어.  불안한 마음에 지켜...
-- 508회 [2026-11-21] 초고층 아파트 거주자 10명 중 7명이 곧 맞닥뜨릴 비용 폭탄이 있어. ...
+- 6,465회 [2026-11-22] 상속 분쟁 겪는 집 10곳 중 7곳은 생전 증여를 뒤늦게 문제 삼아.  ...
+- 608회 [2026-11-22] 이번 주 제일 많이 본 글이야.  현금 200억 가까이를 한 번에 태우는...
+- 599회 [2026-11-22] 지병을 알리고 가입했다는 고객의 말만 믿고 10년을 꼬박 보험료를 냈어....
+- 477회 [2026-11-22] 내 동은 8억인데 옆 동은 10억이라고 10억 기준 세금 내라니 이게 무...
+- 410회 [2026-11-23] 시험지 십수만 장이, 보관 지침을 비웃듯 사라졌어.  ⚠️ 전국 교육청 ...
 
 ---
 *총 60개 기사 수집됨*
