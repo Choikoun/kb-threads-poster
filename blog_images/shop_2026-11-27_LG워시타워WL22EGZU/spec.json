@@ -1,0 +1,44 @@
+{
+  "key": "wt",
+  "post_key": "lg_wl22egzu",
+  "sub_key": "wt",
+  "keyword": "WL22EGZU",
+  "title": "LG 워시타워 WL22EGZU 가격, 쿠팡 4,350,000원부터 단종 표기와 모델 비교",
+  "date": "2026-11-27",
+  "hero_query": "laundry room washer dryer tower",
+  "hero_file": "01_WL22EGZU_대표이미지.jpg",
+  "yt_title": "LG 워시타워 WL22EGZU 쿠팡 가격 차이 #shorts",
+  "reply_link": "https://link.coupang.com/a/i0w9iWuEGO",
+  "images": [
+    {"kind": "cards", "file": "02_WL22EGZU_한눈에.png", "title": "LG 워시타워 WL22EGZU 한눈에 보기", "sub": "LG전자 공식몰·쿠팡 · 2026-11-27 조회",
+     "rows": [["공식몰 상태", "단종 표기 · 가격 없음"], ["쿠팡 WL22EGZU", "4,350,000원 ~ 4,400,000원"], ["쿠팡 WL22GEZU", "4,650,000원 ~ 4,700,000원"], ["쿠팡 WL21EGZU", "5,000,000원"]]},
+    {"kind": "kv", "file": "03_WL22EGZU_공식정보.png", "title": "WL22EGZU 공식몰 표기", "sub": "LG전자 상품 페이지 · 2026-11-27 조회",
+     "rows": [["상품명", "트롬 오브제컬렉션 워시타워"], ["용량", "세탁 25kg / 건조 22kg"], ["구성품", "FL25EJUER · RL22GJUG"], ["색상", "네이처 그린 / 베이지"], ["기능", "트루스팀 · 자동세제 플러스"], ["상태", "단종 (정보 10-29 기준)"]]},
+    {"kind": "table", "file": "04_WL22EGZU_쿠팡가격.png", "title": "쿠팡 모델명별 표기", "sub": "쿠팡 검색 목록 · 2026-11-27 조회",
+     "hdr": ["모델명", "용량 표기", "가격"],
+     "rows": [["WL22EGZU", "25+22KG", "4,350,000"], ["WL22EGZU", "25/21KG", "4,400,000"], ["WL22GEZU", "25/22kg", "4,650,000"], ["WL22GEZU", "25/22kg", "4,700,000"], ["WL21EGZU", "25kg/21kg", "5,000,000"]]},
+    {"kind": "bars", "file": "05_WL22EGZU_가격차이.png", "title": "모델명별 쿠팡 가격 차이", "sub": "쿠팡 검색 목록 · 2026-11-27 조회",
+     "rows": [["WL22EGZU 25+22KG", 4350000], ["WL22EGZU 25/21KG", 4400000], ["WL22GEZU", 4650000], ["WL22GEZU 폐가전수거", 4700000], ["WL21EGZU", 5000000]], "footer": "최저와 최고의 차이는 650,000원"},
+    {"kind": "product", "file": "06_WL22EGZU_쿠팡4350.png", "pid": 9754776782, "q": "WL22EGZU", "title": "LG WL22EGZU", "price": "4,350,000원", "note": "25+22KG 1등급 · 기사님설치"},
+    {"kind": "product", "file": "07_WL22EGZU_쿠팡4400.png", "pid": 9754765282, "q": "WL22EGZU", "title": "LG WL22EGZU", "price": "4,400,000원", "note": "제목 25/21KG 표기"},
+    {"kind": "product", "file": "08_WL22EGZU_쿠팡4650.png", "pid": 9754342862, "q": "LG 트롬 오브제컬렉션 워시타워 WL22GEZU", "title": "LG WL22GEZU", "price": "4,650,000원", "note": "25/22kg · 기사님설치"},
+    {"kind": "product", "file": "09_WL22EGZU_쿠팡4700.png", "pid": 9754301211, "q": "LG 트롬 오브제컬렉션 워시타워 WL22GEZU", "title": "LG WL22GEZU", "price": "4,700,000원", "note": "폐가전수거 표기"},
+    {"kind": "product", "file": "10_WL22EGZU_쿠팡5000.png", "pid": 9707574215, "q": "WL21EGZU", "title": "LG WL21EGZU", "price": "5,000,000원", "note": "25kg/21kg 표기"},
+    {"kind": "checklist", "file": "11_WL22EGZU_체크.png", "sub": "단종 표기 모델은 판매처 조건을 따로 확인하세요",
+     "items": ["모델명 전체 일치", "용량 25/22kg 표기", "단종 모델의 재고와 보증", "설치비와 설치 방식", "폐가전 수거 여부", "판매자와 배송 조건"]}
+  ],
+  "reel": {"scenes": [
+    {"kind": "big", "title": "LG 워시타워 WL22EGZU", "head": "공식몰엔 단종 표기", "note": "LG전자 공식몰 · 2026-11-27 조회", "lines": ["세탁 25kg · 건조 22kg", "공식몰 판매가 없음", "쿠팡 4,350,000원부터"],
+     "say": "엘지 워시타워 더블유엘이십이이지지유는 공식몰에 단종으로 표기돼 있고 판매가는 없었어요."},
+    {"kind": "split", "title": "비슷한 모델명 가격", "head": "650,000원 차이", "note": "쿠팡 검색 목록 · 2026-11-27 조회",
+     "L": {"name": "WL22EGZU", "price": "4,350,000원", "sub": "25+22KG 표기", "win": true}, "R": {"name": "WL21EGZU", "price": "5,000,000원", "sub": "25kg/21kg 표기", "bad": true},
+     "say": "쿠팡에서 모델명이 비슷한 워시타워는 최저와 최고가 650,000원 차이였어요."}
+  ]},
+  "caption": {
+    "headline": "LG 워시타워 WL22EGZU는 공식몰에 단종 표기가 있고 쿠팡에서는 4,350,000원부터 올라와 있었어요 (2026-11-27 조회)",
+    "detail": "WL22GEZU는 4,650,000원부터, WL21EGZU는 5,000,000원이었어요. 쿠팡 제목에 25/21KG로 적힌 WL22EGZU 상품도 있어 용량 표기를 확인해야 해요. 다나와는 점검 중이라 확인하지 못했어요.",
+    "detail_short": "모델명이 비슷한 워시타워도 쿠팡 가격이 최대 650,000원 차이였어요.",
+    "tags": "#LG워시타워 #WL22EGZU #워시타워가격 #가전가격비교 #쿠팡",
+    "reply_name": "LG 워시타워 WL22EGZU"
+  }
+}
