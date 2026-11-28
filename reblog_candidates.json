@@ -6203,7 +6203,11 @@
     "likes": 1,
     "replies": 5,
     "media_type": "IMAGE",
-    "reblog_date": "2026-11-25"
+    "reblog_date": "2026-11-25",
+    "reposted": true,
+    "reposted_id": "18165170245499376",
+    "reposted_date": "2026-11-28",
+    "remixed": true
   },
   {
     "id": "18115988176974015",
@@ -6214,7 +6218,11 @@
     "likes": 0,
     "replies": 4,
     "media_type": "IMAGE",
-    "reblog_date": "2026-11-25"
+    "reblog_date": "2026-11-25",
+    "reposted": true,
+    "reposted_id": "18501274801107808",
+    "reposted_date": "2026-11-28",
+    "remixed": true
   },
   {
     "id": "18096716096099606",
@@ -6225,7 +6233,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-11-25"
+    "reblog_date": "2026-11-25",
+    "reposted": true,
+    "reposted_id": "18099754355480109",
+    "reposted_date": "2026-11-28",
+    "remixed": true
   },
   {
     "id": "18117035836968850",
@@ -6236,7 +6248,11 @@
     "likes": 1,
     "replies": 2,
     "media_type": "IMAGE",
-    "reblog_date": "2026-11-25"
+    "reblog_date": "2026-11-25",
+    "reposted": true,
+    "reposted_id": "18028729859875234",
+    "reposted_date": "2026-11-28",
+    "remixed": true
   },
   {
     "id": "18098920181282064",
@@ -6247,7 +6263,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "TEXT_POST",
-    "reblog_date": "2026-11-25"
+    "reblog_date": "2026-11-25",
+    "reposted": true,
+    "reposted_id": "18129950684297035",
+    "reposted_date": "2026-11-28",
+    "remixed": true
   },
   {
     "id": "17945858088070564",
@@ -6258,7 +6278,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "TEXT_POST",
-    "reblog_date": "2026-11-25"
+    "reblog_date": "2026-11-25",
+    "reposted": true,
+    "reposted_id": "18117285590272543",
+    "reposted_date": "2026-11-28",
+    "remixed": true
   },
   {
     "id": "18094496606554299",
@@ -6269,7 +6293,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-11-25"
+    "reblog_date": "2026-11-25",
+    "reposted": true,
+    "reposted_id": "18110853608212444",
+    "reposted_date": "2026-11-28",
+    "remixed": true
   },
   {
     "id": "17946462330071972",
@@ -6280,7 +6308,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-11-25"
+    "reblog_date": "2026-11-25",
+    "reposted": true,
+    "reposted_id": "17925350751243087",
+    "reposted_date": "2026-11-28",
+    "remixed": true
   },
   {
     "id": "18129349324833126",
@@ -6291,7 +6323,11 @@
     "likes": 1,
     "replies": 5,
     "media_type": "IMAGE",
-    "reblog_date": "2026-11-25"
+    "reblog_date": "2026-11-25",
+    "reposted": true,
+    "reposted_id": "18166940449494680",
+    "reposted_date": "2026-11-28",
+    "remixed": true
   },
   {
     "id": "18384936334230760",
@@ -6302,7 +6338,11 @@
     "likes": 0,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-11-25"
+    "reblog_date": "2026-11-25",
+    "reposted": true,
+    "reposted_id": "18039246713664591",
+    "reposted_date": "2026-11-28",
+    "remixed": true
   },
   {
     "id": "18230290366324202",
@@ -6313,7 +6353,11 @@
     "likes": 1,
     "replies": 5,
     "media_type": "IMAGE",
-    "reblog_date": "2026-11-28"
+    "reblog_date": "2026-11-28",
+    "reposted": true,
+    "reposted_id": "18123564818066951",
+    "reposted_date": "2026-11-28",
+    "remixed": true
   },
   {
     "id": "18058738892547851",
@@ -6324,7 +6368,11 @@
     "likes": 1,
     "replies": 2,
     "media_type": "IMAGE",
-    "reblog_date": "2026-11-28"
+    "reblog_date": "2026-11-28",
+    "reposted": true,
+    "reposted_id": "17992061112091333",
+    "reposted_date": "2026-11-28",
+    "remixed": true
   },
   {
     "id": "17909299488490970",
@@ -6335,7 +6383,11 @@
     "likes": 1,
     "replies": 5,
     "media_type": "IMAGE",
-    "reblog_date": "2026-11-28"
+    "reblog_date": "2026-11-28",
+    "reposted": true,
+    "reposted_id": "17980325670177496",
+    "reposted_date": "2026-11-28",
+    "remixed": true
   },
   {
     "id": "18627564574042801",
@@ -6346,7 +6398,11 @@
     "likes": 0,
     "replies": 2,
     "media_type": "TEXT_POST",
-    "reblog_date": "2026-11-28"
+    "reblog_date": "2026-11-28",
+    "reposted": true,
+    "reposted_id": "18198700843395570",
+    "reposted_date": "2026-11-28",
+    "remixed": true
   },
   {
     "id": "18144989497500020",
@@ -6357,7 +6413,11 @@
     "likes": 3,
     "replies": 3,
     "media_type": "IMAGE",
-    "reblog_date": "2026-11-28"
+    "reblog_date": "2026-11-28",
+    "reposted": true,
+    "reposted_id": "17959773738302910",
+    "reposted_date": "2026-11-28",
+    "remixed": true
   },
   {
     "id": "18090288713199914",
@@ -6368,7 +6428,11 @@
     "likes": 0,
     "replies": 5,
     "media_type": "IMAGE",
-    "reblog_date": "2026-11-28"
+    "reblog_date": "2026-11-28",
+    "reposted": true,
+    "reposted_id": "17979163107156120",
+    "reposted_date": "2026-11-28",
+    "remixed": true
   },
   {
     "id": "18079738601711745",
@@ -6379,7 +6443,11 @@
     "likes": 0,
     "replies": 4,
     "media_type": "IMAGE",
-    "reblog_date": "2026-11-28"
+    "reblog_date": "2026-11-28",
+    "reposted": true,
+    "reposted_id": "18139265479710155",
+    "reposted_date": "2026-11-28",
+    "remixed": true
   },
   {
     "id": "18112901180023863",
@@ -6754,5 +6822,82 @@
     "replies": 5,
     "media_type": "IMAGE",
     "reblog_date": "2027-01-16"
+  },
+  {
+    "id": "18215750833368664",
+    "date": "2026-11-26",
+    "text": "“내 월급에서 꼬박꼬박 떼어갔으니 연금은 당연히 쌓이고 있겠지?”  월급",
+    "full_text": "“내 월급에서 꼬박꼬박 떼어갔으니 연금은 당연히 쌓이고 있겠지?”\n\n월급 명세서에 찍힌 숫자만 믿고 방치하면 나중에 뼈아픈 현실을 마주하게 돼.\n\n근로자 13만 명이 사장님의 체납으로 정작 내 노후 자금에 구멍이 난 상황.\n\n남의 돈으로 사업을 돌려 막는 구조가 여전히 우리 주변에 살아있어.\n\n#증여 #상속",
+    "views": 1589,
+    "likes": 1,
+    "replies": 5,
+    "media_type": "IMAGE",
+    "reblog_date": "2027-01-23"
+  },
+  {
+    "id": "17959773237269441",
+    "date": "2026-11-27",
+    "text": "가짜 직장가입자 적발 건수로 매년 억 단위가 오가.  1. 실제 근무하지",
+    "full_text": "가짜 직장가입자 적발 건수로 매년 억 단위가 오가.\n\n1. 실제 근무하지 않으면서 서류상으로만 올린 직원이 있는지 확인해봐야 해.\n2. 사장님 본인과 가족을 무리하게 법인 직장가입자로 묶어두는 것도 리스크가 커.\n3. 내부 고발자 한 명에게 최대 30억까지 포상금을 지급하는 구조가 됐어.\n\n허위 고용이 적발되면 단순 추징을 넘어 세무조사까지 번질 수 있는 사안이야.\n\n#법인 #증여",
+    "views": 1224,
+    "likes": 0,
+    "replies": 4,
+    "media_type": "IMAGE",
+    "reblog_date": "2027-01-23"
+  },
+  {
+    "id": "17978280243171323",
+    "date": "2026-11-24",
+    "text": "감독관 10명 중 6명, 시험 시간 내 소지품 검사 불가능해.  기술은 ",
+    "full_text": "감독관 10명 중 6명,\n시험 시간 내 소지품 검사 불가능해.\n\n기술은 계속 고도화되는데\n현장 인력에게만 모든 책임을 떠넘기는 상황이야.\n\n결국 공정성의 무게를 개인이 온전히 짊어지는 구조지.\n\n이런 리스크가 존재하는 곳에 내 자녀나 사업의 미래를 맡길 수 있을까 깊게 고민해볼 문제야.\n\n#부동산 #정책",
+    "views": 673,
+    "likes": 0,
+    "replies": 3,
+    "media_type": "IMAGE",
+    "reblog_date": "2027-01-23"
+  },
+  {
+    "id": "18040817177654862",
+    "date": "2026-11-27",
+    "text": "대표가 회사 돈을 개인 금고로 착각하는 순간 그 법인은 시한폭탄이다.  ",
+    "full_text": "대표가 회사 돈을 개인 금고로 착각하는 순간 그 법인은 시한폭탄이다.\n\n법인 명의의 자금은 대표 개인의 소유가 아닌 엄격한 관리 대상이기 때문이다.\n\n동업자와의 수익 배분 갈등이 횡령으로 번지고 텅 빈 회사 금고에 직원들 급여까지 밀린다.\n\n결국 법적 책임의 무게는 감당할 수 없을 만큼 커져 돌아온다.\n\n당신은 오늘 경영의 마지막 안전장치를 스스로 풀어버린 건 아닐까.\n\n#법인 #증여",
+    "views": 445,
+    "likes": 0,
+    "replies": 4,
+    "media_type": "IMAGE",
+    "reblog_date": "2027-01-23"
+  },
+  {
+    "id": "18189034258424863",
+    "date": "2026-11-24",
+    "text": "내년 회계사 최소 선발 인원, 3년 연속 줄어든 1,100명 확정.  💡",
+    "full_text": "내년 회계사 최소 선발 인원,\n3년 연속 줄어든 1,100명 확정.\n\n💡 공급은 줄어드는데 기업의 회계 투명성 요구는 역대급으로 높아지고 있어.\n\n전문 자격증 가치가 숫자로 증명되는 순간이야.\n\n결국 시장에 남는 건 '검증된 한 끗'의 차이더라.\n\n#주식 #경제",
+    "views": 418,
+    "likes": 0,
+    "replies": 4,
+    "media_type": "TEXT_POST",
+    "reblog_date": "2027-01-23"
+  },
+  {
+    "id": "18156778219533357",
+    "date": "2026-11-27",
+    "text": "42살 직장인이 1년 4개월 다니고 퇴사하면 실업급여는 며칠치를 받을까?",
+    "full_text": "42살 직장인이 1년 4개월 다니고 퇴사하면 실업급여는 며칠치를 받을까?\n\n정답은 150일이야. 근무 기간이 1년 이상 3년 미만이고 50세 미만이면 150일이고, 50세 이상이면 180일이야.\n\n그런데 이직 다음 날부터 12개월 안에 지급하는 구조라서, 신청을 미루면 남은 일수를 못 받을 수 있어. 내 근무 기간은 몇 일 구간인지 확인해 봤어?",
+    "views": 365,
+    "likes": 2,
+    "replies": 1,
+    "media_type": "TEXT_POST",
+    "reblog_date": "2027-01-23"
+  },
+  {
+    "id": "18085069403357188",
+    "date": "2026-11-25",
+    "text": "거래처에 낸 기부금 200억, 과연 순수한 마음이었을까.  1. 유통사가",
+    "full_text": "거래처에 낸 기부금 200억, 과연 순수한 마음이었을까.\n\n1. 유통사가 급식 시설에 기부금을 주는 건 관행처럼 굳어져 있어.\n2. 이게 나중에 독점 공급 계약으로 이어진다면 이야기가 완전히 달라져.\n3. 법인 입장에선 기부금 영수증 받고 비용 처리하는 게 이득 같지만 사실상 거래처를 묶어두는 족쇄가 될 수 있어.\n\n단순한 영업 전략이라고 믿고 싶겠지만 공정위는 이걸 엄연한 시장 교란으로 보고 있어.\n\n#법인 #증여",
+    "views": 318,
+    "likes": 0,
+    "replies": 4,
+    "media_type": "IMAGE",
+    "reblog_date": "2027-01-23"
   }
 ]
